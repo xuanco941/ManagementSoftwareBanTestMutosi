@@ -347,3 +347,6 @@ D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\Mana
 D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.pdb
 D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.genruntimeconfig.cache
 D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ref\ManagementSoftware.dll
+D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.JigMach.resources
+D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.JigMachManagement.FormJigMachNguon.resources
+D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.JigMachManagement.FormJigMachTDS.resources

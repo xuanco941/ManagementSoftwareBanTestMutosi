@@ -38,7 +38,7 @@ namespace ManagementSoftware.GUI
             this.buttonActivity = new System.Windows.Forms.Button();
             this.buttonEmployee = new System.Windows.Forms.Button();
             this.buttonResult = new System.Windows.Forms.Button();
-            this.buttonQuanLyKho = new System.Windows.Forms.Button();
+            this.buttonJigMach = new System.Windows.Forms.Button();
             this.buttonNhapKho = new System.Windows.Forms.Button();
             this.buttonWorkingList = new System.Windows.Forms.Button();
             this.buttonQuanLyDonHang = new System.Windows.Forms.Button();
@@ -69,7 +69,7 @@ namespace ManagementSoftware.GUI
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(211, 479);
+            this.panelMenu.Size = new System.Drawing.Size(211, 332);
             this.panelMenu.TabIndex = 0;
             // 
             // panelItemMenu
@@ -81,7 +81,7 @@ namespace ManagementSoftware.GUI
             this.panelItemMenu.Controls.Add(this.buttonActivity);
             this.panelItemMenu.Controls.Add(this.buttonEmployee);
             this.panelItemMenu.Controls.Add(this.buttonResult);
-            this.panelItemMenu.Controls.Add(this.buttonQuanLyKho);
+            this.panelItemMenu.Controls.Add(this.buttonJigMach);
             this.panelItemMenu.Controls.Add(this.buttonNhapKho);
             this.panelItemMenu.Controls.Add(this.buttonWorkingList);
             this.panelItemMenu.Controls.Add(this.buttonQuanLyDonHang);
@@ -89,7 +89,7 @@ namespace ManagementSoftware.GUI
             this.panelItemMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelItemMenu.Location = new System.Drawing.Point(0, 76);
             this.panelItemMenu.Name = "panelItemMenu";
-            this.panelItemMenu.Size = new System.Drawing.Size(211, 403);
+            this.panelItemMenu.Size = new System.Drawing.Size(211, 256);
             this.panelItemMenu.TabIndex = 1;
             // 
             // buttonDangXuat
@@ -176,7 +176,7 @@ namespace ManagementSoftware.GUI
             this.buttonResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonResult.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonResult.ForeColor = System.Drawing.Color.White;
-            this.buttonResult.Image = global::ManagementSoftware.Properties.Resources.book24;
+            this.buttonResult.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
             this.buttonResult.Location = new System.Drawing.Point(0, 395);
             this.buttonResult.Name = "buttonResult";
             this.buttonResult.Size = new System.Drawing.Size(192, 79);
@@ -186,23 +186,24 @@ namespace ManagementSoftware.GUI
             this.buttonResult.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.buttonResult.UseVisualStyleBackColor = true;
             // 
-            // buttonQuanLyKho
+            // buttonJigMach
             // 
-            this.buttonQuanLyKho.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonQuanLyKho.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonQuanLyKho.FlatAppearance.BorderSize = 0;
-            this.buttonQuanLyKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonQuanLyKho.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonQuanLyKho.ForeColor = System.Drawing.Color.White;
-            this.buttonQuanLyKho.Image = ((System.Drawing.Image)(resources.GetObject("buttonQuanLyKho.Image")));
-            this.buttonQuanLyKho.Location = new System.Drawing.Point(0, 316);
-            this.buttonQuanLyKho.Name = "buttonQuanLyKho";
-            this.buttonQuanLyKho.Size = new System.Drawing.Size(192, 79);
-            this.buttonQuanLyKho.TabIndex = 15;
-            this.buttonQuanLyKho.Text = "Jig mạch";
-            this.buttonQuanLyKho.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonQuanLyKho.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonQuanLyKho.UseVisualStyleBackColor = true;
+            this.buttonJigMach.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonJigMach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonJigMach.FlatAppearance.BorderSize = 0;
+            this.buttonJigMach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonJigMach.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonJigMach.ForeColor = System.Drawing.Color.White;
+            this.buttonJigMach.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
+            this.buttonJigMach.Location = new System.Drawing.Point(0, 316);
+            this.buttonJigMach.Name = "buttonJigMach";
+            this.buttonJigMach.Size = new System.Drawing.Size(192, 79);
+            this.buttonJigMach.TabIndex = 15;
+            this.buttonJigMach.Text = "Jig mạch";
+            this.buttonJigMach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonJigMach.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonJigMach.UseVisualStyleBackColor = true;
+            this.buttonJigMach.Click += new System.EventHandler(this.buttonJigMach_Click);
             // 
             // buttonNhapKho
             // 
@@ -212,7 +213,7 @@ namespace ManagementSoftware.GUI
             this.buttonNhapKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonNhapKho.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonNhapKho.ForeColor = System.Drawing.Color.White;
-            this.buttonNhapKho.Image = ((System.Drawing.Image)(resources.GetObject("buttonNhapKho.Image")));
+            this.buttonNhapKho.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
             this.buttonNhapKho.Location = new System.Drawing.Point(0, 237);
             this.buttonNhapKho.Name = "buttonNhapKho";
             this.buttonNhapKho.Size = new System.Drawing.Size(192, 79);
@@ -230,7 +231,7 @@ namespace ManagementSoftware.GUI
             this.buttonWorkingList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonWorkingList.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonWorkingList.ForeColor = System.Drawing.Color.White;
-            this.buttonWorkingList.Image = ((System.Drawing.Image)(resources.GetObject("buttonWorkingList.Image")));
+            this.buttonWorkingList.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
             this.buttonWorkingList.Location = new System.Drawing.Point(0, 158);
             this.buttonWorkingList.Name = "buttonWorkingList";
             this.buttonWorkingList.Size = new System.Drawing.Size(192, 79);
@@ -248,7 +249,7 @@ namespace ManagementSoftware.GUI
             this.buttonQuanLyDonHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonQuanLyDonHang.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonQuanLyDonHang.ForeColor = System.Drawing.Color.White;
-            this.buttonQuanLyDonHang.Image = ((System.Drawing.Image)(resources.GetObject("buttonQuanLyDonHang.Image")));
+            this.buttonQuanLyDonHang.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
             this.buttonQuanLyDonHang.Location = new System.Drawing.Point(0, 79);
             this.buttonQuanLyDonHang.Name = "buttonQuanLyDonHang";
             this.buttonQuanLyDonHang.Size = new System.Drawing.Size(192, 79);
@@ -317,7 +318,7 @@ namespace ManagementSoftware.GUI
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(211, 0);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(920, 479);
+            this.panelContainer.Size = new System.Drawing.Size(925, 332);
             this.panelContainer.TabIndex = 3;
             // 
             // panelContent
@@ -327,7 +328,7 @@ namespace ManagementSoftware.GUI
             this.panelContent.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelContent.Location = new System.Drawing.Point(0, 76);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(920, 403);
+            this.panelContent.Size = new System.Drawing.Size(925, 256);
             this.panelContent.TabIndex = 5;
             // 
             // panelHeader
@@ -336,7 +337,7 @@ namespace ManagementSoftware.GUI
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(920, 76);
+            this.panelHeader.Size = new System.Drawing.Size(925, 76);
             this.panelHeader.TabIndex = 4;
             // 
             // tableLayoutPanel1
@@ -351,14 +352,14 @@ namespace ManagementSoftware.GUI
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(920, 76);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(925, 76);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panelAleart
             // 
             this.panelAleart.AutoScroll = true;
             this.panelAleart.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelAleart.Location = new System.Drawing.Point(497, 3);
+            this.panelAleart.Location = new System.Drawing.Point(502, 3);
             this.panelAleart.MaximumSize = new System.Drawing.Size(1260, 70);
             this.panelAleart.MinimumSize = new System.Drawing.Size(420, 70);
             this.panelAleart.Name = "panelAleart";
@@ -378,7 +379,7 @@ namespace ManagementSoftware.GUI
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1131, 479);
+            this.ClientSize = new System.Drawing.Size(1136, 332);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panelMenu);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -418,7 +419,7 @@ namespace ManagementSoftware.GUI
         private Button buttonEmployee;
         private Button buttonResult;
         private Button buttonDashboard;
-        private Button buttonQuanLyKho;
+        private Button buttonJigMach;
         private Button buttonQuanLyDonHang;
         private Button buttonWorkingList;
         private Button buttonNhapKho;

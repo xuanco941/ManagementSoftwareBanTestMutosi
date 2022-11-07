@@ -102,5 +102,11 @@ namespace ManagementSoftware.GUI
             Application.Restart();
         }
 
+        private void buttonJigMach_Click(object sender, EventArgs e)
+        {
+            JigMach form = new JigMach();
+            form.callAlert = new JigMach.CallAlert(Alert);
+            ChangeFormContent(form, sender);
+        }
     }
 }

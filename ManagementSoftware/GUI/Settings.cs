@@ -28,19 +28,10 @@ namespace ManagementSoftware.GUI
             InitializeComponent();
 
             //setting
-            //LoadSetting();
-
-            // template setting
-            dataGridViewTemplateSetting.RowTemplate.Height = 50;
-            //LoadDataGridViewTemplateSetting();
-
             //shift
             dataGridViewShift.RowTemplate.Height = 50;
             //LoadDataGridViewShift();
 
-            //Setting
-            dataGridViewActivitySetting.RowTemplate.Height = 36;
-            //GetActivities();
 
 
         }
