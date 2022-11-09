@@ -39,6 +39,19 @@ namespace ManagementSoftware.GUI
             form2.Dock = DockStyle.Top;
             form2.Show();
             this.Font = Common.FontForm;
+
+
+            LoadFormThongKe();
+        }
+
+        void LoadFormThongKe()
+        {
+            ItemThongKeJigMach form = new ItemThongKeJigMach();
+            form.TopLevel = false;
+            panelThongKe.Controls.Add(form);
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Top;
+            form.Show();
         }
 
     }

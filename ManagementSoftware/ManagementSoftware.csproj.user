@@ -31,6 +31,12 @@
     <Compile Update="GUI\JigMachManagement\FormJigMachTDS.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\JigMachManagement\FormThongKeJigMach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Section\ItemThongKeJigMach.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GUI\Settings.cs">
       <SubType>Form</SubType>
     </Compile>

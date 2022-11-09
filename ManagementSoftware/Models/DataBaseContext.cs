@@ -1,6 +1,7 @@
 ﻿using ManagementSoftware.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using ManagementSoftware.Models.JigMach;
 
 namespace ManagementSoftware.Models
 {
@@ -10,6 +11,12 @@ namespace ManagementSoftware.Models
         public DbSet<Group> Groups { get; set; }
         public DbSet<Activity> Activities { get; set; }
         public DbSet<Shift> Shifts { get; set; }
+
+        public DbSet<TestJigMach> TestJigMachs { get; set; }
+        public DbSet<JigMachNguon> JigMachNguons { get; set; }
+        public DbSet<JigMachTDS> JigMachTDSs { get; set; }
+
+
 
         // Tạo ILoggerFactory 
         public static readonly ILoggerFactory loggerFactory = LoggerFactory.Create(builder => {
@@ -48,6 +55,22 @@ namespace ManagementSoftware.Models
 
             //activity
             modelBuilder.Entity<Activity>(entity =>
+            {
+                entity.Property(e => e.CreateAt).HasDefaultValueSql("(getdate())");
+            });
+
+            //jig mạch
+            modelBuilder.Entity<TestJigMach>(entity =>
+            {
+                entity.Property(e => e.CreateAt).HasDefaultValueSql("(getdate())");
+            });
+            //jig mạch nguồn
+            modelBuilder.Entity<JigMachNguon>(entity =>
+            {
+                entity.Property(e => e.CreateAt).HasDefaultValueSql("(getdate())");
+            });
+            //jig mạch tds
+            modelBuilder.Entity<JigMachNguon>(entity =>
             {
                 entity.Property(e => e.CreateAt).HasDefaultValueSql("(getdate())");
             });
