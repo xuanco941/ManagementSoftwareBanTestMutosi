@@ -36,11 +36,9 @@
             this.buttonExit = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.buttonDangNhap = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -81,7 +79,7 @@
             this.textBoxTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxTaiKhoan.Multiline = false;
             this.textBoxTaiKhoan.Name = "textBoxTaiKhoan";
-            this.textBoxTaiKhoan.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.textBoxTaiKhoan.Padding = new System.Windows.Forms.Padding(8);
             this.textBoxTaiKhoan.PasswordChar = false;
             this.textBoxTaiKhoan.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.textBoxTaiKhoan.PlaceholderText = "";
@@ -103,7 +101,7 @@
             this.textBoxMatKhau.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxMatKhau.Multiline = false;
             this.textBoxMatKhau.Name = "textBoxMatKhau";
-            this.textBoxMatKhau.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.textBoxMatKhau.Padding = new System.Windows.Forms.Padding(8);
             this.textBoxMatKhau.PasswordChar = true;
             this.textBoxMatKhau.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.textBoxMatKhau.PlaceholderText = "";
@@ -176,18 +174,6 @@
             this.label3.Text = "Máy Nạp Khí TPA";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(472, 334);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -231,7 +217,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBoxMatKhau);
             this.Controls.Add(this.textBoxTaiKhoan);
             this.Controls.Add(this.buttonExit);
@@ -246,7 +231,6 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -262,7 +246,6 @@
         private LW_PhanMemBaoGia.MyControls.TextBoxT textBoxTaiKhoan;
         private LW_PhanMemBaoGia.MyControls.TextBoxT textBoxMatKhau;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
         private Panel panel1;

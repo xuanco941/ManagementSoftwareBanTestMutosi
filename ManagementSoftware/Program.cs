@@ -1,6 +1,7 @@
 ﻿using ManagementSoftware.Models;
 using ManagementSoftware.GUI;
 using ManagementSoftware.DAL;
+using ManagementSoftware.PLCSetting;
 
 namespace ManagementSoftware
 {

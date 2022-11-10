@@ -63,16 +63,6 @@ namespace ManagementSoftware.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _36874122 {
-            get {
-                object obj = ResourceManager.GetObject("36874122", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _4406108 {
             get {
                 object obj = ResourceManager.GetObject("4406108", resourceCulture);
@@ -166,36 +156,6 @@ namespace ManagementSoftware.Properties {
         internal static System.Drawing.Bitmap error {
             get {
                 object obj = ResourceManager.GetObject("error", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ETEK_LOGO_01 {
-            get {
-                object obj = ResourceManager.GetObject("ETEK-LOGO-01", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ETEK_LOGO_02 {
-            get {
-                object obj = ResourceManager.GetObject("ETEK-LOGO-02", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ETEK_LOGO_16 {
-            get {
-                object obj = ResourceManager.GetObject("ETEK-LOGO-16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

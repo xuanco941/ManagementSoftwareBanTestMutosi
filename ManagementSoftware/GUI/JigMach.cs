@@ -46,12 +46,15 @@ namespace ManagementSoftware.GUI
 
         void LoadFormThongKe()
         {
-            ItemThongKeJigMach form = new ItemThongKeJigMach();
-            form.TopLevel = false;
-            panelThongKe.Controls.Add(form);
-            form.FormBorderStyle = FormBorderStyle.None;
-            form.Dock = DockStyle.Top;
-            form.Show();
+            for (int i = 0; i < 3; i++)
+            {
+                ItemThongKeJigMach form = new ItemThongKeJigMach();
+                form.TopLevel = false;
+                panelThongKe.Controls.Add(form);
+                form.FormBorderStyle = FormBorderStyle.None;
+                form.Dock = DockStyle.Top;
+                form.Show();
+            }
         }
 
     }

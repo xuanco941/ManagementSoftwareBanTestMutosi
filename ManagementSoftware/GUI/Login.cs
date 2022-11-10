@@ -1,5 +1,6 @@
 ﻿using ManagementSoftware.BUS;
 using ManagementSoftware.Models;
+using ManagementSoftware.PLCSetting;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,6 +27,8 @@ namespace ManagementSoftware.GUI
 
             //init db
             new DataBaseContext().CreateDatabase();
+            //start plc
+            MainPLC.Start();
 
 
 

@@ -32,6 +32,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageGiamSatJigMach = new System.Windows.Forms.TabPage();
             this.tabPageThongKe = new System.Windows.Forms.TabPage();
+            this.panelThongKe = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonCustomGoPage = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.inputNumPageGo = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
@@ -39,7 +40,6 @@
             this.buttonPage3 = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.buttonPage1 = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.buttonPage2 = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
-            this.panelThongKe = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPageThongKe.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -80,8 +80,20 @@
             this.tabPageThongKe.Text = "Thống kê";
             this.tabPageThongKe.UseVisualStyleBackColor = true;
             // 
+            // panelThongKe
+            // 
+            this.panelThongKe.AutoScroll = true;
+            this.panelThongKe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelThongKe.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelThongKe.Location = new System.Drawing.Point(3, 3);
+            this.panelThongKe.Name = "panelThongKe";
+            this.panelThongKe.Size = new System.Drawing.Size(974, 449);
+            this.panelThongKe.TabIndex = 2;
+            // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Wheat;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.buttonCustomGoPage);
             this.panel2.Controls.Add(this.inputNumPageGo);
             this.panel2.Controls.Add(this.buttonPageNext);
@@ -109,7 +121,7 @@
             this.buttonCustomGoPage.ForeColor = System.Drawing.Color.Black;
             this.buttonCustomGoPage.Image = ((System.Drawing.Image)(resources.GetObject("buttonCustomGoPage.Image")));
             this.buttonCustomGoPage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCustomGoPage.Location = new System.Drawing.Point(1387, -40);
+            this.buttonCustomGoPage.Location = new System.Drawing.Point(1385, -42);
             this.buttonCustomGoPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonCustomGoPage.Name = "buttonCustomGoPage";
             this.buttonCustomGoPage.Size = new System.Drawing.Size(93, 35);
@@ -127,7 +139,7 @@
             this.inputNumPageGo.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.inputNumPageGo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.inputNumPageGo.IntegerValue = ((long)(1));
-            this.inputNumPageGo.Location = new System.Drawing.Point(1317, -38);
+            this.inputNumPageGo.Location = new System.Drawing.Point(1315, -40);
             this.inputNumPageGo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.inputNumPageGo.Multiline = true;
             this.inputNumPageGo.Name = "inputNumPageGo";
@@ -149,7 +161,7 @@
             this.buttonPageNext.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonPageNext.ForeColor = System.Drawing.Color.Black;
             this.buttonPageNext.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonPageNext.Location = new System.Drawing.Point(243, 8);
+            this.buttonPageNext.Location = new System.Drawing.Point(243, 6);
             this.buttonPageNext.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonPageNext.Name = "buttonPageNext";
             this.buttonPageNext.Size = new System.Drawing.Size(74, 35);
@@ -172,7 +184,7 @@
             this.buttonPage3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonPage3.ForeColor = System.Drawing.Color.Black;
             this.buttonPage3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonPage3.Location = new System.Drawing.Point(163, 8);
+            this.buttonPage3.Location = new System.Drawing.Point(163, 6);
             this.buttonPage3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonPage3.Name = "buttonPage3";
             this.buttonPage3.Size = new System.Drawing.Size(74, 35);
@@ -195,7 +207,7 @@
             this.buttonPage1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonPage1.ForeColor = System.Drawing.Color.Black;
             this.buttonPage1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonPage1.Location = new System.Drawing.Point(3, 8);
+            this.buttonPage1.Location = new System.Drawing.Point(3, 6);
             this.buttonPage1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonPage1.Name = "buttonPage1";
             this.buttonPage1.Size = new System.Drawing.Size(74, 35);
@@ -218,7 +230,7 @@
             this.buttonPage2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonPage2.ForeColor = System.Drawing.Color.Black;
             this.buttonPage2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonPage2.Location = new System.Drawing.Point(82, 8);
+            this.buttonPage2.Location = new System.Drawing.Point(82, 6);
             this.buttonPage2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonPage2.Name = "buttonPage2";
             this.buttonPage2.Size = new System.Drawing.Size(74, 35);
@@ -227,14 +239,6 @@
             this.buttonPage2.TextColor = System.Drawing.Color.Black;
             this.buttonPage2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.buttonPage2.UseVisualStyleBackColor = false;
-            // 
-            // panelThongKe
-            // 
-            this.panelThongKe.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelThongKe.Location = new System.Drawing.Point(3, 3);
-            this.panelThongKe.Name = "panelThongKe";
-            this.panelThongKe.Size = new System.Drawing.Size(974, 449);
-            this.panelThongKe.TabIndex = 2;
             // 
             // JigMach
             // 
