@@ -108,5 +108,12 @@ namespace ManagementSoftware.GUI
             form.callAlert = new JigMach.CallAlert(Alert);
             ChangeFormContent(form, sender);
         }
+
+        private void buttonLoiLoc_Click(object sender, EventArgs e)
+        {
+            LoiLoc form = new LoiLoc();
+            form.callAlert = new LoiLoc.CallAlert(Alert);
+            ChangeFormContent(form, sender);
+        }
     }
 }

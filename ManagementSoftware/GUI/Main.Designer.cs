@@ -42,7 +42,7 @@ namespace ManagementSoftware.GUI
             this.buttonNhapKho = new System.Windows.Forms.Button();
             this.buttonWorkingList = new System.Windows.Forms.Button();
             this.buttonQuanLyDonHang = new System.Windows.Forms.Button();
-            this.buttonDashboard = new System.Windows.Forms.Button();
+            this.buttonLoiLoc = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelHeader = new System.Windows.Forms.Label();
@@ -85,7 +85,7 @@ namespace ManagementSoftware.GUI
             this.panelItemMenu.Controls.Add(this.buttonNhapKho);
             this.panelItemMenu.Controls.Add(this.buttonWorkingList);
             this.panelItemMenu.Controls.Add(this.buttonQuanLyDonHang);
-            this.panelItemMenu.Controls.Add(this.buttonDashboard);
+            this.panelItemMenu.Controls.Add(this.buttonLoiLoc);
             this.panelItemMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelItemMenu.Location = new System.Drawing.Point(0, 76);
             this.panelItemMenu.Name = "panelItemMenu";
@@ -259,24 +259,25 @@ namespace ManagementSoftware.GUI
             this.buttonQuanLyDonHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.buttonQuanLyDonHang.UseVisualStyleBackColor = true;
             // 
-            // buttonDashboard
+            // buttonLoiLoc
             // 
-            this.buttonDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.buttonDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDashboard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonDashboard.FlatAppearance.BorderSize = 0;
-            this.buttonDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDashboard.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonDashboard.ForeColor = System.Drawing.Color.White;
-            this.buttonDashboard.Image = ((System.Drawing.Image)(resources.GetObject("buttonDashboard.Image")));
-            this.buttonDashboard.Location = new System.Drawing.Point(0, 0);
-            this.buttonDashboard.Name = "buttonDashboard";
-            this.buttonDashboard.Size = new System.Drawing.Size(192, 79);
-            this.buttonDashboard.TabIndex = 7;
-            this.buttonDashboard.Text = "Lõi lọc";
-            this.buttonDashboard.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonDashboard.UseVisualStyleBackColor = false;
+            this.buttonLoiLoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.buttonLoiLoc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonLoiLoc.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonLoiLoc.FlatAppearance.BorderSize = 0;
+            this.buttonLoiLoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLoiLoc.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonLoiLoc.ForeColor = System.Drawing.Color.White;
+            this.buttonLoiLoc.Image = ((System.Drawing.Image)(resources.GetObject("buttonLoiLoc.Image")));
+            this.buttonLoiLoc.Location = new System.Drawing.Point(0, 0);
+            this.buttonLoiLoc.Name = "buttonLoiLoc";
+            this.buttonLoiLoc.Size = new System.Drawing.Size(192, 79);
+            this.buttonLoiLoc.TabIndex = 7;
+            this.buttonLoiLoc.Text = "Lõi lọc";
+            this.buttonLoiLoc.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonLoiLoc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonLoiLoc.UseVisualStyleBackColor = false;
+            this.buttonLoiLoc.Click += new System.EventHandler(this.buttonLoiLoc_Click);
             // 
             // panel3
             // 
@@ -418,7 +419,7 @@ namespace ManagementSoftware.GUI
         private Button buttonActivity;
         private Button buttonEmployee;
         private Button buttonResult;
-        private Button buttonDashboard;
+        private Button buttonLoiLoc;
         private Button buttonJigMach;
         private Button buttonQuanLyDonHang;
         private Button buttonWorkingList;
