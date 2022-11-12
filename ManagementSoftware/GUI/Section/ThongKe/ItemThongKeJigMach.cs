@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ManagementSoftware.GUI.Section
+namespace ManagementSoftware.GUI.Section.ThongKe
 {
     public partial class ItemThongKeJigMach : Form
     {

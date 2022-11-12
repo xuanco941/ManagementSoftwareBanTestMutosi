@@ -129,5 +129,12 @@ namespace ManagementSoftware.GUI
             form.callAlert = new BepTu.CallAlert(Alert);
             ChangeFormContent(form, sender);
         }
+
+        private void buttonCongTac_Click(object sender, EventArgs e)
+        {
+            CongTac form = new CongTac();
+            form.callAlert = new CongTac.CallAlert(Alert);
+            ChangeFormContent(form, sender);
+        }
     }
 }

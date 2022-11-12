@@ -37,7 +37,7 @@ namespace ManagementSoftware.GUI
             this.buttonSetting = new System.Windows.Forms.Button();
             this.buttonActivity = new System.Windows.Forms.Button();
             this.buttonEmployee = new System.Windows.Forms.Button();
-            this.buttonResult = new System.Windows.Forms.Button();
+            this.buttonCongTac = new System.Windows.Forms.Button();
             this.buttonJigMach = new System.Windows.Forms.Button();
             this.buttonNhapKho = new System.Windows.Forms.Button();
             this.buttonBauNong = new System.Windows.Forms.Button();
@@ -80,7 +80,7 @@ namespace ManagementSoftware.GUI
             this.panelItemMenu.Controls.Add(this.buttonSetting);
             this.panelItemMenu.Controls.Add(this.buttonActivity);
             this.panelItemMenu.Controls.Add(this.buttonEmployee);
-            this.panelItemMenu.Controls.Add(this.buttonResult);
+            this.panelItemMenu.Controls.Add(this.buttonCongTac);
             this.panelItemMenu.Controls.Add(this.buttonJigMach);
             this.panelItemMenu.Controls.Add(this.buttonNhapKho);
             this.panelItemMenu.Controls.Add(this.buttonBauNong);
@@ -168,23 +168,24 @@ namespace ManagementSoftware.GUI
             this.buttonEmployee.UseVisualStyleBackColor = true;
             this.buttonEmployee.Click += new System.EventHandler(this.buttonEmployee_Click);
             // 
-            // buttonResult
+            // buttonCongTac
             // 
-            this.buttonResult.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonResult.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonResult.FlatAppearance.BorderSize = 0;
-            this.buttonResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonResult.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonResult.ForeColor = System.Drawing.Color.White;
-            this.buttonResult.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
-            this.buttonResult.Location = new System.Drawing.Point(0, 395);
-            this.buttonResult.Name = "buttonResult";
-            this.buttonResult.Size = new System.Drawing.Size(192, 79);
-            this.buttonResult.TabIndex = 8;
-            this.buttonResult.Text = "Công tắc";
-            this.buttonResult.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonResult.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonResult.UseVisualStyleBackColor = true;
+            this.buttonCongTac.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCongTac.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonCongTac.FlatAppearance.BorderSize = 0;
+            this.buttonCongTac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCongTac.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonCongTac.ForeColor = System.Drawing.Color.White;
+            this.buttonCongTac.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
+            this.buttonCongTac.Location = new System.Drawing.Point(0, 395);
+            this.buttonCongTac.Name = "buttonCongTac";
+            this.buttonCongTac.Size = new System.Drawing.Size(192, 79);
+            this.buttonCongTac.TabIndex = 8;
+            this.buttonCongTac.Text = "Công tắc";
+            this.buttonCongTac.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonCongTac.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonCongTac.UseVisualStyleBackColor = true;
+            this.buttonCongTac.Click += new System.EventHandler(this.buttonCongTac_Click);
             // 
             // buttonJigMach
             // 
@@ -390,7 +391,7 @@ namespace ManagementSoftware.GUI
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Máy nạp khí TPA";
+            this.Text = "Test Jig";
             this.panelMenu.ResumeLayout(false);
             this.panelItemMenu.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -420,7 +421,7 @@ namespace ManagementSoftware.GUI
         private Button buttonSetting;
         private Button buttonActivity;
         private Button buttonEmployee;
-        private Button buttonResult;
+        private Button buttonCongTac;
         private Button buttonLoiLoc;
         private Button buttonJigMach;
         private Button buttonBepTu;

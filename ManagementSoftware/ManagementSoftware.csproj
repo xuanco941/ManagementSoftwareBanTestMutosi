@@ -78,6 +78,12 @@
     <Compile Update="GUI\BepTu.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\CongTac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\CongTacManagement\TemplateCongTac3VT.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>

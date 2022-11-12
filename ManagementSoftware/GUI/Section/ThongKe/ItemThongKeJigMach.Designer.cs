@@ -1,4 +1,4 @@
-﻿namespace ManagementSoftware.GUI.Section
+﻿namespace ManagementSoftware.GUI.Section.ThongKe
 {
     partial class ItemThongKeJigMach
     {
