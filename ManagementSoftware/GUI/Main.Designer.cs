@@ -41,7 +41,7 @@ namespace ManagementSoftware.GUI
             this.buttonJigMach = new System.Windows.Forms.Button();
             this.buttonNhapKho = new System.Windows.Forms.Button();
             this.buttonBauNong = new System.Windows.Forms.Button();
-            this.buttonQuanLyDonHang = new System.Windows.Forms.Button();
+            this.buttonBepTu = new System.Windows.Forms.Button();
             this.buttonLoiLoc = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -84,7 +84,7 @@ namespace ManagementSoftware.GUI
             this.panelItemMenu.Controls.Add(this.buttonJigMach);
             this.panelItemMenu.Controls.Add(this.buttonNhapKho);
             this.panelItemMenu.Controls.Add(this.buttonBauNong);
-            this.panelItemMenu.Controls.Add(this.buttonQuanLyDonHang);
+            this.panelItemMenu.Controls.Add(this.buttonBepTu);
             this.panelItemMenu.Controls.Add(this.buttonLoiLoc);
             this.panelItemMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelItemMenu.Location = new System.Drawing.Point(0, 76);
@@ -242,23 +242,24 @@ namespace ManagementSoftware.GUI
             this.buttonBauNong.UseVisualStyleBackColor = true;
             this.buttonBauNong.Click += new System.EventHandler(this.buttonBauNong_Click);
             // 
-            // buttonQuanLyDonHang
+            // buttonBepTu
             // 
-            this.buttonQuanLyDonHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonQuanLyDonHang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonQuanLyDonHang.FlatAppearance.BorderSize = 0;
-            this.buttonQuanLyDonHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonQuanLyDonHang.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonQuanLyDonHang.ForeColor = System.Drawing.Color.White;
-            this.buttonQuanLyDonHang.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
-            this.buttonQuanLyDonHang.Location = new System.Drawing.Point(0, 79);
-            this.buttonQuanLyDonHang.Name = "buttonQuanLyDonHang";
-            this.buttonQuanLyDonHang.Size = new System.Drawing.Size(192, 79);
-            this.buttonQuanLyDonHang.TabIndex = 14;
-            this.buttonQuanLyDonHang.Text = "Bếp từ";
-            this.buttonQuanLyDonHang.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonQuanLyDonHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonQuanLyDonHang.UseVisualStyleBackColor = true;
+            this.buttonBepTu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBepTu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonBepTu.FlatAppearance.BorderSize = 0;
+            this.buttonBepTu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBepTu.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonBepTu.ForeColor = System.Drawing.Color.White;
+            this.buttonBepTu.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
+            this.buttonBepTu.Location = new System.Drawing.Point(0, 79);
+            this.buttonBepTu.Name = "buttonBepTu";
+            this.buttonBepTu.Size = new System.Drawing.Size(192, 79);
+            this.buttonBepTu.TabIndex = 14;
+            this.buttonBepTu.Text = "Bếp từ";
+            this.buttonBepTu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonBepTu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonBepTu.UseVisualStyleBackColor = true;
+            this.buttonBepTu.Click += new System.EventHandler(this.buttonBepTu_Click);
             // 
             // buttonLoiLoc
             // 
@@ -422,7 +423,7 @@ namespace ManagementSoftware.GUI
         private Button buttonResult;
         private Button buttonLoiLoc;
         private Button buttonJigMach;
-        private Button buttonQuanLyDonHang;
+        private Button buttonBepTu;
         private Button buttonBauNong;
         private Button buttonNhapKho;
     }

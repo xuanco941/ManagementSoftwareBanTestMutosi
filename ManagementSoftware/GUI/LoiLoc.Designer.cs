@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoiLoc));
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPageGiamSatJigMach = new System.Windows.Forms.TabPage();
+            this.tabPageGiamSat = new System.Windows.Forms.TabPage();
             this.panelGiamSat = new System.Windows.Forms.Panel();
             this.panel79 = new System.Windows.Forms.Panel();
             this.panel80 = new System.Windows.Forms.Panel();
@@ -212,7 +212,7 @@
             this.buttonPage2 = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.gridLayout1 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
             this.tabControl1.SuspendLayout();
-            this.tabPageGiamSatJigMach.SuspendLayout();
+            this.tabPageGiamSat.SuspendLayout();
             this.panelGiamSat.SuspendLayout();
             this.panel79.SuspendLayout();
             this.panel80.SuspendLayout();
@@ -318,7 +318,7 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPageGiamSatJigMach);
+            this.tabControl1.Controls.Add(this.tabPageGiamSat);
             this.tabControl1.Controls.Add(this.tabPageThongKe);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
@@ -327,17 +327,17 @@
             this.tabControl1.Size = new System.Drawing.Size(988, 531);
             this.tabControl1.TabIndex = 0;
             // 
-            // tabPageGiamSatJigMach
+            // tabPageGiamSat
             // 
-            this.tabPageGiamSatJigMach.AutoScroll = true;
-            this.tabPageGiamSatJigMach.Controls.Add(this.panelGiamSat);
-            this.tabPageGiamSatJigMach.Location = new System.Drawing.Point(4, 24);
-            this.tabPageGiamSatJigMach.Name = "tabPageGiamSatJigMach";
-            this.tabPageGiamSatJigMach.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGiamSatJigMach.Size = new System.Drawing.Size(980, 503);
-            this.tabPageGiamSatJigMach.TabIndex = 0;
-            this.tabPageGiamSatJigMach.Text = "Giám sát Lõi Lọc";
-            this.tabPageGiamSatJigMach.UseVisualStyleBackColor = true;
+            this.tabPageGiamSat.AutoScroll = true;
+            this.tabPageGiamSat.Controls.Add(this.panelGiamSat);
+            this.tabPageGiamSat.Location = new System.Drawing.Point(4, 24);
+            this.tabPageGiamSat.Name = "tabPageGiamSat";
+            this.tabPageGiamSat.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageGiamSat.Size = new System.Drawing.Size(980, 503);
+            this.tabPageGiamSat.TabIndex = 0;
+            this.tabPageGiamSat.Text = "Giám sát Lõi Lọc";
+            this.tabPageGiamSat.UseVisualStyleBackColor = true;
             // 
             // panelGiamSat
             // 
@@ -2471,7 +2471,7 @@
             this.Name = "LoiLoc";
             this.Text = "JigMach";
             this.tabControl1.ResumeLayout(false);
-            this.tabPageGiamSatJigMach.ResumeLayout(false);
+            this.tabPageGiamSat.ResumeLayout(false);
             this.panelGiamSat.ResumeLayout(false);
             this.panel79.ResumeLayout(false);
             this.panel80.ResumeLayout(false);
@@ -2581,7 +2581,7 @@
         #endregion
 
         private TabControl tabControl1;
-        private TabPage tabPageGiamSatJigMach;
+        private TabPage tabPageGiamSat;
         private TabPage tabPageThongKe;
         private Panel panelThongKe;
         private Panel panel2;

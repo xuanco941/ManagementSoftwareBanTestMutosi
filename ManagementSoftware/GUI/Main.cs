@@ -122,5 +122,12 @@ namespace ManagementSoftware.GUI
             form.callAlert = new BauNong.CallAlert(Alert);
             ChangeFormContent(form, sender);
         }
+
+        private void buttonBepTu_Click(object sender, EventArgs e)
+        {
+            BepTu form = new BepTu();
+            form.callAlert = new BepTu.CallAlert(Alert);
+            ChangeFormContent(form, sender);
+        }
     }
 }

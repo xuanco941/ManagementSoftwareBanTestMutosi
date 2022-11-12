@@ -25,13 +25,6 @@ namespace ManagementSoftware.GUI
         private void LoginActive()
         {
 
-            //init db
-            new DataBaseContext().CreateDatabase();
-            //start plc
-            MainPLC.Start();
-
-
-
             string Username = textBoxTaiKhoan.Texts.Trim();
             string Password = textBoxMatKhau.Texts.Trim();
             if (String.IsNullOrEmpty(Username) == true && String.IsNullOrEmpty(Password) == true)

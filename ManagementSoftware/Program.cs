@@ -21,6 +21,11 @@ namespace ManagementSoftware
             //Syncfusion
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(Common.LicenseSyncfusion);
 
+            //init db
+            new DataBaseContext().CreateDatabase();
+            //start plc
+            MainPLC.Start();
+
             Application.Run(new Login());
 
             if (Common.USERSESSION != null)
