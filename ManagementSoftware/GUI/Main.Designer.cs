@@ -40,7 +40,7 @@ namespace ManagementSoftware.GUI
             this.buttonResult = new System.Windows.Forms.Button();
             this.buttonJigMach = new System.Windows.Forms.Button();
             this.buttonNhapKho = new System.Windows.Forms.Button();
-            this.buttonWorkingList = new System.Windows.Forms.Button();
+            this.buttonBauNong = new System.Windows.Forms.Button();
             this.buttonQuanLyDonHang = new System.Windows.Forms.Button();
             this.buttonLoiLoc = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -83,7 +83,7 @@ namespace ManagementSoftware.GUI
             this.panelItemMenu.Controls.Add(this.buttonResult);
             this.panelItemMenu.Controls.Add(this.buttonJigMach);
             this.panelItemMenu.Controls.Add(this.buttonNhapKho);
-            this.panelItemMenu.Controls.Add(this.buttonWorkingList);
+            this.panelItemMenu.Controls.Add(this.buttonBauNong);
             this.panelItemMenu.Controls.Add(this.buttonQuanLyDonHang);
             this.panelItemMenu.Controls.Add(this.buttonLoiLoc);
             this.panelItemMenu.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -223,23 +223,24 @@ namespace ManagementSoftware.GUI
             this.buttonNhapKho.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.buttonNhapKho.UseVisualStyleBackColor = true;
             // 
-            // buttonWorkingList
+            // buttonBauNong
             // 
-            this.buttonWorkingList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonWorkingList.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonWorkingList.FlatAppearance.BorderSize = 0;
-            this.buttonWorkingList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonWorkingList.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonWorkingList.ForeColor = System.Drawing.Color.White;
-            this.buttonWorkingList.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
-            this.buttonWorkingList.Location = new System.Drawing.Point(0, 158);
-            this.buttonWorkingList.Name = "buttonWorkingList";
-            this.buttonWorkingList.Size = new System.Drawing.Size(192, 79);
-            this.buttonWorkingList.TabIndex = 16;
-            this.buttonWorkingList.Text = "Bầu nóng";
-            this.buttonWorkingList.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonWorkingList.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonWorkingList.UseVisualStyleBackColor = true;
+            this.buttonBauNong.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBauNong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonBauNong.FlatAppearance.BorderSize = 0;
+            this.buttonBauNong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBauNong.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonBauNong.ForeColor = System.Drawing.Color.White;
+            this.buttonBauNong.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
+            this.buttonBauNong.Location = new System.Drawing.Point(0, 158);
+            this.buttonBauNong.Name = "buttonBauNong";
+            this.buttonBauNong.Size = new System.Drawing.Size(192, 79);
+            this.buttonBauNong.TabIndex = 16;
+            this.buttonBauNong.Text = "Bầu nóng";
+            this.buttonBauNong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonBauNong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonBauNong.UseVisualStyleBackColor = true;
+            this.buttonBauNong.Click += new System.EventHandler(this.buttonBauNong_Click);
             // 
             // buttonQuanLyDonHang
             // 
@@ -422,7 +423,7 @@ namespace ManagementSoftware.GUI
         private Button buttonLoiLoc;
         private Button buttonJigMach;
         private Button buttonQuanLyDonHang;
-        private Button buttonWorkingList;
+        private Button buttonBauNong;
         private Button buttonNhapKho;
     }
 }

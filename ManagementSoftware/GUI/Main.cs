@@ -115,5 +115,12 @@ namespace ManagementSoftware.GUI
             form.callAlert = new LoiLoc.CallAlert(Alert);
             ChangeFormContent(form, sender);
         }
+
+        private void buttonBauNong_Click(object sender, EventArgs e)
+        {
+            BauNong form = new BauNong();
+            form.callAlert = new BauNong.CallAlert(Alert);
+            ChangeFormContent(form, sender);
+        }
     }
 }

@@ -72,6 +72,9 @@
     <Compile Update="GUI\LoiLoc.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\BauNong.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
