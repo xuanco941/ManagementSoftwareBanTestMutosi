@@ -501,7 +501,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(94, 39);
             this.label22.TabIndex = 3;
-            this.label22.Text = "Áp : ";
+            this.label22.Text = "Điện áp : ";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel88
@@ -542,7 +542,7 @@
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(94, 39);
             this.label39.TabIndex = 2;
-            this.label39.Text = "Dòng : ";
+            this.label39.Text = "Dòng điện : ";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel90
@@ -689,7 +689,7 @@
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(93, 39);
             this.label26.TabIndex = 3;
-            this.label26.Text = "Áp : ";
+            this.label26.Text = "Điện áp : ";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel79
@@ -730,7 +730,7 @@
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(93, 39);
             this.label35.TabIndex = 2;
-            this.label35.Text = "Dòng : ";
+            this.label35.Text = "Dòng điện : ";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel81
@@ -877,7 +877,7 @@
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(93, 39);
             this.label30.TabIndex = 3;
-            this.label30.Text = "Áp : ";
+            this.label30.Text = "Điện áp : ";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel70
@@ -918,7 +918,7 @@
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(93, 39);
             this.label31.TabIndex = 2;
-            this.label31.Text = "Dòng : ";
+            this.label31.Text = "Dòng điện : ";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel72
@@ -1065,7 +1065,7 @@
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(93, 39);
             this.label34.TabIndex = 3;
-            this.label34.Text = "Áp : ";
+            this.label34.Text = "Điện áp : ";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel61
@@ -1106,7 +1106,7 @@
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(93, 39);
             this.label27.TabIndex = 2;
-            this.label27.Text = "Dòng : ";
+            this.label27.Text = "Dòng điện : ";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel63
@@ -1253,7 +1253,7 @@
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(93, 39);
             this.label38.TabIndex = 3;
-            this.label38.Text = "Áp : ";
+            this.label38.Text = "Điện áp : ";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel52
@@ -1294,7 +1294,7 @@
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(93, 39);
             this.label23.TabIndex = 2;
-            this.label23.Text = "Dòng : ";
+            this.label23.Text = "Dòng điện : ";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel54
@@ -1441,7 +1441,7 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(94, 39);
             this.label18.TabIndex = 3;
-            this.label18.Text = "Áp : ";
+            this.label18.Text = "Điện áp : ";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel43
@@ -1482,7 +1482,7 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(94, 39);
             this.label19.TabIndex = 2;
-            this.label19.Text = "Dòng : ";
+            this.label19.Text = "Dòng điện : ";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel45
@@ -1629,7 +1629,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(93, 39);
             this.label14.TabIndex = 3;
-            this.label14.Text = "Áp : ";
+            this.label14.Text = "Điện áp : ";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel34
@@ -1670,7 +1670,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(93, 39);
             this.label15.TabIndex = 2;
-            this.label15.Text = "Dòng : ";
+            this.label15.Text = "Dòng điện : ";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel36
@@ -1817,7 +1817,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(93, 39);
             this.label10.TabIndex = 3;
-            this.label10.Text = "Áp : ";
+            this.label10.Text = "Điện áp : ";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel25
@@ -1858,7 +1858,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(93, 39);
             this.label11.TabIndex = 2;
-            this.label11.Text = "Dòng : ";
+            this.label11.Text = "Dòng điện : ";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel27
@@ -2005,7 +2005,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(93, 39);
             this.label6.TabIndex = 3;
-            this.label6.Text = "Áp : ";
+            this.label6.Text = "Điện áp : ";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel16
@@ -2046,7 +2046,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(93, 39);
             this.label7.TabIndex = 2;
-            this.label7.Text = "Dòng : ";
+            this.label7.Text = "Dòng điện : ";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel18
@@ -2193,7 +2193,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 39);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Áp : ";
+            this.label3.Text = "Điện áp : ";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel92
@@ -2234,7 +2234,7 @@
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(93, 39);
             this.label41.TabIndex = 1;
-            this.label41.Text = "Dòng : ";
+            this.label41.Text = "Dòng điện : ";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel94

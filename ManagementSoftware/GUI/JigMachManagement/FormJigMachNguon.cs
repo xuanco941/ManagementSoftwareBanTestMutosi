@@ -23,7 +23,7 @@ namespace ManagementSoftware.GUI.JigMachManagement
         }
         public void GetDataJigMachNguon()
         {
-            MainPLC.GetDataJigMach();
+            MainPLC.GetDataJigMachNguon();
             dong1.Text = DataPLC.DongDien[0].ToString();
             dong2.Text = DataPLC.DongDien[1].ToString();
             dong3.Text = DataPLC.DongDien[2].ToString();
@@ -61,7 +61,7 @@ namespace ManagementSoftware.GUI.JigMachManagement
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            GetDataJigMachNguon();
+            //GetDataJigMachNguon();
         }
     }
 }

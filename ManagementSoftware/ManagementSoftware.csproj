@@ -53,7 +53,7 @@
       <HintPath>..\..\..\..\..\..\..\Syncfusion\Ensential Studio\Windows\20.2.0.36\precompiledassemblies\net5.0\Syncfusion.Shared.Base.dll</HintPath>
     </Reference>
     <Reference Include="TrongTool">
-      <HintPath>..\..\..\..\..\..\..\Downloads\Thư viên WindowForm\TrongTool.dll</HintPath>
+      <HintPath>TrongTool.dll</HintPath>
     </Reference>
   </ItemGroup>
 

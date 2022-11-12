@@ -40,7 +40,7 @@ namespace ManagementSoftware.PLCSetting
 
                 // success
                 message = null;
-                DALActivity.AddActivity(new Activity("Kết nối PLC", "Kết nối máy PLC thành công.", ""));
+                DALActivity.AddActivity(new Activity("Khởi động ứng dụng", "Kết nối tới PLC thành công.", ""));
             }
             catch
             {
@@ -62,7 +62,7 @@ namespace ManagementSoftware.PLCSetting
         }
 
 
-        public static void GetDataJigMach()
+        public static void GetDataJigMachNguon()
         {
             DataPLC.DongDien = new List<double>();
             DataPLC.DienAp = new List<double>();
