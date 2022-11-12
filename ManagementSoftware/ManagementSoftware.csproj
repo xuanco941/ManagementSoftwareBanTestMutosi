@@ -84,6 +84,9 @@
     <Compile Update="GUI\CongTacManagement\TemplateCongTac3VT.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\Nguon.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>

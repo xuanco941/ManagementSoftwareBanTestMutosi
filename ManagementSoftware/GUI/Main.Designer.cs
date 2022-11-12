@@ -39,7 +39,7 @@ namespace ManagementSoftware.GUI
             this.buttonEmployee = new System.Windows.Forms.Button();
             this.buttonCongTac = new System.Windows.Forms.Button();
             this.buttonJigMach = new System.Windows.Forms.Button();
-            this.buttonNhapKho = new System.Windows.Forms.Button();
+            this.buttonNguon = new System.Windows.Forms.Button();
             this.buttonBauNong = new System.Windows.Forms.Button();
             this.buttonBepTu = new System.Windows.Forms.Button();
             this.buttonLoiLoc = new System.Windows.Forms.Button();
@@ -82,7 +82,7 @@ namespace ManagementSoftware.GUI
             this.panelItemMenu.Controls.Add(this.buttonEmployee);
             this.panelItemMenu.Controls.Add(this.buttonCongTac);
             this.panelItemMenu.Controls.Add(this.buttonJigMach);
-            this.panelItemMenu.Controls.Add(this.buttonNhapKho);
+            this.panelItemMenu.Controls.Add(this.buttonNguon);
             this.panelItemMenu.Controls.Add(this.buttonBauNong);
             this.panelItemMenu.Controls.Add(this.buttonBepTu);
             this.panelItemMenu.Controls.Add(this.buttonLoiLoc);
@@ -206,23 +206,24 @@ namespace ManagementSoftware.GUI
             this.buttonJigMach.UseVisualStyleBackColor = true;
             this.buttonJigMach.Click += new System.EventHandler(this.buttonJigMach_Click);
             // 
-            // buttonNhapKho
+            // buttonNguon
             // 
-            this.buttonNhapKho.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonNhapKho.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonNhapKho.FlatAppearance.BorderSize = 0;
-            this.buttonNhapKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNhapKho.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonNhapKho.ForeColor = System.Drawing.Color.White;
-            this.buttonNhapKho.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
-            this.buttonNhapKho.Location = new System.Drawing.Point(0, 237);
-            this.buttonNhapKho.Name = "buttonNhapKho";
-            this.buttonNhapKho.Size = new System.Drawing.Size(192, 79);
-            this.buttonNhapKho.TabIndex = 17;
-            this.buttonNhapKho.Text = "Nguồn";
-            this.buttonNhapKho.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonNhapKho.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonNhapKho.UseVisualStyleBackColor = true;
+            this.buttonNguon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonNguon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonNguon.FlatAppearance.BorderSize = 0;
+            this.buttonNguon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNguon.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonNguon.ForeColor = System.Drawing.Color.White;
+            this.buttonNguon.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
+            this.buttonNguon.Location = new System.Drawing.Point(0, 237);
+            this.buttonNguon.Name = "buttonNguon";
+            this.buttonNguon.Size = new System.Drawing.Size(192, 79);
+            this.buttonNguon.TabIndex = 17;
+            this.buttonNguon.Text = "Nguồn";
+            this.buttonNguon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonNguon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonNguon.UseVisualStyleBackColor = true;
+            this.buttonNguon.Click += new System.EventHandler(this.buttonNguon_Click);
             // 
             // buttonBauNong
             // 
@@ -426,7 +427,7 @@ namespace ManagementSoftware.GUI
         private Button buttonJigMach;
         private Button buttonBepTu;
         private Button buttonBauNong;
-        private Button buttonNhapKho;
+        private Button buttonNguon;
     }
 }
 

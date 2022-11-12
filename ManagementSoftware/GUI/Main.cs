@@ -136,5 +136,12 @@ namespace ManagementSoftware.GUI
             form.callAlert = new CongTac.CallAlert(Alert);
             ChangeFormContent(form, sender);
         }
+
+        private void buttonNguon_Click(object sender, EventArgs e)
+        {
+            Nguon form = new Nguon();
+            form.callAlert = new Nguon.CallAlert(Alert);
+            ChangeFormContent(form, sender);
+        }
     }
 }
