@@ -530,7 +530,7 @@
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(108, 41);
             this.label46.TabIndex = 3;
-            this.label46.Text = "CB nhiệt : ";
+            this.label46.Text = "CB nhiệt thân bầu nóng : ";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel105
