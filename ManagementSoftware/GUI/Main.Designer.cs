@@ -69,7 +69,7 @@ namespace ManagementSoftware.GUI
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(211, 332);
+            this.panelMenu.Size = new System.Drawing.Size(211, 478);
             this.panelMenu.TabIndex = 0;
             // 
             // panelItemMenu
@@ -89,7 +89,7 @@ namespace ManagementSoftware.GUI
             this.panelItemMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelItemMenu.Location = new System.Drawing.Point(0, 76);
             this.panelItemMenu.Name = "panelItemMenu";
-            this.panelItemMenu.Size = new System.Drawing.Size(211, 256);
+            this.panelItemMenu.Size = new System.Drawing.Size(211, 402);
             this.panelItemMenu.TabIndex = 1;
             // 
             // buttonDangXuat
@@ -176,7 +176,7 @@ namespace ManagementSoftware.GUI
             this.buttonCongTac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCongTac.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonCongTac.ForeColor = System.Drawing.Color.White;
-            this.buttonCongTac.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
+            this.buttonCongTac.Image = ((System.Drawing.Image)(resources.GetObject("buttonCongTac.Image")));
             this.buttonCongTac.Location = new System.Drawing.Point(0, 395);
             this.buttonCongTac.Name = "buttonCongTac";
             this.buttonCongTac.Size = new System.Drawing.Size(192, 79);
@@ -214,7 +214,7 @@ namespace ManagementSoftware.GUI
             this.buttonNguon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonNguon.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonNguon.ForeColor = System.Drawing.Color.White;
-            this.buttonNguon.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
+            this.buttonNguon.Image = ((System.Drawing.Image)(resources.GetObject("buttonNguon.Image")));
             this.buttonNguon.Location = new System.Drawing.Point(0, 237);
             this.buttonNguon.Name = "buttonNguon";
             this.buttonNguon.Size = new System.Drawing.Size(192, 79);
@@ -233,7 +233,7 @@ namespace ManagementSoftware.GUI
             this.buttonBauNong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBauNong.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonBauNong.ForeColor = System.Drawing.Color.White;
-            this.buttonBauNong.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
+            this.buttonBauNong.Image = ((System.Drawing.Image)(resources.GetObject("buttonBauNong.Image")));
             this.buttonBauNong.Location = new System.Drawing.Point(0, 158);
             this.buttonBauNong.Name = "buttonBauNong";
             this.buttonBauNong.Size = new System.Drawing.Size(192, 79);
@@ -252,7 +252,7 @@ namespace ManagementSoftware.GUI
             this.buttonBepTu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBepTu.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonBepTu.ForeColor = System.Drawing.Color.White;
-            this.buttonBepTu.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
+            this.buttonBepTu.Image = ((System.Drawing.Image)(resources.GetObject("buttonBepTu.Image")));
             this.buttonBepTu.Location = new System.Drawing.Point(0, 79);
             this.buttonBepTu.Name = "buttonBepTu";
             this.buttonBepTu.Size = new System.Drawing.Size(192, 79);
@@ -323,7 +323,7 @@ namespace ManagementSoftware.GUI
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(211, 0);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(925, 332);
+            this.panelContainer.Size = new System.Drawing.Size(970, 478);
             this.panelContainer.TabIndex = 3;
             // 
             // panelContent
@@ -333,7 +333,7 @@ namespace ManagementSoftware.GUI
             this.panelContent.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelContent.Location = new System.Drawing.Point(0, 76);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(925, 256);
+            this.panelContent.Size = new System.Drawing.Size(970, 402);
             this.panelContent.TabIndex = 5;
             // 
             // panelHeader
@@ -342,7 +342,7 @@ namespace ManagementSoftware.GUI
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(925, 76);
+            this.panelHeader.Size = new System.Drawing.Size(970, 76);
             this.panelHeader.TabIndex = 4;
             // 
             // tableLayoutPanel1
@@ -357,14 +357,14 @@ namespace ManagementSoftware.GUI
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(925, 76);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(970, 76);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panelAleart
             // 
             this.panelAleart.AutoScroll = true;
             this.panelAleart.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelAleart.Location = new System.Drawing.Point(502, 3);
+            this.panelAleart.Location = new System.Drawing.Point(547, 3);
             this.panelAleart.MaximumSize = new System.Drawing.Size(1260, 70);
             this.panelAleart.MinimumSize = new System.Drawing.Size(420, 70);
             this.panelAleart.Name = "panelAleart";
@@ -384,7 +384,7 @@ namespace ManagementSoftware.GUI
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1136, 332);
+            this.ClientSize = new System.Drawing.Size(1181, 478);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panelMenu);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

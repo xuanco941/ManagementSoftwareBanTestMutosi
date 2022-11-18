@@ -30,7 +30,7 @@ namespace ManagementSoftware.GUI
         {
             for (int i = 0; i < 3; i++)
             {
-                ItemThongKeJigMach form = new ItemThongKeJigMach();
+                ItemThongKeBauNong form = new ItemThongKeBauNong();
                 form.TopLevel = false;
                 panelThongKe.Controls.Add(form);
                 form.FormBorderStyle = FormBorderStyle.None;

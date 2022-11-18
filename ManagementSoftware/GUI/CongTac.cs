@@ -50,8 +50,9 @@ namespace ManagementSoftware.GUI
                 form.TopLevel = false;
                 form.FormBorderStyle = FormBorderStyle.None;
                 form.Dock = DockStyle.Top;
-                form.Show();
                 tabPageCT2ViTri.Controls.Add(form);
+                form.Show();
+
             }
         }
 
@@ -63,8 +64,8 @@ namespace ManagementSoftware.GUI
                 form.TopLevel = false;
                 form.FormBorderStyle = FormBorderStyle.None;
                 form.Dock = DockStyle.Top;
-                form.Show();
                 tabPageCT3ViTri.Controls.Add(form);
+                form.Show();
             }
         }
 
