@@ -99,6 +99,9 @@
     <Compile Update="GUI\Section\ThongKe\ItemCongTac2VT.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\Section\ThongKe\ItemThongKeNguon.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>

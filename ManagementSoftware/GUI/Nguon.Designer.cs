@@ -1260,7 +1260,6 @@
             this.tabPageGiamSat1.TabIndex = 2;
             this.tabPageGiamSat1.Text = "Giám sát Nguồn 1-15";
             this.tabPageGiamSat1.UseVisualStyleBackColor = true;
-            this.tabPageGiamSat1.Click += new System.EventHandler(this.tabPageGiamSat1_Click);
             // 
             // panel134
             // 

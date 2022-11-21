@@ -22,49 +22,20 @@ namespace ManagementSoftware.GUI
         {
             InitializeComponent();
 
-            ////set new content
-            //FormJigMachNguon form = new FormJigMachNguon();
-            //form.TopLevel = false;
-            //tabPageGiamSatJigMach.Controls.Add(form);
-            //form.FormBorderStyle = FormBorderStyle.None;
-            //form.Dock = DockStyle.Top;
-            //form.Show();
-
-
-            ////set new content
-            //FormJigMachTDS form2 = new FormJigMachTDS();
-            //form2.TopLevel = false;
-            //tabPageGiamSatJigMach.Controls.Add(form2);
-            //form2.FormBorderStyle = FormBorderStyle.None;
-            //form2.Dock = DockStyle.Top;
-            //form2.Show();
-            //this.Font = Common.FontForm;
-
-
             LoadFormThongKe();
         }
 
         void LoadFormThongKe()
         {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 10; i++)
             {
-                ItemThongKeJigMach form = new ItemThongKeJigMach();
+                ItemThongKeNguon form = new ItemThongKeNguon();
                 form.TopLevel = false;
                 panelThongKe.Controls.Add(form);
                 form.FormBorderStyle = FormBorderStyle.None;
                 form.Dock = DockStyle.Top;
                 form.Show();
             }
-        }
-
-        private void label39_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPageGiamSat1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
