@@ -1,5 +1,4 @@
 ﻿using ManagementSoftware.GUI.CongTacManagement;
-using ManagementSoftware.GUI.JigMachManagement;
 using ManagementSoftware.GUI.Section;
 using ManagementSoftware.GUI.Section.ThongKe;
 using Syncfusion.XPS;

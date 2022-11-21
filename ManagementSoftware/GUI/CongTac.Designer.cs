@@ -42,8 +42,8 @@
             this.buttonPage3 = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.buttonPage1 = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.buttonPage2 = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
-            this.gridLayout1 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
             this.tabPageThongKeCT3 = new System.Windows.Forms.TabPage();
+            this.panelThongKe3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonCustom1 = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.integerTextBox1 = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
@@ -51,15 +51,15 @@
             this.buttonCustom3 = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.buttonCustom4 = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.buttonCustom5 = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
-            this.panelThongKe3 = new System.Windows.Forms.Panel();
+            this.gridLayout1 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPageThongKeCT2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inputNumPageGo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLayout1)).BeginInit();
             this.tabPageThongKeCT3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.integerTextBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLayout1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -120,7 +120,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Wheat;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.buttonCustomGoPage);
             this.panel2.Controls.Add(this.inputNumPageGo);
@@ -268,11 +268,6 @@
             this.buttonPage2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.buttonPage2.UseVisualStyleBackColor = false;
             // 
-            // gridLayout1
-            // 
-            this.gridLayout1.Columns = 2;
-            this.gridLayout1.Rows = 1;
-            // 
             // tabPageThongKeCT3
             // 
             this.tabPageThongKeCT3.Controls.Add(this.panelThongKe3);
@@ -284,9 +279,19 @@
             this.tabPageThongKeCT3.Text = "Bảng thống kê công tắc 3 vị trí";
             this.tabPageThongKeCT3.UseVisualStyleBackColor = true;
             // 
+            // panelThongKe3
+            // 
+            this.panelThongKe3.AutoScroll = true;
+            this.panelThongKe3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelThongKe3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelThongKe3.Location = new System.Drawing.Point(0, 0);
+            this.panelThongKe3.Name = "panelThongKe3";
+            this.panelThongKe3.Size = new System.Drawing.Size(980, 450);
+            this.panelThongKe3.TabIndex = 3;
+            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Wheat;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.buttonCustom1);
             this.panel1.Controls.Add(this.integerTextBox1);
@@ -434,15 +439,10 @@
             this.buttonCustom5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.buttonCustom5.UseVisualStyleBackColor = false;
             // 
-            // panelThongKe3
+            // gridLayout1
             // 
-            this.panelThongKe3.AutoScroll = true;
-            this.panelThongKe3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelThongKe3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelThongKe3.Location = new System.Drawing.Point(0, 0);
-            this.panelThongKe3.Name = "panelThongKe3";
-            this.panelThongKe3.Size = new System.Drawing.Size(980, 450);
-            this.panelThongKe3.TabIndex = 3;
+            this.gridLayout1.Columns = 2;
+            this.gridLayout1.Rows = 1;
             // 
             // CongTac
             // 
@@ -458,11 +458,11 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inputNumPageGo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLayout1)).EndInit();
             this.tabPageThongKeCT3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.integerTextBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLayout1)).EndInit();
             this.ResumeLayout(false);
 
         }

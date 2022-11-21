@@ -28,12 +28,6 @@
     <Compile Update="GUI\JigMach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\JigMachManagement\FormJigMachNguon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUI\JigMachManagement\FormJigMachTDS.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="GUI\Section\ThongKe\ItemThongKeJigMach.cs">
       <SubType>Form</SubType>
     </Compile>

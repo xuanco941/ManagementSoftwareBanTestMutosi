@@ -1,5 +1,4 @@
-﻿using ManagementSoftware.GUI.JigMachManagement;
-using ManagementSoftware.GUI.Section;
+﻿using ManagementSoftware.GUI.Section;
 using ManagementSoftware.GUI.Section.ThongKe;
 using Syncfusion.XPS;
 using System;
@@ -59,6 +58,11 @@ namespace ManagementSoftware.GUI
         }
 
         private void label39_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPageGiamSat1_Click(object sender, EventArgs e)
         {
 
         }

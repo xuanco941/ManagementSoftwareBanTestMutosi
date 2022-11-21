@@ -141,6 +141,30 @@
             this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.panel57 = new System.Windows.Forms.Panel();
+            this.panel58 = new System.Windows.Forms.Panel();
+            this.panel59 = new System.Windows.Forms.Panel();
+            this.panel60 = new System.Windows.Forms.Panel();
+            this.panel61 = new System.Windows.Forms.Panel();
+            this.panel62 = new System.Windows.Forms.Panel();
+            this.panel63 = new System.Windows.Forms.Panel();
+            this.panel64 = new System.Windows.Forms.Panel();
+            this.panel65 = new System.Windows.Forms.Panel();
+            this.panel66 = new System.Windows.Forms.Panel();
+            this.panel67 = new System.Windows.Forms.Panel();
+            this.panel68 = new System.Windows.Forms.Panel();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -199,6 +223,18 @@
             this.panel4.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel57.SuspendLayout();
+            this.panel58.SuspendLayout();
+            this.panel59.SuspendLayout();
+            this.panel60.SuspendLayout();
+            this.panel61.SuspendLayout();
+            this.panel62.SuspendLayout();
+            this.panel63.SuspendLayout();
+            this.panel64.SuspendLayout();
+            this.panel65.SuspendLayout();
+            this.panel66.SuspendLayout();
+            this.panel67.SuspendLayout();
+            this.panel68.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -258,6 +294,17 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.Controls.Add(this.panel68, 5, 10);
+            this.tableLayoutPanel2.Controls.Add(this.panel67, 4, 10);
+            this.tableLayoutPanel2.Controls.Add(this.panel66, 3, 10);
+            this.tableLayoutPanel2.Controls.Add(this.panel65, 2, 10);
+            this.tableLayoutPanel2.Controls.Add(this.panel64, 1, 10);
+            this.tableLayoutPanel2.Controls.Add(this.panel63, 0, 10);
+            this.tableLayoutPanel2.Controls.Add(this.panel62, 5, 9);
+            this.tableLayoutPanel2.Controls.Add(this.panel61, 4, 9);
+            this.tableLayoutPanel2.Controls.Add(this.panel60, 3, 9);
+            this.tableLayoutPanel2.Controls.Add(this.panel59, 2, 9);
+            this.tableLayoutPanel2.Controls.Add(this.panel58, 1, 9);
             this.tableLayoutPanel2.Controls.Add(this.panel56, 5, 8);
             this.tableLayoutPanel2.Controls.Add(this.panel55, 5, 7);
             this.tableLayoutPanel2.Controls.Add(this.panel54, 5, 6);
@@ -312,6 +359,7 @@
             this.tableLayoutPanel2.Controls.Add(this.panel4, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel14, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 5, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel57, 0, 9);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -1470,6 +1518,258 @@
             this.label6.Text = "Cảm biến nhiệt";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel57
+            // 
+            this.panel57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel57.Controls.Add(this.label40);
+            this.panel57.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel57.Location = new System.Drawing.Point(3, 231);
+            this.panel57.Name = "panel57";
+            this.panel57.Size = new System.Drawing.Size(161, 19);
+            this.panel57.TabIndex = 54;
+            // 
+            // panel58
+            // 
+            this.panel58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel58.Controls.Add(this.label50);
+            this.panel58.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel58.Location = new System.Drawing.Point(170, 231);
+            this.panel58.Name = "panel58";
+            this.panel58.Size = new System.Drawing.Size(161, 19);
+            this.panel58.TabIndex = 55;
+            // 
+            // panel59
+            // 
+            this.panel59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel59.Controls.Add(this.label60);
+            this.panel59.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel59.Location = new System.Drawing.Point(337, 231);
+            this.panel59.Name = "panel59";
+            this.panel59.Size = new System.Drawing.Size(161, 19);
+            this.panel59.TabIndex = 56;
+            // 
+            // panel60
+            // 
+            this.panel60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel60.Controls.Add(this.label62);
+            this.panel60.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel60.Location = new System.Drawing.Point(504, 231);
+            this.panel60.Name = "panel60";
+            this.panel60.Size = new System.Drawing.Size(161, 19);
+            this.panel60.TabIndex = 57;
+            // 
+            // panel61
+            // 
+            this.panel61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel61.Controls.Add(this.label64);
+            this.panel61.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel61.Location = new System.Drawing.Point(671, 231);
+            this.panel61.Name = "panel61";
+            this.panel61.Size = new System.Drawing.Size(161, 19);
+            this.panel61.TabIndex = 58;
+            // 
+            // panel62
+            // 
+            this.panel62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel62.Controls.Add(this.label67);
+            this.panel62.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel62.Location = new System.Drawing.Point(838, 231);
+            this.panel62.Name = "panel62";
+            this.panel62.Size = new System.Drawing.Size(164, 19);
+            this.panel62.TabIndex = 59;
+            // 
+            // panel63
+            // 
+            this.panel63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel63.Controls.Add(this.label41);
+            this.panel63.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel63.Location = new System.Drawing.Point(3, 256);
+            this.panel63.Name = "panel63";
+            this.panel63.Size = new System.Drawing.Size(161, 21);
+            this.panel63.TabIndex = 60;
+            // 
+            // panel64
+            // 
+            this.panel64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel64.Controls.Add(this.label51);
+            this.panel64.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel64.Location = new System.Drawing.Point(170, 256);
+            this.panel64.Name = "panel64";
+            this.panel64.Size = new System.Drawing.Size(161, 21);
+            this.panel64.TabIndex = 61;
+            // 
+            // panel65
+            // 
+            this.panel65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel65.Controls.Add(this.label61);
+            this.panel65.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel65.Location = new System.Drawing.Point(337, 256);
+            this.panel65.Name = "panel65";
+            this.panel65.Size = new System.Drawing.Size(161, 21);
+            this.panel65.TabIndex = 62;
+            // 
+            // panel66
+            // 
+            this.panel66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel66.Controls.Add(this.label63);
+            this.panel66.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel66.Location = new System.Drawing.Point(504, 256);
+            this.panel66.Name = "panel66";
+            this.panel66.Size = new System.Drawing.Size(161, 21);
+            this.panel66.TabIndex = 63;
+            // 
+            // panel67
+            // 
+            this.panel67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel67.Controls.Add(this.label65);
+            this.panel67.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel67.Location = new System.Drawing.Point(671, 256);
+            this.panel67.Name = "panel67";
+            this.panel67.Size = new System.Drawing.Size(161, 21);
+            this.panel67.TabIndex = 64;
+            // 
+            // panel68
+            // 
+            this.panel68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel68.Controls.Add(this.label66);
+            this.panel68.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel68.Location = new System.Drawing.Point(838, 256);
+            this.panel68.Name = "panel68";
+            this.panel68.Size = new System.Drawing.Size(164, 21);
+            this.panel68.TabIndex = 65;
+            // 
+            // label40
+            // 
+            this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label40.ForeColor = System.Drawing.SystemColors.Control;
+            this.label40.Location = new System.Drawing.Point(0, 0);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(159, 17);
+            this.label40.TabIndex = 4;
+            this.label40.Text = "Jig 9";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label41
+            // 
+            this.label41.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label41.ForeColor = System.Drawing.SystemColors.Control;
+            this.label41.Location = new System.Drawing.Point(0, 0);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(159, 19);
+            this.label41.TabIndex = 4;
+            this.label41.Text = "Jig 10";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label50
+            // 
+            this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label50.ForeColor = System.Drawing.SystemColors.Control;
+            this.label50.Location = new System.Drawing.Point(0, 0);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(159, 17);
+            this.label50.TabIndex = 6;
+            this.label50.Text = "3:55 10/11/2022";
+            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label51
+            // 
+            this.label51.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label51.ForeColor = System.Drawing.SystemColors.Control;
+            this.label51.Location = new System.Drawing.Point(0, 0);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(159, 19);
+            this.label51.TabIndex = 6;
+            this.label51.Text = "3:55 10/11/2022";
+            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label60
+            // 
+            this.label60.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label60.ForeColor = System.Drawing.SystemColors.Control;
+            this.label60.Location = new System.Drawing.Point(0, 0);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(159, 17);
+            this.label60.TabIndex = 6;
+            this.label60.Text = "10,23";
+            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label61
+            // 
+            this.label61.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label61.ForeColor = System.Drawing.SystemColors.Control;
+            this.label61.Location = new System.Drawing.Point(0, 0);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(159, 19);
+            this.label61.TabIndex = 6;
+            this.label61.Text = "10,23";
+            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label62
+            // 
+            this.label62.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label62.ForeColor = System.Drawing.SystemColors.Control;
+            this.label62.Location = new System.Drawing.Point(0, 0);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(159, 17);
+            this.label62.TabIndex = 6;
+            this.label62.Text = "10,23";
+            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label63
+            // 
+            this.label63.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label63.ForeColor = System.Drawing.SystemColors.Control;
+            this.label63.Location = new System.Drawing.Point(0, 0);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(159, 19);
+            this.label63.TabIndex = 6;
+            this.label63.Text = "10,23";
+            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label64
+            // 
+            this.label64.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label64.ForeColor = System.Drawing.SystemColors.Control;
+            this.label64.Location = new System.Drawing.Point(0, 0);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(159, 17);
+            this.label64.TabIndex = 6;
+            this.label64.Text = "10,23";
+            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label65
+            // 
+            this.label65.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label65.ForeColor = System.Drawing.SystemColors.Control;
+            this.label65.Location = new System.Drawing.Point(0, 0);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(159, 19);
+            this.label65.TabIndex = 6;
+            this.label65.Text = "10,23";
+            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label66
+            // 
+            this.label66.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label66.ForeColor = System.Drawing.SystemColors.Control;
+            this.label66.Location = new System.Drawing.Point(0, 0);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(162, 19);
+            this.label66.TabIndex = 6;
+            this.label66.Text = "Off";
+            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label67
+            // 
+            this.label67.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label67.ForeColor = System.Drawing.SystemColors.Control;
+            this.label67.Location = new System.Drawing.Point(0, 0);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(162, 17);
+            this.label67.TabIndex = 6;
+            this.label67.Text = "Off";
+            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ItemThongKeBauNong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1539,6 +1839,18 @@
             this.panel4.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel57.ResumeLayout(false);
+            this.panel58.ResumeLayout(false);
+            this.panel59.ResumeLayout(false);
+            this.panel60.ResumeLayout(false);
+            this.panel61.ResumeLayout(false);
+            this.panel62.ResumeLayout(false);
+            this.panel63.ResumeLayout(false);
+            this.panel64.ResumeLayout(false);
+            this.panel65.ResumeLayout(false);
+            this.panel66.ResumeLayout(false);
+            this.panel67.ResumeLayout(false);
+            this.panel68.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1658,5 +1970,29 @@
         private Label label9;
         private Label label8;
         private Label label7;
+        private Panel panel68;
+        private Label label66;
+        private Panel panel67;
+        private Label label65;
+        private Panel panel66;
+        private Label label63;
+        private Panel panel65;
+        private Label label61;
+        private Panel panel64;
+        private Label label51;
+        private Panel panel63;
+        private Label label41;
+        private Panel panel62;
+        private Label label67;
+        private Panel panel61;
+        private Label label64;
+        private Panel panel60;
+        private Label label62;
+        private Panel panel59;
+        private Label label60;
+        private Panel panel58;
+        private Label label50;
+        private Panel panel57;
+        private Label label40;
     }
 }

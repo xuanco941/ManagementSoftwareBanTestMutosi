@@ -91,7 +91,7 @@
             this.panel70 = new System.Windows.Forms.Panel();
             this.toggleButton7 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel71 = new System.Windows.Forms.Panel();
-            this.label31 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel72 = new System.Windows.Forms.Panel();
             this.button19 = new System.Windows.Forms.Button();
             this.panel73 = new System.Windows.Forms.Panel();
@@ -112,7 +112,7 @@
             this.panel59 = new System.Windows.Forms.Panel();
             this.toggleButton6 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel60 = new System.Windows.Forms.Panel();
-            this.label26 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel61 = new System.Windows.Forms.Panel();
             this.button16 = new System.Windows.Forms.Button();
             this.panel62 = new System.Windows.Forms.Panel();
@@ -133,7 +133,7 @@
             this.panel48 = new System.Windows.Forms.Panel();
             this.toggleButton5 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel49 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel50 = new System.Windows.Forms.Panel();
             this.button13 = new System.Windows.Forms.Button();
             this.panel51 = new System.Windows.Forms.Panel();
@@ -154,7 +154,7 @@
             this.panel37 = new System.Windows.Forms.Panel();
             this.toggleButton4 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel38 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             this.panel39 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
             this.panel40 = new System.Windows.Forms.Panel();
@@ -175,7 +175,7 @@
             this.panel26 = new System.Windows.Forms.Panel();
             this.toggleButton3 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel27 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
             this.panel28 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.panel29 = new System.Windows.Forms.Panel();
@@ -196,7 +196,7 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.toggleButton2 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
@@ -217,7 +217,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.toggleButton1 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -238,7 +238,7 @@
             this.panel81 = new System.Windows.Forms.Panel();
             this.toggleButton14 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel82 = new System.Windows.Forms.Panel();
-            this.label34 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel83 = new System.Windows.Forms.Panel();
             this.button29 = new System.Windows.Forms.Button();
             this.panel84 = new System.Windows.Forms.Panel();
@@ -772,8 +772,8 @@
             this.label41.Location = new System.Drawing.Point(0, 0);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(108, 41);
-            this.label41.TabIndex = 3;
-            this.label41.Text = "CB nhiệt : ";
+            this.label41.TabIndex = 4;
+            this.label41.Text = "CB nhiệt thân bầu nóng : ";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel94
@@ -1000,24 +1000,24 @@
             // panel71
             // 
             this.panel71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel71.Controls.Add(this.label31);
+            this.panel71.Controls.Add(this.label1);
             this.panel71.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel71.Location = new System.Drawing.Point(3, 147);
             this.panel71.Name = "panel71";
             this.panel71.Size = new System.Drawing.Size(110, 43);
             this.panel71.TabIndex = 6;
             // 
-            // label31
+            // label1
             // 
-            this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label31.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label31.ForeColor = System.Drawing.SystemColors.Control;
-            this.label31.Location = new System.Drawing.Point(0, 0);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(108, 41);
-            this.label31.TabIndex = 3;
-            this.label31.Text = "CB nhiệt : ";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 41);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "CB nhiệt thân bầu nóng : ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel72
             // 
@@ -1243,24 +1243,24 @@
             // panel60
             // 
             this.panel60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel60.Controls.Add(this.label26);
+            this.panel60.Controls.Add(this.label6);
             this.panel60.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel60.Location = new System.Drawing.Point(3, 147);
             this.panel60.Name = "panel60";
             this.panel60.Size = new System.Drawing.Size(110, 43);
             this.panel60.TabIndex = 6;
             // 
-            // label26
+            // label6
             // 
-            this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label26.ForeColor = System.Drawing.SystemColors.Control;
-            this.label26.Location = new System.Drawing.Point(0, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(108, 41);
-            this.label26.TabIndex = 3;
-            this.label26.Text = "CB nhiệt : ";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
+            this.label6.Location = new System.Drawing.Point(0, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(108, 41);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "CB nhiệt thân bầu nóng : ";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel61
             // 
@@ -1486,24 +1486,24 @@
             // panel49
             // 
             this.panel49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel49.Controls.Add(this.label21);
+            this.panel49.Controls.Add(this.label11);
             this.panel49.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel49.Location = new System.Drawing.Point(3, 147);
             this.panel49.Name = "panel49";
             this.panel49.Size = new System.Drawing.Size(110, 43);
             this.panel49.TabIndex = 6;
             // 
-            // label21
+            // label11
             // 
-            this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.ForeColor = System.Drawing.SystemColors.Control;
-            this.label21.Location = new System.Drawing.Point(0, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(108, 41);
-            this.label21.TabIndex = 3;
-            this.label21.Text = "CB nhiệt : ";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.SystemColors.Control;
+            this.label11.Location = new System.Drawing.Point(0, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(108, 41);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "CB nhiệt thân bầu nóng : ";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel50
             // 
@@ -1729,24 +1729,24 @@
             // panel38
             // 
             this.panel38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel38.Controls.Add(this.label16);
+            this.panel38.Controls.Add(this.label34);
             this.panel38.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel38.Location = new System.Drawing.Point(3, 147);
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(110, 43);
             this.panel38.TabIndex = 6;
             // 
-            // label16
+            // label34
             // 
-            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.SystemColors.Control;
-            this.label16.Location = new System.Drawing.Point(0, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(108, 41);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "CB nhiệt : ";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label34.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label34.ForeColor = System.Drawing.SystemColors.Control;
+            this.label34.Location = new System.Drawing.Point(0, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(108, 41);
+            this.label34.TabIndex = 5;
+            this.label34.Text = "CB nhiệt thân bầu nóng : ";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel39
             // 
@@ -1972,24 +1972,24 @@
             // panel27
             // 
             this.panel27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel27.Controls.Add(this.label11);
+            this.panel27.Controls.Add(this.label31);
             this.panel27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel27.Location = new System.Drawing.Point(3, 147);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(110, 43);
             this.panel27.TabIndex = 6;
             // 
-            // label11
+            // label31
             // 
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.SystemColors.Control;
-            this.label11.Location = new System.Drawing.Point(0, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 41);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "CB nhiệt : ";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label31.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label31.ForeColor = System.Drawing.SystemColors.Control;
+            this.label31.Location = new System.Drawing.Point(0, 0);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(108, 41);
+            this.label31.TabIndex = 5;
+            this.label31.Text = "CB nhiệt thân bầu nóng : ";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel28
             // 
@@ -2215,24 +2215,24 @@
             // panel16
             // 
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel16.Controls.Add(this.label6);
+            this.panel16.Controls.Add(this.label26);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel16.Location = new System.Drawing.Point(3, 147);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(110, 43);
             this.panel16.TabIndex = 6;
             // 
-            // label6
+            // label26
             // 
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(0, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 41);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "CB nhiệt : ";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label26.ForeColor = System.Drawing.SystemColors.Control;
+            this.label26.Location = new System.Drawing.Point(0, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(108, 41);
+            this.label26.TabIndex = 5;
+            this.label26.Text = "CB nhiệt thân bầu nóng : ";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel17
             // 
@@ -2458,24 +2458,24 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.label21);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(3, 147);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(110, 43);
             this.panel5.TabIndex = 6;
             // 
-            // label1
+            // label21
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 41);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "CB nhiệt : ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label21.ForeColor = System.Drawing.SystemColors.Control;
+            this.label21.Location = new System.Drawing.Point(0, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(108, 41);
+            this.label21.TabIndex = 5;
+            this.label21.Text = "CB nhiệt thân bầu nóng : ";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel6
             // 
@@ -2701,24 +2701,24 @@
             // panel82
             // 
             this.panel82.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel82.Controls.Add(this.label34);
+            this.panel82.Controls.Add(this.label16);
             this.panel82.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel82.Location = new System.Drawing.Point(3, 147);
             this.panel82.Name = "panel82";
             this.panel82.Size = new System.Drawing.Size(110, 43);
             this.panel82.TabIndex = 6;
             // 
-            // label34
+            // label16
             // 
-            this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label34.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label34.ForeColor = System.Drawing.SystemColors.Control;
-            this.label34.Location = new System.Drawing.Point(0, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(108, 41);
-            this.label34.TabIndex = 3;
-            this.label34.Text = "CB nhiệt : ";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.ForeColor = System.Drawing.SystemColors.Control;
+            this.label16.Location = new System.Drawing.Point(0, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(108, 41);
+            this.label16.TabIndex = 5;
+            this.label16.Text = "CB nhiệt thân bầu nóng : ";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel83
             // 
@@ -2897,7 +2897,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Wheat;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.buttonCustomGoPage);
             this.panel2.Controls.Add(this.inputNumPageGo);
@@ -3222,7 +3222,6 @@
         private TableLayoutPanel tableLayoutPanel8;
         private Panel panel81;
         private Panel panel82;
-        private Label label34;
         private Panel panel83;
         private Button button29;
         private Panel panel84;
@@ -3244,7 +3243,6 @@
         private Panel panel15;
         private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton2;
         private Panel panel16;
-        private Label label6;
         private Panel panel17;
         private Button button4;
         private Panel panel18;
@@ -3265,7 +3263,6 @@
         private Panel panel4;
         private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton1;
         private Panel panel5;
-        private Label label1;
         private Panel panel6;
         private Button button1;
         private Panel panel7;
@@ -3307,7 +3304,6 @@
         private Panel panel92;
         private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton8;
         private Panel panel93;
-        private Label label41;
         private Panel panel94;
         private Button button22;
         private Panel panel95;
@@ -3328,7 +3324,6 @@
         private Panel panel70;
         private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton7;
         private Panel panel71;
-        private Label label31;
         private Panel panel72;
         private Button button19;
         private Panel panel73;
@@ -3349,7 +3344,6 @@
         private Panel panel59;
         private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton6;
         private Panel panel60;
-        private Label label26;
         private Panel panel61;
         private Button button16;
         private Panel panel62;
@@ -3370,7 +3364,6 @@
         private Panel panel48;
         private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton5;
         private Panel panel49;
-        private Label label21;
         private Panel panel50;
         private Button button13;
         private Panel panel51;
@@ -3391,7 +3384,6 @@
         private Panel panel37;
         private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton4;
         private Panel panel38;
-        private Label label16;
         private Panel panel39;
         private Button button10;
         private Panel panel40;
@@ -3412,7 +3404,6 @@
         private Panel panel26;
         private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton3;
         private Panel panel27;
-        private Label label11;
         private Panel panel28;
         private Button button7;
         private Panel panel29;
@@ -3427,5 +3418,14 @@
         private Label label14;
         private Panel panel34;
         private Label label15;
+        private Label label41;
+        private Label label1;
+        private Label label6;
+        private Label label11;
+        private Label label34;
+        private Label label31;
+        private Label label26;
+        private Label label21;
+        private Label label16;
     }
 }
