@@ -58,5 +58,9 @@ namespace ManagementSoftware.GUI
             }
         }
 
+        private void label39_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

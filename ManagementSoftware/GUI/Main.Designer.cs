@@ -195,7 +195,7 @@ namespace ManagementSoftware.GUI
             this.buttonJigMach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonJigMach.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonJigMach.ForeColor = System.Drawing.Color.White;
-            this.buttonJigMach.Image = global::ManagementSoftware.Properties.Resources.dashboard_24;
+            this.buttonJigMach.Image = ((System.Drawing.Image)(resources.GetObject("buttonJigMach.Image")));
             this.buttonJigMach.Location = new System.Drawing.Point(0, 316);
             this.buttonJigMach.Name = "buttonJigMach";
             this.buttonJigMach.Size = new System.Drawing.Size(192, 79);
