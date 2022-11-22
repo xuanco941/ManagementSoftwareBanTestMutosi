@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ManagementSoftware.Models
 {
-    [Table("TestJigMach")]
-    public class TestJigMach
+    [Table("TestCongTac3VT")]
+    public class TestCongTac3VT
     {
         [Key]
-        public int TestJigMachID { get; set; }
+        public int TestCongTac3VTID { get; set; }
         public DateTime CreateAt { get; set; }
     }
 }

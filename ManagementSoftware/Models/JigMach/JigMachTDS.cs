@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManagementSoftware.Models.JigMach
+namespace ManagementSoftware.Models
 {
     [Table("JigMachTDS")]
 
@@ -14,11 +14,10 @@ namespace ManagementSoftware.Models.JigMach
     {
         [Key]
         public int JigMachTDSID { get; set; }
-        public int JigMachTDSNumber { get; set; }
+        public string JigMachTDSName { get; set; }
         public double ApDC { get; set; }
         public bool Van { get; set; }
         public bool CBApSuat { get; set; }
-        public DateTime CreateAt { get; set; }
         public int TestJigMachID { get; set; }
         public TestJigMach TestJigMach { get; set; }
     }

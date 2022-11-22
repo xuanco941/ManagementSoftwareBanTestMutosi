@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace ManagementSoftware.Models
 {
-    [Table("TestJigMach")]
-    public class TestJigMach
+    [Table("TestLoiLoc")]
+    public class TestLoiLoc
     {
         [Key]
-        public int TestJigMachID { get; set; }
+        public int TestLoiLocID { get; set; }
         public DateTime CreateAt { get; set; }
     }
 }

@@ -422,7 +422,7 @@
             this.tabPageGiamSatJigMach.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageGiamSatJigMach.Size = new System.Drawing.Size(1178, 497);
             this.tabPageGiamSatJigMach.TabIndex = 0;
-            this.tabPageGiamSatJigMach.Text = "Giám sát Lõi Lọc";
+            this.tabPageGiamSatJigMach.Text = "Giám sát Bầu Nóng";
             this.tabPageGiamSatJigMach.UseVisualStyleBackColor = true;
             // 
             // panelGiamSat
