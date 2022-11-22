@@ -46,7 +46,13 @@ namespace ManagementSoftware.GUI
             }
 
             //remove controls in panel
-            panelContent.Controls.Clear();
+
+            //panelContent.Controls.Clear();
+            foreach (Form mainScreen in panelContent.Controls)
+            {
+                mainScreen.Close();
+                mainScreen.Dispose();
+            }
 
             //set new content
             form.TopLevel = false;
@@ -55,6 +61,7 @@ namespace ManagementSoftware.GUI
             form.Dock = DockStyle.Fill;
             form.Show();
             this.Font = Common.FontForm;
+            
         }
         private void ChangeFormContentWithHeaderName(Form form, string header)
         {

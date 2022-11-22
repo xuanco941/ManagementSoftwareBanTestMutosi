@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ManagementSoftware.GUI.Section.ThongKe
 {
-    public partial class ItemCongTac2VT : Form
+    public partial class ItemCongTac3VT : Form
     {
-        public ItemCongTac2VT()
+        public ItemCongTac3VT()
         {
             InitializeComponent();
         }

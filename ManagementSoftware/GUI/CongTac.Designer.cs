@@ -34,7 +34,7 @@
             this.tabPageCT2ViTri = new System.Windows.Forms.TabPage();
             this.tabPageCT3ViTri = new System.Windows.Forms.TabPage();
             this.tabPageThongKeCT2 = new System.Windows.Forms.TabPage();
-            this.panelThongKe = new System.Windows.Forms.Panel();
+            this.panelThongKe2VT = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonCustomGoPage = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.inputNumPageGo = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
@@ -43,7 +43,7 @@
             this.buttonPage1 = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.buttonPage2 = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.tabPageThongKeCT3 = new System.Windows.Forms.TabPage();
-            this.panelThongKe3 = new System.Windows.Forms.Panel();
+            this.panelThongKe3VT = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonCustom1 = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.integerTextBox1 = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
@@ -98,7 +98,7 @@
             // 
             // tabPageThongKeCT2
             // 
-            this.tabPageThongKeCT2.Controls.Add(this.panelThongKe);
+            this.tabPageThongKeCT2.Controls.Add(this.panelThongKe2VT);
             this.tabPageThongKeCT2.Controls.Add(this.panel2);
             this.tabPageThongKeCT2.Location = new System.Drawing.Point(4, 24);
             this.tabPageThongKeCT2.Name = "tabPageThongKeCT2";
@@ -108,15 +108,15 @@
             this.tabPageThongKeCT2.Text = "Bảng thống kê công tắc 2 vị trí";
             this.tabPageThongKeCT2.UseVisualStyleBackColor = true;
             // 
-            // panelThongKe
+            // panelThongKe2VT
             // 
-            this.panelThongKe.AutoScroll = true;
-            this.panelThongKe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelThongKe.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelThongKe.Location = new System.Drawing.Point(3, 3);
-            this.panelThongKe.Name = "panelThongKe";
-            this.panelThongKe.Size = new System.Drawing.Size(974, 449);
-            this.panelThongKe.TabIndex = 2;
+            this.panelThongKe2VT.AutoScroll = true;
+            this.panelThongKe2VT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelThongKe2VT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelThongKe2VT.Location = new System.Drawing.Point(3, 3);
+            this.panelThongKe2VT.Name = "panelThongKe2VT";
+            this.panelThongKe2VT.Size = new System.Drawing.Size(974, 449);
+            this.panelThongKe2VT.TabIndex = 2;
             // 
             // panel2
             // 
@@ -270,7 +270,7 @@
             // 
             // tabPageThongKeCT3
             // 
-            this.tabPageThongKeCT3.Controls.Add(this.panelThongKe3);
+            this.tabPageThongKeCT3.Controls.Add(this.panelThongKe3VT);
             this.tabPageThongKeCT3.Controls.Add(this.panel1);
             this.tabPageThongKeCT3.Location = new System.Drawing.Point(4, 24);
             this.tabPageThongKeCT3.Name = "tabPageThongKeCT3";
@@ -279,15 +279,15 @@
             this.tabPageThongKeCT3.Text = "Bảng thống kê công tắc 3 vị trí";
             this.tabPageThongKeCT3.UseVisualStyleBackColor = true;
             // 
-            // panelThongKe3
+            // panelThongKe3VT
             // 
-            this.panelThongKe3.AutoScroll = true;
-            this.panelThongKe3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelThongKe3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelThongKe3.Location = new System.Drawing.Point(0, 0);
-            this.panelThongKe3.Name = "panelThongKe3";
-            this.panelThongKe3.Size = new System.Drawing.Size(980, 450);
-            this.panelThongKe3.TabIndex = 3;
+            this.panelThongKe3VT.AutoScroll = true;
+            this.panelThongKe3VT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelThongKe3VT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelThongKe3VT.Location = new System.Drawing.Point(0, 0);
+            this.panelThongKe3VT.Name = "panelThongKe3VT";
+            this.panelThongKe3VT.Size = new System.Drawing.Size(980, 450);
+            this.panelThongKe3VT.TabIndex = 3;
             // 
             // panel1
             // 
@@ -472,7 +472,7 @@
         private TabControl tabControl1;
         private TabPage tabPageCT2ViTri;
         private TabPage tabPageThongKeCT2;
-        private Panel panelThongKe;
+        private Panel panelThongKe2VT;
         private Panel panel2;
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonCustomGoPage;
         private Syncfusion.Windows.Forms.Tools.IntegerTextBox inputNumPageGo;
@@ -483,7 +483,7 @@
         private Syncfusion.Windows.Forms.Tools.GridLayout gridLayout1;
         private TabPage tabPageCT3ViTri;
         private TabPage tabPageThongKeCT3;
-        private Panel panelThongKe3;
+        private Panel panelThongKe3VT;
         private Panel panel1;
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonCustom1;
         private Syncfusion.Windows.Forms.Tools.IntegerTextBox integerTextBox1;

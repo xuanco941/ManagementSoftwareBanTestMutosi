@@ -23,18 +23,31 @@ namespace ManagementSoftware.GUI
         {
             InitializeComponent();
 
-            LoadFormThongKe();
+            LoadFormThongKe2VT();
+            LoadFormThongKe3VT();
             LoadTabPageCongTac2VT();
             LoadTabPageCongTac3VT();
         }
 
-        void LoadFormThongKe()
+        void LoadFormThongKe2VT()
         {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 5; i++)
             {
-                ItemThongKeJigMach form = new ItemThongKeJigMach();
+                ItemCongTac2VT form = new ItemCongTac2VT();
                 form.TopLevel = false;
-                panelThongKe.Controls.Add(form);
+                panelThongKe2VT.Controls.Add(form);
+                form.FormBorderStyle = FormBorderStyle.None;
+                form.Dock = DockStyle.Top;
+                form.Show();
+            }
+        }
+        void LoadFormThongKe3VT()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                ItemCongTac3VT form = new ItemCongTac3VT();
+                form.TopLevel = false;
+                panelThongKe3VT.Controls.Add(form);
                 form.FormBorderStyle = FormBorderStyle.None;
                 form.Dock = DockStyle.Top;
                 form.Show();

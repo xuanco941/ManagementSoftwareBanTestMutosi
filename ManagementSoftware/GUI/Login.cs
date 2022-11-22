@@ -26,7 +26,7 @@ namespace ManagementSoftware.GUI
         {
 
             //init db
-            new DataBaseContext().CreateDatabase();
+            //new DataBaseContext().CreateDatabase();
 
             string Username = textBoxTaiKhoan.Texts.Trim();
             string Password = textBoxMatKhau.Texts.Trim();
