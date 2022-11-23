@@ -129,7 +129,7 @@ namespace ManagementSoftware.Models
         }
         public void CreateDatabase()
         {
-            //this.Database.EnsureDeleted();
+            this.Database.EnsureDeleted();
             //init db
             if (this.Database.EnsureCreated() == true)
             {
@@ -139,6 +139,38 @@ namespace ManagementSoftware.Models
                 DALUser.AddUser(Common.UserAdmin);
 
                 DALActivity.AddActivity(new Activity("Hệ thống", "Khởi tạo tài khoản admin.", Common.UserAdmin.Username));
+
+
+                for (int i = 0; i< 40; i++)
+                {
+                    List<Models.LoiLoc> loiLocs1 = new List<Models.LoiLoc>();
+
+                    Models.LoiLoc loiLoca = new Models.LoiLoc();
+                    loiLoca.LoiLocName = TenThietBi.LoiLoc1;
+                    loiLoca.ThoiGianXa = 3.2;
+                    loiLoca.SoLanTest = 2;
+
+                    Models.LoiLoc loiLocb = new Models.LoiLoc();
+                    loiLocb.LoiLocName = TenThietBi.LoiLoc2;
+                    loiLocb.ThoiGianXa = 4.2;
+                    loiLocb.SoLanTest = 9;
+                    loiLocb.ThoiGianNen = 7;
+
+                    Models.LoiLoc loiLocc = new Models.LoiLoc();
+                    loiLocc.LoiLocName = TenThietBi.LoiLoc1va2;
+                    loiLocc.ThoiGianXa = 4.2;
+                    loiLocc.SoLanTest = 9;
+                    loiLocc.ThoiGianNen = 7;
+                    loiLocc.ThoiGianGiu = 10;
+                    loiLocc.ApSuatTest = 1000.1;
+
+                    loiLocs1.Add(loiLoca);
+                    loiLocs1.Add(loiLocb);
+                    loiLocs1.Add(loiLocc);
+
+                    DALLoiLoc.Add(loiLocs1);
+                }
+
 
             }
         }

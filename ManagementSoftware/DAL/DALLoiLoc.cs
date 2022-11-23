@@ -9,15 +9,22 @@ namespace ManagementSoftware.DAL
 {
     public class DALLoiLoc
     {
-        public static void Add(TestLoiLoc testLoiLoc ,LoiLoc loiLoc)
+        public static void Add(List<LoiLoc> list)
         {
             DataBaseContext dbContext = new DataBaseContext();
+            TestLoiLoc testID = new TestLoiLoc();
 
-            dbContext.TestLoiLocs.Add(testLoiLoc);
+            dbContext.TestLoiLocs.Add(testID);
             dbContext.SaveChanges();
 
-            loiLoc.TestLoiLocID = testLoiLoc.TestLoiLocID;
-            dbContext.LoiLocs.Add(loiLoc);
+            foreach(var i in list)
+            {
+                if (i != null)
+                {
+                    i.TestLoiLocID = testID.TestLoiLocID;
+                }
+            }
+            dbContext.LoiLocs.AddRange(list);
             dbContext.SaveChanges();
         }
     }

@@ -33,6 +33,5 @@ namespace ManagementSoftware
         public const string GROUPS = "GR";
         public const string ACTIVITIES = "A";
 
-
     }
 }

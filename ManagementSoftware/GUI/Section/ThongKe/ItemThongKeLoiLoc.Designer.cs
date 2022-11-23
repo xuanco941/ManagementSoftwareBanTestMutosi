@@ -29,30 +29,44 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.TimeID = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.ThoiGianGiu1va2 = new System.Windows.Forms.Label();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.ThoiGianXa1va2 = new System.Windows.Forms.Label();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.ThoiGianGiu2 = new System.Windows.Forms.Label();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.ThoiGianXa2 = new System.Windows.Forms.Label();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.ThoiGianGiu1 = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.ThoiGianXa1 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
+            this.ThoiGianNen1va2 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.ApSuatTest1va2 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.SoLanTest1va2 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.label53 = new System.Windows.Forms.Label();
+            this.ThoiGianNen2 = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.label43 = new System.Windows.Forms.Label();
+            this.ApSuatTest2 = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
-            this.label33 = new System.Windows.Forms.Label();
+            this.SoLanTest2 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
+            this.nameLoiLoc2 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.label52 = new System.Windows.Forms.Label();
+            this.ThoiGianNen1 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.label42 = new System.Windows.Forms.Label();
+            this.ApSuatTest1 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.label32 = new System.Windows.Forms.Label();
+            this.SoLanTest1 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -62,29 +76,22 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.nameLoiLoc1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.nameLoiLoc1va2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.panel26.SuspendLayout();
+            this.panel25.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panel20.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -102,37 +109,30 @@
             this.panel14.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel15.SuspendLayout();
-            this.panel20.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel25.SuspendLayout();
-            this.panel26.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.TimeID);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(3, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(162, 179);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // TimeID
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 177);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "9:41 9/4/2022";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TimeID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TimeID.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TimeID.ForeColor = System.Drawing.SystemColors.Control;
+            this.TimeID.Location = new System.Drawing.Point(0, 0);
+            this.TimeID.Name = "TimeID";
+            this.TimeID.Size = new System.Drawing.Size(160, 177);
+            this.TimeID.TabIndex = 0;
+            this.TimeID.Text = "9:41 9/4/2022";
+            this.TimeID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
             // 
@@ -203,215 +203,363 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(876, 171);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
+            // panel26
+            // 
+            this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel26.Controls.Add(this.ThoiGianGiu1va2);
+            this.panel26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel26.Location = new System.Drawing.Point(733, 127);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(140, 41);
+            this.panel26.TabIndex = 27;
+            // 
+            // ThoiGianGiu1va2
+            // 
+            this.ThoiGianGiu1va2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianGiu1va2.ForeColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianGiu1va2.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianGiu1va2.Name = "ThoiGianGiu1va2";
+            this.ThoiGianGiu1va2.Size = new System.Drawing.Size(138, 39);
+            this.ThoiGianGiu1va2.TabIndex = 7;
+            this.ThoiGianGiu1va2.Text = "NULL";
+            this.ThoiGianGiu1va2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel25
+            // 
+            this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel25.Controls.Add(this.ThoiGianXa1va2);
+            this.panel25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel25.Location = new System.Drawing.Point(587, 127);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(140, 41);
+            this.panel25.TabIndex = 26;
+            // 
+            // ThoiGianXa1va2
+            // 
+            this.ThoiGianXa1va2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianXa1va2.ForeColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianXa1va2.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianXa1va2.Name = "ThoiGianXa1va2";
+            this.ThoiGianXa1va2.Size = new System.Drawing.Size(138, 39);
+            this.ThoiGianXa1va2.TabIndex = 7;
+            this.ThoiGianXa1va2.Text = "NULL";
+            this.ThoiGianXa1va2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel24
+            // 
+            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel24.Controls.Add(this.ThoiGianGiu2);
+            this.panel24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel24.Location = new System.Drawing.Point(733, 81);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(140, 40);
+            this.panel24.TabIndex = 25;
+            // 
+            // ThoiGianGiu2
+            // 
+            this.ThoiGianGiu2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianGiu2.ForeColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianGiu2.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianGiu2.Name = "ThoiGianGiu2";
+            this.ThoiGianGiu2.Size = new System.Drawing.Size(138, 38);
+            this.ThoiGianGiu2.TabIndex = 7;
+            this.ThoiGianGiu2.Text = "NULL";
+            this.ThoiGianGiu2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel20
+            // 
+            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel20.Controls.Add(this.ThoiGianXa2);
+            this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel20.Location = new System.Drawing.Point(587, 81);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(140, 40);
+            this.panel20.TabIndex = 24;
+            // 
+            // ThoiGianXa2
+            // 
+            this.ThoiGianXa2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianXa2.ForeColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianXa2.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianXa2.Name = "ThoiGianXa2";
+            this.ThoiGianXa2.Size = new System.Drawing.Size(138, 38);
+            this.ThoiGianXa2.TabIndex = 7;
+            this.ThoiGianXa2.Text = "NULL";
+            this.ThoiGianXa2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel15
+            // 
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel15.Controls.Add(this.ThoiGianGiu1);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel15.Location = new System.Drawing.Point(733, 35);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(140, 40);
+            this.panel15.TabIndex = 23;
+            // 
+            // ThoiGianGiu1
+            // 
+            this.ThoiGianGiu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianGiu1.ForeColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianGiu1.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianGiu1.Name = "ThoiGianGiu1";
+            this.ThoiGianGiu1.Size = new System.Drawing.Size(138, 38);
+            this.ThoiGianGiu1.TabIndex = 7;
+            this.ThoiGianGiu1.Text = "NULL";
+            this.ThoiGianGiu1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel13
+            // 
+            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel13.Controls.Add(this.ThoiGianXa1);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel13.Location = new System.Drawing.Point(587, 35);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(140, 40);
+            this.panel13.TabIndex = 22;
+            // 
+            // ThoiGianXa1
+            // 
+            this.ThoiGianXa1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianXa1.ForeColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianXa1.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianXa1.Name = "ThoiGianXa1";
+            this.ThoiGianXa1.Size = new System.Drawing.Size(138, 38);
+            this.ThoiGianXa1.TabIndex = 7;
+            this.ThoiGianXa1.Text = "NULL";
+            this.ThoiGianXa1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel9
+            // 
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.label7);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel9.Location = new System.Drawing.Point(733, 3);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(140, 26);
+            this.panel9.TabIndex = 21;
+            // 
+            // label7
+            // 
+            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.SkyBlue;
+            this.label7.Location = new System.Drawing.Point(0, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(138, 24);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Thời gian giữ";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel12
             // 
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.label11);
+            this.panel12.Controls.Add(this.ThoiGianNen1va2);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel12.Location = new System.Drawing.Point(441, 127);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(140, 41);
             this.panel12.TabIndex = 19;
             // 
-            // label11
+            // ThoiGianNen1va2
             // 
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.ForeColor = System.Drawing.SystemColors.Control;
-            this.label11.Location = new System.Drawing.Point(0, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(138, 39);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "21";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ThoiGianNen1va2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianNen1va2.ForeColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianNen1va2.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianNen1va2.Name = "ThoiGianNen1va2";
+            this.ThoiGianNen1va2.Size = new System.Drawing.Size(138, 39);
+            this.ThoiGianNen1va2.TabIndex = 6;
+            this.ThoiGianNen1va2.Text = "NULL";
+            this.ThoiGianNen1va2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.label9);
+            this.panel11.Controls.Add(this.ApSuatTest1va2);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(295, 127);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(140, 41);
             this.panel11.TabIndex = 18;
             // 
-            // label9
+            // ApSuatTest1va2
             // 
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.ForeColor = System.Drawing.SystemColors.Control;
-            this.label9.Location = new System.Drawing.Point(0, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(138, 39);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "21";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ApSuatTest1va2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ApSuatTest1va2.ForeColor = System.Drawing.SystemColors.Control;
+            this.ApSuatTest1va2.Location = new System.Drawing.Point(0, 0);
+            this.ApSuatTest1va2.Name = "ApSuatTest1va2";
+            this.ApSuatTest1va2.Size = new System.Drawing.Size(138, 39);
+            this.ApSuatTest1va2.TabIndex = 6;
+            this.ApSuatTest1va2.Text = "NULL";
+            this.ApSuatTest1va2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.label8);
+            this.panel10.Controls.Add(this.SoLanTest1va2);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(149, 127);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(140, 41);
             this.panel10.TabIndex = 17;
             // 
-            // label8
+            // SoLanTest1va2
             // 
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.ForeColor = System.Drawing.SystemColors.Control;
-            this.label8.Location = new System.Drawing.Point(0, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(138, 39);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "10,23";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTest1va2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest1va2.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest1va2.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest1va2.Name = "SoLanTest1va2";
+            this.SoLanTest1va2.Size = new System.Drawing.Size(138, 39);
+            this.SoLanTest1va2.TabIndex = 6;
+            this.SoLanTest1va2.Text = "NULL";
+            this.SoLanTest1va2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel23
             // 
             this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel23.Controls.Add(this.label53);
+            this.panel23.Controls.Add(this.ThoiGianNen2);
             this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel23.Location = new System.Drawing.Point(441, 81);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(140, 40);
             this.panel23.TabIndex = 14;
             // 
-            // label53
+            // ThoiGianNen2
             // 
-            this.label53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label53.ForeColor = System.Drawing.SystemColors.Control;
-            this.label53.Location = new System.Drawing.Point(0, 0);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(138, 38);
-            this.label53.TabIndex = 6;
-            this.label53.Text = "15";
-            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ThoiGianNen2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianNen2.ForeColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianNen2.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianNen2.Name = "ThoiGianNen2";
+            this.ThoiGianNen2.Size = new System.Drawing.Size(138, 38);
+            this.ThoiGianNen2.TabIndex = 6;
+            this.ThoiGianNen2.Text = "NULL";
+            this.ThoiGianNen2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel22
             // 
             this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel22.Controls.Add(this.label43);
+            this.panel22.Controls.Add(this.ApSuatTest2);
             this.panel22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel22.Location = new System.Drawing.Point(295, 81);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(140, 40);
             this.panel22.TabIndex = 13;
             // 
-            // label43
+            // ApSuatTest2
             // 
-            this.label43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label43.ForeColor = System.Drawing.SystemColors.Control;
-            this.label43.Location = new System.Drawing.Point(0, 0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(138, 38);
-            this.label43.TabIndex = 5;
-            this.label43.Text = "21";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ApSuatTest2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ApSuatTest2.ForeColor = System.Drawing.SystemColors.Control;
+            this.ApSuatTest2.Location = new System.Drawing.Point(0, 0);
+            this.ApSuatTest2.Name = "ApSuatTest2";
+            this.ApSuatTest2.Size = new System.Drawing.Size(138, 38);
+            this.ApSuatTest2.TabIndex = 5;
+            this.ApSuatTest2.Text = "NULL";
+            this.ApSuatTest2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel21
             // 
             this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel21.Controls.Add(this.label33);
+            this.panel21.Controls.Add(this.SoLanTest2);
             this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel21.Location = new System.Drawing.Point(149, 81);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(140, 40);
             this.panel21.TabIndex = 12;
             // 
-            // label33
+            // SoLanTest2
             // 
-            this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label33.ForeColor = System.Drawing.SystemColors.Control;
-            this.label33.Location = new System.Drawing.Point(0, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(138, 38);
-            this.label33.TabIndex = 5;
-            this.label33.Text = "10,23";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTest2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest2.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest2.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest2.Name = "SoLanTest2";
+            this.SoLanTest2.Size = new System.Drawing.Size(138, 38);
+            this.SoLanTest2.TabIndex = 5;
+            this.SoLanTest2.Text = "NULL";
+            this.SoLanTest2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel19
             // 
             this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel19.Controls.Add(this.label13);
+            this.panel19.Controls.Add(this.nameLoiLoc2);
             this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel19.Location = new System.Drawing.Point(3, 81);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(140, 40);
             this.panel19.TabIndex = 10;
             // 
-            // label13
+            // nameLoiLoc2
             // 
-            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.ForeColor = System.Drawing.SystemColors.Control;
-            this.label13.Location = new System.Drawing.Point(0, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(138, 38);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "Loại 2";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.nameLoiLoc2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nameLoiLoc2.ForeColor = System.Drawing.SystemColors.Control;
+            this.nameLoiLoc2.Location = new System.Drawing.Point(0, 0);
+            this.nameLoiLoc2.Name = "nameLoiLoc2";
+            this.nameLoiLoc2.Size = new System.Drawing.Size(138, 38);
+            this.nameLoiLoc2.TabIndex = 3;
+            this.nameLoiLoc2.Text = "Loại 2";
+            this.nameLoiLoc2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel18
             // 
             this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel18.Controls.Add(this.label52);
+            this.panel18.Controls.Add(this.ThoiGianNen1);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel18.Location = new System.Drawing.Point(441, 35);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(140, 40);
             this.panel18.TabIndex = 9;
             // 
-            // label52
+            // ThoiGianNen1
             // 
-            this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label52.ForeColor = System.Drawing.SystemColors.Control;
-            this.label52.Location = new System.Drawing.Point(0, 0);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(138, 38);
-            this.label52.TabIndex = 6;
-            this.label52.Text = "21";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ThoiGianNen1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianNen1.ForeColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianNen1.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianNen1.Name = "ThoiGianNen1";
+            this.ThoiGianNen1.Size = new System.Drawing.Size(138, 38);
+            this.ThoiGianNen1.TabIndex = 6;
+            this.ThoiGianNen1.Text = "NULL";
+            this.ThoiGianNen1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel17
             // 
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Controls.Add(this.label42);
+            this.panel17.Controls.Add(this.ApSuatTest1);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel17.Location = new System.Drawing.Point(295, 35);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(140, 40);
             this.panel17.TabIndex = 8;
             // 
-            // label42
+            // ApSuatTest1
             // 
-            this.label42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label42.ForeColor = System.Drawing.SystemColors.Control;
-            this.label42.Location = new System.Drawing.Point(0, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(138, 38);
-            this.label42.TabIndex = 5;
-            this.label42.Text = "21";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ApSuatTest1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ApSuatTest1.ForeColor = System.Drawing.SystemColors.Control;
+            this.ApSuatTest1.Location = new System.Drawing.Point(0, 0);
+            this.ApSuatTest1.Name = "ApSuatTest1";
+            this.ApSuatTest1.Size = new System.Drawing.Size(138, 38);
+            this.ApSuatTest1.TabIndex = 5;
+            this.ApSuatTest1.Text = "NULL";
+            this.ApSuatTest1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel16
             // 
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel16.Controls.Add(this.label32);
+            this.panel16.Controls.Add(this.SoLanTest1);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel16.Location = new System.Drawing.Point(149, 35);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(140, 40);
             this.panel16.TabIndex = 7;
             // 
-            // label32
+            // SoLanTest1
             // 
-            this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label32.ForeColor = System.Drawing.SystemColors.Control;
-            this.label32.Location = new System.Drawing.Point(0, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(138, 38);
-            this.label32.TabIndex = 5;
-            this.label32.Text = "10,23";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTest1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest1.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest1.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest1.Name = "SoLanTest1";
+            this.SoLanTest1.Size = new System.Drawing.Size(138, 38);
+            this.SoLanTest1.TabIndex = 5;
+            this.SoLanTest1.Text = "NULL";
+            this.SoLanTest1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel8
             // 
@@ -504,44 +652,44 @@
             // panel14
             // 
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.label12);
+            this.panel14.Controls.Add(this.nameLoiLoc1);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel14.Location = new System.Drawing.Point(3, 35);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(140, 40);
             this.panel14.TabIndex = 5;
             // 
-            // label12
+            // nameLoiLoc1
             // 
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.ForeColor = System.Drawing.SystemColors.Control;
-            this.label12.Location = new System.Drawing.Point(0, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(138, 38);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "Loại 1";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.nameLoiLoc1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nameLoiLoc1.ForeColor = System.Drawing.SystemColors.Control;
+            this.nameLoiLoc1.Location = new System.Drawing.Point(0, 0);
+            this.nameLoiLoc1.Name = "nameLoiLoc1";
+            this.nameLoiLoc1.Size = new System.Drawing.Size(138, 38);
+            this.nameLoiLoc1.TabIndex = 3;
+            this.nameLoiLoc1.Text = "Loại 1";
+            this.nameLoiLoc1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.nameLoiLoc1va2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 127);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(140, 41);
             this.panel3.TabIndex = 15;
             // 
-            // label6
+            // nameLoiLoc1va2
             // 
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(0, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 39);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Loại 1 + 2";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.nameLoiLoc1va2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nameLoiLoc1va2.ForeColor = System.Drawing.SystemColors.Control;
+            this.nameLoiLoc1va2.Location = new System.Drawing.Point(0, 0);
+            this.nameLoiLoc1va2.Name = "nameLoiLoc1va2";
+            this.nameLoiLoc1va2.Size = new System.Drawing.Size(138, 39);
+            this.nameLoiLoc1va2.TabIndex = 4;
+            this.nameLoiLoc1va2.Text = "Loại 1 + 2";
+            this.nameLoiLoc1va2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel5
             // 
@@ -552,76 +700,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(140, 26);
             this.panel5.TabIndex = 20;
-            // 
-            // panel9
-            // 
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.label7);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(733, 3);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(140, 26);
-            this.panel9.TabIndex = 21;
-            // 
-            // panel13
-            // 
-            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Controls.Add(this.label14);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(587, 35);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(140, 40);
-            this.panel13.TabIndex = 22;
-            // 
-            // panel15
-            // 
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Controls.Add(this.label15);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(733, 35);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(140, 40);
-            this.panel15.TabIndex = 23;
-            // 
-            // panel20
-            // 
-            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel20.Controls.Add(this.label17);
-            this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel20.Location = new System.Drawing.Point(587, 81);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(140, 40);
-            this.panel20.TabIndex = 24;
-            // 
-            // panel24
-            // 
-            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel24.Controls.Add(this.label16);
-            this.panel24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel24.Location = new System.Drawing.Point(733, 81);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(140, 40);
-            this.panel24.TabIndex = 25;
-            // 
-            // panel25
-            // 
-            this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel25.Controls.Add(this.label19);
-            this.panel25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel25.Location = new System.Drawing.Point(587, 127);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(140, 41);
-            this.panel25.TabIndex = 26;
-            // 
-            // panel26
-            // 
-            this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel26.Controls.Add(this.label18);
-            this.panel26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel26.Location = new System.Drawing.Point(733, 127);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(140, 41);
-            this.panel26.TabIndex = 27;
             // 
             // label3
             // 
@@ -634,84 +712,6 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Thời gian xả";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.SkyBlue;
-            this.label7.Location = new System.Drawing.Point(0, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(138, 24);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Thời gian giữ";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label14
-            // 
-            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.ForeColor = System.Drawing.SystemColors.Control;
-            this.label14.Location = new System.Drawing.Point(0, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(138, 38);
-            this.label14.TabIndex = 7;
-            this.label14.Text = "21";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label15
-            // 
-            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.ForeColor = System.Drawing.SystemColors.Control;
-            this.label15.Location = new System.Drawing.Point(0, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(138, 38);
-            this.label15.TabIndex = 7;
-            this.label15.Text = "21";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label16
-            // 
-            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.ForeColor = System.Drawing.SystemColors.Control;
-            this.label16.Location = new System.Drawing.Point(0, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(138, 38);
-            this.label16.TabIndex = 7;
-            this.label16.Text = "21";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.ForeColor = System.Drawing.SystemColors.Control;
-            this.label17.Location = new System.Drawing.Point(0, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(138, 38);
-            this.label17.TabIndex = 7;
-            this.label17.Text = "21";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label18
-            // 
-            this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label18.ForeColor = System.Drawing.SystemColors.Control;
-            this.label18.Location = new System.Drawing.Point(0, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(138, 39);
-            this.label18.TabIndex = 7;
-            this.label18.Text = "21";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label19
-            // 
-            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label19.ForeColor = System.Drawing.SystemColors.Control;
-            this.label19.Location = new System.Drawing.Point(0, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(138, 39);
-            this.label19.TabIndex = 7;
-            this.label19.Text = "21";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ItemThongKeLoiLoc
             // 
@@ -728,6 +728,13 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.panel26.ResumeLayout(false);
+            this.panel25.ResumeLayout(false);
+            this.panel24.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
@@ -745,13 +752,6 @@
             this.panel14.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
-            this.panel24.ResumeLayout(false);
-            this.panel25.ResumeLayout(false);
-            this.panel26.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -759,24 +759,24 @@
         #endregion
 
         private Panel panel1;
-        private Label label1;
+        private Label TimeID;
         private TableLayoutPanel tableLayoutPanel1;
         private Panel panel2;
         private TableLayoutPanel tableLayoutPanel2;
         private Panel panel23;
-        private Label label53;
+        private Label ThoiGianNen2;
         private Panel panel22;
-        private Label label43;
+        private Label ApSuatTest2;
         private Panel panel21;
-        private Label label33;
+        private Label SoLanTest2;
         private Panel panel19;
-        private Label label13;
+        private Label nameLoiLoc2;
         private Panel panel18;
-        private Label label52;
+        private Label ThoiGianNen1;
         private Panel panel17;
-        private Label label42;
+        private Label ApSuatTest1;
         private Panel panel16;
-        private Label label32;
+        private Label SoLanTest1;
         private Panel panel8;
         private Label label10;
         private Panel panel7;
@@ -786,15 +786,15 @@
         private Panel panel4;
         private Label label2;
         private Panel panel14;
-        private Label label12;
+        private Label nameLoiLoc1;
         private Panel panel12;
-        private Label label11;
+        private Label ThoiGianNen1va2;
         private Panel panel11;
-        private Label label9;
+        private Label ApSuatTest1va2;
         private Panel panel10;
-        private Label label8;
+        private Label SoLanTest1va2;
         private Panel panel3;
-        private Label label6;
+        private Label nameLoiLoc1va2;
         private Panel panel26;
         private Panel panel25;
         private Panel panel24;
@@ -805,11 +805,11 @@
         private Label label7;
         private Panel panel5;
         private Label label3;
-        private Label label18;
-        private Label label19;
-        private Label label16;
-        private Label label17;
-        private Label label15;
-        private Label label14;
+        private Label ThoiGianGiu1va2;
+        private Label ThoiGianXa1va2;
+        private Label ThoiGianGiu2;
+        private Label ThoiGianXa2;
+        private Label ThoiGianGiu1;
+        private Label ThoiGianXa1;
     }
 }
