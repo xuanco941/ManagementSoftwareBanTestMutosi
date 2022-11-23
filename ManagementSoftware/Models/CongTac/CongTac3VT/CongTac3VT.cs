@@ -16,7 +16,8 @@ namespace ManagementSoftware.Models
         public string CongTac3VTName { get; set; }
         public int SoLanTest { get; set; }
         public bool TrangThai { get; set; }
-        public int JigCongTac3VTID { get; set; }
-        public JigCongTac3VT JigCongTac3VT { get; set; }
+        public int JigCongTac3VTName { get; set; }
+        public int TestCongTac3VTID { get; set; }
+        public TestCongTac3VT TestCongTac3VT { get; set; }
     }
 }

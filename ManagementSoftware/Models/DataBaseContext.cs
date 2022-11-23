@@ -33,12 +33,10 @@ namespace ManagementSoftware.Models
 
         //Cong tac 2vt
         public DbSet<TestCongTac2VT> TestCongTac2VTs { get; set; }
-        public DbSet<JigCongTac2VT> JigCongTac2VTs { get; set; }
         public DbSet<CongTac2VT> CongTac2VTs { get; set; }
 
         //Cong tac 3vt
         public DbSet<TestCongTac3VT> TestCongTac3VTs { get; set; }
-        public DbSet<JigCongTac3VT> JigCongTac3VTs { get; set; }
         public DbSet<CongTac3VT> CongTac3VTs { get; set; }
 
 

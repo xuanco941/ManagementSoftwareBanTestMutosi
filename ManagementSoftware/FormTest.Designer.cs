@@ -35,24 +35,28 @@
             this.chartControl1 = new Syncfusion.Windows.Forms.Chart.ChartControl();
             this.integerTextBox1 = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panelPrintBarcode = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.integerTextBox1)).BeginInit();
+            this.panelPrintBarcode.SuspendLayout();
             this.SuspendLayout();
             // 
             // sfBarcode1
             // 
             this.sfBarcode1.DarkBarColor = System.Drawing.Color.Black;
             this.sfBarcode1.DisplayText = true;
+            this.sfBarcode1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sfBarcode1.LightBarColor = System.Drawing.Color.White;
-            this.sfBarcode1.Location = new System.Drawing.Point(639, 49);
+            this.sfBarcode1.Location = new System.Drawing.Point(0, 0);
             this.sfBarcode1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.sfBarcode1.Name = "sfBarcode1";
-            this.sfBarcode1.Size = new System.Drawing.Size(447, 102);
+            this.sfBarcode1.Size = new System.Drawing.Size(239, 73);
             this.sfBarcode1.Symbology = Syncfusion.Windows.Forms.Barcode.BarcodeSymbolType.QRBarcode;
             this.sfBarcode1.SymbologySettings = null;
             this.sfBarcode1.TabIndex = 0;
             this.sfBarcode1.TextAlignment = Syncfusion.Windows.Forms.Barcode.BarcodeTextAlignment.Center;
             this.sfBarcode1.TextColor = System.Drawing.Color.Black;
-            this.sfBarcode1.TextGapHeight = 0F;
+            this.sfBarcode1.TextGapHeight = 5F;
             // 
             // radialGauge1
             // 
@@ -149,22 +153,42 @@
             this.textBox1.Size = new System.Drawing.Size(100, 23);
             this.textBox1.TabIndex = 7;
             // 
+            // panelPrintBarcode
+            // 
+            this.panelPrintBarcode.Controls.Add(this.sfBarcode1);
+            this.panelPrintBarcode.Location = new System.Drawing.Point(735, 41);
+            this.panelPrintBarcode.Name = "panelPrintBarcode";
+            this.panelPrintBarcode.Size = new System.Drawing.Size(239, 73);
+            this.panelPrintBarcode.TabIndex = 8;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(72, 260);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // FormTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1146, 517);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panelPrintBarcode);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.integerTextBox1);
             this.Controls.Add(this.chartControl1);
             this.Controls.Add(this.linearGauge1);
             this.Controls.Add(this.digitalGauge2);
             this.Controls.Add(this.radialGauge1);
-            this.Controls.Add(this.sfBarcode1);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormTest";
             this.Text = "FormTest";
             ((System.ComponentModel.ISupportInitialize)(this.integerTextBox1)).EndInit();
+            this.panelPrintBarcode.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,5 +203,7 @@
         private Syncfusion.Windows.Forms.Chart.ChartControl chartControl1;
         private Syncfusion.Windows.Forms.Tools.IntegerTextBox integerTextBox1;
         private TextBox textBox1;
+        private Panel panelPrintBarcode;
+        private Button button1;
     }
 }
