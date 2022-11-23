@@ -1,5 +1,4 @@
 ﻿using ManagementSoftware.Models;
-using ManagementSoftware.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,44 +7,44 @@ using System.Threading.Tasks;
 
 namespace ManagementSoftware.DAL.DALPagination
 {
-    public class PaginationLoiLoc
+    public class PaginationBauNong
     {
-        public static int NumberRows { get; set; } = 15;
+        public static int NumberRows { get; set; } = 10;
         public int PageCurrent { get; set; } = 1;
         public int TotalPages { get; set; } = 1;
         public int TotalResults { get; set; } = 0;
-        public Dictionary<TestLoiLoc, List<LoiLoc>> ListResults { get; set; } = new Dictionary<TestLoiLoc, List<LoiLoc>>();
+        public Dictionary<TestBauNong, List<BauNong>> ListResults { get; set; } = new Dictionary<TestBauNong, List<BauNong>>();
         public void Set(int page, DateTime? start, DateTime? end)
         {
             DataBaseContext dbContext = new DataBaseContext();
 
             int position = (page - 1) * NumberRows;
 
-            List<TestLoiLoc> listTest = new List<TestLoiLoc>();
+            List<TestBauNong> listTest = new List<TestBauNong>();
             if (start != null && end != null)
             {
-                listTest = dbContext.TestLoiLocs.OrderByDescending(t => t.TestLoiLocID)
+                listTest = dbContext.TestBauNongs.OrderByDescending(t => t.TestBauNongID)
                 .Where(a => start <= a.CreateAt && end >= a.CreateAt)
                 .Skip(position)
                 .Take(NumberRows)
                 .ToList();
 
-                this.TotalResults = dbContext.TestLoiLocs.Where(a => start <= a.CreateAt && end >= a.CreateAt).Count();
+                this.TotalResults = dbContext.TestBauNongs.Where(a => start <= a.CreateAt && end >= a.CreateAt).Count();
 
             }
             else
             {
-                listTest = dbContext.TestLoiLocs.OrderByDescending(t => t.TestLoiLocID)
+                listTest = dbContext.TestBauNongs.OrderByDescending(t => t.TestBauNongID)
                 .Skip(position)
                 .Take(NumberRows)
                 .ToList();
-                this.TotalResults = dbContext.TestLoiLocs.Count();
+                this.TotalResults = dbContext.TestBauNongs.Count();
             }
 
-            foreach(var elm in listTest)
+            foreach (var elm in listTest)
             {
-                List<LoiLoc> l = new List<LoiLoc>();
-                l = dbContext.LoiLocs.Where(e => e.TestLoiLocID == elm.TestLoiLocID).ToList();
+                List<BauNong> l = new List<BauNong>();
+                l = dbContext.BauNongs.Where(e => e.TestBauNongID == elm.TestBauNongID).ToList();
                 ListResults.Add(elm, l);
             }
 

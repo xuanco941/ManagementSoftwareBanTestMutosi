@@ -2,16 +2,6 @@
 using ManagementSoftware.GUI.Section;
 using ManagementSoftware.GUI.Section.ThongKe;
 using ManagementSoftware.Models;
-using Syncfusion.XPS;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace ManagementSoftware.GUI
 {
@@ -30,7 +20,7 @@ namespace ManagementSoftware.GUI
 
 
         // tổng số trang
-        private int TotalPages = 1;
+        private int TotalPages = 0;
         //Data
         Dictionary<TestLoiLoc, List<Models.LoiLoc>> ListResults;
 
@@ -43,15 +33,28 @@ namespace ManagementSoftware.GUI
 
         void LoadFormThongKe()
         {
+            panelThongKe.Controls.Clear();
+
             PaginationLoiLoc pagination = new PaginationLoiLoc();
             pagination.Set(page,timeStart,timeEnd);
             this.ListResults = pagination.ListResults;
             this.TotalPages = pagination.TotalPages;
+            lbTotalPages.Text = this.TotalPages.ToString();
 
+            buttonPreviousPage.Enabled = this.page > 1;
+            buttonNextPage.Enabled = this.page < this.TotalPages;
+            buttonPage.Text = this.page.ToString();
+
+            pageNumberGoto.MinValue = 1;
+            pageNumberGoto.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1 ;
 
             foreach (var e in this.ListResults)
             {
-                ItemThongKeLoiLoc form = new ItemThongKeLoiLoc(e.Key,e.Value);
+
+            }
+            for(int i= ListResults.Count-1; i >=0 ; i--)
+            {
+                ItemThongKeLoiLoc form = new ItemThongKeLoiLoc(ListResults.ElementAt(i).Key, ListResults.ElementAt(i).Value);
                 form.TopLevel = false;
                 panelThongKe.Controls.Add(form);
                 form.FormBorderStyle = FormBorderStyle.None;
@@ -60,5 +63,34 @@ namespace ManagementSoftware.GUI
             }
         }
 
+        private void buttonPreviousPage_Click(object sender, EventArgs e)
+        {
+            if(this.page > 1) {
+                this.page = this.page - 1;
+                LoadFormThongKe();
+            }
+        }
+
+        private void buttonNextPage_Click(object sender, EventArgs e)
+        {
+            if (this.page < this.TotalPages)
+            {
+                this.page = this.page + 1;
+                LoadFormThongKe();
+            }
+        }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            timeStart = TimeStart.Value;
+            timeEnd = TimeEnd.Value;
+            LoadFormThongKe();
+        }
+
+        private void buttonGoto_Click(object sender, EventArgs e)
+        {
+            this.page = int.Parse(pageNumberGoto.Text);
+            LoadFormThongKe();
+        }
     }
 }

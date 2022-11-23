@@ -254,30 +254,35 @@
             this.panel89 = new System.Windows.Forms.Panel();
             this.label39 = new System.Windows.Forms.Label();
             this.tabPageThongKe = new System.Windows.Forms.TabPage();
-            this.gridLayout1 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
             this.panelThongKe = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.panel112 = new System.Windows.Forms.Panel();
+            this.label51 = new System.Windows.Forms.Label();
+            this.panel113 = new System.Windows.Forms.Panel();
+            this.lbTotalPages = new System.Windows.Forms.Label();
+            this.panel114 = new System.Windows.Forms.Panel();
             this.buttonGoto = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.pageNumberGoto = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
-            this.panel113 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel114 = new System.Windows.Forms.Panel();
-            this.TimeEnd = new Syncfusion.WinForms.Input.SfDateTimeEdit();
             this.panel115 = new System.Windows.Forms.Panel();
-            this.TimeStart = new Syncfusion.WinForms.Input.SfDateTimeEdit();
+            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.panel116 = new System.Windows.Forms.Panel();
-            this.label51 = new System.Windows.Forms.Label();
+            this.TimeEnd = new Syncfusion.WinForms.Input.SfDateTimeEdit();
             this.panel117 = new System.Windows.Forms.Panel();
-            this.label52 = new System.Windows.Forms.Label();
-            this.buttonSearch = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
+            this.TimeStart = new Syncfusion.WinForms.Input.SfDateTimeEdit();
             this.panel118 = new System.Windows.Forms.Panel();
+            this.label53 = new System.Windows.Forms.Label();
+            this.panel119 = new System.Windows.Forms.Panel();
+            this.label54 = new System.Windows.Forms.Label();
+            this.buttonSearch = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
+            this.panel120 = new System.Windows.Forms.Panel();
             this.buttonPage = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.buttonNextPage = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.buttonPreviousPage = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.buttonCustomGoPage = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.inputNumPageGo = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
+            this.gridLayout1 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPageGiamSatJigMach.SuspendLayout();
             this.panelGiamSat.SuspendLayout();
@@ -412,19 +417,22 @@
             this.panel88.SuspendLayout();
             this.panel89.SuspendLayout();
             this.tabPageThongKe.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLayout1)).BeginInit();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
-            this.panel112.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pageNumberGoto)).BeginInit();
-            this.panel113.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
+            this.panel112.SuspendLayout();
+            this.panel113.SuspendLayout();
             this.panel114.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pageNumberGoto)).BeginInit();
             this.panel115.SuspendLayout();
+            this.tableLayoutPanel13.SuspendLayout();
             this.panel116.SuspendLayout();
             this.panel117.SuspendLayout();
             this.panel118.SuspendLayout();
+            this.panel119.SuspendLayout();
+            this.panel120.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inputNumPageGo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLayout1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -2910,12 +2918,6 @@
             this.tabPageThongKe.Text = "Thống kê";
             this.tabPageThongKe.UseVisualStyleBackColor = true;
             // 
-            // gridLayout1
-            // 
-            this.gridLayout1.Columns = 5;
-            this.gridLayout1.ContainerControl = this.panelGiamSat;
-            this.gridLayout1.Rows = 2;
-            // 
             // panelThongKe
             // 
             this.panelThongKe.AutoScroll = true;
@@ -2942,13 +2944,15 @@
             // 
             // tableLayoutPanel11
             // 
-            this.tableLayoutPanel11.ColumnCount = 3;
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel11.ColumnCount = 4;
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel11.Controls.Add(this.panel112, 2, 0);
-            this.tableLayoutPanel11.Controls.Add(this.panel113, 1, 0);
-            this.tableLayoutPanel11.Controls.Add(this.panel118, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.tableLayoutPanel12, 1, 0);
+            this.tableLayoutPanel11.Controls.Add(this.panel114, 3, 0);
+            this.tableLayoutPanel11.Controls.Add(this.panel115, 2, 0);
+            this.tableLayoutPanel11.Controls.Add(this.panel120, 0, 0);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel11.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
@@ -2957,16 +2961,75 @@
             this.tableLayoutPanel11.Size = new System.Drawing.Size(1170, 58);
             this.tableLayoutPanel11.TabIndex = 35;
             // 
+            // tableLayoutPanel12
+            // 
+            this.tableLayoutPanel12.ColumnCount = 1;
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel12.Controls.Add(this.panel112, 0, 0);
+            this.tableLayoutPanel12.Controls.Add(this.panel113, 0, 1);
+            this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(260, 3);
+            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
+            this.tableLayoutPanel12.RowCount = 2;
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(111, 52);
+            this.tableLayoutPanel12.TabIndex = 4;
+            // 
             // panel112
             // 
             this.panel112.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel112.Controls.Add(this.buttonGoto);
-            this.panel112.Controls.Add(this.pageNumberGoto);
+            this.panel112.Controls.Add(this.label51);
             this.panel112.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel112.Location = new System.Drawing.Point(997, 3);
+            this.panel112.Location = new System.Drawing.Point(3, 3);
             this.panel112.Name = "panel112";
-            this.panel112.Size = new System.Drawing.Size(170, 52);
-            this.panel112.TabIndex = 2;
+            this.panel112.Size = new System.Drawing.Size(105, 14);
+            this.panel112.TabIndex = 0;
+            // 
+            // label51
+            // 
+            this.label51.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label51.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label51.ForeColor = System.Drawing.Color.SkyBlue;
+            this.label51.Location = new System.Drawing.Point(0, 0);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(103, 12);
+            this.label51.TabIndex = 4;
+            this.label51.Text = "Tổng trang";
+            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel113
+            // 
+            this.panel113.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel113.Controls.Add(this.lbTotalPages);
+            this.panel113.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel113.Location = new System.Drawing.Point(3, 23);
+            this.panel113.Name = "panel113";
+            this.panel113.Size = new System.Drawing.Size(105, 26);
+            this.panel113.TabIndex = 1;
+            // 
+            // lbTotalPages
+            // 
+            this.lbTotalPages.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbTotalPages.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbTotalPages.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbTotalPages.Location = new System.Drawing.Point(0, 0);
+            this.lbTotalPages.Name = "lbTotalPages";
+            this.lbTotalPages.Size = new System.Drawing.Size(103, 24);
+            this.lbTotalPages.TabIndex = 5;
+            this.lbTotalPages.Text = "1";
+            this.lbTotalPages.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel114
+            // 
+            this.panel114.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel114.Controls.Add(this.buttonGoto);
+            this.panel114.Controls.Add(this.pageNumberGoto);
+            this.panel114.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel114.Location = new System.Drawing.Point(997, 3);
+            this.panel114.Name = "panel114";
+            this.panel114.Size = new System.Drawing.Size(170, 52);
+            this.panel114.TabIndex = 2;
             // 
             // buttonGoto
             // 
@@ -2992,10 +3055,11 @@
             this.buttonGoto.TextColor = System.Drawing.Color.Black;
             this.buttonGoto.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.buttonGoto.UseVisualStyleBackColor = false;
+            this.buttonGoto.Click += new System.EventHandler(this.buttonGoto_Click);
             // 
             // pageNumberGoto
             // 
-            this.pageNumberGoto.BeforeTouchSize = new System.Drawing.Size(168, 25);
+            this.pageNumberGoto.BeforeTouchSize = new System.Drawing.Size(66, 35);
             this.pageNumberGoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pageNumberGoto.Dock = System.Windows.Forms.DockStyle.Top;
             this.pageNumberGoto.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -3008,114 +3072,114 @@
             this.pageNumberGoto.Text = "1";
             this.pageNumberGoto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel113
+            // panel115
             // 
-            this.panel113.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel113.Controls.Add(this.tableLayoutPanel12);
-            this.panel113.Controls.Add(this.buttonSearch);
-            this.panel113.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel113.Location = new System.Drawing.Point(295, 3);
-            this.panel113.Name = "panel113";
-            this.panel113.Size = new System.Drawing.Size(696, 52);
-            this.panel113.TabIndex = 1;
+            this.panel115.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel115.Controls.Add(this.tableLayoutPanel13);
+            this.panel115.Controls.Add(this.buttonSearch);
+            this.panel115.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel115.Location = new System.Drawing.Point(377, 3);
+            this.panel115.Name = "panel115";
+            this.panel115.Size = new System.Drawing.Size(614, 52);
+            this.panel115.TabIndex = 1;
             // 
-            // tableLayoutPanel12
+            // tableLayoutPanel13
             // 
-            this.tableLayoutPanel12.ColumnCount = 2;
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Controls.Add(this.panel114, 1, 1);
-            this.tableLayoutPanel12.Controls.Add(this.panel115, 0, 1);
-            this.tableLayoutPanel12.Controls.Add(this.panel116, 1, 0);
-            this.tableLayoutPanel12.Controls.Add(this.panel117, 0, 0);
-            this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
-            this.tableLayoutPanel12.RowCount = 2;
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(589, 50);
-            this.tableLayoutPanel12.TabIndex = 33;
+            this.tableLayoutPanel13.ColumnCount = 2;
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel13.Controls.Add(this.panel116, 1, 1);
+            this.tableLayoutPanel13.Controls.Add(this.panel117, 0, 1);
+            this.tableLayoutPanel13.Controls.Add(this.panel118, 1, 0);
+            this.tableLayoutPanel13.Controls.Add(this.panel119, 0, 0);
+            this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
+            this.tableLayoutPanel13.RowCount = 2;
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(507, 50);
+            this.tableLayoutPanel13.TabIndex = 33;
             // 
-            // panel114
+            // panel116
             // 
-            this.panel114.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel114.Controls.Add(this.TimeEnd);
-            this.panel114.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel114.Location = new System.Drawing.Point(297, 23);
-            this.panel114.Name = "panel114";
-            this.panel114.Size = new System.Drawing.Size(289, 24);
-            this.panel114.TabIndex = 3;
+            this.panel116.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel116.Controls.Add(this.TimeEnd);
+            this.panel116.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel116.Location = new System.Drawing.Point(256, 23);
+            this.panel116.Name = "panel116";
+            this.panel116.Size = new System.Drawing.Size(248, 24);
+            this.panel116.TabIndex = 3;
             // 
             // TimeEnd
             // 
             this.TimeEnd.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TimeEnd.Location = new System.Drawing.Point(0, 0);
             this.TimeEnd.Name = "TimeEnd";
-            this.TimeEnd.Size = new System.Drawing.Size(287, 22);
+            this.TimeEnd.Size = new System.Drawing.Size(246, 22);
             this.TimeEnd.TabIndex = 35;
             // 
-            // panel115
+            // panel117
             // 
-            this.panel115.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel115.Controls.Add(this.TimeStart);
-            this.panel115.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel115.Location = new System.Drawing.Point(3, 23);
-            this.panel115.Name = "panel115";
-            this.panel115.Size = new System.Drawing.Size(288, 24);
-            this.panel115.TabIndex = 2;
+            this.panel117.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel117.Controls.Add(this.TimeStart);
+            this.panel117.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel117.Location = new System.Drawing.Point(3, 23);
+            this.panel117.Name = "panel117";
+            this.panel117.Size = new System.Drawing.Size(247, 24);
+            this.panel117.TabIndex = 2;
             // 
             // TimeStart
             // 
             this.TimeStart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TimeStart.Location = new System.Drawing.Point(0, 0);
             this.TimeStart.Name = "TimeStart";
-            this.TimeStart.Size = new System.Drawing.Size(286, 22);
+            this.TimeStart.Size = new System.Drawing.Size(245, 22);
             this.TimeStart.TabIndex = 34;
             // 
-            // panel116
+            // panel118
             // 
-            this.panel116.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel116.Controls.Add(this.label51);
-            this.panel116.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel116.Location = new System.Drawing.Point(297, 3);
-            this.panel116.Name = "panel116";
-            this.panel116.Size = new System.Drawing.Size(289, 14);
-            this.panel116.TabIndex = 1;
+            this.panel118.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel118.Controls.Add(this.label53);
+            this.panel118.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel118.Location = new System.Drawing.Point(256, 3);
+            this.panel118.Name = "panel118";
+            this.panel118.Size = new System.Drawing.Size(248, 14);
+            this.panel118.TabIndex = 1;
             // 
-            // label51
+            // label53
             // 
-            this.label51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label51.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label51.ForeColor = System.Drawing.Color.SkyBlue;
-            this.label51.Location = new System.Drawing.Point(0, 0);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(287, 12);
-            this.label51.TabIndex = 4;
-            this.label51.Text = "Đến ngày";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label53.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label53.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label53.ForeColor = System.Drawing.Color.SkyBlue;
+            this.label53.Location = new System.Drawing.Point(0, 0);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(246, 12);
+            this.label53.TabIndex = 4;
+            this.label53.Text = "Đến ngày";
+            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel117
+            // panel119
             // 
-            this.panel117.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel117.Controls.Add(this.label52);
-            this.panel117.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel117.Location = new System.Drawing.Point(3, 3);
-            this.panel117.Name = "panel117";
-            this.panel117.Size = new System.Drawing.Size(288, 14);
-            this.panel117.TabIndex = 0;
+            this.panel119.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel119.Controls.Add(this.label54);
+            this.panel119.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel119.Location = new System.Drawing.Point(3, 3);
+            this.panel119.Name = "panel119";
+            this.panel119.Size = new System.Drawing.Size(247, 14);
+            this.panel119.TabIndex = 0;
             // 
-            // label52
+            // label54
             // 
-            this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label52.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label52.ForeColor = System.Drawing.Color.SkyBlue;
-            this.label52.Location = new System.Drawing.Point(0, 0);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(286, 12);
-            this.label52.TabIndex = 3;
-            this.label52.Text = "Từ ngày";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label54.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label54.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label54.ForeColor = System.Drawing.Color.SkyBlue;
+            this.label54.Location = new System.Drawing.Point(0, 0);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(245, 12);
+            this.label54.TabIndex = 3;
+            this.label54.Text = "Từ ngày";
+            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonSearch
             // 
@@ -3131,7 +3195,7 @@
             this.buttonSearch.ForeColor = System.Drawing.Color.Black;
             this.buttonSearch.Image = ((System.Drawing.Image)(resources.GetObject("buttonSearch.Image")));
             this.buttonSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSearch.Location = new System.Drawing.Point(589, 0);
+            this.buttonSearch.Location = new System.Drawing.Point(507, 0);
             this.buttonSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(105, 50);
@@ -3140,18 +3204,19 @@
             this.buttonSearch.TextColor = System.Drawing.Color.Black;
             this.buttonSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonSearch.UseVisualStyleBackColor = false;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
-            // panel118
+            // panel120
             // 
-            this.panel118.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel118.Controls.Add(this.buttonPage);
-            this.panel118.Controls.Add(this.buttonNextPage);
-            this.panel118.Controls.Add(this.buttonPreviousPage);
-            this.panel118.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel118.Location = new System.Drawing.Point(3, 3);
-            this.panel118.Name = "panel118";
-            this.panel118.Size = new System.Drawing.Size(286, 52);
-            this.panel118.TabIndex = 0;
+            this.panel120.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel120.Controls.Add(this.buttonPage);
+            this.panel120.Controls.Add(this.buttonNextPage);
+            this.panel120.Controls.Add(this.buttonPreviousPage);
+            this.panel120.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel120.Location = new System.Drawing.Point(3, 3);
+            this.panel120.Name = "panel120";
+            this.panel120.Size = new System.Drawing.Size(251, 52);
+            this.panel120.TabIndex = 0;
             // 
             // buttonPage
             // 
@@ -3164,13 +3229,13 @@
             this.buttonPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonPage.Enabled = false;
             this.buttonPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPage.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonPage.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonPage.ForeColor = System.Drawing.Color.Black;
             this.buttonPage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonPage.Location = new System.Drawing.Point(60, 0);
             this.buttonPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonPage.Name = "buttonPage";
-            this.buttonPage.Size = new System.Drawing.Size(164, 50);
+            this.buttonPage.Size = new System.Drawing.Size(129, 50);
             this.buttonPage.TabIndex = 32;
             this.buttonPage.Text = "1";
             this.buttonPage.TextColor = System.Drawing.Color.Black;
@@ -3187,10 +3252,10 @@
             this.buttonNextPage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonNextPage.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonNextPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNextPage.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonNextPage.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonNextPage.ForeColor = System.Drawing.Color.Black;
             this.buttonNextPage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonNextPage.Location = new System.Drawing.Point(224, 0);
+            this.buttonNextPage.Location = new System.Drawing.Point(189, 0);
             this.buttonNextPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonNextPage.Name = "buttonNextPage";
             this.buttonNextPage.Size = new System.Drawing.Size(60, 50);
@@ -3199,6 +3264,7 @@
             this.buttonNextPage.TextColor = System.Drawing.Color.Black;
             this.buttonNextPage.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.buttonNextPage.UseVisualStyleBackColor = false;
+            this.buttonNextPage.Click += new System.EventHandler(this.buttonNextPage_Click);
             // 
             // buttonPreviousPage
             // 
@@ -3210,7 +3276,7 @@
             this.buttonPreviousPage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonPreviousPage.Dock = System.Windows.Forms.DockStyle.Left;
             this.buttonPreviousPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPreviousPage.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonPreviousPage.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonPreviousPage.ForeColor = System.Drawing.Color.Black;
             this.buttonPreviousPage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonPreviousPage.Location = new System.Drawing.Point(0, 0);
@@ -3222,6 +3288,7 @@
             this.buttonPreviousPage.TextColor = System.Drawing.Color.Black;
             this.buttonPreviousPage.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.buttonPreviousPage.UseVisualStyleBackColor = false;
+            this.buttonPreviousPage.Click += new System.EventHandler(this.buttonPreviousPage_Click);
             // 
             // buttonCustomGoPage
             // 
@@ -3251,7 +3318,7 @@
             // inputNumPageGo
             // 
             this.inputNumPageGo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputNumPageGo.BeforeTouchSize = new System.Drawing.Size(168, 25);
+            this.inputNumPageGo.BeforeTouchSize = new System.Drawing.Size(66, 35);
             this.inputNumPageGo.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.inputNumPageGo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.inputNumPageGo.IntegerValue = ((long)(1));
@@ -3263,6 +3330,12 @@
             this.inputNumPageGo.TabIndex = 32;
             this.inputNumPageGo.Text = "1";
             this.inputNumPageGo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // gridLayout1
+            // 
+            this.gridLayout1.Columns = 5;
+            this.gridLayout1.ContainerControl = this.panelGiamSat;
+            this.gridLayout1.Rows = 2;
             // 
             // BauNong
             // 
@@ -3407,21 +3480,24 @@
             this.panel88.ResumeLayout(false);
             this.panel89.ResumeLayout(false);
             this.tabPageThongKe.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridLayout1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tableLayoutPanel11.ResumeLayout(false);
-            this.panel112.ResumeLayout(false);
-            this.panel112.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pageNumberGoto)).EndInit();
-            this.panel113.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
+            this.panel112.ResumeLayout(false);
+            this.panel113.ResumeLayout(false);
             this.panel114.ResumeLayout(false);
+            this.panel114.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pageNumberGoto)).EndInit();
             this.panel115.ResumeLayout(false);
+            this.tableLayoutPanel13.ResumeLayout(false);
             this.panel116.ResumeLayout(false);
             this.panel117.ResumeLayout(false);
             this.panel118.ResumeLayout(false);
+            this.panel119.ResumeLayout(false);
+            this.panel120.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.inputNumPageGo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLayout1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3646,21 +3722,26 @@
         private Panel panelThongKe;
         private Panel panel2;
         private TableLayoutPanel tableLayoutPanel11;
+        private TableLayoutPanel tableLayoutPanel12;
         private Panel panel112;
+        private Label label51;
+        private Panel panel113;
+        private Label lbTotalPages;
+        private Panel panel114;
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonGoto;
         private Syncfusion.Windows.Forms.Tools.IntegerTextBox pageNumberGoto;
-        private Panel panel113;
-        private TableLayoutPanel tableLayoutPanel12;
-        private Panel panel114;
-        private Syncfusion.WinForms.Input.SfDateTimeEdit TimeEnd;
         private Panel panel115;
-        private Syncfusion.WinForms.Input.SfDateTimeEdit TimeStart;
+        private TableLayoutPanel tableLayoutPanel13;
         private Panel panel116;
-        private Label label51;
+        private Syncfusion.WinForms.Input.SfDateTimeEdit TimeEnd;
         private Panel panel117;
-        private Label label52;
-        private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonSearch;
+        private Syncfusion.WinForms.Input.SfDateTimeEdit TimeStart;
         private Panel panel118;
+        private Label label53;
+        private Panel panel119;
+        private Label label54;
+        private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonSearch;
+        private Panel panel120;
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonPage;
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonNextPage;
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonPreviousPage;

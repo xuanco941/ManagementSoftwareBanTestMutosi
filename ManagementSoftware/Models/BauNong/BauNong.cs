@@ -17,7 +17,7 @@ namespace ManagementSoftware.Models
         public double DongAC { get; set; }
         public double NhietDo { get; set; }
         public double ThoiGianNgat { get; set; }
-        public double CBNhietThanBauNong { get; set; }
+        public bool CBNhietThanBauNong { get; set; }
         public int TestBauNongID { get; set; }
         public TestBauNong TestBauNong { get; set; }
     }

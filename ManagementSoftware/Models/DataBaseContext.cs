@@ -48,7 +48,8 @@ namespace ManagementSoftware.Models
 
 
         // Tạo ILoggerFactory 
-        public static readonly ILoggerFactory loggerFactory = LoggerFactory.Create(builder => {
+        public static readonly ILoggerFactory loggerFactory = LoggerFactory.Create(builder =>
+        {
             builder
                    .AddFilter(DbLoggerCategory.Database.Command.Name, LogLevel.Information)
                    .AddFilter(DbLoggerCategory.Query.Name, LogLevel.Information)
@@ -138,38 +139,68 @@ namespace ManagementSoftware.Models
 
                 DALActivity.AddActivity(new Activity("Hệ thống", "Khởi tạo tài khoản admin.", Common.UserAdmin.Username));
 
+            }
+            for (int i = 0; i < 40; i++)
+            {
 
-                for (int i = 0; i< 40; i++)
+                //loiloc
+                List<Models.LoiLoc> loiLocs1 = new List<Models.LoiLoc>();
+                Models.LoiLoc loiLoca = new Models.LoiLoc();
+                loiLoca.LoiLocName = TenThietBi.LoiLoc1;
+                loiLoca.ThoiGianXa = 3.2;
+                loiLoca.SoLanTest = 2;
+                Models.LoiLoc loiLocb = new Models.LoiLoc();
+                loiLocb.LoiLocName = TenThietBi.LoiLoc2;
+                loiLocb.ThoiGianXa = 4.2;
+                loiLocb.SoLanTest = 9;
+                loiLocb.ThoiGianNen = 7;
+                Models.LoiLoc loiLocc = new Models.LoiLoc();
+                loiLocc.LoiLocName = TenThietBi.LoiLoc1va2;
+                loiLocc.ThoiGianXa = 4.2;
+                loiLocc.SoLanTest = 9;
+                loiLocc.ThoiGianNen = 7;
+                loiLocc.ThoiGianGiu = 10;
+                loiLocc.ApSuatTest = 1000.1;
+                loiLocs1.Add(loiLoca);
+                loiLocs1.Add(loiLocb);
+                loiLocs1.Add(loiLocc);
+                DALLoiLoc.Add(loiLocs1);
+
+                //beptu test
+                List<Models.BepTu> bepTus = new List<BepTu>();
+                BepTu beptu1 = new BepTu();
+                beptu1.BepTuName = TenThietBi.BepTu1;
+                beptu1.ApAC = 6;
+                beptu1.CongSuatAC = 10;
+                beptu1.DongAC = 75;
+                beptu1.NhietDo = 87;
+                beptu1.ThoiGianSoi = 7;
+                BepTu beptu2 = new BepTu();
+                beptu2.BepTuName = TenThietBi.BepTu2;
+                beptu2.ApAC = 6;
+                beptu2.CongSuatAC = 10;
+                beptu2.DongAC = 75;
+                beptu2.NhietDo = 87;
+                beptu2.ThoiGianSoi = 7;
+                bepTus.Add(beptu1);
+                bepTus.Add(beptu2);
+                DALBepTu.Add(bepTus);
+
+
+
+                //BauNong
+                List<BauNong> bauNongs = new List<BauNong>();
+
+                for (int j = 1; j <= 10; j++)
                 {
-                    List<Models.LoiLoc> loiLocs1 = new List<Models.LoiLoc>();
-
-                    Models.LoiLoc loiLoca = new Models.LoiLoc();
-                    loiLoca.LoiLocName = TenThietBi.LoiLoc1;
-                    loiLoca.ThoiGianXa = 3.2;
-                    loiLoca.SoLanTest = 2;
-
-                    Models.LoiLoc loiLocb = new Models.LoiLoc();
-                    loiLocb.LoiLocName = TenThietBi.LoiLoc2;
-                    loiLocb.ThoiGianXa = 4.2;
-                    loiLocb.SoLanTest = 9;
-                    loiLocb.ThoiGianNen = 7;
-
-                    Models.LoiLoc loiLocc = new Models.LoiLoc();
-                    loiLocc.LoiLocName = TenThietBi.LoiLoc1va2;
-                    loiLocc.ThoiGianXa = 4.2;
-                    loiLocc.SoLanTest = 9;
-                    loiLocc.ThoiGianNen = 7;
-                    loiLocc.ThoiGianGiu = 10;
-                    loiLocc.ApSuatTest = 1000.1;
-
-                    loiLocs1.Add(loiLoca);
-                    loiLocs1.Add(loiLocb);
-                    loiLocs1.Add(loiLocc);
-
-                    DALLoiLoc.Add(loiLocs1);
+                    BauNong baunong1 = new BauNong();
+                    baunong1.CBNhietThanBauNong = true;
+                    baunong1.BauNongName = "Jig " + j;
+                    baunong1.ThoiGianNgat = 5;
+                    baunong1.DongAC = 32;
+                    bauNongs.Add(baunong1);
                 }
-
-
+                DALBauNong.Add(bauNongs);
             }
         }
 

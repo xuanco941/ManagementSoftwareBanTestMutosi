@@ -1,5 +1,4 @@
 ﻿using ManagementSoftware.Models;
-using ManagementSoftware.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,44 +7,44 @@ using System.Threading.Tasks;
 
 namespace ManagementSoftware.DAL.DALPagination
 {
-    public class PaginationLoiLoc
+    public class PaginationCongTac2VT
     {
         public static int NumberRows { get; set; } = 15;
         public int PageCurrent { get; set; } = 1;
         public int TotalPages { get; set; } = 1;
         public int TotalResults { get; set; } = 0;
-        public Dictionary<TestLoiLoc, List<LoiLoc>> ListResults { get; set; } = new Dictionary<TestLoiLoc, List<LoiLoc>>();
+        public Dictionary<TestCongTac2VT, List<CongTac2VT>> ListResults { get; set; } = new Dictionary<TestCongTac2VT, List<CongTac2VT>>();
         public void Set(int page, DateTime? start, DateTime? end)
         {
             DataBaseContext dbContext = new DataBaseContext();
 
             int position = (page - 1) * NumberRows;
 
-            List<TestLoiLoc> listTest = new List<TestLoiLoc>();
+            List<TestCongTac2VT> listTest = new List<TestCongTac2VT>();
             if (start != null && end != null)
             {
-                listTest = dbContext.TestLoiLocs.OrderByDescending(t => t.TestLoiLocID)
+                listTest = dbContext.TestCongTac2VTs.OrderByDescending(t => t.TestCongTac2VTID)
                 .Where(a => start <= a.CreateAt && end >= a.CreateAt)
                 .Skip(position)
                 .Take(NumberRows)
                 .ToList();
 
-                this.TotalResults = dbContext.TestLoiLocs.Where(a => start <= a.CreateAt && end >= a.CreateAt).Count();
+                this.TotalResults = dbContext.TestCongTac2VTs.Where(a => start <= a.CreateAt && end >= a.CreateAt).Count();
 
             }
             else
             {
-                listTest = dbContext.TestLoiLocs.OrderByDescending(t => t.TestLoiLocID)
+                listTest = dbContext.TestCongTac2VTs.OrderByDescending(t => t.TestCongTac2VTID)
                 .Skip(position)
                 .Take(NumberRows)
                 .ToList();
-                this.TotalResults = dbContext.TestLoiLocs.Count();
+                this.TotalResults = dbContext.TestCongTac2VTs.Count();
             }
 
-            foreach(var elm in listTest)
+            foreach (var elm in listTest)
             {
-                List<LoiLoc> l = new List<LoiLoc>();
-                l = dbContext.LoiLocs.Where(e => e.TestLoiLocID == elm.TestLoiLocID).ToList();
+                List<CongTac2VT> l = new List<CongTac2VT>();
+                l = dbContext.CongTac2VTs.Where(e => e.TestCongTac2VTID == elm.TestCongTac2VTID).ToList();
                 ListResults.Add(elm, l);
             }
 
