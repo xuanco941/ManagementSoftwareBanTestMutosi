@@ -22,6 +22,11 @@ namespace ManagementSoftware
         public FormTest()
         {
             InitializeComponent();
+
+            backgroundWorker1.DoWork += BackgroundWorker1_DoWork;
+            backgroundWorker1.RunWorkerCompleted += BackgroundWorker1_RunWorkerCompleted;
+
+
             sfBarcode1.Symbology = BarcodeSymbolType.Code128B;
             sfBarcode1.Text = "ABC-123-abc-A123";
             sfBarcode1.TextGapHeight = 5;
@@ -58,6 +63,35 @@ namespace ManagementSoftware
         private void button1_Click_1(object sender, EventArgs e)
         {
             Print(this.panelPrintBarcode);
+        }
+
+        private async void button2bgrwk_Click(object sender, EventArgs e)
+        {
+            // start the animation
+            progressBar1.Visible = true;
+            progressBar1.Style = ProgressBarStyle.Marquee;
+
+            // start the job
+            button2bgrwk.Enabled = false;
+            backgroundWorker1.RunWorkerAsync();
+        }
+
+        private void BackgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+           
+            LoadExcel();
+        }
+
+        private void BackgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            button2bgrwk.Enabled = true;
+            progressBar1.Visible = false;
+        }
+
+        private void LoadExcel()
+        {
+            // some work takes 5 sec
+            Thread.Sleep(5000);
         }
     }
 }

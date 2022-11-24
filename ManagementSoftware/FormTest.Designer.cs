@@ -37,8 +37,13 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panelPrintBarcode = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.button2bgrwk = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.integerTextBox1)).BeginInit();
             this.panelPrintBarcode.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // sfBarcode1
@@ -139,7 +144,7 @@
             // 
             this.integerTextBox1.BeforeTouchSize = new System.Drawing.Size(116, 23);
             this.integerTextBox1.IntegerValue = ((long)(1));
-            this.integerTextBox1.Location = new System.Drawing.Point(467, 27);
+            this.integerTextBox1.Location = new System.Drawing.Point(4, 11);
             this.integerTextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.integerTextBox1.Name = "integerTextBox1";
             this.integerTextBox1.Size = new System.Drawing.Size(116, 23);
@@ -171,15 +176,42 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // button2bgrwk
+            // 
+            this.button2bgrwk.Location = new System.Drawing.Point(127, 11);
+            this.button2bgrwk.Name = "button2bgrwk";
+            this.button2bgrwk.Size = new System.Drawing.Size(75, 23);
+            this.button2bgrwk.TabIndex = 10;
+            this.button2bgrwk.Text = "button2";
+            this.button2bgrwk.UseVisualStyleBackColor = true;
+            this.button2bgrwk.Click += new System.EventHandler(this.button2bgrwk_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(550, 463);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(293, 23);
+            this.progressBar1.TabIndex = 11;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.integerTextBox1);
+            this.panel1.Controls.Add(this.button2bgrwk);
+            this.panel1.Location = new System.Drawing.Point(321, 16);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(212, 55);
+            this.panel1.TabIndex = 12;
+            // 
             // FormTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1146, 517);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panelPrintBarcode);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.integerTextBox1);
             this.Controls.Add(this.chartControl1);
             this.Controls.Add(this.linearGauge1);
             this.Controls.Add(this.digitalGauge2);
@@ -189,6 +221,8 @@
             this.Text = "FormTest";
             ((System.ComponentModel.ISupportInitialize)(this.integerTextBox1)).EndInit();
             this.panelPrintBarcode.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,5 +239,9 @@
         private TextBox textBox1;
         private Panel panelPrintBarcode;
         private Button button1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Button button2bgrwk;
+        private ProgressBar progressBar1;
+        private Panel panel1;
     }
 }

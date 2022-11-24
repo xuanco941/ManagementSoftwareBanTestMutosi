@@ -29,7 +29,7 @@ namespace ManagementSoftware.GUI.Section.ThongKe
                     ThoiGianNgat1.Text = e.ThoiGianNgat.ToString() + " phút";
                     CamBienNhiet1.Text = e.CBNhietThanBauNong == true ? "on" : "off";
                 }
-                if (e.BauNongName == TenThietBi.BauNong2)
+                else if (e.BauNongName == TenThietBi.BauNong2)
                 {
                     nameBauNong2.Text = e.BauNongName;
                     DongAC2.Text = e.DongAC.ToString();
@@ -37,7 +37,7 @@ namespace ManagementSoftware.GUI.Section.ThongKe
                     ThoiGianNgat2.Text = e.ThoiGianNgat.ToString() + " phút";
                     CamBienNhiet2.Text = e.CBNhietThanBauNong == true ? "on" : "off";
                 }
-                if (e.BauNongName == TenThietBi.BauNong3)
+                else if (e.BauNongName == TenThietBi.BauNong3)
                 {
                     nameBauNong3.Text = e.BauNongName;
                     DongAC3.Text = e.DongAC.ToString();
@@ -45,7 +45,7 @@ namespace ManagementSoftware.GUI.Section.ThongKe
                     ThoiGianNgat3.Text = e.ThoiGianNgat.ToString() + " phút";
                     CamBienNhiet3.Text = e.CBNhietThanBauNong == true ? "on" : "off";
                 }
-                if (e.BauNongName == TenThietBi.BauNong4)
+                else if (e.BauNongName == TenThietBi.BauNong4)
                 {
                     nameBauNong4.Text = e.BauNongName;
                     DongAC4.Text = e.DongAC.ToString();
@@ -53,7 +53,7 @@ namespace ManagementSoftware.GUI.Section.ThongKe
                     ThoiGianNgat4.Text = e.ThoiGianNgat.ToString() + " phút";
                     CamBienNhiet4.Text = e.CBNhietThanBauNong == true ? "on" : "off";
                 }
-                if (e.BauNongName == TenThietBi.BauNong5)
+                else if (e.BauNongName == TenThietBi.BauNong5)
                 {
                     nameBauNong5.Text = e.BauNongName;
                     DongAC5.Text = e.DongAC.ToString();
@@ -61,7 +61,7 @@ namespace ManagementSoftware.GUI.Section.ThongKe
                     ThoiGianNgat5.Text = e.ThoiGianNgat.ToString() + " phút";
                     CamBienNhiet5.Text = e.CBNhietThanBauNong == true ? "on" : "off";
                 }
-                if (e.BauNongName == TenThietBi.BauNong6)
+                else if (e.BauNongName == TenThietBi.BauNong6)
                 {
                     nameBauNong6.Text = e.BauNongName;
                     DongAC6.Text = e.DongAC.ToString();
@@ -69,7 +69,7 @@ namespace ManagementSoftware.GUI.Section.ThongKe
                     ThoiGianNgat6.Text = e.ThoiGianNgat.ToString() + " phút";
                     CamBienNhiet6.Text = e.CBNhietThanBauNong == true ? "on" : "off";
                 }
-                if (e.BauNongName == TenThietBi.BauNong7)
+                else if (e.BauNongName == TenThietBi.BauNong7)
                 {
                     nameBauNong7.Text = e.BauNongName;
                     DongAC7.Text = e.DongAC.ToString();
@@ -77,7 +77,7 @@ namespace ManagementSoftware.GUI.Section.ThongKe
                     ThoiGianNgat7.Text = e.ThoiGianNgat.ToString() + " phút";
                     CamBienNhiet7.Text = e.CBNhietThanBauNong == true ? "on" : "off";
                 }
-                if (e.BauNongName == TenThietBi.BauNong8)
+                else if (e.BauNongName == TenThietBi.BauNong8)
                 {
                     nameBauNong8.Text = e.BauNongName;
                     DongAC8.Text = e.DongAC.ToString();
@@ -85,7 +85,7 @@ namespace ManagementSoftware.GUI.Section.ThongKe
                     ThoiGianNgat8.Text = e.ThoiGianNgat.ToString() + " phút";
                     CamBienNhiet8.Text = e.CBNhietThanBauNong == true ? "on" : "off";
                 }
-                if (e.BauNongName == TenThietBi.BauNong9)
+                else if (e.BauNongName == TenThietBi.BauNong9)
                 {
                     nameBauNong9.Text = e.BauNongName;
                     DongAC9.Text = e.DongAC.ToString();
@@ -93,7 +93,7 @@ namespace ManagementSoftware.GUI.Section.ThongKe
                     ThoiGianNgat9.Text = e.ThoiGianNgat.ToString() + " phút";
                     CamBienNhiet9.Text = e.CBNhietThanBauNong == true ? "on" : "off";
                 }
-                if (e.BauNongName == TenThietBi.BauNong10)
+                else if (e.BauNongName == TenThietBi.BauNong10)
                 {
                     nameBauNong10.Text = e.BauNongName;
                     DongAC10.Text = e.DongAC.ToString();

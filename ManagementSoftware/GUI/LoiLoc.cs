@@ -2,6 +2,7 @@
 using ManagementSoftware.GUI.Section;
 using ManagementSoftware.GUI.Section.ThongKe;
 using ManagementSoftware.Models;
+using System.ComponentModel;
 
 namespace ManagementSoftware.GUI
 {
@@ -27,45 +28,13 @@ namespace ManagementSoftware.GUI
         public LoiLoc()
         {
             InitializeComponent();
-
             LoadFormThongKe();
-        }
-
-        void LoadFormThongKe()
-        {
-            panelThongKe.Controls.Clear();
-
-            PaginationLoiLoc pagination = new PaginationLoiLoc();
-            pagination.Set(page,timeStart,timeEnd);
-            this.ListResults = pagination.ListResults;
-            this.TotalPages = pagination.TotalPages;
-            lbTotalPages.Text = this.TotalPages.ToString();
-
-            buttonPreviousPage.Enabled = this.page > 1;
-            buttonNextPage.Enabled = this.page < this.TotalPages;
-            buttonPage.Text = this.page.ToString();
-
-            pageNumberGoto.MinValue = 1;
-            pageNumberGoto.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1 ;
-
-            foreach (var e in this.ListResults)
-            {
-
-            }
-            for(int i= ListResults.Count-1; i >=0 ; i--)
-            {
-                ItemThongKeLoiLoc form = new ItemThongKeLoiLoc(ListResults.ElementAt(i).Key, ListResults.ElementAt(i).Value);
-                form.TopLevel = false;
-                panelThongKe.Controls.Add(form);
-                form.FormBorderStyle = FormBorderStyle.None;
-                form.Dock = DockStyle.Top;
-                form.Show();
-            }
         }
 
         private void buttonPreviousPage_Click(object sender, EventArgs e)
         {
-            if(this.page > 1) {
+            if (this.page > 1)
+            {
                 this.page = this.page - 1;
                 LoadFormThongKe();
             }
@@ -92,5 +61,44 @@ namespace ManagementSoftware.GUI
             this.page = int.Parse(pageNumberGoto.Text);
             LoadFormThongKe();
         }
+
+
+
+        private void LoadFormThongKe()
+        {
+            panel2.Enabled = false;
+            foreach (Form item in panelThongKe.Controls)
+            {
+                item.Close();
+                item.Dispose();
+            }
+            panelThongKe.Controls.Clear();
+
+
+            PaginationLoiLoc pagination = new PaginationLoiLoc();
+            pagination.Set(page, timeStart, timeEnd);
+            this.ListResults = pagination.ListResults;
+            this.TotalPages = pagination.TotalPages;
+            lbTotalPages.Text = this.TotalPages.ToString();
+
+            buttonPreviousPage.Enabled = this.page > 1;
+            buttonNextPage.Enabled = this.page < this.TotalPages;
+            buttonPage.Text = this.page.ToString();
+
+            pageNumberGoto.MinValue = 1;
+            pageNumberGoto.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1;
+
+            for (int i = ListResults.Count - 1; i >= 0; i--)
+            {
+                ItemThongKeLoiLoc form = new ItemThongKeLoiLoc(ListResults.ElementAt(i).Key, ListResults.ElementAt(i).Value);
+                form.TopLevel = false;
+                panelThongKe.Controls.Add(form);
+                form.FormBorderStyle = FormBorderStyle.None;
+                form.Dock = DockStyle.Top;
+                form.Show();
+            }
+            panel2.Enabled = true;
+        }
+
     }
 }

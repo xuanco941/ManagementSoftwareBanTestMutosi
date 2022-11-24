@@ -128,7 +128,7 @@ namespace ManagementSoftware.Models
         }
         public void CreateDatabase()
         {
-            this.Database.EnsureDeleted();
+            //this.Database.EnsureDeleted();
             //init db
             if (this.Database.EnsureCreated() == true)
             {
@@ -201,6 +201,21 @@ namespace ManagementSoftware.Models
                     bauNongs.Add(baunong1);
                 }
                 DALBauNong.Add(bauNongs);
+
+
+                //Nguon
+                List<Nguon> nguons = new List<Nguon>();
+                for (int j = 1; j <= 30; j++)
+                {
+                    Nguon nguon = new Nguon();
+                    nguon.DienApDC = 7;
+                    nguon.DongDC = 4.32;
+                    nguon.CongSuat = 5.3;
+                    nguon.SoLanTest = 1;
+                    nguon.NguonName = "Nguồn " + j;
+                    nguons.Add(nguon);
+                }
+                DALNguon.Add(nguons);
             }
         }
 

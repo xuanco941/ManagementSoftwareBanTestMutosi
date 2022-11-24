@@ -41,7 +41,14 @@ namespace ManagementSoftware.GUI
 
         void LoadFormThongKe()
         {
+            panel2.Enabled = false;
+            foreach (Form item in panelThongKe.Controls)
+            {
+                item.Close();
+                item.Dispose();
+            }
             panelThongKe.Controls.Clear();
+
 
             PaginationBauNong pagination = new PaginationBauNong();
             pagination.Set(page, timeStart, timeEnd);
@@ -55,11 +62,7 @@ namespace ManagementSoftware.GUI
 
             pageNumberGoto.MinValue = 1;
             pageNumberGoto.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1;
-
-            foreach (var e in this.ListResults)
-            {
-
-            }
+            
             for (int i = ListResults.Count - 1; i >= 0; i--)
             {
                 ItemThongKeBauNong form = new ItemThongKeBauNong(ListResults.ElementAt(i).Key, ListResults.ElementAt(i).Value);
@@ -69,6 +72,7 @@ namespace ManagementSoftware.GUI
                 form.Dock = DockStyle.Top;
                 form.Show();
             }
+            panel2.Enabled = true;
         }
 
         private void buttonPreviousPage_Click(object sender, EventArgs e)

@@ -784,8 +784,6 @@
             this.panel263 = new System.Windows.Forms.Panel();
             this.label121 = new System.Windows.Forms.Label();
             this.tabPageThongKe = new System.Windows.Forms.TabPage();
-            this.gridLayout2 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
-            this.gridLayout1 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
             this.panelThongKe = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel31 = new System.Windows.Forms.TableLayoutPanel();
@@ -814,6 +812,9 @@
             this.buttonPreviousPage = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.buttonCustomGoPage = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.inputNumPageGo = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
+            this.gridLayout2 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
+            this.gridLayout1 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
+            this.backgroundWorkerCapNhatBangThongKe = new System.ComponentModel.BackgroundWorker();
             this.tabControl1.SuspendLayout();
             this.tabPageGiamSat1.SuspendLayout();
             this.panel134.SuspendLayout();
@@ -1238,8 +1239,6 @@
             this.panel262.SuspendLayout();
             this.panel263.SuspendLayout();
             this.tabPageThongKe.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLayout2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLayout1)).BeginInit();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel31.SuspendLayout();
             this.tableLayoutPanel32.SuspendLayout();
@@ -1255,6 +1254,8 @@
             this.panel399.SuspendLayout();
             this.panel400.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inputNumPageGo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLayout2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLayout1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -9972,18 +9973,6 @@
             this.tabPageThongKe.Text = "Thống kê";
             this.tabPageThongKe.UseVisualStyleBackColor = true;
             // 
-            // gridLayout2
-            // 
-            this.gridLayout2.Columns = 5;
-            this.gridLayout2.ContainerControl = this.tabPageGiamSat2;
-            this.gridLayout2.Rows = 3;
-            // 
-            // gridLayout1
-            // 
-            this.gridLayout1.Columns = 5;
-            this.gridLayout1.ContainerControl = this.tabPageGiamSat1;
-            this.gridLayout1.Rows = 3;
-            // 
             // panelThongKe
             // 
             this.panelThongKe.AutoScroll = true;
@@ -10121,10 +10110,11 @@
             this.buttonGoto.TextColor = System.Drawing.Color.Black;
             this.buttonGoto.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.buttonGoto.UseVisualStyleBackColor = false;
+            this.buttonGoto.Click += new System.EventHandler(this.buttonGoto_Click);
             // 
             // pageNumberGoto
             // 
-            this.pageNumberGoto.BeforeTouchSize = new System.Drawing.Size(168, 25);
+            this.pageNumberGoto.BeforeTouchSize = new System.Drawing.Size(66, 35);
             this.pageNumberGoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pageNumberGoto.Dock = System.Windows.Forms.DockStyle.Top;
             this.pageNumberGoto.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -10269,6 +10259,7 @@
             this.buttonSearch.TextColor = System.Drawing.Color.Black;
             this.buttonSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonSearch.UseVisualStyleBackColor = false;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // panel400
             // 
@@ -10328,6 +10319,7 @@
             this.buttonNextPage.TextColor = System.Drawing.Color.Black;
             this.buttonNextPage.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.buttonNextPage.UseVisualStyleBackColor = false;
+            this.buttonNextPage.Click += new System.EventHandler(this.buttonNextPage_Click);
             // 
             // buttonPreviousPage
             // 
@@ -10351,6 +10343,7 @@
             this.buttonPreviousPage.TextColor = System.Drawing.Color.Black;
             this.buttonPreviousPage.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.buttonPreviousPage.UseVisualStyleBackColor = false;
+            this.buttonPreviousPage.Click += new System.EventHandler(this.buttonPreviousPage_Click);
             // 
             // buttonCustomGoPage
             // 
@@ -10380,7 +10373,7 @@
             // inputNumPageGo
             // 
             this.inputNumPageGo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputNumPageGo.BeforeTouchSize = new System.Drawing.Size(168, 25);
+            this.inputNumPageGo.BeforeTouchSize = new System.Drawing.Size(66, 35);
             this.inputNumPageGo.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.inputNumPageGo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.inputNumPageGo.IntegerValue = ((long)(1));
@@ -10392,6 +10385,19 @@
             this.inputNumPageGo.TabIndex = 32;
             this.inputNumPageGo.Text = "1";
             this.inputNumPageGo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // gridLayout2
+            // 
+            this.gridLayout2.Columns = 5;
+            this.gridLayout2.ContainerControl = this.tabPageGiamSat2;
+            this.gridLayout2.Rows = 3;
+            // 
+            // gridLayout1
+            // 
+            this.gridLayout1.Columns = 5;
+            this.gridLayout1.ContainerControl = this.tabPageGiamSat1;
+            this.gridLayout1.Rows = 3;
+            // 
             // 
             // Nguon
             // 
@@ -10826,8 +10832,6 @@
             this.panel262.ResumeLayout(false);
             this.panel263.ResumeLayout(false);
             this.tabPageThongKe.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridLayout2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLayout1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tableLayoutPanel31.ResumeLayout(false);
@@ -10845,6 +10849,8 @@
             this.panel399.ResumeLayout(false);
             this.panel400.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.inputNumPageGo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLayout2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLayout1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -11635,5 +11641,6 @@
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonPreviousPage;
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonCustomGoPage;
         private Syncfusion.Windows.Forms.Tools.IntegerTextBox inputNumPageGo;
+        private System.ComponentModel.BackgroundWorker backgroundWorkerCapNhatBangThongKe;
     }
 }

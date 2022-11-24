@@ -31,7 +31,7 @@ namespace ManagementSoftware.GUI.Section.ThongKe
                     ThoiGianXa1.Text = e.ThoiGianXa.ToString() + " phút";
                     ThoiGianGiu1.Text = e.ThoiGianGiu.ToString() + " phút";
                 }
-                if (e.LoiLocName == TenThietBi.LoiLoc2)
+                else if (e.LoiLocName == TenThietBi.LoiLoc2)
                 {
                     nameLoiLoc2.Text = e.LoiLocName;
                     SoLanTest2.Text = e.SoLanTest.ToString();
@@ -40,7 +40,7 @@ namespace ManagementSoftware.GUI.Section.ThongKe
                     ThoiGianXa2.Text = e.ThoiGianXa.ToString() + " phút";
                     ThoiGianGiu2.Text = e.ThoiGianGiu.ToString() + " phút";
                 }
-                if (e.LoiLocName == TenThietBi.LoiLoc1va2)
+                else if (e.LoiLocName == TenThietBi.LoiLoc1va2)
                 {
                     nameLoiLoc1va2.Text = e.LoiLocName;
                     SoLanTest1va2.Text = e.SoLanTest.ToString();

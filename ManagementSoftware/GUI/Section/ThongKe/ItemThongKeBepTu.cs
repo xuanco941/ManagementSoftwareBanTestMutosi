@@ -32,7 +32,7 @@ namespace ManagementSoftware.GUI.Section.ThongKe
                     ThoiGianSoi1.Text = e.ThoiGianSoi.ToString() + " phút";
                     SoLanTest1.Text = e.SoLanTest.ToString();
                 }
-                if (e.BepTuName == TenThietBi.BepTu2)
+                else if (e.BepTuName == TenThietBi.BepTu2)
                 {
                     NameBepTu2.Text = e.BepTuName;
                     DongACBep2.Text = e.DongAC.ToString();
