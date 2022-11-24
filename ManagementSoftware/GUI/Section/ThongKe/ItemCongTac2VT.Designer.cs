@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.TimeID = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panelListItem = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -48,27 +48,27 @@
             this.label151 = new System.Windows.Forms.Label();
             this.tableLayoutPanel32 = new System.Windows.Forms.TableLayoutPanel();
             this.panel162 = new System.Windows.Forms.Panel();
-            this.label152 = new System.Windows.Forms.Label();
+            this.TrangThaiJig10CT5 = new System.Windows.Forms.Label();
             this.panel163 = new System.Windows.Forms.Panel();
-            this.label153 = new System.Windows.Forms.Label();
+            this.SoLanTestJig10CT5 = new System.Windows.Forms.Label();
             this.panel164 = new System.Windows.Forms.Panel();
-            this.label154 = new System.Windows.Forms.Label();
+            this.TrangThaiJig10CT4 = new System.Windows.Forms.Label();
             this.panel165 = new System.Windows.Forms.Panel();
-            this.label155 = new System.Windows.Forms.Label();
+            this.SoLanTestJig10CT4 = new System.Windows.Forms.Label();
             this.panel166 = new System.Windows.Forms.Panel();
-            this.label156 = new System.Windows.Forms.Label();
+            this.TrangThaiJig10CT3 = new System.Windows.Forms.Label();
             this.panel167 = new System.Windows.Forms.Panel();
-            this.label157 = new System.Windows.Forms.Label();
+            this.SoLanTestJig10CT3 = new System.Windows.Forms.Label();
             this.panel168 = new System.Windows.Forms.Panel();
-            this.label158 = new System.Windows.Forms.Label();
+            this.TrangThaiJig10CT2 = new System.Windows.Forms.Label();
             this.panel169 = new System.Windows.Forms.Panel();
-            this.label159 = new System.Windows.Forms.Label();
+            this.SoLanTestJig10CT2 = new System.Windows.Forms.Label();
             this.panel170 = new System.Windows.Forms.Panel();
-            this.label160 = new System.Windows.Forms.Label();
+            this.TrangThaiJig10CT1 = new System.Windows.Forms.Label();
             this.panel171 = new System.Windows.Forms.Panel();
-            this.label161 = new System.Windows.Forms.Label();
+            this.SoLanTestJig10CT1 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.Jig10 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel27 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel28 = new System.Windows.Forms.TableLayoutPanel();
@@ -84,27 +84,27 @@
             this.label136 = new System.Windows.Forms.Label();
             this.tableLayoutPanel29 = new System.Windows.Forms.TableLayoutPanel();
             this.panel147 = new System.Windows.Forms.Panel();
-            this.label137 = new System.Windows.Forms.Label();
+            this.TrangThaiJig9CT5 = new System.Windows.Forms.Label();
             this.panel148 = new System.Windows.Forms.Panel();
-            this.label138 = new System.Windows.Forms.Label();
+            this.SoLanTestJig9CT5 = new System.Windows.Forms.Label();
             this.panel149 = new System.Windows.Forms.Panel();
-            this.label139 = new System.Windows.Forms.Label();
+            this.TrangThaiJig9CT4 = new System.Windows.Forms.Label();
             this.panel150 = new System.Windows.Forms.Panel();
-            this.label140 = new System.Windows.Forms.Label();
+            this.SoLanTestJig9CT4 = new System.Windows.Forms.Label();
             this.panel151 = new System.Windows.Forms.Panel();
-            this.label141 = new System.Windows.Forms.Label();
+            this.TrangThaiJig9CT3 = new System.Windows.Forms.Label();
             this.panel152 = new System.Windows.Forms.Panel();
-            this.label142 = new System.Windows.Forms.Label();
+            this.SoLanTestJig9CT3 = new System.Windows.Forms.Label();
             this.panel153 = new System.Windows.Forms.Panel();
-            this.label143 = new System.Windows.Forms.Label();
+            this.TrangThaiJig9CT2 = new System.Windows.Forms.Label();
             this.panel154 = new System.Windows.Forms.Panel();
-            this.label144 = new System.Windows.Forms.Label();
+            this.SoLanTestJig9CT2 = new System.Windows.Forms.Label();
             this.panel155 = new System.Windows.Forms.Panel();
-            this.label145 = new System.Windows.Forms.Label();
+            this.TrangThaiJig9CT1 = new System.Windows.Forms.Label();
             this.panel156 = new System.Windows.Forms.Panel();
-            this.label146 = new System.Windows.Forms.Label();
+            this.SoLanTestJig9CT1 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.Jig9 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
@@ -120,27 +120,27 @@
             this.label121 = new System.Windows.Forms.Label();
             this.tableLayoutPanel26 = new System.Windows.Forms.TableLayoutPanel();
             this.panel132 = new System.Windows.Forms.Panel();
-            this.label122 = new System.Windows.Forms.Label();
+            this.TrangThaiJig8CT5 = new System.Windows.Forms.Label();
             this.panel133 = new System.Windows.Forms.Panel();
-            this.label123 = new System.Windows.Forms.Label();
+            this.SoLanTestJig8CT5 = new System.Windows.Forms.Label();
             this.panel134 = new System.Windows.Forms.Panel();
-            this.label124 = new System.Windows.Forms.Label();
+            this.TrangThaiJig8CT4 = new System.Windows.Forms.Label();
             this.panel135 = new System.Windows.Forms.Panel();
-            this.label125 = new System.Windows.Forms.Label();
+            this.SoLanTestJig8CT4 = new System.Windows.Forms.Label();
             this.panel136 = new System.Windows.Forms.Panel();
-            this.label126 = new System.Windows.Forms.Label();
+            this.TrangThaiJig8CT3 = new System.Windows.Forms.Label();
             this.panel137 = new System.Windows.Forms.Panel();
-            this.label127 = new System.Windows.Forms.Label();
+            this.SoLanTestJig8CT3 = new System.Windows.Forms.Label();
             this.panel138 = new System.Windows.Forms.Panel();
-            this.label128 = new System.Windows.Forms.Label();
+            this.TrangThaiJig8CT2 = new System.Windows.Forms.Label();
             this.panel139 = new System.Windows.Forms.Panel();
-            this.label129 = new System.Windows.Forms.Label();
+            this.SoLanTestJig8CT2 = new System.Windows.Forms.Label();
             this.panel140 = new System.Windows.Forms.Panel();
-            this.label130 = new System.Windows.Forms.Label();
+            this.TrangThaiJig8CT1 = new System.Windows.Forms.Label();
             this.panel141 = new System.Windows.Forms.Panel();
-            this.label131 = new System.Windows.Forms.Label();
+            this.SoLanTestJig8CT1 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.Jig8 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
@@ -156,27 +156,27 @@
             this.label106 = new System.Windows.Forms.Label();
             this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
             this.panel117 = new System.Windows.Forms.Panel();
-            this.label107 = new System.Windows.Forms.Label();
+            this.TrangThaiJig7CT5 = new System.Windows.Forms.Label();
             this.panel118 = new System.Windows.Forms.Panel();
-            this.label108 = new System.Windows.Forms.Label();
+            this.SoLanTestJig7CT5 = new System.Windows.Forms.Label();
             this.panel119 = new System.Windows.Forms.Panel();
-            this.label109 = new System.Windows.Forms.Label();
+            this.TrangThaiJig7CT4 = new System.Windows.Forms.Label();
             this.panel120 = new System.Windows.Forms.Panel();
-            this.label110 = new System.Windows.Forms.Label();
+            this.SoLanTestJig7CT4 = new System.Windows.Forms.Label();
             this.panel121 = new System.Windows.Forms.Panel();
-            this.label111 = new System.Windows.Forms.Label();
+            this.TrangThaiJig7CT3 = new System.Windows.Forms.Label();
             this.panel122 = new System.Windows.Forms.Panel();
-            this.label112 = new System.Windows.Forms.Label();
+            this.SoLanTestJig7CT3 = new System.Windows.Forms.Label();
             this.panel123 = new System.Windows.Forms.Panel();
-            this.label113 = new System.Windows.Forms.Label();
+            this.TrangThaiJig7CT2 = new System.Windows.Forms.Label();
             this.panel124 = new System.Windows.Forms.Panel();
-            this.label114 = new System.Windows.Forms.Label();
+            this.SoLanTestJig7CT2 = new System.Windows.Forms.Label();
             this.panel125 = new System.Windows.Forms.Panel();
-            this.label115 = new System.Windows.Forms.Label();
+            this.TrangThaiJig7CT1 = new System.Windows.Forms.Label();
             this.panel126 = new System.Windows.Forms.Panel();
-            this.label116 = new System.Windows.Forms.Label();
+            this.SoLanTestJig7CT1 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.Jig7 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
@@ -192,27 +192,27 @@
             this.label91 = new System.Windows.Forms.Label();
             this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
             this.panel102 = new System.Windows.Forms.Panel();
-            this.label92 = new System.Windows.Forms.Label();
+            this.TrangThaiJig6CT5 = new System.Windows.Forms.Label();
             this.panel103 = new System.Windows.Forms.Panel();
-            this.label93 = new System.Windows.Forms.Label();
+            this.SoLanTestJig6CT5 = new System.Windows.Forms.Label();
             this.panel104 = new System.Windows.Forms.Panel();
-            this.label94 = new System.Windows.Forms.Label();
+            this.TrangThaiJig6CT4 = new System.Windows.Forms.Label();
             this.panel105 = new System.Windows.Forms.Panel();
-            this.label95 = new System.Windows.Forms.Label();
+            this.SoLanTestJig6CT4 = new System.Windows.Forms.Label();
             this.panel106 = new System.Windows.Forms.Panel();
-            this.label96 = new System.Windows.Forms.Label();
+            this.TrangThaiJig6CT3 = new System.Windows.Forms.Label();
             this.panel107 = new System.Windows.Forms.Panel();
-            this.label97 = new System.Windows.Forms.Label();
+            this.SoLanTestJig6CT3 = new System.Windows.Forms.Label();
             this.panel108 = new System.Windows.Forms.Panel();
-            this.label98 = new System.Windows.Forms.Label();
+            this.TrangThaiJig6CT2 = new System.Windows.Forms.Label();
             this.panel109 = new System.Windows.Forms.Panel();
-            this.label99 = new System.Windows.Forms.Label();
+            this.SoLanTestJig6CT2 = new System.Windows.Forms.Label();
             this.panel110 = new System.Windows.Forms.Panel();
-            this.label100 = new System.Windows.Forms.Label();
+            this.TrangThaiJig6CT1 = new System.Windows.Forms.Label();
             this.panel111 = new System.Windows.Forms.Panel();
-            this.label101 = new System.Windows.Forms.Label();
+            this.SoLanTestJig6CT1 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.Jig6 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
@@ -228,27 +228,27 @@
             this.label76 = new System.Windows.Forms.Label();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.panel87 = new System.Windows.Forms.Panel();
-            this.label77 = new System.Windows.Forms.Label();
+            this.TrangThaiJig5CT5 = new System.Windows.Forms.Label();
             this.panel88 = new System.Windows.Forms.Panel();
-            this.label78 = new System.Windows.Forms.Label();
+            this.SoLanTestJig5CT5 = new System.Windows.Forms.Label();
             this.panel89 = new System.Windows.Forms.Panel();
-            this.label79 = new System.Windows.Forms.Label();
+            this.TrangThaiJig5CT4 = new System.Windows.Forms.Label();
             this.panel90 = new System.Windows.Forms.Panel();
-            this.label80 = new System.Windows.Forms.Label();
+            this.SoLanTestJig5CT4 = new System.Windows.Forms.Label();
             this.panel91 = new System.Windows.Forms.Panel();
-            this.label81 = new System.Windows.Forms.Label();
+            this.TrangThaiJig5CT3 = new System.Windows.Forms.Label();
             this.panel92 = new System.Windows.Forms.Panel();
-            this.label82 = new System.Windows.Forms.Label();
+            this.SoLanTestJig5CT3 = new System.Windows.Forms.Label();
             this.panel93 = new System.Windows.Forms.Panel();
-            this.label83 = new System.Windows.Forms.Label();
+            this.TrangThaiJig5CT2 = new System.Windows.Forms.Label();
             this.panel94 = new System.Windows.Forms.Panel();
-            this.label84 = new System.Windows.Forms.Label();
+            this.SoLanTestJig5CT2 = new System.Windows.Forms.Label();
             this.panel95 = new System.Windows.Forms.Panel();
-            this.label85 = new System.Windows.Forms.Label();
+            this.TrangThaiJig5CT1 = new System.Windows.Forms.Label();
             this.panel96 = new System.Windows.Forms.Panel();
-            this.label86 = new System.Windows.Forms.Label();
+            this.SoLanTestJig5CT1 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.Jig5 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
@@ -264,27 +264,27 @@
             this.label61 = new System.Windows.Forms.Label();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.panel72 = new System.Windows.Forms.Panel();
-            this.label62 = new System.Windows.Forms.Label();
+            this.TrangThaiJig4CT5 = new System.Windows.Forms.Label();
             this.panel73 = new System.Windows.Forms.Panel();
-            this.label63 = new System.Windows.Forms.Label();
+            this.SoLanTestJig4CT5 = new System.Windows.Forms.Label();
             this.panel74 = new System.Windows.Forms.Panel();
-            this.label64 = new System.Windows.Forms.Label();
+            this.TrangThaiJig4CT4 = new System.Windows.Forms.Label();
             this.panel75 = new System.Windows.Forms.Panel();
-            this.label65 = new System.Windows.Forms.Label();
+            this.SoLanTestJig4CT4 = new System.Windows.Forms.Label();
             this.panel76 = new System.Windows.Forms.Panel();
-            this.label66 = new System.Windows.Forms.Label();
+            this.TrangThaiJig4CT3 = new System.Windows.Forms.Label();
             this.panel77 = new System.Windows.Forms.Panel();
-            this.label67 = new System.Windows.Forms.Label();
+            this.SoLanTestJig4CT3 = new System.Windows.Forms.Label();
             this.panel78 = new System.Windows.Forms.Panel();
-            this.label68 = new System.Windows.Forms.Label();
+            this.TrangThaiJig4CT2 = new System.Windows.Forms.Label();
             this.panel79 = new System.Windows.Forms.Panel();
-            this.label69 = new System.Windows.Forms.Label();
+            this.SoLanTestJig4CT2 = new System.Windows.Forms.Label();
             this.panel80 = new System.Windows.Forms.Panel();
-            this.label70 = new System.Windows.Forms.Label();
+            this.TrangThaiJig4CT1 = new System.Windows.Forms.Label();
             this.panel81 = new System.Windows.Forms.Panel();
-            this.label71 = new System.Windows.Forms.Label();
+            this.SoLanTestJig4CT1 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Jig4 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
@@ -300,27 +300,27 @@
             this.label46 = new System.Windows.Forms.Label();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.panel57 = new System.Windows.Forms.Panel();
-            this.label47 = new System.Windows.Forms.Label();
+            this.TrangThaiJig3CT5 = new System.Windows.Forms.Label();
             this.panel58 = new System.Windows.Forms.Panel();
-            this.label48 = new System.Windows.Forms.Label();
+            this.SoLanTestJig3CT5 = new System.Windows.Forms.Label();
             this.panel59 = new System.Windows.Forms.Panel();
-            this.label49 = new System.Windows.Forms.Label();
+            this.TrangThaiJig3CT4 = new System.Windows.Forms.Label();
             this.panel60 = new System.Windows.Forms.Panel();
-            this.label50 = new System.Windows.Forms.Label();
+            this.SoLanTestJig3CT4 = new System.Windows.Forms.Label();
             this.panel61 = new System.Windows.Forms.Panel();
-            this.label51 = new System.Windows.Forms.Label();
+            this.TrangThaiJig3CT3 = new System.Windows.Forms.Label();
             this.panel62 = new System.Windows.Forms.Panel();
-            this.label52 = new System.Windows.Forms.Label();
+            this.SoLanTestJig3CT3 = new System.Windows.Forms.Label();
             this.panel63 = new System.Windows.Forms.Panel();
-            this.label53 = new System.Windows.Forms.Label();
+            this.TrangThaiJig3CT2 = new System.Windows.Forms.Label();
             this.panel64 = new System.Windows.Forms.Panel();
-            this.label54 = new System.Windows.Forms.Label();
+            this.SoLanTestJig3CT2 = new System.Windows.Forms.Label();
             this.panel65 = new System.Windows.Forms.Panel();
-            this.label55 = new System.Windows.Forms.Label();
+            this.TrangThaiJig3CT1 = new System.Windows.Forms.Label();
             this.panel66 = new System.Windows.Forms.Panel();
-            this.label56 = new System.Windows.Forms.Label();
+            this.SoLanTestJig3CT1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Jig3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -336,27 +336,27 @@
             this.label31 = new System.Windows.Forms.Label();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.panel42 = new System.Windows.Forms.Panel();
-            this.label32 = new System.Windows.Forms.Label();
+            this.TrangThaiJig2CT5 = new System.Windows.Forms.Label();
             this.panel43 = new System.Windows.Forms.Panel();
-            this.label33 = new System.Windows.Forms.Label();
+            this.SoLanTestJig2CT5 = new System.Windows.Forms.Label();
             this.panel44 = new System.Windows.Forms.Panel();
-            this.label34 = new System.Windows.Forms.Label();
+            this.TrangThaiJig2CT4 = new System.Windows.Forms.Label();
             this.panel45 = new System.Windows.Forms.Panel();
-            this.label35 = new System.Windows.Forms.Label();
+            this.SoLanTestJig2CT4 = new System.Windows.Forms.Label();
             this.panel46 = new System.Windows.Forms.Panel();
-            this.label36 = new System.Windows.Forms.Label();
+            this.TrangThaiJig2CT3 = new System.Windows.Forms.Label();
             this.panel47 = new System.Windows.Forms.Panel();
-            this.label37 = new System.Windows.Forms.Label();
+            this.SoLanTestJig2CT3 = new System.Windows.Forms.Label();
             this.panel48 = new System.Windows.Forms.Panel();
-            this.label38 = new System.Windows.Forms.Label();
+            this.TrangThaiJig2CT2 = new System.Windows.Forms.Label();
             this.panel49 = new System.Windows.Forms.Panel();
-            this.label39 = new System.Windows.Forms.Label();
+            this.SoLanTestJig2CT2 = new System.Windows.Forms.Label();
             this.panel50 = new System.Windows.Forms.Panel();
-            this.label40 = new System.Windows.Forms.Label();
+            this.TrangThaiJig2CT1 = new System.Windows.Forms.Label();
             this.panel51 = new System.Windows.Forms.Panel();
-            this.label41 = new System.Windows.Forms.Label();
+            this.SoLanTestJig2CT1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Jig2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -372,27 +372,27 @@
             this.label11 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.panel36 = new System.Windows.Forms.Panel();
-            this.label26 = new System.Windows.Forms.Label();
+            this.TrangThaiJig1CT5 = new System.Windows.Forms.Label();
             this.panel35 = new System.Windows.Forms.Panel();
-            this.label22 = new System.Windows.Forms.Label();
+            this.SoLanTestJig1CT5 = new System.Windows.Forms.Label();
             this.panel34 = new System.Windows.Forms.Panel();
-            this.label25 = new System.Windows.Forms.Label();
+            this.TrangThaiJig1CT4 = new System.Windows.Forms.Label();
             this.panel33 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
+            this.SoLanTestJig1CT4 = new System.Windows.Forms.Label();
             this.panel32 = new System.Windows.Forms.Panel();
-            this.label24 = new System.Windows.Forms.Label();
+            this.TrangThaiJig1CT3 = new System.Windows.Forms.Label();
             this.panel31 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
+            this.SoLanTestJig1CT3 = new System.Windows.Forms.Label();
             this.panel30 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
+            this.TrangThaiJig1CT2 = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
+            this.SoLanTestJig1CT2 = new System.Windows.Forms.Label();
             this.panel28 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
+            this.TrangThaiJig1CT1 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
+            this.SoLanTestJig1CT1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.Jig1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelListItem.SuspendLayout();
@@ -603,24 +603,24 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.TimeID);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(3, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(134, 898);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // TimeID
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 896);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "9:41 9/4/2022";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TimeID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TimeID.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TimeID.ForeColor = System.Drawing.SystemColors.Control;
+            this.TimeID.Location = new System.Drawing.Point(0, 0);
+            this.TimeID.Name = "TimeID";
+            this.TimeID.Size = new System.Drawing.Size(132, 896);
+            this.TimeID.TabIndex = 2;
+            this.TimeID.Text = "9:41 9/4/2022";
+            this.TimeID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
             // 
@@ -689,7 +689,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1121, 890);
             this.tableLayoutPanel2.TabIndex = 0;
-            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // panel21
             // 
@@ -883,244 +882,244 @@
             // panel162
             // 
             this.panel162.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel162.Controls.Add(this.label152);
+            this.panel162.Controls.Add(this.TrangThaiJig10CT5);
             this.panel162.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel162.Location = new System.Drawing.Point(894, 3);
             this.panel162.Name = "panel162";
             this.panel162.Size = new System.Drawing.Size(98, 41);
             this.panel162.TabIndex = 9;
             // 
-            // label152
+            // TrangThaiJig10CT5
             // 
-            this.label152.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label152.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label152.ForeColor = System.Drawing.SystemColors.Control;
-            this.label152.Location = new System.Drawing.Point(0, 0);
-            this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(96, 39);
-            this.label152.TabIndex = 11;
-            this.label152.Text = "Trạng thái : On";
-            this.label152.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig10CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig10CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig10CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig10CT5.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig10CT5.Name = "TrangThaiJig10CT5";
+            this.TrangThaiJig10CT5.Size = new System.Drawing.Size(96, 39);
+            this.TrangThaiJig10CT5.TabIndex = 11;
+            this.TrangThaiJig10CT5.Text = "Trạng thái : On";
+            this.TrangThaiJig10CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel163
             // 
             this.panel163.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel163.Controls.Add(this.label153);
+            this.panel163.Controls.Add(this.SoLanTestJig10CT5);
             this.panel163.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel163.Location = new System.Drawing.Point(795, 3);
             this.panel163.Name = "panel163";
             this.panel163.Size = new System.Drawing.Size(93, 41);
             this.panel163.TabIndex = 8;
             // 
-            // label153
+            // SoLanTestJig10CT5
             // 
-            this.label153.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label153.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label153.ForeColor = System.Drawing.SystemColors.Control;
-            this.label153.Location = new System.Drawing.Point(0, 0);
-            this.label153.Name = "label153";
-            this.label153.Size = new System.Drawing.Size(91, 39);
-            this.label153.TabIndex = 10;
-            this.label153.Text = "Số lần test : 20";
-            this.label153.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig10CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig10CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig10CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig10CT5.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig10CT5.Name = "SoLanTestJig10CT5";
+            this.SoLanTestJig10CT5.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig10CT5.TabIndex = 10;
+            this.SoLanTestJig10CT5.Text = "Số lần test : 20";
+            this.SoLanTestJig10CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel164
             // 
             this.panel164.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel164.Controls.Add(this.label154);
+            this.panel164.Controls.Add(this.TrangThaiJig10CT4);
             this.panel164.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel164.Location = new System.Drawing.Point(696, 3);
             this.panel164.Name = "panel164";
             this.panel164.Size = new System.Drawing.Size(93, 41);
             this.panel164.TabIndex = 7;
             // 
-            // label154
+            // TrangThaiJig10CT4
             // 
-            this.label154.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label154.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label154.ForeColor = System.Drawing.SystemColors.Control;
-            this.label154.Location = new System.Drawing.Point(0, 0);
-            this.label154.Name = "label154";
-            this.label154.Size = new System.Drawing.Size(91, 39);
-            this.label154.TabIndex = 11;
-            this.label154.Text = "Trạng thái : On";
-            this.label154.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig10CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig10CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig10CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig10CT4.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig10CT4.Name = "TrangThaiJig10CT4";
+            this.TrangThaiJig10CT4.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig10CT4.TabIndex = 11;
+            this.TrangThaiJig10CT4.Text = "Trạng thái : On";
+            this.TrangThaiJig10CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel165
             // 
             this.panel165.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel165.Controls.Add(this.label155);
+            this.panel165.Controls.Add(this.SoLanTestJig10CT4);
             this.panel165.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel165.Location = new System.Drawing.Point(597, 3);
             this.panel165.Name = "panel165";
             this.panel165.Size = new System.Drawing.Size(93, 41);
             this.panel165.TabIndex = 6;
             // 
-            // label155
+            // SoLanTestJig10CT4
             // 
-            this.label155.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label155.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label155.ForeColor = System.Drawing.SystemColors.Control;
-            this.label155.Location = new System.Drawing.Point(0, 0);
-            this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(91, 39);
-            this.label155.TabIndex = 10;
-            this.label155.Text = "Số lần test : 20";
-            this.label155.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig10CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig10CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig10CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig10CT4.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig10CT4.Name = "SoLanTestJig10CT4";
+            this.SoLanTestJig10CT4.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig10CT4.TabIndex = 10;
+            this.SoLanTestJig10CT4.Text = "Số lần test : 20";
+            this.SoLanTestJig10CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel166
             // 
             this.panel166.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel166.Controls.Add(this.label156);
+            this.panel166.Controls.Add(this.TrangThaiJig10CT3);
             this.panel166.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel166.Location = new System.Drawing.Point(498, 3);
             this.panel166.Name = "panel166";
             this.panel166.Size = new System.Drawing.Size(93, 41);
             this.panel166.TabIndex = 5;
             // 
-            // label156
+            // TrangThaiJig10CT3
             // 
-            this.label156.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label156.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label156.ForeColor = System.Drawing.SystemColors.Control;
-            this.label156.Location = new System.Drawing.Point(0, 0);
-            this.label156.Name = "label156";
-            this.label156.Size = new System.Drawing.Size(91, 39);
-            this.label156.TabIndex = 11;
-            this.label156.Text = "Trạng thái : On";
-            this.label156.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig10CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig10CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig10CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig10CT3.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig10CT3.Name = "TrangThaiJig10CT3";
+            this.TrangThaiJig10CT3.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig10CT3.TabIndex = 11;
+            this.TrangThaiJig10CT3.Text = "Trạng thái : On";
+            this.TrangThaiJig10CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel167
             // 
             this.panel167.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel167.Controls.Add(this.label157);
+            this.panel167.Controls.Add(this.SoLanTestJig10CT3);
             this.panel167.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel167.Location = new System.Drawing.Point(399, 3);
             this.panel167.Name = "panel167";
             this.panel167.Size = new System.Drawing.Size(93, 41);
             this.panel167.TabIndex = 4;
             // 
-            // label157
+            // SoLanTestJig10CT3
             // 
-            this.label157.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label157.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label157.ForeColor = System.Drawing.SystemColors.Control;
-            this.label157.Location = new System.Drawing.Point(0, 0);
-            this.label157.Name = "label157";
-            this.label157.Size = new System.Drawing.Size(91, 39);
-            this.label157.TabIndex = 10;
-            this.label157.Text = "Số lần test : 20";
-            this.label157.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig10CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig10CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig10CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig10CT3.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig10CT3.Name = "SoLanTestJig10CT3";
+            this.SoLanTestJig10CT3.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig10CT3.TabIndex = 10;
+            this.SoLanTestJig10CT3.Text = "Số lần test : 20";
+            this.SoLanTestJig10CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel168
             // 
             this.panel168.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel168.Controls.Add(this.label158);
+            this.panel168.Controls.Add(this.TrangThaiJig10CT2);
             this.panel168.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel168.Location = new System.Drawing.Point(300, 3);
             this.panel168.Name = "panel168";
             this.panel168.Size = new System.Drawing.Size(93, 41);
             this.panel168.TabIndex = 3;
             // 
-            // label158
+            // TrangThaiJig10CT2
             // 
-            this.label158.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label158.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label158.ForeColor = System.Drawing.SystemColors.Control;
-            this.label158.Location = new System.Drawing.Point(0, 0);
-            this.label158.Name = "label158";
-            this.label158.Size = new System.Drawing.Size(91, 39);
-            this.label158.TabIndex = 11;
-            this.label158.Text = "Trạng thái : On";
-            this.label158.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig10CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig10CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig10CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig10CT2.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig10CT2.Name = "TrangThaiJig10CT2";
+            this.TrangThaiJig10CT2.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig10CT2.TabIndex = 11;
+            this.TrangThaiJig10CT2.Text = "Trạng thái : On";
+            this.TrangThaiJig10CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel169
             // 
             this.panel169.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel169.Controls.Add(this.label159);
+            this.panel169.Controls.Add(this.SoLanTestJig10CT2);
             this.panel169.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel169.Location = new System.Drawing.Point(201, 3);
             this.panel169.Name = "panel169";
             this.panel169.Size = new System.Drawing.Size(93, 41);
             this.panel169.TabIndex = 2;
             // 
-            // label159
+            // SoLanTestJig10CT2
             // 
-            this.label159.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label159.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label159.ForeColor = System.Drawing.SystemColors.Control;
-            this.label159.Location = new System.Drawing.Point(0, 0);
-            this.label159.Name = "label159";
-            this.label159.Size = new System.Drawing.Size(91, 39);
-            this.label159.TabIndex = 10;
-            this.label159.Text = "Số lần test : 20";
-            this.label159.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig10CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig10CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig10CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig10CT2.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig10CT2.Name = "SoLanTestJig10CT2";
+            this.SoLanTestJig10CT2.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig10CT2.TabIndex = 10;
+            this.SoLanTestJig10CT2.Text = "Số lần test : 20";
+            this.SoLanTestJig10CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel170
             // 
             this.panel170.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel170.Controls.Add(this.label160);
+            this.panel170.Controls.Add(this.TrangThaiJig10CT1);
             this.panel170.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel170.Location = new System.Drawing.Point(102, 3);
             this.panel170.Name = "panel170";
             this.panel170.Size = new System.Drawing.Size(93, 41);
             this.panel170.TabIndex = 1;
             // 
-            // label160
+            // TrangThaiJig10CT1
             // 
-            this.label160.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label160.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label160.ForeColor = System.Drawing.SystemColors.Control;
-            this.label160.Location = new System.Drawing.Point(0, 0);
-            this.label160.Name = "label160";
-            this.label160.Size = new System.Drawing.Size(91, 39);
-            this.label160.TabIndex = 10;
-            this.label160.Text = "Trạng thái : On";
-            this.label160.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig10CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig10CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig10CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig10CT1.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig10CT1.Name = "TrangThaiJig10CT1";
+            this.TrangThaiJig10CT1.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig10CT1.TabIndex = 10;
+            this.TrangThaiJig10CT1.Text = "Trạng thái : On";
+            this.TrangThaiJig10CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel171
             // 
             this.panel171.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel171.Controls.Add(this.label161);
+            this.panel171.Controls.Add(this.SoLanTestJig10CT1);
             this.panel171.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel171.Location = new System.Drawing.Point(3, 3);
             this.panel171.Name = "panel171";
             this.panel171.Size = new System.Drawing.Size(93, 41);
             this.panel171.TabIndex = 0;
             // 
-            // label161
+            // SoLanTestJig10CT1
             // 
-            this.label161.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label161.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label161.ForeColor = System.Drawing.SystemColors.Control;
-            this.label161.Location = new System.Drawing.Point(0, 0);
-            this.label161.Name = "label161";
-            this.label161.Size = new System.Drawing.Size(91, 39);
-            this.label161.TabIndex = 9;
-            this.label161.Text = "Số lần test : 20";
-            this.label161.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig10CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig10CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig10CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig10CT1.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig10CT1.Name = "SoLanTestJig10CT1";
+            this.SoLanTestJig10CT1.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig10CT1.TabIndex = 9;
+            this.SoLanTestJig10CT1.Text = "Số lần test : 20";
+            this.SoLanTestJig10CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel20
             // 
             this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel20.Controls.Add(this.label10);
+            this.panel20.Controls.Add(this.Jig10);
             this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel20.Location = new System.Drawing.Point(3, 804);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(106, 83);
             this.panel20.TabIndex = 18;
             // 
-            // label10
+            // Jig10
             // 
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.SystemColors.Control;
-            this.label10.Location = new System.Drawing.Point(0, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(104, 81);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "Jig 10";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Jig10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Jig10.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Jig10.ForeColor = System.Drawing.SystemColors.Control;
+            this.Jig10.Location = new System.Drawing.Point(0, 0);
+            this.Jig10.Name = "Jig10";
+            this.Jig10.Size = new System.Drawing.Size(104, 81);
+            this.Jig10.TabIndex = 7;
+            this.Jig10.Text = "Jig 10";
+            this.Jig10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel19
             // 
@@ -1314,244 +1313,244 @@
             // panel147
             // 
             this.panel147.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel147.Controls.Add(this.label137);
+            this.panel147.Controls.Add(this.TrangThaiJig9CT5);
             this.panel147.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel147.Location = new System.Drawing.Point(894, 3);
             this.panel147.Name = "panel147";
             this.panel147.Size = new System.Drawing.Size(98, 41);
             this.panel147.TabIndex = 9;
             // 
-            // label137
+            // TrangThaiJig9CT5
             // 
-            this.label137.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label137.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label137.ForeColor = System.Drawing.SystemColors.Control;
-            this.label137.Location = new System.Drawing.Point(0, 0);
-            this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(96, 39);
-            this.label137.TabIndex = 11;
-            this.label137.Text = "Trạng thái : On";
-            this.label137.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig9CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig9CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig9CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig9CT5.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig9CT5.Name = "TrangThaiJig9CT5";
+            this.TrangThaiJig9CT5.Size = new System.Drawing.Size(96, 39);
+            this.TrangThaiJig9CT5.TabIndex = 11;
+            this.TrangThaiJig9CT5.Text = "Trạng thái : On";
+            this.TrangThaiJig9CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel148
             // 
             this.panel148.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel148.Controls.Add(this.label138);
+            this.panel148.Controls.Add(this.SoLanTestJig9CT5);
             this.panel148.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel148.Location = new System.Drawing.Point(795, 3);
             this.panel148.Name = "panel148";
             this.panel148.Size = new System.Drawing.Size(93, 41);
             this.panel148.TabIndex = 8;
             // 
-            // label138
+            // SoLanTestJig9CT5
             // 
-            this.label138.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label138.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label138.ForeColor = System.Drawing.SystemColors.Control;
-            this.label138.Location = new System.Drawing.Point(0, 0);
-            this.label138.Name = "label138";
-            this.label138.Size = new System.Drawing.Size(91, 39);
-            this.label138.TabIndex = 10;
-            this.label138.Text = "Số lần test : 20";
-            this.label138.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig9CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig9CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig9CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig9CT5.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig9CT5.Name = "SoLanTestJig9CT5";
+            this.SoLanTestJig9CT5.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig9CT5.TabIndex = 10;
+            this.SoLanTestJig9CT5.Text = "Số lần test : 20";
+            this.SoLanTestJig9CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel149
             // 
             this.panel149.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel149.Controls.Add(this.label139);
+            this.panel149.Controls.Add(this.TrangThaiJig9CT4);
             this.panel149.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel149.Location = new System.Drawing.Point(696, 3);
             this.panel149.Name = "panel149";
             this.panel149.Size = new System.Drawing.Size(93, 41);
             this.panel149.TabIndex = 7;
             // 
-            // label139
+            // TrangThaiJig9CT4
             // 
-            this.label139.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label139.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label139.ForeColor = System.Drawing.SystemColors.Control;
-            this.label139.Location = new System.Drawing.Point(0, 0);
-            this.label139.Name = "label139";
-            this.label139.Size = new System.Drawing.Size(91, 39);
-            this.label139.TabIndex = 11;
-            this.label139.Text = "Trạng thái : On";
-            this.label139.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig9CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig9CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig9CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig9CT4.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig9CT4.Name = "TrangThaiJig9CT4";
+            this.TrangThaiJig9CT4.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig9CT4.TabIndex = 11;
+            this.TrangThaiJig9CT4.Text = "Trạng thái : On";
+            this.TrangThaiJig9CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel150
             // 
             this.panel150.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel150.Controls.Add(this.label140);
+            this.panel150.Controls.Add(this.SoLanTestJig9CT4);
             this.panel150.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel150.Location = new System.Drawing.Point(597, 3);
             this.panel150.Name = "panel150";
             this.panel150.Size = new System.Drawing.Size(93, 41);
             this.panel150.TabIndex = 6;
             // 
-            // label140
+            // SoLanTestJig9CT4
             // 
-            this.label140.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label140.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label140.ForeColor = System.Drawing.SystemColors.Control;
-            this.label140.Location = new System.Drawing.Point(0, 0);
-            this.label140.Name = "label140";
-            this.label140.Size = new System.Drawing.Size(91, 39);
-            this.label140.TabIndex = 10;
-            this.label140.Text = "Số lần test : 20";
-            this.label140.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig9CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig9CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig9CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig9CT4.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig9CT4.Name = "SoLanTestJig9CT4";
+            this.SoLanTestJig9CT4.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig9CT4.TabIndex = 10;
+            this.SoLanTestJig9CT4.Text = "Số lần test : 20";
+            this.SoLanTestJig9CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel151
             // 
             this.panel151.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel151.Controls.Add(this.label141);
+            this.panel151.Controls.Add(this.TrangThaiJig9CT3);
             this.panel151.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel151.Location = new System.Drawing.Point(498, 3);
             this.panel151.Name = "panel151";
             this.panel151.Size = new System.Drawing.Size(93, 41);
             this.panel151.TabIndex = 5;
             // 
-            // label141
+            // TrangThaiJig9CT3
             // 
-            this.label141.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label141.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label141.ForeColor = System.Drawing.SystemColors.Control;
-            this.label141.Location = new System.Drawing.Point(0, 0);
-            this.label141.Name = "label141";
-            this.label141.Size = new System.Drawing.Size(91, 39);
-            this.label141.TabIndex = 11;
-            this.label141.Text = "Trạng thái : On";
-            this.label141.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig9CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig9CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig9CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig9CT3.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig9CT3.Name = "TrangThaiJig9CT3";
+            this.TrangThaiJig9CT3.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig9CT3.TabIndex = 11;
+            this.TrangThaiJig9CT3.Text = "Trạng thái : On";
+            this.TrangThaiJig9CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel152
             // 
             this.panel152.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel152.Controls.Add(this.label142);
+            this.panel152.Controls.Add(this.SoLanTestJig9CT3);
             this.panel152.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel152.Location = new System.Drawing.Point(399, 3);
             this.panel152.Name = "panel152";
             this.panel152.Size = new System.Drawing.Size(93, 41);
             this.panel152.TabIndex = 4;
             // 
-            // label142
+            // SoLanTestJig9CT3
             // 
-            this.label142.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label142.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label142.ForeColor = System.Drawing.SystemColors.Control;
-            this.label142.Location = new System.Drawing.Point(0, 0);
-            this.label142.Name = "label142";
-            this.label142.Size = new System.Drawing.Size(91, 39);
-            this.label142.TabIndex = 10;
-            this.label142.Text = "Số lần test : 20";
-            this.label142.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig9CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig9CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig9CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig9CT3.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig9CT3.Name = "SoLanTestJig9CT3";
+            this.SoLanTestJig9CT3.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig9CT3.TabIndex = 10;
+            this.SoLanTestJig9CT3.Text = "Số lần test : 20";
+            this.SoLanTestJig9CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel153
             // 
             this.panel153.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel153.Controls.Add(this.label143);
+            this.panel153.Controls.Add(this.TrangThaiJig9CT2);
             this.panel153.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel153.Location = new System.Drawing.Point(300, 3);
             this.panel153.Name = "panel153";
             this.panel153.Size = new System.Drawing.Size(93, 41);
             this.panel153.TabIndex = 3;
             // 
-            // label143
+            // TrangThaiJig9CT2
             // 
-            this.label143.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label143.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label143.ForeColor = System.Drawing.SystemColors.Control;
-            this.label143.Location = new System.Drawing.Point(0, 0);
-            this.label143.Name = "label143";
-            this.label143.Size = new System.Drawing.Size(91, 39);
-            this.label143.TabIndex = 11;
-            this.label143.Text = "Trạng thái : On";
-            this.label143.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig9CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig9CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig9CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig9CT2.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig9CT2.Name = "TrangThaiJig9CT2";
+            this.TrangThaiJig9CT2.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig9CT2.TabIndex = 11;
+            this.TrangThaiJig9CT2.Text = "Trạng thái : On";
+            this.TrangThaiJig9CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel154
             // 
             this.panel154.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel154.Controls.Add(this.label144);
+            this.panel154.Controls.Add(this.SoLanTestJig9CT2);
             this.panel154.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel154.Location = new System.Drawing.Point(201, 3);
             this.panel154.Name = "panel154";
             this.panel154.Size = new System.Drawing.Size(93, 41);
             this.panel154.TabIndex = 2;
             // 
-            // label144
+            // SoLanTestJig9CT2
             // 
-            this.label144.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label144.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label144.ForeColor = System.Drawing.SystemColors.Control;
-            this.label144.Location = new System.Drawing.Point(0, 0);
-            this.label144.Name = "label144";
-            this.label144.Size = new System.Drawing.Size(91, 39);
-            this.label144.TabIndex = 10;
-            this.label144.Text = "Số lần test : 20";
-            this.label144.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig9CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig9CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig9CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig9CT2.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig9CT2.Name = "SoLanTestJig9CT2";
+            this.SoLanTestJig9CT2.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig9CT2.TabIndex = 10;
+            this.SoLanTestJig9CT2.Text = "Số lần test : 20";
+            this.SoLanTestJig9CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel155
             // 
             this.panel155.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel155.Controls.Add(this.label145);
+            this.panel155.Controls.Add(this.TrangThaiJig9CT1);
             this.panel155.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel155.Location = new System.Drawing.Point(102, 3);
             this.panel155.Name = "panel155";
             this.panel155.Size = new System.Drawing.Size(93, 41);
             this.panel155.TabIndex = 1;
             // 
-            // label145
+            // TrangThaiJig9CT1
             // 
-            this.label145.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label145.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label145.ForeColor = System.Drawing.SystemColors.Control;
-            this.label145.Location = new System.Drawing.Point(0, 0);
-            this.label145.Name = "label145";
-            this.label145.Size = new System.Drawing.Size(91, 39);
-            this.label145.TabIndex = 10;
-            this.label145.Text = "Trạng thái : On";
-            this.label145.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig9CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig9CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig9CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig9CT1.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig9CT1.Name = "TrangThaiJig9CT1";
+            this.TrangThaiJig9CT1.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig9CT1.TabIndex = 10;
+            this.TrangThaiJig9CT1.Text = "Trạng thái : On";
+            this.TrangThaiJig9CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel156
             // 
             this.panel156.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel156.Controls.Add(this.label146);
+            this.panel156.Controls.Add(this.SoLanTestJig9CT1);
             this.panel156.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel156.Location = new System.Drawing.Point(3, 3);
             this.panel156.Name = "panel156";
             this.panel156.Size = new System.Drawing.Size(93, 41);
             this.panel156.TabIndex = 0;
             // 
-            // label146
+            // SoLanTestJig9CT1
             // 
-            this.label146.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label146.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label146.ForeColor = System.Drawing.SystemColors.Control;
-            this.label146.Location = new System.Drawing.Point(0, 0);
-            this.label146.Name = "label146";
-            this.label146.Size = new System.Drawing.Size(91, 39);
-            this.label146.TabIndex = 9;
-            this.label146.Text = "Số lần test : 20";
-            this.label146.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig9CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig9CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig9CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig9CT1.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig9CT1.Name = "SoLanTestJig9CT1";
+            this.SoLanTestJig9CT1.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig9CT1.TabIndex = 9;
+            this.SoLanTestJig9CT1.Text = "Số lần test : 20";
+            this.SoLanTestJig9CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel18
             // 
             this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel18.Controls.Add(this.label9);
+            this.panel18.Controls.Add(this.Jig9);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel18.Location = new System.Drawing.Point(3, 715);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(106, 83);
             this.panel18.TabIndex = 16;
             // 
-            // label9
+            // Jig9
             // 
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.SystemColors.Control;
-            this.label9.Location = new System.Drawing.Point(0, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 81);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Jig 9";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Jig9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Jig9.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Jig9.ForeColor = System.Drawing.SystemColors.Control;
+            this.Jig9.Location = new System.Drawing.Point(0, 0);
+            this.Jig9.Name = "Jig9";
+            this.Jig9.Size = new System.Drawing.Size(104, 81);
+            this.Jig9.TabIndex = 7;
+            this.Jig9.Text = "Jig 9";
+            this.Jig9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel17
             // 
@@ -1745,244 +1744,244 @@
             // panel132
             // 
             this.panel132.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel132.Controls.Add(this.label122);
+            this.panel132.Controls.Add(this.TrangThaiJig8CT5);
             this.panel132.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel132.Location = new System.Drawing.Point(894, 3);
             this.panel132.Name = "panel132";
             this.panel132.Size = new System.Drawing.Size(98, 41);
             this.panel132.TabIndex = 9;
             // 
-            // label122
+            // TrangThaiJig8CT5
             // 
-            this.label122.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label122.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label122.ForeColor = System.Drawing.SystemColors.Control;
-            this.label122.Location = new System.Drawing.Point(0, 0);
-            this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(96, 39);
-            this.label122.TabIndex = 11;
-            this.label122.Text = "Trạng thái : On";
-            this.label122.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig8CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig8CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig8CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig8CT5.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig8CT5.Name = "TrangThaiJig8CT5";
+            this.TrangThaiJig8CT5.Size = new System.Drawing.Size(96, 39);
+            this.TrangThaiJig8CT5.TabIndex = 11;
+            this.TrangThaiJig8CT5.Text = "Trạng thái : On";
+            this.TrangThaiJig8CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel133
             // 
             this.panel133.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel133.Controls.Add(this.label123);
+            this.panel133.Controls.Add(this.SoLanTestJig8CT5);
             this.panel133.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel133.Location = new System.Drawing.Point(795, 3);
             this.panel133.Name = "panel133";
             this.panel133.Size = new System.Drawing.Size(93, 41);
             this.panel133.TabIndex = 8;
             // 
-            // label123
+            // SoLanTestJig8CT5
             // 
-            this.label123.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label123.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label123.ForeColor = System.Drawing.SystemColors.Control;
-            this.label123.Location = new System.Drawing.Point(0, 0);
-            this.label123.Name = "label123";
-            this.label123.Size = new System.Drawing.Size(91, 39);
-            this.label123.TabIndex = 10;
-            this.label123.Text = "Số lần test : 20";
-            this.label123.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig8CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig8CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig8CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig8CT5.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig8CT5.Name = "SoLanTestJig8CT5";
+            this.SoLanTestJig8CT5.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig8CT5.TabIndex = 10;
+            this.SoLanTestJig8CT5.Text = "Số lần test : 20";
+            this.SoLanTestJig8CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel134
             // 
             this.panel134.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel134.Controls.Add(this.label124);
+            this.panel134.Controls.Add(this.TrangThaiJig8CT4);
             this.panel134.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel134.Location = new System.Drawing.Point(696, 3);
             this.panel134.Name = "panel134";
             this.panel134.Size = new System.Drawing.Size(93, 41);
             this.panel134.TabIndex = 7;
             // 
-            // label124
+            // TrangThaiJig8CT4
             // 
-            this.label124.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label124.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label124.ForeColor = System.Drawing.SystemColors.Control;
-            this.label124.Location = new System.Drawing.Point(0, 0);
-            this.label124.Name = "label124";
-            this.label124.Size = new System.Drawing.Size(91, 39);
-            this.label124.TabIndex = 11;
-            this.label124.Text = "Trạng thái : On";
-            this.label124.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig8CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig8CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig8CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig8CT4.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig8CT4.Name = "TrangThaiJig8CT4";
+            this.TrangThaiJig8CT4.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig8CT4.TabIndex = 11;
+            this.TrangThaiJig8CT4.Text = "Trạng thái : On";
+            this.TrangThaiJig8CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel135
             // 
             this.panel135.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel135.Controls.Add(this.label125);
+            this.panel135.Controls.Add(this.SoLanTestJig8CT4);
             this.panel135.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel135.Location = new System.Drawing.Point(597, 3);
             this.panel135.Name = "panel135";
             this.panel135.Size = new System.Drawing.Size(93, 41);
             this.panel135.TabIndex = 6;
             // 
-            // label125
+            // SoLanTestJig8CT4
             // 
-            this.label125.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label125.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label125.ForeColor = System.Drawing.SystemColors.Control;
-            this.label125.Location = new System.Drawing.Point(0, 0);
-            this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(91, 39);
-            this.label125.TabIndex = 10;
-            this.label125.Text = "Số lần test : 20";
-            this.label125.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig8CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig8CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig8CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig8CT4.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig8CT4.Name = "SoLanTestJig8CT4";
+            this.SoLanTestJig8CT4.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig8CT4.TabIndex = 10;
+            this.SoLanTestJig8CT4.Text = "Số lần test : 20";
+            this.SoLanTestJig8CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel136
             // 
             this.panel136.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel136.Controls.Add(this.label126);
+            this.panel136.Controls.Add(this.TrangThaiJig8CT3);
             this.panel136.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel136.Location = new System.Drawing.Point(498, 3);
             this.panel136.Name = "panel136";
             this.panel136.Size = new System.Drawing.Size(93, 41);
             this.panel136.TabIndex = 5;
             // 
-            // label126
+            // TrangThaiJig8CT3
             // 
-            this.label126.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label126.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label126.ForeColor = System.Drawing.SystemColors.Control;
-            this.label126.Location = new System.Drawing.Point(0, 0);
-            this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(91, 39);
-            this.label126.TabIndex = 11;
-            this.label126.Text = "Trạng thái : On";
-            this.label126.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig8CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig8CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig8CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig8CT3.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig8CT3.Name = "TrangThaiJig8CT3";
+            this.TrangThaiJig8CT3.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig8CT3.TabIndex = 11;
+            this.TrangThaiJig8CT3.Text = "Trạng thái : On";
+            this.TrangThaiJig8CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel137
             // 
             this.panel137.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel137.Controls.Add(this.label127);
+            this.panel137.Controls.Add(this.SoLanTestJig8CT3);
             this.panel137.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel137.Location = new System.Drawing.Point(399, 3);
             this.panel137.Name = "panel137";
             this.panel137.Size = new System.Drawing.Size(93, 41);
             this.panel137.TabIndex = 4;
             // 
-            // label127
+            // SoLanTestJig8CT3
             // 
-            this.label127.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label127.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label127.ForeColor = System.Drawing.SystemColors.Control;
-            this.label127.Location = new System.Drawing.Point(0, 0);
-            this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(91, 39);
-            this.label127.TabIndex = 10;
-            this.label127.Text = "Số lần test : 20";
-            this.label127.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig8CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig8CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig8CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig8CT3.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig8CT3.Name = "SoLanTestJig8CT3";
+            this.SoLanTestJig8CT3.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig8CT3.TabIndex = 10;
+            this.SoLanTestJig8CT3.Text = "Số lần test : 20";
+            this.SoLanTestJig8CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel138
             // 
             this.panel138.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel138.Controls.Add(this.label128);
+            this.panel138.Controls.Add(this.TrangThaiJig8CT2);
             this.panel138.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel138.Location = new System.Drawing.Point(300, 3);
             this.panel138.Name = "panel138";
             this.panel138.Size = new System.Drawing.Size(93, 41);
             this.panel138.TabIndex = 3;
             // 
-            // label128
+            // TrangThaiJig8CT2
             // 
-            this.label128.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label128.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label128.ForeColor = System.Drawing.SystemColors.Control;
-            this.label128.Location = new System.Drawing.Point(0, 0);
-            this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(91, 39);
-            this.label128.TabIndex = 11;
-            this.label128.Text = "Trạng thái : On";
-            this.label128.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig8CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig8CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig8CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig8CT2.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig8CT2.Name = "TrangThaiJig8CT2";
+            this.TrangThaiJig8CT2.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig8CT2.TabIndex = 11;
+            this.TrangThaiJig8CT2.Text = "Trạng thái : On";
+            this.TrangThaiJig8CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel139
             // 
             this.panel139.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel139.Controls.Add(this.label129);
+            this.panel139.Controls.Add(this.SoLanTestJig8CT2);
             this.panel139.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel139.Location = new System.Drawing.Point(201, 3);
             this.panel139.Name = "panel139";
             this.panel139.Size = new System.Drawing.Size(93, 41);
             this.panel139.TabIndex = 2;
             // 
-            // label129
+            // SoLanTestJig8CT2
             // 
-            this.label129.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label129.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label129.ForeColor = System.Drawing.SystemColors.Control;
-            this.label129.Location = new System.Drawing.Point(0, 0);
-            this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(91, 39);
-            this.label129.TabIndex = 10;
-            this.label129.Text = "Số lần test : 20";
-            this.label129.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig8CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig8CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig8CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig8CT2.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig8CT2.Name = "SoLanTestJig8CT2";
+            this.SoLanTestJig8CT2.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig8CT2.TabIndex = 10;
+            this.SoLanTestJig8CT2.Text = "Số lần test : 20";
+            this.SoLanTestJig8CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel140
             // 
             this.panel140.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel140.Controls.Add(this.label130);
+            this.panel140.Controls.Add(this.TrangThaiJig8CT1);
             this.panel140.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel140.Location = new System.Drawing.Point(102, 3);
             this.panel140.Name = "panel140";
             this.panel140.Size = new System.Drawing.Size(93, 41);
             this.panel140.TabIndex = 1;
             // 
-            // label130
+            // TrangThaiJig8CT1
             // 
-            this.label130.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label130.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label130.ForeColor = System.Drawing.SystemColors.Control;
-            this.label130.Location = new System.Drawing.Point(0, 0);
-            this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(91, 39);
-            this.label130.TabIndex = 10;
-            this.label130.Text = "Trạng thái : On";
-            this.label130.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig8CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig8CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig8CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig8CT1.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig8CT1.Name = "TrangThaiJig8CT1";
+            this.TrangThaiJig8CT1.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig8CT1.TabIndex = 10;
+            this.TrangThaiJig8CT1.Text = "Trạng thái : On";
+            this.TrangThaiJig8CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel141
             // 
             this.panel141.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel141.Controls.Add(this.label131);
+            this.panel141.Controls.Add(this.SoLanTestJig8CT1);
             this.panel141.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel141.Location = new System.Drawing.Point(3, 3);
             this.panel141.Name = "panel141";
             this.panel141.Size = new System.Drawing.Size(93, 41);
             this.panel141.TabIndex = 0;
             // 
-            // label131
+            // SoLanTestJig8CT1
             // 
-            this.label131.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label131.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label131.ForeColor = System.Drawing.SystemColors.Control;
-            this.label131.Location = new System.Drawing.Point(0, 0);
-            this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(91, 39);
-            this.label131.TabIndex = 9;
-            this.label131.Text = "Số lần test : 20";
-            this.label131.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig8CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig8CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig8CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig8CT1.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig8CT1.Name = "SoLanTestJig8CT1";
+            this.SoLanTestJig8CT1.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig8CT1.TabIndex = 9;
+            this.SoLanTestJig8CT1.Text = "Số lần test : 20";
+            this.SoLanTestJig8CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel16
             // 
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel16.Controls.Add(this.label8);
+            this.panel16.Controls.Add(this.Jig8);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel16.Location = new System.Drawing.Point(3, 626);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(106, 83);
             this.panel16.TabIndex = 14;
             // 
-            // label8
+            // Jig8
             // 
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.SystemColors.Control;
-            this.label8.Location = new System.Drawing.Point(0, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(104, 81);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Jig 8";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Jig8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Jig8.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Jig8.ForeColor = System.Drawing.SystemColors.Control;
+            this.Jig8.Location = new System.Drawing.Point(0, 0);
+            this.Jig8.Name = "Jig8";
+            this.Jig8.Size = new System.Drawing.Size(104, 81);
+            this.Jig8.TabIndex = 7;
+            this.Jig8.Text = "Jig 8";
+            this.Jig8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel15
             // 
@@ -2176,244 +2175,244 @@
             // panel117
             // 
             this.panel117.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel117.Controls.Add(this.label107);
+            this.panel117.Controls.Add(this.TrangThaiJig7CT5);
             this.panel117.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel117.Location = new System.Drawing.Point(894, 3);
             this.panel117.Name = "panel117";
             this.panel117.Size = new System.Drawing.Size(98, 41);
             this.panel117.TabIndex = 9;
             // 
-            // label107
+            // TrangThaiJig7CT5
             // 
-            this.label107.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label107.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label107.ForeColor = System.Drawing.SystemColors.Control;
-            this.label107.Location = new System.Drawing.Point(0, 0);
-            this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(96, 39);
-            this.label107.TabIndex = 11;
-            this.label107.Text = "Trạng thái : On";
-            this.label107.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig7CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig7CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig7CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig7CT5.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig7CT5.Name = "TrangThaiJig7CT5";
+            this.TrangThaiJig7CT5.Size = new System.Drawing.Size(96, 39);
+            this.TrangThaiJig7CT5.TabIndex = 11;
+            this.TrangThaiJig7CT5.Text = "Trạng thái : On";
+            this.TrangThaiJig7CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel118
             // 
             this.panel118.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel118.Controls.Add(this.label108);
+            this.panel118.Controls.Add(this.SoLanTestJig7CT5);
             this.panel118.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel118.Location = new System.Drawing.Point(795, 3);
             this.panel118.Name = "panel118";
             this.panel118.Size = new System.Drawing.Size(93, 41);
             this.panel118.TabIndex = 8;
             // 
-            // label108
+            // SoLanTestJig7CT5
             // 
-            this.label108.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label108.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label108.ForeColor = System.Drawing.SystemColors.Control;
-            this.label108.Location = new System.Drawing.Point(0, 0);
-            this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(91, 39);
-            this.label108.TabIndex = 10;
-            this.label108.Text = "Số lần test : 20";
-            this.label108.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig7CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig7CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig7CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig7CT5.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig7CT5.Name = "SoLanTestJig7CT5";
+            this.SoLanTestJig7CT5.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig7CT5.TabIndex = 10;
+            this.SoLanTestJig7CT5.Text = "Số lần test : 20";
+            this.SoLanTestJig7CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel119
             // 
             this.panel119.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel119.Controls.Add(this.label109);
+            this.panel119.Controls.Add(this.TrangThaiJig7CT4);
             this.panel119.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel119.Location = new System.Drawing.Point(696, 3);
             this.panel119.Name = "panel119";
             this.panel119.Size = new System.Drawing.Size(93, 41);
             this.panel119.TabIndex = 7;
             // 
-            // label109
+            // TrangThaiJig7CT4
             // 
-            this.label109.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label109.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label109.ForeColor = System.Drawing.SystemColors.Control;
-            this.label109.Location = new System.Drawing.Point(0, 0);
-            this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(91, 39);
-            this.label109.TabIndex = 11;
-            this.label109.Text = "Trạng thái : On";
-            this.label109.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig7CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig7CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig7CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig7CT4.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig7CT4.Name = "TrangThaiJig7CT4";
+            this.TrangThaiJig7CT4.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig7CT4.TabIndex = 11;
+            this.TrangThaiJig7CT4.Text = "Trạng thái : On";
+            this.TrangThaiJig7CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel120
             // 
             this.panel120.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel120.Controls.Add(this.label110);
+            this.panel120.Controls.Add(this.SoLanTestJig7CT4);
             this.panel120.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel120.Location = new System.Drawing.Point(597, 3);
             this.panel120.Name = "panel120";
             this.panel120.Size = new System.Drawing.Size(93, 41);
             this.panel120.TabIndex = 6;
             // 
-            // label110
+            // SoLanTestJig7CT4
             // 
-            this.label110.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label110.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label110.ForeColor = System.Drawing.SystemColors.Control;
-            this.label110.Location = new System.Drawing.Point(0, 0);
-            this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(91, 39);
-            this.label110.TabIndex = 10;
-            this.label110.Text = "Số lần test : 20";
-            this.label110.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig7CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig7CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig7CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig7CT4.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig7CT4.Name = "SoLanTestJig7CT4";
+            this.SoLanTestJig7CT4.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig7CT4.TabIndex = 10;
+            this.SoLanTestJig7CT4.Text = "Số lần test : 20";
+            this.SoLanTestJig7CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel121
             // 
             this.panel121.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel121.Controls.Add(this.label111);
+            this.panel121.Controls.Add(this.TrangThaiJig7CT3);
             this.panel121.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel121.Location = new System.Drawing.Point(498, 3);
             this.panel121.Name = "panel121";
             this.panel121.Size = new System.Drawing.Size(93, 41);
             this.panel121.TabIndex = 5;
             // 
-            // label111
+            // TrangThaiJig7CT3
             // 
-            this.label111.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label111.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label111.ForeColor = System.Drawing.SystemColors.Control;
-            this.label111.Location = new System.Drawing.Point(0, 0);
-            this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(91, 39);
-            this.label111.TabIndex = 11;
-            this.label111.Text = "Trạng thái : On";
-            this.label111.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig7CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig7CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig7CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig7CT3.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig7CT3.Name = "TrangThaiJig7CT3";
+            this.TrangThaiJig7CT3.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig7CT3.TabIndex = 11;
+            this.TrangThaiJig7CT3.Text = "Trạng thái : On";
+            this.TrangThaiJig7CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel122
             // 
             this.panel122.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel122.Controls.Add(this.label112);
+            this.panel122.Controls.Add(this.SoLanTestJig7CT3);
             this.panel122.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel122.Location = new System.Drawing.Point(399, 3);
             this.panel122.Name = "panel122";
             this.panel122.Size = new System.Drawing.Size(93, 41);
             this.panel122.TabIndex = 4;
             // 
-            // label112
+            // SoLanTestJig7CT3
             // 
-            this.label112.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label112.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label112.ForeColor = System.Drawing.SystemColors.Control;
-            this.label112.Location = new System.Drawing.Point(0, 0);
-            this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(91, 39);
-            this.label112.TabIndex = 10;
-            this.label112.Text = "Số lần test : 20";
-            this.label112.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig7CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig7CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig7CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig7CT3.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig7CT3.Name = "SoLanTestJig7CT3";
+            this.SoLanTestJig7CT3.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig7CT3.TabIndex = 10;
+            this.SoLanTestJig7CT3.Text = "Số lần test : 20";
+            this.SoLanTestJig7CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel123
             // 
             this.panel123.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel123.Controls.Add(this.label113);
+            this.panel123.Controls.Add(this.TrangThaiJig7CT2);
             this.panel123.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel123.Location = new System.Drawing.Point(300, 3);
             this.panel123.Name = "panel123";
             this.panel123.Size = new System.Drawing.Size(93, 41);
             this.panel123.TabIndex = 3;
             // 
-            // label113
+            // TrangThaiJig7CT2
             // 
-            this.label113.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label113.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label113.ForeColor = System.Drawing.SystemColors.Control;
-            this.label113.Location = new System.Drawing.Point(0, 0);
-            this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(91, 39);
-            this.label113.TabIndex = 11;
-            this.label113.Text = "Trạng thái : On";
-            this.label113.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig7CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig7CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig7CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig7CT2.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig7CT2.Name = "TrangThaiJig7CT2";
+            this.TrangThaiJig7CT2.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig7CT2.TabIndex = 11;
+            this.TrangThaiJig7CT2.Text = "Trạng thái : On";
+            this.TrangThaiJig7CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel124
             // 
             this.panel124.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel124.Controls.Add(this.label114);
+            this.panel124.Controls.Add(this.SoLanTestJig7CT2);
             this.panel124.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel124.Location = new System.Drawing.Point(201, 3);
             this.panel124.Name = "panel124";
             this.panel124.Size = new System.Drawing.Size(93, 41);
             this.panel124.TabIndex = 2;
             // 
-            // label114
+            // SoLanTestJig7CT2
             // 
-            this.label114.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label114.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label114.ForeColor = System.Drawing.SystemColors.Control;
-            this.label114.Location = new System.Drawing.Point(0, 0);
-            this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(91, 39);
-            this.label114.TabIndex = 10;
-            this.label114.Text = "Số lần test : 20";
-            this.label114.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig7CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig7CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig7CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig7CT2.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig7CT2.Name = "SoLanTestJig7CT2";
+            this.SoLanTestJig7CT2.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig7CT2.TabIndex = 10;
+            this.SoLanTestJig7CT2.Text = "Số lần test : 20";
+            this.SoLanTestJig7CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel125
             // 
             this.panel125.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel125.Controls.Add(this.label115);
+            this.panel125.Controls.Add(this.TrangThaiJig7CT1);
             this.panel125.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel125.Location = new System.Drawing.Point(102, 3);
             this.panel125.Name = "panel125";
             this.panel125.Size = new System.Drawing.Size(93, 41);
             this.panel125.TabIndex = 1;
             // 
-            // label115
+            // TrangThaiJig7CT1
             // 
-            this.label115.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label115.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label115.ForeColor = System.Drawing.SystemColors.Control;
-            this.label115.Location = new System.Drawing.Point(0, 0);
-            this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(91, 39);
-            this.label115.TabIndex = 10;
-            this.label115.Text = "Trạng thái : On";
-            this.label115.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig7CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig7CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig7CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig7CT1.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig7CT1.Name = "TrangThaiJig7CT1";
+            this.TrangThaiJig7CT1.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig7CT1.TabIndex = 10;
+            this.TrangThaiJig7CT1.Text = "Trạng thái : On";
+            this.TrangThaiJig7CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel126
             // 
             this.panel126.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel126.Controls.Add(this.label116);
+            this.panel126.Controls.Add(this.SoLanTestJig7CT1);
             this.panel126.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel126.Location = new System.Drawing.Point(3, 3);
             this.panel126.Name = "panel126";
             this.panel126.Size = new System.Drawing.Size(93, 41);
             this.panel126.TabIndex = 0;
             // 
-            // label116
+            // SoLanTestJig7CT1
             // 
-            this.label116.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label116.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label116.ForeColor = System.Drawing.SystemColors.Control;
-            this.label116.Location = new System.Drawing.Point(0, 0);
-            this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(91, 39);
-            this.label116.TabIndex = 9;
-            this.label116.Text = "Số lần test : 20";
-            this.label116.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig7CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig7CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig7CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig7CT1.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig7CT1.Name = "SoLanTestJig7CT1";
+            this.SoLanTestJig7CT1.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig7CT1.TabIndex = 9;
+            this.SoLanTestJig7CT1.Text = "Số lần test : 20";
+            this.SoLanTestJig7CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel14
             // 
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.label7);
+            this.panel14.Controls.Add(this.Jig7);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel14.Location = new System.Drawing.Point(3, 537);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(106, 83);
             this.panel14.TabIndex = 12;
             // 
-            // label7
+            // Jig7
             // 
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(0, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 81);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Jig 7";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Jig7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Jig7.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Jig7.ForeColor = System.Drawing.SystemColors.Control;
+            this.Jig7.Location = new System.Drawing.Point(0, 0);
+            this.Jig7.Name = "Jig7";
+            this.Jig7.Size = new System.Drawing.Size(104, 81);
+            this.Jig7.TabIndex = 7;
+            this.Jig7.Text = "Jig 7";
+            this.Jig7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel13
             // 
@@ -2607,244 +2606,244 @@
             // panel102
             // 
             this.panel102.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel102.Controls.Add(this.label92);
+            this.panel102.Controls.Add(this.TrangThaiJig6CT5);
             this.panel102.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel102.Location = new System.Drawing.Point(894, 3);
             this.panel102.Name = "panel102";
             this.panel102.Size = new System.Drawing.Size(98, 41);
             this.panel102.TabIndex = 9;
             // 
-            // label92
+            // TrangThaiJig6CT5
             // 
-            this.label92.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label92.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label92.ForeColor = System.Drawing.SystemColors.Control;
-            this.label92.Location = new System.Drawing.Point(0, 0);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(96, 39);
-            this.label92.TabIndex = 11;
-            this.label92.Text = "Trạng thái : On";
-            this.label92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig6CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig6CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig6CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig6CT5.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig6CT5.Name = "TrangThaiJig6CT5";
+            this.TrangThaiJig6CT5.Size = new System.Drawing.Size(96, 39);
+            this.TrangThaiJig6CT5.TabIndex = 11;
+            this.TrangThaiJig6CT5.Text = "Trạng thái : On";
+            this.TrangThaiJig6CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel103
             // 
             this.panel103.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel103.Controls.Add(this.label93);
+            this.panel103.Controls.Add(this.SoLanTestJig6CT5);
             this.panel103.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel103.Location = new System.Drawing.Point(795, 3);
             this.panel103.Name = "panel103";
             this.panel103.Size = new System.Drawing.Size(93, 41);
             this.panel103.TabIndex = 8;
             // 
-            // label93
+            // SoLanTestJig6CT5
             // 
-            this.label93.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label93.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label93.ForeColor = System.Drawing.SystemColors.Control;
-            this.label93.Location = new System.Drawing.Point(0, 0);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(91, 39);
-            this.label93.TabIndex = 10;
-            this.label93.Text = "Số lần test : 20";
-            this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig6CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig6CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig6CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig6CT5.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig6CT5.Name = "SoLanTestJig6CT5";
+            this.SoLanTestJig6CT5.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig6CT5.TabIndex = 10;
+            this.SoLanTestJig6CT5.Text = "Số lần test : 20";
+            this.SoLanTestJig6CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel104
             // 
             this.panel104.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel104.Controls.Add(this.label94);
+            this.panel104.Controls.Add(this.TrangThaiJig6CT4);
             this.panel104.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel104.Location = new System.Drawing.Point(696, 3);
             this.panel104.Name = "panel104";
             this.panel104.Size = new System.Drawing.Size(93, 41);
             this.panel104.TabIndex = 7;
             // 
-            // label94
+            // TrangThaiJig6CT4
             // 
-            this.label94.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label94.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label94.ForeColor = System.Drawing.SystemColors.Control;
-            this.label94.Location = new System.Drawing.Point(0, 0);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(91, 39);
-            this.label94.TabIndex = 11;
-            this.label94.Text = "Trạng thái : On";
-            this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig6CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig6CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig6CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig6CT4.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig6CT4.Name = "TrangThaiJig6CT4";
+            this.TrangThaiJig6CT4.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig6CT4.TabIndex = 11;
+            this.TrangThaiJig6CT4.Text = "Trạng thái : On";
+            this.TrangThaiJig6CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel105
             // 
             this.panel105.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel105.Controls.Add(this.label95);
+            this.panel105.Controls.Add(this.SoLanTestJig6CT4);
             this.panel105.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel105.Location = new System.Drawing.Point(597, 3);
             this.panel105.Name = "panel105";
             this.panel105.Size = new System.Drawing.Size(93, 41);
             this.panel105.TabIndex = 6;
             // 
-            // label95
+            // SoLanTestJig6CT4
             // 
-            this.label95.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label95.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label95.ForeColor = System.Drawing.SystemColors.Control;
-            this.label95.Location = new System.Drawing.Point(0, 0);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(91, 39);
-            this.label95.TabIndex = 10;
-            this.label95.Text = "Số lần test : 20";
-            this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig6CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig6CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig6CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig6CT4.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig6CT4.Name = "SoLanTestJig6CT4";
+            this.SoLanTestJig6CT4.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig6CT4.TabIndex = 10;
+            this.SoLanTestJig6CT4.Text = "Số lần test : 20";
+            this.SoLanTestJig6CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel106
             // 
             this.panel106.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel106.Controls.Add(this.label96);
+            this.panel106.Controls.Add(this.TrangThaiJig6CT3);
             this.panel106.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel106.Location = new System.Drawing.Point(498, 3);
             this.panel106.Name = "panel106";
             this.panel106.Size = new System.Drawing.Size(93, 41);
             this.panel106.TabIndex = 5;
             // 
-            // label96
+            // TrangThaiJig6CT3
             // 
-            this.label96.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label96.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label96.ForeColor = System.Drawing.SystemColors.Control;
-            this.label96.Location = new System.Drawing.Point(0, 0);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(91, 39);
-            this.label96.TabIndex = 11;
-            this.label96.Text = "Trạng thái : On";
-            this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig6CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig6CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig6CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig6CT3.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig6CT3.Name = "TrangThaiJig6CT3";
+            this.TrangThaiJig6CT3.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig6CT3.TabIndex = 11;
+            this.TrangThaiJig6CT3.Text = "Trạng thái : On";
+            this.TrangThaiJig6CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel107
             // 
             this.panel107.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel107.Controls.Add(this.label97);
+            this.panel107.Controls.Add(this.SoLanTestJig6CT3);
             this.panel107.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel107.Location = new System.Drawing.Point(399, 3);
             this.panel107.Name = "panel107";
             this.panel107.Size = new System.Drawing.Size(93, 41);
             this.panel107.TabIndex = 4;
             // 
-            // label97
+            // SoLanTestJig6CT3
             // 
-            this.label97.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label97.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label97.ForeColor = System.Drawing.SystemColors.Control;
-            this.label97.Location = new System.Drawing.Point(0, 0);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(91, 39);
-            this.label97.TabIndex = 10;
-            this.label97.Text = "Số lần test : 20";
-            this.label97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig6CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig6CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig6CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig6CT3.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig6CT3.Name = "SoLanTestJig6CT3";
+            this.SoLanTestJig6CT3.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig6CT3.TabIndex = 10;
+            this.SoLanTestJig6CT3.Text = "Số lần test : 20";
+            this.SoLanTestJig6CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel108
             // 
             this.panel108.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel108.Controls.Add(this.label98);
+            this.panel108.Controls.Add(this.TrangThaiJig6CT2);
             this.panel108.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel108.Location = new System.Drawing.Point(300, 3);
             this.panel108.Name = "panel108";
             this.panel108.Size = new System.Drawing.Size(93, 41);
             this.panel108.TabIndex = 3;
             // 
-            // label98
+            // TrangThaiJig6CT2
             // 
-            this.label98.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label98.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label98.ForeColor = System.Drawing.SystemColors.Control;
-            this.label98.Location = new System.Drawing.Point(0, 0);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(91, 39);
-            this.label98.TabIndex = 11;
-            this.label98.Text = "Trạng thái : On";
-            this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig6CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig6CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig6CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig6CT2.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig6CT2.Name = "TrangThaiJig6CT2";
+            this.TrangThaiJig6CT2.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig6CT2.TabIndex = 11;
+            this.TrangThaiJig6CT2.Text = "Trạng thái : On";
+            this.TrangThaiJig6CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel109
             // 
             this.panel109.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel109.Controls.Add(this.label99);
+            this.panel109.Controls.Add(this.SoLanTestJig6CT2);
             this.panel109.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel109.Location = new System.Drawing.Point(201, 3);
             this.panel109.Name = "panel109";
             this.panel109.Size = new System.Drawing.Size(93, 41);
             this.panel109.TabIndex = 2;
             // 
-            // label99
+            // SoLanTestJig6CT2
             // 
-            this.label99.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label99.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label99.ForeColor = System.Drawing.SystemColors.Control;
-            this.label99.Location = new System.Drawing.Point(0, 0);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(91, 39);
-            this.label99.TabIndex = 10;
-            this.label99.Text = "Số lần test : 20";
-            this.label99.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig6CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig6CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig6CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig6CT2.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig6CT2.Name = "SoLanTestJig6CT2";
+            this.SoLanTestJig6CT2.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig6CT2.TabIndex = 10;
+            this.SoLanTestJig6CT2.Text = "Số lần test : 20";
+            this.SoLanTestJig6CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel110
             // 
             this.panel110.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel110.Controls.Add(this.label100);
+            this.panel110.Controls.Add(this.TrangThaiJig6CT1);
             this.panel110.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel110.Location = new System.Drawing.Point(102, 3);
             this.panel110.Name = "panel110";
             this.panel110.Size = new System.Drawing.Size(93, 41);
             this.panel110.TabIndex = 1;
             // 
-            // label100
+            // TrangThaiJig6CT1
             // 
-            this.label100.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label100.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label100.ForeColor = System.Drawing.SystemColors.Control;
-            this.label100.Location = new System.Drawing.Point(0, 0);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(91, 39);
-            this.label100.TabIndex = 10;
-            this.label100.Text = "Trạng thái : On";
-            this.label100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig6CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig6CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig6CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig6CT1.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig6CT1.Name = "TrangThaiJig6CT1";
+            this.TrangThaiJig6CT1.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig6CT1.TabIndex = 10;
+            this.TrangThaiJig6CT1.Text = "Trạng thái : On";
+            this.TrangThaiJig6CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel111
             // 
             this.panel111.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel111.Controls.Add(this.label101);
+            this.panel111.Controls.Add(this.SoLanTestJig6CT1);
             this.panel111.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel111.Location = new System.Drawing.Point(3, 3);
             this.panel111.Name = "panel111";
             this.panel111.Size = new System.Drawing.Size(93, 41);
             this.panel111.TabIndex = 0;
             // 
-            // label101
+            // SoLanTestJig6CT1
             // 
-            this.label101.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label101.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label101.ForeColor = System.Drawing.SystemColors.Control;
-            this.label101.Location = new System.Drawing.Point(0, 0);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(91, 39);
-            this.label101.TabIndex = 9;
-            this.label101.Text = "Số lần test : 20";
-            this.label101.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig6CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig6CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig6CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig6CT1.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig6CT1.Name = "SoLanTestJig6CT1";
+            this.SoLanTestJig6CT1.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig6CT1.TabIndex = 9;
+            this.SoLanTestJig6CT1.Text = "Số lần test : 20";
+            this.SoLanTestJig6CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel12
             // 
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.label6);
+            this.panel12.Controls.Add(this.Jig6);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel12.Location = new System.Drawing.Point(3, 448);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(106, 83);
             this.panel12.TabIndex = 10;
             // 
-            // label6
+            // Jig6
             // 
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(0, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 81);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Jig 6";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Jig6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Jig6.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Jig6.ForeColor = System.Drawing.SystemColors.Control;
+            this.Jig6.Location = new System.Drawing.Point(0, 0);
+            this.Jig6.Name = "Jig6";
+            this.Jig6.Size = new System.Drawing.Size(104, 81);
+            this.Jig6.TabIndex = 7;
+            this.Jig6.Text = "Jig 6";
+            this.Jig6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel11
             // 
@@ -3038,244 +3037,244 @@
             // panel87
             // 
             this.panel87.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel87.Controls.Add(this.label77);
+            this.panel87.Controls.Add(this.TrangThaiJig5CT5);
             this.panel87.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel87.Location = new System.Drawing.Point(894, 3);
             this.panel87.Name = "panel87";
             this.panel87.Size = new System.Drawing.Size(98, 41);
             this.panel87.TabIndex = 9;
             // 
-            // label77
+            // TrangThaiJig5CT5
             // 
-            this.label77.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label77.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label77.ForeColor = System.Drawing.SystemColors.Control;
-            this.label77.Location = new System.Drawing.Point(0, 0);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(96, 39);
-            this.label77.TabIndex = 11;
-            this.label77.Text = "Trạng thái : On";
-            this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig5CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig5CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig5CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig5CT5.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig5CT5.Name = "TrangThaiJig5CT5";
+            this.TrangThaiJig5CT5.Size = new System.Drawing.Size(96, 39);
+            this.TrangThaiJig5CT5.TabIndex = 11;
+            this.TrangThaiJig5CT5.Text = "Trạng thái : On";
+            this.TrangThaiJig5CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel88
             // 
             this.panel88.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel88.Controls.Add(this.label78);
+            this.panel88.Controls.Add(this.SoLanTestJig5CT5);
             this.panel88.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel88.Location = new System.Drawing.Point(795, 3);
             this.panel88.Name = "panel88";
             this.panel88.Size = new System.Drawing.Size(93, 41);
             this.panel88.TabIndex = 8;
             // 
-            // label78
+            // SoLanTestJig5CT5
             // 
-            this.label78.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label78.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label78.ForeColor = System.Drawing.SystemColors.Control;
-            this.label78.Location = new System.Drawing.Point(0, 0);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(91, 39);
-            this.label78.TabIndex = 10;
-            this.label78.Text = "Số lần test : 20";
-            this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig5CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig5CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig5CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig5CT5.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig5CT5.Name = "SoLanTestJig5CT5";
+            this.SoLanTestJig5CT5.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig5CT5.TabIndex = 10;
+            this.SoLanTestJig5CT5.Text = "Số lần test : 20";
+            this.SoLanTestJig5CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel89
             // 
             this.panel89.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel89.Controls.Add(this.label79);
+            this.panel89.Controls.Add(this.TrangThaiJig5CT4);
             this.panel89.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel89.Location = new System.Drawing.Point(696, 3);
             this.panel89.Name = "panel89";
             this.panel89.Size = new System.Drawing.Size(93, 41);
             this.panel89.TabIndex = 7;
             // 
-            // label79
+            // TrangThaiJig5CT4
             // 
-            this.label79.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label79.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label79.ForeColor = System.Drawing.SystemColors.Control;
-            this.label79.Location = new System.Drawing.Point(0, 0);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(91, 39);
-            this.label79.TabIndex = 11;
-            this.label79.Text = "Trạng thái : On";
-            this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig5CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig5CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig5CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig5CT4.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig5CT4.Name = "TrangThaiJig5CT4";
+            this.TrangThaiJig5CT4.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig5CT4.TabIndex = 11;
+            this.TrangThaiJig5CT4.Text = "Trạng thái : On";
+            this.TrangThaiJig5CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel90
             // 
             this.panel90.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel90.Controls.Add(this.label80);
+            this.panel90.Controls.Add(this.SoLanTestJig5CT4);
             this.panel90.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel90.Location = new System.Drawing.Point(597, 3);
             this.panel90.Name = "panel90";
             this.panel90.Size = new System.Drawing.Size(93, 41);
             this.panel90.TabIndex = 6;
             // 
-            // label80
+            // SoLanTestJig5CT4
             // 
-            this.label80.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label80.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label80.ForeColor = System.Drawing.SystemColors.Control;
-            this.label80.Location = new System.Drawing.Point(0, 0);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(91, 39);
-            this.label80.TabIndex = 10;
-            this.label80.Text = "Số lần test : 20";
-            this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig5CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig5CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig5CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig5CT4.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig5CT4.Name = "SoLanTestJig5CT4";
+            this.SoLanTestJig5CT4.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig5CT4.TabIndex = 10;
+            this.SoLanTestJig5CT4.Text = "Số lần test : 20";
+            this.SoLanTestJig5CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel91
             // 
             this.panel91.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel91.Controls.Add(this.label81);
+            this.panel91.Controls.Add(this.TrangThaiJig5CT3);
             this.panel91.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel91.Location = new System.Drawing.Point(498, 3);
             this.panel91.Name = "panel91";
             this.panel91.Size = new System.Drawing.Size(93, 41);
             this.panel91.TabIndex = 5;
             // 
-            // label81
+            // TrangThaiJig5CT3
             // 
-            this.label81.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label81.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label81.ForeColor = System.Drawing.SystemColors.Control;
-            this.label81.Location = new System.Drawing.Point(0, 0);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(91, 39);
-            this.label81.TabIndex = 11;
-            this.label81.Text = "Trạng thái : On";
-            this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig5CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig5CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig5CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig5CT3.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig5CT3.Name = "TrangThaiJig5CT3";
+            this.TrangThaiJig5CT3.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig5CT3.TabIndex = 11;
+            this.TrangThaiJig5CT3.Text = "Trạng thái : On";
+            this.TrangThaiJig5CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel92
             // 
             this.panel92.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel92.Controls.Add(this.label82);
+            this.panel92.Controls.Add(this.SoLanTestJig5CT3);
             this.panel92.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel92.Location = new System.Drawing.Point(399, 3);
             this.panel92.Name = "panel92";
             this.panel92.Size = new System.Drawing.Size(93, 41);
             this.panel92.TabIndex = 4;
             // 
-            // label82
+            // SoLanTestJig5CT3
             // 
-            this.label82.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label82.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label82.ForeColor = System.Drawing.SystemColors.Control;
-            this.label82.Location = new System.Drawing.Point(0, 0);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(91, 39);
-            this.label82.TabIndex = 10;
-            this.label82.Text = "Số lần test : 20";
-            this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig5CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig5CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig5CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig5CT3.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig5CT3.Name = "SoLanTestJig5CT3";
+            this.SoLanTestJig5CT3.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig5CT3.TabIndex = 10;
+            this.SoLanTestJig5CT3.Text = "Số lần test : 20";
+            this.SoLanTestJig5CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel93
             // 
             this.panel93.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel93.Controls.Add(this.label83);
+            this.panel93.Controls.Add(this.TrangThaiJig5CT2);
             this.panel93.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel93.Location = new System.Drawing.Point(300, 3);
             this.panel93.Name = "panel93";
             this.panel93.Size = new System.Drawing.Size(93, 41);
             this.panel93.TabIndex = 3;
             // 
-            // label83
+            // TrangThaiJig5CT2
             // 
-            this.label83.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label83.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label83.ForeColor = System.Drawing.SystemColors.Control;
-            this.label83.Location = new System.Drawing.Point(0, 0);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(91, 39);
-            this.label83.TabIndex = 11;
-            this.label83.Text = "Trạng thái : On";
-            this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig5CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig5CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig5CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig5CT2.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig5CT2.Name = "TrangThaiJig5CT2";
+            this.TrangThaiJig5CT2.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig5CT2.TabIndex = 11;
+            this.TrangThaiJig5CT2.Text = "Trạng thái : On";
+            this.TrangThaiJig5CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel94
             // 
             this.panel94.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel94.Controls.Add(this.label84);
+            this.panel94.Controls.Add(this.SoLanTestJig5CT2);
             this.panel94.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel94.Location = new System.Drawing.Point(201, 3);
             this.panel94.Name = "panel94";
             this.panel94.Size = new System.Drawing.Size(93, 41);
             this.panel94.TabIndex = 2;
             // 
-            // label84
+            // SoLanTestJig5CT2
             // 
-            this.label84.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label84.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label84.ForeColor = System.Drawing.SystemColors.Control;
-            this.label84.Location = new System.Drawing.Point(0, 0);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(91, 39);
-            this.label84.TabIndex = 10;
-            this.label84.Text = "Số lần test : 20";
-            this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig5CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig5CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig5CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig5CT2.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig5CT2.Name = "SoLanTestJig5CT2";
+            this.SoLanTestJig5CT2.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig5CT2.TabIndex = 10;
+            this.SoLanTestJig5CT2.Text = "Số lần test : 20";
+            this.SoLanTestJig5CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel95
             // 
             this.panel95.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel95.Controls.Add(this.label85);
+            this.panel95.Controls.Add(this.TrangThaiJig5CT1);
             this.panel95.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel95.Location = new System.Drawing.Point(102, 3);
             this.panel95.Name = "panel95";
             this.panel95.Size = new System.Drawing.Size(93, 41);
             this.panel95.TabIndex = 1;
             // 
-            // label85
+            // TrangThaiJig5CT1
             // 
-            this.label85.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label85.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label85.ForeColor = System.Drawing.SystemColors.Control;
-            this.label85.Location = new System.Drawing.Point(0, 0);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(91, 39);
-            this.label85.TabIndex = 10;
-            this.label85.Text = "Trạng thái : On";
-            this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig5CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig5CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig5CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig5CT1.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig5CT1.Name = "TrangThaiJig5CT1";
+            this.TrangThaiJig5CT1.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig5CT1.TabIndex = 10;
+            this.TrangThaiJig5CT1.Text = "Trạng thái : On";
+            this.TrangThaiJig5CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel96
             // 
             this.panel96.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel96.Controls.Add(this.label86);
+            this.panel96.Controls.Add(this.SoLanTestJig5CT1);
             this.panel96.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel96.Location = new System.Drawing.Point(3, 3);
             this.panel96.Name = "panel96";
             this.panel96.Size = new System.Drawing.Size(93, 41);
             this.panel96.TabIndex = 0;
             // 
-            // label86
+            // SoLanTestJig5CT1
             // 
-            this.label86.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label86.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label86.ForeColor = System.Drawing.SystemColors.Control;
-            this.label86.Location = new System.Drawing.Point(0, 0);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(91, 39);
-            this.label86.TabIndex = 9;
-            this.label86.Text = "Số lần test : 20";
-            this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig5CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig5CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig5CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig5CT1.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig5CT1.Name = "SoLanTestJig5CT1";
+            this.SoLanTestJig5CT1.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig5CT1.TabIndex = 9;
+            this.SoLanTestJig5CT1.Text = "Số lần test : 20";
+            this.SoLanTestJig5CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.label5);
+            this.panel10.Controls.Add(this.Jig5);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(3, 359);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(106, 83);
             this.panel10.TabIndex = 8;
             // 
-            // label5
+            // Jig5
             // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 81);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Jig 5";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Jig5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Jig5.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Jig5.ForeColor = System.Drawing.SystemColors.Control;
+            this.Jig5.Location = new System.Drawing.Point(0, 0);
+            this.Jig5.Name = "Jig5";
+            this.Jig5.Size = new System.Drawing.Size(104, 81);
+            this.Jig5.TabIndex = 7;
+            this.Jig5.Text = "Jig 5";
+            this.Jig5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel9
             // 
@@ -3469,244 +3468,244 @@
             // panel72
             // 
             this.panel72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel72.Controls.Add(this.label62);
+            this.panel72.Controls.Add(this.TrangThaiJig4CT5);
             this.panel72.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel72.Location = new System.Drawing.Point(894, 3);
             this.panel72.Name = "panel72";
             this.panel72.Size = new System.Drawing.Size(98, 41);
             this.panel72.TabIndex = 9;
             // 
-            // label62
+            // TrangThaiJig4CT5
             // 
-            this.label62.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label62.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label62.ForeColor = System.Drawing.SystemColors.Control;
-            this.label62.Location = new System.Drawing.Point(0, 0);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(96, 39);
-            this.label62.TabIndex = 11;
-            this.label62.Text = "Trạng thái : On";
-            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig4CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig4CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig4CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig4CT5.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig4CT5.Name = "TrangThaiJig4CT5";
+            this.TrangThaiJig4CT5.Size = new System.Drawing.Size(96, 39);
+            this.TrangThaiJig4CT5.TabIndex = 11;
+            this.TrangThaiJig4CT5.Text = "Trạng thái : On";
+            this.TrangThaiJig4CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel73
             // 
             this.panel73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel73.Controls.Add(this.label63);
+            this.panel73.Controls.Add(this.SoLanTestJig4CT5);
             this.panel73.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel73.Location = new System.Drawing.Point(795, 3);
             this.panel73.Name = "panel73";
             this.panel73.Size = new System.Drawing.Size(93, 41);
             this.panel73.TabIndex = 8;
             // 
-            // label63
+            // SoLanTestJig4CT5
             // 
-            this.label63.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label63.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label63.ForeColor = System.Drawing.SystemColors.Control;
-            this.label63.Location = new System.Drawing.Point(0, 0);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(91, 39);
-            this.label63.TabIndex = 10;
-            this.label63.Text = "Số lần test : 20";
-            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig4CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig4CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig4CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig4CT5.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig4CT5.Name = "SoLanTestJig4CT5";
+            this.SoLanTestJig4CT5.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig4CT5.TabIndex = 10;
+            this.SoLanTestJig4CT5.Text = "Số lần test : 20";
+            this.SoLanTestJig4CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel74
             // 
             this.panel74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel74.Controls.Add(this.label64);
+            this.panel74.Controls.Add(this.TrangThaiJig4CT4);
             this.panel74.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel74.Location = new System.Drawing.Point(696, 3);
             this.panel74.Name = "panel74";
             this.panel74.Size = new System.Drawing.Size(93, 41);
             this.panel74.TabIndex = 7;
             // 
-            // label64
+            // TrangThaiJig4CT4
             // 
-            this.label64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label64.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label64.ForeColor = System.Drawing.SystemColors.Control;
-            this.label64.Location = new System.Drawing.Point(0, 0);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(91, 39);
-            this.label64.TabIndex = 11;
-            this.label64.Text = "Trạng thái : On";
-            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig4CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig4CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig4CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig4CT4.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig4CT4.Name = "TrangThaiJig4CT4";
+            this.TrangThaiJig4CT4.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig4CT4.TabIndex = 11;
+            this.TrangThaiJig4CT4.Text = "Trạng thái : On";
+            this.TrangThaiJig4CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel75
             // 
             this.panel75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel75.Controls.Add(this.label65);
+            this.panel75.Controls.Add(this.SoLanTestJig4CT4);
             this.panel75.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel75.Location = new System.Drawing.Point(597, 3);
             this.panel75.Name = "panel75";
             this.panel75.Size = new System.Drawing.Size(93, 41);
             this.panel75.TabIndex = 6;
             // 
-            // label65
+            // SoLanTestJig4CT4
             // 
-            this.label65.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label65.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label65.ForeColor = System.Drawing.SystemColors.Control;
-            this.label65.Location = new System.Drawing.Point(0, 0);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(91, 39);
-            this.label65.TabIndex = 10;
-            this.label65.Text = "Số lần test : 20";
-            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig4CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig4CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig4CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig4CT4.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig4CT4.Name = "SoLanTestJig4CT4";
+            this.SoLanTestJig4CT4.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig4CT4.TabIndex = 10;
+            this.SoLanTestJig4CT4.Text = "Số lần test : 20";
+            this.SoLanTestJig4CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel76
             // 
             this.panel76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel76.Controls.Add(this.label66);
+            this.panel76.Controls.Add(this.TrangThaiJig4CT3);
             this.panel76.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel76.Location = new System.Drawing.Point(498, 3);
             this.panel76.Name = "panel76";
             this.panel76.Size = new System.Drawing.Size(93, 41);
             this.panel76.TabIndex = 5;
             // 
-            // label66
+            // TrangThaiJig4CT3
             // 
-            this.label66.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label66.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label66.ForeColor = System.Drawing.SystemColors.Control;
-            this.label66.Location = new System.Drawing.Point(0, 0);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(91, 39);
-            this.label66.TabIndex = 11;
-            this.label66.Text = "Trạng thái : On";
-            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig4CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig4CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig4CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig4CT3.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig4CT3.Name = "TrangThaiJig4CT3";
+            this.TrangThaiJig4CT3.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig4CT3.TabIndex = 11;
+            this.TrangThaiJig4CT3.Text = "Trạng thái : On";
+            this.TrangThaiJig4CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel77
             // 
             this.panel77.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel77.Controls.Add(this.label67);
+            this.panel77.Controls.Add(this.SoLanTestJig4CT3);
             this.panel77.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel77.Location = new System.Drawing.Point(399, 3);
             this.panel77.Name = "panel77";
             this.panel77.Size = new System.Drawing.Size(93, 41);
             this.panel77.TabIndex = 4;
             // 
-            // label67
+            // SoLanTestJig4CT3
             // 
-            this.label67.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label67.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label67.ForeColor = System.Drawing.SystemColors.Control;
-            this.label67.Location = new System.Drawing.Point(0, 0);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(91, 39);
-            this.label67.TabIndex = 10;
-            this.label67.Text = "Số lần test : 20";
-            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig4CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig4CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig4CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig4CT3.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig4CT3.Name = "SoLanTestJig4CT3";
+            this.SoLanTestJig4CT3.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig4CT3.TabIndex = 10;
+            this.SoLanTestJig4CT3.Text = "Số lần test : 20";
+            this.SoLanTestJig4CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel78
             // 
             this.panel78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel78.Controls.Add(this.label68);
+            this.panel78.Controls.Add(this.TrangThaiJig4CT2);
             this.panel78.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel78.Location = new System.Drawing.Point(300, 3);
             this.panel78.Name = "panel78";
             this.panel78.Size = new System.Drawing.Size(93, 41);
             this.panel78.TabIndex = 3;
             // 
-            // label68
+            // TrangThaiJig4CT2
             // 
-            this.label68.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label68.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label68.ForeColor = System.Drawing.SystemColors.Control;
-            this.label68.Location = new System.Drawing.Point(0, 0);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(91, 39);
-            this.label68.TabIndex = 11;
-            this.label68.Text = "Trạng thái : On";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig4CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig4CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig4CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig4CT2.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig4CT2.Name = "TrangThaiJig4CT2";
+            this.TrangThaiJig4CT2.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig4CT2.TabIndex = 11;
+            this.TrangThaiJig4CT2.Text = "Trạng thái : On";
+            this.TrangThaiJig4CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel79
             // 
             this.panel79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel79.Controls.Add(this.label69);
+            this.panel79.Controls.Add(this.SoLanTestJig4CT2);
             this.panel79.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel79.Location = new System.Drawing.Point(201, 3);
             this.panel79.Name = "panel79";
             this.panel79.Size = new System.Drawing.Size(93, 41);
             this.panel79.TabIndex = 2;
             // 
-            // label69
+            // SoLanTestJig4CT2
             // 
-            this.label69.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label69.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label69.ForeColor = System.Drawing.SystemColors.Control;
-            this.label69.Location = new System.Drawing.Point(0, 0);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(91, 39);
-            this.label69.TabIndex = 10;
-            this.label69.Text = "Số lần test : 20";
-            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig4CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig4CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig4CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig4CT2.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig4CT2.Name = "SoLanTestJig4CT2";
+            this.SoLanTestJig4CT2.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig4CT2.TabIndex = 10;
+            this.SoLanTestJig4CT2.Text = "Số lần test : 20";
+            this.SoLanTestJig4CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel80
             // 
             this.panel80.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel80.Controls.Add(this.label70);
+            this.panel80.Controls.Add(this.TrangThaiJig4CT1);
             this.panel80.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel80.Location = new System.Drawing.Point(102, 3);
             this.panel80.Name = "panel80";
             this.panel80.Size = new System.Drawing.Size(93, 41);
             this.panel80.TabIndex = 1;
             // 
-            // label70
+            // TrangThaiJig4CT1
             // 
-            this.label70.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label70.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label70.ForeColor = System.Drawing.SystemColors.Control;
-            this.label70.Location = new System.Drawing.Point(0, 0);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(91, 39);
-            this.label70.TabIndex = 10;
-            this.label70.Text = "Trạng thái : On";
-            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig4CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig4CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig4CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig4CT1.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig4CT1.Name = "TrangThaiJig4CT1";
+            this.TrangThaiJig4CT1.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig4CT1.TabIndex = 10;
+            this.TrangThaiJig4CT1.Text = "Trạng thái : On";
+            this.TrangThaiJig4CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel81
             // 
             this.panel81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel81.Controls.Add(this.label71);
+            this.panel81.Controls.Add(this.SoLanTestJig4CT1);
             this.panel81.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel81.Location = new System.Drawing.Point(3, 3);
             this.panel81.Name = "panel81";
             this.panel81.Size = new System.Drawing.Size(93, 41);
             this.panel81.TabIndex = 0;
             // 
-            // label71
+            // SoLanTestJig4CT1
             // 
-            this.label71.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label71.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label71.ForeColor = System.Drawing.SystemColors.Control;
-            this.label71.Location = new System.Drawing.Point(0, 0);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(91, 39);
-            this.label71.TabIndex = 9;
-            this.label71.Text = "Số lần test : 20";
-            this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig4CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig4CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig4CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig4CT1.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig4CT1.Name = "SoLanTestJig4CT1";
+            this.SoLanTestJig4CT1.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig4CT1.TabIndex = 9;
+            this.SoLanTestJig4CT1.Text = "Số lần test : 20";
+            this.SoLanTestJig4CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.label4);
+            this.panel8.Controls.Add(this.Jig4);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(3, 270);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(106, 83);
             this.panel8.TabIndex = 6;
             // 
-            // label4
+            // Jig4
             // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(0, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 81);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Jig 4";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Jig4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Jig4.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Jig4.ForeColor = System.Drawing.SystemColors.Control;
+            this.Jig4.Location = new System.Drawing.Point(0, 0);
+            this.Jig4.Name = "Jig4";
+            this.Jig4.Size = new System.Drawing.Size(104, 81);
+            this.Jig4.TabIndex = 7;
+            this.Jig4.Text = "Jig 4";
+            this.Jig4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel7
             // 
@@ -3900,244 +3899,244 @@
             // panel57
             // 
             this.panel57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel57.Controls.Add(this.label47);
+            this.panel57.Controls.Add(this.TrangThaiJig3CT5);
             this.panel57.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel57.Location = new System.Drawing.Point(894, 3);
             this.panel57.Name = "panel57";
             this.panel57.Size = new System.Drawing.Size(98, 41);
             this.panel57.TabIndex = 9;
             // 
-            // label47
+            // TrangThaiJig3CT5
             // 
-            this.label47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label47.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label47.ForeColor = System.Drawing.SystemColors.Control;
-            this.label47.Location = new System.Drawing.Point(0, 0);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(96, 39);
-            this.label47.TabIndex = 11;
-            this.label47.Text = "Trạng thái : On";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig3CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig3CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig3CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig3CT5.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig3CT5.Name = "TrangThaiJig3CT5";
+            this.TrangThaiJig3CT5.Size = new System.Drawing.Size(96, 39);
+            this.TrangThaiJig3CT5.TabIndex = 11;
+            this.TrangThaiJig3CT5.Text = "Trạng thái : On";
+            this.TrangThaiJig3CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel58
             // 
             this.panel58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel58.Controls.Add(this.label48);
+            this.panel58.Controls.Add(this.SoLanTestJig3CT5);
             this.panel58.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel58.Location = new System.Drawing.Point(795, 3);
             this.panel58.Name = "panel58";
             this.panel58.Size = new System.Drawing.Size(93, 41);
             this.panel58.TabIndex = 8;
             // 
-            // label48
+            // SoLanTestJig3CT5
             // 
-            this.label48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label48.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label48.ForeColor = System.Drawing.SystemColors.Control;
-            this.label48.Location = new System.Drawing.Point(0, 0);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(91, 39);
-            this.label48.TabIndex = 10;
-            this.label48.Text = "Số lần test : 20";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig3CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig3CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig3CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig3CT5.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig3CT5.Name = "SoLanTestJig3CT5";
+            this.SoLanTestJig3CT5.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig3CT5.TabIndex = 10;
+            this.SoLanTestJig3CT5.Text = "Số lần test : 20";
+            this.SoLanTestJig3CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel59
             // 
             this.panel59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel59.Controls.Add(this.label49);
+            this.panel59.Controls.Add(this.TrangThaiJig3CT4);
             this.panel59.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel59.Location = new System.Drawing.Point(696, 3);
             this.panel59.Name = "panel59";
             this.panel59.Size = new System.Drawing.Size(93, 41);
             this.panel59.TabIndex = 7;
             // 
-            // label49
+            // TrangThaiJig3CT4
             // 
-            this.label49.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label49.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label49.ForeColor = System.Drawing.SystemColors.Control;
-            this.label49.Location = new System.Drawing.Point(0, 0);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(91, 39);
-            this.label49.TabIndex = 11;
-            this.label49.Text = "Trạng thái : On";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig3CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig3CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig3CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig3CT4.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig3CT4.Name = "TrangThaiJig3CT4";
+            this.TrangThaiJig3CT4.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig3CT4.TabIndex = 11;
+            this.TrangThaiJig3CT4.Text = "Trạng thái : On";
+            this.TrangThaiJig3CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel60
             // 
             this.panel60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel60.Controls.Add(this.label50);
+            this.panel60.Controls.Add(this.SoLanTestJig3CT4);
             this.panel60.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel60.Location = new System.Drawing.Point(597, 3);
             this.panel60.Name = "panel60";
             this.panel60.Size = new System.Drawing.Size(93, 41);
             this.panel60.TabIndex = 6;
             // 
-            // label50
+            // SoLanTestJig3CT4
             // 
-            this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label50.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label50.ForeColor = System.Drawing.SystemColors.Control;
-            this.label50.Location = new System.Drawing.Point(0, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(91, 39);
-            this.label50.TabIndex = 10;
-            this.label50.Text = "Số lần test : 20";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig3CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig3CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig3CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig3CT4.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig3CT4.Name = "SoLanTestJig3CT4";
+            this.SoLanTestJig3CT4.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig3CT4.TabIndex = 10;
+            this.SoLanTestJig3CT4.Text = "Số lần test : 20";
+            this.SoLanTestJig3CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel61
             // 
             this.panel61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel61.Controls.Add(this.label51);
+            this.panel61.Controls.Add(this.TrangThaiJig3CT3);
             this.panel61.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel61.Location = new System.Drawing.Point(498, 3);
             this.panel61.Name = "panel61";
             this.panel61.Size = new System.Drawing.Size(93, 41);
             this.panel61.TabIndex = 5;
             // 
-            // label51
+            // TrangThaiJig3CT3
             // 
-            this.label51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label51.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label51.ForeColor = System.Drawing.SystemColors.Control;
-            this.label51.Location = new System.Drawing.Point(0, 0);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(91, 39);
-            this.label51.TabIndex = 11;
-            this.label51.Text = "Trạng thái : On";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig3CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig3CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig3CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig3CT3.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig3CT3.Name = "TrangThaiJig3CT3";
+            this.TrangThaiJig3CT3.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig3CT3.TabIndex = 11;
+            this.TrangThaiJig3CT3.Text = "Trạng thái : On";
+            this.TrangThaiJig3CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel62
             // 
             this.panel62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel62.Controls.Add(this.label52);
+            this.panel62.Controls.Add(this.SoLanTestJig3CT3);
             this.panel62.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel62.Location = new System.Drawing.Point(399, 3);
             this.panel62.Name = "panel62";
             this.panel62.Size = new System.Drawing.Size(93, 41);
             this.panel62.TabIndex = 4;
             // 
-            // label52
+            // SoLanTestJig3CT3
             // 
-            this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label52.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label52.ForeColor = System.Drawing.SystemColors.Control;
-            this.label52.Location = new System.Drawing.Point(0, 0);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(91, 39);
-            this.label52.TabIndex = 10;
-            this.label52.Text = "Số lần test : 20";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig3CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig3CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig3CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig3CT3.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig3CT3.Name = "SoLanTestJig3CT3";
+            this.SoLanTestJig3CT3.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig3CT3.TabIndex = 10;
+            this.SoLanTestJig3CT3.Text = "Số lần test : 20";
+            this.SoLanTestJig3CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel63
             // 
             this.panel63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel63.Controls.Add(this.label53);
+            this.panel63.Controls.Add(this.TrangThaiJig3CT2);
             this.panel63.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel63.Location = new System.Drawing.Point(300, 3);
             this.panel63.Name = "panel63";
             this.panel63.Size = new System.Drawing.Size(93, 41);
             this.panel63.TabIndex = 3;
             // 
-            // label53
+            // TrangThaiJig3CT2
             // 
-            this.label53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label53.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label53.ForeColor = System.Drawing.SystemColors.Control;
-            this.label53.Location = new System.Drawing.Point(0, 0);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(91, 39);
-            this.label53.TabIndex = 11;
-            this.label53.Text = "Trạng thái : On";
-            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig3CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig3CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig3CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig3CT2.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig3CT2.Name = "TrangThaiJig3CT2";
+            this.TrangThaiJig3CT2.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig3CT2.TabIndex = 11;
+            this.TrangThaiJig3CT2.Text = "Trạng thái : On";
+            this.TrangThaiJig3CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel64
             // 
             this.panel64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel64.Controls.Add(this.label54);
+            this.panel64.Controls.Add(this.SoLanTestJig3CT2);
             this.panel64.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel64.Location = new System.Drawing.Point(201, 3);
             this.panel64.Name = "panel64";
             this.panel64.Size = new System.Drawing.Size(93, 41);
             this.panel64.TabIndex = 2;
             // 
-            // label54
+            // SoLanTestJig3CT2
             // 
-            this.label54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label54.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label54.ForeColor = System.Drawing.SystemColors.Control;
-            this.label54.Location = new System.Drawing.Point(0, 0);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(91, 39);
-            this.label54.TabIndex = 10;
-            this.label54.Text = "Số lần test : 20";
-            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig3CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig3CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig3CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig3CT2.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig3CT2.Name = "SoLanTestJig3CT2";
+            this.SoLanTestJig3CT2.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig3CT2.TabIndex = 10;
+            this.SoLanTestJig3CT2.Text = "Số lần test : 20";
+            this.SoLanTestJig3CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel65
             // 
             this.panel65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel65.Controls.Add(this.label55);
+            this.panel65.Controls.Add(this.TrangThaiJig3CT1);
             this.panel65.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel65.Location = new System.Drawing.Point(102, 3);
             this.panel65.Name = "panel65";
             this.panel65.Size = new System.Drawing.Size(93, 41);
             this.panel65.TabIndex = 1;
             // 
-            // label55
+            // TrangThaiJig3CT1
             // 
-            this.label55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label55.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label55.ForeColor = System.Drawing.SystemColors.Control;
-            this.label55.Location = new System.Drawing.Point(0, 0);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(91, 39);
-            this.label55.TabIndex = 10;
-            this.label55.Text = "Trạng thái : On";
-            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig3CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig3CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig3CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig3CT1.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig3CT1.Name = "TrangThaiJig3CT1";
+            this.TrangThaiJig3CT1.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig3CT1.TabIndex = 10;
+            this.TrangThaiJig3CT1.Text = "Trạng thái : On";
+            this.TrangThaiJig3CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel66
             // 
             this.panel66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel66.Controls.Add(this.label56);
+            this.panel66.Controls.Add(this.SoLanTestJig3CT1);
             this.panel66.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel66.Location = new System.Drawing.Point(3, 3);
             this.panel66.Name = "panel66";
             this.panel66.Size = new System.Drawing.Size(93, 41);
             this.panel66.TabIndex = 0;
             // 
-            // label56
+            // SoLanTestJig3CT1
             // 
-            this.label56.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label56.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label56.ForeColor = System.Drawing.SystemColors.Control;
-            this.label56.Location = new System.Drawing.Point(0, 0);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(91, 39);
-            this.label56.TabIndex = 9;
-            this.label56.Text = "Số lần test : 20";
-            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig3CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig3CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig3CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig3CT1.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig3CT1.Name = "SoLanTestJig3CT1";
+            this.SoLanTestJig3CT1.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig3CT1.TabIndex = 9;
+            this.SoLanTestJig3CT1.Text = "Số lần test : 20";
+            this.SoLanTestJig3CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.label3);
+            this.panel6.Controls.Add(this.Jig3);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(3, 181);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(106, 83);
             this.panel6.TabIndex = 4;
             // 
-            // label3
+            // Jig3
             // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 81);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Jig 3";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Jig3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Jig3.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Jig3.ForeColor = System.Drawing.SystemColors.Control;
+            this.Jig3.Location = new System.Drawing.Point(0, 0);
+            this.Jig3.Name = "Jig3";
+            this.Jig3.Size = new System.Drawing.Size(104, 81);
+            this.Jig3.TabIndex = 7;
+            this.Jig3.Text = "Jig 3";
+            this.Jig3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel5
             // 
@@ -4331,244 +4330,244 @@
             // panel42
             // 
             this.panel42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel42.Controls.Add(this.label32);
+            this.panel42.Controls.Add(this.TrangThaiJig2CT5);
             this.panel42.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel42.Location = new System.Drawing.Point(894, 3);
             this.panel42.Name = "panel42";
             this.panel42.Size = new System.Drawing.Size(98, 41);
             this.panel42.TabIndex = 9;
             // 
-            // label32
+            // TrangThaiJig2CT5
             // 
-            this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label32.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label32.ForeColor = System.Drawing.SystemColors.Control;
-            this.label32.Location = new System.Drawing.Point(0, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(96, 39);
-            this.label32.TabIndex = 11;
-            this.label32.Text = "Trạng thái : On";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig2CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig2CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig2CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig2CT5.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig2CT5.Name = "TrangThaiJig2CT5";
+            this.TrangThaiJig2CT5.Size = new System.Drawing.Size(96, 39);
+            this.TrangThaiJig2CT5.TabIndex = 11;
+            this.TrangThaiJig2CT5.Text = "Trạng thái : On";
+            this.TrangThaiJig2CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel43
             // 
             this.panel43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel43.Controls.Add(this.label33);
+            this.panel43.Controls.Add(this.SoLanTestJig2CT5);
             this.panel43.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel43.Location = new System.Drawing.Point(795, 3);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(93, 41);
             this.panel43.TabIndex = 8;
             // 
-            // label33
+            // SoLanTestJig2CT5
             // 
-            this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label33.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label33.ForeColor = System.Drawing.SystemColors.Control;
-            this.label33.Location = new System.Drawing.Point(0, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(91, 39);
-            this.label33.TabIndex = 10;
-            this.label33.Text = "Số lần test : 20";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig2CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig2CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig2CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig2CT5.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig2CT5.Name = "SoLanTestJig2CT5";
+            this.SoLanTestJig2CT5.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig2CT5.TabIndex = 10;
+            this.SoLanTestJig2CT5.Text = "Số lần test : 20";
+            this.SoLanTestJig2CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel44
             // 
             this.panel44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel44.Controls.Add(this.label34);
+            this.panel44.Controls.Add(this.TrangThaiJig2CT4);
             this.panel44.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel44.Location = new System.Drawing.Point(696, 3);
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(93, 41);
             this.panel44.TabIndex = 7;
             // 
-            // label34
+            // TrangThaiJig2CT4
             // 
-            this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label34.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label34.ForeColor = System.Drawing.SystemColors.Control;
-            this.label34.Location = new System.Drawing.Point(0, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(91, 39);
-            this.label34.TabIndex = 11;
-            this.label34.Text = "Trạng thái : On";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig2CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig2CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig2CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig2CT4.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig2CT4.Name = "TrangThaiJig2CT4";
+            this.TrangThaiJig2CT4.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig2CT4.TabIndex = 11;
+            this.TrangThaiJig2CT4.Text = "Trạng thái : On";
+            this.TrangThaiJig2CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel45
             // 
             this.panel45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel45.Controls.Add(this.label35);
+            this.panel45.Controls.Add(this.SoLanTestJig2CT4);
             this.panel45.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel45.Location = new System.Drawing.Point(597, 3);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(93, 41);
             this.panel45.TabIndex = 6;
             // 
-            // label35
+            // SoLanTestJig2CT4
             // 
-            this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label35.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label35.ForeColor = System.Drawing.SystemColors.Control;
-            this.label35.Location = new System.Drawing.Point(0, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(91, 39);
-            this.label35.TabIndex = 10;
-            this.label35.Text = "Số lần test : 20";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig2CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig2CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig2CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig2CT4.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig2CT4.Name = "SoLanTestJig2CT4";
+            this.SoLanTestJig2CT4.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig2CT4.TabIndex = 10;
+            this.SoLanTestJig2CT4.Text = "Số lần test : 20";
+            this.SoLanTestJig2CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel46
             // 
             this.panel46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel46.Controls.Add(this.label36);
+            this.panel46.Controls.Add(this.TrangThaiJig2CT3);
             this.panel46.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel46.Location = new System.Drawing.Point(498, 3);
             this.panel46.Name = "panel46";
             this.panel46.Size = new System.Drawing.Size(93, 41);
             this.panel46.TabIndex = 5;
             // 
-            // label36
+            // TrangThaiJig2CT3
             // 
-            this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label36.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label36.ForeColor = System.Drawing.SystemColors.Control;
-            this.label36.Location = new System.Drawing.Point(0, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(91, 39);
-            this.label36.TabIndex = 11;
-            this.label36.Text = "Trạng thái : On";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig2CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig2CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig2CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig2CT3.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig2CT3.Name = "TrangThaiJig2CT3";
+            this.TrangThaiJig2CT3.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig2CT3.TabIndex = 11;
+            this.TrangThaiJig2CT3.Text = "Trạng thái : On";
+            this.TrangThaiJig2CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel47
             // 
             this.panel47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel47.Controls.Add(this.label37);
+            this.panel47.Controls.Add(this.SoLanTestJig2CT3);
             this.panel47.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel47.Location = new System.Drawing.Point(399, 3);
             this.panel47.Name = "panel47";
             this.panel47.Size = new System.Drawing.Size(93, 41);
             this.panel47.TabIndex = 4;
             // 
-            // label37
+            // SoLanTestJig2CT3
             // 
-            this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label37.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label37.ForeColor = System.Drawing.SystemColors.Control;
-            this.label37.Location = new System.Drawing.Point(0, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(91, 39);
-            this.label37.TabIndex = 10;
-            this.label37.Text = "Số lần test : 20";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig2CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig2CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig2CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig2CT3.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig2CT3.Name = "SoLanTestJig2CT3";
+            this.SoLanTestJig2CT3.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig2CT3.TabIndex = 10;
+            this.SoLanTestJig2CT3.Text = "Số lần test : 20";
+            this.SoLanTestJig2CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel48
             // 
             this.panel48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel48.Controls.Add(this.label38);
+            this.panel48.Controls.Add(this.TrangThaiJig2CT2);
             this.panel48.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel48.Location = new System.Drawing.Point(300, 3);
             this.panel48.Name = "panel48";
             this.panel48.Size = new System.Drawing.Size(93, 41);
             this.panel48.TabIndex = 3;
             // 
-            // label38
+            // TrangThaiJig2CT2
             // 
-            this.label38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label38.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label38.ForeColor = System.Drawing.SystemColors.Control;
-            this.label38.Location = new System.Drawing.Point(0, 0);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(91, 39);
-            this.label38.TabIndex = 11;
-            this.label38.Text = "Trạng thái : On";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig2CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig2CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig2CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig2CT2.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig2CT2.Name = "TrangThaiJig2CT2";
+            this.TrangThaiJig2CT2.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig2CT2.TabIndex = 11;
+            this.TrangThaiJig2CT2.Text = "Trạng thái : On";
+            this.TrangThaiJig2CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel49
             // 
             this.panel49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel49.Controls.Add(this.label39);
+            this.panel49.Controls.Add(this.SoLanTestJig2CT2);
             this.panel49.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel49.Location = new System.Drawing.Point(201, 3);
             this.panel49.Name = "panel49";
             this.panel49.Size = new System.Drawing.Size(93, 41);
             this.panel49.TabIndex = 2;
             // 
-            // label39
+            // SoLanTestJig2CT2
             // 
-            this.label39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label39.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label39.ForeColor = System.Drawing.SystemColors.Control;
-            this.label39.Location = new System.Drawing.Point(0, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(91, 39);
-            this.label39.TabIndex = 10;
-            this.label39.Text = "Số lần test : 20";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig2CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig2CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig2CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig2CT2.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig2CT2.Name = "SoLanTestJig2CT2";
+            this.SoLanTestJig2CT2.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig2CT2.TabIndex = 10;
+            this.SoLanTestJig2CT2.Text = "Số lần test : 20";
+            this.SoLanTestJig2CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel50
             // 
             this.panel50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel50.Controls.Add(this.label40);
+            this.panel50.Controls.Add(this.TrangThaiJig2CT1);
             this.panel50.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel50.Location = new System.Drawing.Point(102, 3);
             this.panel50.Name = "panel50";
             this.panel50.Size = new System.Drawing.Size(93, 41);
             this.panel50.TabIndex = 1;
             // 
-            // label40
+            // TrangThaiJig2CT1
             // 
-            this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label40.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label40.ForeColor = System.Drawing.SystemColors.Control;
-            this.label40.Location = new System.Drawing.Point(0, 0);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(91, 39);
-            this.label40.TabIndex = 10;
-            this.label40.Text = "Trạng thái : On";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig2CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig2CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig2CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig2CT1.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig2CT1.Name = "TrangThaiJig2CT1";
+            this.TrangThaiJig2CT1.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig2CT1.TabIndex = 10;
+            this.TrangThaiJig2CT1.Text = "Trạng thái : On";
+            this.TrangThaiJig2CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel51
             // 
             this.panel51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel51.Controls.Add(this.label41);
+            this.panel51.Controls.Add(this.SoLanTestJig2CT1);
             this.panel51.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel51.Location = new System.Drawing.Point(3, 3);
             this.panel51.Name = "panel51";
             this.panel51.Size = new System.Drawing.Size(93, 41);
             this.panel51.TabIndex = 0;
             // 
-            // label41
+            // SoLanTestJig2CT1
             // 
-            this.label41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label41.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label41.ForeColor = System.Drawing.SystemColors.Control;
-            this.label41.Location = new System.Drawing.Point(0, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(91, 39);
-            this.label41.TabIndex = 9;
-            this.label41.Text = "Số lần test : 20";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig2CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig2CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig2CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig2CT1.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig2CT1.Name = "SoLanTestJig2CT1";
+            this.SoLanTestJig2CT1.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig2CT1.TabIndex = 9;
+            this.SoLanTestJig2CT1.Text = "Số lần test : 20";
+            this.SoLanTestJig2CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.Jig2);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(3, 92);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(106, 83);
             this.panel4.TabIndex = 2;
             // 
-            // label2
+            // Jig2
             // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 81);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Jig 2";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Jig2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Jig2.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Jig2.ForeColor = System.Drawing.SystemColors.Control;
+            this.Jig2.Location = new System.Drawing.Point(0, 0);
+            this.Jig2.Name = "Jig2";
+            this.Jig2.Size = new System.Drawing.Size(104, 81);
+            this.Jig2.TabIndex = 7;
+            this.Jig2.Text = "Jig 2";
+            this.Jig2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
@@ -4762,244 +4761,244 @@
             // panel36
             // 
             this.panel36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel36.Controls.Add(this.label26);
+            this.panel36.Controls.Add(this.TrangThaiJig1CT5);
             this.panel36.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel36.Location = new System.Drawing.Point(894, 3);
             this.panel36.Name = "panel36";
             this.panel36.Size = new System.Drawing.Size(98, 41);
             this.panel36.TabIndex = 9;
             // 
-            // label26
+            // TrangThaiJig1CT5
             // 
-            this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label26.ForeColor = System.Drawing.SystemColors.Control;
-            this.label26.Location = new System.Drawing.Point(0, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(96, 39);
-            this.label26.TabIndex = 11;
-            this.label26.Text = "Trạng thái : On";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig1CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig1CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig1CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig1CT5.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig1CT5.Name = "TrangThaiJig1CT5";
+            this.TrangThaiJig1CT5.Size = new System.Drawing.Size(96, 39);
+            this.TrangThaiJig1CT5.TabIndex = 11;
+            this.TrangThaiJig1CT5.Text = "Trạng thái : On";
+            this.TrangThaiJig1CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel35
             // 
             this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel35.Controls.Add(this.label22);
+            this.panel35.Controls.Add(this.SoLanTestJig1CT5);
             this.panel35.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel35.Location = new System.Drawing.Point(795, 3);
             this.panel35.Name = "panel35";
             this.panel35.Size = new System.Drawing.Size(93, 41);
             this.panel35.TabIndex = 8;
             // 
-            // label22
+            // SoLanTestJig1CT5
             // 
-            this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label22.ForeColor = System.Drawing.SystemColors.Control;
-            this.label22.Location = new System.Drawing.Point(0, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(91, 39);
-            this.label22.TabIndex = 10;
-            this.label22.Text = "Số lần test : 20";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig1CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig1CT5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig1CT5.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig1CT5.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig1CT5.Name = "SoLanTestJig1CT5";
+            this.SoLanTestJig1CT5.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig1CT5.TabIndex = 10;
+            this.SoLanTestJig1CT5.Text = "Số lần test : 20";
+            this.SoLanTestJig1CT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel34
             // 
             this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel34.Controls.Add(this.label25);
+            this.panel34.Controls.Add(this.TrangThaiJig1CT4);
             this.panel34.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel34.Location = new System.Drawing.Point(696, 3);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(93, 41);
             this.panel34.TabIndex = 7;
             // 
-            // label25
+            // TrangThaiJig1CT4
             // 
-            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label25.ForeColor = System.Drawing.SystemColors.Control;
-            this.label25.Location = new System.Drawing.Point(0, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(91, 39);
-            this.label25.TabIndex = 11;
-            this.label25.Text = "Trạng thái : On";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig1CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig1CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig1CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig1CT4.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig1CT4.Name = "TrangThaiJig1CT4";
+            this.TrangThaiJig1CT4.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig1CT4.TabIndex = 11;
+            this.TrangThaiJig1CT4.Text = "Trạng thái : On";
+            this.TrangThaiJig1CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel33
             // 
             this.panel33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel33.Controls.Add(this.label21);
+            this.panel33.Controls.Add(this.SoLanTestJig1CT4);
             this.panel33.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel33.Location = new System.Drawing.Point(597, 3);
             this.panel33.Name = "panel33";
             this.panel33.Size = new System.Drawing.Size(93, 41);
             this.panel33.TabIndex = 6;
             // 
-            // label21
+            // SoLanTestJig1CT4
             // 
-            this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.ForeColor = System.Drawing.SystemColors.Control;
-            this.label21.Location = new System.Drawing.Point(0, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(91, 39);
-            this.label21.TabIndex = 10;
-            this.label21.Text = "Số lần test : 20";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig1CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig1CT4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig1CT4.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig1CT4.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig1CT4.Name = "SoLanTestJig1CT4";
+            this.SoLanTestJig1CT4.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig1CT4.TabIndex = 10;
+            this.SoLanTestJig1CT4.Text = "Số lần test : 20";
+            this.SoLanTestJig1CT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel32
             // 
             this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel32.Controls.Add(this.label24);
+            this.panel32.Controls.Add(this.TrangThaiJig1CT3);
             this.panel32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel32.Location = new System.Drawing.Point(498, 3);
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(93, 41);
             this.panel32.TabIndex = 5;
             // 
-            // label24
+            // TrangThaiJig1CT3
             // 
-            this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label24.ForeColor = System.Drawing.SystemColors.Control;
-            this.label24.Location = new System.Drawing.Point(0, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(91, 39);
-            this.label24.TabIndex = 11;
-            this.label24.Text = "Trạng thái : On";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig1CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig1CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig1CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig1CT3.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig1CT3.Name = "TrangThaiJig1CT3";
+            this.TrangThaiJig1CT3.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig1CT3.TabIndex = 11;
+            this.TrangThaiJig1CT3.Text = "Trạng thái : On";
+            this.TrangThaiJig1CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel31
             // 
             this.panel31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel31.Controls.Add(this.label20);
+            this.panel31.Controls.Add(this.SoLanTestJig1CT3);
             this.panel31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel31.Location = new System.Drawing.Point(399, 3);
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(93, 41);
             this.panel31.TabIndex = 4;
             // 
-            // label20
+            // SoLanTestJig1CT3
             // 
-            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.ForeColor = System.Drawing.SystemColors.Control;
-            this.label20.Location = new System.Drawing.Point(0, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(91, 39);
-            this.label20.TabIndex = 10;
-            this.label20.Text = "Số lần test : 20";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig1CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig1CT3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig1CT3.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig1CT3.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig1CT3.Name = "SoLanTestJig1CT3";
+            this.SoLanTestJig1CT3.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig1CT3.TabIndex = 10;
+            this.SoLanTestJig1CT3.Text = "Số lần test : 20";
+            this.SoLanTestJig1CT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel30
             // 
             this.panel30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel30.Controls.Add(this.label23);
+            this.panel30.Controls.Add(this.TrangThaiJig1CT2);
             this.panel30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel30.Location = new System.Drawing.Point(300, 3);
             this.panel30.Name = "panel30";
             this.panel30.Size = new System.Drawing.Size(93, 41);
             this.panel30.TabIndex = 3;
             // 
-            // label23
+            // TrangThaiJig1CT2
             // 
-            this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label23.ForeColor = System.Drawing.SystemColors.Control;
-            this.label23.Location = new System.Drawing.Point(0, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(91, 39);
-            this.label23.TabIndex = 11;
-            this.label23.Text = "Trạng thái : On";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig1CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig1CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig1CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig1CT2.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig1CT2.Name = "TrangThaiJig1CT2";
+            this.TrangThaiJig1CT2.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig1CT2.TabIndex = 11;
+            this.TrangThaiJig1CT2.Text = "Trạng thái : On";
+            this.TrangThaiJig1CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel29
             // 
             this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel29.Controls.Add(this.label19);
+            this.panel29.Controls.Add(this.SoLanTestJig1CT2);
             this.panel29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel29.Location = new System.Drawing.Point(201, 3);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(93, 41);
             this.panel29.TabIndex = 2;
             // 
-            // label19
+            // SoLanTestJig1CT2
             // 
-            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.ForeColor = System.Drawing.SystemColors.Control;
-            this.label19.Location = new System.Drawing.Point(0, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(91, 39);
-            this.label19.TabIndex = 10;
-            this.label19.Text = "Số lần test : 20";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig1CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig1CT2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig1CT2.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig1CT2.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig1CT2.Name = "SoLanTestJig1CT2";
+            this.SoLanTestJig1CT2.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig1CT2.TabIndex = 10;
+            this.SoLanTestJig1CT2.Text = "Số lần test : 20";
+            this.SoLanTestJig1CT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel28
             // 
             this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel28.Controls.Add(this.label18);
+            this.panel28.Controls.Add(this.TrangThaiJig1CT1);
             this.panel28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel28.Location = new System.Drawing.Point(102, 3);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(93, 41);
             this.panel28.TabIndex = 1;
             // 
-            // label18
+            // TrangThaiJig1CT1
             // 
-            this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.ForeColor = System.Drawing.SystemColors.Control;
-            this.label18.Location = new System.Drawing.Point(0, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(91, 39);
-            this.label18.TabIndex = 10;
-            this.label18.Text = "Trạng thái : On";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TrangThaiJig1CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiJig1CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiJig1CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiJig1CT1.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiJig1CT1.Name = "TrangThaiJig1CT1";
+            this.TrangThaiJig1CT1.Size = new System.Drawing.Size(91, 39);
+            this.TrangThaiJig1CT1.TabIndex = 10;
+            this.TrangThaiJig1CT1.Text = "Trạng thái : On";
+            this.TrangThaiJig1CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel27
             // 
             this.panel27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel27.Controls.Add(this.label17);
+            this.panel27.Controls.Add(this.SoLanTestJig1CT1);
             this.panel27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel27.Location = new System.Drawing.Point(3, 3);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(93, 41);
             this.panel27.TabIndex = 0;
             // 
-            // label17
+            // SoLanTestJig1CT1
             // 
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.ForeColor = System.Drawing.SystemColors.Control;
-            this.label17.Location = new System.Drawing.Point(0, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(91, 39);
-            this.label17.TabIndex = 9;
-            this.label17.Text = "Số lần test : 20";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoLanTestJig1CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig1CT1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig1CT1.ForeColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig1CT1.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig1CT1.Name = "SoLanTestJig1CT1";
+            this.SoLanTestJig1CT1.Size = new System.Drawing.Size(91, 39);
+            this.SoLanTestJig1CT1.TabIndex = 9;
+            this.SoLanTestJig1CT1.Text = "Số lần test : 20";
+            this.SoLanTestJig1CT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.Jig1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(106, 83);
             this.panel2.TabIndex = 0;
             // 
-            // label12
+            // Jig1
             // 
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.SystemColors.Control;
-            this.label12.Location = new System.Drawing.Point(0, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(104, 81);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "Jig 1";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Jig1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Jig1.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Jig1.ForeColor = System.Drawing.SystemColors.Control;
+            this.Jig1.Location = new System.Drawing.Point(0, 0);
+            this.Jig1.Name = "Jig1";
+            this.Jig1.Size = new System.Drawing.Size(104, 81);
+            this.Jig1.TabIndex = 6;
+            this.Jig1.Text = "Jig 1";
+            this.Jig1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ItemCongTac2VT
             // 
@@ -5225,7 +5224,7 @@
         private Panel panel1;
         private TableLayoutPanel tableLayoutPanel1;
         private Panel panelListItem;
-        private Label label1;
+        private Label TimeID;
         private TableLayoutPanel tableLayoutPanel2;
         private Panel panel7;
         private Panel panel6;
@@ -5247,16 +5246,16 @@
         private Panel panel10;
         private Panel panel9;
         private Panel panel8;
-        private Label label10;
-        private Label label9;
-        private Label label8;
-        private Label label7;
-        private Label label6;
-        private Label label5;
-        private Label label4;
-        private Label label3;
-        private Label label2;
-        private Label label12;
+        private Label Jig10;
+        private Label Jig9;
+        private Label Jig8;
+        private Label Jig7;
+        private Label Jig6;
+        private Label Jig5;
+        private Label Jig4;
+        private Label Jig3;
+        private Label Jig2;
+        private Label Jig1;
         private TableLayoutPanel tableLayoutPanel3;
         private TableLayoutPanel tableLayoutPanel4;
         private Panel panel26;
@@ -5294,25 +5293,25 @@
         private Label label151;
         private TableLayoutPanel tableLayoutPanel32;
         private Panel panel162;
-        private Label label152;
+        private Label TrangThaiJig10CT5;
         private Panel panel163;
-        private Label label153;
+        private Label SoLanTestJig10CT5;
         private Panel panel164;
-        private Label label154;
+        private Label TrangThaiJig10CT4;
         private Panel panel165;
-        private Label label155;
+        private Label SoLanTestJig10CT4;
         private Panel panel166;
-        private Label label156;
+        private Label TrangThaiJig10CT3;
         private Panel panel167;
-        private Label label157;
+        private Label SoLanTestJig10CT3;
         private Panel panel168;
-        private Label label158;
+        private Label TrangThaiJig10CT2;
         private Panel panel169;
-        private Label label159;
+        private Label SoLanTestJig10CT2;
         private Panel panel170;
-        private Label label160;
+        private Label TrangThaiJig10CT1;
         private Panel panel171;
-        private Label label161;
+        private Label SoLanTestJig10CT1;
         private TableLayoutPanel tableLayoutPanel27;
         private TableLayoutPanel tableLayoutPanel28;
         private Panel panel142;
@@ -5327,25 +5326,25 @@
         private Label label136;
         private TableLayoutPanel tableLayoutPanel29;
         private Panel panel147;
-        private Label label137;
+        private Label TrangThaiJig9CT5;
         private Panel panel148;
-        private Label label138;
+        private Label SoLanTestJig9CT5;
         private Panel panel149;
-        private Label label139;
+        private Label TrangThaiJig9CT4;
         private Panel panel150;
-        private Label label140;
+        private Label SoLanTestJig9CT4;
         private Panel panel151;
-        private Label label141;
+        private Label TrangThaiJig9CT3;
         private Panel panel152;
-        private Label label142;
+        private Label SoLanTestJig9CT3;
         private Panel panel153;
-        private Label label143;
+        private Label TrangThaiJig9CT2;
         private Panel panel154;
-        private Label label144;
+        private Label SoLanTestJig9CT2;
         private Panel panel155;
-        private Label label145;
+        private Label TrangThaiJig9CT1;
         private Panel panel156;
-        private Label label146;
+        private Label SoLanTestJig9CT1;
         private TableLayoutPanel tableLayoutPanel24;
         private TableLayoutPanel tableLayoutPanel25;
         private Panel panel127;
@@ -5360,25 +5359,25 @@
         private Label label121;
         private TableLayoutPanel tableLayoutPanel26;
         private Panel panel132;
-        private Label label122;
+        private Label TrangThaiJig8CT5;
         private Panel panel133;
-        private Label label123;
+        private Label SoLanTestJig8CT5;
         private Panel panel134;
-        private Label label124;
+        private Label TrangThaiJig8CT4;
         private Panel panel135;
-        private Label label125;
+        private Label SoLanTestJig8CT4;
         private Panel panel136;
-        private Label label126;
+        private Label TrangThaiJig8CT3;
         private Panel panel137;
-        private Label label127;
+        private Label SoLanTestJig8CT3;
         private Panel panel138;
-        private Label label128;
+        private Label TrangThaiJig8CT2;
         private Panel panel139;
-        private Label label129;
+        private Label SoLanTestJig8CT2;
         private Panel panel140;
-        private Label label130;
+        private Label TrangThaiJig8CT1;
         private Panel panel141;
-        private Label label131;
+        private Label SoLanTestJig8CT1;
         private TableLayoutPanel tableLayoutPanel21;
         private TableLayoutPanel tableLayoutPanel22;
         private Panel panel112;
@@ -5393,25 +5392,25 @@
         private Label label106;
         private TableLayoutPanel tableLayoutPanel23;
         private Panel panel117;
-        private Label label107;
+        private Label TrangThaiJig7CT5;
         private Panel panel118;
-        private Label label108;
+        private Label SoLanTestJig7CT5;
         private Panel panel119;
-        private Label label109;
+        private Label TrangThaiJig7CT4;
         private Panel panel120;
-        private Label label110;
+        private Label SoLanTestJig7CT4;
         private Panel panel121;
-        private Label label111;
+        private Label TrangThaiJig7CT3;
         private Panel panel122;
-        private Label label112;
+        private Label SoLanTestJig7CT3;
         private Panel panel123;
-        private Label label113;
+        private Label TrangThaiJig7CT2;
         private Panel panel124;
-        private Label label114;
+        private Label SoLanTestJig7CT2;
         private Panel panel125;
-        private Label label115;
+        private Label TrangThaiJig7CT1;
         private Panel panel126;
-        private Label label116;
+        private Label SoLanTestJig7CT1;
         private TableLayoutPanel tableLayoutPanel18;
         private TableLayoutPanel tableLayoutPanel19;
         private Panel panel97;
@@ -5426,25 +5425,25 @@
         private Label label91;
         private TableLayoutPanel tableLayoutPanel20;
         private Panel panel102;
-        private Label label92;
+        private Label TrangThaiJig6CT5;
         private Panel panel103;
-        private Label label93;
+        private Label SoLanTestJig6CT5;
         private Panel panel104;
-        private Label label94;
+        private Label TrangThaiJig6CT4;
         private Panel panel105;
-        private Label label95;
+        private Label SoLanTestJig6CT4;
         private Panel panel106;
-        private Label label96;
+        private Label TrangThaiJig6CT3;
         private Panel panel107;
-        private Label label97;
+        private Label SoLanTestJig6CT3;
         private Panel panel108;
-        private Label label98;
+        private Label TrangThaiJig6CT2;
         private Panel panel109;
-        private Label label99;
+        private Label SoLanTestJig6CT2;
         private Panel panel110;
-        private Label label100;
+        private Label TrangThaiJig6CT1;
         private Panel panel111;
-        private Label label101;
+        private Label SoLanTestJig6CT1;
         private TableLayoutPanel tableLayoutPanel15;
         private TableLayoutPanel tableLayoutPanel16;
         private Panel panel82;
@@ -5459,25 +5458,25 @@
         private Label label76;
         private TableLayoutPanel tableLayoutPanel17;
         private Panel panel87;
-        private Label label77;
+        private Label TrangThaiJig5CT5;
         private Panel panel88;
-        private Label label78;
+        private Label SoLanTestJig5CT5;
         private Panel panel89;
-        private Label label79;
+        private Label TrangThaiJig5CT4;
         private Panel panel90;
-        private Label label80;
+        private Label SoLanTestJig5CT4;
         private Panel panel91;
-        private Label label81;
+        private Label TrangThaiJig5CT3;
         private Panel panel92;
-        private Label label82;
+        private Label SoLanTestJig5CT3;
         private Panel panel93;
-        private Label label83;
+        private Label TrangThaiJig5CT2;
         private Panel panel94;
-        private Label label84;
+        private Label SoLanTestJig5CT2;
         private Panel panel95;
-        private Label label85;
+        private Label TrangThaiJig5CT1;
         private Panel panel96;
-        private Label label86;
+        private Label SoLanTestJig5CT1;
         private TableLayoutPanel tableLayoutPanel12;
         private TableLayoutPanel tableLayoutPanel13;
         private Panel panel67;
@@ -5492,25 +5491,25 @@
         private Label label61;
         private TableLayoutPanel tableLayoutPanel14;
         private Panel panel72;
-        private Label label62;
+        private Label TrangThaiJig4CT5;
         private Panel panel73;
-        private Label label63;
+        private Label SoLanTestJig4CT5;
         private Panel panel74;
-        private Label label64;
+        private Label TrangThaiJig4CT4;
         private Panel panel75;
-        private Label label65;
+        private Label SoLanTestJig4CT4;
         private Panel panel76;
-        private Label label66;
+        private Label TrangThaiJig4CT3;
         private Panel panel77;
-        private Label label67;
+        private Label SoLanTestJig4CT3;
         private Panel panel78;
-        private Label label68;
+        private Label TrangThaiJig4CT2;
         private Panel panel79;
-        private Label label69;
+        private Label SoLanTestJig4CT2;
         private Panel panel80;
-        private Label label70;
+        private Label TrangThaiJig4CT1;
         private Panel panel81;
-        private Label label71;
+        private Label SoLanTestJig4CT1;
         private TableLayoutPanel tableLayoutPanel9;
         private TableLayoutPanel tableLayoutPanel10;
         private Panel panel52;
@@ -5525,25 +5524,25 @@
         private Label label46;
         private TableLayoutPanel tableLayoutPanel11;
         private Panel panel57;
-        private Label label47;
+        private Label TrangThaiJig3CT5;
         private Panel panel58;
-        private Label label48;
+        private Label SoLanTestJig3CT5;
         private Panel panel59;
-        private Label label49;
+        private Label TrangThaiJig3CT4;
         private Panel panel60;
-        private Label label50;
+        private Label SoLanTestJig3CT4;
         private Panel panel61;
-        private Label label51;
+        private Label TrangThaiJig3CT3;
         private Panel panel62;
-        private Label label52;
+        private Label SoLanTestJig3CT3;
         private Panel panel63;
-        private Label label53;
+        private Label TrangThaiJig3CT2;
         private Panel panel64;
-        private Label label54;
+        private Label SoLanTestJig3CT2;
         private Panel panel65;
-        private Label label55;
+        private Label TrangThaiJig3CT1;
         private Panel panel66;
-        private Label label56;
+        private Label SoLanTestJig3CT1;
         private TableLayoutPanel tableLayoutPanel6;
         private TableLayoutPanel tableLayoutPanel7;
         private Panel panel37;
@@ -5558,34 +5557,34 @@
         private Label label31;
         private TableLayoutPanel tableLayoutPanel8;
         private Panel panel42;
-        private Label label32;
+        private Label TrangThaiJig2CT5;
         private Panel panel43;
-        private Label label33;
+        private Label SoLanTestJig2CT5;
         private Panel panel44;
-        private Label label34;
+        private Label TrangThaiJig2CT4;
         private Panel panel45;
-        private Label label35;
+        private Label SoLanTestJig2CT4;
         private Panel panel46;
-        private Label label36;
+        private Label TrangThaiJig2CT3;
         private Panel panel47;
-        private Label label37;
+        private Label SoLanTestJig2CT3;
         private Panel panel48;
-        private Label label38;
+        private Label TrangThaiJig2CT2;
         private Panel panel49;
-        private Label label39;
+        private Label SoLanTestJig2CT2;
         private Panel panel50;
-        private Label label40;
+        private Label TrangThaiJig2CT1;
         private Panel panel51;
-        private Label label41;
-        private Label label26;
-        private Label label22;
-        private Label label25;
-        private Label label21;
-        private Label label24;
-        private Label label20;
-        private Label label23;
-        private Label label19;
-        private Label label18;
-        private Label label17;
+        private Label SoLanTestJig2CT1;
+        private Label TrangThaiJig1CT5;
+        private Label SoLanTestJig1CT5;
+        private Label TrangThaiJig1CT4;
+        private Label SoLanTestJig1CT4;
+        private Label TrangThaiJig1CT3;
+        private Label SoLanTestJig1CT3;
+        private Label TrangThaiJig1CT2;
+        private Label SoLanTestJig1CT2;
+        private Label TrangThaiJig1CT1;
+        private Label SoLanTestJig1CT1;
     }
 }

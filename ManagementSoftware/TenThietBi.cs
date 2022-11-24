@@ -87,8 +87,76 @@ namespace ManagementSoftware
         public const string JigMachTDS9 = "Jig 9";
         public const string JigMachTDS10 = "Jig 10";
 
+        //Công tắc 
+        public const string Jig1CongTac = "Jig 1";
+        public const string Jig2CongTac = "Jig 2";
+        public const string Jig3CongTac = "Jig 3";
+        public const string Jig4CongTac = "Jig 4";
+        public const string Jig5CongTac = "Jig 5";
+        public const string Jig6CongTac = "Jig 6";
+        public const string Jig7CongTac = "Jig 7";
+        public const string Jig8CongTac = "Jig 8";
+        public const string Jig9CongTac = "Jig 9";
+        public const string Jig10CongTac = "Jig 10";
 
+        public const string CongTac1Jig1 = "Công tắc 1";
+        public const string CongTac2Jig1 = "Công tắc 2";
+        public const string CongTac3Jig1 = "Công tắc 3";
+        public const string CongTac4Jig1 = "Công tắc 4";
+        public const string CongTac5Jig1 = "Công tắc 5";
 
+        public const string CongTac1Jig2 = "Công tắc 1";
+        public const string CongTac2Jig2 = "Công tắc 2";
+        public const string CongTac3Jig2 = "Công tắc 3";
+        public const string CongTac4Jig2 = "Công tắc 4";
+        public const string CongTac5Jig2 = "Công tắc 5";
 
+        public const string CongTac1Jig3 = "Công tắc 1";
+        public const string CongTac2Jig3 = "Công tắc 2";
+        public const string CongTac3Jig3 = "Công tắc 3";
+        public const string CongTac4Jig3 = "Công tắc 4";
+        public const string CongTac5Jig3 = "Công tắc 5";
+
+        public const string CongTac1Jig4 = "Công tắc 1";
+        public const string CongTac2Jig4 = "Công tắc 2";
+        public const string CongTac3Jig4 = "Công tắc 3";
+        public const string CongTac4Jig4 = "Công tắc 4";
+        public const string CongTac5Jig4 = "Công tắc 5";
+
+        public const string CongTac1Jig5 = "Công tắc 1";
+        public const string CongTac2Jig5 = "Công tắc 2";
+        public const string CongTac3Jig5 = "Công tắc 3";
+        public const string CongTac4Jig5 = "Công tắc 4";
+        public const string CongTac5Jig5 = "Công tắc 5";
+
+        public const string CongTac1Jig6 = "Công tắc 1";
+        public const string CongTac2Jig6 = "Công tắc 2";
+        public const string CongTac3Jig6 = "Công tắc 3";
+        public const string CongTac4Jig6 = "Công tắc 4";
+        public const string CongTac5Jig6 = "Công tắc 5";
+
+        public const string CongTac1Jig7 = "Công tắc 1";
+        public const string CongTac2Jig7 = "Công tắc 2";
+        public const string CongTac3Jig7 = "Công tắc 3";
+        public const string CongTac4Jig7 = "Công tắc 4";
+        public const string CongTac5Jig7 = "Công tắc 5";
+
+        public const string CongTac1Jig8 = "Công tắc 1";
+        public const string CongTac2Jig8 = "Công tắc 2";
+        public const string CongTac3Jig8 = "Công tắc 3";
+        public const string CongTac4Jig8 = "Công tắc 4";
+        public const string CongTac5Jig8 = "Công tắc 5";
+
+        public const string CongTac1Jig9 = "Công tắc 1";
+        public const string CongTac2Jig9 = "Công tắc 2";
+        public const string CongTac3Jig9 = "Công tắc 3";
+        public const string CongTac4Jig9 = "Công tắc 4";
+        public const string CongTac5Jig9 = "Công tắc 5";
+
+        public const string CongTac1Jig10 = "Công tắc 1";
+        public const string CongTac2Jig10 = "Công tắc 2";
+        public const string CongTac3Jig10 = "Công tắc 3";
+        public const string CongTac4Jig10 = "Công tắc 4";
+        public const string CongTac5Jig10 = "Công tắc 5";
     }
 }

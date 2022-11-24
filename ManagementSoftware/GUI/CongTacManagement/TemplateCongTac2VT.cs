@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Syncfusion.Windows.Forms.Tools;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,37 @@ namespace ManagementSoftware.GUI.CongTacManagement
         {
             InitializeComponent();
             labelNameJig.Text = "Jig " + j;
+
+            ActiveToggleButton(toggleButton1,true);
+            ActiveToggleButton(toggleButton2,false);
+            ActiveToggleButton(toggleButton3, true);
+            ActiveToggleButton(toggleButton4, true);
+            ActiveToggleButton(toggleButton7, true);
+
+
+        }
+
+
+        void ActiveToggleButton(ToggleButton button,bool status)
+        {
+            //button.Enabled = false;
+            button.ActiveState.Text = "ON";
+
+
+            button.InactiveState.BackColor = Color.White;
+            button.InactiveState.BorderColor = Color.FromArgb(150, 150, 150);
+            button.InactiveState.ForeColor = Color.FromArgb(80, 80, 80);
+            button.InactiveState.HoverColor = Color.White;
+            button.InactiveState.Text = "OFF";
+            if (status)
+            {
+                button.ToggleState = ToggleButtonState.Active;
+
+            }
+            else
+            {
+                button.ToggleState = ToggleButtonState.Inactive;
+            }
         }
     }
 }

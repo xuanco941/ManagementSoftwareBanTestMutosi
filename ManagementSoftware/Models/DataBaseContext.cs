@@ -238,6 +238,23 @@ namespace ManagementSoftware.Models
                     jigMachTDs.Add(jigMachTDS);
                 }
                 DALJigMach.Add(jigmachs, jigMachTDs);
+
+
+                //cong tac
+                List<CongTac2VT> ct2vt = new List<CongTac2VT>();
+                for (int j = 1; j <= 10; j++)
+                {
+                    for (int k = 1; k <= 5; k++)
+                    {
+                        CongTac2VT ct = new CongTac2VT();
+                        ct.SoLanTest = k + 3;
+                        ct.JigCongTac2VTName = "Jig " + j;
+                        ct.CongTac2VTName = "Công tắc " + k;
+                        ct.TrangThai = true;
+                        ct2vt.Add(ct);
+                    }
+                }
+                DALCongTac2VT.Add(ct2vt);
             }
         }
 

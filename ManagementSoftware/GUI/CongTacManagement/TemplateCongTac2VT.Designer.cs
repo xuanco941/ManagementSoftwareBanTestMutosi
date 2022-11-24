@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection6 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection7 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection8 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection9 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection10 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection1 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection2 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection3 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection4 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection5 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
             this.panelItem = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -254,7 +254,7 @@
             this.toggleButton4.MinimumSize = new System.Drawing.Size(52, 20);
             this.toggleButton4.Name = "toggleButton4";
             this.toggleButton4.Size = new System.Drawing.Size(95, 49);
-            this.toggleButton4.Slider = sliderCollection6;
+            this.toggleButton4.Slider = sliderCollection1;
             this.toggleButton4.TabIndex = 2;
             this.toggleButton4.Text = "toggleButton4";
             // 
@@ -403,7 +403,7 @@
             this.toggleButton3.MinimumSize = new System.Drawing.Size(52, 20);
             this.toggleButton3.Name = "toggleButton3";
             this.toggleButton3.Size = new System.Drawing.Size(94, 49);
-            this.toggleButton3.Slider = sliderCollection7;
+            this.toggleButton3.Slider = sliderCollection2;
             this.toggleButton3.TabIndex = 2;
             this.toggleButton3.Text = "toggleButton3";
             // 
@@ -552,7 +552,7 @@
             this.toggleButton2.MinimumSize = new System.Drawing.Size(52, 20);
             this.toggleButton2.Name = "toggleButton2";
             this.toggleButton2.Size = new System.Drawing.Size(94, 49);
-            this.toggleButton2.Slider = sliderCollection8;
+            this.toggleButton2.Slider = sliderCollection3;
             this.toggleButton2.TabIndex = 2;
             this.toggleButton2.Text = "toggleButton2";
             // 
@@ -701,7 +701,7 @@
             this.toggleButton1.MinimumSize = new System.Drawing.Size(52, 20);
             this.toggleButton1.Name = "toggleButton1";
             this.toggleButton1.Size = new System.Drawing.Size(94, 49);
-            this.toggleButton1.Slider = sliderCollection9;
+            this.toggleButton1.Slider = sliderCollection4;
             this.toggleButton1.TabIndex = 2;
             this.toggleButton1.Text = "toggleButton1";
             // 
@@ -850,7 +850,7 @@
             this.toggleButton7.MinimumSize = new System.Drawing.Size(52, 20);
             this.toggleButton7.Name = "toggleButton7";
             this.toggleButton7.Size = new System.Drawing.Size(94, 49);
-            this.toggleButton7.Slider = sliderCollection10;
+            this.toggleButton7.Slider = sliderCollection5;
             this.toggleButton7.TabIndex = 2;
             this.toggleButton7.Text = "toggleButton7";
             // 
