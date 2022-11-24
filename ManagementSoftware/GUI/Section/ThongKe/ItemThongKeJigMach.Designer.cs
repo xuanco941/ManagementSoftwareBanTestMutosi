@@ -34,83 +34,83 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.CBApSuat10 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.Van10 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.ApDC10 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
+            this.JigMachTDS10 = new System.Windows.Forms.Label();
             this.panel64 = new System.Windows.Forms.Panel();
-            this.label62 = new System.Windows.Forms.Label();
+            this.CBApSuat9 = new System.Windows.Forms.Label();
             this.panel65 = new System.Windows.Forms.Panel();
-            this.label63 = new System.Windows.Forms.Label();
+            this.Van9 = new System.Windows.Forms.Label();
             this.panel66 = new System.Windows.Forms.Panel();
-            this.label64 = new System.Windows.Forms.Label();
+            this.ApDC9 = new System.Windows.Forms.Label();
             this.panel68 = new System.Windows.Forms.Panel();
-            this.label66 = new System.Windows.Forms.Label();
+            this.JigMachTDS9 = new System.Windows.Forms.Label();
             this.panel69 = new System.Windows.Forms.Panel();
-            this.label67 = new System.Windows.Forms.Label();
+            this.CBApSuat8 = new System.Windows.Forms.Label();
             this.panel70 = new System.Windows.Forms.Panel();
-            this.label68 = new System.Windows.Forms.Label();
+            this.Van8 = new System.Windows.Forms.Label();
             this.panel71 = new System.Windows.Forms.Panel();
-            this.label69 = new System.Windows.Forms.Label();
+            this.ApDC8 = new System.Windows.Forms.Label();
             this.panel73 = new System.Windows.Forms.Panel();
-            this.label71 = new System.Windows.Forms.Label();
+            this.JigMachTDS8 = new System.Windows.Forms.Label();
             this.panel74 = new System.Windows.Forms.Panel();
-            this.label72 = new System.Windows.Forms.Label();
+            this.CBApSuat7 = new System.Windows.Forms.Label();
             this.panel75 = new System.Windows.Forms.Panel();
-            this.label73 = new System.Windows.Forms.Label();
+            this.Van7 = new System.Windows.Forms.Label();
             this.panel76 = new System.Windows.Forms.Panel();
-            this.label74 = new System.Windows.Forms.Label();
+            this.ApDC7 = new System.Windows.Forms.Label();
             this.panel78 = new System.Windows.Forms.Panel();
-            this.label76 = new System.Windows.Forms.Label();
+            this.JigMachTDS7 = new System.Windows.Forms.Label();
             this.panel79 = new System.Windows.Forms.Panel();
-            this.label77 = new System.Windows.Forms.Label();
+            this.CBApSuat6 = new System.Windows.Forms.Label();
             this.panel80 = new System.Windows.Forms.Panel();
-            this.label78 = new System.Windows.Forms.Label();
+            this.Van6 = new System.Windows.Forms.Label();
             this.panel81 = new System.Windows.Forms.Panel();
-            this.label79 = new System.Windows.Forms.Label();
-            this.panel83 = new System.Windows.Forms.Panel();
+            this.ApDC6 = new System.Windows.Forms.Label();
+            this.JigMachTDS6 = new System.Windows.Forms.Panel();
             this.label81 = new System.Windows.Forms.Label();
             this.panel84 = new System.Windows.Forms.Panel();
-            this.label82 = new System.Windows.Forms.Label();
+            this.CBApSuat5 = new System.Windows.Forms.Label();
             this.panel85 = new System.Windows.Forms.Panel();
-            this.label83 = new System.Windows.Forms.Label();
+            this.Van5 = new System.Windows.Forms.Label();
             this.panel86 = new System.Windows.Forms.Panel();
-            this.label84 = new System.Windows.Forms.Label();
+            this.ApDC5 = new System.Windows.Forms.Label();
             this.panel88 = new System.Windows.Forms.Panel();
-            this.label86 = new System.Windows.Forms.Label();
+            this.JigMachTDS5 = new System.Windows.Forms.Label();
             this.panel89 = new System.Windows.Forms.Panel();
-            this.label87 = new System.Windows.Forms.Label();
+            this.CBApSuat4 = new System.Windows.Forms.Label();
             this.panel90 = new System.Windows.Forms.Panel();
-            this.label88 = new System.Windows.Forms.Label();
+            this.Van4 = new System.Windows.Forms.Label();
             this.panel91 = new System.Windows.Forms.Panel();
-            this.label89 = new System.Windows.Forms.Label();
+            this.ApDC4 = new System.Windows.Forms.Label();
             this.panel93 = new System.Windows.Forms.Panel();
-            this.label91 = new System.Windows.Forms.Label();
+            this.JigMachTDS4 = new System.Windows.Forms.Label();
             this.panel94 = new System.Windows.Forms.Panel();
-            this.label92 = new System.Windows.Forms.Label();
+            this.CBApSuat3 = new System.Windows.Forms.Label();
             this.panel95 = new System.Windows.Forms.Panel();
-            this.label93 = new System.Windows.Forms.Label();
+            this.Van3 = new System.Windows.Forms.Label();
             this.panel96 = new System.Windows.Forms.Panel();
-            this.label94 = new System.Windows.Forms.Label();
+            this.ApDC3 = new System.Windows.Forms.Label();
             this.panel98 = new System.Windows.Forms.Panel();
-            this.label96 = new System.Windows.Forms.Label();
+            this.JigMachTDS3 = new System.Windows.Forms.Label();
             this.panel99 = new System.Windows.Forms.Panel();
-            this.label97 = new System.Windows.Forms.Label();
+            this.CBApSuat2 = new System.Windows.Forms.Label();
             this.panel100 = new System.Windows.Forms.Panel();
-            this.label98 = new System.Windows.Forms.Label();
+            this.Van2 = new System.Windows.Forms.Label();
             this.panel101 = new System.Windows.Forms.Panel();
-            this.label99 = new System.Windows.Forms.Label();
+            this.ApDC2 = new System.Windows.Forms.Label();
             this.panel103 = new System.Windows.Forms.Panel();
-            this.label101 = new System.Windows.Forms.Label();
+            this.JigMachTDS2 = new System.Windows.Forms.Label();
             this.panel104 = new System.Windows.Forms.Panel();
-            this.label102 = new System.Windows.Forms.Label();
+            this.CBApSuat1 = new System.Windows.Forms.Label();
             this.panel105 = new System.Windows.Forms.Panel();
-            this.label103 = new System.Windows.Forms.Label();
+            this.Van1 = new System.Windows.Forms.Label();
             this.panel106 = new System.Windows.Forms.Panel();
-            this.label104 = new System.Windows.Forms.Label();
+            this.ApDC1 = new System.Windows.Forms.Label();
             this.panel108 = new System.Windows.Forms.Panel();
             this.label106 = new System.Windows.Forms.Label();
             this.panel109 = new System.Windows.Forms.Panel();
@@ -120,87 +120,87 @@
             this.panel112 = new System.Windows.Forms.Panel();
             this.label110 = new System.Windows.Forms.Label();
             this.panel113 = new System.Windows.Forms.Panel();
-            this.label111 = new System.Windows.Forms.Label();
+            this.JigMachTDS1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel63 = new System.Windows.Forms.Panel();
-            this.label61 = new System.Windows.Forms.Label();
+            this.CongSuat10 = new System.Windows.Forms.Label();
             this.panel62 = new System.Windows.Forms.Panel();
-            this.label51 = new System.Windows.Forms.Label();
+            this.DienAp10 = new System.Windows.Forms.Label();
             this.panel61 = new System.Windows.Forms.Panel();
-            this.label41 = new System.Windows.Forms.Label();
+            this.DongDien10 = new System.Windows.Forms.Label();
             this.panel59 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
+            this.JigMachNguon10 = new System.Windows.Forms.Label();
             this.panel58 = new System.Windows.Forms.Panel();
-            this.label60 = new System.Windows.Forms.Label();
+            this.CongSuat9 = new System.Windows.Forms.Label();
             this.panel57 = new System.Windows.Forms.Panel();
-            this.label50 = new System.Windows.Forms.Label();
+            this.DienAp9 = new System.Windows.Forms.Label();
             this.panel56 = new System.Windows.Forms.Panel();
-            this.label40 = new System.Windows.Forms.Label();
+            this.DongDien9 = new System.Windows.Forms.Label();
             this.panel54 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
+            this.JigMachNguon9 = new System.Windows.Forms.Label();
             this.panel53 = new System.Windows.Forms.Panel();
-            this.label59 = new System.Windows.Forms.Label();
+            this.CongSuat8 = new System.Windows.Forms.Label();
             this.panel52 = new System.Windows.Forms.Panel();
-            this.label49 = new System.Windows.Forms.Label();
+            this.DienAp8 = new System.Windows.Forms.Label();
             this.panel51 = new System.Windows.Forms.Panel();
-            this.label39 = new System.Windows.Forms.Label();
+            this.DongDien8 = new System.Windows.Forms.Label();
             this.panel49 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
+            this.JigMachNguon8 = new System.Windows.Forms.Label();
             this.panel48 = new System.Windows.Forms.Panel();
-            this.label58 = new System.Windows.Forms.Label();
+            this.CongSuat7 = new System.Windows.Forms.Label();
             this.panel47 = new System.Windows.Forms.Panel();
-            this.label48 = new System.Windows.Forms.Label();
+            this.DienAp7 = new System.Windows.Forms.Label();
             this.panel46 = new System.Windows.Forms.Panel();
-            this.label38 = new System.Windows.Forms.Label();
+            this.DongDien7 = new System.Windows.Forms.Label();
             this.panel44 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
+            this.JigMachNguon7 = new System.Windows.Forms.Label();
             this.panel43 = new System.Windows.Forms.Panel();
-            this.label57 = new System.Windows.Forms.Label();
+            this.CongSuat6 = new System.Windows.Forms.Label();
             this.panel42 = new System.Windows.Forms.Panel();
-            this.label47 = new System.Windows.Forms.Label();
+            this.DienAp6 = new System.Windows.Forms.Label();
             this.panel41 = new System.Windows.Forms.Panel();
-            this.label37 = new System.Windows.Forms.Label();
+            this.DongDien6 = new System.Windows.Forms.Label();
             this.panel39 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
+            this.JigMachNguon6 = new System.Windows.Forms.Label();
             this.panel38 = new System.Windows.Forms.Panel();
-            this.label56 = new System.Windows.Forms.Label();
+            this.CongSuat5 = new System.Windows.Forms.Label();
             this.panel37 = new System.Windows.Forms.Panel();
-            this.label46 = new System.Windows.Forms.Label();
+            this.DienAp5 = new System.Windows.Forms.Label();
             this.panel36 = new System.Windows.Forms.Panel();
-            this.label36 = new System.Windows.Forms.Label();
+            this.DongDien5 = new System.Windows.Forms.Label();
             this.panel34 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
+            this.JigMachNguon5 = new System.Windows.Forms.Label();
             this.panel33 = new System.Windows.Forms.Panel();
-            this.label55 = new System.Windows.Forms.Label();
+            this.CongSuat4 = new System.Windows.Forms.Label();
             this.panel32 = new System.Windows.Forms.Panel();
-            this.label45 = new System.Windows.Forms.Label();
+            this.DienAp4 = new System.Windows.Forms.Label();
             this.panel31 = new System.Windows.Forms.Panel();
-            this.label35 = new System.Windows.Forms.Label();
+            this.DongDien4 = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
+            this.JigMachNguon4 = new System.Windows.Forms.Label();
             this.panel28 = new System.Windows.Forms.Panel();
-            this.label54 = new System.Windows.Forms.Label();
+            this.CongSuat3 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
-            this.label44 = new System.Windows.Forms.Label();
+            this.DienAp3 = new System.Windows.Forms.Label();
             this.panel26 = new System.Windows.Forms.Panel();
-            this.label34 = new System.Windows.Forms.Label();
+            this.DongDien3 = new System.Windows.Forms.Label();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
+            this.JigMachNguon3 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.label53 = new System.Windows.Forms.Label();
+            this.CongSuat2 = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.label43 = new System.Windows.Forms.Label();
+            this.DienAp2 = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
-            this.label33 = new System.Windows.Forms.Label();
+            this.DongDien2 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
+            this.JigMachNguon2 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.label52 = new System.Windows.Forms.Label();
+            this.CongSuat1 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.label42 = new System.Windows.Forms.Label();
+            this.DienAp1 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.label32 = new System.Windows.Forms.Label();
+            this.DongDien1 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -210,7 +210,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.JigMachNguon1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -234,7 +234,7 @@
             this.panel79.SuspendLayout();
             this.panel80.SuspendLayout();
             this.panel81.SuspendLayout();
-            this.panel83.SuspendLayout();
+            this.JigMachTDS6.SuspendLayout();
             this.panel84.SuspendLayout();
             this.panel85.SuspendLayout();
             this.panel86.SuspendLayout();
@@ -384,7 +384,7 @@
             this.tableLayoutPanel3.Controls.Add(this.panel79, 3, 6);
             this.tableLayoutPanel3.Controls.Add(this.panel80, 2, 6);
             this.tableLayoutPanel3.Controls.Add(this.panel81, 1, 6);
-            this.tableLayoutPanel3.Controls.Add(this.panel83, 0, 6);
+            this.tableLayoutPanel3.Controls.Add(this.JigMachTDS6, 0, 6);
             this.tableLayoutPanel3.Controls.Add(this.panel84, 3, 5);
             this.tableLayoutPanel3.Controls.Add(this.panel85, 2, 5);
             this.tableLayoutPanel3.Controls.Add(this.panel86, 1, 5);
@@ -430,411 +430,411 @@
             // panel9
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.label6);
+            this.panel9.Controls.Add(this.CBApSuat10);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(750, 216);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(243, 21);
             this.panel9.TabIndex = 54;
             // 
-            // label6
+            // CBApSuat10
             // 
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(0, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(241, 19);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "15";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CBApSuat10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CBApSuat10.ForeColor = System.Drawing.SystemColors.Control;
+            this.CBApSuat10.Location = new System.Drawing.Point(0, 0);
+            this.CBApSuat10.Name = "CBApSuat10";
+            this.CBApSuat10.Size = new System.Drawing.Size(241, 19);
+            this.CBApSuat10.TabIndex = 7;
+            this.CBApSuat10.Text = "15";
+            this.CBApSuat10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.label7);
+            this.panel10.Controls.Add(this.Van10);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(501, 216);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(243, 21);
             this.panel10.TabIndex = 53;
             // 
-            // label7
+            // Van10
             // 
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(0, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(241, 19);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "21";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Van10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Van10.ForeColor = System.Drawing.SystemColors.Control;
+            this.Van10.Location = new System.Drawing.Point(0, 0);
+            this.Van10.Name = "Van10";
+            this.Van10.Size = new System.Drawing.Size(241, 19);
+            this.Van10.TabIndex = 5;
+            this.Van10.Text = "21";
+            this.Van10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.label8);
+            this.panel11.Controls.Add(this.ApDC10);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(252, 216);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(243, 21);
             this.panel11.TabIndex = 52;
             // 
-            // label8
+            // ApDC10
             // 
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.ForeColor = System.Drawing.SystemColors.Control;
-            this.label8.Location = new System.Drawing.Point(0, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(241, 19);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "10,23";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ApDC10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ApDC10.ForeColor = System.Drawing.SystemColors.Control;
+            this.ApDC10.Location = new System.Drawing.Point(0, 0);
+            this.ApDC10.Name = "ApDC10";
+            this.ApDC10.Size = new System.Drawing.Size(241, 19);
+            this.ApDC10.TabIndex = 5;
+            this.ApDC10.Text = "10,23";
+            this.ApDC10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel13
             // 
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Controls.Add(this.label11);
+            this.panel13.Controls.Add(this.JigMachTDS10);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel13.Location = new System.Drawing.Point(3, 216);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(243, 21);
             this.panel13.TabIndex = 50;
             // 
-            // label11
+            // JigMachTDS10
             // 
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.ForeColor = System.Drawing.SystemColors.Control;
-            this.label11.Location = new System.Drawing.Point(0, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(241, 19);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "Jig 10";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachTDS10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachTDS10.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachTDS10.Location = new System.Drawing.Point(0, 0);
+            this.JigMachTDS10.Name = "JigMachTDS10";
+            this.JigMachTDS10.Size = new System.Drawing.Size(241, 19);
+            this.JigMachTDS10.TabIndex = 3;
+            this.JigMachTDS10.Text = "Jig 10";
+            this.JigMachTDS10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel64
             // 
             this.panel64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel64.Controls.Add(this.label62);
+            this.panel64.Controls.Add(this.CBApSuat9);
             this.panel64.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel64.Location = new System.Drawing.Point(750, 195);
             this.panel64.Name = "panel64";
             this.panel64.Size = new System.Drawing.Size(243, 15);
             this.panel64.TabIndex = 49;
             // 
-            // label62
+            // CBApSuat9
             // 
-            this.label62.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label62.ForeColor = System.Drawing.SystemColors.Control;
-            this.label62.Location = new System.Drawing.Point(0, 0);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(241, 13);
-            this.label62.TabIndex = 7;
-            this.label62.Text = "15";
-            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CBApSuat9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CBApSuat9.ForeColor = System.Drawing.SystemColors.Control;
+            this.CBApSuat9.Location = new System.Drawing.Point(0, 0);
+            this.CBApSuat9.Name = "CBApSuat9";
+            this.CBApSuat9.Size = new System.Drawing.Size(241, 13);
+            this.CBApSuat9.TabIndex = 7;
+            this.CBApSuat9.Text = "15";
+            this.CBApSuat9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel65
             // 
             this.panel65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel65.Controls.Add(this.label63);
+            this.panel65.Controls.Add(this.Van9);
             this.panel65.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel65.Location = new System.Drawing.Point(501, 195);
             this.panel65.Name = "panel65";
             this.panel65.Size = new System.Drawing.Size(243, 15);
             this.panel65.TabIndex = 48;
             // 
-            // label63
+            // Van9
             // 
-            this.label63.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label63.ForeColor = System.Drawing.SystemColors.Control;
-            this.label63.Location = new System.Drawing.Point(0, 0);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(241, 13);
-            this.label63.TabIndex = 5;
-            this.label63.Text = "21";
-            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Van9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Van9.ForeColor = System.Drawing.SystemColors.Control;
+            this.Van9.Location = new System.Drawing.Point(0, 0);
+            this.Van9.Name = "Van9";
+            this.Van9.Size = new System.Drawing.Size(241, 13);
+            this.Van9.TabIndex = 5;
+            this.Van9.Text = "21";
+            this.Van9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel66
             // 
             this.panel66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel66.Controls.Add(this.label64);
+            this.panel66.Controls.Add(this.ApDC9);
             this.panel66.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel66.Location = new System.Drawing.Point(252, 195);
             this.panel66.Name = "panel66";
             this.panel66.Size = new System.Drawing.Size(243, 15);
             this.panel66.TabIndex = 47;
             // 
-            // label64
+            // ApDC9
             // 
-            this.label64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label64.ForeColor = System.Drawing.SystemColors.Control;
-            this.label64.Location = new System.Drawing.Point(0, 0);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(241, 13);
-            this.label64.TabIndex = 5;
-            this.label64.Text = "10,23";
-            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ApDC9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ApDC9.ForeColor = System.Drawing.SystemColors.Control;
+            this.ApDC9.Location = new System.Drawing.Point(0, 0);
+            this.ApDC9.Name = "ApDC9";
+            this.ApDC9.Size = new System.Drawing.Size(241, 13);
+            this.ApDC9.TabIndex = 5;
+            this.ApDC9.Text = "10,23";
+            this.ApDC9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel68
             // 
             this.panel68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel68.Controls.Add(this.label66);
+            this.panel68.Controls.Add(this.JigMachTDS9);
             this.panel68.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel68.Location = new System.Drawing.Point(3, 195);
             this.panel68.Name = "panel68";
             this.panel68.Size = new System.Drawing.Size(243, 15);
             this.panel68.TabIndex = 45;
             // 
-            // label66
+            // JigMachTDS9
             // 
-            this.label66.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label66.ForeColor = System.Drawing.SystemColors.Control;
-            this.label66.Location = new System.Drawing.Point(0, 0);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(241, 13);
-            this.label66.TabIndex = 3;
-            this.label66.Text = "Jig 9";
-            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachTDS9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachTDS9.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachTDS9.Location = new System.Drawing.Point(0, 0);
+            this.JigMachTDS9.Name = "JigMachTDS9";
+            this.JigMachTDS9.Size = new System.Drawing.Size(241, 13);
+            this.JigMachTDS9.TabIndex = 3;
+            this.JigMachTDS9.Text = "Jig 9";
+            this.JigMachTDS9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel69
             // 
             this.panel69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel69.Controls.Add(this.label67);
+            this.panel69.Controls.Add(this.CBApSuat8);
             this.panel69.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel69.Location = new System.Drawing.Point(750, 174);
             this.panel69.Name = "panel69";
             this.panel69.Size = new System.Drawing.Size(243, 15);
             this.panel69.TabIndex = 44;
             // 
-            // label67
+            // CBApSuat8
             // 
-            this.label67.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label67.ForeColor = System.Drawing.SystemColors.Control;
-            this.label67.Location = new System.Drawing.Point(0, 0);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(241, 13);
-            this.label67.TabIndex = 7;
-            this.label67.Text = "15";
-            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CBApSuat8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CBApSuat8.ForeColor = System.Drawing.SystemColors.Control;
+            this.CBApSuat8.Location = new System.Drawing.Point(0, 0);
+            this.CBApSuat8.Name = "CBApSuat8";
+            this.CBApSuat8.Size = new System.Drawing.Size(241, 13);
+            this.CBApSuat8.TabIndex = 7;
+            this.CBApSuat8.Text = "15";
+            this.CBApSuat8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel70
             // 
             this.panel70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel70.Controls.Add(this.label68);
+            this.panel70.Controls.Add(this.Van8);
             this.panel70.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel70.Location = new System.Drawing.Point(501, 174);
             this.panel70.Name = "panel70";
             this.panel70.Size = new System.Drawing.Size(243, 15);
             this.panel70.TabIndex = 43;
             // 
-            // label68
+            // Van8
             // 
-            this.label68.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label68.ForeColor = System.Drawing.SystemColors.Control;
-            this.label68.Location = new System.Drawing.Point(0, 0);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(241, 13);
-            this.label68.TabIndex = 5;
-            this.label68.Text = "21";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Van8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Van8.ForeColor = System.Drawing.SystemColors.Control;
+            this.Van8.Location = new System.Drawing.Point(0, 0);
+            this.Van8.Name = "Van8";
+            this.Van8.Size = new System.Drawing.Size(241, 13);
+            this.Van8.TabIndex = 5;
+            this.Van8.Text = "21";
+            this.Van8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel71
             // 
             this.panel71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel71.Controls.Add(this.label69);
+            this.panel71.Controls.Add(this.ApDC8);
             this.panel71.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel71.Location = new System.Drawing.Point(252, 174);
             this.panel71.Name = "panel71";
             this.panel71.Size = new System.Drawing.Size(243, 15);
             this.panel71.TabIndex = 42;
             // 
-            // label69
+            // ApDC8
             // 
-            this.label69.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label69.ForeColor = System.Drawing.SystemColors.Control;
-            this.label69.Location = new System.Drawing.Point(0, 0);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(241, 13);
-            this.label69.TabIndex = 5;
-            this.label69.Text = "10,23";
-            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ApDC8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ApDC8.ForeColor = System.Drawing.SystemColors.Control;
+            this.ApDC8.Location = new System.Drawing.Point(0, 0);
+            this.ApDC8.Name = "ApDC8";
+            this.ApDC8.Size = new System.Drawing.Size(241, 13);
+            this.ApDC8.TabIndex = 5;
+            this.ApDC8.Text = "10,23";
+            this.ApDC8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel73
             // 
             this.panel73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel73.Controls.Add(this.label71);
+            this.panel73.Controls.Add(this.JigMachTDS8);
             this.panel73.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel73.Location = new System.Drawing.Point(3, 174);
             this.panel73.Name = "panel73";
             this.panel73.Size = new System.Drawing.Size(243, 15);
             this.panel73.TabIndex = 40;
             // 
-            // label71
+            // JigMachTDS8
             // 
-            this.label71.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label71.ForeColor = System.Drawing.SystemColors.Control;
-            this.label71.Location = new System.Drawing.Point(0, 0);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(241, 13);
-            this.label71.TabIndex = 3;
-            this.label71.Text = "Jig 8";
-            this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachTDS8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachTDS8.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachTDS8.Location = new System.Drawing.Point(0, 0);
+            this.JigMachTDS8.Name = "JigMachTDS8";
+            this.JigMachTDS8.Size = new System.Drawing.Size(241, 13);
+            this.JigMachTDS8.TabIndex = 3;
+            this.JigMachTDS8.Text = "Jig 8";
+            this.JigMachTDS8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel74
             // 
             this.panel74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel74.Controls.Add(this.label72);
+            this.panel74.Controls.Add(this.CBApSuat7);
             this.panel74.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel74.Location = new System.Drawing.Point(750, 153);
             this.panel74.Name = "panel74";
             this.panel74.Size = new System.Drawing.Size(243, 15);
             this.panel74.TabIndex = 39;
             // 
-            // label72
+            // CBApSuat7
             // 
-            this.label72.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label72.ForeColor = System.Drawing.SystemColors.Control;
-            this.label72.Location = new System.Drawing.Point(0, 0);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(241, 13);
-            this.label72.TabIndex = 7;
-            this.label72.Text = "15";
-            this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CBApSuat7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CBApSuat7.ForeColor = System.Drawing.SystemColors.Control;
+            this.CBApSuat7.Location = new System.Drawing.Point(0, 0);
+            this.CBApSuat7.Name = "CBApSuat7";
+            this.CBApSuat7.Size = new System.Drawing.Size(241, 13);
+            this.CBApSuat7.TabIndex = 7;
+            this.CBApSuat7.Text = "15";
+            this.CBApSuat7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel75
             // 
             this.panel75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel75.Controls.Add(this.label73);
+            this.panel75.Controls.Add(this.Van7);
             this.panel75.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel75.Location = new System.Drawing.Point(501, 153);
             this.panel75.Name = "panel75";
             this.panel75.Size = new System.Drawing.Size(243, 15);
             this.panel75.TabIndex = 38;
             // 
-            // label73
+            // Van7
             // 
-            this.label73.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label73.ForeColor = System.Drawing.SystemColors.Control;
-            this.label73.Location = new System.Drawing.Point(0, 0);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(241, 13);
-            this.label73.TabIndex = 5;
-            this.label73.Text = "21";
-            this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Van7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Van7.ForeColor = System.Drawing.SystemColors.Control;
+            this.Van7.Location = new System.Drawing.Point(0, 0);
+            this.Van7.Name = "Van7";
+            this.Van7.Size = new System.Drawing.Size(241, 13);
+            this.Van7.TabIndex = 5;
+            this.Van7.Text = "21";
+            this.Van7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel76
             // 
             this.panel76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel76.Controls.Add(this.label74);
+            this.panel76.Controls.Add(this.ApDC7);
             this.panel76.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel76.Location = new System.Drawing.Point(252, 153);
             this.panel76.Name = "panel76";
             this.panel76.Size = new System.Drawing.Size(243, 15);
             this.panel76.TabIndex = 37;
             // 
-            // label74
+            // ApDC7
             // 
-            this.label74.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label74.ForeColor = System.Drawing.SystemColors.Control;
-            this.label74.Location = new System.Drawing.Point(0, 0);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(241, 13);
-            this.label74.TabIndex = 5;
-            this.label74.Text = "10,23";
-            this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ApDC7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ApDC7.ForeColor = System.Drawing.SystemColors.Control;
+            this.ApDC7.Location = new System.Drawing.Point(0, 0);
+            this.ApDC7.Name = "ApDC7";
+            this.ApDC7.Size = new System.Drawing.Size(241, 13);
+            this.ApDC7.TabIndex = 5;
+            this.ApDC7.Text = "10,23";
+            this.ApDC7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel78
             // 
             this.panel78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel78.Controls.Add(this.label76);
+            this.panel78.Controls.Add(this.JigMachTDS7);
             this.panel78.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel78.Location = new System.Drawing.Point(3, 153);
             this.panel78.Name = "panel78";
             this.panel78.Size = new System.Drawing.Size(243, 15);
             this.panel78.TabIndex = 35;
             // 
-            // label76
+            // JigMachTDS7
             // 
-            this.label76.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label76.ForeColor = System.Drawing.SystemColors.Control;
-            this.label76.Location = new System.Drawing.Point(0, 0);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(241, 13);
-            this.label76.TabIndex = 3;
-            this.label76.Text = "Jig 7";
-            this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachTDS7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachTDS7.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachTDS7.Location = new System.Drawing.Point(0, 0);
+            this.JigMachTDS7.Name = "JigMachTDS7";
+            this.JigMachTDS7.Size = new System.Drawing.Size(241, 13);
+            this.JigMachTDS7.TabIndex = 3;
+            this.JigMachTDS7.Text = "Jig 7";
+            this.JigMachTDS7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel79
             // 
             this.panel79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel79.Controls.Add(this.label77);
+            this.panel79.Controls.Add(this.CBApSuat6);
             this.panel79.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel79.Location = new System.Drawing.Point(750, 132);
             this.panel79.Name = "panel79";
             this.panel79.Size = new System.Drawing.Size(243, 15);
             this.panel79.TabIndex = 34;
             // 
-            // label77
+            // CBApSuat6
             // 
-            this.label77.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label77.ForeColor = System.Drawing.SystemColors.Control;
-            this.label77.Location = new System.Drawing.Point(0, 0);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(241, 13);
-            this.label77.TabIndex = 7;
-            this.label77.Text = "15";
-            this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CBApSuat6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CBApSuat6.ForeColor = System.Drawing.SystemColors.Control;
+            this.CBApSuat6.Location = new System.Drawing.Point(0, 0);
+            this.CBApSuat6.Name = "CBApSuat6";
+            this.CBApSuat6.Size = new System.Drawing.Size(241, 13);
+            this.CBApSuat6.TabIndex = 7;
+            this.CBApSuat6.Text = "15";
+            this.CBApSuat6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel80
             // 
             this.panel80.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel80.Controls.Add(this.label78);
+            this.panel80.Controls.Add(this.Van6);
             this.panel80.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel80.Location = new System.Drawing.Point(501, 132);
             this.panel80.Name = "panel80";
             this.panel80.Size = new System.Drawing.Size(243, 15);
             this.panel80.TabIndex = 33;
             // 
-            // label78
+            // Van6
             // 
-            this.label78.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label78.ForeColor = System.Drawing.SystemColors.Control;
-            this.label78.Location = new System.Drawing.Point(0, 0);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(241, 13);
-            this.label78.TabIndex = 5;
-            this.label78.Text = "21";
-            this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Van6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Van6.ForeColor = System.Drawing.SystemColors.Control;
+            this.Van6.Location = new System.Drawing.Point(0, 0);
+            this.Van6.Name = "Van6";
+            this.Van6.Size = new System.Drawing.Size(241, 13);
+            this.Van6.TabIndex = 5;
+            this.Van6.Text = "21";
+            this.Van6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel81
             // 
             this.panel81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel81.Controls.Add(this.label79);
+            this.panel81.Controls.Add(this.ApDC6);
             this.panel81.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel81.Location = new System.Drawing.Point(252, 132);
             this.panel81.Name = "panel81";
             this.panel81.Size = new System.Drawing.Size(243, 15);
             this.panel81.TabIndex = 32;
             // 
-            // label79
+            // ApDC6
             // 
-            this.label79.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label79.ForeColor = System.Drawing.SystemColors.Control;
-            this.label79.Location = new System.Drawing.Point(0, 0);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(241, 13);
-            this.label79.TabIndex = 5;
-            this.label79.Text = "10,23";
-            this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ApDC6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ApDC6.ForeColor = System.Drawing.SystemColors.Control;
+            this.ApDC6.Location = new System.Drawing.Point(0, 0);
+            this.ApDC6.Name = "ApDC6";
+            this.ApDC6.Size = new System.Drawing.Size(241, 13);
+            this.ApDC6.TabIndex = 5;
+            this.ApDC6.Text = "10,23";
+            this.ApDC6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel83
+            // JigMachTDS6
             // 
-            this.panel83.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel83.Controls.Add(this.label81);
-            this.panel83.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel83.Location = new System.Drawing.Point(3, 132);
-            this.panel83.Name = "panel83";
-            this.panel83.Size = new System.Drawing.Size(243, 15);
-            this.panel83.TabIndex = 30;
+            this.JigMachTDS6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.JigMachTDS6.Controls.Add(this.label81);
+            this.JigMachTDS6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachTDS6.Location = new System.Drawing.Point(3, 132);
+            this.JigMachTDS6.Name = "JigMachTDS6";
+            this.JigMachTDS6.Size = new System.Drawing.Size(243, 15);
+            this.JigMachTDS6.TabIndex = 30;
             // 
             // label81
             // 
@@ -850,401 +850,401 @@
             // panel84
             // 
             this.panel84.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel84.Controls.Add(this.label82);
+            this.panel84.Controls.Add(this.CBApSuat5);
             this.panel84.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel84.Location = new System.Drawing.Point(750, 111);
             this.panel84.Name = "panel84";
             this.panel84.Size = new System.Drawing.Size(243, 15);
             this.panel84.TabIndex = 29;
             // 
-            // label82
+            // CBApSuat5
             // 
-            this.label82.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label82.ForeColor = System.Drawing.SystemColors.Control;
-            this.label82.Location = new System.Drawing.Point(0, 0);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(241, 13);
-            this.label82.TabIndex = 7;
-            this.label82.Text = "15";
-            this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CBApSuat5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CBApSuat5.ForeColor = System.Drawing.SystemColors.Control;
+            this.CBApSuat5.Location = new System.Drawing.Point(0, 0);
+            this.CBApSuat5.Name = "CBApSuat5";
+            this.CBApSuat5.Size = new System.Drawing.Size(241, 13);
+            this.CBApSuat5.TabIndex = 7;
+            this.CBApSuat5.Text = "15";
+            this.CBApSuat5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel85
             // 
             this.panel85.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel85.Controls.Add(this.label83);
+            this.panel85.Controls.Add(this.Van5);
             this.panel85.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel85.Location = new System.Drawing.Point(501, 111);
             this.panel85.Name = "panel85";
             this.panel85.Size = new System.Drawing.Size(243, 15);
             this.panel85.TabIndex = 28;
             // 
-            // label83
+            // Van5
             // 
-            this.label83.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label83.ForeColor = System.Drawing.SystemColors.Control;
-            this.label83.Location = new System.Drawing.Point(0, 0);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(241, 13);
-            this.label83.TabIndex = 5;
-            this.label83.Text = "21";
-            this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Van5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Van5.ForeColor = System.Drawing.SystemColors.Control;
+            this.Van5.Location = new System.Drawing.Point(0, 0);
+            this.Van5.Name = "Van5";
+            this.Van5.Size = new System.Drawing.Size(241, 13);
+            this.Van5.TabIndex = 5;
+            this.Van5.Text = "21";
+            this.Van5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel86
             // 
             this.panel86.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel86.Controls.Add(this.label84);
+            this.panel86.Controls.Add(this.ApDC5);
             this.panel86.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel86.Location = new System.Drawing.Point(252, 111);
             this.panel86.Name = "panel86";
             this.panel86.Size = new System.Drawing.Size(243, 15);
             this.panel86.TabIndex = 27;
             // 
-            // label84
+            // ApDC5
             // 
-            this.label84.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label84.ForeColor = System.Drawing.SystemColors.Control;
-            this.label84.Location = new System.Drawing.Point(0, 0);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(241, 13);
-            this.label84.TabIndex = 5;
-            this.label84.Text = "10,23";
-            this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ApDC5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ApDC5.ForeColor = System.Drawing.SystemColors.Control;
+            this.ApDC5.Location = new System.Drawing.Point(0, 0);
+            this.ApDC5.Name = "ApDC5";
+            this.ApDC5.Size = new System.Drawing.Size(241, 13);
+            this.ApDC5.TabIndex = 5;
+            this.ApDC5.Text = "10,23";
+            this.ApDC5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel88
             // 
             this.panel88.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel88.Controls.Add(this.label86);
+            this.panel88.Controls.Add(this.JigMachTDS5);
             this.panel88.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel88.Location = new System.Drawing.Point(3, 111);
             this.panel88.Name = "panel88";
             this.panel88.Size = new System.Drawing.Size(243, 15);
             this.panel88.TabIndex = 25;
             // 
-            // label86
+            // JigMachTDS5
             // 
-            this.label86.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label86.ForeColor = System.Drawing.SystemColors.Control;
-            this.label86.Location = new System.Drawing.Point(0, 0);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(241, 13);
-            this.label86.TabIndex = 3;
-            this.label86.Text = "Jig 5";
-            this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachTDS5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachTDS5.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachTDS5.Location = new System.Drawing.Point(0, 0);
+            this.JigMachTDS5.Name = "JigMachTDS5";
+            this.JigMachTDS5.Size = new System.Drawing.Size(241, 13);
+            this.JigMachTDS5.TabIndex = 3;
+            this.JigMachTDS5.Text = "Jig 5";
+            this.JigMachTDS5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel89
             // 
             this.panel89.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel89.Controls.Add(this.label87);
+            this.panel89.Controls.Add(this.CBApSuat4);
             this.panel89.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel89.Location = new System.Drawing.Point(750, 90);
             this.panel89.Name = "panel89";
             this.panel89.Size = new System.Drawing.Size(243, 15);
             this.panel89.TabIndex = 24;
             // 
-            // label87
+            // CBApSuat4
             // 
-            this.label87.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label87.ForeColor = System.Drawing.SystemColors.Control;
-            this.label87.Location = new System.Drawing.Point(0, 0);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(241, 13);
-            this.label87.TabIndex = 7;
-            this.label87.Text = "15";
-            this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CBApSuat4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CBApSuat4.ForeColor = System.Drawing.SystemColors.Control;
+            this.CBApSuat4.Location = new System.Drawing.Point(0, 0);
+            this.CBApSuat4.Name = "CBApSuat4";
+            this.CBApSuat4.Size = new System.Drawing.Size(241, 13);
+            this.CBApSuat4.TabIndex = 7;
+            this.CBApSuat4.Text = "15";
+            this.CBApSuat4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel90
             // 
             this.panel90.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel90.Controls.Add(this.label88);
+            this.panel90.Controls.Add(this.Van4);
             this.panel90.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel90.Location = new System.Drawing.Point(501, 90);
             this.panel90.Name = "panel90";
             this.panel90.Size = new System.Drawing.Size(243, 15);
             this.panel90.TabIndex = 23;
             // 
-            // label88
+            // Van4
             // 
-            this.label88.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label88.ForeColor = System.Drawing.SystemColors.Control;
-            this.label88.Location = new System.Drawing.Point(0, 0);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(241, 13);
-            this.label88.TabIndex = 5;
-            this.label88.Text = "21";
-            this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Van4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Van4.ForeColor = System.Drawing.SystemColors.Control;
+            this.Van4.Location = new System.Drawing.Point(0, 0);
+            this.Van4.Name = "Van4";
+            this.Van4.Size = new System.Drawing.Size(241, 13);
+            this.Van4.TabIndex = 5;
+            this.Van4.Text = "21";
+            this.Van4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel91
             // 
             this.panel91.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel91.Controls.Add(this.label89);
+            this.panel91.Controls.Add(this.ApDC4);
             this.panel91.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel91.Location = new System.Drawing.Point(252, 90);
             this.panel91.Name = "panel91";
             this.panel91.Size = new System.Drawing.Size(243, 15);
             this.panel91.TabIndex = 22;
             // 
-            // label89
+            // ApDC4
             // 
-            this.label89.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label89.ForeColor = System.Drawing.SystemColors.Control;
-            this.label89.Location = new System.Drawing.Point(0, 0);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(241, 13);
-            this.label89.TabIndex = 5;
-            this.label89.Text = "10,23";
-            this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ApDC4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ApDC4.ForeColor = System.Drawing.SystemColors.Control;
+            this.ApDC4.Location = new System.Drawing.Point(0, 0);
+            this.ApDC4.Name = "ApDC4";
+            this.ApDC4.Size = new System.Drawing.Size(241, 13);
+            this.ApDC4.TabIndex = 5;
+            this.ApDC4.Text = "10,23";
+            this.ApDC4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel93
             // 
             this.panel93.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel93.Controls.Add(this.label91);
+            this.panel93.Controls.Add(this.JigMachTDS4);
             this.panel93.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel93.Location = new System.Drawing.Point(3, 90);
             this.panel93.Name = "panel93";
             this.panel93.Size = new System.Drawing.Size(243, 15);
             this.panel93.TabIndex = 20;
             // 
-            // label91
+            // JigMachTDS4
             // 
-            this.label91.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label91.ForeColor = System.Drawing.SystemColors.Control;
-            this.label91.Location = new System.Drawing.Point(0, 0);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(241, 13);
-            this.label91.TabIndex = 3;
-            this.label91.Text = "Jig 4";
-            this.label91.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachTDS4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachTDS4.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachTDS4.Location = new System.Drawing.Point(0, 0);
+            this.JigMachTDS4.Name = "JigMachTDS4";
+            this.JigMachTDS4.Size = new System.Drawing.Size(241, 13);
+            this.JigMachTDS4.TabIndex = 3;
+            this.JigMachTDS4.Text = "Jig 4";
+            this.JigMachTDS4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel94
             // 
             this.panel94.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel94.Controls.Add(this.label92);
+            this.panel94.Controls.Add(this.CBApSuat3);
             this.panel94.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel94.Location = new System.Drawing.Point(750, 69);
             this.panel94.Name = "panel94";
             this.panel94.Size = new System.Drawing.Size(243, 15);
             this.panel94.TabIndex = 19;
             // 
-            // label92
+            // CBApSuat3
             // 
-            this.label92.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label92.ForeColor = System.Drawing.SystemColors.Control;
-            this.label92.Location = new System.Drawing.Point(0, 0);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(241, 13);
-            this.label92.TabIndex = 7;
-            this.label92.Text = "15";
-            this.label92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CBApSuat3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CBApSuat3.ForeColor = System.Drawing.SystemColors.Control;
+            this.CBApSuat3.Location = new System.Drawing.Point(0, 0);
+            this.CBApSuat3.Name = "CBApSuat3";
+            this.CBApSuat3.Size = new System.Drawing.Size(241, 13);
+            this.CBApSuat3.TabIndex = 7;
+            this.CBApSuat3.Text = "15";
+            this.CBApSuat3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel95
             // 
             this.panel95.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel95.Controls.Add(this.label93);
+            this.panel95.Controls.Add(this.Van3);
             this.panel95.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel95.Location = new System.Drawing.Point(501, 69);
             this.panel95.Name = "panel95";
             this.panel95.Size = new System.Drawing.Size(243, 15);
             this.panel95.TabIndex = 18;
             // 
-            // label93
+            // Van3
             // 
-            this.label93.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label93.ForeColor = System.Drawing.SystemColors.Control;
-            this.label93.Location = new System.Drawing.Point(0, 0);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(241, 13);
-            this.label93.TabIndex = 5;
-            this.label93.Text = "21";
-            this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Van3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Van3.ForeColor = System.Drawing.SystemColors.Control;
+            this.Van3.Location = new System.Drawing.Point(0, 0);
+            this.Van3.Name = "Van3";
+            this.Van3.Size = new System.Drawing.Size(241, 13);
+            this.Van3.TabIndex = 5;
+            this.Van3.Text = "21";
+            this.Van3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel96
             // 
             this.panel96.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel96.Controls.Add(this.label94);
+            this.panel96.Controls.Add(this.ApDC3);
             this.panel96.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel96.Location = new System.Drawing.Point(252, 69);
             this.panel96.Name = "panel96";
             this.panel96.Size = new System.Drawing.Size(243, 15);
             this.panel96.TabIndex = 17;
             // 
-            // label94
+            // ApDC3
             // 
-            this.label94.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label94.ForeColor = System.Drawing.SystemColors.Control;
-            this.label94.Location = new System.Drawing.Point(0, 0);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(241, 13);
-            this.label94.TabIndex = 5;
-            this.label94.Text = "10,23";
-            this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ApDC3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ApDC3.ForeColor = System.Drawing.SystemColors.Control;
+            this.ApDC3.Location = new System.Drawing.Point(0, 0);
+            this.ApDC3.Name = "ApDC3";
+            this.ApDC3.Size = new System.Drawing.Size(241, 13);
+            this.ApDC3.TabIndex = 5;
+            this.ApDC3.Text = "10,23";
+            this.ApDC3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel98
             // 
             this.panel98.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel98.Controls.Add(this.label96);
+            this.panel98.Controls.Add(this.JigMachTDS3);
             this.panel98.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel98.Location = new System.Drawing.Point(3, 69);
             this.panel98.Name = "panel98";
             this.panel98.Size = new System.Drawing.Size(243, 15);
             this.panel98.TabIndex = 15;
             // 
-            // label96
+            // JigMachTDS3
             // 
-            this.label96.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label96.ForeColor = System.Drawing.SystemColors.Control;
-            this.label96.Location = new System.Drawing.Point(0, 0);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(241, 13);
-            this.label96.TabIndex = 3;
-            this.label96.Text = "Jig 3";
-            this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachTDS3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachTDS3.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachTDS3.Location = new System.Drawing.Point(0, 0);
+            this.JigMachTDS3.Name = "JigMachTDS3";
+            this.JigMachTDS3.Size = new System.Drawing.Size(241, 13);
+            this.JigMachTDS3.TabIndex = 3;
+            this.JigMachTDS3.Text = "Jig 3";
+            this.JigMachTDS3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel99
             // 
             this.panel99.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel99.Controls.Add(this.label97);
+            this.panel99.Controls.Add(this.CBApSuat2);
             this.panel99.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel99.Location = new System.Drawing.Point(750, 48);
             this.panel99.Name = "panel99";
             this.panel99.Size = new System.Drawing.Size(243, 15);
             this.panel99.TabIndex = 14;
             // 
-            // label97
+            // CBApSuat2
             // 
-            this.label97.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label97.ForeColor = System.Drawing.SystemColors.Control;
-            this.label97.Location = new System.Drawing.Point(0, 0);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(241, 13);
-            this.label97.TabIndex = 6;
-            this.label97.Text = "15";
-            this.label97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CBApSuat2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CBApSuat2.ForeColor = System.Drawing.SystemColors.Control;
+            this.CBApSuat2.Location = new System.Drawing.Point(0, 0);
+            this.CBApSuat2.Name = "CBApSuat2";
+            this.CBApSuat2.Size = new System.Drawing.Size(241, 13);
+            this.CBApSuat2.TabIndex = 6;
+            this.CBApSuat2.Text = "15";
+            this.CBApSuat2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel100
             // 
             this.panel100.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel100.Controls.Add(this.label98);
+            this.panel100.Controls.Add(this.Van2);
             this.panel100.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel100.Location = new System.Drawing.Point(501, 48);
             this.panel100.Name = "panel100";
             this.panel100.Size = new System.Drawing.Size(243, 15);
             this.panel100.TabIndex = 13;
             // 
-            // label98
+            // Van2
             // 
-            this.label98.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label98.ForeColor = System.Drawing.SystemColors.Control;
-            this.label98.Location = new System.Drawing.Point(0, 0);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(241, 13);
-            this.label98.TabIndex = 5;
-            this.label98.Text = "21";
-            this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Van2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Van2.ForeColor = System.Drawing.SystemColors.Control;
+            this.Van2.Location = new System.Drawing.Point(0, 0);
+            this.Van2.Name = "Van2";
+            this.Van2.Size = new System.Drawing.Size(241, 13);
+            this.Van2.TabIndex = 5;
+            this.Van2.Text = "21";
+            this.Van2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel101
             // 
             this.panel101.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel101.Controls.Add(this.label99);
+            this.panel101.Controls.Add(this.ApDC2);
             this.panel101.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel101.Location = new System.Drawing.Point(252, 48);
             this.panel101.Name = "panel101";
             this.panel101.Size = new System.Drawing.Size(243, 15);
             this.panel101.TabIndex = 12;
             // 
-            // label99
+            // ApDC2
             // 
-            this.label99.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label99.ForeColor = System.Drawing.SystemColors.Control;
-            this.label99.Location = new System.Drawing.Point(0, 0);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(241, 13);
-            this.label99.TabIndex = 5;
-            this.label99.Text = "10,23";
-            this.label99.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ApDC2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ApDC2.ForeColor = System.Drawing.SystemColors.Control;
+            this.ApDC2.Location = new System.Drawing.Point(0, 0);
+            this.ApDC2.Name = "ApDC2";
+            this.ApDC2.Size = new System.Drawing.Size(241, 13);
+            this.ApDC2.TabIndex = 5;
+            this.ApDC2.Text = "10,23";
+            this.ApDC2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel103
             // 
             this.panel103.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel103.Controls.Add(this.label101);
+            this.panel103.Controls.Add(this.JigMachTDS2);
             this.panel103.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel103.Location = new System.Drawing.Point(3, 48);
             this.panel103.Name = "panel103";
             this.panel103.Size = new System.Drawing.Size(243, 15);
             this.panel103.TabIndex = 10;
             // 
-            // label101
+            // JigMachTDS2
             // 
-            this.label101.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label101.ForeColor = System.Drawing.SystemColors.Control;
-            this.label101.Location = new System.Drawing.Point(0, 0);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(241, 13);
-            this.label101.TabIndex = 3;
-            this.label101.Text = "Jig 2";
-            this.label101.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachTDS2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachTDS2.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachTDS2.Location = new System.Drawing.Point(0, 0);
+            this.JigMachTDS2.Name = "JigMachTDS2";
+            this.JigMachTDS2.Size = new System.Drawing.Size(241, 13);
+            this.JigMachTDS2.TabIndex = 3;
+            this.JigMachTDS2.Text = "Jig 2";
+            this.JigMachTDS2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel104
             // 
             this.panel104.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel104.Controls.Add(this.label102);
+            this.panel104.Controls.Add(this.CBApSuat1);
             this.panel104.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel104.Location = new System.Drawing.Point(750, 27);
             this.panel104.Name = "panel104";
             this.panel104.Size = new System.Drawing.Size(243, 15);
             this.panel104.TabIndex = 9;
             // 
-            // label102
+            // CBApSuat1
             // 
-            this.label102.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label102.ForeColor = System.Drawing.SystemColors.Control;
-            this.label102.Location = new System.Drawing.Point(0, 0);
-            this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(241, 13);
-            this.label102.TabIndex = 6;
-            this.label102.Text = "21";
-            this.label102.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CBApSuat1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CBApSuat1.ForeColor = System.Drawing.SystemColors.Control;
+            this.CBApSuat1.Location = new System.Drawing.Point(0, 0);
+            this.CBApSuat1.Name = "CBApSuat1";
+            this.CBApSuat1.Size = new System.Drawing.Size(241, 13);
+            this.CBApSuat1.TabIndex = 6;
+            this.CBApSuat1.Text = "21";
+            this.CBApSuat1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel105
             // 
             this.panel105.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel105.Controls.Add(this.label103);
+            this.panel105.Controls.Add(this.Van1);
             this.panel105.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel105.Location = new System.Drawing.Point(501, 27);
             this.panel105.Name = "panel105";
             this.panel105.Size = new System.Drawing.Size(243, 15);
             this.panel105.TabIndex = 8;
             // 
-            // label103
+            // Van1
             // 
-            this.label103.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label103.ForeColor = System.Drawing.SystemColors.Control;
-            this.label103.Location = new System.Drawing.Point(0, 0);
-            this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(241, 13);
-            this.label103.TabIndex = 5;
-            this.label103.Text = "21";
-            this.label103.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Van1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Van1.ForeColor = System.Drawing.SystemColors.Control;
+            this.Van1.Location = new System.Drawing.Point(0, 0);
+            this.Van1.Name = "Van1";
+            this.Van1.Size = new System.Drawing.Size(241, 13);
+            this.Van1.TabIndex = 5;
+            this.Van1.Text = "21";
+            this.Van1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel106
             // 
             this.panel106.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel106.Controls.Add(this.label104);
+            this.panel106.Controls.Add(this.ApDC1);
             this.panel106.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel106.Location = new System.Drawing.Point(252, 27);
             this.panel106.Name = "panel106";
             this.panel106.Size = new System.Drawing.Size(243, 15);
             this.panel106.TabIndex = 7;
             // 
-            // label104
+            // ApDC1
             // 
-            this.label104.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label104.ForeColor = System.Drawing.SystemColors.Control;
-            this.label104.Location = new System.Drawing.Point(0, 0);
-            this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(241, 13);
-            this.label104.TabIndex = 5;
-            this.label104.Text = "10,23";
-            this.label104.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ApDC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ApDC1.ForeColor = System.Drawing.SystemColors.Control;
+            this.ApDC1.Location = new System.Drawing.Point(0, 0);
+            this.ApDC1.Name = "ApDC1";
+            this.ApDC1.Size = new System.Drawing.Size(241, 13);
+            this.ApDC1.TabIndex = 5;
+            this.ApDC1.Text = "10,23";
+            this.ApDC1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel108
             // 
@@ -1337,23 +1337,23 @@
             // panel113
             // 
             this.panel113.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel113.Controls.Add(this.label111);
+            this.panel113.Controls.Add(this.JigMachTDS1);
             this.panel113.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel113.Location = new System.Drawing.Point(3, 27);
             this.panel113.Name = "panel113";
             this.panel113.Size = new System.Drawing.Size(243, 15);
             this.panel113.TabIndex = 5;
             // 
-            // label111
+            // JigMachTDS1
             // 
-            this.label111.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label111.ForeColor = System.Drawing.SystemColors.Control;
-            this.label111.Location = new System.Drawing.Point(0, 0);
-            this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(241, 13);
-            this.label111.TabIndex = 3;
-            this.label111.Text = "Jig 1";
-            this.label111.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachTDS1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachTDS1.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachTDS1.Location = new System.Drawing.Point(0, 0);
+            this.JigMachTDS1.Name = "JigMachTDS1";
+            this.JigMachTDS1.Size = new System.Drawing.Size(241, 13);
+            this.JigMachTDS1.TabIndex = 3;
+            this.JigMachTDS1.Text = "Jig 1";
+            this.JigMachTDS1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
@@ -1438,821 +1438,821 @@
             // panel63
             // 
             this.panel63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel63.Controls.Add(this.label61);
+            this.panel63.Controls.Add(this.CongSuat10);
             this.panel63.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel63.Location = new System.Drawing.Point(750, 216);
             this.panel63.Name = "panel63";
             this.panel63.Size = new System.Drawing.Size(243, 21);
             this.panel63.TabIndex = 54;
             // 
-            // label61
+            // CongSuat10
             // 
-            this.label61.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label61.ForeColor = System.Drawing.SystemColors.Control;
-            this.label61.Location = new System.Drawing.Point(0, 0);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(241, 19);
-            this.label61.TabIndex = 7;
-            this.label61.Text = "15";
-            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CongSuat10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat10.ForeColor = System.Drawing.SystemColors.Control;
+            this.CongSuat10.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat10.Name = "CongSuat10";
+            this.CongSuat10.Size = new System.Drawing.Size(241, 19);
+            this.CongSuat10.TabIndex = 7;
+            this.CongSuat10.Text = "15";
+            this.CongSuat10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel62
             // 
             this.panel62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel62.Controls.Add(this.label51);
+            this.panel62.Controls.Add(this.DienAp10);
             this.panel62.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel62.Location = new System.Drawing.Point(501, 216);
             this.panel62.Name = "panel62";
             this.panel62.Size = new System.Drawing.Size(243, 21);
             this.panel62.TabIndex = 53;
             // 
-            // label51
+            // DienAp10
             // 
-            this.label51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label51.ForeColor = System.Drawing.SystemColors.Control;
-            this.label51.Location = new System.Drawing.Point(0, 0);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(241, 19);
-            this.label51.TabIndex = 5;
-            this.label51.Text = "21";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DienAp10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienAp10.ForeColor = System.Drawing.SystemColors.Control;
+            this.DienAp10.Location = new System.Drawing.Point(0, 0);
+            this.DienAp10.Name = "DienAp10";
+            this.DienAp10.Size = new System.Drawing.Size(241, 19);
+            this.DienAp10.TabIndex = 5;
+            this.DienAp10.Text = "21";
+            this.DienAp10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel61
             // 
             this.panel61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel61.Controls.Add(this.label41);
+            this.panel61.Controls.Add(this.DongDien10);
             this.panel61.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel61.Location = new System.Drawing.Point(252, 216);
             this.panel61.Name = "panel61";
             this.panel61.Size = new System.Drawing.Size(243, 21);
             this.panel61.TabIndex = 52;
             // 
-            // label41
+            // DongDien10
             // 
-            this.label41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label41.ForeColor = System.Drawing.SystemColors.Control;
-            this.label41.Location = new System.Drawing.Point(0, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(241, 19);
-            this.label41.TabIndex = 5;
-            this.label41.Text = "10,23";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DongDien10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDien10.ForeColor = System.Drawing.SystemColors.Control;
+            this.DongDien10.Location = new System.Drawing.Point(0, 0);
+            this.DongDien10.Name = "DongDien10";
+            this.DongDien10.Size = new System.Drawing.Size(241, 19);
+            this.DongDien10.TabIndex = 5;
+            this.DongDien10.Text = "10,23";
+            this.DongDien10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel59
             // 
             this.panel59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel59.Controls.Add(this.label21);
+            this.panel59.Controls.Add(this.JigMachNguon10);
             this.panel59.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel59.Location = new System.Drawing.Point(3, 216);
             this.panel59.Name = "panel59";
             this.panel59.Size = new System.Drawing.Size(243, 21);
             this.panel59.TabIndex = 50;
             // 
-            // label21
+            // JigMachNguon10
             // 
-            this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label21.ForeColor = System.Drawing.SystemColors.Control;
-            this.label21.Location = new System.Drawing.Point(0, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(241, 19);
-            this.label21.TabIndex = 3;
-            this.label21.Text = "Jig 10";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachNguon10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachNguon10.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachNguon10.Location = new System.Drawing.Point(0, 0);
+            this.JigMachNguon10.Name = "JigMachNguon10";
+            this.JigMachNguon10.Size = new System.Drawing.Size(241, 19);
+            this.JigMachNguon10.TabIndex = 3;
+            this.JigMachNguon10.Text = "Jig 10";
+            this.JigMachNguon10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel58
             // 
             this.panel58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel58.Controls.Add(this.label60);
+            this.panel58.Controls.Add(this.CongSuat9);
             this.panel58.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel58.Location = new System.Drawing.Point(750, 195);
             this.panel58.Name = "panel58";
             this.panel58.Size = new System.Drawing.Size(243, 15);
             this.panel58.TabIndex = 49;
             // 
-            // label60
+            // CongSuat9
             // 
-            this.label60.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label60.ForeColor = System.Drawing.SystemColors.Control;
-            this.label60.Location = new System.Drawing.Point(0, 0);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(241, 13);
-            this.label60.TabIndex = 7;
-            this.label60.Text = "15";
-            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CongSuat9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat9.ForeColor = System.Drawing.SystemColors.Control;
+            this.CongSuat9.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat9.Name = "CongSuat9";
+            this.CongSuat9.Size = new System.Drawing.Size(241, 13);
+            this.CongSuat9.TabIndex = 7;
+            this.CongSuat9.Text = "15";
+            this.CongSuat9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel57
             // 
             this.panel57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel57.Controls.Add(this.label50);
+            this.panel57.Controls.Add(this.DienAp9);
             this.panel57.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel57.Location = new System.Drawing.Point(501, 195);
             this.panel57.Name = "panel57";
             this.panel57.Size = new System.Drawing.Size(243, 15);
             this.panel57.TabIndex = 48;
             // 
-            // label50
+            // DienAp9
             // 
-            this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label50.ForeColor = System.Drawing.SystemColors.Control;
-            this.label50.Location = new System.Drawing.Point(0, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(241, 13);
-            this.label50.TabIndex = 5;
-            this.label50.Text = "21";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DienAp9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienAp9.ForeColor = System.Drawing.SystemColors.Control;
+            this.DienAp9.Location = new System.Drawing.Point(0, 0);
+            this.DienAp9.Name = "DienAp9";
+            this.DienAp9.Size = new System.Drawing.Size(241, 13);
+            this.DienAp9.TabIndex = 5;
+            this.DienAp9.Text = "21";
+            this.DienAp9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel56
             // 
             this.panel56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel56.Controls.Add(this.label40);
+            this.panel56.Controls.Add(this.DongDien9);
             this.panel56.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel56.Location = new System.Drawing.Point(252, 195);
             this.panel56.Name = "panel56";
             this.panel56.Size = new System.Drawing.Size(243, 15);
             this.panel56.TabIndex = 47;
             // 
-            // label40
+            // DongDien9
             // 
-            this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label40.ForeColor = System.Drawing.SystemColors.Control;
-            this.label40.Location = new System.Drawing.Point(0, 0);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(241, 13);
-            this.label40.TabIndex = 5;
-            this.label40.Text = "10,23";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DongDien9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDien9.ForeColor = System.Drawing.SystemColors.Control;
+            this.DongDien9.Location = new System.Drawing.Point(0, 0);
+            this.DongDien9.Name = "DongDien9";
+            this.DongDien9.Size = new System.Drawing.Size(241, 13);
+            this.DongDien9.TabIndex = 5;
+            this.DongDien9.Text = "10,23";
+            this.DongDien9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel54
             // 
             this.panel54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel54.Controls.Add(this.label20);
+            this.panel54.Controls.Add(this.JigMachNguon9);
             this.panel54.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel54.Location = new System.Drawing.Point(3, 195);
             this.panel54.Name = "panel54";
             this.panel54.Size = new System.Drawing.Size(243, 15);
             this.panel54.TabIndex = 45;
             // 
-            // label20
+            // JigMachNguon9
             // 
-            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.ForeColor = System.Drawing.SystemColors.Control;
-            this.label20.Location = new System.Drawing.Point(0, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(241, 13);
-            this.label20.TabIndex = 3;
-            this.label20.Text = "Jig 9";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachNguon9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachNguon9.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachNguon9.Location = new System.Drawing.Point(0, 0);
+            this.JigMachNguon9.Name = "JigMachNguon9";
+            this.JigMachNguon9.Size = new System.Drawing.Size(241, 13);
+            this.JigMachNguon9.TabIndex = 3;
+            this.JigMachNguon9.Text = "Jig 9";
+            this.JigMachNguon9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel53
             // 
             this.panel53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel53.Controls.Add(this.label59);
+            this.panel53.Controls.Add(this.CongSuat8);
             this.panel53.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel53.Location = new System.Drawing.Point(750, 174);
             this.panel53.Name = "panel53";
             this.panel53.Size = new System.Drawing.Size(243, 15);
             this.panel53.TabIndex = 44;
             // 
-            // label59
+            // CongSuat8
             // 
-            this.label59.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label59.ForeColor = System.Drawing.SystemColors.Control;
-            this.label59.Location = new System.Drawing.Point(0, 0);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(241, 13);
-            this.label59.TabIndex = 7;
-            this.label59.Text = "15";
-            this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CongSuat8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat8.ForeColor = System.Drawing.SystemColors.Control;
+            this.CongSuat8.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat8.Name = "CongSuat8";
+            this.CongSuat8.Size = new System.Drawing.Size(241, 13);
+            this.CongSuat8.TabIndex = 7;
+            this.CongSuat8.Text = "15";
+            this.CongSuat8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel52
             // 
             this.panel52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel52.Controls.Add(this.label49);
+            this.panel52.Controls.Add(this.DienAp8);
             this.panel52.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel52.Location = new System.Drawing.Point(501, 174);
             this.panel52.Name = "panel52";
             this.panel52.Size = new System.Drawing.Size(243, 15);
             this.panel52.TabIndex = 43;
             // 
-            // label49
+            // DienAp8
             // 
-            this.label49.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label49.ForeColor = System.Drawing.SystemColors.Control;
-            this.label49.Location = new System.Drawing.Point(0, 0);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(241, 13);
-            this.label49.TabIndex = 5;
-            this.label49.Text = "21";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DienAp8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienAp8.ForeColor = System.Drawing.SystemColors.Control;
+            this.DienAp8.Location = new System.Drawing.Point(0, 0);
+            this.DienAp8.Name = "DienAp8";
+            this.DienAp8.Size = new System.Drawing.Size(241, 13);
+            this.DienAp8.TabIndex = 5;
+            this.DienAp8.Text = "21";
+            this.DienAp8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel51
             // 
             this.panel51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel51.Controls.Add(this.label39);
+            this.panel51.Controls.Add(this.DongDien8);
             this.panel51.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel51.Location = new System.Drawing.Point(252, 174);
             this.panel51.Name = "panel51";
             this.panel51.Size = new System.Drawing.Size(243, 15);
             this.panel51.TabIndex = 42;
             // 
-            // label39
+            // DongDien8
             // 
-            this.label39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label39.ForeColor = System.Drawing.SystemColors.Control;
-            this.label39.Location = new System.Drawing.Point(0, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(241, 13);
-            this.label39.TabIndex = 5;
-            this.label39.Text = "10,23";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DongDien8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDien8.ForeColor = System.Drawing.SystemColors.Control;
+            this.DongDien8.Location = new System.Drawing.Point(0, 0);
+            this.DongDien8.Name = "DongDien8";
+            this.DongDien8.Size = new System.Drawing.Size(241, 13);
+            this.DongDien8.TabIndex = 5;
+            this.DongDien8.Text = "10,23";
+            this.DongDien8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel49
             // 
             this.panel49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel49.Controls.Add(this.label19);
+            this.panel49.Controls.Add(this.JigMachNguon8);
             this.panel49.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel49.Location = new System.Drawing.Point(3, 174);
             this.panel49.Name = "panel49";
             this.panel49.Size = new System.Drawing.Size(243, 15);
             this.panel49.TabIndex = 40;
             // 
-            // label19
+            // JigMachNguon8
             // 
-            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label19.ForeColor = System.Drawing.SystemColors.Control;
-            this.label19.Location = new System.Drawing.Point(0, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(241, 13);
-            this.label19.TabIndex = 3;
-            this.label19.Text = "Jig 8";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachNguon8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachNguon8.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachNguon8.Location = new System.Drawing.Point(0, 0);
+            this.JigMachNguon8.Name = "JigMachNguon8";
+            this.JigMachNguon8.Size = new System.Drawing.Size(241, 13);
+            this.JigMachNguon8.TabIndex = 3;
+            this.JigMachNguon8.Text = "Jig 8";
+            this.JigMachNguon8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel48
             // 
             this.panel48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel48.Controls.Add(this.label58);
+            this.panel48.Controls.Add(this.CongSuat7);
             this.panel48.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel48.Location = new System.Drawing.Point(750, 153);
             this.panel48.Name = "panel48";
             this.panel48.Size = new System.Drawing.Size(243, 15);
             this.panel48.TabIndex = 39;
             // 
-            // label58
+            // CongSuat7
             // 
-            this.label58.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label58.ForeColor = System.Drawing.SystemColors.Control;
-            this.label58.Location = new System.Drawing.Point(0, 0);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(241, 13);
-            this.label58.TabIndex = 7;
-            this.label58.Text = "15";
-            this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CongSuat7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat7.ForeColor = System.Drawing.SystemColors.Control;
+            this.CongSuat7.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat7.Name = "CongSuat7";
+            this.CongSuat7.Size = new System.Drawing.Size(241, 13);
+            this.CongSuat7.TabIndex = 7;
+            this.CongSuat7.Text = "15";
+            this.CongSuat7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel47
             // 
             this.panel47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel47.Controls.Add(this.label48);
+            this.panel47.Controls.Add(this.DienAp7);
             this.panel47.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel47.Location = new System.Drawing.Point(501, 153);
             this.panel47.Name = "panel47";
             this.panel47.Size = new System.Drawing.Size(243, 15);
             this.panel47.TabIndex = 38;
             // 
-            // label48
+            // DienAp7
             // 
-            this.label48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label48.ForeColor = System.Drawing.SystemColors.Control;
-            this.label48.Location = new System.Drawing.Point(0, 0);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(241, 13);
-            this.label48.TabIndex = 5;
-            this.label48.Text = "21";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DienAp7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienAp7.ForeColor = System.Drawing.SystemColors.Control;
+            this.DienAp7.Location = new System.Drawing.Point(0, 0);
+            this.DienAp7.Name = "DienAp7";
+            this.DienAp7.Size = new System.Drawing.Size(241, 13);
+            this.DienAp7.TabIndex = 5;
+            this.DienAp7.Text = "21";
+            this.DienAp7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel46
             // 
             this.panel46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel46.Controls.Add(this.label38);
+            this.panel46.Controls.Add(this.DongDien7);
             this.panel46.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel46.Location = new System.Drawing.Point(252, 153);
             this.panel46.Name = "panel46";
             this.panel46.Size = new System.Drawing.Size(243, 15);
             this.panel46.TabIndex = 37;
             // 
-            // label38
+            // DongDien7
             // 
-            this.label38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label38.ForeColor = System.Drawing.SystemColors.Control;
-            this.label38.Location = new System.Drawing.Point(0, 0);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(241, 13);
-            this.label38.TabIndex = 5;
-            this.label38.Text = "10,23";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DongDien7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDien7.ForeColor = System.Drawing.SystemColors.Control;
+            this.DongDien7.Location = new System.Drawing.Point(0, 0);
+            this.DongDien7.Name = "DongDien7";
+            this.DongDien7.Size = new System.Drawing.Size(241, 13);
+            this.DongDien7.TabIndex = 5;
+            this.DongDien7.Text = "10,23";
+            this.DongDien7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel44
             // 
             this.panel44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel44.Controls.Add(this.label18);
+            this.panel44.Controls.Add(this.JigMachNguon7);
             this.panel44.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel44.Location = new System.Drawing.Point(3, 153);
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(243, 15);
             this.panel44.TabIndex = 35;
             // 
-            // label18
+            // JigMachNguon7
             // 
-            this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label18.ForeColor = System.Drawing.SystemColors.Control;
-            this.label18.Location = new System.Drawing.Point(0, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(241, 13);
-            this.label18.TabIndex = 3;
-            this.label18.Text = "Jig 7";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachNguon7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachNguon7.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachNguon7.Location = new System.Drawing.Point(0, 0);
+            this.JigMachNguon7.Name = "JigMachNguon7";
+            this.JigMachNguon7.Size = new System.Drawing.Size(241, 13);
+            this.JigMachNguon7.TabIndex = 3;
+            this.JigMachNguon7.Text = "Jig 7";
+            this.JigMachNguon7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel43
             // 
             this.panel43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel43.Controls.Add(this.label57);
+            this.panel43.Controls.Add(this.CongSuat6);
             this.panel43.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel43.Location = new System.Drawing.Point(750, 132);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(243, 15);
             this.panel43.TabIndex = 34;
             // 
-            // label57
+            // CongSuat6
             // 
-            this.label57.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label57.ForeColor = System.Drawing.SystemColors.Control;
-            this.label57.Location = new System.Drawing.Point(0, 0);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(241, 13);
-            this.label57.TabIndex = 7;
-            this.label57.Text = "15";
-            this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CongSuat6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat6.ForeColor = System.Drawing.SystemColors.Control;
+            this.CongSuat6.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat6.Name = "CongSuat6";
+            this.CongSuat6.Size = new System.Drawing.Size(241, 13);
+            this.CongSuat6.TabIndex = 7;
+            this.CongSuat6.Text = "15";
+            this.CongSuat6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel42
             // 
             this.panel42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel42.Controls.Add(this.label47);
+            this.panel42.Controls.Add(this.DienAp6);
             this.panel42.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel42.Location = new System.Drawing.Point(501, 132);
             this.panel42.Name = "panel42";
             this.panel42.Size = new System.Drawing.Size(243, 15);
             this.panel42.TabIndex = 33;
             // 
-            // label47
+            // DienAp6
             // 
-            this.label47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label47.ForeColor = System.Drawing.SystemColors.Control;
-            this.label47.Location = new System.Drawing.Point(0, 0);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(241, 13);
-            this.label47.TabIndex = 5;
-            this.label47.Text = "21";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DienAp6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienAp6.ForeColor = System.Drawing.SystemColors.Control;
+            this.DienAp6.Location = new System.Drawing.Point(0, 0);
+            this.DienAp6.Name = "DienAp6";
+            this.DienAp6.Size = new System.Drawing.Size(241, 13);
+            this.DienAp6.TabIndex = 5;
+            this.DienAp6.Text = "21";
+            this.DienAp6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel41
             // 
             this.panel41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel41.Controls.Add(this.label37);
+            this.panel41.Controls.Add(this.DongDien6);
             this.panel41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel41.Location = new System.Drawing.Point(252, 132);
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(243, 15);
             this.panel41.TabIndex = 32;
             // 
-            // label37
+            // DongDien6
             // 
-            this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label37.ForeColor = System.Drawing.SystemColors.Control;
-            this.label37.Location = new System.Drawing.Point(0, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(241, 13);
-            this.label37.TabIndex = 5;
-            this.label37.Text = "10,23";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DongDien6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDien6.ForeColor = System.Drawing.SystemColors.Control;
+            this.DongDien6.Location = new System.Drawing.Point(0, 0);
+            this.DongDien6.Name = "DongDien6";
+            this.DongDien6.Size = new System.Drawing.Size(241, 13);
+            this.DongDien6.TabIndex = 5;
+            this.DongDien6.Text = "10,23";
+            this.DongDien6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel39
             // 
             this.panel39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel39.Controls.Add(this.label17);
+            this.panel39.Controls.Add(this.JigMachNguon6);
             this.panel39.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel39.Location = new System.Drawing.Point(3, 132);
             this.panel39.Name = "panel39";
             this.panel39.Size = new System.Drawing.Size(243, 15);
             this.panel39.TabIndex = 30;
             // 
-            // label17
+            // JigMachNguon6
             // 
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.ForeColor = System.Drawing.SystemColors.Control;
-            this.label17.Location = new System.Drawing.Point(0, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(241, 13);
-            this.label17.TabIndex = 3;
-            this.label17.Text = "Jig 6";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachNguon6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachNguon6.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachNguon6.Location = new System.Drawing.Point(0, 0);
+            this.JigMachNguon6.Name = "JigMachNguon6";
+            this.JigMachNguon6.Size = new System.Drawing.Size(241, 13);
+            this.JigMachNguon6.TabIndex = 3;
+            this.JigMachNguon6.Text = "Jig 6";
+            this.JigMachNguon6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel38
             // 
             this.panel38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel38.Controls.Add(this.label56);
+            this.panel38.Controls.Add(this.CongSuat5);
             this.panel38.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel38.Location = new System.Drawing.Point(750, 111);
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(243, 15);
             this.panel38.TabIndex = 29;
             // 
-            // label56
+            // CongSuat5
             // 
-            this.label56.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label56.ForeColor = System.Drawing.SystemColors.Control;
-            this.label56.Location = new System.Drawing.Point(0, 0);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(241, 13);
-            this.label56.TabIndex = 7;
-            this.label56.Text = "15";
-            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CongSuat5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat5.ForeColor = System.Drawing.SystemColors.Control;
+            this.CongSuat5.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat5.Name = "CongSuat5";
+            this.CongSuat5.Size = new System.Drawing.Size(241, 13);
+            this.CongSuat5.TabIndex = 7;
+            this.CongSuat5.Text = "15";
+            this.CongSuat5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel37
             // 
             this.panel37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel37.Controls.Add(this.label46);
+            this.panel37.Controls.Add(this.DienAp5);
             this.panel37.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel37.Location = new System.Drawing.Point(501, 111);
             this.panel37.Name = "panel37";
             this.panel37.Size = new System.Drawing.Size(243, 15);
             this.panel37.TabIndex = 28;
             // 
-            // label46
+            // DienAp5
             // 
-            this.label46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label46.ForeColor = System.Drawing.SystemColors.Control;
-            this.label46.Location = new System.Drawing.Point(0, 0);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(241, 13);
-            this.label46.TabIndex = 5;
-            this.label46.Text = "21";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DienAp5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienAp5.ForeColor = System.Drawing.SystemColors.Control;
+            this.DienAp5.Location = new System.Drawing.Point(0, 0);
+            this.DienAp5.Name = "DienAp5";
+            this.DienAp5.Size = new System.Drawing.Size(241, 13);
+            this.DienAp5.TabIndex = 5;
+            this.DienAp5.Text = "21";
+            this.DienAp5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel36
             // 
             this.panel36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel36.Controls.Add(this.label36);
+            this.panel36.Controls.Add(this.DongDien5);
             this.panel36.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel36.Location = new System.Drawing.Point(252, 111);
             this.panel36.Name = "panel36";
             this.panel36.Size = new System.Drawing.Size(243, 15);
             this.panel36.TabIndex = 27;
             // 
-            // label36
+            // DongDien5
             // 
-            this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label36.ForeColor = System.Drawing.SystemColors.Control;
-            this.label36.Location = new System.Drawing.Point(0, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(241, 13);
-            this.label36.TabIndex = 5;
-            this.label36.Text = "10,23";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DongDien5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDien5.ForeColor = System.Drawing.SystemColors.Control;
+            this.DongDien5.Location = new System.Drawing.Point(0, 0);
+            this.DongDien5.Name = "DongDien5";
+            this.DongDien5.Size = new System.Drawing.Size(241, 13);
+            this.DongDien5.TabIndex = 5;
+            this.DongDien5.Text = "10,23";
+            this.DongDien5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel34
             // 
             this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel34.Controls.Add(this.label16);
+            this.panel34.Controls.Add(this.JigMachNguon5);
             this.panel34.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel34.Location = new System.Drawing.Point(3, 111);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(243, 15);
             this.panel34.TabIndex = 25;
             // 
-            // label16
+            // JigMachNguon5
             // 
-            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.ForeColor = System.Drawing.SystemColors.Control;
-            this.label16.Location = new System.Drawing.Point(0, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(241, 13);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "Jig 5";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachNguon5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachNguon5.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachNguon5.Location = new System.Drawing.Point(0, 0);
+            this.JigMachNguon5.Name = "JigMachNguon5";
+            this.JigMachNguon5.Size = new System.Drawing.Size(241, 13);
+            this.JigMachNguon5.TabIndex = 3;
+            this.JigMachNguon5.Text = "Jig 5";
+            this.JigMachNguon5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel33
             // 
             this.panel33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel33.Controls.Add(this.label55);
+            this.panel33.Controls.Add(this.CongSuat4);
             this.panel33.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel33.Location = new System.Drawing.Point(750, 90);
             this.panel33.Name = "panel33";
             this.panel33.Size = new System.Drawing.Size(243, 15);
             this.panel33.TabIndex = 24;
             // 
-            // label55
+            // CongSuat4
             // 
-            this.label55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label55.ForeColor = System.Drawing.SystemColors.Control;
-            this.label55.Location = new System.Drawing.Point(0, 0);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(241, 13);
-            this.label55.TabIndex = 7;
-            this.label55.Text = "15";
-            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CongSuat4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat4.ForeColor = System.Drawing.SystemColors.Control;
+            this.CongSuat4.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat4.Name = "CongSuat4";
+            this.CongSuat4.Size = new System.Drawing.Size(241, 13);
+            this.CongSuat4.TabIndex = 7;
+            this.CongSuat4.Text = "15";
+            this.CongSuat4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel32
             // 
             this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel32.Controls.Add(this.label45);
+            this.panel32.Controls.Add(this.DienAp4);
             this.panel32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel32.Location = new System.Drawing.Point(501, 90);
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(243, 15);
             this.panel32.TabIndex = 23;
             // 
-            // label45
+            // DienAp4
             // 
-            this.label45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label45.ForeColor = System.Drawing.SystemColors.Control;
-            this.label45.Location = new System.Drawing.Point(0, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(241, 13);
-            this.label45.TabIndex = 5;
-            this.label45.Text = "21";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DienAp4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienAp4.ForeColor = System.Drawing.SystemColors.Control;
+            this.DienAp4.Location = new System.Drawing.Point(0, 0);
+            this.DienAp4.Name = "DienAp4";
+            this.DienAp4.Size = new System.Drawing.Size(241, 13);
+            this.DienAp4.TabIndex = 5;
+            this.DienAp4.Text = "21";
+            this.DienAp4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel31
             // 
             this.panel31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel31.Controls.Add(this.label35);
+            this.panel31.Controls.Add(this.DongDien4);
             this.panel31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel31.Location = new System.Drawing.Point(252, 90);
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(243, 15);
             this.panel31.TabIndex = 22;
             // 
-            // label35
+            // DongDien4
             // 
-            this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label35.ForeColor = System.Drawing.SystemColors.Control;
-            this.label35.Location = new System.Drawing.Point(0, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(241, 13);
-            this.label35.TabIndex = 5;
-            this.label35.Text = "10,23";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DongDien4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDien4.ForeColor = System.Drawing.SystemColors.Control;
+            this.DongDien4.Location = new System.Drawing.Point(0, 0);
+            this.DongDien4.Name = "DongDien4";
+            this.DongDien4.Size = new System.Drawing.Size(241, 13);
+            this.DongDien4.TabIndex = 5;
+            this.DongDien4.Text = "10,23";
+            this.DongDien4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel29
             // 
             this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel29.Controls.Add(this.label15);
+            this.panel29.Controls.Add(this.JigMachNguon4);
             this.panel29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel29.Location = new System.Drawing.Point(3, 90);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(243, 15);
             this.panel29.TabIndex = 20;
             // 
-            // label15
+            // JigMachNguon4
             // 
-            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.ForeColor = System.Drawing.SystemColors.Control;
-            this.label15.Location = new System.Drawing.Point(0, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(241, 13);
-            this.label15.TabIndex = 3;
-            this.label15.Text = "Jig 4";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachNguon4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachNguon4.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachNguon4.Location = new System.Drawing.Point(0, 0);
+            this.JigMachNguon4.Name = "JigMachNguon4";
+            this.JigMachNguon4.Size = new System.Drawing.Size(241, 13);
+            this.JigMachNguon4.TabIndex = 3;
+            this.JigMachNguon4.Text = "Jig 4";
+            this.JigMachNguon4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel28
             // 
             this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel28.Controls.Add(this.label54);
+            this.panel28.Controls.Add(this.CongSuat3);
             this.panel28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel28.Location = new System.Drawing.Point(750, 69);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(243, 15);
             this.panel28.TabIndex = 19;
             // 
-            // label54
+            // CongSuat3
             // 
-            this.label54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label54.ForeColor = System.Drawing.SystemColors.Control;
-            this.label54.Location = new System.Drawing.Point(0, 0);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(241, 13);
-            this.label54.TabIndex = 7;
-            this.label54.Text = "15";
-            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CongSuat3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat3.ForeColor = System.Drawing.SystemColors.Control;
+            this.CongSuat3.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat3.Name = "CongSuat3";
+            this.CongSuat3.Size = new System.Drawing.Size(241, 13);
+            this.CongSuat3.TabIndex = 7;
+            this.CongSuat3.Text = "15";
+            this.CongSuat3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel27
             // 
             this.panel27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel27.Controls.Add(this.label44);
+            this.panel27.Controls.Add(this.DienAp3);
             this.panel27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel27.Location = new System.Drawing.Point(501, 69);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(243, 15);
             this.panel27.TabIndex = 18;
             // 
-            // label44
+            // DienAp3
             // 
-            this.label44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label44.ForeColor = System.Drawing.SystemColors.Control;
-            this.label44.Location = new System.Drawing.Point(0, 0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(241, 13);
-            this.label44.TabIndex = 5;
-            this.label44.Text = "21";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DienAp3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienAp3.ForeColor = System.Drawing.SystemColors.Control;
+            this.DienAp3.Location = new System.Drawing.Point(0, 0);
+            this.DienAp3.Name = "DienAp3";
+            this.DienAp3.Size = new System.Drawing.Size(241, 13);
+            this.DienAp3.TabIndex = 5;
+            this.DienAp3.Text = "21";
+            this.DienAp3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel26
             // 
             this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel26.Controls.Add(this.label34);
+            this.panel26.Controls.Add(this.DongDien3);
             this.panel26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel26.Location = new System.Drawing.Point(252, 69);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(243, 15);
             this.panel26.TabIndex = 17;
             // 
-            // label34
+            // DongDien3
             // 
-            this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label34.ForeColor = System.Drawing.SystemColors.Control;
-            this.label34.Location = new System.Drawing.Point(0, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(241, 13);
-            this.label34.TabIndex = 5;
-            this.label34.Text = "10,23";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DongDien3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDien3.ForeColor = System.Drawing.SystemColors.Control;
+            this.DongDien3.Location = new System.Drawing.Point(0, 0);
+            this.DongDien3.Name = "DongDien3";
+            this.DongDien3.Size = new System.Drawing.Size(241, 13);
+            this.DongDien3.TabIndex = 5;
+            this.DongDien3.Text = "10,23";
+            this.DongDien3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel24
             // 
             this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel24.Controls.Add(this.label14);
+            this.panel24.Controls.Add(this.JigMachNguon3);
             this.panel24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel24.Location = new System.Drawing.Point(3, 69);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(243, 15);
             this.panel24.TabIndex = 15;
             // 
-            // label14
+            // JigMachNguon3
             // 
-            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.ForeColor = System.Drawing.SystemColors.Control;
-            this.label14.Location = new System.Drawing.Point(0, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(241, 13);
-            this.label14.TabIndex = 3;
-            this.label14.Text = "Jig 3";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachNguon3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachNguon3.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachNguon3.Location = new System.Drawing.Point(0, 0);
+            this.JigMachNguon3.Name = "JigMachNguon3";
+            this.JigMachNguon3.Size = new System.Drawing.Size(241, 13);
+            this.JigMachNguon3.TabIndex = 3;
+            this.JigMachNguon3.Text = "Jig 3";
+            this.JigMachNguon3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel23
             // 
             this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel23.Controls.Add(this.label53);
+            this.panel23.Controls.Add(this.CongSuat2);
             this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel23.Location = new System.Drawing.Point(750, 48);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(243, 15);
             this.panel23.TabIndex = 14;
             // 
-            // label53
+            // CongSuat2
             // 
-            this.label53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label53.ForeColor = System.Drawing.SystemColors.Control;
-            this.label53.Location = new System.Drawing.Point(0, 0);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(241, 13);
-            this.label53.TabIndex = 6;
-            this.label53.Text = "15";
-            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CongSuat2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat2.ForeColor = System.Drawing.SystemColors.Control;
+            this.CongSuat2.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat2.Name = "CongSuat2";
+            this.CongSuat2.Size = new System.Drawing.Size(241, 13);
+            this.CongSuat2.TabIndex = 6;
+            this.CongSuat2.Text = "15";
+            this.CongSuat2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel22
             // 
             this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel22.Controls.Add(this.label43);
+            this.panel22.Controls.Add(this.DienAp2);
             this.panel22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel22.Location = new System.Drawing.Point(501, 48);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(243, 15);
             this.panel22.TabIndex = 13;
             // 
-            // label43
+            // DienAp2
             // 
-            this.label43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label43.ForeColor = System.Drawing.SystemColors.Control;
-            this.label43.Location = new System.Drawing.Point(0, 0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(241, 13);
-            this.label43.TabIndex = 5;
-            this.label43.Text = "21";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DienAp2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienAp2.ForeColor = System.Drawing.SystemColors.Control;
+            this.DienAp2.Location = new System.Drawing.Point(0, 0);
+            this.DienAp2.Name = "DienAp2";
+            this.DienAp2.Size = new System.Drawing.Size(241, 13);
+            this.DienAp2.TabIndex = 5;
+            this.DienAp2.Text = "21";
+            this.DienAp2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel21
             // 
             this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel21.Controls.Add(this.label33);
+            this.panel21.Controls.Add(this.DongDien2);
             this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel21.Location = new System.Drawing.Point(252, 48);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(243, 15);
             this.panel21.TabIndex = 12;
             // 
-            // label33
+            // DongDien2
             // 
-            this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label33.ForeColor = System.Drawing.SystemColors.Control;
-            this.label33.Location = new System.Drawing.Point(0, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(241, 13);
-            this.label33.TabIndex = 5;
-            this.label33.Text = "10,23";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DongDien2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDien2.ForeColor = System.Drawing.SystemColors.Control;
+            this.DongDien2.Location = new System.Drawing.Point(0, 0);
+            this.DongDien2.Name = "DongDien2";
+            this.DongDien2.Size = new System.Drawing.Size(241, 13);
+            this.DongDien2.TabIndex = 5;
+            this.DongDien2.Text = "10,23";
+            this.DongDien2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel19
             // 
             this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel19.Controls.Add(this.label13);
+            this.panel19.Controls.Add(this.JigMachNguon2);
             this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel19.Location = new System.Drawing.Point(3, 48);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(243, 15);
             this.panel19.TabIndex = 10;
             // 
-            // label13
+            // JigMachNguon2
             // 
-            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.ForeColor = System.Drawing.SystemColors.Control;
-            this.label13.Location = new System.Drawing.Point(0, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(241, 13);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "Jig 2";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachNguon2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachNguon2.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachNguon2.Location = new System.Drawing.Point(0, 0);
+            this.JigMachNguon2.Name = "JigMachNguon2";
+            this.JigMachNguon2.Size = new System.Drawing.Size(241, 13);
+            this.JigMachNguon2.TabIndex = 3;
+            this.JigMachNguon2.Text = "Jig 2";
+            this.JigMachNguon2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel18
             // 
             this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel18.Controls.Add(this.label52);
+            this.panel18.Controls.Add(this.CongSuat1);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel18.Location = new System.Drawing.Point(750, 27);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(243, 15);
             this.panel18.TabIndex = 9;
             // 
-            // label52
+            // CongSuat1
             // 
-            this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label52.ForeColor = System.Drawing.SystemColors.Control;
-            this.label52.Location = new System.Drawing.Point(0, 0);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(241, 13);
-            this.label52.TabIndex = 6;
-            this.label52.Text = "21";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CongSuat1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat1.ForeColor = System.Drawing.SystemColors.Control;
+            this.CongSuat1.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat1.Name = "CongSuat1";
+            this.CongSuat1.Size = new System.Drawing.Size(241, 13);
+            this.CongSuat1.TabIndex = 6;
+            this.CongSuat1.Text = "21";
+            this.CongSuat1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel17
             // 
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Controls.Add(this.label42);
+            this.panel17.Controls.Add(this.DienAp1);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel17.Location = new System.Drawing.Point(501, 27);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(243, 15);
             this.panel17.TabIndex = 8;
             // 
-            // label42
+            // DienAp1
             // 
-            this.label42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label42.ForeColor = System.Drawing.SystemColors.Control;
-            this.label42.Location = new System.Drawing.Point(0, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(241, 13);
-            this.label42.TabIndex = 5;
-            this.label42.Text = "21";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DienAp1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienAp1.ForeColor = System.Drawing.SystemColors.Control;
+            this.DienAp1.Location = new System.Drawing.Point(0, 0);
+            this.DienAp1.Name = "DienAp1";
+            this.DienAp1.Size = new System.Drawing.Size(241, 13);
+            this.DienAp1.TabIndex = 5;
+            this.DienAp1.Text = "21";
+            this.DienAp1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel16
             // 
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel16.Controls.Add(this.label32);
+            this.panel16.Controls.Add(this.DongDien1);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel16.Location = new System.Drawing.Point(252, 27);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(243, 15);
             this.panel16.TabIndex = 7;
             // 
-            // label32
+            // DongDien1
             // 
-            this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label32.ForeColor = System.Drawing.SystemColors.Control;
-            this.label32.Location = new System.Drawing.Point(0, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(241, 13);
-            this.label32.TabIndex = 5;
-            this.label32.Text = "10,23";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DongDien1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDien1.ForeColor = System.Drawing.SystemColors.Control;
+            this.DongDien1.Location = new System.Drawing.Point(0, 0);
+            this.DongDien1.Name = "DongDien1";
+            this.DongDien1.Size = new System.Drawing.Size(241, 13);
+            this.DongDien1.TabIndex = 5;
+            this.DongDien1.Text = "10,23";
+            this.DongDien1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel8
             // 
@@ -2295,7 +2295,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(241, 16);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Áp";
+            this.label5.Text = "Điện Áp";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel6
@@ -2345,23 +2345,23 @@
             // panel14
             // 
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.label12);
+            this.panel14.Controls.Add(this.JigMachNguon1);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel14.Location = new System.Drawing.Point(3, 27);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(243, 15);
             this.panel14.TabIndex = 5;
             // 
-            // label12
+            // JigMachNguon1
             // 
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.ForeColor = System.Drawing.SystemColors.Control;
-            this.label12.Location = new System.Drawing.Point(0, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(241, 13);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "Jig 1";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JigMachNguon1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.JigMachNguon1.ForeColor = System.Drawing.SystemColors.Control;
+            this.JigMachNguon1.Location = new System.Drawing.Point(0, 0);
+            this.JigMachNguon1.Name = "JigMachNguon1";
+            this.JigMachNguon1.Size = new System.Drawing.Size(241, 13);
+            this.JigMachNguon1.TabIndex = 3;
+            this.JigMachNguon1.Text = "Jig 1";
+            this.JigMachNguon1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ItemThongKeJigMach
             // 
@@ -2397,7 +2397,7 @@
             this.panel79.ResumeLayout(false);
             this.panel80.ResumeLayout(false);
             this.panel81.ResumeLayout(false);
-            this.panel83.ResumeLayout(false);
+            this.JigMachTDS6.ResumeLayout(false);
             this.panel84.ResumeLayout(false);
             this.panel85.ResumeLayout(false);
             this.panel86.ResumeLayout(false);
@@ -2488,164 +2488,164 @@
         private Label label4;
         private Label label2;
         private Panel panel63;
-        private Label label61;
+        private Label CongSuat10;
         private Panel panel62;
-        private Label label51;
+        private Label DienAp10;
         private Panel panel61;
-        private Label label41;
+        private Label DongDien10;
         private Panel panel59;
-        private Label label21;
+        private Label JigMachNguon10;
         private Panel panel58;
-        private Label label60;
+        private Label CongSuat9;
         private Panel panel57;
-        private Label label50;
+        private Label DienAp9;
         private Panel panel56;
-        private Label label40;
+        private Label DongDien9;
         private Panel panel54;
-        private Label label20;
+        private Label JigMachNguon9;
         private Panel panel53;
-        private Label label59;
+        private Label CongSuat8;
         private Panel panel52;
-        private Label label49;
+        private Label DienAp8;
         private Panel panel51;
-        private Label label39;
+        private Label DongDien8;
         private Panel panel49;
-        private Label label19;
+        private Label JigMachNguon8;
         private Panel panel48;
-        private Label label58;
+        private Label CongSuat7;
         private Panel panel47;
-        private Label label48;
+        private Label DienAp7;
         private Panel panel46;
-        private Label label38;
+        private Label DongDien7;
         private Panel panel44;
-        private Label label18;
+        private Label JigMachNguon7;
         private Panel panel43;
-        private Label label57;
+        private Label CongSuat6;
         private Panel panel42;
-        private Label label47;
+        private Label DienAp6;
         private Panel panel41;
-        private Label label37;
+        private Label DongDien6;
         private Panel panel39;
         private Label label17;
         private Panel panel38;
-        private Label label56;
+        private Label CongSuat5;
         private Panel panel37;
-        private Label label46;
+        private Label DienAp5;
         private Panel panel36;
-        private Label label36;
+        private Label DongDien5;
         private Panel panel34;
-        private Label label16;
+        private Label JigMachNguon5;
         private Panel panel33;
-        private Label label55;
+        private Label CongSuat4;
         private Panel panel32;
-        private Label label45;
+        private Label DienAp4;
         private Panel panel31;
-        private Label label35;
+        private Label DongDien4;
         private Panel panel29;
-        private Label label15;
+        private Label JigMachNguon4;
         private Panel panel28;
-        private Label label54;
+        private Label CongSuat3;
         private Panel panel27;
-        private Label label44;
+        private Label DienAp3;
         private Panel panel26;
-        private Label label34;
+        private Label DongDien3;
         private Panel panel24;
-        private Label label14;
+        private Label JigMachNguon3;
         private Panel panel23;
-        private Label label53;
+        private Label CongSuat2;
         private Panel panel22;
-        private Label label43;
+        private Label DienAp2;
         private Panel panel21;
-        private Label label33;
+        private Label DongDien2;
         private Panel panel19;
-        private Label label13;
+        private Label JigMachNguon2;
         private Panel panel18;
-        private Label label52;
+        private Label CongSuat1;
         private Panel panel17;
-        private Label label42;
+        private Label DienAp1;
         private Panel panel16;
-        private Label label32;
+        private Label DongDien1;
         private Panel panel14;
-        private Label label12;
+        private Label JigMachNguon1;
         private TableLayoutPanel tableLayoutPanel3;
         private Panel panel9;
-        private Label label6;
+        private Label CBApSuat10;
         private Panel panel10;
-        private Label label7;
+        private Label Van10;
         private Panel panel11;
-        private Label label8;
+        private Label ApDC10;
         private Panel panel13;
-        private Label label11;
+        private Label JigMachTDS10;
         private Panel panel64;
-        private Label label62;
+        private Label CBApSuat9;
         private Panel panel65;
-        private Label label63;
+        private Label Van9;
         private Panel panel66;
-        private Label label64;
+        private Label ApDC9;
         private Panel panel68;
-        private Label label66;
+        private Label JigMachTDS9;
         private Panel panel69;
-        private Label label67;
+        private Label CBApSuat8;
         private Panel panel70;
-        private Label label68;
+        private Label Van8;
         private Panel panel71;
-        private Label label69;
+        private Label ApDC8;
         private Panel panel73;
-        private Label label71;
+        private Label JigMachTDS8;
         private Panel panel74;
-        private Label label72;
+        private Label CBApSuat7;
         private Panel panel75;
-        private Label label73;
+        private Label Van7;
         private Panel panel76;
-        private Label label74;
+        private Label ApDC7;
         private Panel panel78;
-        private Label label76;
+        private Label JigMachTDS7;
         private Panel panel79;
-        private Label label77;
+        private Label CBApSuat6;
         private Panel panel80;
-        private Label label78;
+        private Label Van6;
         private Panel panel81;
-        private Label label79;
-        private Panel panel83;
+        private Label ApDC6;
+        private Panel JigMachTDS6;
         private Label label81;
         private Panel panel84;
-        private Label label82;
+        private Label CBApSuat5;
         private Panel panel85;
-        private Label label83;
+        private Label Van5;
         private Panel panel86;
-        private Label label84;
+        private Label ApDC5;
         private Panel panel88;
-        private Label label86;
+        private Label JigMachTDS5;
         private Panel panel89;
-        private Label label87;
+        private Label CBApSuat4;
         private Panel panel90;
-        private Label label88;
+        private Label Van4;
         private Panel panel91;
-        private Label label89;
+        private Label ApDC4;
         private Panel panel93;
-        private Label label91;
+        private Label JigMachTDS4;
         private Panel panel94;
-        private Label label92;
+        private Label CBApSuat3;
         private Panel panel95;
-        private Label label93;
+        private Label Van3;
         private Panel panel96;
-        private Label label94;
+        private Label ApDC3;
         private Panel panel98;
-        private Label label96;
+        private Label JigMachTDS3;
         private Panel panel99;
-        private Label label97;
+        private Label CBApSuat2;
         private Panel panel100;
-        private Label label98;
+        private Label Van2;
         private Panel panel101;
-        private Label label99;
+        private Label ApDC2;
         private Panel panel103;
-        private Label label101;
+        private Label JigMachTDS2;
         private Panel panel104;
-        private Label label102;
+        private Label CBApSuat1;
         private Panel panel105;
-        private Label label103;
+        private Label Van1;
         private Panel panel106;
-        private Label label104;
+        private Label ApDC1;
         private Panel panel108;
         private Label label106;
         private Panel panel109;
@@ -2655,7 +2655,8 @@
         private Panel panel112;
         private Label label110;
         private Panel panel113;
-        private Label label111;
+        private Label JigMachTDS1;
         private Label TimeID;
+        private Label JigMachNguon6;
     }
 }

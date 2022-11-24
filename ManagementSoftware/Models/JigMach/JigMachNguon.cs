@@ -14,9 +14,9 @@ namespace ManagementSoftware.Models
         [Key]
         public int JigMachNguonID { get; set; }
         public string JigMachNguonName { get; set; }
-        public double Dong { get; set; }
-        public bool Ap { get; set; }
-        public bool CongSuat { get; set; }
+        public double DongDien { get; set; }
+        public double DienAp { get; set; }
+        public double CongSuat { get; set; }
         public int TestJigMachID { get; set; }
         public TestJigMach TestJigMach { get; set; }
     }

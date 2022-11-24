@@ -128,7 +128,7 @@ namespace ManagementSoftware.Models
         }
         public void CreateDatabase()
         {
-            //this.Database.EnsureDeleted();
+            this.Database.EnsureDeleted();
             //init db
             if (this.Database.EnsureCreated() == true)
             {
@@ -216,6 +216,28 @@ namespace ManagementSoftware.Models
                     nguons.Add(nguon);
                 }
                 DALNguon.Add(nguons);
+
+
+                //jig mach
+                List<JigMachNguon> jigmachs = new List<JigMachNguon>();
+                List<JigMachTDS> jigMachTDs = new List<JigMachTDS>();
+                for (int j = 1; j <= 10; j++)
+                {
+                    JigMachNguon jigMachNguon = new JigMachNguon();
+                    jigMachNguon.JigMachNguonName = "Jig " + j;
+                    jigMachNguon.CongSuat = 23;
+                    jigMachNguon.DongDien = 12;
+                    jigMachNguon.DienAp = 21;
+                    jigmachs.Add(jigMachNguon);
+
+                    JigMachTDS jigMachTDS = new JigMachTDS();
+                    jigMachTDS.JigMachTDSName = "Jig " + j;
+                    jigMachTDS.ApDC = 23;
+                    jigMachTDS.CBApSuat = true;
+                    jigMachTDS.Van = false;
+                    jigMachTDs.Add(jigMachTDS);
+                }
+                DALJigMach.Add(jigmachs, jigMachTDs);
             }
         }
 

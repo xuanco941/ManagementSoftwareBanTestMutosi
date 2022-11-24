@@ -64,6 +64,31 @@ namespace ManagementSoftware
         public const string Nguon30 = "Nguồn 30";
 
 
+        //Jig Mach
+        public const string JigMachNguon1 = "Jig 1";
+        public const string JigMachNguon2 = "Jig 2";
+        public const string JigMachNguon3 = "Jig 3";
+        public const string JigMachNguon4 = "Jig 4";
+        public const string JigMachNguon5 = "Jig 5";
+        public const string JigMachNguon6 = "Jig 6";
+        public const string JigMachNguon7 = "Jig 7";
+        public const string JigMachNguon8 = "Jig 8";
+        public const string JigMachNguon9 = "Jig 9";
+        public const string JigMachNguon10 = "Jig 10";
+
+        public const string JigMachTDS1 = "Jig 1";
+        public const string JigMachTDS2 = "Jig 2";
+        public const string JigMachTDS3 = "Jig 3";
+        public const string JigMachTDS4 = "Jig 4";
+        public const string JigMachTDS5 = "Jig 5";
+        public const string JigMachTDS6 = "Jig 6";
+        public const string JigMachTDS7 = "Jig 7";
+        public const string JigMachTDS8 = "Jig 8";
+        public const string JigMachTDS9 = "Jig 9";
+        public const string JigMachTDS10 = "Jig 10";
+
+
+
 
     }
 }

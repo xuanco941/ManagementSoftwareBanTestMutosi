@@ -7,14 +7,21 @@ using System.Threading.Tasks;
 
 namespace ManagementSoftware.DAL.DALPagination
 {
+
+    public class JigMachResponse
+    {
+        public List<JigMachNguon> JigMachNguons { get; set; }
+        public List<JigMachTDS> JigMachTDs { get; set; }
+
+    }
+
     public class PaginationJigMach
     {
-        public static int NumberRows { get; set; } = 15;
+        public static int NumberRows { get; set; } = 5;
         public int PageCurrent { get; set; } = 1;
         public int TotalPages { get; set; } = 1;
         public int TotalResults { get; set; } = 0;
-        public Dictionary<TestJigMach, List<JigMachNguon>> ListResultsMachNguon { get; set; } = new Dictionary<TestJigMach, List<JigMachNguon>>();
-        public Dictionary<TestJigMach, List<JigMachTDS>> ListResultsMachTDS { get; set; } = new Dictionary<TestJigMach, List<JigMachTDS>>();
+        public Dictionary<TestJigMach, JigMachResponse> ListResults { get; set; } = new Dictionary<TestJigMach, JigMachResponse>();
         public void Set(int page, DateTime? start, DateTime? end)
         {
             DataBaseContext dbContext = new DataBaseContext();
@@ -46,12 +53,15 @@ namespace ManagementSoftware.DAL.DALPagination
             {
                 List<JigMachNguon> l1 = new List<JigMachNguon>();
                 l1 = dbContext.JigMachNguons.Where(e => e.TestJigMachID == elm.TestJigMachID).ToList();
-                ListResultsMachNguon.Add(elm, l1);
 
                 List<JigMachTDS> l2 = new List<JigMachTDS>();
                 l2 = dbContext.JigMachTDSs.Where(e => e.TestJigMachID == elm.TestJigMachID).ToList();
-                ListResultsMachTDS.Add(elm, l2);
 
+                JigMachResponse response = new JigMachResponse();
+                response.JigMachNguons = l1;
+                response.JigMachTDs = l2;
+
+                ListResults.Add(elm, response);
             }
 
             this.PageCurrent = page;
