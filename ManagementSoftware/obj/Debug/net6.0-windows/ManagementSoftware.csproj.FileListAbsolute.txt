@@ -361,4 +361,3 @@ D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\Mana
 D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.Section.ThongKe.ItemThongKeBauNong.resources
 D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.Section.ThongKe.ItemCongTac2VT.resources
 D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.Section.ThongKe.ItemThongKeNguon.resources
-D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.Section.ThongKe.ItemCongTac3VT.resources

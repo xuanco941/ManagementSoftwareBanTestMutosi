@@ -311,6 +311,7 @@
             this.buttonGoto2VT.TextColor = System.Drawing.Color.Black;
             this.buttonGoto2VT.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.buttonGoto2VT.UseVisualStyleBackColor = false;
+            this.buttonGoto2VT.Click += new System.EventHandler(this.buttonGoto2VT_Click);
             // 
             // pageNumberGoto2VT
             // 
@@ -459,6 +460,7 @@
             this.buttonSearch2VT.TextColor = System.Drawing.Color.Black;
             this.buttonSearch2VT.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonSearch2VT.UseVisualStyleBackColor = false;
+            this.buttonSearch2VT.Click += new System.EventHandler(this.buttonSearch2VT_Click);
             // 
             // panel45
             // 
@@ -518,6 +520,7 @@
             this.buttonNextPage2VT.TextColor = System.Drawing.Color.Black;
             this.buttonNextPage2VT.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.buttonNextPage2VT.UseVisualStyleBackColor = false;
+            this.buttonNextPage2VT.Click += new System.EventHandler(this.buttonNextPage2VT_Click);
             // 
             // buttonPreviousPage2VT
             // 

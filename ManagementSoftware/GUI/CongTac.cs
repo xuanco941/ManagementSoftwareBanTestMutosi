@@ -122,7 +122,7 @@ namespace ManagementSoftware.GUI
             }
         }
 
-        private void buttonNextPage3VT_Click(object sender, EventArgs e)
+        private void buttonNextPage2VT_Click(object sender, EventArgs e)
         {
             if (this.page2VT < this.TotalPages2VT)
             {
@@ -131,17 +131,32 @@ namespace ManagementSoftware.GUI
             }
         }
 
-        private void buttonSearch3VT_Click(object sender, EventArgs e)
+        private void buttonSearch2VT_Click(object sender, EventArgs e)
         {
             timeStart2VT = TimeStart2VT.Value;
             timeEnd2VT = TimeEnd2VT.Value;
             LoadFormThongKe2VT();
         }
 
-        private void buttonGoto3VT_Click(object sender, EventArgs e)
+        private void buttonGoto2VT_Click(object sender, EventArgs e)
         {
             this.page2VT = int.Parse(pageNumberGoto2VT.Text);
             LoadFormThongKe2VT();
+        }
+
+        private void buttonNextPage3VT_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSearch3VT_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonGoto3VT_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

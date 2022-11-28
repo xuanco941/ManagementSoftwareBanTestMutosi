@@ -65,7 +65,7 @@ namespace ManagementSoftware
             Print(this.panelPrintBarcode);
         }
 
-        private async void button2bgrwk_Click(object sender, EventArgs e)
+        private void button2bgrwk_Click(object sender, EventArgs e)
         {
             // start the animation
             progressBar1.Visible = true;
