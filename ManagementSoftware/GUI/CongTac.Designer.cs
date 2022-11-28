@@ -968,6 +968,7 @@
             this.buttonPreviousPage3VT.TextColor = System.Drawing.Color.Black;
             this.buttonPreviousPage3VT.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.buttonPreviousPage3VT.UseVisualStyleBackColor = false;
+            this.buttonPreviousPage3VT.Click += new System.EventHandler(this.buttonPreviousPage3VT_Click);
             // 
             // buttonCustom6
             // 

@@ -71,9 +71,10 @@ namespace ManagementSoftware.GUI
         {
             InitializeComponent();
 
-            LoadFormThongKe2VT();
             LoadTabPageCongTac2VT();
             LoadTabPageCongTac3VT();
+            LoadFormThongKe2VT();
+            LoadFormThongKe3VT();
         }
 
         void LoadFormThongKe2VT()
@@ -112,6 +113,42 @@ namespace ManagementSoftware.GUI
             panelSearchPage2VT.Enabled = true;
         }
 
+        void LoadFormThongKe3VT()
+        {
+            panelSearchPage3VT.Enabled = false;
+            foreach (Form item in panelThongKe3VT.Controls)
+            {
+                item.Close();
+                item.Dispose();
+            }
+            panelThongKe3VT.Controls.Clear();
+
+
+            PaginationCongTac3VT pagination = new PaginationCongTac3VT();
+            pagination.Set(page3VT, timeStart3VT, timeEnd3VT);
+            this.ListResults3VT = pagination.ListResults;
+            this.TotalPages3VT = pagination.TotalPages;
+            lbTotalPages3VT.Text = this.TotalPages3VT.ToString();
+
+            buttonPreviousPage3VT.Enabled = this.page3VT > 1;
+            buttonNextPage3VT.Enabled = this.page3VT < this.TotalPages3VT;
+            buttonPage3VT.Text = this.page3VT.ToString();
+
+            pageNumberGoto3VT.MinValue = 1;
+            pageNumberGoto3VT.MaxValue = this.TotalPages3VT != 0 ? this.TotalPages3VT : 1;
+
+            for (int i = ListResults3VT.Count - 1; i >= 0; i--)
+            {
+                ItemCongTac3VT form = new ItemCongTac3VT(ListResults3VT.ElementAt(i).Key, ListResults3VT.ElementAt(i).Value);
+                form.TopLevel = false;
+                panelThongKe3VT.Controls.Add(form);
+                form.FormBorderStyle = FormBorderStyle.None;
+                form.Dock = DockStyle.Top;
+                form.Show();
+            }
+            panelSearchPage3VT.Enabled = true;
+        }
+
 
         private void buttonPreviousPage2VT_Click(object sender, EventArgs e)
         {
@@ -143,20 +180,34 @@ namespace ManagementSoftware.GUI
             this.page2VT = int.Parse(pageNumberGoto2VT.Text);
             LoadFormThongKe2VT();
         }
-
+        private void buttonPreviousPage3VT_Click(object sender, EventArgs e)
+        {
+            if (this.page3VT > 1)
+            {
+                this.page3VT = this.page3VT - 1;
+                LoadFormThongKe3VT();
+            }
+        }
         private void buttonNextPage3VT_Click(object sender, EventArgs e)
         {
-
+            if (this.page3VT < this.TotalPages3VT)
+            {
+                this.page3VT = this.page3VT + 1;
+                LoadFormThongKe3VT();
+            }
         }
 
         private void buttonSearch3VT_Click(object sender, EventArgs e)
         {
-
+            timeStart3VT = TimeStart3VT.Value;
+            timeEnd3VT = TimeEnd3VT.Value;
+            LoadFormThongKe3VT();
         }
 
         private void buttonGoto3VT_Click(object sender, EventArgs e)
         {
-
+            this.page3VT = int.Parse(pageNumberGoto3VT.Text);
+            LoadFormThongKe3VT();
         }
     }
 }

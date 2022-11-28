@@ -255,6 +255,25 @@ namespace ManagementSoftware.Models
                     }
                 }
                 DALCongTac2VT.Add(ct2vt);
+
+
+
+                //cong tac
+                List<CongTac3VT> ct3vt = new List<CongTac3VT>();
+                for (int j = 1; j <= 10; j++)
+                {
+                    for (int k = 1; k <= 5; k++)
+                    {
+                        CongTac3VT ct = new CongTac3VT();
+                        ct.SoLanTest = k + 3;
+                        ct.JigCongTac3VTName = "Jig " + j;
+                        ct.CongTac3VTName = "Công tắc " + k;
+                        ct.TrangThai1 = true;
+                        ct.TrangThai2 = false;
+                        ct3vt.Add(ct);
+                    }
+                }
+                DALCongTac3VT.Add(ct3vt);
             }
         }
 

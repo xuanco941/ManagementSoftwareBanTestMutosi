@@ -9,7 +9,7 @@ namespace ManagementSoftware.DAL.DALPagination
 {
     public class PaginationCongTac3VT
     {
-        public static int NumberRows { get; set; } = 15;
+        public static int NumberRows { get; set; } = 2;
         public int PageCurrent { get; set; } = 1;
         public int TotalPages { get; set; } = 1;
         public int TotalResults { get; set; } = 0;
