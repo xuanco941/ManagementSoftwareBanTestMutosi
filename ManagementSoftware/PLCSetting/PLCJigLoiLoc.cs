@@ -13,16 +13,14 @@ namespace ManagementSoftware.PLCSetting
     public class PLCJigLoiLoc
     {
         public PLC plc { get; set; }
-        public bool isConnected { get; set; }
         public static ExceptionCode errCode;
 
         public string plcName = "PLC Jig Lõi Lọc";
-        public string message { get; set; } = "";
+        public string message { get; set; } = null;
 
 
-        public LoiLoc loiloc1 = new LoiLoc();
-        public LoiLoc loiloc2 = new LoiLoc();
-        public LoiLoc loiloc1va2 = new LoiLoc();
+        public LoiLoc loiloc = new LoiLoc();
+
         public PLCJigLoiLoc()
         {
             string ip = "192.168.0.11";
@@ -54,11 +52,11 @@ namespace ManagementSoftware.PLCSetting
                 }
 
                 // success
-                message = "";
+                message = null;
             }
             catch
             {
-                //message = "Không thể kết nối";
+                message = $"Không thể kết nối tới {plcName}";
             }
         }
 
@@ -68,6 +66,7 @@ namespace ManagementSoftware.PLCSetting
             try
             {
                 plc.Close();
+                message = null;
             }
             catch (Exception ex)
             {
@@ -75,47 +74,36 @@ namespace ManagementSoftware.PLCSetting
             }
         }
 
-
         public void GetData()
         {
-            DataPLC.DongDien = new List<double>();
-            DataPLC.DienAp = new List<double>();
-            DataPLC.CongSuat = new List<double>();
+            //time ms
+            UInt32 ST_Time_Cap = (UInt32)plc.Read("DB100.DBD22");
+            uint ST_Time_Giu = (uint)plc.Read("DB100.DBD26");
+            uint ST_Time_Xa = (uint)plc.Read("DB100.DBD30");
 
-            //(READ) JigMachNguon DB100.DB
+            double ST_Ap_Suat = Math.Round(PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, 36, 4))), 2, MidpointRounding.AwayFromZero);
 
-            int firstElementDienAp = 0;
-            int firstElementDongDien = 40;
-            int firstElementCongSuat = 80;
+            ushort ST_SL_Test = (ushort)plc.Read("DB100.DBW34");
+            ushort loaiLoiLocTest = (ushort)plc.Read("DB100.DBW64");
 
-            for (int i = 0; i < 10; i++)
+            if (loaiLoiLocTest == 1)
             {
-                int khoangCachVungNhoTiepTheo = i * 4;
-                string adrrDienAp = "DB100.DBD" + (firstElementDienAp + khoangCachVungNhoTiepTheo);
-                string adrrCongSuat = "DB100.DBD" + (firstElementCongSuat + khoangCachVungNhoTiepTheo);
-                string adrrDongDien = "DB100.DBD" + (firstElementDongDien + khoangCachVungNhoTiepTheo);
-
-                DataPLC.DongDien.Add(Math.Round(PROFINET_STEP_7.Types.Double.FromDWord((uint)plc.Read(adrrDongDien)), 2, MidpointRounding.AwayFromZero));
-                DataPLC.CongSuat.Add(Math.Round(PROFINET_STEP_7.Types.Double.FromDWord((uint)plc.Read(adrrCongSuat)), 2, MidpointRounding.AwayFromZero));
-                DataPLC.DienAp.Add(Math.Round(PROFINET_STEP_7.Types.Double.FromDWord((uint)plc.Read(adrrDienAp)), 2, MidpointRounding.AwayFromZero));
-
+                loiloc.LoiLocName = TenThietBi.LoiLoc1;
+            }
+            else if (loaiLoiLocTest == 2)
+            {
+                loiloc.LoiLocName = TenThietBi.LoiLoc2;
+            }
+            else if (loaiLoiLocTest == 3)
+            {
+                loiloc.LoiLocName = TenThietBi.LoiLoc1va2;
             }
 
-
-            ////paramete
-            //CurrentValuePLC.pH = PROFINET_STEP_7.Types.Double.FromDWord((uint)plc.Read("DB16.DBD0"));
-
-            ////luu luong
-            //CurrentValuePLC.luuLuongTong = PROFINET_STEP_7.Types.Double.FromDWord((uint)plc.Read("DB16.DBD16"));
-
-
-
-
-            //////status_position DB17
-            //CurrentValuePLC.status_position_DB17_1 = (ushort)plc.Read("DB17.DBW0");
-
-            //////status_position DB18
-            //CurrentValuePLC.status_position_DB18_1 = (ushort)plc.Read("DB18.DBW0");
+            loiloc.ThoiGianGiu = ST_Time_Giu;
+            loiloc.ThoiGianXa = ST_Time_Xa;
+            loiloc.ThoiGianNen = ST_Time_Cap;
+            loiloc.SoLanTest = ST_SL_Test;
+            loiloc.ApSuatTest = ST_Ap_Suat;
 
         }
     }

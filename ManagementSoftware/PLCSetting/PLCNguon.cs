@@ -47,11 +47,11 @@ namespace ManagementSoftware.PLCSetting
                 }
 
                 // success
-                message = "";
+                message = null;
             }
             catch
             {
-                //message = "Không thể kết nối";
+                message = $"Không thể kết nối tới {plcName}";
             }
         }
 
@@ -61,11 +61,18 @@ namespace ManagementSoftware.PLCSetting
             try
             {
                 plc.Close();
+                message = null;
             }
             catch (Exception ex)
             {
                 message = "*Lỗi đóng máy: " + ex.Message;
             }
+        }
+
+        public void GetData()
+        {
+
+
         }
     }
 }

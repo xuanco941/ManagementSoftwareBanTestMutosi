@@ -69,47 +69,6 @@ namespace ManagementSoftware.PLCSetting
         }
 
 
-        public void GetData()
-        {
-            DataPLC.DongDien = new List<double>();
-            DataPLC.DienAp = new List<double>();
-            DataPLC.CongSuat = new List<double>();
-
-            //(READ) JigMachNguon DB100.DB
-
-            int firstElementDienAp = 0;
-            int firstElementDongDien = 40;
-            int firstElementCongSuat = 80;
-
-            for (int i = 0; i < 10; i++)
-            {
-                int khoangCachVungNhoTiepTheo = i * 4;
-                string adrrDienAp = "DB100.DBD" + (firstElementDienAp + khoangCachVungNhoTiepTheo);
-                string adrrCongSuat = "DB100.DBD" + (firstElementCongSuat + khoangCachVungNhoTiepTheo);
-                string adrrDongDien = "DB100.DBD" + (firstElementDongDien + khoangCachVungNhoTiepTheo);
-
-                DataPLC.DongDien.Add(Math.Round(PROFINET_STEP_7.Types.Double.FromDWord((uint)plc.Read(adrrDongDien)), 2, MidpointRounding.AwayFromZero));
-                DataPLC.CongSuat.Add(Math.Round(PROFINET_STEP_7.Types.Double.FromDWord((uint)plc.Read(adrrCongSuat)), 2, MidpointRounding.AwayFromZero));
-                DataPLC.DienAp.Add(Math.Round(PROFINET_STEP_7.Types.Double.FromDWord((uint)plc.Read(adrrDienAp)), 2, MidpointRounding.AwayFromZero));
-
-            }
-
-
-            ////paramete
-            //CurrentValuePLC.pH = PROFINET_STEP_7.Types.Double.FromDWord((uint)plc.Read("DB16.DBD0"));
-
-            ////luu luong
-            //CurrentValuePLC.luuLuongTong = PROFINET_STEP_7.Types.Double.FromDWord((uint)plc.Read("DB16.DBD16"));
-
-
-
-
-            //////status_position DB17
-            //CurrentValuePLC.status_position_DB17_1 = (ushort)plc.Read("DB17.DBW0");
-
-            //////status_position DB18
-            //CurrentValuePLC.status_position_DB18_1 = (ushort)plc.Read("DB18.DBW0");
-
-        }
+     
     }
 }

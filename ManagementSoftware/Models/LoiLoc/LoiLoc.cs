@@ -14,11 +14,11 @@ namespace ManagementSoftware.Models
         [Key]
         public int LoiLocID { get; set; }
         public string LoiLocName { get; set; }
-        public int SoLanTest { get; set; }
+        public ushort SoLanTest { get; set; }
         public double ApSuatTest { get; set; }
-        public double ThoiGianNen { get; set; }
-        public double ThoiGianXa { get; set; }
-        public double ThoiGianGiu { get; set; }
+        public uint ThoiGianNen { get; set; } //ms
+        public uint ThoiGianXa { get; set; } //ms
+        public uint ThoiGianGiu { get; set; } //ms
         public int TestLoiLocID { get; set; }
         public TestLoiLoc TestLoiLoc { get; set; }
     }

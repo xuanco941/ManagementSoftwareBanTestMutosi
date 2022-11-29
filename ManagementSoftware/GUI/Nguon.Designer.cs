@@ -814,7 +814,6 @@
             this.inputNumPageGo = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
             this.gridLayout2 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
             this.gridLayout1 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
-            this.backgroundWorkerCapNhatBangThongKe = new System.ComponentModel.BackgroundWorker();
             this.tabControl1.SuspendLayout();
             this.tabPageGiamSat1.SuspendLayout();
             this.panel134.SuspendLayout();
@@ -10398,7 +10397,6 @@
             this.gridLayout1.ContainerControl = this.tabPageGiamSat1;
             this.gridLayout1.Rows = 3;
             // 
-            // 
             // Nguon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -11641,6 +11639,5 @@
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonPreviousPage;
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonCustomGoPage;
         private Syncfusion.Windows.Forms.Tools.IntegerTextBox inputNumPageGo;
-        private System.ComponentModel.BackgroundWorker backgroundWorkerCapNhatBangThongKe;
     }
 }

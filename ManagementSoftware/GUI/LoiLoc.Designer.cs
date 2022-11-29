@@ -37,21 +37,21 @@
             this.panel33 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel34 = new System.Windows.Forms.Panel();
-            this.button12 = new System.Windows.Forms.Button();
+            this.ThoiGianGiu1 = new System.Windows.Forms.Button();
             this.panel35 = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
+            this.ThoiGianXa1 = new System.Windows.Forms.Button();
             this.panel36 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.panel37 = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
+            this.ThoiGianNen1 = new System.Windows.Forms.Button();
             this.panel38 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.panel39 = new System.Windows.Forms.Panel();
-            this.button15 = new System.Windows.Forms.Button();
+            this.ApSuatTest1 = new System.Windows.Forms.Button();
             this.panel40 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.panel41 = new System.Windows.Forms.Panel();
-            this.button16 = new System.Windows.Forms.Button();
+            this.SoLanTestJig1 = new System.Windows.Forms.Button();
             this.panel42 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.panel43 = new System.Windows.Forms.Panel();
@@ -62,21 +62,21 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ThoiGianGiu2 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.ThoiGianXa2 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.ThoiGianNen2 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.ApSuatTest2 = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
+            this.SoLanTestJig2 = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
@@ -87,21 +87,21 @@
             this.panel22 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ThoiGianGiu1va2 = new System.Windows.Forms.Button();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
+            this.ThoiGianXa1va2 = new System.Windows.Forms.Button();
             this.panel24 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.ThoiGianNen1va2 = new System.Windows.Forms.Button();
             this.panel26 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
+            this.ApSuatTest1va2 = new System.Windows.Forms.Button();
             this.panel28 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
+            this.SoLanTestJig1va2 = new System.Windows.Forms.Button();
             this.panel30 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -152,6 +152,7 @@
             this.button28 = new System.Windows.Forms.Button();
             this.panel82 = new System.Windows.Forms.Panel();
             this.label34 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPageGiamSat.SuspendLayout();
             this.panelGiamSat.SuspendLayout();
@@ -232,6 +233,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1139, 549);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
             // 
             // tabPageGiamSat
             // 
@@ -308,44 +310,44 @@
             // panel34
             // 
             this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel34.Controls.Add(this.button12);
+            this.panel34.Controls.Add(this.ThoiGianGiu1);
             this.panel34.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel34.Location = new System.Drawing.Point(189, 371);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(181, 89);
             this.panel34.TabIndex = 9;
             // 
-            // button12
+            // ThoiGianGiu1
             // 
-            this.button12.BackColor = System.Drawing.SystemColors.Control;
-            this.button12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button12.Location = new System.Drawing.Point(0, 0);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(179, 87);
-            this.button12.TabIndex = 3;
-            this.button12.UseVisualStyleBackColor = false;
+            this.ThoiGianGiu1.BackColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianGiu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianGiu1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ThoiGianGiu1.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianGiu1.Name = "ThoiGianGiu1";
+            this.ThoiGianGiu1.Size = new System.Drawing.Size(179, 87);
+            this.ThoiGianGiu1.TabIndex = 3;
+            this.ThoiGianGiu1.UseVisualStyleBackColor = false;
             // 
             // panel35
             // 
             this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel35.Controls.Add(this.button13);
+            this.panel35.Controls.Add(this.ThoiGianXa1);
             this.panel35.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel35.Location = new System.Drawing.Point(189, 279);
             this.panel35.Name = "panel35";
             this.panel35.Size = new System.Drawing.Size(181, 86);
             this.panel35.TabIndex = 7;
             // 
-            // button13
+            // ThoiGianXa1
             // 
-            this.button13.BackColor = System.Drawing.SystemColors.Control;
-            this.button13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button13.Location = new System.Drawing.Point(0, 0);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(179, 84);
-            this.button13.TabIndex = 2;
-            this.button13.UseVisualStyleBackColor = false;
+            this.ThoiGianXa1.BackColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianXa1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianXa1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ThoiGianXa1.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianXa1.Name = "ThoiGianXa1";
+            this.ThoiGianXa1.Size = new System.Drawing.Size(179, 84);
+            this.ThoiGianXa1.TabIndex = 2;
+            this.ThoiGianXa1.UseVisualStyleBackColor = false;
             // 
             // panel36
             // 
@@ -366,29 +368,29 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(178, 84);
             this.label14.TabIndex = 3;
-            this.label14.Text = "Thời gian xả : ";
+            this.label14.Text = "Thời gian xả (ms) : ";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel37
             // 
             this.panel37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel37.Controls.Add(this.button14);
+            this.panel37.Controls.Add(this.ThoiGianNen1);
             this.panel37.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel37.Location = new System.Drawing.Point(189, 187);
             this.panel37.Name = "panel37";
             this.panel37.Size = new System.Drawing.Size(181, 86);
             this.panel37.TabIndex = 5;
             // 
-            // button14
+            // ThoiGianNen1
             // 
-            this.button14.BackColor = System.Drawing.SystemColors.Control;
-            this.button14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button14.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button14.Location = new System.Drawing.Point(0, 0);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(179, 84);
-            this.button14.TabIndex = 2;
-            this.button14.UseVisualStyleBackColor = false;
+            this.ThoiGianNen1.BackColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianNen1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianNen1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ThoiGianNen1.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianNen1.Name = "ThoiGianNen1";
+            this.ThoiGianNen1.Size = new System.Drawing.Size(179, 84);
+            this.ThoiGianNen1.TabIndex = 2;
+            this.ThoiGianNen1.UseVisualStyleBackColor = false;
             // 
             // panel38
             // 
@@ -409,29 +411,29 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(178, 84);
             this.label15.TabIndex = 3;
-            this.label15.Text = "Thời gian nén : ";
+            this.label15.Text = "Thời gian nén (ms) : ";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel39
             // 
             this.panel39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel39.Controls.Add(this.button15);
+            this.panel39.Controls.Add(this.ApSuatTest1);
             this.panel39.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel39.Location = new System.Drawing.Point(189, 95);
             this.panel39.Name = "panel39";
             this.panel39.Size = new System.Drawing.Size(181, 86);
             this.panel39.TabIndex = 3;
             // 
-            // button15
+            // ApSuatTest1
             // 
-            this.button15.BackColor = System.Drawing.SystemColors.Control;
-            this.button15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button15.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button15.Location = new System.Drawing.Point(0, 0);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(179, 84);
-            this.button15.TabIndex = 2;
-            this.button15.UseVisualStyleBackColor = false;
+            this.ApSuatTest1.BackColor = System.Drawing.SystemColors.Control;
+            this.ApSuatTest1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ApSuatTest1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ApSuatTest1.Location = new System.Drawing.Point(0, 0);
+            this.ApSuatTest1.Name = "ApSuatTest1";
+            this.ApSuatTest1.Size = new System.Drawing.Size(179, 84);
+            this.ApSuatTest1.TabIndex = 2;
+            this.ApSuatTest1.UseVisualStyleBackColor = false;
             // 
             // panel40
             // 
@@ -458,23 +460,23 @@
             // panel41
             // 
             this.panel41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel41.Controls.Add(this.button16);
+            this.panel41.Controls.Add(this.SoLanTestJig1);
             this.panel41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel41.Location = new System.Drawing.Point(189, 3);
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(181, 86);
             this.panel41.TabIndex = 1;
             // 
-            // button16
+            // SoLanTestJig1
             // 
-            this.button16.BackColor = System.Drawing.SystemColors.Control;
-            this.button16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button16.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button16.Location = new System.Drawing.Point(0, 0);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(179, 84);
-            this.button16.TabIndex = 2;
-            this.button16.UseVisualStyleBackColor = false;
+            this.SoLanTestJig1.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig1.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig1.Name = "SoLanTestJig1";
+            this.SoLanTestJig1.Size = new System.Drawing.Size(179, 84);
+            this.SoLanTestJig1.TabIndex = 2;
+            this.SoLanTestJig1.UseVisualStyleBackColor = false;
             // 
             // panel42
             // 
@@ -517,7 +519,7 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(178, 87);
             this.label18.TabIndex = 4;
-            this.label18.Text = "Thời gian giữ : ";
+            this.label18.Text = "Thời gian giữ (ms) : ";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel44
@@ -596,44 +598,44 @@
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.button2);
+            this.panel6.Controls.Add(this.ThoiGianGiu2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(189, 371);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(181, 89);
             this.panel6.TabIndex = 9;
             // 
-            // button2
+            // ThoiGianGiu2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(179, 87);
-            this.button2.TabIndex = 3;
-            this.button2.UseVisualStyleBackColor = false;
+            this.ThoiGianGiu2.BackColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianGiu2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianGiu2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ThoiGianGiu2.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianGiu2.Name = "ThoiGianGiu2";
+            this.ThoiGianGiu2.Size = new System.Drawing.Size(179, 87);
+            this.ThoiGianGiu2.TabIndex = 3;
+            this.ThoiGianGiu2.UseVisualStyleBackColor = false;
             // 
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.button3);
+            this.panel7.Controls.Add(this.ThoiGianXa2);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(189, 279);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(181, 86);
             this.panel7.TabIndex = 7;
             // 
-            // button3
+            // ThoiGianXa2
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Control;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(0, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(179, 84);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = false;
+            this.ThoiGianXa2.BackColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianXa2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianXa2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ThoiGianXa2.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianXa2.Name = "ThoiGianXa2";
+            this.ThoiGianXa2.Size = new System.Drawing.Size(179, 84);
+            this.ThoiGianXa2.TabIndex = 2;
+            this.ThoiGianXa2.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
@@ -653,30 +655,30 @@
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(178, 84);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Thời gian xả : ";
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Thời gian xả (ms) : ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel9
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.button4);
+            this.panel9.Controls.Add(this.ThoiGianNen2);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(189, 187);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(181, 86);
             this.panel9.TabIndex = 5;
             // 
-            // button4
+            // ThoiGianNen2
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.Control;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(0, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(179, 84);
-            this.button4.TabIndex = 2;
-            this.button4.UseVisualStyleBackColor = false;
+            this.ThoiGianNen2.BackColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianNen2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianNen2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ThoiGianNen2.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianNen2.Name = "ThoiGianNen2";
+            this.ThoiGianNen2.Size = new System.Drawing.Size(179, 84);
+            this.ThoiGianNen2.TabIndex = 2;
+            this.ThoiGianNen2.UseVisualStyleBackColor = false;
             // 
             // panel10
             // 
@@ -696,30 +698,30 @@
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(178, 84);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Thời gian nén : ";
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Thời gian nén (ms) : ";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.button6);
+            this.panel11.Controls.Add(this.ApSuatTest2);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(189, 95);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(181, 86);
             this.panel11.TabIndex = 3;
             // 
-            // button6
+            // ApSuatTest2
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.Control;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button6.Location = new System.Drawing.Point(0, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(179, 84);
-            this.button6.TabIndex = 2;
-            this.button6.UseVisualStyleBackColor = false;
+            this.ApSuatTest2.BackColor = System.Drawing.SystemColors.Control;
+            this.ApSuatTest2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ApSuatTest2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ApSuatTest2.Location = new System.Drawing.Point(0, 0);
+            this.ApSuatTest2.Name = "ApSuatTest2";
+            this.ApSuatTest2.Size = new System.Drawing.Size(179, 84);
+            this.ApSuatTest2.TabIndex = 2;
+            this.ApSuatTest2.UseVisualStyleBackColor = false;
             // 
             // panel12
             // 
@@ -746,23 +748,23 @@
             // panel17
             // 
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Controls.Add(this.button11);
+            this.panel17.Controls.Add(this.SoLanTestJig2);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel17.Location = new System.Drawing.Point(189, 3);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(181, 86);
             this.panel17.TabIndex = 1;
             // 
-            // button11
+            // SoLanTestJig2
             // 
-            this.button11.BackColor = System.Drawing.SystemColors.Control;
-            this.button11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button11.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button11.Location = new System.Drawing.Point(0, 0);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(179, 84);
-            this.button11.TabIndex = 2;
-            this.button11.UseVisualStyleBackColor = false;
+            this.SoLanTestJig2.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig2.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig2.Name = "SoLanTestJig2";
+            this.SoLanTestJig2.Size = new System.Drawing.Size(179, 84);
+            this.SoLanTestJig2.TabIndex = 2;
+            this.SoLanTestJig2.UseVisualStyleBackColor = false;
             // 
             // panel18
             // 
@@ -804,8 +806,8 @@
             this.label7.Location = new System.Drawing.Point(0, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(178, 87);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Thời gian giữ : ";
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Thời gian giữ (ms) : ";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel20
@@ -884,44 +886,44 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.ThoiGianGiu1va2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(189, 371);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(181, 89);
             this.panel3.TabIndex = 9;
             // 
-            // button1
+            // ThoiGianGiu1va2
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(179, 87);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = false;
+            this.ThoiGianGiu1va2.BackColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianGiu1va2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianGiu1va2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ThoiGianGiu1va2.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianGiu1va2.Name = "ThoiGianGiu1va2";
+            this.ThoiGianGiu1va2.Size = new System.Drawing.Size(179, 87);
+            this.ThoiGianGiu1va2.TabIndex = 3;
+            this.ThoiGianGiu1va2.UseVisualStyleBackColor = false;
             // 
             // panel23
             // 
             this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel23.Controls.Add(this.button7);
+            this.panel23.Controls.Add(this.ThoiGianXa1va2);
             this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel23.Location = new System.Drawing.Point(189, 279);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(181, 86);
             this.panel23.TabIndex = 7;
             // 
-            // button7
+            // ThoiGianXa1va2
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.Control;
-            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button7.Location = new System.Drawing.Point(0, 0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(179, 84);
-            this.button7.TabIndex = 2;
-            this.button7.UseVisualStyleBackColor = false;
+            this.ThoiGianXa1va2.BackColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianXa1va2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianXa1va2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ThoiGianXa1va2.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianXa1va2.Name = "ThoiGianXa1va2";
+            this.ThoiGianXa1va2.Size = new System.Drawing.Size(179, 84);
+            this.ThoiGianXa1va2.TabIndex = 2;
+            this.ThoiGianXa1va2.UseVisualStyleBackColor = false;
             // 
             // panel24
             // 
@@ -941,30 +943,30 @@
             this.label8.Location = new System.Drawing.Point(0, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(178, 84);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Thời gian xả : ";
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Thời gian xả (ms) : ";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel25
             // 
             this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel25.Controls.Add(this.button8);
+            this.panel25.Controls.Add(this.ThoiGianNen1va2);
             this.panel25.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel25.Location = new System.Drawing.Point(189, 187);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(181, 86);
             this.panel25.TabIndex = 5;
             // 
-            // button8
+            // ThoiGianNen1va2
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.Control;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button8.Location = new System.Drawing.Point(0, 0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(179, 84);
-            this.button8.TabIndex = 2;
-            this.button8.UseVisualStyleBackColor = false;
+            this.ThoiGianNen1va2.BackColor = System.Drawing.SystemColors.Control;
+            this.ThoiGianNen1va2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThoiGianNen1va2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ThoiGianNen1va2.Location = new System.Drawing.Point(0, 0);
+            this.ThoiGianNen1va2.Name = "ThoiGianNen1va2";
+            this.ThoiGianNen1va2.Size = new System.Drawing.Size(179, 84);
+            this.ThoiGianNen1va2.TabIndex = 2;
+            this.ThoiGianNen1va2.UseVisualStyleBackColor = false;
             // 
             // panel26
             // 
@@ -984,30 +986,30 @@
             this.label9.Location = new System.Drawing.Point(0, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(178, 84);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Thời gian nén : ";
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Thời gian nén (ms) : ";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel27
             // 
             this.panel27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel27.Controls.Add(this.button9);
+            this.panel27.Controls.Add(this.ApSuatTest1va2);
             this.panel27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel27.Location = new System.Drawing.Point(189, 95);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(181, 86);
             this.panel27.TabIndex = 3;
             // 
-            // button9
+            // ApSuatTest1va2
             // 
-            this.button9.BackColor = System.Drawing.SystemColors.Control;
-            this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button9.Location = new System.Drawing.Point(0, 0);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(179, 84);
-            this.button9.TabIndex = 2;
-            this.button9.UseVisualStyleBackColor = false;
+            this.ApSuatTest1va2.BackColor = System.Drawing.SystemColors.Control;
+            this.ApSuatTest1va2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ApSuatTest1va2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ApSuatTest1va2.Location = new System.Drawing.Point(0, 0);
+            this.ApSuatTest1va2.Name = "ApSuatTest1va2";
+            this.ApSuatTest1va2.Size = new System.Drawing.Size(179, 84);
+            this.ApSuatTest1va2.TabIndex = 2;
+            this.ApSuatTest1va2.UseVisualStyleBackColor = false;
             // 
             // panel28
             // 
@@ -1034,23 +1036,23 @@
             // panel29
             // 
             this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel29.Controls.Add(this.button10);
+            this.panel29.Controls.Add(this.SoLanTestJig1va2);
             this.panel29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel29.Location = new System.Drawing.Point(189, 3);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(181, 86);
             this.panel29.TabIndex = 1;
             // 
-            // button10
+            // SoLanTestJig1va2
             // 
-            this.button10.BackColor = System.Drawing.SystemColors.Control;
-            this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button10.Location = new System.Drawing.Point(0, 0);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(179, 84);
-            this.button10.TabIndex = 2;
-            this.button10.UseVisualStyleBackColor = false;
+            this.SoLanTestJig1va2.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestJig1va2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestJig1va2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestJig1va2.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestJig1va2.Name = "SoLanTestJig1va2";
+            this.SoLanTestJig1va2.Size = new System.Drawing.Size(179, 84);
+            this.SoLanTestJig1va2.TabIndex = 2;
+            this.SoLanTestJig1va2.UseVisualStyleBackColor = false;
             // 
             // panel30
             // 
@@ -1092,8 +1094,8 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(178, 87);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Thời gian giữ : ";
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Thời gian giữ (ms) : ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel31
@@ -1693,6 +1695,10 @@
             this.label34.Text = "Thời gian : ";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // LoiLoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1791,21 +1797,21 @@
         private Panel panel33;
         private TableLayoutPanel tableLayoutPanel3;
         private Panel panel34;
-        private Button button12;
+        private Button ThoiGianGiu1;
         private Panel panel35;
-        private Button button13;
+        private Button ThoiGianXa1;
         private Panel panel36;
         private Label label14;
         private Panel panel37;
-        private Button button14;
+        private Button ThoiGianNen1;
         private Panel panel38;
         private Label label15;
         private Panel panel39;
-        private Button button15;
+        private Button ApSuatTest1;
         private Panel panel40;
         private Label label16;
         private Panel panel41;
-        private Button button16;
+        private Button SoLanTestJig1;
         private Panel panel42;
         private Label label17;
         private Panel panel43;
@@ -1816,50 +1822,44 @@
         private Panel panel5;
         private TableLayoutPanel tableLayoutPanel1;
         private Panel panel6;
-        private Button button2;
+        private Button ThoiGianGiu2;
         private Panel panel7;
-        private Button button3;
+        private Button ThoiGianXa2;
         private Panel panel8;
-        private Label label2;
         private Panel panel9;
-        private Button button4;
+        private Button ThoiGianNen2;
         private Panel panel10;
-        private Label label3;
         private Panel panel11;
-        private Button button6;
+        private Button ApSuatTest2;
         private Panel panel12;
         private Label label4;
         private Panel panel17;
-        private Button button11;
+        private Button SoLanTestJig2;
         private Panel panel18;
         private Label label5;
         private Panel panel19;
-        private Label label7;
         private Panel panel20;
         private Label label13;
         private Panel panel21;
         private Panel panel22;
         private TableLayoutPanel tableLayoutPanel4;
         private Panel panel3;
-        private Button button1;
+        private Button ThoiGianGiu1va2;
         private Panel panel23;
-        private Button button7;
+        private Button ThoiGianXa1va2;
         private Panel panel24;
-        private Label label8;
         private Panel panel25;
-        private Button button8;
+        private Button ThoiGianNen1va2;
         private Panel panel26;
-        private Label label9;
         private Panel panel27;
-        private Button button9;
+        private Button ApSuatTest1va2;
         private Panel panel28;
         private Label label10;
         private Panel panel29;
-        private Button button10;
+        private Button SoLanTestJig1va2;
         private Panel panel30;
         private Label label11;
         private Panel panel1;
-        private Label label1;
         private Panel panel31;
         private Label label12;
         private Panel panel13;
@@ -1900,5 +1900,12 @@
         private Label label22;
         private Panel panel53;
         private Label lbTotalPages;
+        private Label label2;
+        private Label label3;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
