@@ -1,4 +1,5 @@
-﻿using PROFINET_STEP_7.Profinet;
+﻿using ManagementSoftware.Models;
+using PROFINET_STEP_7.Profinet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,10 @@ namespace ManagementSoftware.PLCSetting
         public bool isConnected { get; set; }
         public static ExceptionCode errCode;
 
-        public string plcName = "PLC Jig Bầu Nóng";
+        public string plcName = "PLC Nguồn";
         public string message { get; set; } = "";
 
+        public List<Nguon> listNguon { get; set; }
         public PLCNguon()
         {
             string ip = "192.168.0.17";
@@ -71,8 +73,34 @@ namespace ManagementSoftware.PLCSetting
 
         public void GetData()
         {
+            listNguon = new List<Nguon>();
+            string db = "DB100.";
+            int dienApCSAddr = 0;
+            int dongDienCSAddr = 120;
+            int congSuatCSAddr = 240;
+            int timeAddr = 360;
+            int soLanTestAddr = 480;
 
 
+            for (int i = 0; i <= 29; i++)
+            {
+                Nguon nguon = new Nguon();
+                nguon.DienApDC = Math.Round(PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, dienApCSAddr, 4))), 2, MidpointRounding.AwayFromZero);
+                nguon.DongDC = Math.Round(PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, dongDienCSAddr, 4))), 2, MidpointRounding.AwayFromZero);
+                nguon.CongSuat = Math.Round(PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, congSuatCSAddr, 4))), 2, MidpointRounding.AwayFromZero);
+                nguon.ThoiGianTest = (uint)plc.Read(db + "DBD" + timeAddr);
+                nguon.SoLanTest = (ushort)plc.Read(db + "DBW" + soLanTestAddr);
+                
+
+                nguon.NguonName = "Nguồn " + (i + 1);
+                dienApCSAddr += 4;
+                dongDienCSAddr += 4;
+                congSuatCSAddr += 4;
+                timeAddr += 4;
+                soLanTestAddr += 2;
+
+                listNguon.Add(nguon);
+            }
         }
     }
 }

@@ -872,7 +872,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(172, 20);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Dòng DC";
+            this.label3.Text = "Dòng DC (A)";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel187
@@ -894,7 +894,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(172, 20);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Điện Áp DC";
+            this.label4.Text = "Điện Áp DC (V)";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel186
@@ -916,7 +916,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(172, 20);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Công suất";
+            this.label5.Text = "Công suất (W)";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel185
@@ -938,7 +938,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(172, 20);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Thời gian test";
+            this.label6.Text = "Thời gian test (s)";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel184

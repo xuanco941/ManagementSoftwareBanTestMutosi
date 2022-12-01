@@ -17,8 +17,8 @@ namespace ManagementSoftware.Models
         public double DongDC { get; set; }
         public double DienApDC { get; set; }
         public double CongSuat { get; set; }
-        public double ThoiGianTest { get; set; }
-        public int SoLanTest { get; set; }
+        public uint ThoiGianTest { get; set; }
+        public ushort SoLanTest { get; set; }
         public int TestNguonID { get; set; }
         public TestNguon TestNguon { get; set; }
     }

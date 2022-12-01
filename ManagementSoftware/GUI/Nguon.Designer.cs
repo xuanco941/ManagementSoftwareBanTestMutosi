@@ -36,21 +36,21 @@
             this.panel135 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.panel136 = new System.Windows.Forms.Panel();
-            this.button52 = new System.Windows.Forms.Button();
+            this.SoLanTest1 = new System.Windows.Forms.Button();
             this.panel137 = new System.Windows.Forms.Panel();
-            this.button53 = new System.Windows.Forms.Button();
+            this.timeTest1 = new System.Windows.Forms.Button();
             this.panel138 = new System.Windows.Forms.Panel();
             this.label62 = new System.Windows.Forms.Label();
             this.panel139 = new System.Windows.Forms.Panel();
-            this.button54 = new System.Windows.Forms.Button();
+            this.CongSuat1 = new System.Windows.Forms.Button();
             this.panel140 = new System.Windows.Forms.Panel();
             this.label63 = new System.Windows.Forms.Label();
             this.panel141 = new System.Windows.Forms.Panel();
-            this.button55 = new System.Windows.Forms.Button();
+            this.DienApDC1 = new System.Windows.Forms.Button();
             this.panel142 = new System.Windows.Forms.Panel();
             this.label64 = new System.Windows.Forms.Label();
             this.panel143 = new System.Windows.Forms.Panel();
-            this.button56 = new System.Windows.Forms.Button();
+            this.DongDC1 = new System.Windows.Forms.Button();
             this.panel144 = new System.Windows.Forms.Panel();
             this.label65 = new System.Windows.Forms.Label();
             this.panel145 = new System.Windows.Forms.Panel();
@@ -61,21 +61,21 @@
             this.panel148 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.panel149 = new System.Windows.Forms.Panel();
-            this.button57 = new System.Windows.Forms.Button();
+            this.SoLanTest2 = new System.Windows.Forms.Button();
             this.panel150 = new System.Windows.Forms.Panel();
-            this.button58 = new System.Windows.Forms.Button();
+            this.timeTest2 = new System.Windows.Forms.Button();
             this.panel151 = new System.Windows.Forms.Panel();
             this.label68 = new System.Windows.Forms.Label();
             this.panel152 = new System.Windows.Forms.Panel();
-            this.button59 = new System.Windows.Forms.Button();
+            this.CongSuat2 = new System.Windows.Forms.Button();
             this.panel153 = new System.Windows.Forms.Panel();
             this.label69 = new System.Windows.Forms.Label();
             this.panel154 = new System.Windows.Forms.Panel();
-            this.button60 = new System.Windows.Forms.Button();
+            this.DienApDC2 = new System.Windows.Forms.Button();
             this.panel155 = new System.Windows.Forms.Panel();
             this.label70 = new System.Windows.Forms.Label();
             this.panel156 = new System.Windows.Forms.Panel();
-            this.button61 = new System.Windows.Forms.Button();
+            this.DongDC2 = new System.Windows.Forms.Button();
             this.panel157 = new System.Windows.Forms.Panel();
             this.label71 = new System.Windows.Forms.Label();
             this.panel158 = new System.Windows.Forms.Panel();
@@ -86,21 +86,21 @@
             this.panel161 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.panel162 = new System.Windows.Forms.Panel();
-            this.button62 = new System.Windows.Forms.Button();
+            this.SoLanTest3 = new System.Windows.Forms.Button();
             this.panel163 = new System.Windows.Forms.Panel();
-            this.button63 = new System.Windows.Forms.Button();
+            this.timeTest3 = new System.Windows.Forms.Button();
             this.panel164 = new System.Windows.Forms.Panel();
             this.label74 = new System.Windows.Forms.Label();
             this.panel165 = new System.Windows.Forms.Panel();
-            this.button64 = new System.Windows.Forms.Button();
+            this.CongSuat3 = new System.Windows.Forms.Button();
             this.panel166 = new System.Windows.Forms.Panel();
             this.label75 = new System.Windows.Forms.Label();
             this.panel167 = new System.Windows.Forms.Panel();
-            this.button65 = new System.Windows.Forms.Button();
+            this.DienApDC3 = new System.Windows.Forms.Button();
             this.panel168 = new System.Windows.Forms.Panel();
             this.label76 = new System.Windows.Forms.Label();
             this.panel169 = new System.Windows.Forms.Panel();
-            this.button66 = new System.Windows.Forms.Button();
+            this.DongDC3 = new System.Windows.Forms.Button();
             this.panel170 = new System.Windows.Forms.Panel();
             this.label77 = new System.Windows.Forms.Label();
             this.panel171 = new System.Windows.Forms.Panel();
@@ -111,21 +111,21 @@
             this.panel174 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.panel175 = new System.Windows.Forms.Panel();
-            this.button67 = new System.Windows.Forms.Button();
+            this.SoLanTest4 = new System.Windows.Forms.Button();
             this.panel176 = new System.Windows.Forms.Panel();
-            this.button68 = new System.Windows.Forms.Button();
+            this.timeTest4 = new System.Windows.Forms.Button();
             this.panel177 = new System.Windows.Forms.Panel();
             this.label80 = new System.Windows.Forms.Label();
             this.panel178 = new System.Windows.Forms.Panel();
-            this.button69 = new System.Windows.Forms.Button();
+            this.CongSuat4 = new System.Windows.Forms.Button();
             this.panel179 = new System.Windows.Forms.Panel();
             this.label81 = new System.Windows.Forms.Label();
             this.panel180 = new System.Windows.Forms.Panel();
-            this.button70 = new System.Windows.Forms.Button();
+            this.DienApDC4 = new System.Windows.Forms.Button();
             this.panel181 = new System.Windows.Forms.Panel();
             this.label82 = new System.Windows.Forms.Label();
             this.panel182 = new System.Windows.Forms.Panel();
-            this.button71 = new System.Windows.Forms.Button();
+            this.DongDC4 = new System.Windows.Forms.Button();
             this.panel183 = new System.Windows.Forms.Panel();
             this.label83 = new System.Windows.Forms.Label();
             this.panel184 = new System.Windows.Forms.Panel();
@@ -136,21 +136,21 @@
             this.panel187 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.panel188 = new System.Windows.Forms.Panel();
-            this.button72 = new System.Windows.Forms.Button();
+            this.SoLanTest5 = new System.Windows.Forms.Button();
             this.panel189 = new System.Windows.Forms.Panel();
-            this.button73 = new System.Windows.Forms.Button();
+            this.timeTest5 = new System.Windows.Forms.Button();
             this.panel190 = new System.Windows.Forms.Panel();
             this.label86 = new System.Windows.Forms.Label();
             this.panel191 = new System.Windows.Forms.Panel();
-            this.button74 = new System.Windows.Forms.Button();
+            this.CongSuat5 = new System.Windows.Forms.Button();
             this.panel192 = new System.Windows.Forms.Panel();
             this.label87 = new System.Windows.Forms.Label();
             this.panel193 = new System.Windows.Forms.Panel();
-            this.button75 = new System.Windows.Forms.Button();
+            this.DienApDC5 = new System.Windows.Forms.Button();
             this.panel194 = new System.Windows.Forms.Panel();
             this.label88 = new System.Windows.Forms.Label();
             this.panel195 = new System.Windows.Forms.Panel();
-            this.button76 = new System.Windows.Forms.Button();
+            this.DongDC5 = new System.Windows.Forms.Button();
             this.panel196 = new System.Windows.Forms.Panel();
             this.label89 = new System.Windows.Forms.Label();
             this.panel197 = new System.Windows.Forms.Panel();
@@ -161,21 +161,21 @@
             this.panel70 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.panel71 = new System.Windows.Forms.Panel();
-            this.button27 = new System.Windows.Forms.Button();
+            this.SoLanTest6 = new System.Windows.Forms.Button();
             this.panel72 = new System.Windows.Forms.Panel();
-            this.button28 = new System.Windows.Forms.Button();
+            this.timeTest6 = new System.Windows.Forms.Button();
             this.panel73 = new System.Windows.Forms.Panel();
             this.label32 = new System.Windows.Forms.Label();
             this.panel74 = new System.Windows.Forms.Panel();
-            this.button29 = new System.Windows.Forms.Button();
+            this.CongSuat6 = new System.Windows.Forms.Button();
             this.panel75 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.panel76 = new System.Windows.Forms.Panel();
-            this.button30 = new System.Windows.Forms.Button();
+            this.DienApDC6 = new System.Windows.Forms.Button();
             this.panel77 = new System.Windows.Forms.Panel();
             this.label34 = new System.Windows.Forms.Label();
             this.panel78 = new System.Windows.Forms.Panel();
-            this.button31 = new System.Windows.Forms.Button();
+            this.DongDC6 = new System.Windows.Forms.Button();
             this.panel79 = new System.Windows.Forms.Panel();
             this.label35 = new System.Windows.Forms.Label();
             this.panel80 = new System.Windows.Forms.Panel();
@@ -186,21 +186,21 @@
             this.panel83 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.panel84 = new System.Windows.Forms.Panel();
-            this.button32 = new System.Windows.Forms.Button();
+            this.SoLanTest7 = new System.Windows.Forms.Button();
             this.panel85 = new System.Windows.Forms.Panel();
-            this.button33 = new System.Windows.Forms.Button();
+            this.timeTest7 = new System.Windows.Forms.Button();
             this.panel86 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
             this.panel87 = new System.Windows.Forms.Panel();
-            this.button34 = new System.Windows.Forms.Button();
+            this.CongSuat7 = new System.Windows.Forms.Button();
             this.panel88 = new System.Windows.Forms.Panel();
             this.label39 = new System.Windows.Forms.Label();
             this.panel89 = new System.Windows.Forms.Panel();
-            this.button35 = new System.Windows.Forms.Button();
+            this.DienApDC7 = new System.Windows.Forms.Button();
             this.panel90 = new System.Windows.Forms.Panel();
             this.label40 = new System.Windows.Forms.Label();
             this.panel91 = new System.Windows.Forms.Panel();
-            this.button36 = new System.Windows.Forms.Button();
+            this.DongDC7 = new System.Windows.Forms.Button();
             this.panel92 = new System.Windows.Forms.Panel();
             this.label41 = new System.Windows.Forms.Label();
             this.panel93 = new System.Windows.Forms.Panel();
@@ -211,21 +211,21 @@
             this.panel96 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.panel97 = new System.Windows.Forms.Panel();
-            this.button37 = new System.Windows.Forms.Button();
+            this.SoLanTest8 = new System.Windows.Forms.Button();
             this.panel98 = new System.Windows.Forms.Panel();
-            this.button38 = new System.Windows.Forms.Button();
+            this.timeTest8 = new System.Windows.Forms.Button();
             this.panel99 = new System.Windows.Forms.Panel();
             this.label44 = new System.Windows.Forms.Label();
             this.panel100 = new System.Windows.Forms.Panel();
-            this.button39 = new System.Windows.Forms.Button();
+            this.CongSuat8 = new System.Windows.Forms.Button();
             this.panel101 = new System.Windows.Forms.Panel();
             this.label45 = new System.Windows.Forms.Label();
             this.panel102 = new System.Windows.Forms.Panel();
-            this.button40 = new System.Windows.Forms.Button();
+            this.DienApDC8 = new System.Windows.Forms.Button();
             this.panel103 = new System.Windows.Forms.Panel();
             this.label46 = new System.Windows.Forms.Label();
             this.panel104 = new System.Windows.Forms.Panel();
-            this.button41 = new System.Windows.Forms.Button();
+            this.DongDC8 = new System.Windows.Forms.Button();
             this.panel105 = new System.Windows.Forms.Panel();
             this.label47 = new System.Windows.Forms.Label();
             this.panel106 = new System.Windows.Forms.Panel();
@@ -236,21 +236,21 @@
             this.panel109 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.panel110 = new System.Windows.Forms.Panel();
-            this.button42 = new System.Windows.Forms.Button();
+            this.SoLanTest9 = new System.Windows.Forms.Button();
             this.panel111 = new System.Windows.Forms.Panel();
-            this.button43 = new System.Windows.Forms.Button();
+            this.timeTest9 = new System.Windows.Forms.Button();
             this.panel112 = new System.Windows.Forms.Panel();
             this.label50 = new System.Windows.Forms.Label();
             this.panel113 = new System.Windows.Forms.Panel();
-            this.button44 = new System.Windows.Forms.Button();
+            this.CongSuat9 = new System.Windows.Forms.Button();
             this.panel114 = new System.Windows.Forms.Panel();
             this.label51 = new System.Windows.Forms.Label();
             this.panel115 = new System.Windows.Forms.Panel();
-            this.button45 = new System.Windows.Forms.Button();
+            this.DienApDC9 = new System.Windows.Forms.Button();
             this.panel116 = new System.Windows.Forms.Panel();
             this.label52 = new System.Windows.Forms.Label();
             this.panel117 = new System.Windows.Forms.Panel();
-            this.button46 = new System.Windows.Forms.Button();
+            this.DongDC9 = new System.Windows.Forms.Button();
             this.panel118 = new System.Windows.Forms.Panel();
             this.label53 = new System.Windows.Forms.Label();
             this.panel119 = new System.Windows.Forms.Panel();
@@ -261,21 +261,21 @@
             this.panel122 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.panel123 = new System.Windows.Forms.Panel();
-            this.button47 = new System.Windows.Forms.Button();
+            this.SoLanTest10 = new System.Windows.Forms.Button();
             this.panel124 = new System.Windows.Forms.Panel();
-            this.button48 = new System.Windows.Forms.Button();
+            this.timeTest10 = new System.Windows.Forms.Button();
             this.panel125 = new System.Windows.Forms.Panel();
             this.label56 = new System.Windows.Forms.Label();
             this.panel126 = new System.Windows.Forms.Panel();
-            this.button49 = new System.Windows.Forms.Button();
+            this.CongSuat10 = new System.Windows.Forms.Button();
             this.panel127 = new System.Windows.Forms.Panel();
             this.label57 = new System.Windows.Forms.Label();
             this.panel128 = new System.Windows.Forms.Panel();
-            this.button50 = new System.Windows.Forms.Button();
+            this.DienApDC10 = new System.Windows.Forms.Button();
             this.panel129 = new System.Windows.Forms.Panel();
             this.label58 = new System.Windows.Forms.Label();
             this.panel130 = new System.Windows.Forms.Panel();
-            this.button51 = new System.Windows.Forms.Button();
+            this.DongDC10 = new System.Windows.Forms.Button();
             this.panel131 = new System.Windows.Forms.Panel();
             this.label59 = new System.Windows.Forms.Label();
             this.panel132 = new System.Windows.Forms.Panel();
@@ -286,21 +286,21 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.SoLanTest11 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.timeTest11 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.CongSuat11 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.DienApDC11 = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.DongDC11 = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
@@ -311,21 +311,21 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
+            this.SoLanTest12 = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.timeTest12 = new System.Windows.Forms.Button();
             this.panel21 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
+            this.CongSuat12 = new System.Windows.Forms.Button();
             this.panel23 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
+            this.DienApDC12 = new System.Windows.Forms.Button();
             this.panel25 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel26 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
+            this.DongDC12 = new System.Windows.Forms.Button();
             this.panel27 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.panel28 = new System.Windows.Forms.Panel();
@@ -336,21 +336,21 @@
             this.panel31 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel32 = new System.Windows.Forms.Panel();
-            this.button12 = new System.Windows.Forms.Button();
+            this.SoLanTest13 = new System.Windows.Forms.Button();
             this.panel33 = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
+            this.timeTest13 = new System.Windows.Forms.Button();
             this.panel34 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.panel35 = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
+            this.CongSuat13 = new System.Windows.Forms.Button();
             this.panel36 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.panel37 = new System.Windows.Forms.Panel();
-            this.button15 = new System.Windows.Forms.Button();
+            this.DienApDC13 = new System.Windows.Forms.Button();
             this.panel38 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.panel39 = new System.Windows.Forms.Panel();
-            this.button16 = new System.Windows.Forms.Button();
+            this.DongDC13 = new System.Windows.Forms.Button();
             this.panel40 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.panel41 = new System.Windows.Forms.Panel();
@@ -361,21 +361,21 @@
             this.panel44 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel45 = new System.Windows.Forms.Panel();
-            this.button17 = new System.Windows.Forms.Button();
+            this.SoLanTest14 = new System.Windows.Forms.Button();
             this.panel46 = new System.Windows.Forms.Panel();
-            this.button18 = new System.Windows.Forms.Button();
+            this.timeTest14 = new System.Windows.Forms.Button();
             this.panel47 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.panel48 = new System.Windows.Forms.Panel();
-            this.button19 = new System.Windows.Forms.Button();
+            this.CongSuat14 = new System.Windows.Forms.Button();
             this.panel49 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.panel50 = new System.Windows.Forms.Panel();
-            this.button20 = new System.Windows.Forms.Button();
+            this.DienApDC14 = new System.Windows.Forms.Button();
             this.panel51 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.panel52 = new System.Windows.Forms.Panel();
-            this.button21 = new System.Windows.Forms.Button();
+            this.DongDC14 = new System.Windows.Forms.Button();
             this.panel53 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.panel54 = new System.Windows.Forms.Panel();
@@ -386,21 +386,21 @@
             this.panel57 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.panel58 = new System.Windows.Forms.Panel();
-            this.button22 = new System.Windows.Forms.Button();
+            this.SoLanTest15 = new System.Windows.Forms.Button();
             this.panel59 = new System.Windows.Forms.Panel();
-            this.button23 = new System.Windows.Forms.Button();
+            this.timeTest15 = new System.Windows.Forms.Button();
             this.panel60 = new System.Windows.Forms.Panel();
             this.label26 = new System.Windows.Forms.Label();
             this.panel61 = new System.Windows.Forms.Panel();
-            this.button24 = new System.Windows.Forms.Button();
+            this.CongSuat15 = new System.Windows.Forms.Button();
             this.panel62 = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
             this.panel63 = new System.Windows.Forms.Panel();
-            this.button25 = new System.Windows.Forms.Button();
+            this.DienApDC15 = new System.Windows.Forms.Button();
             this.panel64 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.panel65 = new System.Windows.Forms.Panel();
-            this.button26 = new System.Windows.Forms.Button();
+            this.DongDC15 = new System.Windows.Forms.Button();
             this.panel66 = new System.Windows.Forms.Panel();
             this.label29 = new System.Windows.Forms.Label();
             this.panel67 = new System.Windows.Forms.Panel();
@@ -412,21 +412,21 @@
             this.panel328 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel26 = new System.Windows.Forms.TableLayoutPanel();
             this.panel329 = new System.Windows.Forms.Panel();
-            this.button126 = new System.Windows.Forms.Button();
+            this.SoLanTest16 = new System.Windows.Forms.Button();
             this.panel330 = new System.Windows.Forms.Panel();
-            this.button127 = new System.Windows.Forms.Button();
+            this.timeTest16 = new System.Windows.Forms.Button();
             this.panel331 = new System.Windows.Forms.Panel();
             this.label151 = new System.Windows.Forms.Label();
             this.panel332 = new System.Windows.Forms.Panel();
-            this.button128 = new System.Windows.Forms.Button();
+            this.CongSuat16 = new System.Windows.Forms.Button();
             this.panel333 = new System.Windows.Forms.Panel();
             this.label152 = new System.Windows.Forms.Label();
             this.panel334 = new System.Windows.Forms.Panel();
-            this.button129 = new System.Windows.Forms.Button();
+            this.DienApDC16 = new System.Windows.Forms.Button();
             this.panel335 = new System.Windows.Forms.Panel();
             this.label153 = new System.Windows.Forms.Label();
             this.panel336 = new System.Windows.Forms.Panel();
-            this.button130 = new System.Windows.Forms.Button();
+            this.DongDC16 = new System.Windows.Forms.Button();
             this.panel337 = new System.Windows.Forms.Panel();
             this.label154 = new System.Windows.Forms.Label();
             this.panel338 = new System.Windows.Forms.Panel();
@@ -437,21 +437,21 @@
             this.panel341 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel27 = new System.Windows.Forms.TableLayoutPanel();
             this.panel342 = new System.Windows.Forms.Panel();
-            this.button131 = new System.Windows.Forms.Button();
+            this.SoLanTest17 = new System.Windows.Forms.Button();
             this.panel343 = new System.Windows.Forms.Panel();
-            this.button132 = new System.Windows.Forms.Button();
+            this.timeTest17 = new System.Windows.Forms.Button();
             this.panel344 = new System.Windows.Forms.Panel();
             this.label157 = new System.Windows.Forms.Label();
             this.panel345 = new System.Windows.Forms.Panel();
-            this.button133 = new System.Windows.Forms.Button();
+            this.CongSuat17 = new System.Windows.Forms.Button();
             this.panel346 = new System.Windows.Forms.Panel();
             this.label158 = new System.Windows.Forms.Label();
             this.panel347 = new System.Windows.Forms.Panel();
-            this.button134 = new System.Windows.Forms.Button();
+            this.DienApDC17 = new System.Windows.Forms.Button();
             this.panel348 = new System.Windows.Forms.Panel();
             this.label159 = new System.Windows.Forms.Label();
             this.panel349 = new System.Windows.Forms.Panel();
-            this.button135 = new System.Windows.Forms.Button();
+            this.DongDC17 = new System.Windows.Forms.Button();
             this.panel350 = new System.Windows.Forms.Panel();
             this.label160 = new System.Windows.Forms.Label();
             this.panel351 = new System.Windows.Forms.Panel();
@@ -462,21 +462,21 @@
             this.panel354 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel28 = new System.Windows.Forms.TableLayoutPanel();
             this.panel355 = new System.Windows.Forms.Panel();
-            this.button136 = new System.Windows.Forms.Button();
+            this.SoLanTest18 = new System.Windows.Forms.Button();
             this.panel356 = new System.Windows.Forms.Panel();
-            this.button137 = new System.Windows.Forms.Button();
+            this.timeTest18 = new System.Windows.Forms.Button();
             this.panel357 = new System.Windows.Forms.Panel();
             this.label163 = new System.Windows.Forms.Label();
             this.panel358 = new System.Windows.Forms.Panel();
-            this.button138 = new System.Windows.Forms.Button();
+            this.CongSuat18 = new System.Windows.Forms.Button();
             this.panel359 = new System.Windows.Forms.Panel();
             this.label164 = new System.Windows.Forms.Label();
             this.panel360 = new System.Windows.Forms.Panel();
-            this.button139 = new System.Windows.Forms.Button();
+            this.DienApDC18 = new System.Windows.Forms.Button();
             this.panel361 = new System.Windows.Forms.Panel();
             this.label165 = new System.Windows.Forms.Label();
             this.panel362 = new System.Windows.Forms.Panel();
-            this.button140 = new System.Windows.Forms.Button();
+            this.DongDC18 = new System.Windows.Forms.Button();
             this.panel363 = new System.Windows.Forms.Panel();
             this.label166 = new System.Windows.Forms.Label();
             this.panel364 = new System.Windows.Forms.Panel();
@@ -487,21 +487,21 @@
             this.panel367 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel29 = new System.Windows.Forms.TableLayoutPanel();
             this.panel368 = new System.Windows.Forms.Panel();
-            this.button141 = new System.Windows.Forms.Button();
+            this.SoLanTest19 = new System.Windows.Forms.Button();
             this.panel369 = new System.Windows.Forms.Panel();
-            this.button142 = new System.Windows.Forms.Button();
+            this.timeTest19 = new System.Windows.Forms.Button();
             this.panel370 = new System.Windows.Forms.Panel();
             this.label169 = new System.Windows.Forms.Label();
             this.panel371 = new System.Windows.Forms.Panel();
-            this.button143 = new System.Windows.Forms.Button();
+            this.CongSuat19 = new System.Windows.Forms.Button();
             this.panel372 = new System.Windows.Forms.Panel();
             this.label170 = new System.Windows.Forms.Label();
             this.panel373 = new System.Windows.Forms.Panel();
-            this.button144 = new System.Windows.Forms.Button();
+            this.DienApDC19 = new System.Windows.Forms.Button();
             this.panel374 = new System.Windows.Forms.Panel();
             this.label171 = new System.Windows.Forms.Label();
             this.panel375 = new System.Windows.Forms.Panel();
-            this.button145 = new System.Windows.Forms.Button();
+            this.DongDC19 = new System.Windows.Forms.Button();
             this.panel376 = new System.Windows.Forms.Panel();
             this.label172 = new System.Windows.Forms.Label();
             this.panel377 = new System.Windows.Forms.Panel();
@@ -512,21 +512,21 @@
             this.panel380 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel30 = new System.Windows.Forms.TableLayoutPanel();
             this.panel381 = new System.Windows.Forms.Panel();
-            this.button146 = new System.Windows.Forms.Button();
+            this.SoLanTest20 = new System.Windows.Forms.Button();
             this.panel382 = new System.Windows.Forms.Panel();
-            this.button147 = new System.Windows.Forms.Button();
+            this.timeTest20 = new System.Windows.Forms.Button();
             this.panel383 = new System.Windows.Forms.Panel();
             this.label175 = new System.Windows.Forms.Label();
             this.panel384 = new System.Windows.Forms.Panel();
-            this.button148 = new System.Windows.Forms.Button();
+            this.CongSuat20 = new System.Windows.Forms.Button();
             this.panel385 = new System.Windows.Forms.Panel();
             this.label176 = new System.Windows.Forms.Label();
             this.panel386 = new System.Windows.Forms.Panel();
-            this.button149 = new System.Windows.Forms.Button();
+            this.DienApDC20 = new System.Windows.Forms.Button();
             this.panel387 = new System.Windows.Forms.Panel();
             this.label177 = new System.Windows.Forms.Label();
             this.panel388 = new System.Windows.Forms.Panel();
-            this.button150 = new System.Windows.Forms.Button();
+            this.DongDC20 = new System.Windows.Forms.Button();
             this.panel389 = new System.Windows.Forms.Panel();
             this.label178 = new System.Windows.Forms.Label();
             this.panel390 = new System.Windows.Forms.Panel();
@@ -537,21 +537,21 @@
             this.panel250 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
             this.panel264 = new System.Windows.Forms.Panel();
-            this.button96 = new System.Windows.Forms.Button();
+            this.SoLanTest21 = new System.Windows.Forms.Button();
             this.panel265 = new System.Windows.Forms.Panel();
-            this.button102 = new System.Windows.Forms.Button();
+            this.timeTest21 = new System.Windows.Forms.Button();
             this.panel266 = new System.Windows.Forms.Panel();
             this.label115 = new System.Windows.Forms.Label();
             this.panel267 = new System.Windows.Forms.Panel();
-            this.button103 = new System.Windows.Forms.Button();
+            this.CongSuat21 = new System.Windows.Forms.Button();
             this.panel268 = new System.Windows.Forms.Panel();
             this.label122 = new System.Windows.Forms.Label();
             this.panel269 = new System.Windows.Forms.Panel();
-            this.button104 = new System.Windows.Forms.Button();
+            this.DienApDC21 = new System.Windows.Forms.Button();
             this.panel270 = new System.Windows.Forms.Panel();
             this.label123 = new System.Windows.Forms.Label();
             this.panel271 = new System.Windows.Forms.Panel();
-            this.button105 = new System.Windows.Forms.Button();
+            this.DongDC21 = new System.Windows.Forms.Button();
             this.panel272 = new System.Windows.Forms.Panel();
             this.label124 = new System.Windows.Forms.Label();
             this.panel273 = new System.Windows.Forms.Panel();
@@ -562,21 +562,21 @@
             this.panel276 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
             this.panel277 = new System.Windows.Forms.Panel();
-            this.button106 = new System.Windows.Forms.Button();
+            this.SoLanTest22 = new System.Windows.Forms.Button();
             this.panel278 = new System.Windows.Forms.Panel();
-            this.button107 = new System.Windows.Forms.Button();
+            this.timeTest22 = new System.Windows.Forms.Button();
             this.panel279 = new System.Windows.Forms.Panel();
             this.label127 = new System.Windows.Forms.Label();
             this.panel280 = new System.Windows.Forms.Panel();
-            this.button108 = new System.Windows.Forms.Button();
+            this.CongSuat22 = new System.Windows.Forms.Button();
             this.panel281 = new System.Windows.Forms.Panel();
             this.label128 = new System.Windows.Forms.Label();
             this.panel282 = new System.Windows.Forms.Panel();
-            this.button109 = new System.Windows.Forms.Button();
+            this.DienApDC22 = new System.Windows.Forms.Button();
             this.panel283 = new System.Windows.Forms.Panel();
             this.label129 = new System.Windows.Forms.Label();
             this.panel284 = new System.Windows.Forms.Panel();
-            this.button110 = new System.Windows.Forms.Button();
+            this.DongDC22 = new System.Windows.Forms.Button();
             this.panel285 = new System.Windows.Forms.Panel();
             this.label130 = new System.Windows.Forms.Label();
             this.panel286 = new System.Windows.Forms.Panel();
@@ -587,21 +587,21 @@
             this.panel289 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
             this.panel290 = new System.Windows.Forms.Panel();
-            this.button111 = new System.Windows.Forms.Button();
+            this.SoLanTest23 = new System.Windows.Forms.Button();
             this.panel291 = new System.Windows.Forms.Panel();
-            this.button112 = new System.Windows.Forms.Button();
+            this.timeTest23 = new System.Windows.Forms.Button();
             this.panel292 = new System.Windows.Forms.Panel();
             this.label133 = new System.Windows.Forms.Label();
             this.panel293 = new System.Windows.Forms.Panel();
-            this.button113 = new System.Windows.Forms.Button();
+            this.CongSuat23 = new System.Windows.Forms.Button();
             this.panel294 = new System.Windows.Forms.Panel();
             this.label134 = new System.Windows.Forms.Label();
             this.panel295 = new System.Windows.Forms.Panel();
-            this.button114 = new System.Windows.Forms.Button();
+            this.DienApDC23 = new System.Windows.Forms.Button();
             this.panel296 = new System.Windows.Forms.Panel();
             this.label135 = new System.Windows.Forms.Label();
             this.panel297 = new System.Windows.Forms.Panel();
-            this.button115 = new System.Windows.Forms.Button();
+            this.DongDC23 = new System.Windows.Forms.Button();
             this.panel298 = new System.Windows.Forms.Panel();
             this.label136 = new System.Windows.Forms.Label();
             this.panel299 = new System.Windows.Forms.Panel();
@@ -612,21 +612,21 @@
             this.panel302 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
             this.panel303 = new System.Windows.Forms.Panel();
-            this.button116 = new System.Windows.Forms.Button();
+            this.SoLanTest24 = new System.Windows.Forms.Button();
             this.panel304 = new System.Windows.Forms.Panel();
-            this.button117 = new System.Windows.Forms.Button();
+            this.timeTest24 = new System.Windows.Forms.Button();
             this.panel305 = new System.Windows.Forms.Panel();
             this.label139 = new System.Windows.Forms.Label();
             this.panel306 = new System.Windows.Forms.Panel();
-            this.button118 = new System.Windows.Forms.Button();
+            this.CongSuat24 = new System.Windows.Forms.Button();
             this.panel307 = new System.Windows.Forms.Panel();
             this.label140 = new System.Windows.Forms.Label();
             this.panel308 = new System.Windows.Forms.Panel();
-            this.button119 = new System.Windows.Forms.Button();
+            this.DienApDC24 = new System.Windows.Forms.Button();
             this.panel309 = new System.Windows.Forms.Panel();
             this.label141 = new System.Windows.Forms.Label();
             this.panel310 = new System.Windows.Forms.Panel();
-            this.button120 = new System.Windows.Forms.Button();
+            this.DongDC24 = new System.Windows.Forms.Button();
             this.panel311 = new System.Windows.Forms.Panel();
             this.label142 = new System.Windows.Forms.Label();
             this.panel312 = new System.Windows.Forms.Panel();
@@ -637,21 +637,21 @@
             this.panel315 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
             this.panel316 = new System.Windows.Forms.Panel();
-            this.button121 = new System.Windows.Forms.Button();
+            this.SoLanTest25 = new System.Windows.Forms.Button();
             this.panel317 = new System.Windows.Forms.Panel();
-            this.button122 = new System.Windows.Forms.Button();
+            this.timeTest25 = new System.Windows.Forms.Button();
             this.panel318 = new System.Windows.Forms.Panel();
             this.label145 = new System.Windows.Forms.Label();
             this.panel319 = new System.Windows.Forms.Panel();
-            this.button123 = new System.Windows.Forms.Button();
+            this.CongSuat25 = new System.Windows.Forms.Button();
             this.panel320 = new System.Windows.Forms.Panel();
             this.label146 = new System.Windows.Forms.Label();
             this.panel321 = new System.Windows.Forms.Panel();
-            this.button124 = new System.Windows.Forms.Button();
+            this.DienApDC25 = new System.Windows.Forms.Button();
             this.panel322 = new System.Windows.Forms.Panel();
             this.label147 = new System.Windows.Forms.Label();
             this.panel323 = new System.Windows.Forms.Panel();
-            this.button125 = new System.Windows.Forms.Button();
+            this.DongDC25 = new System.Windows.Forms.Button();
             this.panel324 = new System.Windows.Forms.Panel();
             this.label148 = new System.Windows.Forms.Label();
             this.panel325 = new System.Windows.Forms.Panel();
@@ -662,21 +662,21 @@
             this.panel237 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
             this.panel238 = new System.Windows.Forms.Panel();
-            this.button91 = new System.Windows.Forms.Button();
+            this.SoLanTest26 = new System.Windows.Forms.Button();
             this.panel239 = new System.Windows.Forms.Panel();
-            this.button92 = new System.Windows.Forms.Button();
+            this.timeTest26 = new System.Windows.Forms.Button();
             this.panel240 = new System.Windows.Forms.Panel();
             this.label109 = new System.Windows.Forms.Label();
             this.panel241 = new System.Windows.Forms.Panel();
-            this.button93 = new System.Windows.Forms.Button();
+            this.CongSuat26 = new System.Windows.Forms.Button();
             this.panel242 = new System.Windows.Forms.Panel();
             this.label110 = new System.Windows.Forms.Label();
             this.panel243 = new System.Windows.Forms.Panel();
-            this.button94 = new System.Windows.Forms.Button();
+            this.DienApDC26 = new System.Windows.Forms.Button();
             this.panel244 = new System.Windows.Forms.Panel();
             this.label111 = new System.Windows.Forms.Label();
             this.panel245 = new System.Windows.Forms.Panel();
-            this.button95 = new System.Windows.Forms.Button();
+            this.DongDC26 = new System.Windows.Forms.Button();
             this.panel246 = new System.Windows.Forms.Panel();
             this.label112 = new System.Windows.Forms.Label();
             this.panel247 = new System.Windows.Forms.Panel();
@@ -687,21 +687,21 @@
             this.panel224 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.panel225 = new System.Windows.Forms.Panel();
-            this.button86 = new System.Windows.Forms.Button();
+            this.SoLanTest27 = new System.Windows.Forms.Button();
             this.panel226 = new System.Windows.Forms.Panel();
-            this.button87 = new System.Windows.Forms.Button();
+            this.timeTest27 = new System.Windows.Forms.Button();
             this.panel227 = new System.Windows.Forms.Panel();
             this.label103 = new System.Windows.Forms.Label();
             this.panel228 = new System.Windows.Forms.Panel();
-            this.button88 = new System.Windows.Forms.Button();
+            this.CongSuat27 = new System.Windows.Forms.Button();
             this.panel229 = new System.Windows.Forms.Panel();
             this.label104 = new System.Windows.Forms.Label();
             this.panel230 = new System.Windows.Forms.Panel();
-            this.button89 = new System.Windows.Forms.Button();
+            this.DienApDC27 = new System.Windows.Forms.Button();
             this.panel231 = new System.Windows.Forms.Panel();
             this.label105 = new System.Windows.Forms.Label();
             this.panel232 = new System.Windows.Forms.Panel();
-            this.button90 = new System.Windows.Forms.Button();
+            this.DongDC27 = new System.Windows.Forms.Button();
             this.panel233 = new System.Windows.Forms.Panel();
             this.label106 = new System.Windows.Forms.Label();
             this.panel234 = new System.Windows.Forms.Panel();
@@ -712,21 +712,21 @@
             this.panel211 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.panel212 = new System.Windows.Forms.Panel();
-            this.button81 = new System.Windows.Forms.Button();
+            this.SoLanTest28 = new System.Windows.Forms.Button();
             this.panel213 = new System.Windows.Forms.Panel();
-            this.button82 = new System.Windows.Forms.Button();
+            this.timeTest28 = new System.Windows.Forms.Button();
             this.panel214 = new System.Windows.Forms.Panel();
             this.label97 = new System.Windows.Forms.Label();
             this.panel215 = new System.Windows.Forms.Panel();
-            this.button83 = new System.Windows.Forms.Button();
+            this.CongSuat28 = new System.Windows.Forms.Button();
             this.panel216 = new System.Windows.Forms.Panel();
             this.label98 = new System.Windows.Forms.Label();
             this.panel217 = new System.Windows.Forms.Panel();
-            this.button84 = new System.Windows.Forms.Button();
+            this.DienApDC28 = new System.Windows.Forms.Button();
             this.panel218 = new System.Windows.Forms.Panel();
             this.label99 = new System.Windows.Forms.Label();
             this.panel219 = new System.Windows.Forms.Panel();
-            this.button85 = new System.Windows.Forms.Button();
+            this.DongDC28 = new System.Windows.Forms.Button();
             this.panel220 = new System.Windows.Forms.Panel();
             this.label100 = new System.Windows.Forms.Label();
             this.panel221 = new System.Windows.Forms.Panel();
@@ -737,21 +737,21 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.panel199 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SoLanTest29 = new System.Windows.Forms.Button();
             this.panel200 = new System.Windows.Forms.Panel();
-            this.button77 = new System.Windows.Forms.Button();
+            this.timeTest29 = new System.Windows.Forms.Button();
             this.panel201 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel202 = new System.Windows.Forms.Panel();
-            this.button78 = new System.Windows.Forms.Button();
+            this.CongSuat29 = new System.Windows.Forms.Button();
             this.panel203 = new System.Windows.Forms.Panel();
             this.label92 = new System.Windows.Forms.Label();
             this.panel204 = new System.Windows.Forms.Panel();
-            this.button79 = new System.Windows.Forms.Button();
+            this.DienApDC29 = new System.Windows.Forms.Button();
             this.panel205 = new System.Windows.Forms.Panel();
             this.label93 = new System.Windows.Forms.Label();
             this.panel206 = new System.Windows.Forms.Panel();
-            this.button80 = new System.Windows.Forms.Button();
+            this.DongDC29 = new System.Windows.Forms.Button();
             this.panel207 = new System.Windows.Forms.Panel();
             this.label94 = new System.Windows.Forms.Label();
             this.panel208 = new System.Windows.Forms.Panel();
@@ -762,21 +762,21 @@
             this.panel252 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
             this.panel253 = new System.Windows.Forms.Panel();
-            this.button97 = new System.Windows.Forms.Button();
+            this.SoLanTest30 = new System.Windows.Forms.Button();
             this.panel254 = new System.Windows.Forms.Panel();
-            this.button98 = new System.Windows.Forms.Button();
+            this.timeTest30 = new System.Windows.Forms.Button();
             this.panel255 = new System.Windows.Forms.Panel();
             this.label116 = new System.Windows.Forms.Label();
             this.panel256 = new System.Windows.Forms.Panel();
-            this.button99 = new System.Windows.Forms.Button();
+            this.CongSuat30 = new System.Windows.Forms.Button();
             this.panel257 = new System.Windows.Forms.Panel();
             this.label117 = new System.Windows.Forms.Label();
             this.panel258 = new System.Windows.Forms.Panel();
-            this.button100 = new System.Windows.Forms.Button();
+            this.DienApDC30 = new System.Windows.Forms.Button();
             this.panel259 = new System.Windows.Forms.Panel();
             this.label118 = new System.Windows.Forms.Label();
             this.panel260 = new System.Windows.Forms.Panel();
-            this.button101 = new System.Windows.Forms.Button();
+            this.DongDC30 = new System.Windows.Forms.Button();
             this.panel261 = new System.Windows.Forms.Panel();
             this.label119 = new System.Windows.Forms.Label();
             this.panel262 = new System.Windows.Forms.Panel();
@@ -814,6 +814,7 @@
             this.inputNumPageGo = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
             this.gridLayout2 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
             this.gridLayout1 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPageGiamSat1.SuspendLayout();
             this.panel134.SuspendLayout();
@@ -1268,6 +1269,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1057, 478);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
             // 
             // tabPageGiamSat1
             // 
@@ -1346,44 +1348,44 @@
             // panel136
             // 
             this.panel136.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel136.Controls.Add(this.button52);
+            this.panel136.Controls.Add(this.SoLanTest1);
             this.panel136.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel136.Location = new System.Drawing.Point(106, 99);
             this.panel136.Name = "panel136";
             this.panel136.Size = new System.Drawing.Size(98, 21);
             this.panel136.TabIndex = 9;
             // 
-            // button52
+            // SoLanTest1
             // 
-            this.button52.BackColor = System.Drawing.SystemColors.Control;
-            this.button52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button52.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button52.Location = new System.Drawing.Point(0, 0);
-            this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(96, 19);
-            this.button52.TabIndex = 3;
-            this.button52.UseVisualStyleBackColor = false;
+            this.SoLanTest1.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest1.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest1.Name = "SoLanTest1";
+            this.SoLanTest1.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest1.TabIndex = 3;
+            this.SoLanTest1.UseVisualStyleBackColor = false;
             // 
             // panel137
             // 
             this.panel137.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel137.Controls.Add(this.button53);
+            this.panel137.Controls.Add(this.timeTest1);
             this.panel137.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel137.Location = new System.Drawing.Point(106, 75);
             this.panel137.Name = "panel137";
             this.panel137.Size = new System.Drawing.Size(98, 18);
             this.panel137.TabIndex = 7;
             // 
-            // button53
+            // timeTest1
             // 
-            this.button53.BackColor = System.Drawing.SystemColors.Control;
-            this.button53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button53.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button53.Location = new System.Drawing.Point(0, 0);
-            this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(96, 16);
-            this.button53.TabIndex = 2;
-            this.button53.UseVisualStyleBackColor = false;
+            this.timeTest1.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest1.Location = new System.Drawing.Point(0, 0);
+            this.timeTest1.Name = "timeTest1";
+            this.timeTest1.Size = new System.Drawing.Size(96, 16);
+            this.timeTest1.TabIndex = 2;
+            this.timeTest1.UseVisualStyleBackColor = false;
             // 
             // panel138
             // 
@@ -1410,23 +1412,23 @@
             // panel139
             // 
             this.panel139.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel139.Controls.Add(this.button54);
+            this.panel139.Controls.Add(this.CongSuat1);
             this.panel139.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel139.Location = new System.Drawing.Point(106, 51);
             this.panel139.Name = "panel139";
             this.panel139.Size = new System.Drawing.Size(98, 18);
             this.panel139.TabIndex = 5;
             // 
-            // button54
+            // CongSuat1
             // 
-            this.button54.BackColor = System.Drawing.SystemColors.Control;
-            this.button54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button54.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button54.Location = new System.Drawing.Point(0, 0);
-            this.button54.Name = "button54";
-            this.button54.Size = new System.Drawing.Size(96, 16);
-            this.button54.TabIndex = 2;
-            this.button54.UseVisualStyleBackColor = false;
+            this.CongSuat1.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat1.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat1.Name = "CongSuat1";
+            this.CongSuat1.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat1.TabIndex = 2;
+            this.CongSuat1.UseVisualStyleBackColor = false;
             // 
             // panel140
             // 
@@ -1453,23 +1455,23 @@
             // panel141
             // 
             this.panel141.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel141.Controls.Add(this.button55);
+            this.panel141.Controls.Add(this.DienApDC1);
             this.panel141.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel141.Location = new System.Drawing.Point(106, 27);
             this.panel141.Name = "panel141";
             this.panel141.Size = new System.Drawing.Size(98, 18);
             this.panel141.TabIndex = 3;
             // 
-            // button55
+            // DienApDC1
             // 
-            this.button55.BackColor = System.Drawing.SystemColors.Control;
-            this.button55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button55.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button55.Location = new System.Drawing.Point(0, 0);
-            this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(96, 16);
-            this.button55.TabIndex = 2;
-            this.button55.UseVisualStyleBackColor = false;
+            this.DienApDC1.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC1.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC1.Name = "DienApDC1";
+            this.DienApDC1.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC1.TabIndex = 2;
+            this.DienApDC1.UseVisualStyleBackColor = false;
             // 
             // panel142
             // 
@@ -1496,23 +1498,23 @@
             // panel143
             // 
             this.panel143.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel143.Controls.Add(this.button56);
+            this.panel143.Controls.Add(this.DongDC1);
             this.panel143.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel143.Location = new System.Drawing.Point(106, 3);
             this.panel143.Name = "panel143";
             this.panel143.Size = new System.Drawing.Size(98, 18);
             this.panel143.TabIndex = 1;
             // 
-            // button56
+            // DongDC1
             // 
-            this.button56.BackColor = System.Drawing.SystemColors.Control;
-            this.button56.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button56.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button56.Location = new System.Drawing.Point(0, 0);
-            this.button56.Name = "button56";
-            this.button56.Size = new System.Drawing.Size(96, 16);
-            this.button56.TabIndex = 2;
-            this.button56.UseVisualStyleBackColor = false;
+            this.DongDC1.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC1.Location = new System.Drawing.Point(0, 0);
+            this.DongDC1.Name = "DongDC1";
+            this.DongDC1.Size = new System.Drawing.Size(96, 16);
+            this.DongDC1.TabIndex = 2;
+            this.DongDC1.UseVisualStyleBackColor = false;
             // 
             // panel144
             // 
@@ -1634,44 +1636,44 @@
             // panel149
             // 
             this.panel149.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel149.Controls.Add(this.button57);
+            this.panel149.Controls.Add(this.SoLanTest2);
             this.panel149.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel149.Location = new System.Drawing.Point(106, 99);
             this.panel149.Name = "panel149";
             this.panel149.Size = new System.Drawing.Size(98, 21);
             this.panel149.TabIndex = 9;
             // 
-            // button57
+            // SoLanTest2
             // 
-            this.button57.BackColor = System.Drawing.SystemColors.Control;
-            this.button57.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button57.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button57.Location = new System.Drawing.Point(0, 0);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(96, 19);
-            this.button57.TabIndex = 3;
-            this.button57.UseVisualStyleBackColor = false;
+            this.SoLanTest2.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest2.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest2.Name = "SoLanTest2";
+            this.SoLanTest2.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest2.TabIndex = 3;
+            this.SoLanTest2.UseVisualStyleBackColor = false;
             // 
             // panel150
             // 
             this.panel150.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel150.Controls.Add(this.button58);
+            this.panel150.Controls.Add(this.timeTest2);
             this.panel150.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel150.Location = new System.Drawing.Point(106, 75);
             this.panel150.Name = "panel150";
             this.panel150.Size = new System.Drawing.Size(98, 18);
             this.panel150.TabIndex = 7;
             // 
-            // button58
+            // timeTest2
             // 
-            this.button58.BackColor = System.Drawing.SystemColors.Control;
-            this.button58.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button58.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button58.Location = new System.Drawing.Point(0, 0);
-            this.button58.Name = "button58";
-            this.button58.Size = new System.Drawing.Size(96, 16);
-            this.button58.TabIndex = 2;
-            this.button58.UseVisualStyleBackColor = false;
+            this.timeTest2.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest2.Location = new System.Drawing.Point(0, 0);
+            this.timeTest2.Name = "timeTest2";
+            this.timeTest2.Size = new System.Drawing.Size(96, 16);
+            this.timeTest2.TabIndex = 2;
+            this.timeTest2.UseVisualStyleBackColor = false;
             // 
             // panel151
             // 
@@ -1698,23 +1700,23 @@
             // panel152
             // 
             this.panel152.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel152.Controls.Add(this.button59);
+            this.panel152.Controls.Add(this.CongSuat2);
             this.panel152.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel152.Location = new System.Drawing.Point(106, 51);
             this.panel152.Name = "panel152";
             this.panel152.Size = new System.Drawing.Size(98, 18);
             this.panel152.TabIndex = 5;
             // 
-            // button59
+            // CongSuat2
             // 
-            this.button59.BackColor = System.Drawing.SystemColors.Control;
-            this.button59.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button59.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button59.Location = new System.Drawing.Point(0, 0);
-            this.button59.Name = "button59";
-            this.button59.Size = new System.Drawing.Size(96, 16);
-            this.button59.TabIndex = 2;
-            this.button59.UseVisualStyleBackColor = false;
+            this.CongSuat2.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat2.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat2.Name = "CongSuat2";
+            this.CongSuat2.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat2.TabIndex = 2;
+            this.CongSuat2.UseVisualStyleBackColor = false;
             // 
             // panel153
             // 
@@ -1741,23 +1743,23 @@
             // panel154
             // 
             this.panel154.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel154.Controls.Add(this.button60);
+            this.panel154.Controls.Add(this.DienApDC2);
             this.panel154.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel154.Location = new System.Drawing.Point(106, 27);
             this.panel154.Name = "panel154";
             this.panel154.Size = new System.Drawing.Size(98, 18);
             this.panel154.TabIndex = 3;
             // 
-            // button60
+            // DienApDC2
             // 
-            this.button60.BackColor = System.Drawing.SystemColors.Control;
-            this.button60.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button60.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button60.Location = new System.Drawing.Point(0, 0);
-            this.button60.Name = "button60";
-            this.button60.Size = new System.Drawing.Size(96, 16);
-            this.button60.TabIndex = 2;
-            this.button60.UseVisualStyleBackColor = false;
+            this.DienApDC2.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC2.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC2.Name = "DienApDC2";
+            this.DienApDC2.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC2.TabIndex = 2;
+            this.DienApDC2.UseVisualStyleBackColor = false;
             // 
             // panel155
             // 
@@ -1784,23 +1786,23 @@
             // panel156
             // 
             this.panel156.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel156.Controls.Add(this.button61);
+            this.panel156.Controls.Add(this.DongDC2);
             this.panel156.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel156.Location = new System.Drawing.Point(106, 3);
             this.panel156.Name = "panel156";
             this.panel156.Size = new System.Drawing.Size(98, 18);
             this.panel156.TabIndex = 1;
             // 
-            // button61
+            // DongDC2
             // 
-            this.button61.BackColor = System.Drawing.SystemColors.Control;
-            this.button61.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button61.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button61.Location = new System.Drawing.Point(0, 0);
-            this.button61.Name = "button61";
-            this.button61.Size = new System.Drawing.Size(96, 16);
-            this.button61.TabIndex = 2;
-            this.button61.UseVisualStyleBackColor = false;
+            this.DongDC2.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC2.Location = new System.Drawing.Point(0, 0);
+            this.DongDC2.Name = "DongDC2";
+            this.DongDC2.Size = new System.Drawing.Size(96, 16);
+            this.DongDC2.TabIndex = 2;
+            this.DongDC2.UseVisualStyleBackColor = false;
             // 
             // panel157
             // 
@@ -1922,44 +1924,44 @@
             // panel162
             // 
             this.panel162.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel162.Controls.Add(this.button62);
+            this.panel162.Controls.Add(this.SoLanTest3);
             this.panel162.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel162.Location = new System.Drawing.Point(106, 99);
             this.panel162.Name = "panel162";
             this.panel162.Size = new System.Drawing.Size(98, 21);
             this.panel162.TabIndex = 9;
             // 
-            // button62
+            // SoLanTest3
             // 
-            this.button62.BackColor = System.Drawing.SystemColors.Control;
-            this.button62.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button62.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button62.Location = new System.Drawing.Point(0, 0);
-            this.button62.Name = "button62";
-            this.button62.Size = new System.Drawing.Size(96, 19);
-            this.button62.TabIndex = 3;
-            this.button62.UseVisualStyleBackColor = false;
+            this.SoLanTest3.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest3.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest3.Name = "SoLanTest3";
+            this.SoLanTest3.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest3.TabIndex = 3;
+            this.SoLanTest3.UseVisualStyleBackColor = false;
             // 
             // panel163
             // 
             this.panel163.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel163.Controls.Add(this.button63);
+            this.panel163.Controls.Add(this.timeTest3);
             this.panel163.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel163.Location = new System.Drawing.Point(106, 75);
             this.panel163.Name = "panel163";
             this.panel163.Size = new System.Drawing.Size(98, 18);
             this.panel163.TabIndex = 7;
             // 
-            // button63
+            // timeTest3
             // 
-            this.button63.BackColor = System.Drawing.SystemColors.Control;
-            this.button63.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button63.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button63.Location = new System.Drawing.Point(0, 0);
-            this.button63.Name = "button63";
-            this.button63.Size = new System.Drawing.Size(96, 16);
-            this.button63.TabIndex = 2;
-            this.button63.UseVisualStyleBackColor = false;
+            this.timeTest3.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest3.Location = new System.Drawing.Point(0, 0);
+            this.timeTest3.Name = "timeTest3";
+            this.timeTest3.Size = new System.Drawing.Size(96, 16);
+            this.timeTest3.TabIndex = 2;
+            this.timeTest3.UseVisualStyleBackColor = false;
             // 
             // panel164
             // 
@@ -1986,23 +1988,23 @@
             // panel165
             // 
             this.panel165.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel165.Controls.Add(this.button64);
+            this.panel165.Controls.Add(this.CongSuat3);
             this.panel165.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel165.Location = new System.Drawing.Point(106, 51);
             this.panel165.Name = "panel165";
             this.panel165.Size = new System.Drawing.Size(98, 18);
             this.panel165.TabIndex = 5;
             // 
-            // button64
+            // CongSuat3
             // 
-            this.button64.BackColor = System.Drawing.SystemColors.Control;
-            this.button64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button64.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button64.Location = new System.Drawing.Point(0, 0);
-            this.button64.Name = "button64";
-            this.button64.Size = new System.Drawing.Size(96, 16);
-            this.button64.TabIndex = 2;
-            this.button64.UseVisualStyleBackColor = false;
+            this.CongSuat3.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat3.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat3.Name = "CongSuat3";
+            this.CongSuat3.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat3.TabIndex = 2;
+            this.CongSuat3.UseVisualStyleBackColor = false;
             // 
             // panel166
             // 
@@ -2029,23 +2031,23 @@
             // panel167
             // 
             this.panel167.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel167.Controls.Add(this.button65);
+            this.panel167.Controls.Add(this.DienApDC3);
             this.panel167.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel167.Location = new System.Drawing.Point(106, 27);
             this.panel167.Name = "panel167";
             this.panel167.Size = new System.Drawing.Size(98, 18);
             this.panel167.TabIndex = 3;
             // 
-            // button65
+            // DienApDC3
             // 
-            this.button65.BackColor = System.Drawing.SystemColors.Control;
-            this.button65.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button65.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button65.Location = new System.Drawing.Point(0, 0);
-            this.button65.Name = "button65";
-            this.button65.Size = new System.Drawing.Size(96, 16);
-            this.button65.TabIndex = 2;
-            this.button65.UseVisualStyleBackColor = false;
+            this.DienApDC3.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC3.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC3.Name = "DienApDC3";
+            this.DienApDC3.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC3.TabIndex = 2;
+            this.DienApDC3.UseVisualStyleBackColor = false;
             // 
             // panel168
             // 
@@ -2072,23 +2074,23 @@
             // panel169
             // 
             this.panel169.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel169.Controls.Add(this.button66);
+            this.panel169.Controls.Add(this.DongDC3);
             this.panel169.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel169.Location = new System.Drawing.Point(106, 3);
             this.panel169.Name = "panel169";
             this.panel169.Size = new System.Drawing.Size(98, 18);
             this.panel169.TabIndex = 1;
             // 
-            // button66
+            // DongDC3
             // 
-            this.button66.BackColor = System.Drawing.SystemColors.Control;
-            this.button66.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button66.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button66.Location = new System.Drawing.Point(0, 0);
-            this.button66.Name = "button66";
-            this.button66.Size = new System.Drawing.Size(96, 16);
-            this.button66.TabIndex = 2;
-            this.button66.UseVisualStyleBackColor = false;
+            this.DongDC3.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC3.Location = new System.Drawing.Point(0, 0);
+            this.DongDC3.Name = "DongDC3";
+            this.DongDC3.Size = new System.Drawing.Size(96, 16);
+            this.DongDC3.TabIndex = 2;
+            this.DongDC3.UseVisualStyleBackColor = false;
             // 
             // panel170
             // 
@@ -2210,44 +2212,44 @@
             // panel175
             // 
             this.panel175.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel175.Controls.Add(this.button67);
+            this.panel175.Controls.Add(this.SoLanTest4);
             this.panel175.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel175.Location = new System.Drawing.Point(106, 99);
             this.panel175.Name = "panel175";
             this.panel175.Size = new System.Drawing.Size(98, 21);
             this.panel175.TabIndex = 9;
             // 
-            // button67
+            // SoLanTest4
             // 
-            this.button67.BackColor = System.Drawing.SystemColors.Control;
-            this.button67.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button67.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button67.Location = new System.Drawing.Point(0, 0);
-            this.button67.Name = "button67";
-            this.button67.Size = new System.Drawing.Size(96, 19);
-            this.button67.TabIndex = 3;
-            this.button67.UseVisualStyleBackColor = false;
+            this.SoLanTest4.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest4.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest4.Name = "SoLanTest4";
+            this.SoLanTest4.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest4.TabIndex = 3;
+            this.SoLanTest4.UseVisualStyleBackColor = false;
             // 
             // panel176
             // 
             this.panel176.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel176.Controls.Add(this.button68);
+            this.panel176.Controls.Add(this.timeTest4);
             this.panel176.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel176.Location = new System.Drawing.Point(106, 75);
             this.panel176.Name = "panel176";
             this.panel176.Size = new System.Drawing.Size(98, 18);
             this.panel176.TabIndex = 7;
             // 
-            // button68
+            // timeTest4
             // 
-            this.button68.BackColor = System.Drawing.SystemColors.Control;
-            this.button68.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button68.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button68.Location = new System.Drawing.Point(0, 0);
-            this.button68.Name = "button68";
-            this.button68.Size = new System.Drawing.Size(96, 16);
-            this.button68.TabIndex = 2;
-            this.button68.UseVisualStyleBackColor = false;
+            this.timeTest4.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest4.Location = new System.Drawing.Point(0, 0);
+            this.timeTest4.Name = "timeTest4";
+            this.timeTest4.Size = new System.Drawing.Size(96, 16);
+            this.timeTest4.TabIndex = 2;
+            this.timeTest4.UseVisualStyleBackColor = false;
             // 
             // panel177
             // 
@@ -2274,23 +2276,23 @@
             // panel178
             // 
             this.panel178.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel178.Controls.Add(this.button69);
+            this.panel178.Controls.Add(this.CongSuat4);
             this.panel178.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel178.Location = new System.Drawing.Point(106, 51);
             this.panel178.Name = "panel178";
             this.panel178.Size = new System.Drawing.Size(98, 18);
             this.panel178.TabIndex = 5;
             // 
-            // button69
+            // CongSuat4
             // 
-            this.button69.BackColor = System.Drawing.SystemColors.Control;
-            this.button69.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button69.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button69.Location = new System.Drawing.Point(0, 0);
-            this.button69.Name = "button69";
-            this.button69.Size = new System.Drawing.Size(96, 16);
-            this.button69.TabIndex = 2;
-            this.button69.UseVisualStyleBackColor = false;
+            this.CongSuat4.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat4.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat4.Name = "CongSuat4";
+            this.CongSuat4.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat4.TabIndex = 2;
+            this.CongSuat4.UseVisualStyleBackColor = false;
             // 
             // panel179
             // 
@@ -2317,23 +2319,23 @@
             // panel180
             // 
             this.panel180.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel180.Controls.Add(this.button70);
+            this.panel180.Controls.Add(this.DienApDC4);
             this.panel180.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel180.Location = new System.Drawing.Point(106, 27);
             this.panel180.Name = "panel180";
             this.panel180.Size = new System.Drawing.Size(98, 18);
             this.panel180.TabIndex = 3;
             // 
-            // button70
+            // DienApDC4
             // 
-            this.button70.BackColor = System.Drawing.SystemColors.Control;
-            this.button70.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button70.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button70.Location = new System.Drawing.Point(0, 0);
-            this.button70.Name = "button70";
-            this.button70.Size = new System.Drawing.Size(96, 16);
-            this.button70.TabIndex = 2;
-            this.button70.UseVisualStyleBackColor = false;
+            this.DienApDC4.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC4.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC4.Name = "DienApDC4";
+            this.DienApDC4.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC4.TabIndex = 2;
+            this.DienApDC4.UseVisualStyleBackColor = false;
             // 
             // panel181
             // 
@@ -2360,23 +2362,23 @@
             // panel182
             // 
             this.panel182.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel182.Controls.Add(this.button71);
+            this.panel182.Controls.Add(this.DongDC4);
             this.panel182.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel182.Location = new System.Drawing.Point(106, 3);
             this.panel182.Name = "panel182";
             this.panel182.Size = new System.Drawing.Size(98, 18);
             this.panel182.TabIndex = 1;
             // 
-            // button71
+            // DongDC4
             // 
-            this.button71.BackColor = System.Drawing.SystemColors.Control;
-            this.button71.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button71.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button71.Location = new System.Drawing.Point(0, 0);
-            this.button71.Name = "button71";
-            this.button71.Size = new System.Drawing.Size(96, 16);
-            this.button71.TabIndex = 2;
-            this.button71.UseVisualStyleBackColor = false;
+            this.DongDC4.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC4.Location = new System.Drawing.Point(0, 0);
+            this.DongDC4.Name = "DongDC4";
+            this.DongDC4.Size = new System.Drawing.Size(96, 16);
+            this.DongDC4.TabIndex = 2;
+            this.DongDC4.UseVisualStyleBackColor = false;
             // 
             // panel183
             // 
@@ -2498,44 +2500,44 @@
             // panel188
             // 
             this.panel188.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel188.Controls.Add(this.button72);
+            this.panel188.Controls.Add(this.SoLanTest5);
             this.panel188.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel188.Location = new System.Drawing.Point(106, 99);
             this.panel188.Name = "panel188";
             this.panel188.Size = new System.Drawing.Size(98, 21);
             this.panel188.TabIndex = 9;
             // 
-            // button72
+            // SoLanTest5
             // 
-            this.button72.BackColor = System.Drawing.SystemColors.Control;
-            this.button72.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button72.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button72.Location = new System.Drawing.Point(0, 0);
-            this.button72.Name = "button72";
-            this.button72.Size = new System.Drawing.Size(96, 19);
-            this.button72.TabIndex = 3;
-            this.button72.UseVisualStyleBackColor = false;
+            this.SoLanTest5.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest5.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest5.Name = "SoLanTest5";
+            this.SoLanTest5.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest5.TabIndex = 3;
+            this.SoLanTest5.UseVisualStyleBackColor = false;
             // 
             // panel189
             // 
             this.panel189.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel189.Controls.Add(this.button73);
+            this.panel189.Controls.Add(this.timeTest5);
             this.panel189.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel189.Location = new System.Drawing.Point(106, 75);
             this.panel189.Name = "panel189";
             this.panel189.Size = new System.Drawing.Size(98, 18);
             this.panel189.TabIndex = 7;
             // 
-            // button73
+            // timeTest5
             // 
-            this.button73.BackColor = System.Drawing.SystemColors.Control;
-            this.button73.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button73.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button73.Location = new System.Drawing.Point(0, 0);
-            this.button73.Name = "button73";
-            this.button73.Size = new System.Drawing.Size(96, 16);
-            this.button73.TabIndex = 2;
-            this.button73.UseVisualStyleBackColor = false;
+            this.timeTest5.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest5.Location = new System.Drawing.Point(0, 0);
+            this.timeTest5.Name = "timeTest5";
+            this.timeTest5.Size = new System.Drawing.Size(96, 16);
+            this.timeTest5.TabIndex = 2;
+            this.timeTest5.UseVisualStyleBackColor = false;
             // 
             // panel190
             // 
@@ -2562,23 +2564,23 @@
             // panel191
             // 
             this.panel191.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel191.Controls.Add(this.button74);
+            this.panel191.Controls.Add(this.CongSuat5);
             this.panel191.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel191.Location = new System.Drawing.Point(106, 51);
             this.panel191.Name = "panel191";
             this.panel191.Size = new System.Drawing.Size(98, 18);
             this.panel191.TabIndex = 5;
             // 
-            // button74
+            // CongSuat5
             // 
-            this.button74.BackColor = System.Drawing.SystemColors.Control;
-            this.button74.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button74.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button74.Location = new System.Drawing.Point(0, 0);
-            this.button74.Name = "button74";
-            this.button74.Size = new System.Drawing.Size(96, 16);
-            this.button74.TabIndex = 2;
-            this.button74.UseVisualStyleBackColor = false;
+            this.CongSuat5.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat5.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat5.Name = "CongSuat5";
+            this.CongSuat5.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat5.TabIndex = 2;
+            this.CongSuat5.UseVisualStyleBackColor = false;
             // 
             // panel192
             // 
@@ -2605,23 +2607,23 @@
             // panel193
             // 
             this.panel193.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel193.Controls.Add(this.button75);
+            this.panel193.Controls.Add(this.DienApDC5);
             this.panel193.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel193.Location = new System.Drawing.Point(106, 27);
             this.panel193.Name = "panel193";
             this.panel193.Size = new System.Drawing.Size(98, 18);
             this.panel193.TabIndex = 3;
             // 
-            // button75
+            // DienApDC5
             // 
-            this.button75.BackColor = System.Drawing.SystemColors.Control;
-            this.button75.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button75.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button75.Location = new System.Drawing.Point(0, 0);
-            this.button75.Name = "button75";
-            this.button75.Size = new System.Drawing.Size(96, 16);
-            this.button75.TabIndex = 2;
-            this.button75.UseVisualStyleBackColor = false;
+            this.DienApDC5.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC5.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC5.Name = "DienApDC5";
+            this.DienApDC5.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC5.TabIndex = 2;
+            this.DienApDC5.UseVisualStyleBackColor = false;
             // 
             // panel194
             // 
@@ -2648,23 +2650,23 @@
             // panel195
             // 
             this.panel195.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel195.Controls.Add(this.button76);
+            this.panel195.Controls.Add(this.DongDC5);
             this.panel195.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel195.Location = new System.Drawing.Point(106, 3);
             this.panel195.Name = "panel195";
             this.panel195.Size = new System.Drawing.Size(98, 18);
             this.panel195.TabIndex = 1;
             // 
-            // button76
+            // DongDC5
             // 
-            this.button76.BackColor = System.Drawing.SystemColors.Control;
-            this.button76.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button76.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button76.Location = new System.Drawing.Point(0, 0);
-            this.button76.Name = "button76";
-            this.button76.Size = new System.Drawing.Size(96, 16);
-            this.button76.TabIndex = 2;
-            this.button76.UseVisualStyleBackColor = false;
+            this.DongDC5.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC5.Location = new System.Drawing.Point(0, 0);
+            this.DongDC5.Name = "DongDC5";
+            this.DongDC5.Size = new System.Drawing.Size(96, 16);
+            this.DongDC5.TabIndex = 2;
+            this.DongDC5.UseVisualStyleBackColor = false;
             // 
             // panel196
             // 
@@ -2786,44 +2788,44 @@
             // panel71
             // 
             this.panel71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel71.Controls.Add(this.button27);
+            this.panel71.Controls.Add(this.SoLanTest6);
             this.panel71.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel71.Location = new System.Drawing.Point(106, 99);
             this.panel71.Name = "panel71";
             this.panel71.Size = new System.Drawing.Size(98, 21);
             this.panel71.TabIndex = 9;
             // 
-            // button27
+            // SoLanTest6
             // 
-            this.button27.BackColor = System.Drawing.SystemColors.Control;
-            this.button27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button27.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button27.Location = new System.Drawing.Point(0, 0);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(96, 19);
-            this.button27.TabIndex = 3;
-            this.button27.UseVisualStyleBackColor = false;
+            this.SoLanTest6.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest6.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest6.Name = "SoLanTest6";
+            this.SoLanTest6.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest6.TabIndex = 3;
+            this.SoLanTest6.UseVisualStyleBackColor = false;
             // 
             // panel72
             // 
             this.panel72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel72.Controls.Add(this.button28);
+            this.panel72.Controls.Add(this.timeTest6);
             this.panel72.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel72.Location = new System.Drawing.Point(106, 75);
             this.panel72.Name = "panel72";
             this.panel72.Size = new System.Drawing.Size(98, 18);
             this.panel72.TabIndex = 7;
             // 
-            // button28
+            // timeTest6
             // 
-            this.button28.BackColor = System.Drawing.SystemColors.Control;
-            this.button28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button28.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button28.Location = new System.Drawing.Point(0, 0);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(96, 16);
-            this.button28.TabIndex = 2;
-            this.button28.UseVisualStyleBackColor = false;
+            this.timeTest6.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest6.Location = new System.Drawing.Point(0, 0);
+            this.timeTest6.Name = "timeTest6";
+            this.timeTest6.Size = new System.Drawing.Size(96, 16);
+            this.timeTest6.TabIndex = 2;
+            this.timeTest6.UseVisualStyleBackColor = false;
             // 
             // panel73
             // 
@@ -2850,23 +2852,23 @@
             // panel74
             // 
             this.panel74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel74.Controls.Add(this.button29);
+            this.panel74.Controls.Add(this.CongSuat6);
             this.panel74.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel74.Location = new System.Drawing.Point(106, 51);
             this.panel74.Name = "panel74";
             this.panel74.Size = new System.Drawing.Size(98, 18);
             this.panel74.TabIndex = 5;
             // 
-            // button29
+            // CongSuat6
             // 
-            this.button29.BackColor = System.Drawing.SystemColors.Control;
-            this.button29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button29.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button29.Location = new System.Drawing.Point(0, 0);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(96, 16);
-            this.button29.TabIndex = 2;
-            this.button29.UseVisualStyleBackColor = false;
+            this.CongSuat6.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat6.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat6.Name = "CongSuat6";
+            this.CongSuat6.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat6.TabIndex = 2;
+            this.CongSuat6.UseVisualStyleBackColor = false;
             // 
             // panel75
             // 
@@ -2893,23 +2895,23 @@
             // panel76
             // 
             this.panel76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel76.Controls.Add(this.button30);
+            this.panel76.Controls.Add(this.DienApDC6);
             this.panel76.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel76.Location = new System.Drawing.Point(106, 27);
             this.panel76.Name = "panel76";
             this.panel76.Size = new System.Drawing.Size(98, 18);
             this.panel76.TabIndex = 3;
             // 
-            // button30
+            // DienApDC6
             // 
-            this.button30.BackColor = System.Drawing.SystemColors.Control;
-            this.button30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button30.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button30.Location = new System.Drawing.Point(0, 0);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(96, 16);
-            this.button30.TabIndex = 2;
-            this.button30.UseVisualStyleBackColor = false;
+            this.DienApDC6.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC6.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC6.Name = "DienApDC6";
+            this.DienApDC6.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC6.TabIndex = 2;
+            this.DienApDC6.UseVisualStyleBackColor = false;
             // 
             // panel77
             // 
@@ -2936,23 +2938,23 @@
             // panel78
             // 
             this.panel78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel78.Controls.Add(this.button31);
+            this.panel78.Controls.Add(this.DongDC6);
             this.panel78.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel78.Location = new System.Drawing.Point(106, 3);
             this.panel78.Name = "panel78";
             this.panel78.Size = new System.Drawing.Size(98, 18);
             this.panel78.TabIndex = 1;
             // 
-            // button31
+            // DongDC6
             // 
-            this.button31.BackColor = System.Drawing.SystemColors.Control;
-            this.button31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button31.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button31.Location = new System.Drawing.Point(0, 0);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(96, 16);
-            this.button31.TabIndex = 2;
-            this.button31.UseVisualStyleBackColor = false;
+            this.DongDC6.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC6.Location = new System.Drawing.Point(0, 0);
+            this.DongDC6.Name = "DongDC6";
+            this.DongDC6.Size = new System.Drawing.Size(96, 16);
+            this.DongDC6.TabIndex = 2;
+            this.DongDC6.UseVisualStyleBackColor = false;
             // 
             // panel79
             // 
@@ -3074,44 +3076,44 @@
             // panel84
             // 
             this.panel84.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel84.Controls.Add(this.button32);
+            this.panel84.Controls.Add(this.SoLanTest7);
             this.panel84.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel84.Location = new System.Drawing.Point(106, 99);
             this.panel84.Name = "panel84";
             this.panel84.Size = new System.Drawing.Size(98, 21);
             this.panel84.TabIndex = 9;
             // 
-            // button32
+            // SoLanTest7
             // 
-            this.button32.BackColor = System.Drawing.SystemColors.Control;
-            this.button32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button32.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button32.Location = new System.Drawing.Point(0, 0);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(96, 19);
-            this.button32.TabIndex = 3;
-            this.button32.UseVisualStyleBackColor = false;
+            this.SoLanTest7.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest7.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest7.Name = "SoLanTest7";
+            this.SoLanTest7.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest7.TabIndex = 3;
+            this.SoLanTest7.UseVisualStyleBackColor = false;
             // 
             // panel85
             // 
             this.panel85.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel85.Controls.Add(this.button33);
+            this.panel85.Controls.Add(this.timeTest7);
             this.panel85.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel85.Location = new System.Drawing.Point(106, 75);
             this.panel85.Name = "panel85";
             this.panel85.Size = new System.Drawing.Size(98, 18);
             this.panel85.TabIndex = 7;
             // 
-            // button33
+            // timeTest7
             // 
-            this.button33.BackColor = System.Drawing.SystemColors.Control;
-            this.button33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button33.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button33.Location = new System.Drawing.Point(0, 0);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(96, 16);
-            this.button33.TabIndex = 2;
-            this.button33.UseVisualStyleBackColor = false;
+            this.timeTest7.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest7.Location = new System.Drawing.Point(0, 0);
+            this.timeTest7.Name = "timeTest7";
+            this.timeTest7.Size = new System.Drawing.Size(96, 16);
+            this.timeTest7.TabIndex = 2;
+            this.timeTest7.UseVisualStyleBackColor = false;
             // 
             // panel86
             // 
@@ -3138,23 +3140,23 @@
             // panel87
             // 
             this.panel87.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel87.Controls.Add(this.button34);
+            this.panel87.Controls.Add(this.CongSuat7);
             this.panel87.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel87.Location = new System.Drawing.Point(106, 51);
             this.panel87.Name = "panel87";
             this.panel87.Size = new System.Drawing.Size(98, 18);
             this.panel87.TabIndex = 5;
             // 
-            // button34
+            // CongSuat7
             // 
-            this.button34.BackColor = System.Drawing.SystemColors.Control;
-            this.button34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button34.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button34.Location = new System.Drawing.Point(0, 0);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(96, 16);
-            this.button34.TabIndex = 2;
-            this.button34.UseVisualStyleBackColor = false;
+            this.CongSuat7.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat7.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat7.Name = "CongSuat7";
+            this.CongSuat7.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat7.TabIndex = 2;
+            this.CongSuat7.UseVisualStyleBackColor = false;
             // 
             // panel88
             // 
@@ -3181,23 +3183,23 @@
             // panel89
             // 
             this.panel89.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel89.Controls.Add(this.button35);
+            this.panel89.Controls.Add(this.DienApDC7);
             this.panel89.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel89.Location = new System.Drawing.Point(106, 27);
             this.panel89.Name = "panel89";
             this.panel89.Size = new System.Drawing.Size(98, 18);
             this.panel89.TabIndex = 3;
             // 
-            // button35
+            // DienApDC7
             // 
-            this.button35.BackColor = System.Drawing.SystemColors.Control;
-            this.button35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button35.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button35.Location = new System.Drawing.Point(0, 0);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(96, 16);
-            this.button35.TabIndex = 2;
-            this.button35.UseVisualStyleBackColor = false;
+            this.DienApDC7.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC7.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC7.Name = "DienApDC7";
+            this.DienApDC7.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC7.TabIndex = 2;
+            this.DienApDC7.UseVisualStyleBackColor = false;
             // 
             // panel90
             // 
@@ -3224,23 +3226,23 @@
             // panel91
             // 
             this.panel91.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel91.Controls.Add(this.button36);
+            this.panel91.Controls.Add(this.DongDC7);
             this.panel91.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel91.Location = new System.Drawing.Point(106, 3);
             this.panel91.Name = "panel91";
             this.panel91.Size = new System.Drawing.Size(98, 18);
             this.panel91.TabIndex = 1;
             // 
-            // button36
+            // DongDC7
             // 
-            this.button36.BackColor = System.Drawing.SystemColors.Control;
-            this.button36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button36.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button36.Location = new System.Drawing.Point(0, 0);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(96, 16);
-            this.button36.TabIndex = 2;
-            this.button36.UseVisualStyleBackColor = false;
+            this.DongDC7.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC7.Location = new System.Drawing.Point(0, 0);
+            this.DongDC7.Name = "DongDC7";
+            this.DongDC7.Size = new System.Drawing.Size(96, 16);
+            this.DongDC7.TabIndex = 2;
+            this.DongDC7.UseVisualStyleBackColor = false;
             // 
             // panel92
             // 
@@ -3362,44 +3364,44 @@
             // panel97
             // 
             this.panel97.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel97.Controls.Add(this.button37);
+            this.panel97.Controls.Add(this.SoLanTest8);
             this.panel97.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel97.Location = new System.Drawing.Point(106, 99);
             this.panel97.Name = "panel97";
             this.panel97.Size = new System.Drawing.Size(98, 21);
             this.panel97.TabIndex = 9;
             // 
-            // button37
+            // SoLanTest8
             // 
-            this.button37.BackColor = System.Drawing.SystemColors.Control;
-            this.button37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button37.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button37.Location = new System.Drawing.Point(0, 0);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(96, 19);
-            this.button37.TabIndex = 3;
-            this.button37.UseVisualStyleBackColor = false;
+            this.SoLanTest8.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest8.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest8.Name = "SoLanTest8";
+            this.SoLanTest8.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest8.TabIndex = 3;
+            this.SoLanTest8.UseVisualStyleBackColor = false;
             // 
             // panel98
             // 
             this.panel98.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel98.Controls.Add(this.button38);
+            this.panel98.Controls.Add(this.timeTest8);
             this.panel98.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel98.Location = new System.Drawing.Point(106, 75);
             this.panel98.Name = "panel98";
             this.panel98.Size = new System.Drawing.Size(98, 18);
             this.panel98.TabIndex = 7;
             // 
-            // button38
+            // timeTest8
             // 
-            this.button38.BackColor = System.Drawing.SystemColors.Control;
-            this.button38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button38.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button38.Location = new System.Drawing.Point(0, 0);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(96, 16);
-            this.button38.TabIndex = 2;
-            this.button38.UseVisualStyleBackColor = false;
+            this.timeTest8.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest8.Location = new System.Drawing.Point(0, 0);
+            this.timeTest8.Name = "timeTest8";
+            this.timeTest8.Size = new System.Drawing.Size(96, 16);
+            this.timeTest8.TabIndex = 2;
+            this.timeTest8.UseVisualStyleBackColor = false;
             // 
             // panel99
             // 
@@ -3426,23 +3428,23 @@
             // panel100
             // 
             this.panel100.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel100.Controls.Add(this.button39);
+            this.panel100.Controls.Add(this.CongSuat8);
             this.panel100.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel100.Location = new System.Drawing.Point(106, 51);
             this.panel100.Name = "panel100";
             this.panel100.Size = new System.Drawing.Size(98, 18);
             this.panel100.TabIndex = 5;
             // 
-            // button39
+            // CongSuat8
             // 
-            this.button39.BackColor = System.Drawing.SystemColors.Control;
-            this.button39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button39.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button39.Location = new System.Drawing.Point(0, 0);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(96, 16);
-            this.button39.TabIndex = 2;
-            this.button39.UseVisualStyleBackColor = false;
+            this.CongSuat8.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat8.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat8.Name = "CongSuat8";
+            this.CongSuat8.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat8.TabIndex = 2;
+            this.CongSuat8.UseVisualStyleBackColor = false;
             // 
             // panel101
             // 
@@ -3469,23 +3471,23 @@
             // panel102
             // 
             this.panel102.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel102.Controls.Add(this.button40);
+            this.panel102.Controls.Add(this.DienApDC8);
             this.panel102.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel102.Location = new System.Drawing.Point(106, 27);
             this.panel102.Name = "panel102";
             this.panel102.Size = new System.Drawing.Size(98, 18);
             this.panel102.TabIndex = 3;
             // 
-            // button40
+            // DienApDC8
             // 
-            this.button40.BackColor = System.Drawing.SystemColors.Control;
-            this.button40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button40.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button40.Location = new System.Drawing.Point(0, 0);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(96, 16);
-            this.button40.TabIndex = 2;
-            this.button40.UseVisualStyleBackColor = false;
+            this.DienApDC8.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC8.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC8.Name = "DienApDC8";
+            this.DienApDC8.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC8.TabIndex = 2;
+            this.DienApDC8.UseVisualStyleBackColor = false;
             // 
             // panel103
             // 
@@ -3512,23 +3514,23 @@
             // panel104
             // 
             this.panel104.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel104.Controls.Add(this.button41);
+            this.panel104.Controls.Add(this.DongDC8);
             this.panel104.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel104.Location = new System.Drawing.Point(106, 3);
             this.panel104.Name = "panel104";
             this.panel104.Size = new System.Drawing.Size(98, 18);
             this.panel104.TabIndex = 1;
             // 
-            // button41
+            // DongDC8
             // 
-            this.button41.BackColor = System.Drawing.SystemColors.Control;
-            this.button41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button41.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button41.Location = new System.Drawing.Point(0, 0);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(96, 16);
-            this.button41.TabIndex = 2;
-            this.button41.UseVisualStyleBackColor = false;
+            this.DongDC8.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC8.Location = new System.Drawing.Point(0, 0);
+            this.DongDC8.Name = "DongDC8";
+            this.DongDC8.Size = new System.Drawing.Size(96, 16);
+            this.DongDC8.TabIndex = 2;
+            this.DongDC8.UseVisualStyleBackColor = false;
             // 
             // panel105
             // 
@@ -3650,44 +3652,44 @@
             // panel110
             // 
             this.panel110.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel110.Controls.Add(this.button42);
+            this.panel110.Controls.Add(this.SoLanTest9);
             this.panel110.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel110.Location = new System.Drawing.Point(106, 99);
             this.panel110.Name = "panel110";
             this.panel110.Size = new System.Drawing.Size(98, 21);
             this.panel110.TabIndex = 9;
             // 
-            // button42
+            // SoLanTest9
             // 
-            this.button42.BackColor = System.Drawing.SystemColors.Control;
-            this.button42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button42.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button42.Location = new System.Drawing.Point(0, 0);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(96, 19);
-            this.button42.TabIndex = 3;
-            this.button42.UseVisualStyleBackColor = false;
+            this.SoLanTest9.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest9.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest9.Name = "SoLanTest9";
+            this.SoLanTest9.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest9.TabIndex = 3;
+            this.SoLanTest9.UseVisualStyleBackColor = false;
             // 
             // panel111
             // 
             this.panel111.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel111.Controls.Add(this.button43);
+            this.panel111.Controls.Add(this.timeTest9);
             this.panel111.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel111.Location = new System.Drawing.Point(106, 75);
             this.panel111.Name = "panel111";
             this.panel111.Size = new System.Drawing.Size(98, 18);
             this.panel111.TabIndex = 7;
             // 
-            // button43
+            // timeTest9
             // 
-            this.button43.BackColor = System.Drawing.SystemColors.Control;
-            this.button43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button43.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button43.Location = new System.Drawing.Point(0, 0);
-            this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(96, 16);
-            this.button43.TabIndex = 2;
-            this.button43.UseVisualStyleBackColor = false;
+            this.timeTest9.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest9.Location = new System.Drawing.Point(0, 0);
+            this.timeTest9.Name = "timeTest9";
+            this.timeTest9.Size = new System.Drawing.Size(96, 16);
+            this.timeTest9.TabIndex = 2;
+            this.timeTest9.UseVisualStyleBackColor = false;
             // 
             // panel112
             // 
@@ -3714,23 +3716,23 @@
             // panel113
             // 
             this.panel113.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel113.Controls.Add(this.button44);
+            this.panel113.Controls.Add(this.CongSuat9);
             this.panel113.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel113.Location = new System.Drawing.Point(106, 51);
             this.panel113.Name = "panel113";
             this.panel113.Size = new System.Drawing.Size(98, 18);
             this.panel113.TabIndex = 5;
             // 
-            // button44
+            // CongSuat9
             // 
-            this.button44.BackColor = System.Drawing.SystemColors.Control;
-            this.button44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button44.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button44.Location = new System.Drawing.Point(0, 0);
-            this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(96, 16);
-            this.button44.TabIndex = 2;
-            this.button44.UseVisualStyleBackColor = false;
+            this.CongSuat9.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat9.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat9.Name = "CongSuat9";
+            this.CongSuat9.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat9.TabIndex = 2;
+            this.CongSuat9.UseVisualStyleBackColor = false;
             // 
             // panel114
             // 
@@ -3757,23 +3759,23 @@
             // panel115
             // 
             this.panel115.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel115.Controls.Add(this.button45);
+            this.panel115.Controls.Add(this.DienApDC9);
             this.panel115.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel115.Location = new System.Drawing.Point(106, 27);
             this.panel115.Name = "panel115";
             this.panel115.Size = new System.Drawing.Size(98, 18);
             this.panel115.TabIndex = 3;
             // 
-            // button45
+            // DienApDC9
             // 
-            this.button45.BackColor = System.Drawing.SystemColors.Control;
-            this.button45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button45.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button45.Location = new System.Drawing.Point(0, 0);
-            this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(96, 16);
-            this.button45.TabIndex = 2;
-            this.button45.UseVisualStyleBackColor = false;
+            this.DienApDC9.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC9.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC9.Name = "DienApDC9";
+            this.DienApDC9.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC9.TabIndex = 2;
+            this.DienApDC9.UseVisualStyleBackColor = false;
             // 
             // panel116
             // 
@@ -3800,23 +3802,23 @@
             // panel117
             // 
             this.panel117.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel117.Controls.Add(this.button46);
+            this.panel117.Controls.Add(this.DongDC9);
             this.panel117.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel117.Location = new System.Drawing.Point(106, 3);
             this.panel117.Name = "panel117";
             this.panel117.Size = new System.Drawing.Size(98, 18);
             this.panel117.TabIndex = 1;
             // 
-            // button46
+            // DongDC9
             // 
-            this.button46.BackColor = System.Drawing.SystemColors.Control;
-            this.button46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button46.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button46.Location = new System.Drawing.Point(0, 0);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(96, 16);
-            this.button46.TabIndex = 2;
-            this.button46.UseVisualStyleBackColor = false;
+            this.DongDC9.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC9.Location = new System.Drawing.Point(0, 0);
+            this.DongDC9.Name = "DongDC9";
+            this.DongDC9.Size = new System.Drawing.Size(96, 16);
+            this.DongDC9.TabIndex = 2;
+            this.DongDC9.UseVisualStyleBackColor = false;
             // 
             // panel118
             // 
@@ -3938,44 +3940,44 @@
             // panel123
             // 
             this.panel123.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel123.Controls.Add(this.button47);
+            this.panel123.Controls.Add(this.SoLanTest10);
             this.panel123.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel123.Location = new System.Drawing.Point(106, 99);
             this.panel123.Name = "panel123";
             this.panel123.Size = new System.Drawing.Size(98, 21);
             this.panel123.TabIndex = 9;
             // 
-            // button47
+            // SoLanTest10
             // 
-            this.button47.BackColor = System.Drawing.SystemColors.Control;
-            this.button47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button47.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button47.Location = new System.Drawing.Point(0, 0);
-            this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(96, 19);
-            this.button47.TabIndex = 3;
-            this.button47.UseVisualStyleBackColor = false;
+            this.SoLanTest10.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest10.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest10.Name = "SoLanTest10";
+            this.SoLanTest10.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest10.TabIndex = 3;
+            this.SoLanTest10.UseVisualStyleBackColor = false;
             // 
             // panel124
             // 
             this.panel124.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel124.Controls.Add(this.button48);
+            this.panel124.Controls.Add(this.timeTest10);
             this.panel124.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel124.Location = new System.Drawing.Point(106, 75);
             this.panel124.Name = "panel124";
             this.panel124.Size = new System.Drawing.Size(98, 18);
             this.panel124.TabIndex = 7;
             // 
-            // button48
+            // timeTest10
             // 
-            this.button48.BackColor = System.Drawing.SystemColors.Control;
-            this.button48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button48.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button48.Location = new System.Drawing.Point(0, 0);
-            this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(96, 16);
-            this.button48.TabIndex = 2;
-            this.button48.UseVisualStyleBackColor = false;
+            this.timeTest10.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest10.Location = new System.Drawing.Point(0, 0);
+            this.timeTest10.Name = "timeTest10";
+            this.timeTest10.Size = new System.Drawing.Size(96, 16);
+            this.timeTest10.TabIndex = 2;
+            this.timeTest10.UseVisualStyleBackColor = false;
             // 
             // panel125
             // 
@@ -4002,23 +4004,23 @@
             // panel126
             // 
             this.panel126.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel126.Controls.Add(this.button49);
+            this.panel126.Controls.Add(this.CongSuat10);
             this.panel126.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel126.Location = new System.Drawing.Point(106, 51);
             this.panel126.Name = "panel126";
             this.panel126.Size = new System.Drawing.Size(98, 18);
             this.panel126.TabIndex = 5;
             // 
-            // button49
+            // CongSuat10
             // 
-            this.button49.BackColor = System.Drawing.SystemColors.Control;
-            this.button49.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button49.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button49.Location = new System.Drawing.Point(0, 0);
-            this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(96, 16);
-            this.button49.TabIndex = 2;
-            this.button49.UseVisualStyleBackColor = false;
+            this.CongSuat10.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat10.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat10.Name = "CongSuat10";
+            this.CongSuat10.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat10.TabIndex = 2;
+            this.CongSuat10.UseVisualStyleBackColor = false;
             // 
             // panel127
             // 
@@ -4045,23 +4047,23 @@
             // panel128
             // 
             this.panel128.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel128.Controls.Add(this.button50);
+            this.panel128.Controls.Add(this.DienApDC10);
             this.panel128.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel128.Location = new System.Drawing.Point(106, 27);
             this.panel128.Name = "panel128";
             this.panel128.Size = new System.Drawing.Size(98, 18);
             this.panel128.TabIndex = 3;
             // 
-            // button50
+            // DienApDC10
             // 
-            this.button50.BackColor = System.Drawing.SystemColors.Control;
-            this.button50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button50.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button50.Location = new System.Drawing.Point(0, 0);
-            this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(96, 16);
-            this.button50.TabIndex = 2;
-            this.button50.UseVisualStyleBackColor = false;
+            this.DienApDC10.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC10.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC10.Name = "DienApDC10";
+            this.DienApDC10.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC10.TabIndex = 2;
+            this.DienApDC10.UseVisualStyleBackColor = false;
             // 
             // panel129
             // 
@@ -4088,23 +4090,23 @@
             // panel130
             // 
             this.panel130.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel130.Controls.Add(this.button51);
+            this.panel130.Controls.Add(this.DongDC10);
             this.panel130.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel130.Location = new System.Drawing.Point(106, 3);
             this.panel130.Name = "panel130";
             this.panel130.Size = new System.Drawing.Size(98, 18);
             this.panel130.TabIndex = 1;
             // 
-            // button51
+            // DongDC10
             // 
-            this.button51.BackColor = System.Drawing.SystemColors.Control;
-            this.button51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button51.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button51.Location = new System.Drawing.Point(0, 0);
-            this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(96, 16);
-            this.button51.TabIndex = 2;
-            this.button51.UseVisualStyleBackColor = false;
+            this.DongDC10.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC10.Location = new System.Drawing.Point(0, 0);
+            this.DongDC10.Name = "DongDC10";
+            this.DongDC10.Size = new System.Drawing.Size(96, 16);
+            this.DongDC10.TabIndex = 2;
+            this.DongDC10.UseVisualStyleBackColor = false;
             // 
             // panel131
             // 
@@ -4226,44 +4228,44 @@
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.button2);
+            this.panel6.Controls.Add(this.SoLanTest11);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(106, 99);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(98, 21);
             this.panel6.TabIndex = 9;
             // 
-            // button2
+            // SoLanTest11
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 19);
-            this.button2.TabIndex = 3;
-            this.button2.UseVisualStyleBackColor = false;
+            this.SoLanTest11.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest11.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest11.Name = "SoLanTest11";
+            this.SoLanTest11.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest11.TabIndex = 3;
+            this.SoLanTest11.UseVisualStyleBackColor = false;
             // 
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.button3);
+            this.panel7.Controls.Add(this.timeTest11);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(106, 75);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(98, 18);
             this.panel7.TabIndex = 7;
             // 
-            // button3
+            // timeTest11
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Control;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(0, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 16);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = false;
+            this.timeTest11.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest11.Location = new System.Drawing.Point(0, 0);
+            this.timeTest11.Name = "timeTest11";
+            this.timeTest11.Size = new System.Drawing.Size(96, 16);
+            this.timeTest11.TabIndex = 2;
+            this.timeTest11.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
@@ -4290,23 +4292,23 @@
             // panel9
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.button4);
+            this.panel9.Controls.Add(this.CongSuat11);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(106, 51);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(98, 18);
             this.panel9.TabIndex = 5;
             // 
-            // button4
+            // CongSuat11
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.Control;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(0, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(96, 16);
-            this.button4.TabIndex = 2;
-            this.button4.UseVisualStyleBackColor = false;
+            this.CongSuat11.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat11.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat11.Name = "CongSuat11";
+            this.CongSuat11.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat11.TabIndex = 2;
+            this.CongSuat11.UseVisualStyleBackColor = false;
             // 
             // panel10
             // 
@@ -4333,23 +4335,23 @@
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.button5);
+            this.panel11.Controls.Add(this.DienApDC11);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(106, 27);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(98, 18);
             this.panel11.TabIndex = 3;
             // 
-            // button5
+            // DienApDC11
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.Control;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(96, 16);
-            this.button5.TabIndex = 2;
-            this.button5.UseVisualStyleBackColor = false;
+            this.DienApDC11.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC11.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC11.Name = "DienApDC11";
+            this.DienApDC11.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC11.TabIndex = 2;
+            this.DienApDC11.UseVisualStyleBackColor = false;
             // 
             // panel12
             // 
@@ -4376,23 +4378,23 @@
             // panel13
             // 
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Controls.Add(this.button6);
+            this.panel13.Controls.Add(this.DongDC11);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel13.Location = new System.Drawing.Point(106, 3);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(98, 18);
             this.panel13.TabIndex = 1;
             // 
-            // button6
+            // DongDC11
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.Control;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button6.Location = new System.Drawing.Point(0, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(96, 16);
-            this.button6.TabIndex = 2;
-            this.button6.UseVisualStyleBackColor = false;
+            this.DongDC11.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC11.Location = new System.Drawing.Point(0, 0);
+            this.DongDC11.Name = "DongDC11";
+            this.DongDC11.Size = new System.Drawing.Size(96, 16);
+            this.DongDC11.TabIndex = 2;
+            this.DongDC11.UseVisualStyleBackColor = false;
             // 
             // panel14
             // 
@@ -4514,44 +4516,44 @@
             // panel19
             // 
             this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel19.Controls.Add(this.button7);
+            this.panel19.Controls.Add(this.SoLanTest12);
             this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel19.Location = new System.Drawing.Point(106, 99);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(98, 21);
             this.panel19.TabIndex = 9;
             // 
-            // button7
+            // SoLanTest12
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.Control;
-            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button7.Location = new System.Drawing.Point(0, 0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(96, 19);
-            this.button7.TabIndex = 3;
-            this.button7.UseVisualStyleBackColor = false;
+            this.SoLanTest12.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest12.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest12.Name = "SoLanTest12";
+            this.SoLanTest12.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest12.TabIndex = 3;
+            this.SoLanTest12.UseVisualStyleBackColor = false;
             // 
             // panel20
             // 
             this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel20.Controls.Add(this.button8);
+            this.panel20.Controls.Add(this.timeTest12);
             this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel20.Location = new System.Drawing.Point(106, 75);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(98, 18);
             this.panel20.TabIndex = 7;
             // 
-            // button8
+            // timeTest12
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.Control;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button8.Location = new System.Drawing.Point(0, 0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(96, 16);
-            this.button8.TabIndex = 2;
-            this.button8.UseVisualStyleBackColor = false;
+            this.timeTest12.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest12.Location = new System.Drawing.Point(0, 0);
+            this.timeTest12.Name = "timeTest12";
+            this.timeTest12.Size = new System.Drawing.Size(96, 16);
+            this.timeTest12.TabIndex = 2;
+            this.timeTest12.UseVisualStyleBackColor = false;
             // 
             // panel21
             // 
@@ -4578,23 +4580,23 @@
             // panel22
             // 
             this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel22.Controls.Add(this.button9);
+            this.panel22.Controls.Add(this.CongSuat12);
             this.panel22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel22.Location = new System.Drawing.Point(106, 51);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(98, 18);
             this.panel22.TabIndex = 5;
             // 
-            // button9
+            // CongSuat12
             // 
-            this.button9.BackColor = System.Drawing.SystemColors.Control;
-            this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button9.Location = new System.Drawing.Point(0, 0);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(96, 16);
-            this.button9.TabIndex = 2;
-            this.button9.UseVisualStyleBackColor = false;
+            this.CongSuat12.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat12.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat12.Name = "CongSuat12";
+            this.CongSuat12.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat12.TabIndex = 2;
+            this.CongSuat12.UseVisualStyleBackColor = false;
             // 
             // panel23
             // 
@@ -4621,23 +4623,23 @@
             // panel24
             // 
             this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel24.Controls.Add(this.button10);
+            this.panel24.Controls.Add(this.DienApDC12);
             this.panel24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel24.Location = new System.Drawing.Point(106, 27);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(98, 18);
             this.panel24.TabIndex = 3;
             // 
-            // button10
+            // DienApDC12
             // 
-            this.button10.BackColor = System.Drawing.SystemColors.Control;
-            this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button10.Location = new System.Drawing.Point(0, 0);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(96, 16);
-            this.button10.TabIndex = 2;
-            this.button10.UseVisualStyleBackColor = false;
+            this.DienApDC12.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC12.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC12.Name = "DienApDC12";
+            this.DienApDC12.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC12.TabIndex = 2;
+            this.DienApDC12.UseVisualStyleBackColor = false;
             // 
             // panel25
             // 
@@ -4664,23 +4666,23 @@
             // panel26
             // 
             this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel26.Controls.Add(this.button11);
+            this.panel26.Controls.Add(this.DongDC12);
             this.panel26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel26.Location = new System.Drawing.Point(106, 3);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(98, 18);
             this.panel26.TabIndex = 1;
             // 
-            // button11
+            // DongDC12
             // 
-            this.button11.BackColor = System.Drawing.SystemColors.Control;
-            this.button11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button11.Location = new System.Drawing.Point(0, 0);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(96, 16);
-            this.button11.TabIndex = 2;
-            this.button11.UseVisualStyleBackColor = false;
+            this.DongDC12.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC12.Location = new System.Drawing.Point(0, 0);
+            this.DongDC12.Name = "DongDC12";
+            this.DongDC12.Size = new System.Drawing.Size(96, 16);
+            this.DongDC12.TabIndex = 2;
+            this.DongDC12.UseVisualStyleBackColor = false;
             // 
             // panel27
             // 
@@ -4802,44 +4804,44 @@
             // panel32
             // 
             this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel32.Controls.Add(this.button12);
+            this.panel32.Controls.Add(this.SoLanTest13);
             this.panel32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel32.Location = new System.Drawing.Point(106, 99);
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(98, 21);
             this.panel32.TabIndex = 9;
             // 
-            // button12
+            // SoLanTest13
             // 
-            this.button12.BackColor = System.Drawing.SystemColors.Control;
-            this.button12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button12.Location = new System.Drawing.Point(0, 0);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(96, 19);
-            this.button12.TabIndex = 3;
-            this.button12.UseVisualStyleBackColor = false;
+            this.SoLanTest13.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest13.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest13.Name = "SoLanTest13";
+            this.SoLanTest13.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest13.TabIndex = 3;
+            this.SoLanTest13.UseVisualStyleBackColor = false;
             // 
             // panel33
             // 
             this.panel33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel33.Controls.Add(this.button13);
+            this.panel33.Controls.Add(this.timeTest13);
             this.panel33.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel33.Location = new System.Drawing.Point(106, 75);
             this.panel33.Name = "panel33";
             this.panel33.Size = new System.Drawing.Size(98, 18);
             this.panel33.TabIndex = 7;
             // 
-            // button13
+            // timeTest13
             // 
-            this.button13.BackColor = System.Drawing.SystemColors.Control;
-            this.button13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button13.Location = new System.Drawing.Point(0, 0);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(96, 16);
-            this.button13.TabIndex = 2;
-            this.button13.UseVisualStyleBackColor = false;
+            this.timeTest13.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest13.Location = new System.Drawing.Point(0, 0);
+            this.timeTest13.Name = "timeTest13";
+            this.timeTest13.Size = new System.Drawing.Size(96, 16);
+            this.timeTest13.TabIndex = 2;
+            this.timeTest13.UseVisualStyleBackColor = false;
             // 
             // panel34
             // 
@@ -4866,23 +4868,23 @@
             // panel35
             // 
             this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel35.Controls.Add(this.button14);
+            this.panel35.Controls.Add(this.CongSuat13);
             this.panel35.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel35.Location = new System.Drawing.Point(106, 51);
             this.panel35.Name = "panel35";
             this.panel35.Size = new System.Drawing.Size(98, 18);
             this.panel35.TabIndex = 5;
             // 
-            // button14
+            // CongSuat13
             // 
-            this.button14.BackColor = System.Drawing.SystemColors.Control;
-            this.button14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button14.Location = new System.Drawing.Point(0, 0);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(96, 16);
-            this.button14.TabIndex = 2;
-            this.button14.UseVisualStyleBackColor = false;
+            this.CongSuat13.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat13.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat13.Name = "CongSuat13";
+            this.CongSuat13.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat13.TabIndex = 2;
+            this.CongSuat13.UseVisualStyleBackColor = false;
             // 
             // panel36
             // 
@@ -4909,23 +4911,23 @@
             // panel37
             // 
             this.panel37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel37.Controls.Add(this.button15);
+            this.panel37.Controls.Add(this.DienApDC13);
             this.panel37.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel37.Location = new System.Drawing.Point(106, 27);
             this.panel37.Name = "panel37";
             this.panel37.Size = new System.Drawing.Size(98, 18);
             this.panel37.TabIndex = 3;
             // 
-            // button15
+            // DienApDC13
             // 
-            this.button15.BackColor = System.Drawing.SystemColors.Control;
-            this.button15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button15.Location = new System.Drawing.Point(0, 0);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(96, 16);
-            this.button15.TabIndex = 2;
-            this.button15.UseVisualStyleBackColor = false;
+            this.DienApDC13.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC13.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC13.Name = "DienApDC13";
+            this.DienApDC13.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC13.TabIndex = 2;
+            this.DienApDC13.UseVisualStyleBackColor = false;
             // 
             // panel38
             // 
@@ -4952,23 +4954,23 @@
             // panel39
             // 
             this.panel39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel39.Controls.Add(this.button16);
+            this.panel39.Controls.Add(this.DongDC13);
             this.panel39.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel39.Location = new System.Drawing.Point(106, 3);
             this.panel39.Name = "panel39";
             this.panel39.Size = new System.Drawing.Size(98, 18);
             this.panel39.TabIndex = 1;
             // 
-            // button16
+            // DongDC13
             // 
-            this.button16.BackColor = System.Drawing.SystemColors.Control;
-            this.button16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button16.Location = new System.Drawing.Point(0, 0);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(96, 16);
-            this.button16.TabIndex = 2;
-            this.button16.UseVisualStyleBackColor = false;
+            this.DongDC13.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC13.Location = new System.Drawing.Point(0, 0);
+            this.DongDC13.Name = "DongDC13";
+            this.DongDC13.Size = new System.Drawing.Size(96, 16);
+            this.DongDC13.TabIndex = 2;
+            this.DongDC13.UseVisualStyleBackColor = false;
             // 
             // panel40
             // 
@@ -5090,44 +5092,44 @@
             // panel45
             // 
             this.panel45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel45.Controls.Add(this.button17);
+            this.panel45.Controls.Add(this.SoLanTest14);
             this.panel45.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel45.Location = new System.Drawing.Point(106, 99);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(98, 21);
             this.panel45.TabIndex = 9;
             // 
-            // button17
+            // SoLanTest14
             // 
-            this.button17.BackColor = System.Drawing.SystemColors.Control;
-            this.button17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button17.Location = new System.Drawing.Point(0, 0);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(96, 19);
-            this.button17.TabIndex = 3;
-            this.button17.UseVisualStyleBackColor = false;
+            this.SoLanTest14.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest14.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest14.Name = "SoLanTest14";
+            this.SoLanTest14.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest14.TabIndex = 3;
+            this.SoLanTest14.UseVisualStyleBackColor = false;
             // 
             // panel46
             // 
             this.panel46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel46.Controls.Add(this.button18);
+            this.panel46.Controls.Add(this.timeTest14);
             this.panel46.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel46.Location = new System.Drawing.Point(106, 75);
             this.panel46.Name = "panel46";
             this.panel46.Size = new System.Drawing.Size(98, 18);
             this.panel46.TabIndex = 7;
             // 
-            // button18
+            // timeTest14
             // 
-            this.button18.BackColor = System.Drawing.SystemColors.Control;
-            this.button18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button18.Location = new System.Drawing.Point(0, 0);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(96, 16);
-            this.button18.TabIndex = 2;
-            this.button18.UseVisualStyleBackColor = false;
+            this.timeTest14.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest14.Location = new System.Drawing.Point(0, 0);
+            this.timeTest14.Name = "timeTest14";
+            this.timeTest14.Size = new System.Drawing.Size(96, 16);
+            this.timeTest14.TabIndex = 2;
+            this.timeTest14.UseVisualStyleBackColor = false;
             // 
             // panel47
             // 
@@ -5154,23 +5156,23 @@
             // panel48
             // 
             this.panel48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel48.Controls.Add(this.button19);
+            this.panel48.Controls.Add(this.CongSuat14);
             this.panel48.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel48.Location = new System.Drawing.Point(106, 51);
             this.panel48.Name = "panel48";
             this.panel48.Size = new System.Drawing.Size(98, 18);
             this.panel48.TabIndex = 5;
             // 
-            // button19
+            // CongSuat14
             // 
-            this.button19.BackColor = System.Drawing.SystemColors.Control;
-            this.button19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button19.Location = new System.Drawing.Point(0, 0);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(96, 16);
-            this.button19.TabIndex = 2;
-            this.button19.UseVisualStyleBackColor = false;
+            this.CongSuat14.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat14.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat14.Name = "CongSuat14";
+            this.CongSuat14.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat14.TabIndex = 2;
+            this.CongSuat14.UseVisualStyleBackColor = false;
             // 
             // panel49
             // 
@@ -5197,23 +5199,23 @@
             // panel50
             // 
             this.panel50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel50.Controls.Add(this.button20);
+            this.panel50.Controls.Add(this.DienApDC14);
             this.panel50.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel50.Location = new System.Drawing.Point(106, 27);
             this.panel50.Name = "panel50";
             this.panel50.Size = new System.Drawing.Size(98, 18);
             this.panel50.TabIndex = 3;
             // 
-            // button20
+            // DienApDC14
             // 
-            this.button20.BackColor = System.Drawing.SystemColors.Control;
-            this.button20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button20.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button20.Location = new System.Drawing.Point(0, 0);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(96, 16);
-            this.button20.TabIndex = 2;
-            this.button20.UseVisualStyleBackColor = false;
+            this.DienApDC14.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC14.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC14.Name = "DienApDC14";
+            this.DienApDC14.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC14.TabIndex = 2;
+            this.DienApDC14.UseVisualStyleBackColor = false;
             // 
             // panel51
             // 
@@ -5240,23 +5242,23 @@
             // panel52
             // 
             this.panel52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel52.Controls.Add(this.button21);
+            this.panel52.Controls.Add(this.DongDC14);
             this.panel52.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel52.Location = new System.Drawing.Point(106, 3);
             this.panel52.Name = "panel52";
             this.panel52.Size = new System.Drawing.Size(98, 18);
             this.panel52.TabIndex = 1;
             // 
-            // button21
+            // DongDC14
             // 
-            this.button21.BackColor = System.Drawing.SystemColors.Control;
-            this.button21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button21.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button21.Location = new System.Drawing.Point(0, 0);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(96, 16);
-            this.button21.TabIndex = 2;
-            this.button21.UseVisualStyleBackColor = false;
+            this.DongDC14.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC14.Location = new System.Drawing.Point(0, 0);
+            this.DongDC14.Name = "DongDC14";
+            this.DongDC14.Size = new System.Drawing.Size(96, 16);
+            this.DongDC14.TabIndex = 2;
+            this.DongDC14.UseVisualStyleBackColor = false;
             // 
             // panel53
             // 
@@ -5378,44 +5380,44 @@
             // panel58
             // 
             this.panel58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel58.Controls.Add(this.button22);
+            this.panel58.Controls.Add(this.SoLanTest15);
             this.panel58.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel58.Location = new System.Drawing.Point(106, 99);
             this.panel58.Name = "panel58";
             this.panel58.Size = new System.Drawing.Size(98, 21);
             this.panel58.TabIndex = 9;
             // 
-            // button22
+            // SoLanTest15
             // 
-            this.button22.BackColor = System.Drawing.SystemColors.Control;
-            this.button22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button22.Location = new System.Drawing.Point(0, 0);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(96, 19);
-            this.button22.TabIndex = 3;
-            this.button22.UseVisualStyleBackColor = false;
+            this.SoLanTest15.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest15.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest15.Name = "SoLanTest15";
+            this.SoLanTest15.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest15.TabIndex = 3;
+            this.SoLanTest15.UseVisualStyleBackColor = false;
             // 
             // panel59
             // 
             this.panel59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel59.Controls.Add(this.button23);
+            this.panel59.Controls.Add(this.timeTest15);
             this.panel59.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel59.Location = new System.Drawing.Point(106, 75);
             this.panel59.Name = "panel59";
             this.panel59.Size = new System.Drawing.Size(98, 18);
             this.panel59.TabIndex = 7;
             // 
-            // button23
+            // timeTest15
             // 
-            this.button23.BackColor = System.Drawing.SystemColors.Control;
-            this.button23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button23.Location = new System.Drawing.Point(0, 0);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(96, 16);
-            this.button23.TabIndex = 2;
-            this.button23.UseVisualStyleBackColor = false;
+            this.timeTest15.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest15.Location = new System.Drawing.Point(0, 0);
+            this.timeTest15.Name = "timeTest15";
+            this.timeTest15.Size = new System.Drawing.Size(96, 16);
+            this.timeTest15.TabIndex = 2;
+            this.timeTest15.UseVisualStyleBackColor = false;
             // 
             // panel60
             // 
@@ -5442,23 +5444,23 @@
             // panel61
             // 
             this.panel61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel61.Controls.Add(this.button24);
+            this.panel61.Controls.Add(this.CongSuat15);
             this.panel61.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel61.Location = new System.Drawing.Point(106, 51);
             this.panel61.Name = "panel61";
             this.panel61.Size = new System.Drawing.Size(98, 18);
             this.panel61.TabIndex = 5;
             // 
-            // button24
+            // CongSuat15
             // 
-            this.button24.BackColor = System.Drawing.SystemColors.Control;
-            this.button24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button24.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button24.Location = new System.Drawing.Point(0, 0);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(96, 16);
-            this.button24.TabIndex = 2;
-            this.button24.UseVisualStyleBackColor = false;
+            this.CongSuat15.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat15.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat15.Name = "CongSuat15";
+            this.CongSuat15.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat15.TabIndex = 2;
+            this.CongSuat15.UseVisualStyleBackColor = false;
             // 
             // panel62
             // 
@@ -5485,23 +5487,23 @@
             // panel63
             // 
             this.panel63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel63.Controls.Add(this.button25);
+            this.panel63.Controls.Add(this.DienApDC15);
             this.panel63.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel63.Location = new System.Drawing.Point(106, 27);
             this.panel63.Name = "panel63";
             this.panel63.Size = new System.Drawing.Size(98, 18);
             this.panel63.TabIndex = 3;
             // 
-            // button25
+            // DienApDC15
             // 
-            this.button25.BackColor = System.Drawing.SystemColors.Control;
-            this.button25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button25.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button25.Location = new System.Drawing.Point(0, 0);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(96, 16);
-            this.button25.TabIndex = 2;
-            this.button25.UseVisualStyleBackColor = false;
+            this.DienApDC15.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC15.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC15.Name = "DienApDC15";
+            this.DienApDC15.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC15.TabIndex = 2;
+            this.DienApDC15.UseVisualStyleBackColor = false;
             // 
             // panel64
             // 
@@ -5528,23 +5530,23 @@
             // panel65
             // 
             this.panel65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel65.Controls.Add(this.button26);
+            this.panel65.Controls.Add(this.DongDC15);
             this.panel65.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel65.Location = new System.Drawing.Point(106, 3);
             this.panel65.Name = "panel65";
             this.panel65.Size = new System.Drawing.Size(98, 18);
             this.panel65.TabIndex = 1;
             // 
-            // button26
+            // DongDC15
             // 
-            this.button26.BackColor = System.Drawing.SystemColors.Control;
-            this.button26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button26.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button26.Location = new System.Drawing.Point(0, 0);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(96, 16);
-            this.button26.TabIndex = 2;
-            this.button26.UseVisualStyleBackColor = false;
+            this.DongDC15.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC15.Location = new System.Drawing.Point(0, 0);
+            this.DongDC15.Name = "DongDC15";
+            this.DongDC15.Size = new System.Drawing.Size(96, 16);
+            this.DongDC15.TabIndex = 2;
+            this.DongDC15.UseVisualStyleBackColor = false;
             // 
             // panel66
             // 
@@ -5692,44 +5694,44 @@
             // panel329
             // 
             this.panel329.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel329.Controls.Add(this.button126);
+            this.panel329.Controls.Add(this.SoLanTest16);
             this.panel329.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel329.Location = new System.Drawing.Point(106, 99);
             this.panel329.Name = "panel329";
             this.panel329.Size = new System.Drawing.Size(98, 21);
             this.panel329.TabIndex = 9;
             // 
-            // button126
+            // SoLanTest16
             // 
-            this.button126.BackColor = System.Drawing.SystemColors.Control;
-            this.button126.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button126.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button126.Location = new System.Drawing.Point(0, 0);
-            this.button126.Name = "button126";
-            this.button126.Size = new System.Drawing.Size(96, 19);
-            this.button126.TabIndex = 3;
-            this.button126.UseVisualStyleBackColor = false;
+            this.SoLanTest16.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest16.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest16.Name = "SoLanTest16";
+            this.SoLanTest16.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest16.TabIndex = 3;
+            this.SoLanTest16.UseVisualStyleBackColor = false;
             // 
             // panel330
             // 
             this.panel330.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel330.Controls.Add(this.button127);
+            this.panel330.Controls.Add(this.timeTest16);
             this.panel330.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel330.Location = new System.Drawing.Point(106, 75);
             this.panel330.Name = "panel330";
             this.panel330.Size = new System.Drawing.Size(98, 18);
             this.panel330.TabIndex = 7;
             // 
-            // button127
+            // timeTest16
             // 
-            this.button127.BackColor = System.Drawing.SystemColors.Control;
-            this.button127.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button127.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button127.Location = new System.Drawing.Point(0, 0);
-            this.button127.Name = "button127";
-            this.button127.Size = new System.Drawing.Size(96, 16);
-            this.button127.TabIndex = 2;
-            this.button127.UseVisualStyleBackColor = false;
+            this.timeTest16.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest16.Location = new System.Drawing.Point(0, 0);
+            this.timeTest16.Name = "timeTest16";
+            this.timeTest16.Size = new System.Drawing.Size(96, 16);
+            this.timeTest16.TabIndex = 2;
+            this.timeTest16.UseVisualStyleBackColor = false;
             // 
             // panel331
             // 
@@ -5756,23 +5758,23 @@
             // panel332
             // 
             this.panel332.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel332.Controls.Add(this.button128);
+            this.panel332.Controls.Add(this.CongSuat16);
             this.panel332.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel332.Location = new System.Drawing.Point(106, 51);
             this.panel332.Name = "panel332";
             this.panel332.Size = new System.Drawing.Size(98, 18);
             this.panel332.TabIndex = 5;
             // 
-            // button128
+            // CongSuat16
             // 
-            this.button128.BackColor = System.Drawing.SystemColors.Control;
-            this.button128.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button128.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button128.Location = new System.Drawing.Point(0, 0);
-            this.button128.Name = "button128";
-            this.button128.Size = new System.Drawing.Size(96, 16);
-            this.button128.TabIndex = 2;
-            this.button128.UseVisualStyleBackColor = false;
+            this.CongSuat16.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat16.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat16.Name = "CongSuat16";
+            this.CongSuat16.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat16.TabIndex = 2;
+            this.CongSuat16.UseVisualStyleBackColor = false;
             // 
             // panel333
             // 
@@ -5799,23 +5801,23 @@
             // panel334
             // 
             this.panel334.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel334.Controls.Add(this.button129);
+            this.panel334.Controls.Add(this.DienApDC16);
             this.panel334.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel334.Location = new System.Drawing.Point(106, 27);
             this.panel334.Name = "panel334";
             this.panel334.Size = new System.Drawing.Size(98, 18);
             this.panel334.TabIndex = 3;
             // 
-            // button129
+            // DienApDC16
             // 
-            this.button129.BackColor = System.Drawing.SystemColors.Control;
-            this.button129.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button129.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button129.Location = new System.Drawing.Point(0, 0);
-            this.button129.Name = "button129";
-            this.button129.Size = new System.Drawing.Size(96, 16);
-            this.button129.TabIndex = 2;
-            this.button129.UseVisualStyleBackColor = false;
+            this.DienApDC16.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC16.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC16.Name = "DienApDC16";
+            this.DienApDC16.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC16.TabIndex = 2;
+            this.DienApDC16.UseVisualStyleBackColor = false;
             // 
             // panel335
             // 
@@ -5842,23 +5844,23 @@
             // panel336
             // 
             this.panel336.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel336.Controls.Add(this.button130);
+            this.panel336.Controls.Add(this.DongDC16);
             this.panel336.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel336.Location = new System.Drawing.Point(106, 3);
             this.panel336.Name = "panel336";
             this.panel336.Size = new System.Drawing.Size(98, 18);
             this.panel336.TabIndex = 1;
             // 
-            // button130
+            // DongDC16
             // 
-            this.button130.BackColor = System.Drawing.SystemColors.Control;
-            this.button130.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button130.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button130.Location = new System.Drawing.Point(0, 0);
-            this.button130.Name = "button130";
-            this.button130.Size = new System.Drawing.Size(96, 16);
-            this.button130.TabIndex = 2;
-            this.button130.UseVisualStyleBackColor = false;
+            this.DongDC16.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC16.Location = new System.Drawing.Point(0, 0);
+            this.DongDC16.Name = "DongDC16";
+            this.DongDC16.Size = new System.Drawing.Size(96, 16);
+            this.DongDC16.TabIndex = 2;
+            this.DongDC16.UseVisualStyleBackColor = false;
             // 
             // panel337
             // 
@@ -5980,44 +5982,44 @@
             // panel342
             // 
             this.panel342.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel342.Controls.Add(this.button131);
+            this.panel342.Controls.Add(this.SoLanTest17);
             this.panel342.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel342.Location = new System.Drawing.Point(106, 99);
             this.panel342.Name = "panel342";
             this.panel342.Size = new System.Drawing.Size(98, 21);
             this.panel342.TabIndex = 9;
             // 
-            // button131
+            // SoLanTest17
             // 
-            this.button131.BackColor = System.Drawing.SystemColors.Control;
-            this.button131.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button131.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button131.Location = new System.Drawing.Point(0, 0);
-            this.button131.Name = "button131";
-            this.button131.Size = new System.Drawing.Size(96, 19);
-            this.button131.TabIndex = 3;
-            this.button131.UseVisualStyleBackColor = false;
+            this.SoLanTest17.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest17.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest17.Name = "SoLanTest17";
+            this.SoLanTest17.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest17.TabIndex = 3;
+            this.SoLanTest17.UseVisualStyleBackColor = false;
             // 
             // panel343
             // 
             this.panel343.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel343.Controls.Add(this.button132);
+            this.panel343.Controls.Add(this.timeTest17);
             this.panel343.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel343.Location = new System.Drawing.Point(106, 75);
             this.panel343.Name = "panel343";
             this.panel343.Size = new System.Drawing.Size(98, 18);
             this.panel343.TabIndex = 7;
             // 
-            // button132
+            // timeTest17
             // 
-            this.button132.BackColor = System.Drawing.SystemColors.Control;
-            this.button132.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button132.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button132.Location = new System.Drawing.Point(0, 0);
-            this.button132.Name = "button132";
-            this.button132.Size = new System.Drawing.Size(96, 16);
-            this.button132.TabIndex = 2;
-            this.button132.UseVisualStyleBackColor = false;
+            this.timeTest17.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest17.Location = new System.Drawing.Point(0, 0);
+            this.timeTest17.Name = "timeTest17";
+            this.timeTest17.Size = new System.Drawing.Size(96, 16);
+            this.timeTest17.TabIndex = 2;
+            this.timeTest17.UseVisualStyleBackColor = false;
             // 
             // panel344
             // 
@@ -6044,23 +6046,23 @@
             // panel345
             // 
             this.panel345.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel345.Controls.Add(this.button133);
+            this.panel345.Controls.Add(this.CongSuat17);
             this.panel345.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel345.Location = new System.Drawing.Point(106, 51);
             this.panel345.Name = "panel345";
             this.panel345.Size = new System.Drawing.Size(98, 18);
             this.panel345.TabIndex = 5;
             // 
-            // button133
+            // CongSuat17
             // 
-            this.button133.BackColor = System.Drawing.SystemColors.Control;
-            this.button133.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button133.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button133.Location = new System.Drawing.Point(0, 0);
-            this.button133.Name = "button133";
-            this.button133.Size = new System.Drawing.Size(96, 16);
-            this.button133.TabIndex = 2;
-            this.button133.UseVisualStyleBackColor = false;
+            this.CongSuat17.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat17.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat17.Name = "CongSuat17";
+            this.CongSuat17.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat17.TabIndex = 2;
+            this.CongSuat17.UseVisualStyleBackColor = false;
             // 
             // panel346
             // 
@@ -6087,23 +6089,23 @@
             // panel347
             // 
             this.panel347.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel347.Controls.Add(this.button134);
+            this.panel347.Controls.Add(this.DienApDC17);
             this.panel347.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel347.Location = new System.Drawing.Point(106, 27);
             this.panel347.Name = "panel347";
             this.panel347.Size = new System.Drawing.Size(98, 18);
             this.panel347.TabIndex = 3;
             // 
-            // button134
+            // DienApDC17
             // 
-            this.button134.BackColor = System.Drawing.SystemColors.Control;
-            this.button134.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button134.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button134.Location = new System.Drawing.Point(0, 0);
-            this.button134.Name = "button134";
-            this.button134.Size = new System.Drawing.Size(96, 16);
-            this.button134.TabIndex = 2;
-            this.button134.UseVisualStyleBackColor = false;
+            this.DienApDC17.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC17.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC17.Name = "DienApDC17";
+            this.DienApDC17.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC17.TabIndex = 2;
+            this.DienApDC17.UseVisualStyleBackColor = false;
             // 
             // panel348
             // 
@@ -6130,23 +6132,23 @@
             // panel349
             // 
             this.panel349.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel349.Controls.Add(this.button135);
+            this.panel349.Controls.Add(this.DongDC17);
             this.panel349.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel349.Location = new System.Drawing.Point(106, 3);
             this.panel349.Name = "panel349";
             this.panel349.Size = new System.Drawing.Size(98, 18);
             this.panel349.TabIndex = 1;
             // 
-            // button135
+            // DongDC17
             // 
-            this.button135.BackColor = System.Drawing.SystemColors.Control;
-            this.button135.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button135.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button135.Location = new System.Drawing.Point(0, 0);
-            this.button135.Name = "button135";
-            this.button135.Size = new System.Drawing.Size(96, 16);
-            this.button135.TabIndex = 2;
-            this.button135.UseVisualStyleBackColor = false;
+            this.DongDC17.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC17.Location = new System.Drawing.Point(0, 0);
+            this.DongDC17.Name = "DongDC17";
+            this.DongDC17.Size = new System.Drawing.Size(96, 16);
+            this.DongDC17.TabIndex = 2;
+            this.DongDC17.UseVisualStyleBackColor = false;
             // 
             // panel350
             // 
@@ -6268,44 +6270,44 @@
             // panel355
             // 
             this.panel355.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel355.Controls.Add(this.button136);
+            this.panel355.Controls.Add(this.SoLanTest18);
             this.panel355.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel355.Location = new System.Drawing.Point(106, 99);
             this.panel355.Name = "panel355";
             this.panel355.Size = new System.Drawing.Size(98, 21);
             this.panel355.TabIndex = 9;
             // 
-            // button136
+            // SoLanTest18
             // 
-            this.button136.BackColor = System.Drawing.SystemColors.Control;
-            this.button136.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button136.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button136.Location = new System.Drawing.Point(0, 0);
-            this.button136.Name = "button136";
-            this.button136.Size = new System.Drawing.Size(96, 19);
-            this.button136.TabIndex = 3;
-            this.button136.UseVisualStyleBackColor = false;
+            this.SoLanTest18.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest18.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest18.Name = "SoLanTest18";
+            this.SoLanTest18.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest18.TabIndex = 3;
+            this.SoLanTest18.UseVisualStyleBackColor = false;
             // 
             // panel356
             // 
             this.panel356.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel356.Controls.Add(this.button137);
+            this.panel356.Controls.Add(this.timeTest18);
             this.panel356.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel356.Location = new System.Drawing.Point(106, 75);
             this.panel356.Name = "panel356";
             this.panel356.Size = new System.Drawing.Size(98, 18);
             this.panel356.TabIndex = 7;
             // 
-            // button137
+            // timeTest18
             // 
-            this.button137.BackColor = System.Drawing.SystemColors.Control;
-            this.button137.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button137.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button137.Location = new System.Drawing.Point(0, 0);
-            this.button137.Name = "button137";
-            this.button137.Size = new System.Drawing.Size(96, 16);
-            this.button137.TabIndex = 2;
-            this.button137.UseVisualStyleBackColor = false;
+            this.timeTest18.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest18.Location = new System.Drawing.Point(0, 0);
+            this.timeTest18.Name = "timeTest18";
+            this.timeTest18.Size = new System.Drawing.Size(96, 16);
+            this.timeTest18.TabIndex = 2;
+            this.timeTest18.UseVisualStyleBackColor = false;
             // 
             // panel357
             // 
@@ -6332,23 +6334,23 @@
             // panel358
             // 
             this.panel358.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel358.Controls.Add(this.button138);
+            this.panel358.Controls.Add(this.CongSuat18);
             this.panel358.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel358.Location = new System.Drawing.Point(106, 51);
             this.panel358.Name = "panel358";
             this.panel358.Size = new System.Drawing.Size(98, 18);
             this.panel358.TabIndex = 5;
             // 
-            // button138
+            // CongSuat18
             // 
-            this.button138.BackColor = System.Drawing.SystemColors.Control;
-            this.button138.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button138.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button138.Location = new System.Drawing.Point(0, 0);
-            this.button138.Name = "button138";
-            this.button138.Size = new System.Drawing.Size(96, 16);
-            this.button138.TabIndex = 2;
-            this.button138.UseVisualStyleBackColor = false;
+            this.CongSuat18.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat18.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat18.Name = "CongSuat18";
+            this.CongSuat18.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat18.TabIndex = 2;
+            this.CongSuat18.UseVisualStyleBackColor = false;
             // 
             // panel359
             // 
@@ -6375,23 +6377,23 @@
             // panel360
             // 
             this.panel360.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel360.Controls.Add(this.button139);
+            this.panel360.Controls.Add(this.DienApDC18);
             this.panel360.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel360.Location = new System.Drawing.Point(106, 27);
             this.panel360.Name = "panel360";
             this.panel360.Size = new System.Drawing.Size(98, 18);
             this.panel360.TabIndex = 3;
             // 
-            // button139
+            // DienApDC18
             // 
-            this.button139.BackColor = System.Drawing.SystemColors.Control;
-            this.button139.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button139.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button139.Location = new System.Drawing.Point(0, 0);
-            this.button139.Name = "button139";
-            this.button139.Size = new System.Drawing.Size(96, 16);
-            this.button139.TabIndex = 2;
-            this.button139.UseVisualStyleBackColor = false;
+            this.DienApDC18.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC18.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC18.Name = "DienApDC18";
+            this.DienApDC18.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC18.TabIndex = 2;
+            this.DienApDC18.UseVisualStyleBackColor = false;
             // 
             // panel361
             // 
@@ -6418,23 +6420,23 @@
             // panel362
             // 
             this.panel362.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel362.Controls.Add(this.button140);
+            this.panel362.Controls.Add(this.DongDC18);
             this.panel362.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel362.Location = new System.Drawing.Point(106, 3);
             this.panel362.Name = "panel362";
             this.panel362.Size = new System.Drawing.Size(98, 18);
             this.panel362.TabIndex = 1;
             // 
-            // button140
+            // DongDC18
             // 
-            this.button140.BackColor = System.Drawing.SystemColors.Control;
-            this.button140.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button140.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button140.Location = new System.Drawing.Point(0, 0);
-            this.button140.Name = "button140";
-            this.button140.Size = new System.Drawing.Size(96, 16);
-            this.button140.TabIndex = 2;
-            this.button140.UseVisualStyleBackColor = false;
+            this.DongDC18.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC18.Location = new System.Drawing.Point(0, 0);
+            this.DongDC18.Name = "DongDC18";
+            this.DongDC18.Size = new System.Drawing.Size(96, 16);
+            this.DongDC18.TabIndex = 2;
+            this.DongDC18.UseVisualStyleBackColor = false;
             // 
             // panel363
             // 
@@ -6556,44 +6558,44 @@
             // panel368
             // 
             this.panel368.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel368.Controls.Add(this.button141);
+            this.panel368.Controls.Add(this.SoLanTest19);
             this.panel368.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel368.Location = new System.Drawing.Point(106, 99);
             this.panel368.Name = "panel368";
             this.panel368.Size = new System.Drawing.Size(98, 21);
             this.panel368.TabIndex = 9;
             // 
-            // button141
+            // SoLanTest19
             // 
-            this.button141.BackColor = System.Drawing.SystemColors.Control;
-            this.button141.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button141.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button141.Location = new System.Drawing.Point(0, 0);
-            this.button141.Name = "button141";
-            this.button141.Size = new System.Drawing.Size(96, 19);
-            this.button141.TabIndex = 3;
-            this.button141.UseVisualStyleBackColor = false;
+            this.SoLanTest19.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest19.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest19.Name = "SoLanTest19";
+            this.SoLanTest19.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest19.TabIndex = 3;
+            this.SoLanTest19.UseVisualStyleBackColor = false;
             // 
             // panel369
             // 
             this.panel369.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel369.Controls.Add(this.button142);
+            this.panel369.Controls.Add(this.timeTest19);
             this.panel369.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel369.Location = new System.Drawing.Point(106, 75);
             this.panel369.Name = "panel369";
             this.panel369.Size = new System.Drawing.Size(98, 18);
             this.panel369.TabIndex = 7;
             // 
-            // button142
+            // timeTest19
             // 
-            this.button142.BackColor = System.Drawing.SystemColors.Control;
-            this.button142.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button142.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button142.Location = new System.Drawing.Point(0, 0);
-            this.button142.Name = "button142";
-            this.button142.Size = new System.Drawing.Size(96, 16);
-            this.button142.TabIndex = 2;
-            this.button142.UseVisualStyleBackColor = false;
+            this.timeTest19.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest19.Location = new System.Drawing.Point(0, 0);
+            this.timeTest19.Name = "timeTest19";
+            this.timeTest19.Size = new System.Drawing.Size(96, 16);
+            this.timeTest19.TabIndex = 2;
+            this.timeTest19.UseVisualStyleBackColor = false;
             // 
             // panel370
             // 
@@ -6620,23 +6622,23 @@
             // panel371
             // 
             this.panel371.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel371.Controls.Add(this.button143);
+            this.panel371.Controls.Add(this.CongSuat19);
             this.panel371.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel371.Location = new System.Drawing.Point(106, 51);
             this.panel371.Name = "panel371";
             this.panel371.Size = new System.Drawing.Size(98, 18);
             this.panel371.TabIndex = 5;
             // 
-            // button143
+            // CongSuat19
             // 
-            this.button143.BackColor = System.Drawing.SystemColors.Control;
-            this.button143.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button143.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button143.Location = new System.Drawing.Point(0, 0);
-            this.button143.Name = "button143";
-            this.button143.Size = new System.Drawing.Size(96, 16);
-            this.button143.TabIndex = 2;
-            this.button143.UseVisualStyleBackColor = false;
+            this.CongSuat19.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat19.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat19.Name = "CongSuat19";
+            this.CongSuat19.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat19.TabIndex = 2;
+            this.CongSuat19.UseVisualStyleBackColor = false;
             // 
             // panel372
             // 
@@ -6663,23 +6665,23 @@
             // panel373
             // 
             this.panel373.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel373.Controls.Add(this.button144);
+            this.panel373.Controls.Add(this.DienApDC19);
             this.panel373.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel373.Location = new System.Drawing.Point(106, 27);
             this.panel373.Name = "panel373";
             this.panel373.Size = new System.Drawing.Size(98, 18);
             this.panel373.TabIndex = 3;
             // 
-            // button144
+            // DienApDC19
             // 
-            this.button144.BackColor = System.Drawing.SystemColors.Control;
-            this.button144.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button144.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button144.Location = new System.Drawing.Point(0, 0);
-            this.button144.Name = "button144";
-            this.button144.Size = new System.Drawing.Size(96, 16);
-            this.button144.TabIndex = 2;
-            this.button144.UseVisualStyleBackColor = false;
+            this.DienApDC19.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC19.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC19.Name = "DienApDC19";
+            this.DienApDC19.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC19.TabIndex = 2;
+            this.DienApDC19.UseVisualStyleBackColor = false;
             // 
             // panel374
             // 
@@ -6706,23 +6708,23 @@
             // panel375
             // 
             this.panel375.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel375.Controls.Add(this.button145);
+            this.panel375.Controls.Add(this.DongDC19);
             this.panel375.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel375.Location = new System.Drawing.Point(106, 3);
             this.panel375.Name = "panel375";
             this.panel375.Size = new System.Drawing.Size(98, 18);
             this.panel375.TabIndex = 1;
             // 
-            // button145
+            // DongDC19
             // 
-            this.button145.BackColor = System.Drawing.SystemColors.Control;
-            this.button145.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button145.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button145.Location = new System.Drawing.Point(0, 0);
-            this.button145.Name = "button145";
-            this.button145.Size = new System.Drawing.Size(96, 16);
-            this.button145.TabIndex = 2;
-            this.button145.UseVisualStyleBackColor = false;
+            this.DongDC19.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC19.Location = new System.Drawing.Point(0, 0);
+            this.DongDC19.Name = "DongDC19";
+            this.DongDC19.Size = new System.Drawing.Size(96, 16);
+            this.DongDC19.TabIndex = 2;
+            this.DongDC19.UseVisualStyleBackColor = false;
             // 
             // panel376
             // 
@@ -6844,44 +6846,44 @@
             // panel381
             // 
             this.panel381.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel381.Controls.Add(this.button146);
+            this.panel381.Controls.Add(this.SoLanTest20);
             this.panel381.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel381.Location = new System.Drawing.Point(106, 99);
             this.panel381.Name = "panel381";
             this.panel381.Size = new System.Drawing.Size(98, 21);
             this.panel381.TabIndex = 9;
             // 
-            // button146
+            // SoLanTest20
             // 
-            this.button146.BackColor = System.Drawing.SystemColors.Control;
-            this.button146.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button146.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button146.Location = new System.Drawing.Point(0, 0);
-            this.button146.Name = "button146";
-            this.button146.Size = new System.Drawing.Size(96, 19);
-            this.button146.TabIndex = 3;
-            this.button146.UseVisualStyleBackColor = false;
+            this.SoLanTest20.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest20.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest20.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest20.Name = "SoLanTest20";
+            this.SoLanTest20.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest20.TabIndex = 3;
+            this.SoLanTest20.UseVisualStyleBackColor = false;
             // 
             // panel382
             // 
             this.panel382.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel382.Controls.Add(this.button147);
+            this.panel382.Controls.Add(this.timeTest20);
             this.panel382.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel382.Location = new System.Drawing.Point(106, 75);
             this.panel382.Name = "panel382";
             this.panel382.Size = new System.Drawing.Size(98, 18);
             this.panel382.TabIndex = 7;
             // 
-            // button147
+            // timeTest20
             // 
-            this.button147.BackColor = System.Drawing.SystemColors.Control;
-            this.button147.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button147.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button147.Location = new System.Drawing.Point(0, 0);
-            this.button147.Name = "button147";
-            this.button147.Size = new System.Drawing.Size(96, 16);
-            this.button147.TabIndex = 2;
-            this.button147.UseVisualStyleBackColor = false;
+            this.timeTest20.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest20.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest20.Location = new System.Drawing.Point(0, 0);
+            this.timeTest20.Name = "timeTest20";
+            this.timeTest20.Size = new System.Drawing.Size(96, 16);
+            this.timeTest20.TabIndex = 2;
+            this.timeTest20.UseVisualStyleBackColor = false;
             // 
             // panel383
             // 
@@ -6908,23 +6910,23 @@
             // panel384
             // 
             this.panel384.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel384.Controls.Add(this.button148);
+            this.panel384.Controls.Add(this.CongSuat20);
             this.panel384.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel384.Location = new System.Drawing.Point(106, 51);
             this.panel384.Name = "panel384";
             this.panel384.Size = new System.Drawing.Size(98, 18);
             this.panel384.TabIndex = 5;
             // 
-            // button148
+            // CongSuat20
             // 
-            this.button148.BackColor = System.Drawing.SystemColors.Control;
-            this.button148.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button148.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button148.Location = new System.Drawing.Point(0, 0);
-            this.button148.Name = "button148";
-            this.button148.Size = new System.Drawing.Size(96, 16);
-            this.button148.TabIndex = 2;
-            this.button148.UseVisualStyleBackColor = false;
+            this.CongSuat20.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat20.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat20.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat20.Name = "CongSuat20";
+            this.CongSuat20.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat20.TabIndex = 2;
+            this.CongSuat20.UseVisualStyleBackColor = false;
             // 
             // panel385
             // 
@@ -6951,23 +6953,23 @@
             // panel386
             // 
             this.panel386.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel386.Controls.Add(this.button149);
+            this.panel386.Controls.Add(this.DienApDC20);
             this.panel386.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel386.Location = new System.Drawing.Point(106, 27);
             this.panel386.Name = "panel386";
             this.panel386.Size = new System.Drawing.Size(98, 18);
             this.panel386.TabIndex = 3;
             // 
-            // button149
+            // DienApDC20
             // 
-            this.button149.BackColor = System.Drawing.SystemColors.Control;
-            this.button149.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button149.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button149.Location = new System.Drawing.Point(0, 0);
-            this.button149.Name = "button149";
-            this.button149.Size = new System.Drawing.Size(96, 16);
-            this.button149.TabIndex = 2;
-            this.button149.UseVisualStyleBackColor = false;
+            this.DienApDC20.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC20.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC20.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC20.Name = "DienApDC20";
+            this.DienApDC20.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC20.TabIndex = 2;
+            this.DienApDC20.UseVisualStyleBackColor = false;
             // 
             // panel387
             // 
@@ -6994,23 +6996,23 @@
             // panel388
             // 
             this.panel388.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel388.Controls.Add(this.button150);
+            this.panel388.Controls.Add(this.DongDC20);
             this.panel388.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel388.Location = new System.Drawing.Point(106, 3);
             this.panel388.Name = "panel388";
             this.panel388.Size = new System.Drawing.Size(98, 18);
             this.panel388.TabIndex = 1;
             // 
-            // button150
+            // DongDC20
             // 
-            this.button150.BackColor = System.Drawing.SystemColors.Control;
-            this.button150.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button150.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button150.Location = new System.Drawing.Point(0, 0);
-            this.button150.Name = "button150";
-            this.button150.Size = new System.Drawing.Size(96, 16);
-            this.button150.TabIndex = 2;
-            this.button150.UseVisualStyleBackColor = false;
+            this.DongDC20.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC20.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC20.Location = new System.Drawing.Point(0, 0);
+            this.DongDC20.Name = "DongDC20";
+            this.DongDC20.Size = new System.Drawing.Size(96, 16);
+            this.DongDC20.TabIndex = 2;
+            this.DongDC20.UseVisualStyleBackColor = false;
             // 
             // panel389
             // 
@@ -7132,44 +7134,44 @@
             // panel264
             // 
             this.panel264.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel264.Controls.Add(this.button96);
+            this.panel264.Controls.Add(this.SoLanTest21);
             this.panel264.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel264.Location = new System.Drawing.Point(106, 99);
             this.panel264.Name = "panel264";
             this.panel264.Size = new System.Drawing.Size(98, 21);
             this.panel264.TabIndex = 9;
             // 
-            // button96
+            // SoLanTest21
             // 
-            this.button96.BackColor = System.Drawing.SystemColors.Control;
-            this.button96.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button96.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button96.Location = new System.Drawing.Point(0, 0);
-            this.button96.Name = "button96";
-            this.button96.Size = new System.Drawing.Size(96, 19);
-            this.button96.TabIndex = 3;
-            this.button96.UseVisualStyleBackColor = false;
+            this.SoLanTest21.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest21.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest21.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest21.Name = "SoLanTest21";
+            this.SoLanTest21.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest21.TabIndex = 3;
+            this.SoLanTest21.UseVisualStyleBackColor = false;
             // 
             // panel265
             // 
             this.panel265.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel265.Controls.Add(this.button102);
+            this.panel265.Controls.Add(this.timeTest21);
             this.panel265.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel265.Location = new System.Drawing.Point(106, 75);
             this.panel265.Name = "panel265";
             this.panel265.Size = new System.Drawing.Size(98, 18);
             this.panel265.TabIndex = 7;
             // 
-            // button102
+            // timeTest21
             // 
-            this.button102.BackColor = System.Drawing.SystemColors.Control;
-            this.button102.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button102.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button102.Location = new System.Drawing.Point(0, 0);
-            this.button102.Name = "button102";
-            this.button102.Size = new System.Drawing.Size(96, 16);
-            this.button102.TabIndex = 2;
-            this.button102.UseVisualStyleBackColor = false;
+            this.timeTest21.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest21.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest21.Location = new System.Drawing.Point(0, 0);
+            this.timeTest21.Name = "timeTest21";
+            this.timeTest21.Size = new System.Drawing.Size(96, 16);
+            this.timeTest21.TabIndex = 2;
+            this.timeTest21.UseVisualStyleBackColor = false;
             // 
             // panel266
             // 
@@ -7196,23 +7198,23 @@
             // panel267
             // 
             this.panel267.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel267.Controls.Add(this.button103);
+            this.panel267.Controls.Add(this.CongSuat21);
             this.panel267.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel267.Location = new System.Drawing.Point(106, 51);
             this.panel267.Name = "panel267";
             this.panel267.Size = new System.Drawing.Size(98, 18);
             this.panel267.TabIndex = 5;
             // 
-            // button103
+            // CongSuat21
             // 
-            this.button103.BackColor = System.Drawing.SystemColors.Control;
-            this.button103.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button103.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button103.Location = new System.Drawing.Point(0, 0);
-            this.button103.Name = "button103";
-            this.button103.Size = new System.Drawing.Size(96, 16);
-            this.button103.TabIndex = 2;
-            this.button103.UseVisualStyleBackColor = false;
+            this.CongSuat21.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat21.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat21.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat21.Name = "CongSuat21";
+            this.CongSuat21.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat21.TabIndex = 2;
+            this.CongSuat21.UseVisualStyleBackColor = false;
             // 
             // panel268
             // 
@@ -7239,23 +7241,23 @@
             // panel269
             // 
             this.panel269.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel269.Controls.Add(this.button104);
+            this.panel269.Controls.Add(this.DienApDC21);
             this.panel269.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel269.Location = new System.Drawing.Point(106, 27);
             this.panel269.Name = "panel269";
             this.panel269.Size = new System.Drawing.Size(98, 18);
             this.panel269.TabIndex = 3;
             // 
-            // button104
+            // DienApDC21
             // 
-            this.button104.BackColor = System.Drawing.SystemColors.Control;
-            this.button104.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button104.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button104.Location = new System.Drawing.Point(0, 0);
-            this.button104.Name = "button104";
-            this.button104.Size = new System.Drawing.Size(96, 16);
-            this.button104.TabIndex = 2;
-            this.button104.UseVisualStyleBackColor = false;
+            this.DienApDC21.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC21.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC21.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC21.Name = "DienApDC21";
+            this.DienApDC21.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC21.TabIndex = 2;
+            this.DienApDC21.UseVisualStyleBackColor = false;
             // 
             // panel270
             // 
@@ -7282,23 +7284,23 @@
             // panel271
             // 
             this.panel271.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel271.Controls.Add(this.button105);
+            this.panel271.Controls.Add(this.DongDC21);
             this.panel271.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel271.Location = new System.Drawing.Point(106, 3);
             this.panel271.Name = "panel271";
             this.panel271.Size = new System.Drawing.Size(98, 18);
             this.panel271.TabIndex = 1;
             // 
-            // button105
+            // DongDC21
             // 
-            this.button105.BackColor = System.Drawing.SystemColors.Control;
-            this.button105.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button105.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button105.Location = new System.Drawing.Point(0, 0);
-            this.button105.Name = "button105";
-            this.button105.Size = new System.Drawing.Size(96, 16);
-            this.button105.TabIndex = 2;
-            this.button105.UseVisualStyleBackColor = false;
+            this.DongDC21.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC21.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC21.Location = new System.Drawing.Point(0, 0);
+            this.DongDC21.Name = "DongDC21";
+            this.DongDC21.Size = new System.Drawing.Size(96, 16);
+            this.DongDC21.TabIndex = 2;
+            this.DongDC21.UseVisualStyleBackColor = false;
             // 
             // panel272
             // 
@@ -7420,44 +7422,44 @@
             // panel277
             // 
             this.panel277.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel277.Controls.Add(this.button106);
+            this.panel277.Controls.Add(this.SoLanTest22);
             this.panel277.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel277.Location = new System.Drawing.Point(106, 99);
             this.panel277.Name = "panel277";
             this.panel277.Size = new System.Drawing.Size(98, 21);
             this.panel277.TabIndex = 9;
             // 
-            // button106
+            // SoLanTest22
             // 
-            this.button106.BackColor = System.Drawing.SystemColors.Control;
-            this.button106.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button106.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button106.Location = new System.Drawing.Point(0, 0);
-            this.button106.Name = "button106";
-            this.button106.Size = new System.Drawing.Size(96, 19);
-            this.button106.TabIndex = 3;
-            this.button106.UseVisualStyleBackColor = false;
+            this.SoLanTest22.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest22.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest22.Name = "SoLanTest22";
+            this.SoLanTest22.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest22.TabIndex = 3;
+            this.SoLanTest22.UseVisualStyleBackColor = false;
             // 
             // panel278
             // 
             this.panel278.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel278.Controls.Add(this.button107);
+            this.panel278.Controls.Add(this.timeTest22);
             this.panel278.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel278.Location = new System.Drawing.Point(106, 75);
             this.panel278.Name = "panel278";
             this.panel278.Size = new System.Drawing.Size(98, 18);
             this.panel278.TabIndex = 7;
             // 
-            // button107
+            // timeTest22
             // 
-            this.button107.BackColor = System.Drawing.SystemColors.Control;
-            this.button107.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button107.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button107.Location = new System.Drawing.Point(0, 0);
-            this.button107.Name = "button107";
-            this.button107.Size = new System.Drawing.Size(96, 16);
-            this.button107.TabIndex = 2;
-            this.button107.UseVisualStyleBackColor = false;
+            this.timeTest22.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest22.Location = new System.Drawing.Point(0, 0);
+            this.timeTest22.Name = "timeTest22";
+            this.timeTest22.Size = new System.Drawing.Size(96, 16);
+            this.timeTest22.TabIndex = 2;
+            this.timeTest22.UseVisualStyleBackColor = false;
             // 
             // panel279
             // 
@@ -7484,23 +7486,23 @@
             // panel280
             // 
             this.panel280.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel280.Controls.Add(this.button108);
+            this.panel280.Controls.Add(this.CongSuat22);
             this.panel280.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel280.Location = new System.Drawing.Point(106, 51);
             this.panel280.Name = "panel280";
             this.panel280.Size = new System.Drawing.Size(98, 18);
             this.panel280.TabIndex = 5;
             // 
-            // button108
+            // CongSuat22
             // 
-            this.button108.BackColor = System.Drawing.SystemColors.Control;
-            this.button108.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button108.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button108.Location = new System.Drawing.Point(0, 0);
-            this.button108.Name = "button108";
-            this.button108.Size = new System.Drawing.Size(96, 16);
-            this.button108.TabIndex = 2;
-            this.button108.UseVisualStyleBackColor = false;
+            this.CongSuat22.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat22.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat22.Name = "CongSuat22";
+            this.CongSuat22.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat22.TabIndex = 2;
+            this.CongSuat22.UseVisualStyleBackColor = false;
             // 
             // panel281
             // 
@@ -7527,23 +7529,23 @@
             // panel282
             // 
             this.panel282.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel282.Controls.Add(this.button109);
+            this.panel282.Controls.Add(this.DienApDC22);
             this.panel282.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel282.Location = new System.Drawing.Point(106, 27);
             this.panel282.Name = "panel282";
             this.panel282.Size = new System.Drawing.Size(98, 18);
             this.panel282.TabIndex = 3;
             // 
-            // button109
+            // DienApDC22
             // 
-            this.button109.BackColor = System.Drawing.SystemColors.Control;
-            this.button109.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button109.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button109.Location = new System.Drawing.Point(0, 0);
-            this.button109.Name = "button109";
-            this.button109.Size = new System.Drawing.Size(96, 16);
-            this.button109.TabIndex = 2;
-            this.button109.UseVisualStyleBackColor = false;
+            this.DienApDC22.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC22.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC22.Name = "DienApDC22";
+            this.DienApDC22.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC22.TabIndex = 2;
+            this.DienApDC22.UseVisualStyleBackColor = false;
             // 
             // panel283
             // 
@@ -7570,23 +7572,23 @@
             // panel284
             // 
             this.panel284.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel284.Controls.Add(this.button110);
+            this.panel284.Controls.Add(this.DongDC22);
             this.panel284.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel284.Location = new System.Drawing.Point(106, 3);
             this.panel284.Name = "panel284";
             this.panel284.Size = new System.Drawing.Size(98, 18);
             this.panel284.TabIndex = 1;
             // 
-            // button110
+            // DongDC22
             // 
-            this.button110.BackColor = System.Drawing.SystemColors.Control;
-            this.button110.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button110.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button110.Location = new System.Drawing.Point(0, 0);
-            this.button110.Name = "button110";
-            this.button110.Size = new System.Drawing.Size(96, 16);
-            this.button110.TabIndex = 2;
-            this.button110.UseVisualStyleBackColor = false;
+            this.DongDC22.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC22.Location = new System.Drawing.Point(0, 0);
+            this.DongDC22.Name = "DongDC22";
+            this.DongDC22.Size = new System.Drawing.Size(96, 16);
+            this.DongDC22.TabIndex = 2;
+            this.DongDC22.UseVisualStyleBackColor = false;
             // 
             // panel285
             // 
@@ -7708,44 +7710,44 @@
             // panel290
             // 
             this.panel290.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel290.Controls.Add(this.button111);
+            this.panel290.Controls.Add(this.SoLanTest23);
             this.panel290.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel290.Location = new System.Drawing.Point(106, 99);
             this.panel290.Name = "panel290";
             this.panel290.Size = new System.Drawing.Size(98, 21);
             this.panel290.TabIndex = 9;
             // 
-            // button111
+            // SoLanTest23
             // 
-            this.button111.BackColor = System.Drawing.SystemColors.Control;
-            this.button111.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button111.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button111.Location = new System.Drawing.Point(0, 0);
-            this.button111.Name = "button111";
-            this.button111.Size = new System.Drawing.Size(96, 19);
-            this.button111.TabIndex = 3;
-            this.button111.UseVisualStyleBackColor = false;
+            this.SoLanTest23.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest23.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest23.Name = "SoLanTest23";
+            this.SoLanTest23.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest23.TabIndex = 3;
+            this.SoLanTest23.UseVisualStyleBackColor = false;
             // 
             // panel291
             // 
             this.panel291.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel291.Controls.Add(this.button112);
+            this.panel291.Controls.Add(this.timeTest23);
             this.panel291.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel291.Location = new System.Drawing.Point(106, 75);
             this.panel291.Name = "panel291";
             this.panel291.Size = new System.Drawing.Size(98, 18);
             this.panel291.TabIndex = 7;
             // 
-            // button112
+            // timeTest23
             // 
-            this.button112.BackColor = System.Drawing.SystemColors.Control;
-            this.button112.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button112.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button112.Location = new System.Drawing.Point(0, 0);
-            this.button112.Name = "button112";
-            this.button112.Size = new System.Drawing.Size(96, 16);
-            this.button112.TabIndex = 2;
-            this.button112.UseVisualStyleBackColor = false;
+            this.timeTest23.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest23.Location = new System.Drawing.Point(0, 0);
+            this.timeTest23.Name = "timeTest23";
+            this.timeTest23.Size = new System.Drawing.Size(96, 16);
+            this.timeTest23.TabIndex = 2;
+            this.timeTest23.UseVisualStyleBackColor = false;
             // 
             // panel292
             // 
@@ -7772,23 +7774,23 @@
             // panel293
             // 
             this.panel293.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel293.Controls.Add(this.button113);
+            this.panel293.Controls.Add(this.CongSuat23);
             this.panel293.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel293.Location = new System.Drawing.Point(106, 51);
             this.panel293.Name = "panel293";
             this.panel293.Size = new System.Drawing.Size(98, 18);
             this.panel293.TabIndex = 5;
             // 
-            // button113
+            // CongSuat23
             // 
-            this.button113.BackColor = System.Drawing.SystemColors.Control;
-            this.button113.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button113.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button113.Location = new System.Drawing.Point(0, 0);
-            this.button113.Name = "button113";
-            this.button113.Size = new System.Drawing.Size(96, 16);
-            this.button113.TabIndex = 2;
-            this.button113.UseVisualStyleBackColor = false;
+            this.CongSuat23.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat23.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat23.Name = "CongSuat23";
+            this.CongSuat23.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat23.TabIndex = 2;
+            this.CongSuat23.UseVisualStyleBackColor = false;
             // 
             // panel294
             // 
@@ -7815,23 +7817,23 @@
             // panel295
             // 
             this.panel295.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel295.Controls.Add(this.button114);
+            this.panel295.Controls.Add(this.DienApDC23);
             this.panel295.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel295.Location = new System.Drawing.Point(106, 27);
             this.panel295.Name = "panel295";
             this.panel295.Size = new System.Drawing.Size(98, 18);
             this.panel295.TabIndex = 3;
             // 
-            // button114
+            // DienApDC23
             // 
-            this.button114.BackColor = System.Drawing.SystemColors.Control;
-            this.button114.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button114.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button114.Location = new System.Drawing.Point(0, 0);
-            this.button114.Name = "button114";
-            this.button114.Size = new System.Drawing.Size(96, 16);
-            this.button114.TabIndex = 2;
-            this.button114.UseVisualStyleBackColor = false;
+            this.DienApDC23.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC23.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC23.Name = "DienApDC23";
+            this.DienApDC23.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC23.TabIndex = 2;
+            this.DienApDC23.UseVisualStyleBackColor = false;
             // 
             // panel296
             // 
@@ -7858,23 +7860,23 @@
             // panel297
             // 
             this.panel297.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel297.Controls.Add(this.button115);
+            this.panel297.Controls.Add(this.DongDC23);
             this.panel297.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel297.Location = new System.Drawing.Point(106, 3);
             this.panel297.Name = "panel297";
             this.panel297.Size = new System.Drawing.Size(98, 18);
             this.panel297.TabIndex = 1;
             // 
-            // button115
+            // DongDC23
             // 
-            this.button115.BackColor = System.Drawing.SystemColors.Control;
-            this.button115.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button115.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button115.Location = new System.Drawing.Point(0, 0);
-            this.button115.Name = "button115";
-            this.button115.Size = new System.Drawing.Size(96, 16);
-            this.button115.TabIndex = 2;
-            this.button115.UseVisualStyleBackColor = false;
+            this.DongDC23.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC23.Location = new System.Drawing.Point(0, 0);
+            this.DongDC23.Name = "DongDC23";
+            this.DongDC23.Size = new System.Drawing.Size(96, 16);
+            this.DongDC23.TabIndex = 2;
+            this.DongDC23.UseVisualStyleBackColor = false;
             // 
             // panel298
             // 
@@ -7996,44 +7998,44 @@
             // panel303
             // 
             this.panel303.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel303.Controls.Add(this.button116);
+            this.panel303.Controls.Add(this.SoLanTest24);
             this.panel303.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel303.Location = new System.Drawing.Point(106, 99);
             this.panel303.Name = "panel303";
             this.panel303.Size = new System.Drawing.Size(98, 21);
             this.panel303.TabIndex = 9;
             // 
-            // button116
+            // SoLanTest24
             // 
-            this.button116.BackColor = System.Drawing.SystemColors.Control;
-            this.button116.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button116.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button116.Location = new System.Drawing.Point(0, 0);
-            this.button116.Name = "button116";
-            this.button116.Size = new System.Drawing.Size(96, 19);
-            this.button116.TabIndex = 3;
-            this.button116.UseVisualStyleBackColor = false;
+            this.SoLanTest24.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest24.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest24.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest24.Name = "SoLanTest24";
+            this.SoLanTest24.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest24.TabIndex = 3;
+            this.SoLanTest24.UseVisualStyleBackColor = false;
             // 
             // panel304
             // 
             this.panel304.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel304.Controls.Add(this.button117);
+            this.panel304.Controls.Add(this.timeTest24);
             this.panel304.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel304.Location = new System.Drawing.Point(106, 75);
             this.panel304.Name = "panel304";
             this.panel304.Size = new System.Drawing.Size(98, 18);
             this.panel304.TabIndex = 7;
             // 
-            // button117
+            // timeTest24
             // 
-            this.button117.BackColor = System.Drawing.SystemColors.Control;
-            this.button117.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button117.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button117.Location = new System.Drawing.Point(0, 0);
-            this.button117.Name = "button117";
-            this.button117.Size = new System.Drawing.Size(96, 16);
-            this.button117.TabIndex = 2;
-            this.button117.UseVisualStyleBackColor = false;
+            this.timeTest24.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest24.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest24.Location = new System.Drawing.Point(0, 0);
+            this.timeTest24.Name = "timeTest24";
+            this.timeTest24.Size = new System.Drawing.Size(96, 16);
+            this.timeTest24.TabIndex = 2;
+            this.timeTest24.UseVisualStyleBackColor = false;
             // 
             // panel305
             // 
@@ -8060,23 +8062,23 @@
             // panel306
             // 
             this.panel306.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel306.Controls.Add(this.button118);
+            this.panel306.Controls.Add(this.CongSuat24);
             this.panel306.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel306.Location = new System.Drawing.Point(106, 51);
             this.panel306.Name = "panel306";
             this.panel306.Size = new System.Drawing.Size(98, 18);
             this.panel306.TabIndex = 5;
             // 
-            // button118
+            // CongSuat24
             // 
-            this.button118.BackColor = System.Drawing.SystemColors.Control;
-            this.button118.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button118.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button118.Location = new System.Drawing.Point(0, 0);
-            this.button118.Name = "button118";
-            this.button118.Size = new System.Drawing.Size(96, 16);
-            this.button118.TabIndex = 2;
-            this.button118.UseVisualStyleBackColor = false;
+            this.CongSuat24.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat24.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat24.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat24.Name = "CongSuat24";
+            this.CongSuat24.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat24.TabIndex = 2;
+            this.CongSuat24.UseVisualStyleBackColor = false;
             // 
             // panel307
             // 
@@ -8103,23 +8105,23 @@
             // panel308
             // 
             this.panel308.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel308.Controls.Add(this.button119);
+            this.panel308.Controls.Add(this.DienApDC24);
             this.panel308.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel308.Location = new System.Drawing.Point(106, 27);
             this.panel308.Name = "panel308";
             this.panel308.Size = new System.Drawing.Size(98, 18);
             this.panel308.TabIndex = 3;
             // 
-            // button119
+            // DienApDC24
             // 
-            this.button119.BackColor = System.Drawing.SystemColors.Control;
-            this.button119.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button119.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button119.Location = new System.Drawing.Point(0, 0);
-            this.button119.Name = "button119";
-            this.button119.Size = new System.Drawing.Size(96, 16);
-            this.button119.TabIndex = 2;
-            this.button119.UseVisualStyleBackColor = false;
+            this.DienApDC24.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC24.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC24.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC24.Name = "DienApDC24";
+            this.DienApDC24.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC24.TabIndex = 2;
+            this.DienApDC24.UseVisualStyleBackColor = false;
             // 
             // panel309
             // 
@@ -8146,23 +8148,23 @@
             // panel310
             // 
             this.panel310.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel310.Controls.Add(this.button120);
+            this.panel310.Controls.Add(this.DongDC24);
             this.panel310.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel310.Location = new System.Drawing.Point(106, 3);
             this.panel310.Name = "panel310";
             this.panel310.Size = new System.Drawing.Size(98, 18);
             this.panel310.TabIndex = 1;
             // 
-            // button120
+            // DongDC24
             // 
-            this.button120.BackColor = System.Drawing.SystemColors.Control;
-            this.button120.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button120.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button120.Location = new System.Drawing.Point(0, 0);
-            this.button120.Name = "button120";
-            this.button120.Size = new System.Drawing.Size(96, 16);
-            this.button120.TabIndex = 2;
-            this.button120.UseVisualStyleBackColor = false;
+            this.DongDC24.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC24.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC24.Location = new System.Drawing.Point(0, 0);
+            this.DongDC24.Name = "DongDC24";
+            this.DongDC24.Size = new System.Drawing.Size(96, 16);
+            this.DongDC24.TabIndex = 2;
+            this.DongDC24.UseVisualStyleBackColor = false;
             // 
             // panel311
             // 
@@ -8284,44 +8286,44 @@
             // panel316
             // 
             this.panel316.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel316.Controls.Add(this.button121);
+            this.panel316.Controls.Add(this.SoLanTest25);
             this.panel316.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel316.Location = new System.Drawing.Point(106, 99);
             this.panel316.Name = "panel316";
             this.panel316.Size = new System.Drawing.Size(98, 21);
             this.panel316.TabIndex = 9;
             // 
-            // button121
+            // SoLanTest25
             // 
-            this.button121.BackColor = System.Drawing.SystemColors.Control;
-            this.button121.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button121.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button121.Location = new System.Drawing.Point(0, 0);
-            this.button121.Name = "button121";
-            this.button121.Size = new System.Drawing.Size(96, 19);
-            this.button121.TabIndex = 3;
-            this.button121.UseVisualStyleBackColor = false;
+            this.SoLanTest25.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest25.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest25.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest25.Name = "SoLanTest25";
+            this.SoLanTest25.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest25.TabIndex = 3;
+            this.SoLanTest25.UseVisualStyleBackColor = false;
             // 
             // panel317
             // 
             this.panel317.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel317.Controls.Add(this.button122);
+            this.panel317.Controls.Add(this.timeTest25);
             this.panel317.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel317.Location = new System.Drawing.Point(106, 75);
             this.panel317.Name = "panel317";
             this.panel317.Size = new System.Drawing.Size(98, 18);
             this.panel317.TabIndex = 7;
             // 
-            // button122
+            // timeTest25
             // 
-            this.button122.BackColor = System.Drawing.SystemColors.Control;
-            this.button122.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button122.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button122.Location = new System.Drawing.Point(0, 0);
-            this.button122.Name = "button122";
-            this.button122.Size = new System.Drawing.Size(96, 16);
-            this.button122.TabIndex = 2;
-            this.button122.UseVisualStyleBackColor = false;
+            this.timeTest25.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest25.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest25.Location = new System.Drawing.Point(0, 0);
+            this.timeTest25.Name = "timeTest25";
+            this.timeTest25.Size = new System.Drawing.Size(96, 16);
+            this.timeTest25.TabIndex = 2;
+            this.timeTest25.UseVisualStyleBackColor = false;
             // 
             // panel318
             // 
@@ -8348,23 +8350,23 @@
             // panel319
             // 
             this.panel319.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel319.Controls.Add(this.button123);
+            this.panel319.Controls.Add(this.CongSuat25);
             this.panel319.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel319.Location = new System.Drawing.Point(106, 51);
             this.panel319.Name = "panel319";
             this.panel319.Size = new System.Drawing.Size(98, 18);
             this.panel319.TabIndex = 5;
             // 
-            // button123
+            // CongSuat25
             // 
-            this.button123.BackColor = System.Drawing.SystemColors.Control;
-            this.button123.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button123.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button123.Location = new System.Drawing.Point(0, 0);
-            this.button123.Name = "button123";
-            this.button123.Size = new System.Drawing.Size(96, 16);
-            this.button123.TabIndex = 2;
-            this.button123.UseVisualStyleBackColor = false;
+            this.CongSuat25.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat25.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat25.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat25.Name = "CongSuat25";
+            this.CongSuat25.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat25.TabIndex = 2;
+            this.CongSuat25.UseVisualStyleBackColor = false;
             // 
             // panel320
             // 
@@ -8391,23 +8393,23 @@
             // panel321
             // 
             this.panel321.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel321.Controls.Add(this.button124);
+            this.panel321.Controls.Add(this.DienApDC25);
             this.panel321.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel321.Location = new System.Drawing.Point(106, 27);
             this.panel321.Name = "panel321";
             this.panel321.Size = new System.Drawing.Size(98, 18);
             this.panel321.TabIndex = 3;
             // 
-            // button124
+            // DienApDC25
             // 
-            this.button124.BackColor = System.Drawing.SystemColors.Control;
-            this.button124.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button124.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button124.Location = new System.Drawing.Point(0, 0);
-            this.button124.Name = "button124";
-            this.button124.Size = new System.Drawing.Size(96, 16);
-            this.button124.TabIndex = 2;
-            this.button124.UseVisualStyleBackColor = false;
+            this.DienApDC25.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC25.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC25.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC25.Name = "DienApDC25";
+            this.DienApDC25.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC25.TabIndex = 2;
+            this.DienApDC25.UseVisualStyleBackColor = false;
             // 
             // panel322
             // 
@@ -8434,23 +8436,23 @@
             // panel323
             // 
             this.panel323.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel323.Controls.Add(this.button125);
+            this.panel323.Controls.Add(this.DongDC25);
             this.panel323.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel323.Location = new System.Drawing.Point(106, 3);
             this.panel323.Name = "panel323";
             this.panel323.Size = new System.Drawing.Size(98, 18);
             this.panel323.TabIndex = 1;
             // 
-            // button125
+            // DongDC25
             // 
-            this.button125.BackColor = System.Drawing.SystemColors.Control;
-            this.button125.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button125.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button125.Location = new System.Drawing.Point(0, 0);
-            this.button125.Name = "button125";
-            this.button125.Size = new System.Drawing.Size(96, 16);
-            this.button125.TabIndex = 2;
-            this.button125.UseVisualStyleBackColor = false;
+            this.DongDC25.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC25.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC25.Location = new System.Drawing.Point(0, 0);
+            this.DongDC25.Name = "DongDC25";
+            this.DongDC25.Size = new System.Drawing.Size(96, 16);
+            this.DongDC25.TabIndex = 2;
+            this.DongDC25.UseVisualStyleBackColor = false;
             // 
             // panel324
             // 
@@ -8572,44 +8574,44 @@
             // panel238
             // 
             this.panel238.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel238.Controls.Add(this.button91);
+            this.panel238.Controls.Add(this.SoLanTest26);
             this.panel238.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel238.Location = new System.Drawing.Point(106, 99);
             this.panel238.Name = "panel238";
             this.panel238.Size = new System.Drawing.Size(98, 21);
             this.panel238.TabIndex = 9;
             // 
-            // button91
+            // SoLanTest26
             // 
-            this.button91.BackColor = System.Drawing.SystemColors.Control;
-            this.button91.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button91.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button91.Location = new System.Drawing.Point(0, 0);
-            this.button91.Name = "button91";
-            this.button91.Size = new System.Drawing.Size(96, 19);
-            this.button91.TabIndex = 3;
-            this.button91.UseVisualStyleBackColor = false;
+            this.SoLanTest26.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest26.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest26.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest26.Name = "SoLanTest26";
+            this.SoLanTest26.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest26.TabIndex = 3;
+            this.SoLanTest26.UseVisualStyleBackColor = false;
             // 
             // panel239
             // 
             this.panel239.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel239.Controls.Add(this.button92);
+            this.panel239.Controls.Add(this.timeTest26);
             this.panel239.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel239.Location = new System.Drawing.Point(106, 75);
             this.panel239.Name = "panel239";
             this.panel239.Size = new System.Drawing.Size(98, 18);
             this.panel239.TabIndex = 7;
             // 
-            // button92
+            // timeTest26
             // 
-            this.button92.BackColor = System.Drawing.SystemColors.Control;
-            this.button92.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button92.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button92.Location = new System.Drawing.Point(0, 0);
-            this.button92.Name = "button92";
-            this.button92.Size = new System.Drawing.Size(96, 16);
-            this.button92.TabIndex = 2;
-            this.button92.UseVisualStyleBackColor = false;
+            this.timeTest26.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest26.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest26.Location = new System.Drawing.Point(0, 0);
+            this.timeTest26.Name = "timeTest26";
+            this.timeTest26.Size = new System.Drawing.Size(96, 16);
+            this.timeTest26.TabIndex = 2;
+            this.timeTest26.UseVisualStyleBackColor = false;
             // 
             // panel240
             // 
@@ -8636,23 +8638,23 @@
             // panel241
             // 
             this.panel241.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel241.Controls.Add(this.button93);
+            this.panel241.Controls.Add(this.CongSuat26);
             this.panel241.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel241.Location = new System.Drawing.Point(106, 51);
             this.panel241.Name = "panel241";
             this.panel241.Size = new System.Drawing.Size(98, 18);
             this.panel241.TabIndex = 5;
             // 
-            // button93
+            // CongSuat26
             // 
-            this.button93.BackColor = System.Drawing.SystemColors.Control;
-            this.button93.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button93.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button93.Location = new System.Drawing.Point(0, 0);
-            this.button93.Name = "button93";
-            this.button93.Size = new System.Drawing.Size(96, 16);
-            this.button93.TabIndex = 2;
-            this.button93.UseVisualStyleBackColor = false;
+            this.CongSuat26.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat26.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat26.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat26.Name = "CongSuat26";
+            this.CongSuat26.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat26.TabIndex = 2;
+            this.CongSuat26.UseVisualStyleBackColor = false;
             // 
             // panel242
             // 
@@ -8679,23 +8681,23 @@
             // panel243
             // 
             this.panel243.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel243.Controls.Add(this.button94);
+            this.panel243.Controls.Add(this.DienApDC26);
             this.panel243.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel243.Location = new System.Drawing.Point(106, 27);
             this.panel243.Name = "panel243";
             this.panel243.Size = new System.Drawing.Size(98, 18);
             this.panel243.TabIndex = 3;
             // 
-            // button94
+            // DienApDC26
             // 
-            this.button94.BackColor = System.Drawing.SystemColors.Control;
-            this.button94.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button94.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button94.Location = new System.Drawing.Point(0, 0);
-            this.button94.Name = "button94";
-            this.button94.Size = new System.Drawing.Size(96, 16);
-            this.button94.TabIndex = 2;
-            this.button94.UseVisualStyleBackColor = false;
+            this.DienApDC26.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC26.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC26.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC26.Name = "DienApDC26";
+            this.DienApDC26.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC26.TabIndex = 2;
+            this.DienApDC26.UseVisualStyleBackColor = false;
             // 
             // panel244
             // 
@@ -8722,23 +8724,23 @@
             // panel245
             // 
             this.panel245.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel245.Controls.Add(this.button95);
+            this.panel245.Controls.Add(this.DongDC26);
             this.panel245.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel245.Location = new System.Drawing.Point(106, 3);
             this.panel245.Name = "panel245";
             this.panel245.Size = new System.Drawing.Size(98, 18);
             this.panel245.TabIndex = 1;
             // 
-            // button95
+            // DongDC26
             // 
-            this.button95.BackColor = System.Drawing.SystemColors.Control;
-            this.button95.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button95.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button95.Location = new System.Drawing.Point(0, 0);
-            this.button95.Name = "button95";
-            this.button95.Size = new System.Drawing.Size(96, 16);
-            this.button95.TabIndex = 2;
-            this.button95.UseVisualStyleBackColor = false;
+            this.DongDC26.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC26.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC26.Location = new System.Drawing.Point(0, 0);
+            this.DongDC26.Name = "DongDC26";
+            this.DongDC26.Size = new System.Drawing.Size(96, 16);
+            this.DongDC26.TabIndex = 2;
+            this.DongDC26.UseVisualStyleBackColor = false;
             // 
             // panel246
             // 
@@ -8860,44 +8862,44 @@
             // panel225
             // 
             this.panel225.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel225.Controls.Add(this.button86);
+            this.panel225.Controls.Add(this.SoLanTest27);
             this.panel225.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel225.Location = new System.Drawing.Point(106, 99);
             this.panel225.Name = "panel225";
             this.panel225.Size = new System.Drawing.Size(98, 21);
             this.panel225.TabIndex = 9;
             // 
-            // button86
+            // SoLanTest27
             // 
-            this.button86.BackColor = System.Drawing.SystemColors.Control;
-            this.button86.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button86.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button86.Location = new System.Drawing.Point(0, 0);
-            this.button86.Name = "button86";
-            this.button86.Size = new System.Drawing.Size(96, 19);
-            this.button86.TabIndex = 3;
-            this.button86.UseVisualStyleBackColor = false;
+            this.SoLanTest27.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest27.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest27.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest27.Name = "SoLanTest27";
+            this.SoLanTest27.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest27.TabIndex = 3;
+            this.SoLanTest27.UseVisualStyleBackColor = false;
             // 
             // panel226
             // 
             this.panel226.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel226.Controls.Add(this.button87);
+            this.panel226.Controls.Add(this.timeTest27);
             this.panel226.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel226.Location = new System.Drawing.Point(106, 75);
             this.panel226.Name = "panel226";
             this.panel226.Size = new System.Drawing.Size(98, 18);
             this.panel226.TabIndex = 7;
             // 
-            // button87
+            // timeTest27
             // 
-            this.button87.BackColor = System.Drawing.SystemColors.Control;
-            this.button87.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button87.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button87.Location = new System.Drawing.Point(0, 0);
-            this.button87.Name = "button87";
-            this.button87.Size = new System.Drawing.Size(96, 16);
-            this.button87.TabIndex = 2;
-            this.button87.UseVisualStyleBackColor = false;
+            this.timeTest27.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest27.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest27.Location = new System.Drawing.Point(0, 0);
+            this.timeTest27.Name = "timeTest27";
+            this.timeTest27.Size = new System.Drawing.Size(96, 16);
+            this.timeTest27.TabIndex = 2;
+            this.timeTest27.UseVisualStyleBackColor = false;
             // 
             // panel227
             // 
@@ -8924,23 +8926,23 @@
             // panel228
             // 
             this.panel228.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel228.Controls.Add(this.button88);
+            this.panel228.Controls.Add(this.CongSuat27);
             this.panel228.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel228.Location = new System.Drawing.Point(106, 51);
             this.panel228.Name = "panel228";
             this.panel228.Size = new System.Drawing.Size(98, 18);
             this.panel228.TabIndex = 5;
             // 
-            // button88
+            // CongSuat27
             // 
-            this.button88.BackColor = System.Drawing.SystemColors.Control;
-            this.button88.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button88.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button88.Location = new System.Drawing.Point(0, 0);
-            this.button88.Name = "button88";
-            this.button88.Size = new System.Drawing.Size(96, 16);
-            this.button88.TabIndex = 2;
-            this.button88.UseVisualStyleBackColor = false;
+            this.CongSuat27.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat27.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat27.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat27.Name = "CongSuat27";
+            this.CongSuat27.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat27.TabIndex = 2;
+            this.CongSuat27.UseVisualStyleBackColor = false;
             // 
             // panel229
             // 
@@ -8967,23 +8969,23 @@
             // panel230
             // 
             this.panel230.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel230.Controls.Add(this.button89);
+            this.panel230.Controls.Add(this.DienApDC27);
             this.panel230.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel230.Location = new System.Drawing.Point(106, 27);
             this.panel230.Name = "panel230";
             this.panel230.Size = new System.Drawing.Size(98, 18);
             this.panel230.TabIndex = 3;
             // 
-            // button89
+            // DienApDC27
             // 
-            this.button89.BackColor = System.Drawing.SystemColors.Control;
-            this.button89.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button89.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button89.Location = new System.Drawing.Point(0, 0);
-            this.button89.Name = "button89";
-            this.button89.Size = new System.Drawing.Size(96, 16);
-            this.button89.TabIndex = 2;
-            this.button89.UseVisualStyleBackColor = false;
+            this.DienApDC27.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC27.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC27.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC27.Name = "DienApDC27";
+            this.DienApDC27.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC27.TabIndex = 2;
+            this.DienApDC27.UseVisualStyleBackColor = false;
             // 
             // panel231
             // 
@@ -9010,23 +9012,23 @@
             // panel232
             // 
             this.panel232.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel232.Controls.Add(this.button90);
+            this.panel232.Controls.Add(this.DongDC27);
             this.panel232.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel232.Location = new System.Drawing.Point(106, 3);
             this.panel232.Name = "panel232";
             this.panel232.Size = new System.Drawing.Size(98, 18);
             this.panel232.TabIndex = 1;
             // 
-            // button90
+            // DongDC27
             // 
-            this.button90.BackColor = System.Drawing.SystemColors.Control;
-            this.button90.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button90.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button90.Location = new System.Drawing.Point(0, 0);
-            this.button90.Name = "button90";
-            this.button90.Size = new System.Drawing.Size(96, 16);
-            this.button90.TabIndex = 2;
-            this.button90.UseVisualStyleBackColor = false;
+            this.DongDC27.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC27.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC27.Location = new System.Drawing.Point(0, 0);
+            this.DongDC27.Name = "DongDC27";
+            this.DongDC27.Size = new System.Drawing.Size(96, 16);
+            this.DongDC27.TabIndex = 2;
+            this.DongDC27.UseVisualStyleBackColor = false;
             // 
             // panel233
             // 
@@ -9148,44 +9150,44 @@
             // panel212
             // 
             this.panel212.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel212.Controls.Add(this.button81);
+            this.panel212.Controls.Add(this.SoLanTest28);
             this.panel212.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel212.Location = new System.Drawing.Point(106, 99);
             this.panel212.Name = "panel212";
             this.panel212.Size = new System.Drawing.Size(98, 21);
             this.panel212.TabIndex = 9;
             // 
-            // button81
+            // SoLanTest28
             // 
-            this.button81.BackColor = System.Drawing.SystemColors.Control;
-            this.button81.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button81.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button81.Location = new System.Drawing.Point(0, 0);
-            this.button81.Name = "button81";
-            this.button81.Size = new System.Drawing.Size(96, 19);
-            this.button81.TabIndex = 3;
-            this.button81.UseVisualStyleBackColor = false;
+            this.SoLanTest28.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest28.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest28.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest28.Name = "SoLanTest28";
+            this.SoLanTest28.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest28.TabIndex = 3;
+            this.SoLanTest28.UseVisualStyleBackColor = false;
             // 
             // panel213
             // 
             this.panel213.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel213.Controls.Add(this.button82);
+            this.panel213.Controls.Add(this.timeTest28);
             this.panel213.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel213.Location = new System.Drawing.Point(106, 75);
             this.panel213.Name = "panel213";
             this.panel213.Size = new System.Drawing.Size(98, 18);
             this.panel213.TabIndex = 7;
             // 
-            // button82
+            // timeTest28
             // 
-            this.button82.BackColor = System.Drawing.SystemColors.Control;
-            this.button82.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button82.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button82.Location = new System.Drawing.Point(0, 0);
-            this.button82.Name = "button82";
-            this.button82.Size = new System.Drawing.Size(96, 16);
-            this.button82.TabIndex = 2;
-            this.button82.UseVisualStyleBackColor = false;
+            this.timeTest28.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest28.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest28.Location = new System.Drawing.Point(0, 0);
+            this.timeTest28.Name = "timeTest28";
+            this.timeTest28.Size = new System.Drawing.Size(96, 16);
+            this.timeTest28.TabIndex = 2;
+            this.timeTest28.UseVisualStyleBackColor = false;
             // 
             // panel214
             // 
@@ -9212,23 +9214,23 @@
             // panel215
             // 
             this.panel215.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel215.Controls.Add(this.button83);
+            this.panel215.Controls.Add(this.CongSuat28);
             this.panel215.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel215.Location = new System.Drawing.Point(106, 51);
             this.panel215.Name = "panel215";
             this.panel215.Size = new System.Drawing.Size(98, 18);
             this.panel215.TabIndex = 5;
             // 
-            // button83
+            // CongSuat28
             // 
-            this.button83.BackColor = System.Drawing.SystemColors.Control;
-            this.button83.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button83.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button83.Location = new System.Drawing.Point(0, 0);
-            this.button83.Name = "button83";
-            this.button83.Size = new System.Drawing.Size(96, 16);
-            this.button83.TabIndex = 2;
-            this.button83.UseVisualStyleBackColor = false;
+            this.CongSuat28.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat28.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat28.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat28.Name = "CongSuat28";
+            this.CongSuat28.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat28.TabIndex = 2;
+            this.CongSuat28.UseVisualStyleBackColor = false;
             // 
             // panel216
             // 
@@ -9255,23 +9257,23 @@
             // panel217
             // 
             this.panel217.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel217.Controls.Add(this.button84);
+            this.panel217.Controls.Add(this.DienApDC28);
             this.panel217.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel217.Location = new System.Drawing.Point(106, 27);
             this.panel217.Name = "panel217";
             this.panel217.Size = new System.Drawing.Size(98, 18);
             this.panel217.TabIndex = 3;
             // 
-            // button84
+            // DienApDC28
             // 
-            this.button84.BackColor = System.Drawing.SystemColors.Control;
-            this.button84.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button84.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button84.Location = new System.Drawing.Point(0, 0);
-            this.button84.Name = "button84";
-            this.button84.Size = new System.Drawing.Size(96, 16);
-            this.button84.TabIndex = 2;
-            this.button84.UseVisualStyleBackColor = false;
+            this.DienApDC28.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC28.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC28.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC28.Name = "DienApDC28";
+            this.DienApDC28.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC28.TabIndex = 2;
+            this.DienApDC28.UseVisualStyleBackColor = false;
             // 
             // panel218
             // 
@@ -9298,23 +9300,23 @@
             // panel219
             // 
             this.panel219.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel219.Controls.Add(this.button85);
+            this.panel219.Controls.Add(this.DongDC28);
             this.panel219.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel219.Location = new System.Drawing.Point(106, 3);
             this.panel219.Name = "panel219";
             this.panel219.Size = new System.Drawing.Size(98, 18);
             this.panel219.TabIndex = 1;
             // 
-            // button85
+            // DongDC28
             // 
-            this.button85.BackColor = System.Drawing.SystemColors.Control;
-            this.button85.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button85.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button85.Location = new System.Drawing.Point(0, 0);
-            this.button85.Name = "button85";
-            this.button85.Size = new System.Drawing.Size(96, 16);
-            this.button85.TabIndex = 2;
-            this.button85.UseVisualStyleBackColor = false;
+            this.DongDC28.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC28.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC28.Location = new System.Drawing.Point(0, 0);
+            this.DongDC28.Name = "DongDC28";
+            this.DongDC28.Size = new System.Drawing.Size(96, 16);
+            this.DongDC28.TabIndex = 2;
+            this.DongDC28.UseVisualStyleBackColor = false;
             // 
             // panel220
             // 
@@ -9436,44 +9438,44 @@
             // panel199
             // 
             this.panel199.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel199.Controls.Add(this.button1);
+            this.panel199.Controls.Add(this.SoLanTest29);
             this.panel199.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel199.Location = new System.Drawing.Point(106, 99);
             this.panel199.Name = "panel199";
             this.panel199.Size = new System.Drawing.Size(98, 21);
             this.panel199.TabIndex = 9;
             // 
-            // button1
+            // SoLanTest29
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 19);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = false;
+            this.SoLanTest29.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest29.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest29.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest29.Name = "SoLanTest29";
+            this.SoLanTest29.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest29.TabIndex = 3;
+            this.SoLanTest29.UseVisualStyleBackColor = false;
             // 
             // panel200
             // 
             this.panel200.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel200.Controls.Add(this.button77);
+            this.panel200.Controls.Add(this.timeTest29);
             this.panel200.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel200.Location = new System.Drawing.Point(106, 75);
             this.panel200.Name = "panel200";
             this.panel200.Size = new System.Drawing.Size(98, 18);
             this.panel200.TabIndex = 7;
             // 
-            // button77
+            // timeTest29
             // 
-            this.button77.BackColor = System.Drawing.SystemColors.Control;
-            this.button77.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button77.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button77.Location = new System.Drawing.Point(0, 0);
-            this.button77.Name = "button77";
-            this.button77.Size = new System.Drawing.Size(96, 16);
-            this.button77.TabIndex = 2;
-            this.button77.UseVisualStyleBackColor = false;
+            this.timeTest29.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest29.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest29.Location = new System.Drawing.Point(0, 0);
+            this.timeTest29.Name = "timeTest29";
+            this.timeTest29.Size = new System.Drawing.Size(96, 16);
+            this.timeTest29.TabIndex = 2;
+            this.timeTest29.UseVisualStyleBackColor = false;
             // 
             // panel201
             // 
@@ -9500,23 +9502,23 @@
             // panel202
             // 
             this.panel202.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel202.Controls.Add(this.button78);
+            this.panel202.Controls.Add(this.CongSuat29);
             this.panel202.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel202.Location = new System.Drawing.Point(106, 51);
             this.panel202.Name = "panel202";
             this.panel202.Size = new System.Drawing.Size(98, 18);
             this.panel202.TabIndex = 5;
             // 
-            // button78
+            // CongSuat29
             // 
-            this.button78.BackColor = System.Drawing.SystemColors.Control;
-            this.button78.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button78.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button78.Location = new System.Drawing.Point(0, 0);
-            this.button78.Name = "button78";
-            this.button78.Size = new System.Drawing.Size(96, 16);
-            this.button78.TabIndex = 2;
-            this.button78.UseVisualStyleBackColor = false;
+            this.CongSuat29.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat29.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat29.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat29.Name = "CongSuat29";
+            this.CongSuat29.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat29.TabIndex = 2;
+            this.CongSuat29.UseVisualStyleBackColor = false;
             // 
             // panel203
             // 
@@ -9543,23 +9545,23 @@
             // panel204
             // 
             this.panel204.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel204.Controls.Add(this.button79);
+            this.panel204.Controls.Add(this.DienApDC29);
             this.panel204.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel204.Location = new System.Drawing.Point(106, 27);
             this.panel204.Name = "panel204";
             this.panel204.Size = new System.Drawing.Size(98, 18);
             this.panel204.TabIndex = 3;
             // 
-            // button79
+            // DienApDC29
             // 
-            this.button79.BackColor = System.Drawing.SystemColors.Control;
-            this.button79.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button79.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button79.Location = new System.Drawing.Point(0, 0);
-            this.button79.Name = "button79";
-            this.button79.Size = new System.Drawing.Size(96, 16);
-            this.button79.TabIndex = 2;
-            this.button79.UseVisualStyleBackColor = false;
+            this.DienApDC29.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC29.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC29.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC29.Name = "DienApDC29";
+            this.DienApDC29.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC29.TabIndex = 2;
+            this.DienApDC29.UseVisualStyleBackColor = false;
             // 
             // panel205
             // 
@@ -9586,23 +9588,23 @@
             // panel206
             // 
             this.panel206.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel206.Controls.Add(this.button80);
+            this.panel206.Controls.Add(this.DongDC29);
             this.panel206.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel206.Location = new System.Drawing.Point(106, 3);
             this.panel206.Name = "panel206";
             this.panel206.Size = new System.Drawing.Size(98, 18);
             this.panel206.TabIndex = 1;
             // 
-            // button80
+            // DongDC29
             // 
-            this.button80.BackColor = System.Drawing.SystemColors.Control;
-            this.button80.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button80.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button80.Location = new System.Drawing.Point(0, 0);
-            this.button80.Name = "button80";
-            this.button80.Size = new System.Drawing.Size(96, 16);
-            this.button80.TabIndex = 2;
-            this.button80.UseVisualStyleBackColor = false;
+            this.DongDC29.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC29.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC29.Location = new System.Drawing.Point(0, 0);
+            this.DongDC29.Name = "DongDC29";
+            this.DongDC29.Size = new System.Drawing.Size(96, 16);
+            this.DongDC29.TabIndex = 2;
+            this.DongDC29.UseVisualStyleBackColor = false;
             // 
             // panel207
             // 
@@ -9724,44 +9726,44 @@
             // panel253
             // 
             this.panel253.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel253.Controls.Add(this.button97);
+            this.panel253.Controls.Add(this.SoLanTest30);
             this.panel253.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel253.Location = new System.Drawing.Point(106, 99);
             this.panel253.Name = "panel253";
             this.panel253.Size = new System.Drawing.Size(98, 21);
             this.panel253.TabIndex = 9;
             // 
-            // button97
+            // SoLanTest30
             // 
-            this.button97.BackColor = System.Drawing.SystemColors.Control;
-            this.button97.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button97.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button97.Location = new System.Drawing.Point(0, 0);
-            this.button97.Name = "button97";
-            this.button97.Size = new System.Drawing.Size(96, 19);
-            this.button97.TabIndex = 3;
-            this.button97.UseVisualStyleBackColor = false;
+            this.SoLanTest30.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTest30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTest30.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTest30.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTest30.Name = "SoLanTest30";
+            this.SoLanTest30.Size = new System.Drawing.Size(96, 19);
+            this.SoLanTest30.TabIndex = 3;
+            this.SoLanTest30.UseVisualStyleBackColor = false;
             // 
             // panel254
             // 
             this.panel254.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel254.Controls.Add(this.button98);
+            this.panel254.Controls.Add(this.timeTest30);
             this.panel254.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel254.Location = new System.Drawing.Point(106, 75);
             this.panel254.Name = "panel254";
             this.panel254.Size = new System.Drawing.Size(98, 18);
             this.panel254.TabIndex = 7;
             // 
-            // button98
+            // timeTest30
             // 
-            this.button98.BackColor = System.Drawing.SystemColors.Control;
-            this.button98.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button98.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button98.Location = new System.Drawing.Point(0, 0);
-            this.button98.Name = "button98";
-            this.button98.Size = new System.Drawing.Size(96, 16);
-            this.button98.TabIndex = 2;
-            this.button98.UseVisualStyleBackColor = false;
+            this.timeTest30.BackColor = System.Drawing.SystemColors.Control;
+            this.timeTest30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeTest30.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeTest30.Location = new System.Drawing.Point(0, 0);
+            this.timeTest30.Name = "timeTest30";
+            this.timeTest30.Size = new System.Drawing.Size(96, 16);
+            this.timeTest30.TabIndex = 2;
+            this.timeTest30.UseVisualStyleBackColor = false;
             // 
             // panel255
             // 
@@ -9788,23 +9790,23 @@
             // panel256
             // 
             this.panel256.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel256.Controls.Add(this.button99);
+            this.panel256.Controls.Add(this.CongSuat30);
             this.panel256.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel256.Location = new System.Drawing.Point(106, 51);
             this.panel256.Name = "panel256";
             this.panel256.Size = new System.Drawing.Size(98, 18);
             this.panel256.TabIndex = 5;
             // 
-            // button99
+            // CongSuat30
             // 
-            this.button99.BackColor = System.Drawing.SystemColors.Control;
-            this.button99.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button99.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button99.Location = new System.Drawing.Point(0, 0);
-            this.button99.Name = "button99";
-            this.button99.Size = new System.Drawing.Size(96, 16);
-            this.button99.TabIndex = 2;
-            this.button99.UseVisualStyleBackColor = false;
+            this.CongSuat30.BackColor = System.Drawing.SystemColors.Control;
+            this.CongSuat30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CongSuat30.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CongSuat30.Location = new System.Drawing.Point(0, 0);
+            this.CongSuat30.Name = "CongSuat30";
+            this.CongSuat30.Size = new System.Drawing.Size(96, 16);
+            this.CongSuat30.TabIndex = 2;
+            this.CongSuat30.UseVisualStyleBackColor = false;
             // 
             // panel257
             // 
@@ -9831,23 +9833,23 @@
             // panel258
             // 
             this.panel258.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel258.Controls.Add(this.button100);
+            this.panel258.Controls.Add(this.DienApDC30);
             this.panel258.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel258.Location = new System.Drawing.Point(106, 27);
             this.panel258.Name = "panel258";
             this.panel258.Size = new System.Drawing.Size(98, 18);
             this.panel258.TabIndex = 3;
             // 
-            // button100
+            // DienApDC30
             // 
-            this.button100.BackColor = System.Drawing.SystemColors.Control;
-            this.button100.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button100.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button100.Location = new System.Drawing.Point(0, 0);
-            this.button100.Name = "button100";
-            this.button100.Size = new System.Drawing.Size(96, 16);
-            this.button100.TabIndex = 2;
-            this.button100.UseVisualStyleBackColor = false;
+            this.DienApDC30.BackColor = System.Drawing.SystemColors.Control;
+            this.DienApDC30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DienApDC30.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DienApDC30.Location = new System.Drawing.Point(0, 0);
+            this.DienApDC30.Name = "DienApDC30";
+            this.DienApDC30.Size = new System.Drawing.Size(96, 16);
+            this.DienApDC30.TabIndex = 2;
+            this.DienApDC30.UseVisualStyleBackColor = false;
             // 
             // panel259
             // 
@@ -9874,23 +9876,23 @@
             // panel260
             // 
             this.panel260.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel260.Controls.Add(this.button101);
+            this.panel260.Controls.Add(this.DongDC30);
             this.panel260.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel260.Location = new System.Drawing.Point(106, 3);
             this.panel260.Name = "panel260";
             this.panel260.Size = new System.Drawing.Size(98, 18);
             this.panel260.TabIndex = 1;
             // 
-            // button101
+            // DongDC30
             // 
-            this.button101.BackColor = System.Drawing.SystemColors.Control;
-            this.button101.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button101.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button101.Location = new System.Drawing.Point(0, 0);
-            this.button101.Name = "button101";
-            this.button101.Size = new System.Drawing.Size(96, 16);
-            this.button101.TabIndex = 2;
-            this.button101.UseVisualStyleBackColor = false;
+            this.DongDC30.BackColor = System.Drawing.SystemColors.Control;
+            this.DongDC30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DongDC30.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DongDC30.Location = new System.Drawing.Point(0, 0);
+            this.DongDC30.Name = "DongDC30";
+            this.DongDC30.Size = new System.Drawing.Size(96, 16);
+            this.DongDC30.TabIndex = 2;
+            this.DongDC30.UseVisualStyleBackColor = false;
             // 
             // panel261
             // 
@@ -10397,6 +10399,10 @@
             this.gridLayout1.ContainerControl = this.tabPageGiamSat1;
             this.gridLayout1.Rows = 3;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
             // Nguon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -10865,21 +10871,21 @@
         private Panel panel135;
         private TableLayoutPanel tableLayoutPanel11;
         private Panel panel136;
-        private Button button52;
+        private Button SoLanTest1;
         private Panel panel137;
-        private Button button53;
+        private Button timeTest1;
         private Panel panel138;
         private Label label62;
         private Panel panel139;
-        private Button button54;
+        private Button CongSuat1;
         private Panel panel140;
         private Label label63;
         private Panel panel141;
-        private Button button55;
+        private Button DienApDC1;
         private Panel panel142;
         private Label label64;
         private Panel panel143;
-        private Button button56;
+        private Button DongDC1;
         private Panel panel144;
         private Label label65;
         private Panel panel145;
@@ -10890,21 +10896,21 @@
         private Panel panel148;
         private TableLayoutPanel tableLayoutPanel12;
         private Panel panel149;
-        private Button button57;
+        private Button SoLanTest2;
         private Panel panel150;
-        private Button button58;
+        private Button timeTest2;
         private Panel panel151;
         private Label label68;
         private Panel panel152;
-        private Button button59;
+        private Button CongSuat2;
         private Panel panel153;
         private Label label69;
         private Panel panel154;
-        private Button button60;
+        private Button DienApDC2;
         private Panel panel155;
         private Label label70;
         private Panel panel156;
-        private Button button61;
+        private Button DongDC2;
         private Panel panel157;
         private Label label71;
         private Panel panel158;
@@ -10915,21 +10921,21 @@
         private Panel panel161;
         private TableLayoutPanel tableLayoutPanel13;
         private Panel panel162;
-        private Button button62;
+        private Button SoLanTest3;
         private Panel panel163;
-        private Button button63;
+        private Button timeTest3;
         private Panel panel164;
         private Label label74;
         private Panel panel165;
-        private Button button64;
+        private Button CongSuat3;
         private Panel panel166;
         private Label label75;
         private Panel panel167;
-        private Button button65;
+        private Button DienApDC3;
         private Panel panel168;
         private Label label76;
         private Panel panel169;
-        private Button button66;
+        private Button DongDC3;
         private Panel panel170;
         private Label label77;
         private Panel panel171;
@@ -10940,21 +10946,21 @@
         private Panel panel174;
         private TableLayoutPanel tableLayoutPanel14;
         private Panel panel175;
-        private Button button67;
+        private Button SoLanTest4;
         private Panel panel176;
-        private Button button68;
+        private Button timeTest4;
         private Panel panel177;
         private Label label80;
         private Panel panel178;
-        private Button button69;
+        private Button CongSuat4;
         private Panel panel179;
         private Label label81;
         private Panel panel180;
-        private Button button70;
+        private Button DienApDC4;
         private Panel panel181;
         private Label label82;
         private Panel panel182;
-        private Button button71;
+        private Button DongDC4;
         private Panel panel183;
         private Label label83;
         private Panel panel184;
@@ -10965,21 +10971,21 @@
         private Panel panel187;
         private TableLayoutPanel tableLayoutPanel15;
         private Panel panel188;
-        private Button button72;
+        private Button SoLanTest5;
         private Panel panel189;
-        private Button button73;
+        private Button timeTest5;
         private Panel panel190;
         private Label label86;
         private Panel panel191;
-        private Button button74;
+        private Button CongSuat5;
         private Panel panel192;
         private Label label87;
         private Panel panel193;
-        private Button button75;
+        private Button DienApDC5;
         private Panel panel194;
         private Label label88;
         private Panel panel195;
-        private Button button76;
+        private Button DongDC5;
         private Panel panel196;
         private Label label89;
         private Panel panel197;
@@ -10990,21 +10996,21 @@
         private Panel panel70;
         private TableLayoutPanel tableLayoutPanel6;
         private Panel panel71;
-        private Button button27;
+        private Button SoLanTest6;
         private Panel panel72;
-        private Button button28;
+        private Button timeTest6;
         private Panel panel73;
         private Label label32;
         private Panel panel74;
-        private Button button29;
+        private Button CongSuat6;
         private Panel panel75;
         private Label label33;
         private Panel panel76;
-        private Button button30;
+        private Button DienApDC6;
         private Panel panel77;
         private Label label34;
         private Panel panel78;
-        private Button button31;
+        private Button DongDC6;
         private Panel panel79;
         private Label label35;
         private Panel panel80;
@@ -11015,21 +11021,21 @@
         private Panel panel83;
         private TableLayoutPanel tableLayoutPanel7;
         private Panel panel84;
-        private Button button32;
+        private Button SoLanTest7;
         private Panel panel85;
-        private Button button33;
+        private Button timeTest7;
         private Panel panel86;
         private Label label38;
         private Panel panel87;
-        private Button button34;
+        private Button CongSuat7;
         private Panel panel88;
         private Label label39;
         private Panel panel89;
-        private Button button35;
+        private Button DienApDC7;
         private Panel panel90;
         private Label label40;
         private Panel panel91;
-        private Button button36;
+        private Button DongDC7;
         private Panel panel92;
         private Label label41;
         private Panel panel93;
@@ -11040,21 +11046,21 @@
         private Panel panel96;
         private TableLayoutPanel tableLayoutPanel8;
         private Panel panel97;
-        private Button button37;
+        private Button SoLanTest8;
         private Panel panel98;
-        private Button button38;
+        private Button timeTest8;
         private Panel panel99;
         private Label label44;
         private Panel panel100;
-        private Button button39;
+        private Button CongSuat8;
         private Panel panel101;
         private Label label45;
         private Panel panel102;
-        private Button button40;
+        private Button DienApDC8;
         private Panel panel103;
         private Label label46;
         private Panel panel104;
-        private Button button41;
+        private Button DongDC8;
         private Panel panel105;
         private Label label47;
         private Panel panel106;
@@ -11065,21 +11071,21 @@
         private Panel panel109;
         private TableLayoutPanel tableLayoutPanel9;
         private Panel panel110;
-        private Button button42;
+        private Button SoLanTest9;
         private Panel panel111;
-        private Button button43;
+        private Button timeTest9;
         private Panel panel112;
         private Label label50;
         private Panel panel113;
-        private Button button44;
+        private Button CongSuat9;
         private Panel panel114;
         private Label label51;
         private Panel panel115;
-        private Button button45;
+        private Button DienApDC9;
         private Panel panel116;
         private Label label52;
         private Panel panel117;
-        private Button button46;
+        private Button DongDC9;
         private Panel panel118;
         private Label label53;
         private Panel panel119;
@@ -11090,21 +11096,21 @@
         private Panel panel122;
         private TableLayoutPanel tableLayoutPanel10;
         private Panel panel123;
-        private Button button47;
+        private Button SoLanTest10;
         private Panel panel124;
-        private Button button48;
+        private Button timeTest10;
         private Panel panel125;
         private Label label56;
         private Panel panel126;
-        private Button button49;
+        private Button CongSuat10;
         private Panel panel127;
         private Label label57;
         private Panel panel128;
-        private Button button50;
+        private Button DienApDC10;
         private Panel panel129;
         private Label label58;
         private Panel panel130;
-        private Button button51;
+        private Button DongDC10;
         private Panel panel131;
         private Label label59;
         private Panel panel132;
@@ -11115,21 +11121,21 @@
         private Panel panel5;
         private TableLayoutPanel tableLayoutPanel1;
         private Panel panel6;
-        private Button button2;
+        private Button SoLanTest11;
         private Panel panel7;
-        private Button button3;
+        private Button timeTest11;
         private Panel panel8;
         private Label label2;
         private Panel panel9;
-        private Button button4;
+        private Button CongSuat11;
         private Panel panel10;
         private Label label3;
         private Panel panel11;
-        private Button button5;
+        private Button DienApDC11;
         private Panel panel12;
         private Label label4;
         private Panel panel13;
-        private Button button6;
+        private Button DongDC11;
         private Panel panel14;
         private Label label5;
         private Panel panel15;
@@ -11140,21 +11146,21 @@
         private Panel panel18;
         private TableLayoutPanel tableLayoutPanel2;
         private Panel panel19;
-        private Button button7;
+        private Button SoLanTest12;
         private Panel panel20;
-        private Button button8;
+        private Button timeTest12;
         private Panel panel21;
         private Label label8;
         private Panel panel22;
-        private Button button9;
+        private Button CongSuat12;
         private Panel panel23;
         private Label label9;
         private Panel panel24;
-        private Button button10;
+        private Button DienApDC12;
         private Panel panel25;
         private Label label10;
         private Panel panel26;
-        private Button button11;
+        private Button DongDC12;
         private Panel panel27;
         private Label label11;
         private Panel panel28;
@@ -11165,21 +11171,21 @@
         private Panel panel31;
         private TableLayoutPanel tableLayoutPanel3;
         private Panel panel32;
-        private Button button12;
+        private Button SoLanTest13;
         private Panel panel33;
-        private Button button13;
+        private Button timeTest13;
         private Panel panel34;
         private Label label14;
         private Panel panel35;
-        private Button button14;
+        private Button CongSuat13;
         private Panel panel36;
         private Label label15;
         private Panel panel37;
-        private Button button15;
+        private Button DienApDC13;
         private Panel panel38;
         private Label label16;
         private Panel panel39;
-        private Button button16;
+        private Button DongDC13;
         private Panel panel40;
         private Label label17;
         private Panel panel41;
@@ -11190,21 +11196,21 @@
         private Panel panel44;
         private TableLayoutPanel tableLayoutPanel4;
         private Panel panel45;
-        private Button button17;
+        private Button SoLanTest14;
         private Panel panel46;
-        private Button button18;
+        private Button timeTest14;
         private Panel panel47;
         private Label label20;
         private Panel panel48;
-        private Button button19;
+        private Button CongSuat14;
         private Panel panel49;
         private Label label21;
         private Panel panel50;
-        private Button button20;
+        private Button DienApDC14;
         private Panel panel51;
         private Label label22;
         private Panel panel52;
-        private Button button21;
+        private Button DongDC14;
         private Panel panel53;
         private Label label23;
         private Panel panel54;
@@ -11215,21 +11221,21 @@
         private Panel panel57;
         private TableLayoutPanel tableLayoutPanel5;
         private Panel panel58;
-        private Button button22;
+        private Button SoLanTest15;
         private Panel panel59;
-        private Button button23;
+        private Button timeTest15;
         private Panel panel60;
         private Label label26;
         private Panel panel61;
-        private Button button24;
+        private Button CongSuat15;
         private Panel panel62;
         private Label label27;
         private Panel panel63;
-        private Button button25;
+        private Button DienApDC15;
         private Panel panel64;
         private Label label28;
         private Panel panel65;
-        private Button button26;
+        private Button DongDC15;
         private Panel panel66;
         private Label label29;
         private Panel panel67;
@@ -11240,21 +11246,21 @@
         private Panel panel328;
         private TableLayoutPanel tableLayoutPanel26;
         private Panel panel329;
-        private Button button126;
+        private Button SoLanTest16;
         private Panel panel330;
-        private Button button127;
+        private Button timeTest16;
         private Panel panel331;
         private Label label151;
         private Panel panel332;
-        private Button button128;
+        private Button CongSuat16;
         private Panel panel333;
         private Label label152;
         private Panel panel334;
-        private Button button129;
+        private Button DienApDC16;
         private Panel panel335;
         private Label label153;
         private Panel panel336;
-        private Button button130;
+        private Button DongDC16;
         private Panel panel337;
         private Label label154;
         private Panel panel338;
@@ -11265,21 +11271,21 @@
         private Panel panel341;
         private TableLayoutPanel tableLayoutPanel27;
         private Panel panel342;
-        private Button button131;
+        private Button SoLanTest17;
         private Panel panel343;
-        private Button button132;
+        private Button timeTest17;
         private Panel panel344;
         private Label label157;
         private Panel panel345;
-        private Button button133;
+        private Button CongSuat17;
         private Panel panel346;
         private Label label158;
         private Panel panel347;
-        private Button button134;
+        private Button DienApDC17;
         private Panel panel348;
         private Label label159;
         private Panel panel349;
-        private Button button135;
+        private Button DongDC17;
         private Panel panel350;
         private Label label160;
         private Panel panel351;
@@ -11290,21 +11296,21 @@
         private Panel panel354;
         private TableLayoutPanel tableLayoutPanel28;
         private Panel panel355;
-        private Button button136;
+        private Button SoLanTest18;
         private Panel panel356;
-        private Button button137;
+        private Button timeTest18;
         private Panel panel357;
         private Label label163;
         private Panel panel358;
-        private Button button138;
+        private Button CongSuat18;
         private Panel panel359;
         private Label label164;
         private Panel panel360;
-        private Button button139;
+        private Button DienApDC18;
         private Panel panel361;
         private Label label165;
         private Panel panel362;
-        private Button button140;
+        private Button DongDC18;
         private Panel panel363;
         private Label label166;
         private Panel panel364;
@@ -11315,21 +11321,21 @@
         private Panel panel367;
         private TableLayoutPanel tableLayoutPanel29;
         private Panel panel368;
-        private Button button141;
+        private Button SoLanTest19;
         private Panel panel369;
-        private Button button142;
+        private Button timeTest19;
         private Panel panel370;
         private Label label169;
         private Panel panel371;
-        private Button button143;
+        private Button CongSuat19;
         private Panel panel372;
         private Label label170;
         private Panel panel373;
-        private Button button144;
+        private Button DienApDC19;
         private Panel panel374;
         private Label label171;
         private Panel panel375;
-        private Button button145;
+        private Button DongDC19;
         private Panel panel376;
         private Label label172;
         private Panel panel377;
@@ -11340,21 +11346,21 @@
         private Panel panel380;
         private TableLayoutPanel tableLayoutPanel30;
         private Panel panel381;
-        private Button button146;
+        private Button SoLanTest20;
         private Panel panel382;
-        private Button button147;
+        private Button timeTest20;
         private Panel panel383;
         private Label label175;
         private Panel panel384;
-        private Button button148;
+        private Button CongSuat20;
         private Panel panel385;
         private Label label176;
         private Panel panel386;
-        private Button button149;
+        private Button DienApDC20;
         private Panel panel387;
         private Label label177;
         private Panel panel388;
-        private Button button150;
+        private Button DongDC20;
         private Panel panel389;
         private Label label178;
         private Panel panel390;
@@ -11365,21 +11371,21 @@
         private Panel panel250;
         private TableLayoutPanel tableLayoutPanel21;
         private Panel panel264;
-        private Button button96;
+        private Button SoLanTest21;
         private Panel panel265;
-        private Button button102;
+        private Button timeTest21;
         private Panel panel266;
         private Label label115;
         private Panel panel267;
-        private Button button103;
+        private Button CongSuat21;
         private Panel panel268;
         private Label label122;
         private Panel panel269;
-        private Button button104;
+        private Button DienApDC21;
         private Panel panel270;
         private Label label123;
         private Panel panel271;
-        private Button button105;
+        private Button DongDC21;
         private Panel panel272;
         private Label label124;
         private Panel panel273;
@@ -11390,21 +11396,21 @@
         private Panel panel276;
         private TableLayoutPanel tableLayoutPanel22;
         private Panel panel277;
-        private Button button106;
+        private Button SoLanTest22;
         private Panel panel278;
-        private Button button107;
+        private Button timeTest22;
         private Panel panel279;
         private Label label127;
         private Panel panel280;
-        private Button button108;
+        private Button CongSuat22;
         private Panel panel281;
         private Label label128;
         private Panel panel282;
-        private Button button109;
+        private Button DienApDC22;
         private Panel panel283;
         private Label label129;
         private Panel panel284;
-        private Button button110;
+        private Button DongDC22;
         private Panel panel285;
         private Label label130;
         private Panel panel286;
@@ -11415,21 +11421,21 @@
         private Panel panel289;
         private TableLayoutPanel tableLayoutPanel23;
         private Panel panel290;
-        private Button button111;
+        private Button SoLanTest23;
         private Panel panel291;
-        private Button button112;
+        private Button timeTest23;
         private Panel panel292;
         private Label label133;
         private Panel panel293;
-        private Button button113;
+        private Button CongSuat23;
         private Panel panel294;
         private Label label134;
         private Panel panel295;
-        private Button button114;
+        private Button DienApDC23;
         private Panel panel296;
         private Label label135;
         private Panel panel297;
-        private Button button115;
+        private Button DongDC23;
         private Panel panel298;
         private Label label136;
         private Panel panel299;
@@ -11440,21 +11446,21 @@
         private Panel panel302;
         private TableLayoutPanel tableLayoutPanel24;
         private Panel panel303;
-        private Button button116;
+        private Button SoLanTest24;
         private Panel panel304;
-        private Button button117;
+        private Button timeTest24;
         private Panel panel305;
         private Label label139;
         private Panel panel306;
-        private Button button118;
+        private Button CongSuat24;
         private Panel panel307;
         private Label label140;
         private Panel panel308;
-        private Button button119;
+        private Button DienApDC24;
         private Panel panel309;
         private Label label141;
         private Panel panel310;
-        private Button button120;
+        private Button DongDC24;
         private Panel panel311;
         private Label label142;
         private Panel panel312;
@@ -11465,21 +11471,21 @@
         private Panel panel315;
         private TableLayoutPanel tableLayoutPanel25;
         private Panel panel316;
-        private Button button121;
+        private Button SoLanTest25;
         private Panel panel317;
-        private Button button122;
+        private Button timeTest25;
         private Panel panel318;
         private Label label145;
         private Panel panel319;
-        private Button button123;
+        private Button CongSuat25;
         private Panel panel320;
         private Label label146;
         private Panel panel321;
-        private Button button124;
+        private Button DienApDC25;
         private Panel panel322;
         private Label label147;
         private Panel panel323;
-        private Button button125;
+        private Button DongDC25;
         private Panel panel324;
         private Label label148;
         private Panel panel325;
@@ -11490,21 +11496,21 @@
         private Panel panel237;
         private TableLayoutPanel tableLayoutPanel19;
         private Panel panel238;
-        private Button button91;
+        private Button SoLanTest26;
         private Panel panel239;
-        private Button button92;
+        private Button timeTest26;
         private Panel panel240;
         private Label label109;
         private Panel panel241;
-        private Button button93;
+        private Button CongSuat26;
         private Panel panel242;
         private Label label110;
         private Panel panel243;
-        private Button button94;
+        private Button DienApDC26;
         private Panel panel244;
         private Label label111;
         private Panel panel245;
-        private Button button95;
+        private Button DongDC26;
         private Panel panel246;
         private Label label112;
         private Panel panel247;
@@ -11515,21 +11521,21 @@
         private Panel panel224;
         private TableLayoutPanel tableLayoutPanel18;
         private Panel panel225;
-        private Button button86;
+        private Button SoLanTest27;
         private Panel panel226;
-        private Button button87;
+        private Button timeTest27;
         private Panel panel227;
         private Label label103;
         private Panel panel228;
-        private Button button88;
+        private Button CongSuat27;
         private Panel panel229;
         private Label label104;
         private Panel panel230;
-        private Button button89;
+        private Button DienApDC27;
         private Panel panel231;
         private Label label105;
         private Panel panel232;
-        private Button button90;
+        private Button DongDC27;
         private Panel panel233;
         private Label label106;
         private Panel panel234;
@@ -11540,21 +11546,21 @@
         private Panel panel211;
         private TableLayoutPanel tableLayoutPanel17;
         private Panel panel212;
-        private Button button81;
+        private Button SoLanTest28;
         private Panel panel213;
-        private Button button82;
+        private Button timeTest28;
         private Panel panel214;
         private Label label97;
         private Panel panel215;
-        private Button button83;
+        private Button CongSuat28;
         private Panel panel216;
         private Label label98;
         private Panel panel217;
-        private Button button84;
+        private Button DienApDC28;
         private Panel panel218;
         private Label label99;
         private Panel panel219;
-        private Button button85;
+        private Button DongDC28;
         private Panel panel220;
         private Label label100;
         private Panel panel221;
@@ -11565,21 +11571,21 @@
         private Panel panel3;
         private TableLayoutPanel tableLayoutPanel16;
         private Panel panel199;
-        private Button button1;
+        private Button SoLanTest29;
         private Panel panel200;
-        private Button button77;
+        private Button timeTest29;
         private Panel panel201;
         private Label label1;
         private Panel panel202;
-        private Button button78;
+        private Button CongSuat29;
         private Panel panel203;
         private Label label92;
         private Panel panel204;
-        private Button button79;
+        private Button DienApDC29;
         private Panel panel205;
         private Label label93;
         private Panel panel206;
-        private Button button80;
+        private Button DongDC29;
         private Panel panel207;
         private Label label94;
         private Panel panel208;
@@ -11590,21 +11596,21 @@
         private Panel panel252;
         private TableLayoutPanel tableLayoutPanel20;
         private Panel panel253;
-        private Button button97;
+        private Button SoLanTest30;
         private Panel panel254;
-        private Button button98;
+        private Button timeTest30;
         private Panel panel255;
         private Label label116;
         private Panel panel256;
-        private Button button99;
+        private Button CongSuat30;
         private Panel panel257;
         private Label label117;
         private Panel panel258;
-        private Button button100;
+        private Button DienApDC30;
         private Panel panel259;
         private Label label118;
         private Panel panel260;
-        private Button button101;
+        private Button DongDC30;
         private Panel panel261;
         private Label label119;
         private Panel panel262;
@@ -11639,5 +11645,6 @@
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonPreviousPage;
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonCustomGoPage;
         private Syncfusion.Windows.Forms.Tools.IntegerTextBox inputNumPageGo;
+        private System.Windows.Forms.Timer timer1;
     }
 }

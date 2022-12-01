@@ -139,7 +139,10 @@ namespace ManagementSoftware.GUI
 
             if (plcLoiLoc.plc.IsConnected == true)
             {
-                timer1.Start();
+                if (timer1.Enabled == false)
+                {
+                    timer1.Start();
+                }
             }
             else
             {
@@ -205,9 +208,18 @@ namespace ManagementSoftware.GUI
         private void tabControl1_Selected(object sender, TabControlEventArgs e)
         {
             if (e.TabPage == tabPageGiamSat)
+            {
                 LoadFormGiamSat();
+            }
             else if (e.TabPage == tabPageThongKe)
+            {
+                if (timer1.Enabled == true)
+                {
+                    timer1.Stop();
+                }
                 LoadFormThongKe();
+            }
+
         }
     }
 }

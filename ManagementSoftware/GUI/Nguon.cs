@@ -2,6 +2,8 @@
 using ManagementSoftware.GUI.Section;
 using ManagementSoftware.GUI.Section.ThongKe;
 using ManagementSoftware.Models;
+using ManagementSoftware.PLCSetting;
+using PROFINET_STEP_7.Profinet;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,7 +36,8 @@ namespace ManagementSoftware.GUI
         public Nguon()
         {
             InitializeComponent();
-
+            timer1.Interval = 500;
+            LoadFormGiamSat();
             LoadFormThongKe();
         }
 
@@ -104,6 +107,322 @@ namespace ManagementSoftware.GUI
             }
             panel2.Enabled = true;
 
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Giam sat
+        PLCNguon plcMain = new PLCNguon();
+
+        private void LoadFormGiamSat()
+        {
+            plcMain.Start();
+
+            if (plcMain.plc.IsConnected == true)
+            {
+                if(timer1.Enabled == false)
+                {
+                    timer1.Start();
+                }
+            }
+            else
+            {
+                MessageBox.Show(plcMain.message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void tabControl1_Selected(object sender, TabControlEventArgs e)
+        {
+            if (e.TabPage == tabPageGiamSat1 || e.TabPage == tabPageGiamSat2)
+            {
+                LoadFormGiamSat();
+            }
+            else if (e.TabPage == tabPageThongKe)
+            {
+                if (timer1.Enabled == true)
+                {
+                    timer1.Stop();
+                }
+                LoadFormThongKe();
+            }
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs ea)
+        {
+
+            if (plcMain.plc.IsConnected == true)
+            {
+                plcMain.GetData();
+
+                foreach (Models.Nguon e in plcMain.listNguon)
+                {
+                    if (e.NguonName == TenThietBi.Nguon1)
+                    {
+                        DongDC1.Text = e.DongDC.ToString() + " A";
+                        DienApDC1.Text = e.DienApDC.ToString() + " V";
+                        CongSuat1.Text = e.CongSuat.ToString() + " W";
+                        timeTest1.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest1.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon2)
+                    {
+                        DongDC2.Text = e.DongDC.ToString() + " A";
+                        DienApDC2.Text = e.DienApDC.ToString() + " V";
+                        CongSuat2.Text = e.CongSuat.ToString() + " W";
+                        timeTest2.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest2.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon3)
+                    {
+                        DongDC3.Text = e.DongDC.ToString() + " A";
+                        DienApDC3.Text = e.DienApDC.ToString() + " V";
+                        CongSuat3.Text = e.CongSuat.ToString() + " W";
+                        timeTest3.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest3.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon4)
+                    {
+                        DongDC4.Text = e.DongDC.ToString() + " A";
+                        DienApDC4.Text = e.DienApDC.ToString() + " V";
+                        CongSuat4.Text = e.CongSuat.ToString() + " W";
+                        timeTest4.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest4.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon5)
+                    {
+                        DongDC5.Text = e.DongDC.ToString() + " A";
+                        DienApDC5.Text = e.DienApDC.ToString() + " V";
+                        CongSuat5.Text = e.CongSuat.ToString() + " W";
+                        timeTest5.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest5.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon6)
+                    {
+                        DongDC6.Text = e.DongDC.ToString() + " A";
+                        DienApDC6.Text = e.DienApDC.ToString() + " V";
+                        CongSuat6.Text = e.CongSuat.ToString() + " W";
+                        timeTest6.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest6.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon7)
+                    {
+                        DongDC7.Text = e.DongDC.ToString() + " A";
+                        DienApDC7.Text = e.DienApDC.ToString() + " V";
+                        CongSuat7.Text = e.CongSuat.ToString() + " W";
+                        timeTest7.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest7.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon8)
+                    {
+                        DongDC8.Text = e.DongDC.ToString() + " A";
+                        DienApDC8.Text = e.DienApDC.ToString() + " V";
+                        CongSuat8.Text = e.CongSuat.ToString() + " W";
+                        timeTest8.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest8.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon9)
+                    {
+                        DongDC9.Text = e.DongDC.ToString() + " A";
+                        DienApDC9.Text = e.DienApDC.ToString() + " V";
+                        CongSuat9.Text = e.CongSuat.ToString() + " W";
+                        timeTest9.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest9.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon10)
+                    {
+                        DongDC10.Text = e.DongDC.ToString() + " A";
+                        DienApDC10.Text = e.DienApDC.ToString() + " V";
+                        CongSuat10.Text = e.CongSuat.ToString() + " W";
+                        timeTest10.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest10.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon11)
+                    {
+                        DongDC11.Text = e.DongDC.ToString() + " A";
+                        DienApDC11.Text = e.DienApDC.ToString() + " V";
+                        CongSuat11.Text = e.CongSuat.ToString() + " W";
+                        timeTest11.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest11.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon12)
+                    {
+                        DongDC12.Text = e.DongDC.ToString() + " A";
+                        DienApDC12.Text = e.DienApDC.ToString() + " V";
+                        CongSuat12.Text = e.CongSuat.ToString() + " W";
+                        timeTest12.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest12.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon13)
+                    {
+                        DongDC13.Text = e.DongDC.ToString() + " A";
+                        DienApDC13.Text = e.DienApDC.ToString() + " V";
+                        CongSuat13.Text = e.CongSuat.ToString() + " W";
+                        timeTest13.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest13.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon14)
+                    {
+                        DongDC14.Text = e.DongDC.ToString() + " A";
+                        DienApDC14.Text = e.DienApDC.ToString() + " V";
+                        CongSuat14.Text = e.CongSuat.ToString() + " W";
+                        timeTest14.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest14.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon15)
+                    {
+                        DongDC15.Text = e.DongDC.ToString() + " A";
+                        DienApDC15.Text = e.DienApDC.ToString() + " V";
+                        CongSuat15.Text = e.CongSuat.ToString() + " W";
+                        timeTest15.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest15.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon16)
+                    {
+                        DongDC16.Text = e.DongDC.ToString() + " A";
+                        DienApDC16.Text = e.DienApDC.ToString() + " V";
+                        CongSuat16.Text = e.CongSuat.ToString() + " W";
+                        timeTest16.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest16.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon17)
+                    {
+                        DongDC17.Text = e.DongDC.ToString() + " A";
+                        DienApDC17.Text = e.DienApDC.ToString() + " V";
+                        CongSuat17.Text = e.CongSuat.ToString() + " W";
+                        timeTest17.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest17.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon18)
+                    {
+                        DongDC18.Text = e.DongDC.ToString() + " A";
+                        DienApDC18.Text = e.DienApDC.ToString() + " V";
+                        CongSuat18.Text = e.CongSuat.ToString() + " W";
+                        timeTest18.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest18.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon19)
+                    {
+                        DongDC19.Text = e.DongDC.ToString() + " A";
+                        DienApDC19.Text = e.DienApDC.ToString() + " V";
+                        CongSuat19.Text = e.CongSuat.ToString() + " W";
+                        timeTest19.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest19.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon20)
+                    {
+                        DongDC20.Text = e.DongDC.ToString() + " A";
+                        DienApDC20.Text = e.DienApDC.ToString() + " V";
+                        CongSuat20.Text = e.CongSuat.ToString() + " W";
+                        timeTest20.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest20.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon21)
+                    {
+                        DongDC21.Text = e.DongDC.ToString() + " A";
+                        DienApDC21.Text = e.DienApDC.ToString() + " V";
+                        CongSuat21.Text = e.CongSuat.ToString() + " W";
+                        timeTest21.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest21.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon22)
+                    {
+                        DongDC22.Text = e.DongDC.ToString() + " A";
+                        DienApDC22.Text = e.DienApDC.ToString() + " V";
+                        CongSuat22.Text = e.CongSuat.ToString() + " W";
+                        timeTest22.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest22.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon23)
+                    {
+                        DongDC23.Text = e.DongDC.ToString() + " A";
+                        DienApDC23.Text = e.DienApDC.ToString() + " V";
+                        CongSuat23.Text = e.CongSuat.ToString() + " W";
+                        timeTest23.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest23.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon24)
+                    {
+                        DongDC24.Text = e.DongDC.ToString() + " A";
+                        DienApDC24.Text = e.DienApDC.ToString() + " V";
+                        CongSuat24.Text = e.CongSuat.ToString() + " W";
+                        timeTest24.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest24.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon25)
+                    {
+                        DongDC25.Text = e.DongDC.ToString() + " A";
+                        DienApDC25.Text = e.DienApDC.ToString() + " V";
+                        CongSuat25.Text = e.CongSuat.ToString() + " W";
+                        timeTest25.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest25.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon26)
+                    {
+                        DongDC26.Text = e.DongDC.ToString() + " A";
+                        DienApDC26.Text = e.DienApDC.ToString() + " V";
+                        CongSuat26.Text = e.CongSuat.ToString() + " W";
+                        timeTest26.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest26.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon27)
+                    {
+                        DongDC27.Text = e.DongDC.ToString() + " A";
+                        DienApDC27.Text = e.DienApDC.ToString() + " V";
+                        CongSuat27.Text = e.CongSuat.ToString() + " W";
+                        timeTest27.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest27.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon28)
+                    {
+                        DongDC28.Text = e.DongDC.ToString() + " A";
+                        DienApDC28.Text = e.DienApDC.ToString() + " V";
+                        CongSuat28.Text = e.CongSuat.ToString() + " W";
+                        timeTest28.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest28.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon29)
+                    {
+                        DongDC29.Text = e.DongDC.ToString() + " A";
+                        DienApDC29.Text = e.DienApDC.ToString() + " V";
+                        CongSuat29.Text = e.CongSuat.ToString() + " W";
+                        timeTest29.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest29.Text = e.SoLanTest.ToString();
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon30)
+                    {
+                        DongDC30.Text = e.DongDC.ToString() + " A";
+                        DienApDC30.Text = e.DienApDC.ToString() + " V";
+                        CongSuat30.Text = e.CongSuat.ToString() +" W";
+                        timeTest30.Text = e.ThoiGianTest.ToString() + " giây";
+                        SoLanTest30.Text = e.SoLanTest.ToString();
+                    }
+                }
+            }
+            else
+            {
+                timer1.Stop();
+            }
         }
     }
 }
