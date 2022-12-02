@@ -50,8 +50,8 @@ namespace ManagementSoftware.GUI
             //panelContent.Controls.Clear();
             foreach (Form mainScreen in panelContent.Controls)
             {
-                mainScreen.Close();
                 mainScreen.Dispose();
+                mainScreen.Close();
             }
 
             //set new content

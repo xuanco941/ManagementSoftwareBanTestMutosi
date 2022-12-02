@@ -84,121 +84,127 @@ namespace PROFINET_STEP_7.Profinet
             Tag = tag;
         }
 
-	    #region Connection (Open, Close)
-	    public ExceptionCode Open()
-	    {
-		    byte[] bReceive = new byte[256];
+        #region Connection (Open, Close)
+        public ExceptionCode Open()
+        {
+            byte[] bReceive = new byte[256];
 
-		    try {
-			    // check if available
-			    Ping p = new Ping();
+            try
+            {
+                // check if available
+                Ping p = new Ping();
                 PingReply pingReplay = p.Send(IP);
                 if (pingReplay.Status != IPStatus.Success)
                     throw new Exception();
-		    }
-		    catch  
+            }
+            catch
             {
-			    lastErrorCode = ExceptionCode.IPAdressNotAvailable;
-			    //lastErrorString = "Destination IP-Address '" + IP + "' is not available!";
+                lastErrorCode = ExceptionCode.IPAdressNotAvailable;
+                //lastErrorString = "Destination IP-Address '" + IP + "' is not available!";
                 lastErrorString = "Địa chỉ IP '" + IP + "' không tồn tại!";
                 return lastErrorCode;
-		    }
+            }
 
-		    try {
-			    // open the channel
-			    mSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-
-			    mSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReceiveTimeout, 3000);
-			    mSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.SendTimeout, 3000);
-
-			    IPEndPoint _server = new IPEndPoint(new IPAddress(IPToByteArray(IP)), 102);
-			    //Dns.GetHostEntry(mIP).AddressList(0), 102)
-			    IPEndPoint _local = new IPEndPoint(Dns.GetHostEntry(Dns.GetHostName()).AddressList[0], 102);
-			    mSocket.Connect(_server);
-		    }
-		    catch (Exception ex) {
-			    lastErrorCode = ExceptionCode.ConnectionError;
-			    lastErrorString = ex.Message;
-			    return ExceptionCode.ConnectionError;
-		    }
-
-		    try {
-			    byte[] bSend1 = { 3, 0, 0, 22, 17, 224, 0, 0, 0, 46, 
-			    0, 193, 2, 1, 0, 194, 2, 3, 0, 192, 
-			    1, 9 };
-			    switch (CPU) {
-				    case CPU_Type.S7200:
-					    //S7200: Chr(193) & Chr(2) & Chr(16) & Chr(0) 'Eigener Tsap
-					    bSend1[11] = 193;
-					    bSend1[12] = 2;
-					    bSend1[13] = 16;
-					    bSend1[14] = 0;
-					    //S7200: Chr(194) & Chr(2) & Chr(16) & Chr(0) 'Fremder Tsap
-					    bSend1[15] = 194;
-					    bSend1[16] = 2;
-					    bSend1[17] = 16;
-					    bSend1[18] = 0;
-					    break;
-                    case CPU_Type.S71200:
-				    case CPU_Type.S7300:
-					    //S7300: Chr(193) & Chr(2) & Chr(1) & Chr(0)  'Eigener Tsap
-					    bSend1[11] = 193;
-					    bSend1[12] = 2;
-					    bSend1[13] = 1;
-					    bSend1[14] = 0;
-					    //S7300: Chr(194) & Chr(2) & Chr(3) & Chr(2)  'Fremder Tsap
-					    bSend1[15] = 194;
-					    bSend1[16] = 2;
-					    bSend1[17] = 3;
-					    bSend1[18] = (byte)(Rack * 2 * 16 + Slot);
-					    break;
-				    case CPU_Type.S7400:
-					    //S7400: Chr(193) & Chr(2) & Chr(1) & Chr(0)  'Eigener Tsap
-					    bSend1[11] = 193;
-					    bSend1[12] = 2;
-					    bSend1[13] = 1;
-					    bSend1[14] = 0;
-					    //S7400: Chr(194) & Chr(2) & Chr(3) & Chr(3)  'Fremder Tsap
-					    bSend1[15] = 194;
-					    bSend1[16] = 2;
-					    bSend1[17] = 3;
-                        bSend1[18] = (byte)(Rack * 2 * 16 + Slot);
-					    break;
-				    default:
-					    return ExceptionCode.WrongCPU_Type;
-			    }
-			    mSocket.Send(bSend1, 22, SocketFlags.None);
-
-			    if (mSocket.Receive(bReceive, 22, SocketFlags.None) != 22) throw new Exception(ExceptionCode.WrongNumberReceivedBytes.ToString()); 
-
-			    byte[] bsend2 = { 3, 0, 0, 25, 2, 240, 128, 50, 1, 0, 
-			    0, 255, 255, 0, 8, 0, 0, 240, 0, 0, 
-			    3, 0, 3, 1, 0 };
-			    mSocket.Send(bsend2, 25, SocketFlags.None);
-
-			    if (mSocket.Receive(bReceive, 27, SocketFlags.None) != 27) throw new Exception(ExceptionCode.WrongNumberReceivedBytes.ToString()); 
-			    IsConnected = true;
-		    }
-		    catch 
+            try
             {
-			    lastErrorCode = ExceptionCode.ConnectionError;
-			    //lastErrorString = "Couldn't establish the connection!";
+                // open the channel
+                mSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+
+                mSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReceiveTimeout, 3000);
+                mSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.SendTimeout, 3000);
+
+                IPEndPoint _server = new IPEndPoint(new IPAddress(IPToByteArray(IP)), 102);
+                //Dns.GetHostEntry(mIP).AddressList(0), 102)
+                IPEndPoint _local = new IPEndPoint(Dns.GetHostEntry(Dns.GetHostName()).AddressList[0], 102);
+                mSocket.Connect(_server);
+            }
+            catch (Exception ex)
+            {
+                lastErrorCode = ExceptionCode.ConnectionError;
+                lastErrorString = ex.Message;
+                return ExceptionCode.ConnectionError;
+            }
+
+            try
+            {
+                byte[] bSend1 = { 3, 0, 0, 22, 17, 224, 0, 0, 0, 46,
+                0, 193, 2, 1, 0, 194, 2, 3, 0, 192,
+                1, 9 };
+                switch (CPU)
+                {
+                    case CPU_Type.S7200:
+                        //S7200: Chr(193) & Chr(2) & Chr(16) & Chr(0) 'Eigener Tsap
+                        bSend1[11] = 193;
+                        bSend1[12] = 2;
+                        bSend1[13] = 16;
+                        bSend1[14] = 0;
+                        //S7200: Chr(194) & Chr(2) & Chr(16) & Chr(0) 'Fremder Tsap
+                        bSend1[15] = 194;
+                        bSend1[16] = 2;
+                        bSend1[17] = 16;
+                        bSend1[18] = 0;
+                        break;
+                    case CPU_Type.S71200:
+                    case CPU_Type.S7300:
+                        //S7300: Chr(193) & Chr(2) & Chr(1) & Chr(0)  'Eigener Tsap
+                        bSend1[11] = 193;
+                        bSend1[12] = 2;
+                        bSend1[13] = 1;
+                        bSend1[14] = 0;
+                        //S7300: Chr(194) & Chr(2) & Chr(3) & Chr(2)  'Fremder Tsap
+                        bSend1[15] = 194;
+                        bSend1[16] = 2;
+                        bSend1[17] = 3;
+                        bSend1[18] = (byte)(Rack * 2 * 16 + Slot);
+                        break;
+                    case CPU_Type.S7400:
+                        //S7400: Chr(193) & Chr(2) & Chr(1) & Chr(0)  'Eigener Tsap
+                        bSend1[11] = 193;
+                        bSend1[12] = 2;
+                        bSend1[13] = 1;
+                        bSend1[14] = 0;
+                        //S7400: Chr(194) & Chr(2) & Chr(3) & Chr(3)  'Fremder Tsap
+                        bSend1[15] = 194;
+                        bSend1[16] = 2;
+                        bSend1[17] = 3;
+                        bSend1[18] = (byte)(Rack * 2 * 16 + Slot);
+                        break;
+                    default:
+                        return ExceptionCode.WrongCPU_Type;
+                }
+                mSocket.Send(bSend1, 22, SocketFlags.None);
+
+                if (mSocket.Receive(bReceive, 22, SocketFlags.None) != 22) throw new Exception(ExceptionCode.WrongNumberReceivedBytes.ToString());
+
+                byte[] bsend2 = { 3, 0, 0, 25, 2, 240, 128, 50, 1, 0,
+                0, 255, 255, 0, 8, 0, 0, 240, 0, 0,
+                3, 0, 3, 1, 0 };
+                mSocket.Send(bsend2, 25, SocketFlags.None);
+
+                if (mSocket.Receive(bReceive, 27, SocketFlags.None) != 27) throw new Exception(ExceptionCode.WrongNumberReceivedBytes.ToString());
+                IsConnected = true;
+            }
+            catch
+            {
+                lastErrorCode = ExceptionCode.ConnectionError;
+                //lastErrorString = "Couldn't establish the connection!";
                 lastErrorString = "Không thể thành lập được kết nối tới PLC!";
-			    IsConnected = false;
-			    return ExceptionCode.ConnectionError;
-		    }
-
-		    return ExceptionCode.ExceptionNo;
-		    // ok
-	    }
-
-	    public void Close()
-	    {
-		    if (mSocket.Connected) {
-			    mSocket.Close();
                 IsConnected = false;
-		    }
-	    }
+                return ExceptionCode.ConnectionError;
+            }
+
+            return ExceptionCode.ExceptionNo;
+            // ok
+        }
+
+        public void Close()
+        {
+            if (mSocket != null && mSocket.Connected)
+            {
+                mSocket.Close();
+                IsConnected = false;
+            }
+        }
 
         private byte[] IPToByteArray(string ip)
         {
@@ -231,7 +237,7 @@ namespace PROFINET_STEP_7.Profinet
                 return v;
             }
         }
-	    #endregion
+        #endregion
 
         #region ReadBytes(DataType DataType, int DB, int StartByteAdr, int count)
         public byte[] ReadBytes(DataType DataType, int DB, int StartByteAdr, int count)
@@ -246,10 +252,10 @@ namespace PROFINET_STEP_7.Profinet
 
                 package.Add(new byte[] { 0x03, 0x00, 0x00 });
                 package.Add((byte)packageSize);
-                package.Add(new byte[] { 0x02, 0xf0, 0x80, 0x32, 0x01, 0x00, 0x00, 0x00, 
-                                         0x00, 0x00, 0x0e, 0x00, 0x00, 0x04, 0x01, 0x12, 
+                package.Add(new byte[] { 0x02, 0xf0, 0x80, 0x32, 0x01, 0x00, 0x00, 0x00,
+                                         0x00, 0x00, 0x0e, 0x00, 0x00, 0x04, 0x01, 0x12,
                                          0x0a, 0x10});
-               // package.Add(0x02);  // datenart
+                // package.Add(0x02);  // datenart
                 switch (DataType)
                 {
                     case DataType.Timer:
@@ -514,7 +520,7 @@ namespace PROFINET_STEP_7.Profinet
                         return objBoolArray[mBit];
                 }
             }
-            catch 
+            catch
             {
                 lastErrorCode = ExceptionCode.WrongVariableFormat;
                 lastErrorString = "Die Variable '" + variable + "' konnte nicht entschlüsselt werden!";
@@ -651,15 +657,15 @@ namespace PROFINET_STEP_7.Profinet
                 switch (txt.Substring(0, 2))
                 {
                     case "DB":
-                        string[] strings = txt.Split(new char[]{'.'});
+                        string[] strings = txt.Split(new char[] { '.' });
                         if (strings.Length < 2)
                             throw new Exception();
 
                         mDB = int.Parse(strings[0].Substring(2));
                         mDataType = DataType.DataBlock;
                         string dbType = strings[1].Substring(0, 3);
-                        int dbIndex = int.Parse(strings[1].Substring(3));                       
-                       
+                        int dbIndex = int.Parse(strings[1].Substring(3));
+
                         switch (dbType)
                         {
                             case "DBB":

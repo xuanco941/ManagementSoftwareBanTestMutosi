@@ -167,13 +167,13 @@ namespace ManagementSoftware.GUI
         }
 
 
-        private async void MyTimer_Tick(object sender, EventArgs e)
+        private void MyTimer_Tick(object sender, EventArgs e)
         {
             PLCBauNong plcMain = new PLCBauNong();
 
             plcMain.Start();
 
-            if (plcMain.plc.IsConnected == true)
+            if (plcMain.plc.IsConnected == true && aTimer.Enabled == true)
             {
                 plcMain.GetData();
                 foreach (Models.BauNong item in plcMain.listBauNong)

@@ -177,7 +177,7 @@ namespace ManagementSoftware.GUI
             plcMain.Start();
 
 
-            if (plcMain.plc.IsConnected == true)
+            if (plcMain.plc.IsConnected == true && aTimer.Enabled == true)
             {
                 plcMain.GetData();
                 foreach (Models.Nguon e in plcMain.listNguon)
