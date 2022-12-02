@@ -135,21 +135,27 @@ namespace ManagementSoftware.GUI
         // Giam sat
         PLCNguon plcMain = new PLCNguon();
 
+        bool checkFisrtGetPageAndConnectPLCError = false;
         private void LoadFormGiamSat()
         {
-            plcMain.Start();
-
-            if (plcMain.plc.IsConnected == true)
+            if (checkFisrtGetPageAndConnectPLCError == false)
             {
-                if(timer1.Enabled == false)
+                plcMain.Start();
+
+                if (plcMain.plc.IsConnected == true)
                 {
-                    timer1.Start();
+                    if (timer1.Enabled == false)
+                    {
+                        timer1.Start();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(plcMain.message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    checkFisrtGetPageAndConnectPLCError = true;
                 }
             }
-            else
-            {
-                MessageBox.Show(plcMain.message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
         }
 
         private void tabControl1_Selected(object sender, TabControlEventArgs e)

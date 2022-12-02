@@ -14,9 +14,10 @@ namespace ManagementSoftware.Models
         [Key]
         public int BauNongID { get; set; }
         public string BauNongName { get; set; }
-        public double DongAC { get; set; }
-        public double NhietDo { get; set; }
-        public double ThoiGianNgat { get; set; }
+        public double DongDienAC { get; set; }
+        public ushort NhietDo { get; set; }
+        public ushort SoLanTest { get; set; }
+        public ushort NhietDoNgatCBNhiet { get; set; }
         public bool CBNhietThanBauNong { get; set; }
         public int TestBauNongID { get; set; }
         public TestBauNong TestBauNong { get; set; }

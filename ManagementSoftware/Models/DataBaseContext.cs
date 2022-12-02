@@ -128,7 +128,7 @@ namespace ManagementSoftware.Models
         }
         public void CreateDatabase()
         {
-            //this.Database.EnsureDeleted();
+            this.Database.EnsureDeleted();
             //init db
             if (this.Database.EnsureCreated() == true)
             {

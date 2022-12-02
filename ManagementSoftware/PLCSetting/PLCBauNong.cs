@@ -1,4 +1,5 @@
-﻿using PROFINET_STEP_7.Profinet;
+﻿using ManagementSoftware.Models;
+using PROFINET_STEP_7.Profinet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,8 @@ namespace ManagementSoftware.PLCSetting
 
         public string plcName = "PLC Jig Bầu Nóng";
         public string message { get; set; } = "";
+
+        public List<BauNong> listBauNong = new List<BauNong>();
 
         public PLCBauNong()
         {
@@ -47,11 +50,11 @@ namespace ManagementSoftware.PLCSetting
                 }
 
                 // success
-                message = "";
+                message = null;
             }
             catch
             {
-                //message = "Không thể kết nối";
+                message = $"Không thể kết nối tới {plcName}";
             }
         }
 
@@ -61,11 +64,50 @@ namespace ManagementSoftware.PLCSetting
             try
             {
                 plc.Close();
+                message = null;
             }
             catch (Exception ex)
             {
                 message = "*Lỗi đóng máy: " + ex.Message;
             }
+        }
+
+        public void GetData()
+        {
+            listBauNong = new List<BauNong>();
+            string db = "DB100.";
+            int dongDienAC = 0;
+            int nhietDoPC = 40;
+            int SoLanTest_ST_PC = 60;
+            int SoLanTest_SP_PC = 80;
+            int nhietDoNgatCBNhiet = 100;
+
+            int cbNhiet = 120;
+
+
+            for (int i = 0; i <= 9; i++)
+            {
+                BauNong obj = new BauNong();
+                obj.DongDienAC = Math.Round(PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, dongDienAC, 4))), 2, MidpointRounding.AwayFromZero);
+                obj.NhietDo = (ushort)plc.Read(db + "DBW" + nhietDoPC);
+                obj.SoLanTest = (ushort)plc.Read(db + "DBW" + SoLanTest_ST_PC);
+                obj.NhietDoNgatCBNhiet = (ushort)plc.Read(db + "DBW" + nhietDoNgatCBNhiet);
+                obj.CBNhietThanBauNong = (ushort)plc.Read(db + "DBW" + cbNhiet) == 0 ? false : true;
+
+
+                //ushort SoLanTest_SP_PC_Data = (ushort)plc.Read(db + "DBW" + SoLanTest_SP_PC);
+
+                obj.BauNongName = "Jig " + (i + 1);
+                dongDienAC += 4;
+                nhietDoPC += 2;
+                SoLanTest_ST_PC += 2;
+                SoLanTest_SP_PC += 2;
+                nhietDoNgatCBNhiet += 2;
+                cbNhiet += 2;
+
+                listBauNong.Add(obj);
+            }
+
         }
     }
 }

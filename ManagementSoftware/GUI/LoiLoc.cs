@@ -132,22 +132,28 @@ namespace ManagementSoftware.GUI
 
         // Giam sat
         PLCJigLoiLoc plcLoiLoc = new PLCJigLoiLoc();
+        bool checkFisrtGetPageAndConnectPLCError = false;
 
         private void LoadFormGiamSat()
         {
-            plcLoiLoc.Start();
-
-            if (plcLoiLoc.plc.IsConnected == true)
+            if (checkFisrtGetPageAndConnectPLCError == false)
             {
-                if (timer1.Enabled == false)
+                plcLoiLoc.Start();
+
+                if (plcLoiLoc.plc.IsConnected == true)
                 {
-                    timer1.Start();
+                    if (timer1.Enabled == false)
+                    {
+                        timer1.Start();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(plcLoiLoc.message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    checkFisrtGetPageAndConnectPLCError = true;
                 }
             }
-            else
-            {
-                MessageBox.Show(plcLoiLoc.message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+           
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -204,7 +210,6 @@ namespace ManagementSoftware.GUI
             }
 
         }
-
         private void tabControl1_Selected(object sender, TabControlEventArgs e)
         {
             if (e.TabPage == tabPageGiamSat)
