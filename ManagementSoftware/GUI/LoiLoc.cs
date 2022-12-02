@@ -4,6 +4,8 @@ using ManagementSoftware.GUI.Section.ThongKe;
 using ManagementSoftware.Models;
 using ManagementSoftware.PLCSetting;
 using System.ComponentModel;
+using System.Diagnostics;
+using System.Timers;
 using System.Windows.Forms;
 
 namespace ManagementSoftware.GUI
@@ -27,12 +29,26 @@ namespace ManagementSoftware.GUI
         //Data
         Dictionary<TestLoiLoc, List<Models.LoiLoc>> ListResults;
 
+        Thread ThreadGetDataPLC;
+        System.Timers.Timer aTimer;
         public LoiLoc()
         {
             InitializeComponent();
-            LoadFormGiamSat();
-            //LoadFormThongKe();
-            timer1.Interval = 500;
+
+            ThreadGetDataPLC = new Thread(() =>
+            {
+                aTimer = new System.Timers.Timer();
+                aTimer.Elapsed += new ElapsedEventHandler(MyTimer_Tick);
+                aTimer.Interval = 500;
+                aTimer.Start();
+            });
+            ThreadGetDataPLC.Start();
+        }
+        ~LoiLoc()
+        {
+            aTimer.Stop();
+            aTimer.Dispose();
+            ThreadGetDataPLC.Abort();
         }
 
         private void buttonPreviousPage_Click(object sender, EventArgs e)
@@ -129,102 +145,75 @@ namespace ManagementSoftware.GUI
 
 
 
-
         // Giam sat
-        PLCJigLoiLoc plcLoiLoc = new PLCJigLoiLoc();
-        bool checkFisrtGetPageAndConnectPLCError = false;
 
-        private void LoadFormGiamSat()
+        delegate void SetTextControlCallback(Control control, string text);
+        private void SetTextControl(Control control, string text)
         {
-            if (checkFisrtGetPageAndConnectPLCError == false)
+
+            if (control.InvokeRequired && control != null)
             {
-                plcLoiLoc.Start();
 
-                if (plcLoiLoc.plc.IsConnected == true)
+                SetTextControlCallback d = new SetTextControlCallback(SetTextControl);
+                if (control.IsDisposed == false && this.IsDisposed == false)
                 {
-                    if (timer1.Enabled == false)
-                    {
-                        timer1.Start();
-                    }
-                }
-                else
-                {
-                    MessageBox.Show(plcLoiLoc.message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    checkFisrtGetPageAndConnectPLCError = true;
-                }
-            }
-           
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            ThoiGianXa1.Text = "NULL";
-            ThoiGianNen1.Text = "NULL";
-            ThoiGianGiu1.Text = "NULL";
-            SoLanTestJig1.Text = "NULL";
-            ApSuatTest1.Text = "NULL";
-
-            ThoiGianXa2.Text = "NULL";
-            ThoiGianNen2.Text = "NULL";
-            ThoiGianGiu2.Text = "NULL";
-            SoLanTestJig2.Text = "NULL";
-            ApSuatTest2.Text = "NULL";
-
-            ThoiGianXa1va2.Text = "NULL";
-            ThoiGianNen1va2.Text = "NULL";
-            ThoiGianGiu1va2.Text = "NULL";
-            SoLanTestJig1va2.Text = "NULL";
-            ApSuatTest1va2.Text = "NULL";
-            if (plcLoiLoc.plc.IsConnected == true)
-            {
-                plcLoiLoc.GetData();
-
-                if (plcLoiLoc.loiloc.LoiLocName == TenThietBi.LoiLoc1)
-                {
-                    ThoiGianXa1.Text = plcLoiLoc.loiloc.ThoiGianXa.ToString();
-                    ThoiGianNen1.Text = plcLoiLoc.loiloc.ThoiGianNen.ToString();
-                    ThoiGianGiu1.Text = plcLoiLoc.loiloc.ThoiGianGiu.ToString();
-                    SoLanTestJig1.Text = plcLoiLoc.loiloc.SoLanTest.ToString();
-                    ApSuatTest1.Text = plcLoiLoc.loiloc.ApSuatTest.ToString();
-                }
-                else if (plcLoiLoc.loiloc.LoiLocName == TenThietBi.LoiLoc2)
-                {
-                    ThoiGianXa2.Text = plcLoiLoc.loiloc.ThoiGianXa.ToString();
-                    ThoiGianNen2.Text = plcLoiLoc.loiloc.ThoiGianNen.ToString();
-                    ThoiGianGiu2.Text = plcLoiLoc.loiloc.ThoiGianGiu.ToString();
-                    SoLanTestJig2.Text = plcLoiLoc.loiloc.SoLanTest.ToString();
-                    ApSuatTest2.Text = plcLoiLoc.loiloc.ApSuatTest.ToString();
-                }
-                else if (plcLoiLoc.loiloc.LoiLocName == TenThietBi.LoiLoc1va2)
-                {
-                    ThoiGianXa1va2.Text = plcLoiLoc.loiloc.ThoiGianXa.ToString();
-                    ThoiGianNen1va2.Text = plcLoiLoc.loiloc.ThoiGianNen.ToString();
-                    ThoiGianGiu1va2.Text = plcLoiLoc.loiloc.ThoiGianGiu.ToString();
-                    SoLanTestJig1va2.Text = plcLoiLoc.loiloc.SoLanTest.ToString();
-                    ApSuatTest1va2.Text = plcLoiLoc.loiloc.ApSuatTest.ToString();
+                    this.Invoke(d, new object[] { control, text });
                 }
             }
             else
             {
-                timer1.Stop();
+                control.Text = text;
             }
 
         }
-        private void tabControl1_Selected(object sender, TabControlEventArgs e)
+
+
+        private void MyTimer_Tick(object sender, EventArgs e)
         {
-            if (e.TabPage == tabPageGiamSat)
+            PLCJigLoiLoc plcMain = new PLCJigLoiLoc();
+            plcMain.Start();
+
+
+            if (plcMain.plc.IsConnected == true)
             {
-                LoadFormGiamSat();
-            }
-            else if (e.TabPage == tabPageThongKe)
-            {
-                if (timer1.Enabled == true)
+                plcMain.GetData();
+
+                if (plcMain.loiloc.LoiLocName == TenThietBi.LoiLoc1)
                 {
-                    timer1.Stop();
+                    ThoiGianXa1.Text = plcMain.loiloc.ThoiGianXa.ToString();
+                    ThoiGianNen1.Text = plcMain.loiloc.ThoiGianNen.ToString();
+                    ThoiGianGiu1.Text = plcMain.loiloc.ThoiGianGiu.ToString();
+                    SoLanTestJig1.Text = plcMain.loiloc.SoLanTest.ToString();
+                    ApSuatTest1.Text = plcMain.loiloc.ApSuatTest.ToString();
                 }
-                LoadFormThongKe();
+                else if (plcMain.loiloc.LoiLocName == TenThietBi.LoiLoc2)
+                {
+                    ThoiGianXa2.Text = plcMain.loiloc.ThoiGianXa.ToString();
+                    ThoiGianNen2.Text = plcMain.loiloc.ThoiGianNen.ToString();
+                    ThoiGianGiu2.Text = plcMain.loiloc.ThoiGianGiu.ToString();
+                    SoLanTestJig2.Text = plcMain.loiloc.SoLanTest.ToString();
+                    ApSuatTest2.Text = plcMain.loiloc.ApSuatTest.ToString();
+                }
+                else if (plcMain.loiloc.LoiLocName == TenThietBi.LoiLoc1va2)
+                {
+                    ThoiGianXa1va2.Text = plcMain.loiloc.ThoiGianXa.ToString();
+                    ThoiGianNen1va2.Text = plcMain.loiloc.ThoiGianNen.ToString();
+                    ThoiGianGiu1va2.Text = plcMain.loiloc.ThoiGianGiu.ToString();
+                    SoLanTestJig1va2.Text = plcMain.loiloc.SoLanTest.ToString();
+                    ApSuatTest1va2.Text = plcMain.loiloc.ApSuatTest.ToString();
+                }
+
+
             }
 
+            plcMain.Stop();
+        }
+
+
+        private void LoiLoc_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            aTimer.Stop();
+            aTimer.Dispose();
         }
     }
 }

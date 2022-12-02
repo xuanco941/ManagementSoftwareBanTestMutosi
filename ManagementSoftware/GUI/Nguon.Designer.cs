@@ -1269,7 +1269,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1057, 478);
             this.tabControl1.TabIndex = 0;
-            this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
             // 
             // tabPageGiamSat1
             // 
@@ -10399,10 +10398,6 @@
             this.gridLayout1.ContainerControl = this.tabPageGiamSat1;
             this.gridLayout1.Rows = 3;
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
-            // 
             // Nguon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -10412,6 +10407,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Nguon";
             this.Text = "JigMach";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Nguon_FormClosing);
             this.tabControl1.ResumeLayout(false);
             this.tabPageGiamSat1.ResumeLayout(false);
             this.panel134.ResumeLayout(false);

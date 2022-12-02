@@ -313,7 +313,6 @@
             this.buttonCustomGoPage = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.inputNumPageGo = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
             this.gridLayout1 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPageGiamSat.SuspendLayout();
             this.panelGiamSat.SuspendLayout();
@@ -486,7 +485,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1186, 525);
             this.tabControl1.TabIndex = 0;
-            this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected_1);
             // 
             // tabPageGiamSat
             // 
@@ -3820,10 +3818,6 @@
             this.gridLayout1.ContainerControl = this.panelGiamSat;
             this.gridLayout1.Rows = 2;
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // BauNong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -3833,6 +3827,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "BauNong";
             this.Text = "JigMach";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BauNong_FormClosing);
             this.tabControl1.ResumeLayout(false);
             this.tabPageGiamSat.ResumeLayout(false);
             this.panelGiamSat.ResumeLayout(false);
@@ -4284,6 +4279,5 @@
         private Label label63;
         private Panel panel140;
         private Button NhietDoNgatCB10;
-        private System.Windows.Forms.Timer timer1;
     }
 }

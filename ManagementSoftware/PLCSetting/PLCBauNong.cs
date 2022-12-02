@@ -88,7 +88,7 @@ namespace ManagementSoftware.PLCSetting
             for (int i = 0; i <= 9; i++)
             {
                 BauNong obj = new BauNong();
-                obj.DongDienAC = Math.Round(PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, dongDienAC, 4))), 2, MidpointRounding.AwayFromZero);
+                obj.DongDienAC = PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, dongDienAC, 4)));
                 obj.NhietDo = (ushort)plc.Read(db + "DBW" + nhietDoPC);
                 obj.SoLanTest = (ushort)plc.Read(db + "DBW" + SoLanTest_ST_PC);
                 obj.NhietDoNgatCBNhiet = (ushort)plc.Read(db + "DBW" + nhietDoNgatCBNhiet);

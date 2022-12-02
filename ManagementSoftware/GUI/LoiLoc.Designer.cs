@@ -152,7 +152,6 @@
             this.button28 = new System.Windows.Forms.Button();
             this.panel82 = new System.Windows.Forms.Panel();
             this.label34 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPageGiamSat.SuspendLayout();
             this.panelGiamSat.SuspendLayout();
@@ -233,7 +232,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1139, 549);
             this.tabControl1.TabIndex = 0;
-            this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
             // 
             // tabPageGiamSat
             // 
@@ -1695,10 +1693,6 @@
             this.label34.Text = "Thời gian : ";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // LoiLoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1708,6 +1702,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "LoiLoc";
             this.Text = "JigMach";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoiLoc_FormClosing);
             this.tabControl1.ResumeLayout(false);
             this.tabPageGiamSat.ResumeLayout(false);
             this.panelGiamSat.ResumeLayout(false);
@@ -1906,6 +1901,5 @@
         private Label label8;
         private Label label9;
         private Label label1;
-        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -8,10 +8,12 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
 
 namespace ManagementSoftware.GUI
@@ -33,12 +35,26 @@ namespace ManagementSoftware.GUI
         private int TotalPages = 0;
         //Data
         Dictionary<TestNguon, List<Models.Nguon>> ListResults;
+        Thread ThreadGetDataPLC;
+        System.Timers.Timer aTimer;
         public Nguon()
         {
             InitializeComponent();
-            timer1.Interval = 500;
-            LoadFormGiamSat();
-            LoadFormThongKe();
+
+            ThreadGetDataPLC = new Thread(() =>
+            {
+                aTimer = new System.Timers.Timer();
+                aTimer.Elapsed += new ElapsedEventHandler(MyTimer_Tick);
+                aTimer.Interval = 500;
+                aTimer.Start();
+            });
+            ThreadGetDataPLC.Start();
+        }
+        ~Nguon()
+        {
+            aTimer.Stop();
+            aTimer.Dispose();
+            ThreadGetDataPLC.Abort();
         }
 
         private void buttonPreviousPage_Click(object sender, EventArgs e)
@@ -133,54 +149,37 @@ namespace ManagementSoftware.GUI
 
 
         // Giam sat
-        PLCNguon plcMain = new PLCNguon();
 
-        bool checkFisrtGetPageAndConnectPLCError = false;
-        private void LoadFormGiamSat()
+        delegate void SetTextControlCallback(Control control, string text);
+        private void SetTextControl(Control control, string text)
         {
-            if (checkFisrtGetPageAndConnectPLCError == false)
-            {
-                plcMain.Start();
 
-                if (plcMain.plc.IsConnected == true)
+            if (control.InvokeRequired && control != null)
+            {
+
+                SetTextControlCallback d = new SetTextControlCallback(SetTextControl);
+                if (control.IsDisposed == false && this.IsDisposed == false)
                 {
-                    if (timer1.Enabled == false)
-                    {
-                        timer1.Start();
-                    }
+                    this.Invoke(d, new object[] { control, text });
                 }
-                else
-                {
-                    MessageBox.Show(plcMain.message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    checkFisrtGetPageAndConnectPLCError = true;
-                }
+            }
+            else
+            {
+                control.Text = text;
             }
 
         }
 
-        private void tabControl1_Selected(object sender, TabControlEventArgs e)
-        {
-            if (e.TabPage == tabPageGiamSat1 || e.TabPage == tabPageGiamSat2)
-            {
-                LoadFormGiamSat();
-            }
-            else if (e.TabPage == tabPageThongKe)
-            {
-                if (timer1.Enabled == true)
-                {
-                    timer1.Stop();
-                }
-                LoadFormThongKe();
-            }
-        }
 
-        private void timer1_Tick_1(object sender, EventArgs ea)
+        private void MyTimer_Tick(object sender, EventArgs eb)
         {
+            PLCNguon plcMain = new PLCNguon();
+            plcMain.Start();
+
 
             if (plcMain.plc.IsConnected == true)
             {
                 plcMain.GetData();
-
                 foreach (Models.Nguon e in plcMain.listNguon)
                 {
                     if (e.NguonName == TenThietBi.Nguon1)
@@ -419,16 +418,22 @@ namespace ManagementSoftware.GUI
                     {
                         DongDC30.Text = e.DongDC.ToString() + " A";
                         DienApDC30.Text = e.DienApDC.ToString() + " V";
-                        CongSuat30.Text = e.CongSuat.ToString() +" W";
+                        CongSuat30.Text = e.CongSuat.ToString() + " W";
                         timeTest30.Text = e.ThoiGianTest.ToString() + " giây";
                         SoLanTest30.Text = e.SoLanTest.ToString();
                     }
                 }
             }
-            else
-            {
-                timer1.Stop();
-            }
+
+            plcMain.Stop();
+        }
+
+        private void Nguon_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            aTimer.Stop();
+            aTimer.Dispose();
         }
     }
+
+    
 }
