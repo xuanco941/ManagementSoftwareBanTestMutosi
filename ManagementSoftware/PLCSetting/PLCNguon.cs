@@ -1,4 +1,5 @@
-﻿using ManagementSoftware.Models;
+﻿using ManagementSoftware.DAL;
+using ManagementSoftware.Models;
 using PROFINET_STEP_7.Profinet;
 using System;
 using System.Collections.Generic;
@@ -69,7 +70,7 @@ namespace ManagementSoftware.PLCSetting
 
         public static void GetData()
         {
-            listNguon = new List<Nguon>();
+            listNguon = new List<Models.Nguon>();
             string db = "DB100.";
             int dienApCSAddr = 0;
             int dongDienCSAddr = 120;
@@ -96,6 +97,13 @@ namespace ManagementSoftware.PLCSetting
                 soLanTestAddr += 2;
 
                 listNguon.Add(nguon);
+            }
+        }
+        public static void SaveData()
+        {
+            if (listNguon != null && listNguon.Count > 0)
+            {
+                DALNguon.Add(listNguon);
             }
         }
     }

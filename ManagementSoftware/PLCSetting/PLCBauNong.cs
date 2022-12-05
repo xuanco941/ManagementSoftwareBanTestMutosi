@@ -1,4 +1,5 @@
-﻿using ManagementSoftware.Models;
+﻿using ManagementSoftware.DAL;
+using ManagementSoftware.Models;
 using PROFINET_STEP_7.Profinet;
 using System;
 using System.Collections.Generic;
@@ -104,6 +105,14 @@ namespace ManagementSoftware.PLCSetting
                 listBauNong.Add(obj);
             }
 
+        }
+
+        public static void SaveData()
+        {
+            if(listBauNong!= null && listBauNong.Count > 0)
+            {
+                DALBauNong.Add(listBauNong);
+            }
         }
     }
 }

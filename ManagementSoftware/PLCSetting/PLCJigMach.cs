@@ -1,4 +1,6 @@
-﻿using PROFINET_STEP_7.Profinet;
+﻿using ManagementSoftware.DAL;
+using ManagementSoftware.Models;
+using PROFINET_STEP_7.Profinet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +15,9 @@ namespace ManagementSoftware.PLCSetting
         public static ExceptionCode errCode;
         public static string plcName = "PLC Jig Mạch";
         public static string message { get; set; } = "";
+
+        public static List<JigMachNguon> listJigMachNguon { get; set; } = new List<JigMachNguon>();
+        public static List<JigMachTDS> listJigMachTDS { get; set; } = new List<JigMachTDS>();
 
         public static void Start()
         {
@@ -60,6 +65,13 @@ namespace ManagementSoftware.PLCSetting
             catch (Exception ex)
             {
                 message = "*Lỗi đóng máy: " + ex.Message;
+            }
+        }
+        public static void SaveData()
+        {
+            if ((listJigMachNguon != null && listJigMachNguon.Count > 0) && ((listJigMachTDS != null && listJigMachTDS.Count > 0)))
+            {
+                DALJigMach.Add(listJigMachNguon, listJigMachTDS);
             }
         }
     }

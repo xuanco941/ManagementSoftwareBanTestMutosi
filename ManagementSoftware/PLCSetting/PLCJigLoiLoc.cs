@@ -102,5 +102,12 @@ namespace ManagementSoftware.PLCSetting
             loiloc.ApSuatTest = ST_Ap_Suat;
 
         }
+        public static void SaveData()
+        {
+            if (loiloc != null)
+            {
+                DALLoiLoc.Add(loiloc);
+            }
+        }
     }
 }

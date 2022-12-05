@@ -1,4 +1,7 @@
-﻿using PROFINET_STEP_7.Profinet;
+﻿using ManagementSoftware.DAL;
+using ManagementSoftware.GUI;
+using ManagementSoftware.Models;
+using PROFINET_STEP_7.Profinet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +17,10 @@ namespace ManagementSoftware.PLCSetting
 
         public static string plcName = "PLC Jig Công Tắc";
         public static string message { get; set; } = "";
+
+        public static List<CongTac2VT> listCT2VT { get; set; } = new List<CongTac2VT>();
+        public static List<CongTac3VT> listCT3VT { get; set; } = new List<CongTac3VT>();
+
 
 
         public static void Start()
@@ -62,6 +69,17 @@ namespace ManagementSoftware.PLCSetting
             catch (Exception ex)
             {
                 message = "*Lỗi đóng máy: " + ex.Message;
+            }
+        }
+        public static void SaveData()
+        {
+            if (listCT2VT != null && listCT2VT.Count>0)
+            {
+                DALCongTac2VT.Add(listCT2VT);
+            }
+            if (listCT3VT != null && listCT3VT.Count > 0)
+            {
+                DALCongTac3VT.Add(listCT3VT);
             }
         }
     }

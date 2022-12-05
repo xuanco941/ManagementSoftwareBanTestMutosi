@@ -18,13 +18,6 @@ namespace ManagementSoftware.GUI.CongTacManagement
             InitializeComponent();
             labelNameJig.Text = "Jig " + j;
 
-            ActiveToggleButton(TrangThaiCT2,true);
-            ActiveToggleButton(TrangThaiCT3,false);
-            ActiveToggleButton(TrangThaiCT4, true);
-            ActiveToggleButton(TrangThaiCT5, true);
-            ActiveToggleButton(TrangThaiCT1, true);
-
-
         }
 
 

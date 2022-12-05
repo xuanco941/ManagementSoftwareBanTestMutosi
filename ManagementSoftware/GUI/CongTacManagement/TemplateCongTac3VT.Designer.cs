@@ -28,16 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection1 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection2 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection3 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection4 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection5 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection6 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection7 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection8 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection9 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection10 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
             this.panelItem = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -45,13 +35,11 @@
             this.panel39 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.panel40 = new System.Windows.Forms.Panel();
-            this.toggleButton9 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel41 = new System.Windows.Forms.Panel();
-            this.toggleButton10 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel42 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.panel43 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.SoLanTestCT4 = new System.Windows.Forms.Button();
             this.panel44 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.panel45 = new System.Windows.Forms.Panel();
@@ -62,13 +50,11 @@
             this.panel28 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.panel29 = new System.Windows.Forms.Panel();
-            this.toggleButton6 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel30 = new System.Windows.Forms.Panel();
-            this.toggleButton8 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel31 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.panel32 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.SoLanTestCT5 = new System.Windows.Forms.Button();
             this.panel33 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel34 = new System.Windows.Forms.Panel();
@@ -79,13 +65,11 @@
             this.panel19 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.toggleButton3 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel21 = new System.Windows.Forms.Panel();
-            this.toggleButton4 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel22 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.SoLanTestCT3 = new System.Windows.Forms.Button();
             this.panel24 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
@@ -96,13 +80,11 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.toggleButton1 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.toggleButton2 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SoLanTestCT1 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
@@ -113,13 +95,11 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel38 = new System.Windows.Forms.Panel();
-            this.toggleButton5 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.toggleButton7 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.SoLanTestCT2 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel37 = new System.Windows.Forms.Panel();
@@ -128,6 +108,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelNameJig = new System.Windows.Forms.Label();
+            this.TrangThai1CT1 = new System.Windows.Forms.Button();
+            this.TrangThai1CT2 = new System.Windows.Forms.Button();
+            this.TrangThai1CT3 = new System.Windows.Forms.Button();
+            this.TrangThai1CT4 = new System.Windows.Forms.Button();
+            this.TrangThai1CT5 = new System.Windows.Forms.Button();
+            this.TrangThai2CT5 = new System.Windows.Forms.Button();
+            this.TrangThai2CT4 = new System.Windows.Forms.Button();
+            this.TrangThai2CT3 = new System.Windows.Forms.Button();
+            this.TrangThai2CT2 = new System.Windows.Forms.Button();
+            this.TrangThai2CT1 = new System.Windows.Forms.Button();
             this.panelItem.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -135,9 +125,7 @@
             this.panel39.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.panel40.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton9)).BeginInit();
             this.panel41.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton10)).BeginInit();
             this.panel42.SuspendLayout();
             this.panel43.SuspendLayout();
             this.panel44.SuspendLayout();
@@ -147,9 +135,7 @@
             this.panel28.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.panel29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton6)).BeginInit();
             this.panel30.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton8)).BeginInit();
             this.panel31.SuspendLayout();
             this.panel32.SuspendLayout();
             this.panel33.SuspendLayout();
@@ -159,9 +145,7 @@
             this.panel19.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton3)).BeginInit();
             this.panel21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton4)).BeginInit();
             this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
             this.panel24.SuspendLayout();
@@ -171,9 +155,7 @@
             this.panel10.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton1)).BeginInit();
             this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton2)).BeginInit();
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -183,9 +165,7 @@
             this.panel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel38.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton5)).BeginInit();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton7)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -281,48 +261,22 @@
             // panel40
             // 
             this.panel40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel40.Controls.Add(this.toggleButton9);
+            this.panel40.Controls.Add(this.TrangThai2CT4);
             this.panel40.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel40.Location = new System.Drawing.Point(110, 109);
             this.panel40.Name = "panel40";
             this.panel40.Size = new System.Drawing.Size(102, 49);
             this.panel40.TabIndex = 5;
             // 
-            // toggleButton9
-            // 
-            this.toggleButton9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton9.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton9.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton9.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton9.Name = "toggleButton9";
-            this.toggleButton9.Size = new System.Drawing.Size(100, 47);
-            this.toggleButton9.Slider = sliderCollection1;
-            this.toggleButton9.TabIndex = 3;
-            this.toggleButton9.Text = "toggleButton9";
-            // 
             // panel41
             // 
             this.panel41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel41.Controls.Add(this.toggleButton10);
+            this.panel41.Controls.Add(this.TrangThai1CT4);
             this.panel41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel41.Location = new System.Drawing.Point(110, 56);
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(102, 47);
             this.panel41.TabIndex = 3;
-            // 
-            // toggleButton10
-            // 
-            this.toggleButton10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton10.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton10.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton10.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton10.Name = "toggleButton10";
-            this.toggleButton10.Size = new System.Drawing.Size(100, 45);
-            this.toggleButton10.Slider = sliderCollection2;
-            this.toggleButton10.TabIndex = 2;
-            this.toggleButton10.Text = "toggleButton10";
             // 
             // panel42
             // 
@@ -349,23 +303,23 @@
             // panel43
             // 
             this.panel43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel43.Controls.Add(this.button4);
+            this.panel43.Controls.Add(this.SoLanTestCT4);
             this.panel43.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel43.Location = new System.Drawing.Point(110, 3);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(102, 47);
             this.panel43.TabIndex = 1;
             // 
-            // button4
+            // SoLanTestCT4
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.Control;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(0, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 45);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = false;
+            this.SoLanTestCT4.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestCT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestCT4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestCT4.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestCT4.Name = "SoLanTestCT4";
+            this.SoLanTestCT4.Size = new System.Drawing.Size(100, 45);
+            this.SoLanTestCT4.TabIndex = 3;
+            this.SoLanTestCT4.UseVisualStyleBackColor = false;
             // 
             // panel44
             // 
@@ -478,48 +432,22 @@
             // panel29
             // 
             this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel29.Controls.Add(this.toggleButton6);
+            this.panel29.Controls.Add(this.TrangThai2CT5);
             this.panel29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel29.Location = new System.Drawing.Point(111, 109);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(103, 49);
             this.panel29.TabIndex = 5;
             // 
-            // toggleButton6
-            // 
-            this.toggleButton6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton6.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton6.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton6.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton6.Name = "toggleButton6";
-            this.toggleButton6.Size = new System.Drawing.Size(101, 47);
-            this.toggleButton6.Slider = sliderCollection3;
-            this.toggleButton6.TabIndex = 3;
-            this.toggleButton6.Text = "toggleButton6";
-            // 
             // panel30
             // 
             this.panel30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel30.Controls.Add(this.toggleButton8);
+            this.panel30.Controls.Add(this.TrangThai1CT5);
             this.panel30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel30.Location = new System.Drawing.Point(111, 56);
             this.panel30.Name = "panel30";
             this.panel30.Size = new System.Drawing.Size(103, 47);
             this.panel30.TabIndex = 3;
-            // 
-            // toggleButton8
-            // 
-            this.toggleButton8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton8.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton8.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton8.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton8.Name = "toggleButton8";
-            this.toggleButton8.Size = new System.Drawing.Size(101, 45);
-            this.toggleButton8.Slider = sliderCollection4;
-            this.toggleButton8.TabIndex = 2;
-            this.toggleButton8.Text = "toggleButton8";
             // 
             // panel31
             // 
@@ -546,23 +474,23 @@
             // panel32
             // 
             this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel32.Controls.Add(this.button3);
+            this.panel32.Controls.Add(this.SoLanTestCT5);
             this.panel32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel32.Location = new System.Drawing.Point(111, 3);
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(103, 47);
             this.panel32.TabIndex = 1;
             // 
-            // button3
+            // SoLanTestCT5
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Control;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(0, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 45);
-            this.button3.TabIndex = 3;
-            this.button3.UseVisualStyleBackColor = false;
+            this.SoLanTestCT5.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestCT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestCT5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestCT5.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestCT5.Name = "SoLanTestCT5";
+            this.SoLanTestCT5.Size = new System.Drawing.Size(101, 45);
+            this.SoLanTestCT5.TabIndex = 3;
+            this.SoLanTestCT5.UseVisualStyleBackColor = false;
             // 
             // panel33
             // 
@@ -675,48 +603,22 @@
             // panel20
             // 
             this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel20.Controls.Add(this.toggleButton3);
+            this.panel20.Controls.Add(this.TrangThai2CT3);
             this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel20.Location = new System.Drawing.Point(110, 109);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(102, 49);
             this.panel20.TabIndex = 5;
             // 
-            // toggleButton3
-            // 
-            this.toggleButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton3.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton3.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton3.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton3.Name = "toggleButton3";
-            this.toggleButton3.Size = new System.Drawing.Size(100, 47);
-            this.toggleButton3.Slider = sliderCollection5;
-            this.toggleButton3.TabIndex = 3;
-            this.toggleButton3.Text = "toggleButton3";
-            // 
             // panel21
             // 
             this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel21.Controls.Add(this.toggleButton4);
+            this.panel21.Controls.Add(this.TrangThai1CT3);
             this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel21.Location = new System.Drawing.Point(110, 56);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(102, 47);
             this.panel21.TabIndex = 3;
-            // 
-            // toggleButton4
-            // 
-            this.toggleButton4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton4.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton4.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton4.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton4.Name = "toggleButton4";
-            this.toggleButton4.Size = new System.Drawing.Size(100, 45);
-            this.toggleButton4.Slider = sliderCollection6;
-            this.toggleButton4.TabIndex = 2;
-            this.toggleButton4.Text = "toggleButton4";
             // 
             // panel22
             // 
@@ -743,23 +645,23 @@
             // panel23
             // 
             this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel23.Controls.Add(this.button2);
+            this.panel23.Controls.Add(this.SoLanTestCT3);
             this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel23.Location = new System.Drawing.Point(110, 3);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(102, 47);
             this.panel23.TabIndex = 1;
             // 
-            // button2
+            // SoLanTestCT3
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 45);
-            this.button2.TabIndex = 3;
-            this.button2.UseVisualStyleBackColor = false;
+            this.SoLanTestCT3.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestCT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestCT3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestCT3.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestCT3.Name = "SoLanTestCT3";
+            this.SoLanTestCT3.Size = new System.Drawing.Size(100, 45);
+            this.SoLanTestCT3.TabIndex = 3;
+            this.SoLanTestCT3.UseVisualStyleBackColor = false;
             // 
             // panel24
             // 
@@ -872,48 +774,22 @@
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.toggleButton1);
+            this.panel11.Controls.Add(this.TrangThai2CT1);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(110, 109);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(102, 49);
             this.panel11.TabIndex = 5;
             // 
-            // toggleButton1
-            // 
-            this.toggleButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton1.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton1.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton1.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton1.Name = "toggleButton1";
-            this.toggleButton1.Size = new System.Drawing.Size(100, 47);
-            this.toggleButton1.Slider = sliderCollection7;
-            this.toggleButton1.TabIndex = 3;
-            this.toggleButton1.Text = "toggleButton1";
-            // 
             // panel12
             // 
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.toggleButton2);
+            this.panel12.Controls.Add(this.TrangThai1CT1);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel12.Location = new System.Drawing.Point(110, 56);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(102, 47);
             this.panel12.TabIndex = 3;
-            // 
-            // toggleButton2
-            // 
-            this.toggleButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton2.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton2.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton2.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton2.Name = "toggleButton2";
-            this.toggleButton2.Size = new System.Drawing.Size(100, 45);
-            this.toggleButton2.Slider = sliderCollection8;
-            this.toggleButton2.TabIndex = 2;
-            this.toggleButton2.Text = "toggleButton2";
             // 
             // panel13
             // 
@@ -940,23 +816,23 @@
             // panel14
             // 
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.button1);
+            this.panel14.Controls.Add(this.SoLanTestCT1);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel14.Location = new System.Drawing.Point(110, 3);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(102, 47);
             this.panel14.TabIndex = 1;
             // 
-            // button1
+            // SoLanTestCT1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 45);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = false;
+            this.SoLanTestCT1.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestCT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestCT1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestCT1.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestCT1.Name = "SoLanTestCT1";
+            this.SoLanTestCT1.Size = new System.Drawing.Size(100, 45);
+            this.SoLanTestCT1.TabIndex = 3;
+            this.SoLanTestCT1.UseVisualStyleBackColor = false;
             // 
             // panel15
             // 
@@ -1069,48 +945,22 @@
             // panel38
             // 
             this.panel38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel38.Controls.Add(this.toggleButton5);
+            this.panel38.Controls.Add(this.TrangThai2CT2);
             this.panel38.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel38.Location = new System.Drawing.Point(110, 109);
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(102, 49);
             this.panel38.TabIndex = 5;
             // 
-            // toggleButton5
-            // 
-            this.toggleButton5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton5.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton5.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton5.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton5.Name = "toggleButton5";
-            this.toggleButton5.Size = new System.Drawing.Size(100, 47);
-            this.toggleButton5.Slider = sliderCollection9;
-            this.toggleButton5.TabIndex = 3;
-            this.toggleButton5.Text = "toggleButton5";
-            // 
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.toggleButton7);
+            this.panel8.Controls.Add(this.TrangThai1CT2);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(110, 56);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(102, 47);
             this.panel8.TabIndex = 3;
-            // 
-            // toggleButton7
-            // 
-            this.toggleButton7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton7.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton7.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton7.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton7.Name = "toggleButton7";
-            this.toggleButton7.Size = new System.Drawing.Size(100, 45);
-            this.toggleButton7.Slider = sliderCollection10;
-            this.toggleButton7.TabIndex = 2;
-            this.toggleButton7.Text = "toggleButton7";
             // 
             // panel7
             // 
@@ -1137,23 +987,23 @@
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.button8);
+            this.panel6.Controls.Add(this.SoLanTestCT2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(110, 3);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(102, 47);
             this.panel6.TabIndex = 1;
             // 
-            // button8
+            // SoLanTestCT2
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.Control;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button8.Location = new System.Drawing.Point(0, 0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(100, 45);
-            this.button8.TabIndex = 3;
-            this.button8.UseVisualStyleBackColor = false;
+            this.SoLanTestCT2.BackColor = System.Drawing.SystemColors.Control;
+            this.SoLanTestCT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SoLanTestCT2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SoLanTestCT2.Location = new System.Drawing.Point(0, 0);
+            this.SoLanTestCT2.Name = "SoLanTestCT2";
+            this.SoLanTestCT2.Size = new System.Drawing.Size(100, 45);
+            this.SoLanTestCT2.TabIndex = 3;
+            this.SoLanTestCT2.UseVisualStyleBackColor = false;
             // 
             // panel5
             // 
@@ -1247,6 +1097,116 @@
             this.labelNameJig.Text = "Jig 1";
             this.labelNameJig.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // TrangThai1CT1
+            // 
+            this.TrangThai1CT1.BackColor = System.Drawing.SystemColors.Control;
+            this.TrangThai1CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThai1CT1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThai1CT1.Location = new System.Drawing.Point(0, 0);
+            this.TrangThai1CT1.Name = "TrangThai1CT1";
+            this.TrangThai1CT1.Size = new System.Drawing.Size(100, 45);
+            this.TrangThai1CT1.TabIndex = 4;
+            this.TrangThai1CT1.UseVisualStyleBackColor = false;
+            // 
+            // TrangThai1CT2
+            // 
+            this.TrangThai1CT2.BackColor = System.Drawing.SystemColors.Control;
+            this.TrangThai1CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThai1CT2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThai1CT2.Location = new System.Drawing.Point(0, 0);
+            this.TrangThai1CT2.Name = "TrangThai1CT2";
+            this.TrangThai1CT2.Size = new System.Drawing.Size(100, 45);
+            this.TrangThai1CT2.TabIndex = 4;
+            this.TrangThai1CT2.UseVisualStyleBackColor = false;
+            // 
+            // TrangThai1CT3
+            // 
+            this.TrangThai1CT3.BackColor = System.Drawing.SystemColors.Control;
+            this.TrangThai1CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThai1CT3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThai1CT3.Location = new System.Drawing.Point(0, 0);
+            this.TrangThai1CT3.Name = "TrangThai1CT3";
+            this.TrangThai1CT3.Size = new System.Drawing.Size(100, 45);
+            this.TrangThai1CT3.TabIndex = 4;
+            this.TrangThai1CT3.UseVisualStyleBackColor = false;
+            // 
+            // TrangThai1CT4
+            // 
+            this.TrangThai1CT4.BackColor = System.Drawing.SystemColors.Control;
+            this.TrangThai1CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThai1CT4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThai1CT4.Location = new System.Drawing.Point(0, 0);
+            this.TrangThai1CT4.Name = "TrangThai1CT4";
+            this.TrangThai1CT4.Size = new System.Drawing.Size(100, 45);
+            this.TrangThai1CT4.TabIndex = 4;
+            this.TrangThai1CT4.UseVisualStyleBackColor = false;
+            // 
+            // TrangThai1CT5
+            // 
+            this.TrangThai1CT5.BackColor = System.Drawing.SystemColors.Control;
+            this.TrangThai1CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThai1CT5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThai1CT5.Location = new System.Drawing.Point(0, 0);
+            this.TrangThai1CT5.Name = "TrangThai1CT5";
+            this.TrangThai1CT5.Size = new System.Drawing.Size(101, 45);
+            this.TrangThai1CT5.TabIndex = 4;
+            this.TrangThai1CT5.UseVisualStyleBackColor = false;
+            // 
+            // TrangThai2CT5
+            // 
+            this.TrangThai2CT5.BackColor = System.Drawing.SystemColors.Control;
+            this.TrangThai2CT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThai2CT5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThai2CT5.Location = new System.Drawing.Point(0, 0);
+            this.TrangThai2CT5.Name = "TrangThai2CT5";
+            this.TrangThai2CT5.Size = new System.Drawing.Size(101, 47);
+            this.TrangThai2CT5.TabIndex = 4;
+            this.TrangThai2CT5.UseVisualStyleBackColor = false;
+            // 
+            // TrangThai2CT4
+            // 
+            this.TrangThai2CT4.BackColor = System.Drawing.SystemColors.Control;
+            this.TrangThai2CT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThai2CT4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThai2CT4.Location = new System.Drawing.Point(0, 0);
+            this.TrangThai2CT4.Name = "TrangThai2CT4";
+            this.TrangThai2CT4.Size = new System.Drawing.Size(100, 47);
+            this.TrangThai2CT4.TabIndex = 4;
+            this.TrangThai2CT4.UseVisualStyleBackColor = false;
+            // 
+            // TrangThai2CT3
+            // 
+            this.TrangThai2CT3.BackColor = System.Drawing.SystemColors.Control;
+            this.TrangThai2CT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThai2CT3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThai2CT3.Location = new System.Drawing.Point(0, 0);
+            this.TrangThai2CT3.Name = "TrangThai2CT3";
+            this.TrangThai2CT3.Size = new System.Drawing.Size(100, 47);
+            this.TrangThai2CT3.TabIndex = 4;
+            this.TrangThai2CT3.UseVisualStyleBackColor = false;
+            // 
+            // TrangThai2CT2
+            // 
+            this.TrangThai2CT2.BackColor = System.Drawing.SystemColors.Control;
+            this.TrangThai2CT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThai2CT2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThai2CT2.Location = new System.Drawing.Point(0, 0);
+            this.TrangThai2CT2.Name = "TrangThai2CT2";
+            this.TrangThai2CT2.Size = new System.Drawing.Size(100, 47);
+            this.TrangThai2CT2.TabIndex = 4;
+            this.TrangThai2CT2.UseVisualStyleBackColor = false;
+            // 
+            // TrangThai2CT1
+            // 
+            this.TrangThai2CT1.BackColor = System.Drawing.SystemColors.Control;
+            this.TrangThai2CT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThai2CT1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThai2CT1.Location = new System.Drawing.Point(0, 0);
+            this.TrangThai2CT1.Name = "TrangThai2CT1";
+            this.TrangThai2CT1.Size = new System.Drawing.Size(100, 47);
+            this.TrangThai2CT1.TabIndex = 4;
+            this.TrangThai2CT1.UseVisualStyleBackColor = false;
+            // 
             // TemplateCongTac3VT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1263,9 +1223,7 @@
             this.panel39.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.panel40.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton9)).EndInit();
             this.panel41.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton10)).EndInit();
             this.panel42.ResumeLayout(false);
             this.panel43.ResumeLayout(false);
             this.panel44.ResumeLayout(false);
@@ -1275,9 +1233,7 @@
             this.panel28.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.panel29.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton6)).EndInit();
             this.panel30.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton8)).EndInit();
             this.panel31.ResumeLayout(false);
             this.panel32.ResumeLayout(false);
             this.panel33.ResumeLayout(false);
@@ -1287,9 +1243,7 @@
             this.panel19.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton3)).EndInit();
             this.panel21.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton4)).EndInit();
             this.panel22.ResumeLayout(false);
             this.panel23.ResumeLayout(false);
             this.panel24.ResumeLayout(false);
@@ -1299,9 +1253,7 @@
             this.panel10.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton1)).EndInit();
             this.panel12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton2)).EndInit();
             this.panel13.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
@@ -1311,9 +1263,7 @@
             this.panel4.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel38.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton5)).EndInit();
             this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton7)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -1342,19 +1292,16 @@
         private Label labelNameJig;
         private Label label7;
         private Label label2;
-        private Button button8;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton7;
+        private Button SoLanTestCT2;
         private Panel panel36;
         private Panel panel39;
         private TableLayoutPanel tableLayoutPanel6;
         private Panel panel40;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton9;
         private Panel panel41;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton10;
         private Panel panel42;
         private Label label17;
         private Panel panel43;
-        private Button button4;
+        private Button SoLanTestCT4;
         private Panel panel44;
         private Label label18;
         private Panel panel45;
@@ -1365,13 +1312,11 @@
         private Panel panel28;
         private TableLayoutPanel tableLayoutPanel5;
         private Panel panel29;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton6;
         private Panel panel30;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton8;
         private Panel panel31;
         private Label label12;
         private Panel panel32;
-        private Button button3;
+        private Button SoLanTestCT5;
         private Panel panel33;
         private Label label13;
         private Panel panel34;
@@ -1382,13 +1327,11 @@
         private Panel panel19;
         private TableLayoutPanel tableLayoutPanel4;
         private Panel panel20;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton3;
         private Panel panel21;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton4;
         private Panel panel22;
         private Label label8;
         private Panel panel23;
-        private Button button2;
+        private Button SoLanTestCT3;
         private Panel panel24;
         private Label label9;
         private Panel panel25;
@@ -1399,13 +1342,11 @@
         private Panel panel10;
         private TableLayoutPanel tableLayoutPanel3;
         private Panel panel11;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton1;
         private Panel panel12;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton2;
         private Panel panel13;
         private Label label3;
         private Panel panel14;
-        private Button button1;
+        private Button SoLanTestCT1;
         private Panel panel15;
         private Label label4;
         private Panel panel16;
@@ -1413,8 +1354,17 @@
         private Panel panel17;
         private Label label6;
         private Panel panel38;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton5;
         private Panel panel37;
         private Label label16;
+        private Button TrangThai2CT4;
+        private Button TrangThai1CT4;
+        private Button TrangThai2CT5;
+        private Button TrangThai1CT5;
+        private Button TrangThai2CT3;
+        private Button TrangThai1CT3;
+        private Button TrangThai2CT1;
+        private Button TrangThai1CT1;
+        private Button TrangThai2CT2;
+        private Button TrangThai1CT2;
     }
 }

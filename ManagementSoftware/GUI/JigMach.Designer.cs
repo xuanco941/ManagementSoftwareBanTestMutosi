@@ -28,30 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JigMach));
             Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection1 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
             Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection2 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection3 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection4 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection5 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection6 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection7 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection8 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection9 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection10 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection11 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection12 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection13 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection14 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection15 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection16 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection17 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection18 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection19 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection20 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JigMach));
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection21 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection22 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageGiamSatJigNguon = new System.Windows.Forms.TabPage();
             this.panel183 = new System.Windows.Forms.Panel();
@@ -60,15 +39,15 @@
             this.panel185 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel26 = new System.Windows.Forms.TableLayoutPanel();
             this.panel186 = new System.Windows.Forms.Panel();
-            this.button29 = new System.Windows.Forms.Button();
+            this.MachNguonCongSuatJig10 = new System.Windows.Forms.Button();
             this.panel187 = new System.Windows.Forms.Panel();
             this.label79 = new System.Windows.Forms.Label();
             this.panel188 = new System.Windows.Forms.Panel();
-            this.button30 = new System.Windows.Forms.Button();
+            this.MachNguonDienApJig10 = new System.Windows.Forms.Button();
             this.panel189 = new System.Windows.Forms.Panel();
             this.label80 = new System.Windows.Forms.Label();
             this.panel190 = new System.Windows.Forms.Panel();
-            this.button31 = new System.Windows.Forms.Button();
+            this.MachNguonDongDienJig10 = new System.Windows.Forms.Button();
             this.panel191 = new System.Windows.Forms.Panel();
             this.label81 = new System.Windows.Forms.Label();
             this.panel192 = new System.Windows.Forms.Panel();
@@ -77,15 +56,15 @@
             this.panel194 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel27 = new System.Windows.Forms.TableLayoutPanel();
             this.panel195 = new System.Windows.Forms.Panel();
-            this.button32 = new System.Windows.Forms.Button();
+            this.MachNguonCongSuatJig9 = new System.Windows.Forms.Button();
             this.panel196 = new System.Windows.Forms.Panel();
             this.label83 = new System.Windows.Forms.Label();
             this.panel197 = new System.Windows.Forms.Panel();
-            this.button33 = new System.Windows.Forms.Button();
+            this.MachNguonDienApJig9 = new System.Windows.Forms.Button();
             this.panel198 = new System.Windows.Forms.Panel();
             this.label84 = new System.Windows.Forms.Label();
             this.panel199 = new System.Windows.Forms.Panel();
-            this.button34 = new System.Windows.Forms.Button();
+            this.MachNguonDongDienJig9 = new System.Windows.Forms.Button();
             this.panel200 = new System.Windows.Forms.Panel();
             this.label85 = new System.Windows.Forms.Label();
             this.panel201 = new System.Windows.Forms.Panel();
@@ -94,15 +73,15 @@
             this.panel203 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel28 = new System.Windows.Forms.TableLayoutPanel();
             this.panel204 = new System.Windows.Forms.Panel();
-            this.button35 = new System.Windows.Forms.Button();
+            this.MachNguonCongSuatJig8 = new System.Windows.Forms.Button();
             this.panel205 = new System.Windows.Forms.Panel();
             this.label87 = new System.Windows.Forms.Label();
             this.panel206 = new System.Windows.Forms.Panel();
-            this.button36 = new System.Windows.Forms.Button();
+            this.MachNguonDienApJig8 = new System.Windows.Forms.Button();
             this.panel207 = new System.Windows.Forms.Panel();
             this.label88 = new System.Windows.Forms.Label();
             this.panel208 = new System.Windows.Forms.Panel();
-            this.button37 = new System.Windows.Forms.Button();
+            this.MachNguonDongDienJig8 = new System.Windows.Forms.Button();
             this.panel209 = new System.Windows.Forms.Panel();
             this.label89 = new System.Windows.Forms.Label();
             this.panel210 = new System.Windows.Forms.Panel();
@@ -111,15 +90,15 @@
             this.panel212 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel29 = new System.Windows.Forms.TableLayoutPanel();
             this.panel213 = new System.Windows.Forms.Panel();
-            this.button38 = new System.Windows.Forms.Button();
+            this.MachNguonCongSuatJig7 = new System.Windows.Forms.Button();
             this.panel214 = new System.Windows.Forms.Panel();
             this.label91 = new System.Windows.Forms.Label();
             this.panel215 = new System.Windows.Forms.Panel();
-            this.button39 = new System.Windows.Forms.Button();
+            this.MachNguonDienApJig7 = new System.Windows.Forms.Button();
             this.panel216 = new System.Windows.Forms.Panel();
             this.label92 = new System.Windows.Forms.Label();
             this.panel217 = new System.Windows.Forms.Panel();
-            this.button40 = new System.Windows.Forms.Button();
+            this.MachNguonDongDienJig7 = new System.Windows.Forms.Button();
             this.panel218 = new System.Windows.Forms.Panel();
             this.label93 = new System.Windows.Forms.Label();
             this.panel219 = new System.Windows.Forms.Panel();
@@ -128,15 +107,15 @@
             this.panel221 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel30 = new System.Windows.Forms.TableLayoutPanel();
             this.panel222 = new System.Windows.Forms.Panel();
-            this.button41 = new System.Windows.Forms.Button();
+            this.MachNguonCongSuatJig6 = new System.Windows.Forms.Button();
             this.panel223 = new System.Windows.Forms.Panel();
             this.label95 = new System.Windows.Forms.Label();
             this.panel224 = new System.Windows.Forms.Panel();
-            this.ap6 = new System.Windows.Forms.Button();
+            this.MachNguonDienApJig6 = new System.Windows.Forms.Button();
             this.panel225 = new System.Windows.Forms.Panel();
             this.label96 = new System.Windows.Forms.Label();
             this.panel226 = new System.Windows.Forms.Panel();
-            this.dong6 = new System.Windows.Forms.Button();
+            this.MachNguonDongDienJig6 = new System.Windows.Forms.Button();
             this.panel227 = new System.Windows.Forms.Panel();
             this.label97 = new System.Windows.Forms.Label();
             this.panel228 = new System.Windows.Forms.Panel();
@@ -145,15 +124,15 @@
             this.panel230 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel31 = new System.Windows.Forms.TableLayoutPanel();
             this.panel231 = new System.Windows.Forms.Panel();
-            this.button42 = new System.Windows.Forms.Button();
+            this.MachNguonCongSuatJig5 = new System.Windows.Forms.Button();
             this.panel232 = new System.Windows.Forms.Panel();
             this.label99 = new System.Windows.Forms.Label();
             this.panel233 = new System.Windows.Forms.Panel();
-            this.button43 = new System.Windows.Forms.Button();
+            this.MachNguonDienApJig5 = new System.Windows.Forms.Button();
             this.panel234 = new System.Windows.Forms.Panel();
             this.label100 = new System.Windows.Forms.Label();
             this.panel235 = new System.Windows.Forms.Panel();
-            this.button44 = new System.Windows.Forms.Button();
+            this.MachNguonDongDienJig5 = new System.Windows.Forms.Button();
             this.panel236 = new System.Windows.Forms.Panel();
             this.label101 = new System.Windows.Forms.Label();
             this.panel237 = new System.Windows.Forms.Panel();
@@ -162,15 +141,15 @@
             this.panel239 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel32 = new System.Windows.Forms.TableLayoutPanel();
             this.panel240 = new System.Windows.Forms.Panel();
-            this.button45 = new System.Windows.Forms.Button();
+            this.MachNguonCongSuatJig4 = new System.Windows.Forms.Button();
             this.panel241 = new System.Windows.Forms.Panel();
             this.label103 = new System.Windows.Forms.Label();
             this.panel242 = new System.Windows.Forms.Panel();
-            this.button46 = new System.Windows.Forms.Button();
+            this.MachNguonDienApJig4 = new System.Windows.Forms.Button();
             this.panel243 = new System.Windows.Forms.Panel();
             this.label104 = new System.Windows.Forms.Label();
             this.panel244 = new System.Windows.Forms.Panel();
-            this.button47 = new System.Windows.Forms.Button();
+            this.MachNguonDongDienJig4 = new System.Windows.Forms.Button();
             this.panel245 = new System.Windows.Forms.Panel();
             this.label105 = new System.Windows.Forms.Label();
             this.panel246 = new System.Windows.Forms.Panel();
@@ -179,15 +158,15 @@
             this.panel248 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel33 = new System.Windows.Forms.TableLayoutPanel();
             this.panel249 = new System.Windows.Forms.Panel();
-            this.button48 = new System.Windows.Forms.Button();
+            this.MachNguonCongSuatJig3 = new System.Windows.Forms.Button();
             this.panel250 = new System.Windows.Forms.Panel();
             this.label107 = new System.Windows.Forms.Label();
             this.panel251 = new System.Windows.Forms.Panel();
-            this.button49 = new System.Windows.Forms.Button();
+            this.MachNguonDienApJig3 = new System.Windows.Forms.Button();
             this.panel252 = new System.Windows.Forms.Panel();
             this.label108 = new System.Windows.Forms.Label();
             this.panel253 = new System.Windows.Forms.Panel();
-            this.button50 = new System.Windows.Forms.Button();
+            this.MachNguonDongDienJig3 = new System.Windows.Forms.Button();
             this.panel254 = new System.Windows.Forms.Panel();
             this.label109 = new System.Windows.Forms.Label();
             this.panel255 = new System.Windows.Forms.Panel();
@@ -196,15 +175,15 @@
             this.panel257 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel34 = new System.Windows.Forms.TableLayoutPanel();
             this.panel258 = new System.Windows.Forms.Panel();
-            this.button51 = new System.Windows.Forms.Button();
+            this.MachNguonCongSuatJig2 = new System.Windows.Forms.Button();
             this.panel259 = new System.Windows.Forms.Panel();
             this.label111 = new System.Windows.Forms.Label();
             this.panel260 = new System.Windows.Forms.Panel();
-            this.button52 = new System.Windows.Forms.Button();
+            this.MachNguonDienApJig2 = new System.Windows.Forms.Button();
             this.panel261 = new System.Windows.Forms.Panel();
             this.label112 = new System.Windows.Forms.Label();
             this.panel262 = new System.Windows.Forms.Panel();
-            this.button53 = new System.Windows.Forms.Button();
+            this.MachNguonDongDienJig2 = new System.Windows.Forms.Button();
             this.panel263 = new System.Windows.Forms.Panel();
             this.label113 = new System.Windows.Forms.Label();
             this.panel264 = new System.Windows.Forms.Panel();
@@ -213,15 +192,15 @@
             this.panel266 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel35 = new System.Windows.Forms.TableLayoutPanel();
             this.panel267 = new System.Windows.Forms.Panel();
-            this.button54 = new System.Windows.Forms.Button();
+            this.MachNguonCongSuatJig1 = new System.Windows.Forms.Button();
             this.panel268 = new System.Windows.Forms.Panel();
             this.label115 = new System.Windows.Forms.Label();
             this.panel269 = new System.Windows.Forms.Panel();
-            this.button55 = new System.Windows.Forms.Button();
+            this.MachNguonDienApJig1 = new System.Windows.Forms.Button();
             this.panel270 = new System.Windows.Forms.Panel();
             this.label116 = new System.Windows.Forms.Label();
             this.panel271 = new System.Windows.Forms.Panel();
-            this.button56 = new System.Windows.Forms.Button();
+            this.MachNguonDongDienJig1 = new System.Windows.Forms.Button();
             this.panel272 = new System.Windows.Forms.Panel();
             this.label117 = new System.Windows.Forms.Label();
             this.panel273 = new System.Windows.Forms.Panel();
@@ -235,15 +214,12 @@
             this.panel277 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel37 = new System.Windows.Forms.TableLayoutPanel();
             this.panel278 = new System.Windows.Forms.Panel();
-            this.toggleButton19 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel279 = new System.Windows.Forms.Panel();
             this.label120 = new System.Windows.Forms.Label();
             this.panel280 = new System.Windows.Forms.Panel();
-            this.toggleButton20 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel281 = new System.Windows.Forms.Panel();
             this.label121 = new System.Windows.Forms.Label();
             this.panel282 = new System.Windows.Forms.Panel();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.panel283 = new System.Windows.Forms.Panel();
             this.label122 = new System.Windows.Forms.Label();
             this.panel284 = new System.Windows.Forms.Panel();
@@ -252,15 +228,12 @@
             this.panel286 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel38 = new System.Windows.Forms.TableLayoutPanel();
             this.panel287 = new System.Windows.Forms.Panel();
-            this.toggleButton2 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel288 = new System.Windows.Forms.Panel();
             this.label124 = new System.Windows.Forms.Label();
             this.panel289 = new System.Windows.Forms.Panel();
-            this.toggleButton18 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel290 = new System.Windows.Forms.Panel();
             this.label125 = new System.Windows.Forms.Label();
             this.panel291 = new System.Windows.Forms.Panel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.panel292 = new System.Windows.Forms.Panel();
             this.label126 = new System.Windows.Forms.Label();
             this.panel293 = new System.Windows.Forms.Panel();
@@ -269,15 +242,12 @@
             this.panel295 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel39 = new System.Windows.Forms.TableLayoutPanel();
             this.panel296 = new System.Windows.Forms.Panel();
-            this.toggleButton15 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel297 = new System.Windows.Forms.Panel();
             this.label128 = new System.Windows.Forms.Label();
             this.panel298 = new System.Windows.Forms.Panel();
-            this.toggleButton16 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel299 = new System.Windows.Forms.Panel();
             this.label129 = new System.Windows.Forms.Label();
             this.panel300 = new System.Windows.Forms.Panel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.panel301 = new System.Windows.Forms.Panel();
             this.label130 = new System.Windows.Forms.Label();
             this.panel302 = new System.Windows.Forms.Panel();
@@ -286,15 +256,12 @@
             this.panel304 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel40 = new System.Windows.Forms.TableLayoutPanel();
             this.panel305 = new System.Windows.Forms.Panel();
-            this.toggleButton13 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel306 = new System.Windows.Forms.Panel();
             this.label132 = new System.Windows.Forms.Label();
             this.panel307 = new System.Windows.Forms.Panel();
-            this.toggleButton14 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel308 = new System.Windows.Forms.Panel();
             this.label133 = new System.Windows.Forms.Label();
             this.panel309 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel310 = new System.Windows.Forms.Panel();
             this.label134 = new System.Windows.Forms.Label();
             this.panel311 = new System.Windows.Forms.Panel();
@@ -303,15 +270,12 @@
             this.panel313 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel41 = new System.Windows.Forms.TableLayoutPanel();
             this.panel314 = new System.Windows.Forms.Panel();
-            this.toggleButton11 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel315 = new System.Windows.Forms.Panel();
             this.label136 = new System.Windows.Forms.Label();
             this.panel316 = new System.Windows.Forms.Panel();
-            this.toggleButton12 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel317 = new System.Windows.Forms.Panel();
             this.label137 = new System.Windows.Forms.Label();
             this.panel318 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel319 = new System.Windows.Forms.Panel();
             this.label138 = new System.Windows.Forms.Label();
             this.panel320 = new System.Windows.Forms.Panel();
@@ -320,15 +284,12 @@
             this.panel322 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel42 = new System.Windows.Forms.TableLayoutPanel();
             this.panel323 = new System.Windows.Forms.Panel();
-            this.toggleButton9 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel324 = new System.Windows.Forms.Panel();
             this.label140 = new System.Windows.Forms.Label();
             this.panel325 = new System.Windows.Forms.Panel();
-            this.toggleButton10 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel326 = new System.Windows.Forms.Panel();
             this.label141 = new System.Windows.Forms.Label();
             this.panel327 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.panel328 = new System.Windows.Forms.Panel();
             this.label142 = new System.Windows.Forms.Label();
             this.panel329 = new System.Windows.Forms.Panel();
@@ -337,15 +298,12 @@
             this.panel331 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel43 = new System.Windows.Forms.TableLayoutPanel();
             this.panel332 = new System.Windows.Forms.Panel();
-            this.toggleButton7 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel333 = new System.Windows.Forms.Panel();
             this.label144 = new System.Windows.Forms.Label();
             this.panel334 = new System.Windows.Forms.Panel();
-            this.toggleButton8 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel335 = new System.Windows.Forms.Panel();
             this.label145 = new System.Windows.Forms.Label();
             this.panel336 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel337 = new System.Windows.Forms.Panel();
             this.label146 = new System.Windows.Forms.Label();
             this.panel338 = new System.Windows.Forms.Panel();
@@ -354,15 +312,12 @@
             this.panel340 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel44 = new System.Windows.Forms.TableLayoutPanel();
             this.panel341 = new System.Windows.Forms.Panel();
-            this.toggleButton5 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel342 = new System.Windows.Forms.Panel();
             this.label148 = new System.Windows.Forms.Label();
             this.panel343 = new System.Windows.Forms.Panel();
-            this.toggleButton6 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel344 = new System.Windows.Forms.Panel();
             this.label149 = new System.Windows.Forms.Label();
             this.panel345 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel346 = new System.Windows.Forms.Panel();
             this.label150 = new System.Windows.Forms.Label();
             this.panel347 = new System.Windows.Forms.Panel();
@@ -371,15 +326,12 @@
             this.panel349 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel45 = new System.Windows.Forms.TableLayoutPanel();
             this.panel350 = new System.Windows.Forms.Panel();
-            this.toggleButton3 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel351 = new System.Windows.Forms.Panel();
             this.label152 = new System.Windows.Forms.Label();
             this.panel352 = new System.Windows.Forms.Panel();
-            this.toggleButton4 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel353 = new System.Windows.Forms.Panel();
             this.label153 = new System.Windows.Forms.Label();
             this.panel354 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel355 = new System.Windows.Forms.Panel();
             this.label154 = new System.Windows.Forms.Label();
             this.panel356 = new System.Windows.Forms.Panel();
@@ -388,15 +340,12 @@
             this.panel358 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel46 = new System.Windows.Forms.TableLayoutPanel();
             this.panel359 = new System.Windows.Forms.Panel();
-            this.toggleButton21 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel360 = new System.Windows.Forms.Panel();
             this.label156 = new System.Windows.Forms.Label();
             this.panel361 = new System.Windows.Forms.Panel();
-            this.toggleButton22 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel362 = new System.Windows.Forms.Panel();
             this.label157 = new System.Windows.Forms.Label();
             this.panel363 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel364 = new System.Windows.Forms.Panel();
             this.label158 = new System.Windows.Forms.Label();
             this.panel365 = new System.Windows.Forms.Panel();
@@ -501,7 +450,6 @@
             this.panel75 = new System.Windows.Forms.Panel();
             this.toggleButton17 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel76 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -673,7 +621,6 @@
             this.panel124 = new System.Windows.Forms.Panel();
             this.toggleButton1 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.panel125 = new System.Windows.Forms.Panel();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.panel126 = new System.Windows.Forms.Panel();
             this.panel127 = new System.Windows.Forms.Panel();
@@ -776,6 +723,36 @@
             this.button28 = new System.Windows.Forms.Button();
             this.panel181 = new System.Windows.Forms.Panel();
             this.label77 = new System.Windows.Forms.Label();
+            this.MachTDSApDCJig1 = new System.Windows.Forms.Button();
+            this.MachTDSVanJig1 = new System.Windows.Forms.Button();
+            this.MachTDSCBApSuatJig1 = new System.Windows.Forms.Button();
+            this.MachTDSApDCJig2 = new System.Windows.Forms.Button();
+            this.MachTDSVanJig2 = new System.Windows.Forms.Button();
+            this.MachTDSCBApSuatJig2 = new System.Windows.Forms.Button();
+            this.MachTDSApDCJig3 = new System.Windows.Forms.Button();
+            this.MachTDSVanJig3 = new System.Windows.Forms.Button();
+            this.MachTDSCBApSuatJig3 = new System.Windows.Forms.Button();
+            this.MachTDSApDCJig4 = new System.Windows.Forms.Button();
+            this.MachTDSVanJig4 = new System.Windows.Forms.Button();
+            this.MachTDSCBApSuatJig4 = new System.Windows.Forms.Button();
+            this.MachTDSApDCJig5 = new System.Windows.Forms.Button();
+            this.MachTDSVanJig5 = new System.Windows.Forms.Button();
+            this.MachTDSCBApSuatJig5 = new System.Windows.Forms.Button();
+            this.MachTDSApDCJig10 = new System.Windows.Forms.Button();
+            this.MachTDSVanJig10 = new System.Windows.Forms.Button();
+            this.MachTDSCBApSuatJig10 = new System.Windows.Forms.Button();
+            this.MachTDSApDCJig9 = new System.Windows.Forms.Button();
+            this.MachTDSVanJig9 = new System.Windows.Forms.Button();
+            this.MachTDSCBApSuatJig9 = new System.Windows.Forms.Button();
+            this.MachTDSApDCJig8 = new System.Windows.Forms.Button();
+            this.MachTDSVanJig8 = new System.Windows.Forms.Button();
+            this.MachTDSCBApSuatJig8 = new System.Windows.Forms.Button();
+            this.MachTDSCBApSuatJig7 = new System.Windows.Forms.Button();
+            this.MachTDSVanJig7 = new System.Windows.Forms.Button();
+            this.MachTDSApDCJig7 = new System.Windows.Forms.Button();
+            this.MachTDSApDCJig6 = new System.Windows.Forms.Button();
+            this.MachTDSVanJig6 = new System.Windows.Forms.Button();
+            this.MachTDSCBApSuatJig6 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPageGiamSatJigNguon.SuspendLayout();
             this.panel183.SuspendLayout();
@@ -888,10 +865,8 @@
             this.panel277.SuspendLayout();
             this.tableLayoutPanel37.SuspendLayout();
             this.panel278.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton19)).BeginInit();
             this.panel279.SuspendLayout();
             this.panel280.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton20)).BeginInit();
             this.panel281.SuspendLayout();
             this.panel282.SuspendLayout();
             this.panel283.SuspendLayout();
@@ -900,10 +875,8 @@
             this.panel286.SuspendLayout();
             this.tableLayoutPanel38.SuspendLayout();
             this.panel287.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton2)).BeginInit();
             this.panel288.SuspendLayout();
             this.panel289.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton18)).BeginInit();
             this.panel290.SuspendLayout();
             this.panel291.SuspendLayout();
             this.panel292.SuspendLayout();
@@ -912,10 +885,8 @@
             this.panel295.SuspendLayout();
             this.tableLayoutPanel39.SuspendLayout();
             this.panel296.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton15)).BeginInit();
             this.panel297.SuspendLayout();
             this.panel298.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton16)).BeginInit();
             this.panel299.SuspendLayout();
             this.panel300.SuspendLayout();
             this.panel301.SuspendLayout();
@@ -924,10 +895,8 @@
             this.panel304.SuspendLayout();
             this.tableLayoutPanel40.SuspendLayout();
             this.panel305.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton13)).BeginInit();
             this.panel306.SuspendLayout();
             this.panel307.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton14)).BeginInit();
             this.panel308.SuspendLayout();
             this.panel309.SuspendLayout();
             this.panel310.SuspendLayout();
@@ -936,10 +905,8 @@
             this.panel313.SuspendLayout();
             this.tableLayoutPanel41.SuspendLayout();
             this.panel314.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton11)).BeginInit();
             this.panel315.SuspendLayout();
             this.panel316.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton12)).BeginInit();
             this.panel317.SuspendLayout();
             this.panel318.SuspendLayout();
             this.panel319.SuspendLayout();
@@ -948,10 +915,8 @@
             this.panel322.SuspendLayout();
             this.tableLayoutPanel42.SuspendLayout();
             this.panel323.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton9)).BeginInit();
             this.panel324.SuspendLayout();
             this.panel325.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton10)).BeginInit();
             this.panel326.SuspendLayout();
             this.panel327.SuspendLayout();
             this.panel328.SuspendLayout();
@@ -960,10 +925,8 @@
             this.panel331.SuspendLayout();
             this.tableLayoutPanel43.SuspendLayout();
             this.panel332.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton7)).BeginInit();
             this.panel333.SuspendLayout();
             this.panel334.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton8)).BeginInit();
             this.panel335.SuspendLayout();
             this.panel336.SuspendLayout();
             this.panel337.SuspendLayout();
@@ -972,10 +935,8 @@
             this.panel340.SuspendLayout();
             this.tableLayoutPanel44.SuspendLayout();
             this.panel341.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton5)).BeginInit();
             this.panel342.SuspendLayout();
             this.panel343.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton6)).BeginInit();
             this.panel344.SuspendLayout();
             this.panel345.SuspendLayout();
             this.panel346.SuspendLayout();
@@ -984,10 +945,8 @@
             this.panel349.SuspendLayout();
             this.tableLayoutPanel45.SuspendLayout();
             this.panel350.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton3)).BeginInit();
             this.panel351.SuspendLayout();
             this.panel352.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton4)).BeginInit();
             this.panel353.SuspendLayout();
             this.panel354.SuspendLayout();
             this.panel355.SuspendLayout();
@@ -996,10 +955,8 @@
             this.panel358.SuspendLayout();
             this.tableLayoutPanel46.SuspendLayout();
             this.panel359.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton21)).BeginInit();
             this.panel360.SuspendLayout();
             this.panel361.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton22)).BeginInit();
             this.panel362.SuspendLayout();
             this.panel363.SuspendLayout();
             this.panel364.SuspendLayout();
@@ -1327,23 +1284,23 @@
             // 
             // panel186
             // 
-            this.panel186.Controls.Add(this.button29);
+            this.panel186.Controls.Add(this.MachNguonCongSuatJig10);
             this.panel186.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel186.Location = new System.Drawing.Point(102, 123);
             this.panel186.Name = "panel186";
             this.panel186.Size = new System.Drawing.Size(93, 55);
             this.panel186.TabIndex = 5;
             // 
-            // button29
+            // MachNguonCongSuatJig10
             // 
-            this.button29.BackColor = System.Drawing.SystemColors.Control;
-            this.button29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button29.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button29.Location = new System.Drawing.Point(0, 0);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(93, 55);
-            this.button29.TabIndex = 1;
-            this.button29.UseVisualStyleBackColor = false;
+            this.MachNguonCongSuatJig10.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonCongSuatJig10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonCongSuatJig10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonCongSuatJig10.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonCongSuatJig10.Name = "MachNguonCongSuatJig10";
+            this.MachNguonCongSuatJig10.Size = new System.Drawing.Size(93, 55);
+            this.MachNguonCongSuatJig10.TabIndex = 1;
+            this.MachNguonCongSuatJig10.UseVisualStyleBackColor = false;
             // 
             // panel187
             // 
@@ -1368,23 +1325,23 @@
             // 
             // panel188
             // 
-            this.panel188.Controls.Add(this.button30);
+            this.panel188.Controls.Add(this.MachNguonDienApJig10);
             this.panel188.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel188.Location = new System.Drawing.Point(102, 63);
             this.panel188.Name = "panel188";
             this.panel188.Size = new System.Drawing.Size(93, 54);
             this.panel188.TabIndex = 3;
             // 
-            // button30
+            // MachNguonDienApJig10
             // 
-            this.button30.BackColor = System.Drawing.SystemColors.Control;
-            this.button30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button30.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button30.Location = new System.Drawing.Point(0, 0);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(93, 54);
-            this.button30.TabIndex = 1;
-            this.button30.UseVisualStyleBackColor = false;
+            this.MachNguonDienApJig10.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDienApJig10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDienApJig10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDienApJig10.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDienApJig10.Name = "MachNguonDienApJig10";
+            this.MachNguonDienApJig10.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig10.TabIndex = 1;
+            this.MachNguonDienApJig10.UseVisualStyleBackColor = false;
             // 
             // panel189
             // 
@@ -1409,23 +1366,23 @@
             // 
             // panel190
             // 
-            this.panel190.Controls.Add(this.button31);
+            this.panel190.Controls.Add(this.MachNguonDongDienJig10);
             this.panel190.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel190.Location = new System.Drawing.Point(102, 3);
             this.panel190.Name = "panel190";
             this.panel190.Size = new System.Drawing.Size(93, 54);
             this.panel190.TabIndex = 1;
             // 
-            // button31
+            // MachNguonDongDienJig10
             // 
-            this.button31.BackColor = System.Drawing.SystemColors.Control;
-            this.button31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button31.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button31.Location = new System.Drawing.Point(0, 0);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(93, 54);
-            this.button31.TabIndex = 1;
-            this.button31.UseVisualStyleBackColor = false;
+            this.MachNguonDongDienJig10.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDongDienJig10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDongDienJig10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDongDienJig10.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDongDienJig10.Name = "MachNguonDongDienJig10";
+            this.MachNguonDongDienJig10.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig10.TabIndex = 1;
+            this.MachNguonDongDienJig10.UseVisualStyleBackColor = false;
             // 
             // panel191
             // 
@@ -1515,23 +1472,23 @@
             // 
             // panel195
             // 
-            this.panel195.Controls.Add(this.button32);
+            this.panel195.Controls.Add(this.MachNguonCongSuatJig9);
             this.panel195.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel195.Location = new System.Drawing.Point(102, 123);
             this.panel195.Name = "panel195";
             this.panel195.Size = new System.Drawing.Size(93, 55);
             this.panel195.TabIndex = 5;
             // 
-            // button32
+            // MachNguonCongSuatJig9
             // 
-            this.button32.BackColor = System.Drawing.SystemColors.Control;
-            this.button32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button32.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button32.Location = new System.Drawing.Point(0, 0);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(93, 55);
-            this.button32.TabIndex = 1;
-            this.button32.UseVisualStyleBackColor = false;
+            this.MachNguonCongSuatJig9.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonCongSuatJig9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonCongSuatJig9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonCongSuatJig9.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonCongSuatJig9.Name = "MachNguonCongSuatJig9";
+            this.MachNguonCongSuatJig9.Size = new System.Drawing.Size(93, 55);
+            this.MachNguonCongSuatJig9.TabIndex = 1;
+            this.MachNguonCongSuatJig9.UseVisualStyleBackColor = false;
             // 
             // panel196
             // 
@@ -1556,23 +1513,23 @@
             // 
             // panel197
             // 
-            this.panel197.Controls.Add(this.button33);
+            this.panel197.Controls.Add(this.MachNguonDienApJig9);
             this.panel197.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel197.Location = new System.Drawing.Point(102, 63);
             this.panel197.Name = "panel197";
             this.panel197.Size = new System.Drawing.Size(93, 54);
             this.panel197.TabIndex = 3;
             // 
-            // button33
+            // MachNguonDienApJig9
             // 
-            this.button33.BackColor = System.Drawing.SystemColors.Control;
-            this.button33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button33.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button33.Location = new System.Drawing.Point(0, 0);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(93, 54);
-            this.button33.TabIndex = 1;
-            this.button33.UseVisualStyleBackColor = false;
+            this.MachNguonDienApJig9.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDienApJig9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDienApJig9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDienApJig9.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDienApJig9.Name = "MachNguonDienApJig9";
+            this.MachNguonDienApJig9.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig9.TabIndex = 1;
+            this.MachNguonDienApJig9.UseVisualStyleBackColor = false;
             // 
             // panel198
             // 
@@ -1597,23 +1554,23 @@
             // 
             // panel199
             // 
-            this.panel199.Controls.Add(this.button34);
+            this.panel199.Controls.Add(this.MachNguonDongDienJig9);
             this.panel199.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel199.Location = new System.Drawing.Point(102, 3);
             this.panel199.Name = "panel199";
             this.panel199.Size = new System.Drawing.Size(93, 54);
             this.panel199.TabIndex = 1;
             // 
-            // button34
+            // MachNguonDongDienJig9
             // 
-            this.button34.BackColor = System.Drawing.SystemColors.Control;
-            this.button34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button34.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button34.Location = new System.Drawing.Point(0, 0);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(93, 54);
-            this.button34.TabIndex = 1;
-            this.button34.UseVisualStyleBackColor = false;
+            this.MachNguonDongDienJig9.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDongDienJig9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDongDienJig9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDongDienJig9.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDongDienJig9.Name = "MachNguonDongDienJig9";
+            this.MachNguonDongDienJig9.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig9.TabIndex = 1;
+            this.MachNguonDongDienJig9.UseVisualStyleBackColor = false;
             // 
             // panel200
             // 
@@ -1703,23 +1660,23 @@
             // 
             // panel204
             // 
-            this.panel204.Controls.Add(this.button35);
+            this.panel204.Controls.Add(this.MachNguonCongSuatJig8);
             this.panel204.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel204.Location = new System.Drawing.Point(102, 123);
             this.panel204.Name = "panel204";
             this.panel204.Size = new System.Drawing.Size(93, 55);
             this.panel204.TabIndex = 5;
             // 
-            // button35
+            // MachNguonCongSuatJig8
             // 
-            this.button35.BackColor = System.Drawing.SystemColors.Control;
-            this.button35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button35.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button35.Location = new System.Drawing.Point(0, 0);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(93, 55);
-            this.button35.TabIndex = 1;
-            this.button35.UseVisualStyleBackColor = false;
+            this.MachNguonCongSuatJig8.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonCongSuatJig8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonCongSuatJig8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonCongSuatJig8.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonCongSuatJig8.Name = "MachNguonCongSuatJig8";
+            this.MachNguonCongSuatJig8.Size = new System.Drawing.Size(93, 55);
+            this.MachNguonCongSuatJig8.TabIndex = 1;
+            this.MachNguonCongSuatJig8.UseVisualStyleBackColor = false;
             // 
             // panel205
             // 
@@ -1744,23 +1701,23 @@
             // 
             // panel206
             // 
-            this.panel206.Controls.Add(this.button36);
+            this.panel206.Controls.Add(this.MachNguonDienApJig8);
             this.panel206.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel206.Location = new System.Drawing.Point(102, 63);
             this.panel206.Name = "panel206";
             this.panel206.Size = new System.Drawing.Size(93, 54);
             this.panel206.TabIndex = 3;
             // 
-            // button36
+            // MachNguonDienApJig8
             // 
-            this.button36.BackColor = System.Drawing.SystemColors.Control;
-            this.button36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button36.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button36.Location = new System.Drawing.Point(0, 0);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(93, 54);
-            this.button36.TabIndex = 1;
-            this.button36.UseVisualStyleBackColor = false;
+            this.MachNguonDienApJig8.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDienApJig8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDienApJig8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDienApJig8.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDienApJig8.Name = "MachNguonDienApJig8";
+            this.MachNguonDienApJig8.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig8.TabIndex = 1;
+            this.MachNguonDienApJig8.UseVisualStyleBackColor = false;
             // 
             // panel207
             // 
@@ -1785,23 +1742,23 @@
             // 
             // panel208
             // 
-            this.panel208.Controls.Add(this.button37);
+            this.panel208.Controls.Add(this.MachNguonDongDienJig8);
             this.panel208.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel208.Location = new System.Drawing.Point(102, 3);
             this.panel208.Name = "panel208";
             this.panel208.Size = new System.Drawing.Size(93, 54);
             this.panel208.TabIndex = 1;
             // 
-            // button37
+            // MachNguonDongDienJig8
             // 
-            this.button37.BackColor = System.Drawing.SystemColors.Control;
-            this.button37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button37.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button37.Location = new System.Drawing.Point(0, 0);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(93, 54);
-            this.button37.TabIndex = 1;
-            this.button37.UseVisualStyleBackColor = false;
+            this.MachNguonDongDienJig8.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDongDienJig8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDongDienJig8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDongDienJig8.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDongDienJig8.Name = "MachNguonDongDienJig8";
+            this.MachNguonDongDienJig8.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig8.TabIndex = 1;
+            this.MachNguonDongDienJig8.UseVisualStyleBackColor = false;
             // 
             // panel209
             // 
@@ -1891,23 +1848,23 @@
             // 
             // panel213
             // 
-            this.panel213.Controls.Add(this.button38);
+            this.panel213.Controls.Add(this.MachNguonCongSuatJig7);
             this.panel213.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel213.Location = new System.Drawing.Point(102, 123);
             this.panel213.Name = "panel213";
             this.panel213.Size = new System.Drawing.Size(93, 55);
             this.panel213.TabIndex = 5;
             // 
-            // button38
+            // MachNguonCongSuatJig7
             // 
-            this.button38.BackColor = System.Drawing.SystemColors.Control;
-            this.button38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button38.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button38.Location = new System.Drawing.Point(0, 0);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(93, 55);
-            this.button38.TabIndex = 1;
-            this.button38.UseVisualStyleBackColor = false;
+            this.MachNguonCongSuatJig7.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonCongSuatJig7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonCongSuatJig7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonCongSuatJig7.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonCongSuatJig7.Name = "MachNguonCongSuatJig7";
+            this.MachNguonCongSuatJig7.Size = new System.Drawing.Size(93, 55);
+            this.MachNguonCongSuatJig7.TabIndex = 1;
+            this.MachNguonCongSuatJig7.UseVisualStyleBackColor = false;
             // 
             // panel214
             // 
@@ -1932,23 +1889,23 @@
             // 
             // panel215
             // 
-            this.panel215.Controls.Add(this.button39);
+            this.panel215.Controls.Add(this.MachNguonDienApJig7);
             this.panel215.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel215.Location = new System.Drawing.Point(102, 63);
             this.panel215.Name = "panel215";
             this.panel215.Size = new System.Drawing.Size(93, 54);
             this.panel215.TabIndex = 3;
             // 
-            // button39
+            // MachNguonDienApJig7
             // 
-            this.button39.BackColor = System.Drawing.SystemColors.Control;
-            this.button39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button39.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button39.Location = new System.Drawing.Point(0, 0);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(93, 54);
-            this.button39.TabIndex = 1;
-            this.button39.UseVisualStyleBackColor = false;
+            this.MachNguonDienApJig7.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDienApJig7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDienApJig7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDienApJig7.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDienApJig7.Name = "MachNguonDienApJig7";
+            this.MachNguonDienApJig7.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig7.TabIndex = 1;
+            this.MachNguonDienApJig7.UseVisualStyleBackColor = false;
             // 
             // panel216
             // 
@@ -1973,23 +1930,23 @@
             // 
             // panel217
             // 
-            this.panel217.Controls.Add(this.button40);
+            this.panel217.Controls.Add(this.MachNguonDongDienJig7);
             this.panel217.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel217.Location = new System.Drawing.Point(102, 3);
             this.panel217.Name = "panel217";
             this.panel217.Size = new System.Drawing.Size(93, 54);
             this.panel217.TabIndex = 1;
             // 
-            // button40
+            // MachNguonDongDienJig7
             // 
-            this.button40.BackColor = System.Drawing.SystemColors.Control;
-            this.button40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button40.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button40.Location = new System.Drawing.Point(0, 0);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(93, 54);
-            this.button40.TabIndex = 1;
-            this.button40.UseVisualStyleBackColor = false;
+            this.MachNguonDongDienJig7.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDongDienJig7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDongDienJig7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDongDienJig7.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDongDienJig7.Name = "MachNguonDongDienJig7";
+            this.MachNguonDongDienJig7.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig7.TabIndex = 1;
+            this.MachNguonDongDienJig7.UseVisualStyleBackColor = false;
             // 
             // panel218
             // 
@@ -2079,23 +2036,23 @@
             // 
             // panel222
             // 
-            this.panel222.Controls.Add(this.button41);
+            this.panel222.Controls.Add(this.MachNguonCongSuatJig6);
             this.panel222.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel222.Location = new System.Drawing.Point(102, 123);
             this.panel222.Name = "panel222";
             this.panel222.Size = new System.Drawing.Size(93, 55);
             this.panel222.TabIndex = 5;
             // 
-            // button41
+            // MachNguonCongSuatJig6
             // 
-            this.button41.BackColor = System.Drawing.SystemColors.Control;
-            this.button41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button41.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button41.Location = new System.Drawing.Point(0, 0);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(93, 55);
-            this.button41.TabIndex = 1;
-            this.button41.UseVisualStyleBackColor = false;
+            this.MachNguonCongSuatJig6.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonCongSuatJig6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonCongSuatJig6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonCongSuatJig6.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonCongSuatJig6.Name = "MachNguonCongSuatJig6";
+            this.MachNguonCongSuatJig6.Size = new System.Drawing.Size(93, 55);
+            this.MachNguonCongSuatJig6.TabIndex = 1;
+            this.MachNguonCongSuatJig6.UseVisualStyleBackColor = false;
             // 
             // panel223
             // 
@@ -2120,23 +2077,23 @@
             // 
             // panel224
             // 
-            this.panel224.Controls.Add(this.ap6);
+            this.panel224.Controls.Add(this.MachNguonDienApJig6);
             this.panel224.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel224.Location = new System.Drawing.Point(102, 63);
             this.panel224.Name = "panel224";
             this.panel224.Size = new System.Drawing.Size(93, 54);
             this.panel224.TabIndex = 3;
             // 
-            // ap6
+            // MachNguonDienApJig6
             // 
-            this.ap6.BackColor = System.Drawing.SystemColors.Control;
-            this.ap6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ap6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ap6.Location = new System.Drawing.Point(0, 0);
-            this.ap6.Name = "ap6";
-            this.ap6.Size = new System.Drawing.Size(93, 54);
-            this.ap6.TabIndex = 1;
-            this.ap6.UseVisualStyleBackColor = false;
+            this.MachNguonDienApJig6.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDienApJig6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDienApJig6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDienApJig6.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDienApJig6.Name = "MachNguonDienApJig6";
+            this.MachNguonDienApJig6.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig6.TabIndex = 1;
+            this.MachNguonDienApJig6.UseVisualStyleBackColor = false;
             // 
             // panel225
             // 
@@ -2161,23 +2118,23 @@
             // 
             // panel226
             // 
-            this.panel226.Controls.Add(this.dong6);
+            this.panel226.Controls.Add(this.MachNguonDongDienJig6);
             this.panel226.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel226.Location = new System.Drawing.Point(102, 3);
             this.panel226.Name = "panel226";
             this.panel226.Size = new System.Drawing.Size(93, 54);
             this.panel226.TabIndex = 1;
             // 
-            // dong6
+            // MachNguonDongDienJig6
             // 
-            this.dong6.BackColor = System.Drawing.SystemColors.Control;
-            this.dong6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dong6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dong6.Location = new System.Drawing.Point(0, 0);
-            this.dong6.Name = "dong6";
-            this.dong6.Size = new System.Drawing.Size(93, 54);
-            this.dong6.TabIndex = 1;
-            this.dong6.UseVisualStyleBackColor = false;
+            this.MachNguonDongDienJig6.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDongDienJig6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDongDienJig6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDongDienJig6.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDongDienJig6.Name = "MachNguonDongDienJig6";
+            this.MachNguonDongDienJig6.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig6.TabIndex = 1;
+            this.MachNguonDongDienJig6.UseVisualStyleBackColor = false;
             // 
             // panel227
             // 
@@ -2267,23 +2224,23 @@
             // 
             // panel231
             // 
-            this.panel231.Controls.Add(this.button42);
+            this.panel231.Controls.Add(this.MachNguonCongSuatJig5);
             this.panel231.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel231.Location = new System.Drawing.Point(102, 123);
             this.panel231.Name = "panel231";
             this.panel231.Size = new System.Drawing.Size(93, 54);
             this.panel231.TabIndex = 5;
             // 
-            // button42
+            // MachNguonCongSuatJig5
             // 
-            this.button42.BackColor = System.Drawing.SystemColors.Control;
-            this.button42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button42.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button42.Location = new System.Drawing.Point(0, 0);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(93, 54);
-            this.button42.TabIndex = 1;
-            this.button42.UseVisualStyleBackColor = false;
+            this.MachNguonCongSuatJig5.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonCongSuatJig5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonCongSuatJig5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonCongSuatJig5.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonCongSuatJig5.Name = "MachNguonCongSuatJig5";
+            this.MachNguonCongSuatJig5.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonCongSuatJig5.TabIndex = 1;
+            this.MachNguonCongSuatJig5.UseVisualStyleBackColor = false;
             // 
             // panel232
             // 
@@ -2308,23 +2265,23 @@
             // 
             // panel233
             // 
-            this.panel233.Controls.Add(this.button43);
+            this.panel233.Controls.Add(this.MachNguonDienApJig5);
             this.panel233.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel233.Location = new System.Drawing.Point(102, 63);
             this.panel233.Name = "panel233";
             this.panel233.Size = new System.Drawing.Size(93, 54);
             this.panel233.TabIndex = 3;
             // 
-            // button43
+            // MachNguonDienApJig5
             // 
-            this.button43.BackColor = System.Drawing.SystemColors.Control;
-            this.button43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button43.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button43.Location = new System.Drawing.Point(0, 0);
-            this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(93, 54);
-            this.button43.TabIndex = 1;
-            this.button43.UseVisualStyleBackColor = false;
+            this.MachNguonDienApJig5.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDienApJig5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDienApJig5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDienApJig5.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDienApJig5.Name = "MachNguonDienApJig5";
+            this.MachNguonDienApJig5.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig5.TabIndex = 1;
+            this.MachNguonDienApJig5.UseVisualStyleBackColor = false;
             // 
             // panel234
             // 
@@ -2349,23 +2306,23 @@
             // 
             // panel235
             // 
-            this.panel235.Controls.Add(this.button44);
+            this.panel235.Controls.Add(this.MachNguonDongDienJig5);
             this.panel235.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel235.Location = new System.Drawing.Point(102, 3);
             this.panel235.Name = "panel235";
             this.panel235.Size = new System.Drawing.Size(93, 54);
             this.panel235.TabIndex = 1;
             // 
-            // button44
+            // MachNguonDongDienJig5
             // 
-            this.button44.BackColor = System.Drawing.SystemColors.Control;
-            this.button44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button44.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button44.Location = new System.Drawing.Point(0, 0);
-            this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(93, 54);
-            this.button44.TabIndex = 1;
-            this.button44.UseVisualStyleBackColor = false;
+            this.MachNguonDongDienJig5.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDongDienJig5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDongDienJig5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDongDienJig5.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDongDienJig5.Name = "MachNguonDongDienJig5";
+            this.MachNguonDongDienJig5.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig5.TabIndex = 1;
+            this.MachNguonDongDienJig5.UseVisualStyleBackColor = false;
             // 
             // panel236
             // 
@@ -2455,23 +2412,23 @@
             // 
             // panel240
             // 
-            this.panel240.Controls.Add(this.button45);
+            this.panel240.Controls.Add(this.MachNguonCongSuatJig4);
             this.panel240.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel240.Location = new System.Drawing.Point(102, 123);
             this.panel240.Name = "panel240";
             this.panel240.Size = new System.Drawing.Size(93, 54);
             this.panel240.TabIndex = 5;
             // 
-            // button45
+            // MachNguonCongSuatJig4
             // 
-            this.button45.BackColor = System.Drawing.SystemColors.Control;
-            this.button45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button45.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button45.Location = new System.Drawing.Point(0, 0);
-            this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(93, 54);
-            this.button45.TabIndex = 1;
-            this.button45.UseVisualStyleBackColor = false;
+            this.MachNguonCongSuatJig4.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonCongSuatJig4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonCongSuatJig4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonCongSuatJig4.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonCongSuatJig4.Name = "MachNguonCongSuatJig4";
+            this.MachNguonCongSuatJig4.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonCongSuatJig4.TabIndex = 1;
+            this.MachNguonCongSuatJig4.UseVisualStyleBackColor = false;
             // 
             // panel241
             // 
@@ -2496,23 +2453,23 @@
             // 
             // panel242
             // 
-            this.panel242.Controls.Add(this.button46);
+            this.panel242.Controls.Add(this.MachNguonDienApJig4);
             this.panel242.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel242.Location = new System.Drawing.Point(102, 63);
             this.panel242.Name = "panel242";
             this.panel242.Size = new System.Drawing.Size(93, 54);
             this.panel242.TabIndex = 3;
             // 
-            // button46
+            // MachNguonDienApJig4
             // 
-            this.button46.BackColor = System.Drawing.SystemColors.Control;
-            this.button46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button46.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button46.Location = new System.Drawing.Point(0, 0);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(93, 54);
-            this.button46.TabIndex = 1;
-            this.button46.UseVisualStyleBackColor = false;
+            this.MachNguonDienApJig4.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDienApJig4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDienApJig4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDienApJig4.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDienApJig4.Name = "MachNguonDienApJig4";
+            this.MachNguonDienApJig4.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig4.TabIndex = 1;
+            this.MachNguonDienApJig4.UseVisualStyleBackColor = false;
             // 
             // panel243
             // 
@@ -2537,23 +2494,23 @@
             // 
             // panel244
             // 
-            this.panel244.Controls.Add(this.button47);
+            this.panel244.Controls.Add(this.MachNguonDongDienJig4);
             this.panel244.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel244.Location = new System.Drawing.Point(102, 3);
             this.panel244.Name = "panel244";
             this.panel244.Size = new System.Drawing.Size(93, 54);
             this.panel244.TabIndex = 1;
             // 
-            // button47
+            // MachNguonDongDienJig4
             // 
-            this.button47.BackColor = System.Drawing.SystemColors.Control;
-            this.button47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button47.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button47.Location = new System.Drawing.Point(0, 0);
-            this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(93, 54);
-            this.button47.TabIndex = 1;
-            this.button47.UseVisualStyleBackColor = false;
+            this.MachNguonDongDienJig4.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDongDienJig4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDongDienJig4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDongDienJig4.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDongDienJig4.Name = "MachNguonDongDienJig4";
+            this.MachNguonDongDienJig4.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig4.TabIndex = 1;
+            this.MachNguonDongDienJig4.UseVisualStyleBackColor = false;
             // 
             // panel245
             // 
@@ -2643,23 +2600,23 @@
             // 
             // panel249
             // 
-            this.panel249.Controls.Add(this.button48);
+            this.panel249.Controls.Add(this.MachNguonCongSuatJig3);
             this.panel249.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel249.Location = new System.Drawing.Point(102, 123);
             this.panel249.Name = "panel249";
             this.panel249.Size = new System.Drawing.Size(93, 54);
             this.panel249.TabIndex = 5;
             // 
-            // button48
+            // MachNguonCongSuatJig3
             // 
-            this.button48.BackColor = System.Drawing.SystemColors.Control;
-            this.button48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button48.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button48.Location = new System.Drawing.Point(0, 0);
-            this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(93, 54);
-            this.button48.TabIndex = 1;
-            this.button48.UseVisualStyleBackColor = false;
+            this.MachNguonCongSuatJig3.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonCongSuatJig3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonCongSuatJig3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonCongSuatJig3.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonCongSuatJig3.Name = "MachNguonCongSuatJig3";
+            this.MachNguonCongSuatJig3.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonCongSuatJig3.TabIndex = 1;
+            this.MachNguonCongSuatJig3.UseVisualStyleBackColor = false;
             // 
             // panel250
             // 
@@ -2684,23 +2641,23 @@
             // 
             // panel251
             // 
-            this.panel251.Controls.Add(this.button49);
+            this.panel251.Controls.Add(this.MachNguonDienApJig3);
             this.panel251.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel251.Location = new System.Drawing.Point(102, 63);
             this.panel251.Name = "panel251";
             this.panel251.Size = new System.Drawing.Size(93, 54);
             this.panel251.TabIndex = 3;
             // 
-            // button49
+            // MachNguonDienApJig3
             // 
-            this.button49.BackColor = System.Drawing.SystemColors.Control;
-            this.button49.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button49.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button49.Location = new System.Drawing.Point(0, 0);
-            this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(93, 54);
-            this.button49.TabIndex = 1;
-            this.button49.UseVisualStyleBackColor = false;
+            this.MachNguonDienApJig3.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDienApJig3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDienApJig3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDienApJig3.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDienApJig3.Name = "MachNguonDienApJig3";
+            this.MachNguonDienApJig3.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig3.TabIndex = 1;
+            this.MachNguonDienApJig3.UseVisualStyleBackColor = false;
             // 
             // panel252
             // 
@@ -2725,23 +2682,23 @@
             // 
             // panel253
             // 
-            this.panel253.Controls.Add(this.button50);
+            this.panel253.Controls.Add(this.MachNguonDongDienJig3);
             this.panel253.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel253.Location = new System.Drawing.Point(102, 3);
             this.panel253.Name = "panel253";
             this.panel253.Size = new System.Drawing.Size(93, 54);
             this.panel253.TabIndex = 1;
             // 
-            // button50
+            // MachNguonDongDienJig3
             // 
-            this.button50.BackColor = System.Drawing.SystemColors.Control;
-            this.button50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button50.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button50.Location = new System.Drawing.Point(0, 0);
-            this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(93, 54);
-            this.button50.TabIndex = 1;
-            this.button50.UseVisualStyleBackColor = false;
+            this.MachNguonDongDienJig3.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDongDienJig3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDongDienJig3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDongDienJig3.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDongDienJig3.Name = "MachNguonDongDienJig3";
+            this.MachNguonDongDienJig3.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig3.TabIndex = 1;
+            this.MachNguonDongDienJig3.UseVisualStyleBackColor = false;
             // 
             // panel254
             // 
@@ -2831,23 +2788,23 @@
             // 
             // panel258
             // 
-            this.panel258.Controls.Add(this.button51);
+            this.panel258.Controls.Add(this.MachNguonCongSuatJig2);
             this.panel258.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel258.Location = new System.Drawing.Point(102, 123);
             this.panel258.Name = "panel258";
             this.panel258.Size = new System.Drawing.Size(93, 54);
             this.panel258.TabIndex = 5;
             // 
-            // button51
+            // MachNguonCongSuatJig2
             // 
-            this.button51.BackColor = System.Drawing.SystemColors.Control;
-            this.button51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button51.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button51.Location = new System.Drawing.Point(0, 0);
-            this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(93, 54);
-            this.button51.TabIndex = 1;
-            this.button51.UseVisualStyleBackColor = false;
+            this.MachNguonCongSuatJig2.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonCongSuatJig2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonCongSuatJig2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonCongSuatJig2.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonCongSuatJig2.Name = "MachNguonCongSuatJig2";
+            this.MachNguonCongSuatJig2.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonCongSuatJig2.TabIndex = 1;
+            this.MachNguonCongSuatJig2.UseVisualStyleBackColor = false;
             // 
             // panel259
             // 
@@ -2872,23 +2829,23 @@
             // 
             // panel260
             // 
-            this.panel260.Controls.Add(this.button52);
+            this.panel260.Controls.Add(this.MachNguonDienApJig2);
             this.panel260.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel260.Location = new System.Drawing.Point(102, 63);
             this.panel260.Name = "panel260";
             this.panel260.Size = new System.Drawing.Size(93, 54);
             this.panel260.TabIndex = 3;
             // 
-            // button52
+            // MachNguonDienApJig2
             // 
-            this.button52.BackColor = System.Drawing.SystemColors.Control;
-            this.button52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button52.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button52.Location = new System.Drawing.Point(0, 0);
-            this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(93, 54);
-            this.button52.TabIndex = 1;
-            this.button52.UseVisualStyleBackColor = false;
+            this.MachNguonDienApJig2.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDienApJig2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDienApJig2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDienApJig2.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDienApJig2.Name = "MachNguonDienApJig2";
+            this.MachNguonDienApJig2.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig2.TabIndex = 1;
+            this.MachNguonDienApJig2.UseVisualStyleBackColor = false;
             // 
             // panel261
             // 
@@ -2913,23 +2870,23 @@
             // 
             // panel262
             // 
-            this.panel262.Controls.Add(this.button53);
+            this.panel262.Controls.Add(this.MachNguonDongDienJig2);
             this.panel262.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel262.Location = new System.Drawing.Point(102, 3);
             this.panel262.Name = "panel262";
             this.panel262.Size = new System.Drawing.Size(93, 54);
             this.panel262.TabIndex = 1;
             // 
-            // button53
+            // MachNguonDongDienJig2
             // 
-            this.button53.BackColor = System.Drawing.SystemColors.Control;
-            this.button53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button53.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button53.Location = new System.Drawing.Point(0, 0);
-            this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(93, 54);
-            this.button53.TabIndex = 1;
-            this.button53.UseVisualStyleBackColor = false;
+            this.MachNguonDongDienJig2.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDongDienJig2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDongDienJig2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDongDienJig2.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDongDienJig2.Name = "MachNguonDongDienJig2";
+            this.MachNguonDongDienJig2.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig2.TabIndex = 1;
+            this.MachNguonDongDienJig2.UseVisualStyleBackColor = false;
             // 
             // panel263
             // 
@@ -3019,23 +2976,23 @@
             // 
             // panel267
             // 
-            this.panel267.Controls.Add(this.button54);
+            this.panel267.Controls.Add(this.MachNguonCongSuatJig1);
             this.panel267.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel267.Location = new System.Drawing.Point(102, 123);
             this.panel267.Name = "panel267";
             this.panel267.Size = new System.Drawing.Size(93, 54);
             this.panel267.TabIndex = 5;
             // 
-            // button54
+            // MachNguonCongSuatJig1
             // 
-            this.button54.BackColor = System.Drawing.SystemColors.Control;
-            this.button54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button54.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button54.Location = new System.Drawing.Point(0, 0);
-            this.button54.Name = "button54";
-            this.button54.Size = new System.Drawing.Size(93, 54);
-            this.button54.TabIndex = 1;
-            this.button54.UseVisualStyleBackColor = false;
+            this.MachNguonCongSuatJig1.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonCongSuatJig1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonCongSuatJig1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonCongSuatJig1.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonCongSuatJig1.Name = "MachNguonCongSuatJig1";
+            this.MachNguonCongSuatJig1.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonCongSuatJig1.TabIndex = 1;
+            this.MachNguonCongSuatJig1.UseVisualStyleBackColor = false;
             // 
             // panel268
             // 
@@ -3060,23 +3017,23 @@
             // 
             // panel269
             // 
-            this.panel269.Controls.Add(this.button55);
+            this.panel269.Controls.Add(this.MachNguonDienApJig1);
             this.panel269.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel269.Location = new System.Drawing.Point(102, 63);
             this.panel269.Name = "panel269";
             this.panel269.Size = new System.Drawing.Size(93, 54);
             this.panel269.TabIndex = 3;
             // 
-            // button55
+            // MachNguonDienApJig1
             // 
-            this.button55.BackColor = System.Drawing.SystemColors.Control;
-            this.button55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button55.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button55.Location = new System.Drawing.Point(0, 0);
-            this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(93, 54);
-            this.button55.TabIndex = 1;
-            this.button55.UseVisualStyleBackColor = false;
+            this.MachNguonDienApJig1.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDienApJig1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDienApJig1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDienApJig1.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDienApJig1.Name = "MachNguonDienApJig1";
+            this.MachNguonDienApJig1.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig1.TabIndex = 1;
+            this.MachNguonDienApJig1.UseVisualStyleBackColor = false;
             // 
             // panel270
             // 
@@ -3101,23 +3058,23 @@
             // 
             // panel271
             // 
-            this.panel271.Controls.Add(this.button56);
+            this.panel271.Controls.Add(this.MachNguonDongDienJig1);
             this.panel271.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel271.Location = new System.Drawing.Point(102, 3);
             this.panel271.Name = "panel271";
             this.panel271.Size = new System.Drawing.Size(93, 54);
             this.panel271.TabIndex = 1;
             // 
-            // button56
+            // MachNguonDongDienJig1
             // 
-            this.button56.BackColor = System.Drawing.SystemColors.Control;
-            this.button56.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button56.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button56.Location = new System.Drawing.Point(0, 0);
-            this.button56.Name = "button56";
-            this.button56.Size = new System.Drawing.Size(93, 54);
-            this.button56.TabIndex = 0;
-            this.button56.UseVisualStyleBackColor = false;
+            this.MachNguonDongDienJig1.BackColor = System.Drawing.SystemColors.Control;
+            this.MachNguonDongDienJig1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachNguonDongDienJig1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachNguonDongDienJig1.Location = new System.Drawing.Point(0, 0);
+            this.MachNguonDongDienJig1.Name = "MachNguonDongDienJig1";
+            this.MachNguonDongDienJig1.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig1.TabIndex = 0;
+            this.MachNguonDongDienJig1.UseVisualStyleBackColor = false;
             // 
             // panel272
             // 
@@ -3279,25 +3236,12 @@
             // 
             // panel278
             // 
-            this.panel278.Controls.Add(this.toggleButton19);
+            this.panel278.Controls.Add(this.MachTDSCBApSuatJig10);
             this.panel278.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel278.Location = new System.Drawing.Point(103, 123);
             this.panel278.Name = "panel278";
             this.panel278.Size = new System.Drawing.Size(94, 56);
             this.panel278.TabIndex = 5;
-            // 
-            // toggleButton19
-            // 
-            this.toggleButton19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton19.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton19.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton19.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton19.Name = "toggleButton19";
-            this.toggleButton19.Size = new System.Drawing.Size(94, 56);
-            this.toggleButton19.Slider = sliderCollection1;
-            this.toggleButton19.TabIndex = 1;
-            this.toggleButton19.Text = "toggleButton19";
             // 
             // panel279
             // 
@@ -3322,25 +3266,12 @@
             // 
             // panel280
             // 
-            this.panel280.Controls.Add(this.toggleButton20);
+            this.panel280.Controls.Add(this.MachTDSVanJig10);
             this.panel280.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel280.Location = new System.Drawing.Point(103, 63);
             this.panel280.Name = "panel280";
             this.panel280.Size = new System.Drawing.Size(94, 54);
             this.panel280.TabIndex = 3;
-            // 
-            // toggleButton20
-            // 
-            this.toggleButton20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton20.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton20.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton20.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton20.Name = "toggleButton20";
-            this.toggleButton20.Size = new System.Drawing.Size(94, 54);
-            this.toggleButton20.Slider = sliderCollection2;
-            this.toggleButton20.TabIndex = 0;
-            this.toggleButton20.Text = "toggleButton20";
             // 
             // panel281
             // 
@@ -3365,23 +3296,12 @@
             // 
             // panel282
             // 
-            this.panel282.Controls.Add(this.textBox10);
+            this.panel282.Controls.Add(this.MachTDSApDCJig10);
             this.panel282.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel282.Location = new System.Drawing.Point(103, 3);
             this.panel282.Name = "panel282";
             this.panel282.Size = new System.Drawing.Size(94, 54);
             this.panel282.TabIndex = 1;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox10.Location = new System.Drawing.Point(0, 0);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(94, 54);
-            this.textBox10.TabIndex = 1;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel283
             // 
@@ -3471,25 +3391,12 @@
             // 
             // panel287
             // 
-            this.panel287.Controls.Add(this.toggleButton2);
+            this.panel287.Controls.Add(this.MachTDSCBApSuatJig9);
             this.panel287.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel287.Location = new System.Drawing.Point(102, 123);
             this.panel287.Name = "panel287";
             this.panel287.Size = new System.Drawing.Size(93, 56);
             this.panel287.TabIndex = 5;
-            // 
-            // toggleButton2
-            // 
-            this.toggleButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton2.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton2.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton2.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton2.Name = "toggleButton2";
-            this.toggleButton2.Size = new System.Drawing.Size(93, 56);
-            this.toggleButton2.Slider = sliderCollection3;
-            this.toggleButton2.TabIndex = 1;
-            this.toggleButton2.Text = "toggleButton2";
             // 
             // panel288
             // 
@@ -3514,25 +3421,12 @@
             // 
             // panel289
             // 
-            this.panel289.Controls.Add(this.toggleButton18);
+            this.panel289.Controls.Add(this.MachTDSVanJig9);
             this.panel289.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel289.Location = new System.Drawing.Point(102, 63);
             this.panel289.Name = "panel289";
             this.panel289.Size = new System.Drawing.Size(93, 54);
             this.panel289.TabIndex = 3;
-            // 
-            // toggleButton18
-            // 
-            this.toggleButton18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton18.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton18.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton18.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton18.Name = "toggleButton18";
-            this.toggleButton18.Size = new System.Drawing.Size(93, 54);
-            this.toggleButton18.Slider = sliderCollection4;
-            this.toggleButton18.TabIndex = 0;
-            this.toggleButton18.Text = "toggleButton18";
             // 
             // panel290
             // 
@@ -3557,23 +3451,12 @@
             // 
             // panel291
             // 
-            this.panel291.Controls.Add(this.textBox9);
+            this.panel291.Controls.Add(this.MachTDSApDCJig9);
             this.panel291.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel291.Location = new System.Drawing.Point(102, 3);
             this.panel291.Name = "panel291";
             this.panel291.Size = new System.Drawing.Size(93, 54);
             this.panel291.TabIndex = 1;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox9.Location = new System.Drawing.Point(0, 0);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(93, 54);
-            this.textBox9.TabIndex = 1;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel292
             // 
@@ -3663,25 +3546,12 @@
             // 
             // panel296
             // 
-            this.panel296.Controls.Add(this.toggleButton15);
+            this.panel296.Controls.Add(this.MachTDSCBApSuatJig8);
             this.panel296.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel296.Location = new System.Drawing.Point(102, 123);
             this.panel296.Name = "panel296";
             this.panel296.Size = new System.Drawing.Size(93, 56);
             this.panel296.TabIndex = 5;
-            // 
-            // toggleButton15
-            // 
-            this.toggleButton15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton15.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton15.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton15.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton15.Name = "toggleButton15";
-            this.toggleButton15.Size = new System.Drawing.Size(93, 56);
-            this.toggleButton15.Slider = sliderCollection5;
-            this.toggleButton15.TabIndex = 1;
-            this.toggleButton15.Text = "toggleButton15";
             // 
             // panel297
             // 
@@ -3706,25 +3576,12 @@
             // 
             // panel298
             // 
-            this.panel298.Controls.Add(this.toggleButton16);
+            this.panel298.Controls.Add(this.MachTDSVanJig8);
             this.panel298.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel298.Location = new System.Drawing.Point(102, 63);
             this.panel298.Name = "panel298";
             this.panel298.Size = new System.Drawing.Size(93, 54);
             this.panel298.TabIndex = 3;
-            // 
-            // toggleButton16
-            // 
-            this.toggleButton16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton16.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton16.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton16.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton16.Name = "toggleButton16";
-            this.toggleButton16.Size = new System.Drawing.Size(93, 54);
-            this.toggleButton16.Slider = sliderCollection6;
-            this.toggleButton16.TabIndex = 0;
-            this.toggleButton16.Text = "toggleButton16";
             // 
             // panel299
             // 
@@ -3749,23 +3606,12 @@
             // 
             // panel300
             // 
-            this.panel300.Controls.Add(this.textBox8);
+            this.panel300.Controls.Add(this.MachTDSApDCJig8);
             this.panel300.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel300.Location = new System.Drawing.Point(102, 3);
             this.panel300.Name = "panel300";
             this.panel300.Size = new System.Drawing.Size(93, 54);
             this.panel300.TabIndex = 1;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox8.Location = new System.Drawing.Point(0, 0);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(93, 54);
-            this.textBox8.TabIndex = 1;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel301
             // 
@@ -3855,25 +3701,12 @@
             // 
             // panel305
             // 
-            this.panel305.Controls.Add(this.toggleButton13);
+            this.panel305.Controls.Add(this.MachTDSCBApSuatJig7);
             this.panel305.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel305.Location = new System.Drawing.Point(102, 123);
             this.panel305.Name = "panel305";
             this.panel305.Size = new System.Drawing.Size(93, 56);
             this.panel305.TabIndex = 5;
-            // 
-            // toggleButton13
-            // 
-            this.toggleButton13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton13.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton13.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton13.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton13.Name = "toggleButton13";
-            this.toggleButton13.Size = new System.Drawing.Size(93, 56);
-            this.toggleButton13.Slider = sliderCollection7;
-            this.toggleButton13.TabIndex = 1;
-            this.toggleButton13.Text = "toggleButton13";
             // 
             // panel306
             // 
@@ -3898,25 +3731,12 @@
             // 
             // panel307
             // 
-            this.panel307.Controls.Add(this.toggleButton14);
+            this.panel307.Controls.Add(this.MachTDSVanJig7);
             this.panel307.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel307.Location = new System.Drawing.Point(102, 63);
             this.panel307.Name = "panel307";
             this.panel307.Size = new System.Drawing.Size(93, 54);
             this.panel307.TabIndex = 3;
-            // 
-            // toggleButton14
-            // 
-            this.toggleButton14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton14.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton14.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton14.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton14.Name = "toggleButton14";
-            this.toggleButton14.Size = new System.Drawing.Size(93, 54);
-            this.toggleButton14.Slider = sliderCollection8;
-            this.toggleButton14.TabIndex = 0;
-            this.toggleButton14.Text = "toggleButton14";
             // 
             // panel308
             // 
@@ -3941,23 +3761,12 @@
             // 
             // panel309
             // 
-            this.panel309.Controls.Add(this.textBox7);
+            this.panel309.Controls.Add(this.MachTDSApDCJig7);
             this.panel309.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel309.Location = new System.Drawing.Point(102, 3);
             this.panel309.Name = "panel309";
             this.panel309.Size = new System.Drawing.Size(93, 54);
             this.panel309.TabIndex = 1;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(0, 0);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(93, 54);
-            this.textBox7.TabIndex = 1;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel310
             // 
@@ -4047,25 +3856,12 @@
             // 
             // panel314
             // 
-            this.panel314.Controls.Add(this.toggleButton11);
+            this.panel314.Controls.Add(this.MachTDSCBApSuatJig6);
             this.panel314.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel314.Location = new System.Drawing.Point(102, 123);
             this.panel314.Name = "panel314";
             this.panel314.Size = new System.Drawing.Size(93, 56);
             this.panel314.TabIndex = 5;
-            // 
-            // toggleButton11
-            // 
-            this.toggleButton11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton11.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton11.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton11.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton11.Name = "toggleButton11";
-            this.toggleButton11.Size = new System.Drawing.Size(93, 56);
-            this.toggleButton11.Slider = sliderCollection9;
-            this.toggleButton11.TabIndex = 1;
-            this.toggleButton11.Text = "toggleButton11";
             // 
             // panel315
             // 
@@ -4090,25 +3886,12 @@
             // 
             // panel316
             // 
-            this.panel316.Controls.Add(this.toggleButton12);
+            this.panel316.Controls.Add(this.MachTDSVanJig6);
             this.panel316.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel316.Location = new System.Drawing.Point(102, 63);
             this.panel316.Name = "panel316";
             this.panel316.Size = new System.Drawing.Size(93, 54);
             this.panel316.TabIndex = 3;
-            // 
-            // toggleButton12
-            // 
-            this.toggleButton12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton12.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton12.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton12.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton12.Name = "toggleButton12";
-            this.toggleButton12.Size = new System.Drawing.Size(93, 54);
-            this.toggleButton12.Slider = sliderCollection10;
-            this.toggleButton12.TabIndex = 0;
-            this.toggleButton12.Text = "toggleButton12";
             // 
             // panel317
             // 
@@ -4133,23 +3916,12 @@
             // 
             // panel318
             // 
-            this.panel318.Controls.Add(this.textBox6);
+            this.panel318.Controls.Add(this.MachTDSApDCJig6);
             this.panel318.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel318.Location = new System.Drawing.Point(102, 3);
             this.panel318.Name = "panel318";
             this.panel318.Size = new System.Drawing.Size(93, 54);
             this.panel318.TabIndex = 1;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(0, 0);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(93, 54);
-            this.textBox6.TabIndex = 1;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel319
             // 
@@ -4239,25 +4011,12 @@
             // 
             // panel323
             // 
-            this.panel323.Controls.Add(this.toggleButton9);
+            this.panel323.Controls.Add(this.MachTDSCBApSuatJig5);
             this.panel323.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel323.Location = new System.Drawing.Point(103, 123);
             this.panel323.Name = "panel323";
             this.panel323.Size = new System.Drawing.Size(94, 55);
             this.panel323.TabIndex = 5;
-            // 
-            // toggleButton9
-            // 
-            this.toggleButton9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton9.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton9.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton9.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton9.Name = "toggleButton9";
-            this.toggleButton9.Size = new System.Drawing.Size(94, 55);
-            this.toggleButton9.Slider = sliderCollection11;
-            this.toggleButton9.TabIndex = 1;
-            this.toggleButton9.Text = "toggleButton9";
             // 
             // panel324
             // 
@@ -4282,25 +4041,12 @@
             // 
             // panel325
             // 
-            this.panel325.Controls.Add(this.toggleButton10);
+            this.panel325.Controls.Add(this.MachTDSVanJig5);
             this.panel325.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel325.Location = new System.Drawing.Point(103, 63);
             this.panel325.Name = "panel325";
             this.panel325.Size = new System.Drawing.Size(94, 54);
             this.panel325.TabIndex = 3;
-            // 
-            // toggleButton10
-            // 
-            this.toggleButton10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton10.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton10.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton10.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton10.Name = "toggleButton10";
-            this.toggleButton10.Size = new System.Drawing.Size(94, 54);
-            this.toggleButton10.Slider = sliderCollection12;
-            this.toggleButton10.TabIndex = 0;
-            this.toggleButton10.Text = "toggleButton10";
             // 
             // panel326
             // 
@@ -4325,23 +4071,12 @@
             // 
             // panel327
             // 
-            this.panel327.Controls.Add(this.textBox5);
+            this.panel327.Controls.Add(this.MachTDSApDCJig5);
             this.panel327.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel327.Location = new System.Drawing.Point(103, 3);
             this.panel327.Name = "panel327";
             this.panel327.Size = new System.Drawing.Size(94, 54);
             this.panel327.TabIndex = 1;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(0, 0);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(94, 54);
-            this.textBox5.TabIndex = 1;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel328
             // 
@@ -4431,25 +4166,12 @@
             // 
             // panel332
             // 
-            this.panel332.Controls.Add(this.toggleButton7);
+            this.panel332.Controls.Add(this.MachTDSCBApSuatJig4);
             this.panel332.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel332.Location = new System.Drawing.Point(102, 123);
             this.panel332.Name = "panel332";
             this.panel332.Size = new System.Drawing.Size(93, 55);
             this.panel332.TabIndex = 5;
-            // 
-            // toggleButton7
-            // 
-            this.toggleButton7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton7.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton7.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton7.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton7.Name = "toggleButton7";
-            this.toggleButton7.Size = new System.Drawing.Size(93, 55);
-            this.toggleButton7.Slider = sliderCollection13;
-            this.toggleButton7.TabIndex = 1;
-            this.toggleButton7.Text = "toggleButton7";
             // 
             // panel333
             // 
@@ -4474,25 +4196,12 @@
             // 
             // panel334
             // 
-            this.panel334.Controls.Add(this.toggleButton8);
+            this.panel334.Controls.Add(this.MachTDSVanJig4);
             this.panel334.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel334.Location = new System.Drawing.Point(102, 63);
             this.panel334.Name = "panel334";
             this.panel334.Size = new System.Drawing.Size(93, 54);
             this.panel334.TabIndex = 3;
-            // 
-            // toggleButton8
-            // 
-            this.toggleButton8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton8.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton8.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton8.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton8.Name = "toggleButton8";
-            this.toggleButton8.Size = new System.Drawing.Size(93, 54);
-            this.toggleButton8.Slider = sliderCollection14;
-            this.toggleButton8.TabIndex = 0;
-            this.toggleButton8.Text = "toggleButton8";
             // 
             // panel335
             // 
@@ -4517,23 +4226,12 @@
             // 
             // panel336
             // 
-            this.panel336.Controls.Add(this.textBox4);
+            this.panel336.Controls.Add(this.MachTDSApDCJig4);
             this.panel336.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel336.Location = new System.Drawing.Point(102, 3);
             this.panel336.Name = "panel336";
             this.panel336.Size = new System.Drawing.Size(93, 54);
             this.panel336.TabIndex = 1;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(0, 0);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(93, 54);
-            this.textBox4.TabIndex = 1;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel337
             // 
@@ -4623,25 +4321,12 @@
             // 
             // panel341
             // 
-            this.panel341.Controls.Add(this.toggleButton5);
+            this.panel341.Controls.Add(this.MachTDSCBApSuatJig3);
             this.panel341.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel341.Location = new System.Drawing.Point(102, 123);
             this.panel341.Name = "panel341";
             this.panel341.Size = new System.Drawing.Size(93, 55);
             this.panel341.TabIndex = 5;
-            // 
-            // toggleButton5
-            // 
-            this.toggleButton5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton5.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton5.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton5.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton5.Name = "toggleButton5";
-            this.toggleButton5.Size = new System.Drawing.Size(93, 55);
-            this.toggleButton5.Slider = sliderCollection15;
-            this.toggleButton5.TabIndex = 1;
-            this.toggleButton5.Text = "toggleButton5";
             // 
             // panel342
             // 
@@ -4666,25 +4351,12 @@
             // 
             // panel343
             // 
-            this.panel343.Controls.Add(this.toggleButton6);
+            this.panel343.Controls.Add(this.MachTDSVanJig3);
             this.panel343.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel343.Location = new System.Drawing.Point(102, 63);
             this.panel343.Name = "panel343";
             this.panel343.Size = new System.Drawing.Size(93, 54);
             this.panel343.TabIndex = 3;
-            // 
-            // toggleButton6
-            // 
-            this.toggleButton6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton6.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton6.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton6.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton6.Name = "toggleButton6";
-            this.toggleButton6.Size = new System.Drawing.Size(93, 54);
-            this.toggleButton6.Slider = sliderCollection16;
-            this.toggleButton6.TabIndex = 0;
-            this.toggleButton6.Text = "toggleButton6";
             // 
             // panel344
             // 
@@ -4709,23 +4381,12 @@
             // 
             // panel345
             // 
-            this.panel345.Controls.Add(this.textBox3);
+            this.panel345.Controls.Add(this.MachTDSApDCJig3);
             this.panel345.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel345.Location = new System.Drawing.Point(102, 3);
             this.panel345.Name = "panel345";
             this.panel345.Size = new System.Drawing.Size(93, 54);
             this.panel345.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(0, 0);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(93, 54);
-            this.textBox3.TabIndex = 1;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel346
             // 
@@ -4815,25 +4476,12 @@
             // 
             // panel350
             // 
-            this.panel350.Controls.Add(this.toggleButton3);
+            this.panel350.Controls.Add(this.MachTDSCBApSuatJig2);
             this.panel350.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel350.Location = new System.Drawing.Point(102, 123);
             this.panel350.Name = "panel350";
             this.panel350.Size = new System.Drawing.Size(93, 55);
             this.panel350.TabIndex = 5;
-            // 
-            // toggleButton3
-            // 
-            this.toggleButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton3.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton3.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton3.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton3.Name = "toggleButton3";
-            this.toggleButton3.Size = new System.Drawing.Size(93, 55);
-            this.toggleButton3.Slider = sliderCollection17;
-            this.toggleButton3.TabIndex = 1;
-            this.toggleButton3.Text = "toggleButton3";
             // 
             // panel351
             // 
@@ -4858,25 +4506,12 @@
             // 
             // panel352
             // 
-            this.panel352.Controls.Add(this.toggleButton4);
+            this.panel352.Controls.Add(this.MachTDSVanJig2);
             this.panel352.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel352.Location = new System.Drawing.Point(102, 63);
             this.panel352.Name = "panel352";
             this.panel352.Size = new System.Drawing.Size(93, 54);
             this.panel352.TabIndex = 3;
-            // 
-            // toggleButton4
-            // 
-            this.toggleButton4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton4.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton4.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton4.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton4.Name = "toggleButton4";
-            this.toggleButton4.Size = new System.Drawing.Size(93, 54);
-            this.toggleButton4.Slider = sliderCollection18;
-            this.toggleButton4.TabIndex = 0;
-            this.toggleButton4.Text = "toggleButton4";
             // 
             // panel353
             // 
@@ -4901,23 +4536,12 @@
             // 
             // panel354
             // 
-            this.panel354.Controls.Add(this.textBox2);
+            this.panel354.Controls.Add(this.MachTDSApDCJig2);
             this.panel354.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel354.Location = new System.Drawing.Point(102, 3);
             this.panel354.Name = "panel354";
             this.panel354.Size = new System.Drawing.Size(93, 54);
             this.panel354.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(0, 0);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(93, 54);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel355
             // 
@@ -5007,25 +4631,12 @@
             // 
             // panel359
             // 
-            this.panel359.Controls.Add(this.toggleButton21);
+            this.panel359.Controls.Add(this.MachTDSCBApSuatJig1);
             this.panel359.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel359.Location = new System.Drawing.Point(102, 123);
             this.panel359.Name = "panel359";
             this.panel359.Size = new System.Drawing.Size(93, 55);
             this.panel359.TabIndex = 5;
-            // 
-            // toggleButton21
-            // 
-            this.toggleButton21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton21.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton21.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton21.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton21.Name = "toggleButton21";
-            this.toggleButton21.Size = new System.Drawing.Size(93, 55);
-            this.toggleButton21.Slider = sliderCollection19;
-            this.toggleButton21.TabIndex = 1;
-            this.toggleButton21.Text = "toggleButton21";
             // 
             // panel360
             // 
@@ -5050,25 +4661,12 @@
             // 
             // panel361
             // 
-            this.panel361.Controls.Add(this.toggleButton22);
+            this.panel361.Controls.Add(this.MachTDSVanJig1);
             this.panel361.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel361.Location = new System.Drawing.Point(102, 63);
             this.panel361.Name = "panel361";
             this.panel361.Size = new System.Drawing.Size(93, 54);
             this.panel361.TabIndex = 3;
-            // 
-            // toggleButton22
-            // 
-            this.toggleButton22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toggleButton22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toggleButton22.ForeColor = System.Drawing.Color.Black;
-            this.toggleButton22.Location = new System.Drawing.Point(0, 0);
-            this.toggleButton22.MinimumSize = new System.Drawing.Size(52, 20);
-            this.toggleButton22.Name = "toggleButton22";
-            this.toggleButton22.Size = new System.Drawing.Size(93, 54);
-            this.toggleButton22.Slider = sliderCollection20;
-            this.toggleButton22.TabIndex = 0;
-            this.toggleButton22.Text = "toggleButton22";
             // 
             // panel362
             // 
@@ -5093,23 +4691,12 @@
             // 
             // panel363
             // 
-            this.panel363.Controls.Add(this.textBox1);
+            this.panel363.Controls.Add(this.MachTDSApDCJig1);
             this.panel363.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel363.Location = new System.Drawing.Point(102, 3);
             this.panel363.Name = "panel363";
             this.panel363.Size = new System.Drawing.Size(93, 54);
             this.panel363.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(93, 54);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel364
             // 
@@ -6344,7 +5931,7 @@
             this.toggleButton17.MinimumSize = new System.Drawing.Size(52, 20);
             this.toggleButton17.Name = "toggleButton17";
             this.toggleButton17.Size = new System.Drawing.Size(94, 54);
-            this.toggleButton17.Slider = sliderCollection21;
+            this.toggleButton17.Slider = sliderCollection1;
             this.toggleButton17.TabIndex = 1;
             this.toggleButton17.Text = "toggleButton17";
             // 
@@ -6356,10 +5943,6 @@
             this.panel76.Name = "panel76";
             this.panel76.Size = new System.Drawing.Size(974, 497);
             this.panel76.TabIndex = 10;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 500;
             // 
             // tableLayoutPanel12
             // 
@@ -8232,7 +7815,7 @@
             this.toggleButton1.MinimumSize = new System.Drawing.Size(52, 20);
             this.toggleButton1.Name = "toggleButton1";
             this.toggleButton1.Size = new System.Drawing.Size(94, 54);
-            this.toggleButton1.Slider = sliderCollection22;
+            this.toggleButton1.Slider = sliderCollection2;
             this.toggleButton1.TabIndex = 1;
             this.toggleButton1.Text = "toggleButton17";
             // 
@@ -8244,10 +7827,6 @@
             this.panel125.Name = "panel125";
             this.panel125.Size = new System.Drawing.Size(974, 497);
             this.panel125.TabIndex = 10;
-            // 
-            // timer2
-            // 
-            this.timer2.Interval = 500;
             // 
             // tableLayoutPanel17
             // 
@@ -9380,6 +8959,336 @@
             this.label77.Text = "Công suất : ";
             this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // MachTDSApDCJig1
+            // 
+            this.MachTDSApDCJig1.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig1.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig1.Name = "MachTDSApDCJig1";
+            this.MachTDSApDCJig1.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSApDCJig1.TabIndex = 1;
+            this.MachTDSApDCJig1.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSVanJig1
+            // 
+            this.MachTDSVanJig1.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig1.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig1.Name = "MachTDSVanJig1";
+            this.MachTDSVanJig1.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSVanJig1.TabIndex = 1;
+            this.MachTDSVanJig1.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSCBApSuatJig1
+            // 
+            this.MachTDSCBApSuatJig1.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig1.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig1.Name = "MachTDSCBApSuatJig1";
+            this.MachTDSCBApSuatJig1.Size = new System.Drawing.Size(93, 55);
+            this.MachTDSCBApSuatJig1.TabIndex = 1;
+            this.MachTDSCBApSuatJig1.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSApDCJig2
+            // 
+            this.MachTDSApDCJig2.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig2.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig2.Name = "MachTDSApDCJig2";
+            this.MachTDSApDCJig2.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSApDCJig2.TabIndex = 1;
+            this.MachTDSApDCJig2.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSVanJig2
+            // 
+            this.MachTDSVanJig2.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig2.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig2.Name = "MachTDSVanJig2";
+            this.MachTDSVanJig2.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSVanJig2.TabIndex = 1;
+            this.MachTDSVanJig2.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSCBApSuatJig2
+            // 
+            this.MachTDSCBApSuatJig2.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig2.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig2.Name = "MachTDSCBApSuatJig2";
+            this.MachTDSCBApSuatJig2.Size = new System.Drawing.Size(93, 55);
+            this.MachTDSCBApSuatJig2.TabIndex = 1;
+            this.MachTDSCBApSuatJig2.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSApDCJig3
+            // 
+            this.MachTDSApDCJig3.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig3.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig3.Name = "MachTDSApDCJig3";
+            this.MachTDSApDCJig3.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSApDCJig3.TabIndex = 1;
+            this.MachTDSApDCJig3.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSVanJig3
+            // 
+            this.MachTDSVanJig3.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig3.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig3.Name = "MachTDSVanJig3";
+            this.MachTDSVanJig3.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSVanJig3.TabIndex = 1;
+            this.MachTDSVanJig3.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSCBApSuatJig3
+            // 
+            this.MachTDSCBApSuatJig3.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig3.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig3.Name = "MachTDSCBApSuatJig3";
+            this.MachTDSCBApSuatJig3.Size = new System.Drawing.Size(93, 55);
+            this.MachTDSCBApSuatJig3.TabIndex = 1;
+            this.MachTDSCBApSuatJig3.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSApDCJig4
+            // 
+            this.MachTDSApDCJig4.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig4.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig4.Name = "MachTDSApDCJig4";
+            this.MachTDSApDCJig4.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSApDCJig4.TabIndex = 1;
+            this.MachTDSApDCJig4.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSVanJig4
+            // 
+            this.MachTDSVanJig4.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig4.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig4.Name = "MachTDSVanJig4";
+            this.MachTDSVanJig4.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSVanJig4.TabIndex = 1;
+            this.MachTDSVanJig4.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSCBApSuatJig4
+            // 
+            this.MachTDSCBApSuatJig4.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig4.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig4.Name = "MachTDSCBApSuatJig4";
+            this.MachTDSCBApSuatJig4.Size = new System.Drawing.Size(93, 55);
+            this.MachTDSCBApSuatJig4.TabIndex = 1;
+            this.MachTDSCBApSuatJig4.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSApDCJig5
+            // 
+            this.MachTDSApDCJig5.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig5.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig5.Name = "MachTDSApDCJig5";
+            this.MachTDSApDCJig5.Size = new System.Drawing.Size(94, 54);
+            this.MachTDSApDCJig5.TabIndex = 1;
+            this.MachTDSApDCJig5.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSVanJig5
+            // 
+            this.MachTDSVanJig5.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig5.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig5.Name = "MachTDSVanJig5";
+            this.MachTDSVanJig5.Size = new System.Drawing.Size(94, 54);
+            this.MachTDSVanJig5.TabIndex = 1;
+            this.MachTDSVanJig5.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSCBApSuatJig5
+            // 
+            this.MachTDSCBApSuatJig5.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig5.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig5.Name = "MachTDSCBApSuatJig5";
+            this.MachTDSCBApSuatJig5.Size = new System.Drawing.Size(94, 55);
+            this.MachTDSCBApSuatJig5.TabIndex = 1;
+            this.MachTDSCBApSuatJig5.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSApDCJig10
+            // 
+            this.MachTDSApDCJig10.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig10.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig10.Name = "MachTDSApDCJig10";
+            this.MachTDSApDCJig10.Size = new System.Drawing.Size(94, 54);
+            this.MachTDSApDCJig10.TabIndex = 1;
+            this.MachTDSApDCJig10.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSVanJig10
+            // 
+            this.MachTDSVanJig10.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig10.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig10.Name = "MachTDSVanJig10";
+            this.MachTDSVanJig10.Size = new System.Drawing.Size(94, 54);
+            this.MachTDSVanJig10.TabIndex = 1;
+            this.MachTDSVanJig10.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSCBApSuatJig10
+            // 
+            this.MachTDSCBApSuatJig10.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig10.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig10.Name = "MachTDSCBApSuatJig10";
+            this.MachTDSCBApSuatJig10.Size = new System.Drawing.Size(94, 56);
+            this.MachTDSCBApSuatJig10.TabIndex = 1;
+            this.MachTDSCBApSuatJig10.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSApDCJig9
+            // 
+            this.MachTDSApDCJig9.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig9.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig9.Name = "MachTDSApDCJig9";
+            this.MachTDSApDCJig9.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSApDCJig9.TabIndex = 1;
+            this.MachTDSApDCJig9.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSVanJig9
+            // 
+            this.MachTDSVanJig9.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig9.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig9.Name = "MachTDSVanJig9";
+            this.MachTDSVanJig9.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSVanJig9.TabIndex = 1;
+            this.MachTDSVanJig9.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSCBApSuatJig9
+            // 
+            this.MachTDSCBApSuatJig9.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig9.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig9.Name = "MachTDSCBApSuatJig9";
+            this.MachTDSCBApSuatJig9.Size = new System.Drawing.Size(93, 56);
+            this.MachTDSCBApSuatJig9.TabIndex = 1;
+            this.MachTDSCBApSuatJig9.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSApDCJig8
+            // 
+            this.MachTDSApDCJig8.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig8.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig8.Name = "MachTDSApDCJig8";
+            this.MachTDSApDCJig8.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSApDCJig8.TabIndex = 1;
+            this.MachTDSApDCJig8.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSVanJig8
+            // 
+            this.MachTDSVanJig8.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig8.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig8.Name = "MachTDSVanJig8";
+            this.MachTDSVanJig8.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSVanJig8.TabIndex = 1;
+            this.MachTDSVanJig8.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSCBApSuatJig8
+            // 
+            this.MachTDSCBApSuatJig8.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig8.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig8.Name = "MachTDSCBApSuatJig8";
+            this.MachTDSCBApSuatJig8.Size = new System.Drawing.Size(93, 56);
+            this.MachTDSCBApSuatJig8.TabIndex = 1;
+            this.MachTDSCBApSuatJig8.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSCBApSuatJig7
+            // 
+            this.MachTDSCBApSuatJig7.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig7.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig7.Name = "MachTDSCBApSuatJig7";
+            this.MachTDSCBApSuatJig7.Size = new System.Drawing.Size(93, 56);
+            this.MachTDSCBApSuatJig7.TabIndex = 1;
+            this.MachTDSCBApSuatJig7.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSVanJig7
+            // 
+            this.MachTDSVanJig7.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig7.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig7.Name = "MachTDSVanJig7";
+            this.MachTDSVanJig7.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSVanJig7.TabIndex = 1;
+            this.MachTDSVanJig7.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSApDCJig7
+            // 
+            this.MachTDSApDCJig7.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig7.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig7.Name = "MachTDSApDCJig7";
+            this.MachTDSApDCJig7.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSApDCJig7.TabIndex = 1;
+            this.MachTDSApDCJig7.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSApDCJig6
+            // 
+            this.MachTDSApDCJig6.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig6.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig6.Name = "MachTDSApDCJig6";
+            this.MachTDSApDCJig6.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSApDCJig6.TabIndex = 1;
+            this.MachTDSApDCJig6.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSVanJig6
+            // 
+            this.MachTDSVanJig6.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig6.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig6.Name = "MachTDSVanJig6";
+            this.MachTDSVanJig6.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSVanJig6.TabIndex = 1;
+            this.MachTDSVanJig6.UseVisualStyleBackColor = false;
+            // 
+            // MachTDSCBApSuatJig6
+            // 
+            this.MachTDSCBApSuatJig6.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig6.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig6.Name = "MachTDSCBApSuatJig6";
+            this.MachTDSCBApSuatJig6.Size = new System.Drawing.Size(93, 56);
+            this.MachTDSCBApSuatJig6.TabIndex = 1;
+            this.MachTDSCBApSuatJig6.UseVisualStyleBackColor = false;
+            // 
             // JigMach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -9501,130 +9410,100 @@
             this.panel277.ResumeLayout(false);
             this.tableLayoutPanel37.ResumeLayout(false);
             this.panel278.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton19)).EndInit();
             this.panel279.ResumeLayout(false);
             this.panel280.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton20)).EndInit();
             this.panel281.ResumeLayout(false);
             this.panel282.ResumeLayout(false);
-            this.panel282.PerformLayout();
             this.panel283.ResumeLayout(false);
             this.panel284.ResumeLayout(false);
             this.panel285.ResumeLayout(false);
             this.panel286.ResumeLayout(false);
             this.tableLayoutPanel38.ResumeLayout(false);
             this.panel287.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton2)).EndInit();
             this.panel288.ResumeLayout(false);
             this.panel289.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton18)).EndInit();
             this.panel290.ResumeLayout(false);
             this.panel291.ResumeLayout(false);
-            this.panel291.PerformLayout();
             this.panel292.ResumeLayout(false);
             this.panel293.ResumeLayout(false);
             this.panel294.ResumeLayout(false);
             this.panel295.ResumeLayout(false);
             this.tableLayoutPanel39.ResumeLayout(false);
             this.panel296.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton15)).EndInit();
             this.panel297.ResumeLayout(false);
             this.panel298.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton16)).EndInit();
             this.panel299.ResumeLayout(false);
             this.panel300.ResumeLayout(false);
-            this.panel300.PerformLayout();
             this.panel301.ResumeLayout(false);
             this.panel302.ResumeLayout(false);
             this.panel303.ResumeLayout(false);
             this.panel304.ResumeLayout(false);
             this.tableLayoutPanel40.ResumeLayout(false);
             this.panel305.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton13)).EndInit();
             this.panel306.ResumeLayout(false);
             this.panel307.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton14)).EndInit();
             this.panel308.ResumeLayout(false);
             this.panel309.ResumeLayout(false);
-            this.panel309.PerformLayout();
             this.panel310.ResumeLayout(false);
             this.panel311.ResumeLayout(false);
             this.panel312.ResumeLayout(false);
             this.panel313.ResumeLayout(false);
             this.tableLayoutPanel41.ResumeLayout(false);
             this.panel314.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton11)).EndInit();
             this.panel315.ResumeLayout(false);
             this.panel316.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton12)).EndInit();
             this.panel317.ResumeLayout(false);
             this.panel318.ResumeLayout(false);
-            this.panel318.PerformLayout();
             this.panel319.ResumeLayout(false);
             this.panel320.ResumeLayout(false);
             this.panel321.ResumeLayout(false);
             this.panel322.ResumeLayout(false);
             this.tableLayoutPanel42.ResumeLayout(false);
             this.panel323.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton9)).EndInit();
             this.panel324.ResumeLayout(false);
             this.panel325.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton10)).EndInit();
             this.panel326.ResumeLayout(false);
             this.panel327.ResumeLayout(false);
-            this.panel327.PerformLayout();
             this.panel328.ResumeLayout(false);
             this.panel329.ResumeLayout(false);
             this.panel330.ResumeLayout(false);
             this.panel331.ResumeLayout(false);
             this.tableLayoutPanel43.ResumeLayout(false);
             this.panel332.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton7)).EndInit();
             this.panel333.ResumeLayout(false);
             this.panel334.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton8)).EndInit();
             this.panel335.ResumeLayout(false);
             this.panel336.ResumeLayout(false);
-            this.panel336.PerformLayout();
             this.panel337.ResumeLayout(false);
             this.panel338.ResumeLayout(false);
             this.panel339.ResumeLayout(false);
             this.panel340.ResumeLayout(false);
             this.tableLayoutPanel44.ResumeLayout(false);
             this.panel341.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton5)).EndInit();
             this.panel342.ResumeLayout(false);
             this.panel343.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton6)).EndInit();
             this.panel344.ResumeLayout(false);
             this.panel345.ResumeLayout(false);
-            this.panel345.PerformLayout();
             this.panel346.ResumeLayout(false);
             this.panel347.ResumeLayout(false);
             this.panel348.ResumeLayout(false);
             this.panel349.ResumeLayout(false);
             this.tableLayoutPanel45.ResumeLayout(false);
             this.panel350.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton3)).EndInit();
             this.panel351.ResumeLayout(false);
             this.panel352.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton4)).EndInit();
             this.panel353.ResumeLayout(false);
             this.panel354.ResumeLayout(false);
-            this.panel354.PerformLayout();
             this.panel355.ResumeLayout(false);
             this.panel356.ResumeLayout(false);
             this.panel357.ResumeLayout(false);
             this.panel358.ResumeLayout(false);
             this.tableLayoutPanel46.ResumeLayout(false);
             this.panel359.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton21)).EndInit();
             this.panel360.ResumeLayout(false);
             this.panel361.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButton22)).EndInit();
             this.panel362.ResumeLayout(false);
             this.panel363.ResumeLayout(false);
-            this.panel363.PerformLayout();
             this.panel364.ResumeLayout(false);
             this.panel365.ResumeLayout(false);
             this.panel274.ResumeLayout(false);
@@ -9923,7 +9802,6 @@
         private Panel panel75;
         private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton17;
         private Panel panel76;
-        private System.Windows.Forms.Timer timer1;
         private TableLayoutPanel tableLayoutPanel12;
         private Panel panel10;
         private Panel panel11;
@@ -10095,7 +9973,6 @@
         private Panel panel124;
         private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton1;
         private Panel panel125;
-        private System.Windows.Forms.Timer timer2;
         private TableLayoutPanel tableLayoutPanel17;
         private Panel panel126;
         private Panel panel127;
@@ -10206,15 +10083,15 @@
         private Panel panel185;
         private TableLayoutPanel tableLayoutPanel26;
         private Panel panel186;
-        private Button button29;
+        private Button MachNguonCongSuatJig10;
         private Panel panel187;
         private Label label79;
         private Panel panel188;
-        private Button button30;
+        private Button MachNguonDienApJig10;
         private Panel panel189;
         private Label label80;
         private Panel panel190;
-        private Button button31;
+        private Button MachNguonDongDienJig10;
         private Panel panel191;
         private Label label81;
         private Panel panel192;
@@ -10223,15 +10100,15 @@
         private Panel panel194;
         private TableLayoutPanel tableLayoutPanel27;
         private Panel panel195;
-        private Button button32;
+        private Button MachNguonCongSuatJig9;
         private Panel panel196;
         private Label label83;
         private Panel panel197;
-        private Button button33;
+        private Button MachNguonDienApJig9;
         private Panel panel198;
         private Label label84;
         private Panel panel199;
-        private Button button34;
+        private Button MachNguonDongDienJig9;
         private Panel panel200;
         private Label label85;
         private Panel panel201;
@@ -10240,15 +10117,15 @@
         private Panel panel203;
         private TableLayoutPanel tableLayoutPanel28;
         private Panel panel204;
-        private Button button35;
+        private Button MachNguonCongSuatJig8;
         private Panel panel205;
         private Label label87;
         private Panel panel206;
-        private Button button36;
+        private Button MachNguonDienApJig8;
         private Panel panel207;
         private Label label88;
         private Panel panel208;
-        private Button button37;
+        private Button MachNguonDongDienJig8;
         private Panel panel209;
         private Label label89;
         private Panel panel210;
@@ -10257,15 +10134,15 @@
         private Panel panel212;
         private TableLayoutPanel tableLayoutPanel29;
         private Panel panel213;
-        private Button button38;
+        private Button MachNguonCongSuatJig7;
         private Panel panel214;
         private Label label91;
         private Panel panel215;
-        private Button button39;
+        private Button MachNguonDienApJig7;
         private Panel panel216;
         private Label label92;
         private Panel panel217;
-        private Button button40;
+        private Button MachNguonDongDienJig7;
         private Panel panel218;
         private Label label93;
         private Panel panel219;
@@ -10274,15 +10151,15 @@
         private Panel panel221;
         private TableLayoutPanel tableLayoutPanel30;
         private Panel panel222;
-        private Button button41;
+        private Button MachNguonCongSuatJig6;
         private Panel panel223;
         private Label label95;
         private Panel panel224;
-        private Button ap6;
+        private Button MachNguonDienApJig6;
         private Panel panel225;
         private Label label96;
         private Panel panel226;
-        private Button dong6;
+        private Button MachNguonDongDienJig6;
         private Panel panel227;
         private Label label97;
         private Panel panel228;
@@ -10291,15 +10168,15 @@
         private Panel panel230;
         private TableLayoutPanel tableLayoutPanel31;
         private Panel panel231;
-        private Button button42;
+        private Button MachNguonCongSuatJig5;
         private Panel panel232;
         private Label label99;
         private Panel panel233;
-        private Button button43;
+        private Button MachNguonDienApJig5;
         private Panel panel234;
         private Label label100;
         private Panel panel235;
-        private Button button44;
+        private Button MachNguonDongDienJig5;
         private Panel panel236;
         private Label label101;
         private Panel panel237;
@@ -10308,15 +10185,15 @@
         private Panel panel239;
         private TableLayoutPanel tableLayoutPanel32;
         private Panel panel240;
-        private Button button45;
+        private Button MachNguonCongSuatJig4;
         private Panel panel241;
         private Label label103;
         private Panel panel242;
-        private Button button46;
+        private Button MachNguonDienApJig4;
         private Panel panel243;
         private Label label104;
         private Panel panel244;
-        private Button button47;
+        private Button MachNguonDongDienJig4;
         private Panel panel245;
         private Label label105;
         private Panel panel246;
@@ -10325,15 +10202,15 @@
         private Panel panel248;
         private TableLayoutPanel tableLayoutPanel33;
         private Panel panel249;
-        private Button button48;
+        private Button MachNguonCongSuatJig3;
         private Panel panel250;
         private Label label107;
         private Panel panel251;
-        private Button button49;
+        private Button MachNguonDienApJig3;
         private Panel panel252;
         private Label label108;
         private Panel panel253;
-        private Button button50;
+        private Button MachNguonDongDienJig3;
         private Panel panel254;
         private Label label109;
         private Panel panel255;
@@ -10342,15 +10219,15 @@
         private Panel panel257;
         private TableLayoutPanel tableLayoutPanel34;
         private Panel panel258;
-        private Button button51;
+        private Button MachNguonCongSuatJig2;
         private Panel panel259;
         private Label label111;
         private Panel panel260;
-        private Button button52;
+        private Button MachNguonDienApJig2;
         private Panel panel261;
         private Label label112;
         private Panel panel262;
-        private Button button53;
+        private Button MachNguonDongDienJig2;
         private Panel panel263;
         private Label label113;
         private Panel panel264;
@@ -10359,15 +10236,15 @@
         private Panel panel266;
         private TableLayoutPanel tableLayoutPanel35;
         private Panel panel267;
-        private Button button54;
+        private Button MachNguonCongSuatJig1;
         private Panel panel268;
         private Label label115;
         private Panel panel269;
-        private Button button55;
+        private Button MachNguonDienApJig1;
         private Panel panel270;
         private Label label116;
         private Panel panel271;
-        private Button button56;
+        private Button MachNguonDongDienJig1;
         private Panel panel272;
         private Label label117;
         private Panel panel273;
@@ -10380,15 +10257,12 @@
         private Panel panel277;
         private TableLayoutPanel tableLayoutPanel37;
         private Panel panel278;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton19;
         private Panel panel279;
         private Label label120;
         private Panel panel280;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton20;
         private Panel panel281;
         private Label label121;
         private Panel panel282;
-        private TextBox textBox10;
         private Panel panel283;
         private Label label122;
         private Panel panel284;
@@ -10397,15 +10271,12 @@
         private Panel panel286;
         private TableLayoutPanel tableLayoutPanel38;
         private Panel panel287;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton2;
         private Panel panel288;
         private Label label124;
         private Panel panel289;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton18;
         private Panel panel290;
         private Label label125;
         private Panel panel291;
-        private TextBox textBox9;
         private Panel panel292;
         private Label label126;
         private Panel panel293;
@@ -10414,15 +10285,12 @@
         private Panel panel295;
         private TableLayoutPanel tableLayoutPanel39;
         private Panel panel296;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton15;
         private Panel panel297;
         private Label label128;
         private Panel panel298;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton16;
         private Panel panel299;
         private Label label129;
         private Panel panel300;
-        private TextBox textBox8;
         private Panel panel301;
         private Label label130;
         private Panel panel302;
@@ -10431,15 +10299,12 @@
         private Panel panel304;
         private TableLayoutPanel tableLayoutPanel40;
         private Panel panel305;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton13;
         private Panel panel306;
         private Label label132;
         private Panel panel307;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton14;
         private Panel panel308;
         private Label label133;
         private Panel panel309;
-        private TextBox textBox7;
         private Panel panel310;
         private Label label134;
         private Panel panel311;
@@ -10448,15 +10313,12 @@
         private Panel panel313;
         private TableLayoutPanel tableLayoutPanel41;
         private Panel panel314;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton11;
         private Panel panel315;
         private Label label136;
         private Panel panel316;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton12;
         private Panel panel317;
         private Label label137;
         private Panel panel318;
-        private TextBox textBox6;
         private Panel panel319;
         private Label label138;
         private Panel panel320;
@@ -10465,15 +10327,12 @@
         private Panel panel322;
         private TableLayoutPanel tableLayoutPanel42;
         private Panel panel323;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton9;
         private Panel panel324;
         private Label label140;
         private Panel panel325;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton10;
         private Panel panel326;
         private Label label141;
         private Panel panel327;
-        private TextBox textBox5;
         private Panel panel328;
         private Label label142;
         private Panel panel329;
@@ -10482,15 +10341,12 @@
         private Panel panel331;
         private TableLayoutPanel tableLayoutPanel43;
         private Panel panel332;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton7;
         private Panel panel333;
         private Label label144;
         private Panel panel334;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton8;
         private Panel panel335;
         private Label label145;
         private Panel panel336;
-        private TextBox textBox4;
         private Panel panel337;
         private Label label146;
         private Panel panel338;
@@ -10499,15 +10355,12 @@
         private Panel panel340;
         private TableLayoutPanel tableLayoutPanel44;
         private Panel panel341;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton5;
         private Panel panel342;
         private Label label148;
         private Panel panel343;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton6;
         private Panel panel344;
         private Label label149;
         private Panel panel345;
-        private TextBox textBox3;
         private Panel panel346;
         private Label label150;
         private Panel panel347;
@@ -10516,15 +10369,12 @@
         private Panel panel349;
         private TableLayoutPanel tableLayoutPanel45;
         private Panel panel350;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton3;
         private Panel panel351;
         private Label label152;
         private Panel panel352;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton4;
         private Panel panel353;
         private Label label153;
         private Panel panel354;
-        private TextBox textBox2;
         private Panel panel355;
         private Label label154;
         private Panel panel356;
@@ -10533,15 +10383,12 @@
         private Panel panel358;
         private TableLayoutPanel tableLayoutPanel46;
         private Panel panel359;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton21;
         private Panel panel360;
         private Label label156;
         private Panel panel361;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton22;
         private Panel panel362;
         private Label label157;
         private Panel panel363;
-        private TextBox textBox1;
         private Panel panel364;
         private Label label158;
         private Panel panel365;
@@ -10574,5 +10421,35 @@
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonPreviousPage;
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonCustomGoPage;
         private Syncfusion.Windows.Forms.Tools.IntegerTextBox inputNumPageGo;
+        private Button MachTDSCBApSuatJig10;
+        private Button MachTDSVanJig10;
+        private Button MachTDSApDCJig10;
+        private Button MachTDSCBApSuatJig9;
+        private Button MachTDSVanJig9;
+        private Button MachTDSApDCJig9;
+        private Button MachTDSCBApSuatJig8;
+        private Button MachTDSVanJig8;
+        private Button MachTDSApDCJig8;
+        private Button MachTDSCBApSuatJig7;
+        private Button MachTDSVanJig7;
+        private Button MachTDSApDCJig7;
+        private Button MachTDSCBApSuatJig6;
+        private Button MachTDSVanJig6;
+        private Button MachTDSApDCJig6;
+        private Button MachTDSCBApSuatJig5;
+        private Button MachTDSVanJig5;
+        private Button MachTDSApDCJig5;
+        private Button MachTDSCBApSuatJig4;
+        private Button MachTDSVanJig4;
+        private Button MachTDSApDCJig4;
+        private Button MachTDSCBApSuatJig3;
+        private Button MachTDSVanJig3;
+        private Button MachTDSApDCJig3;
+        private Button MachTDSCBApSuatJig2;
+        private Button MachTDSVanJig2;
+        private Button MachTDSApDCJig2;
+        private Button MachTDSCBApSuatJig1;
+        private Button MachTDSVanJig1;
+        private Button MachTDSApDCJig1;
     }
 }

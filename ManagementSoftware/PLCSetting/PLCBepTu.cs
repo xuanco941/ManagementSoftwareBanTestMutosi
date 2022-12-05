@@ -1,4 +1,6 @@
-﻿using PROFINET_STEP_7.Profinet;
+﻿using ManagementSoftware.DAL;
+using ManagementSoftware.Models;
+using PROFINET_STEP_7.Profinet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +16,8 @@ namespace ManagementSoftware.PLCSetting
 
         public static string plcName = "PLC Jig Bếp Từ";
         public static string message { get; set; } = "";
+
+        public static List<BepTu> listBepTu { get; set; } = new List<BepTu>();
 
 
         public static void Start()
@@ -66,6 +70,15 @@ namespace ManagementSoftware.PLCSetting
         }
 
 
-     
+
+        public static void SaveData()
+        {
+            if (listBepTu != null && listBepTu.Count > 0)
+            {
+                DALBepTu.Add(listBepTu);
+            }
+        }
+
+
     }
 }
