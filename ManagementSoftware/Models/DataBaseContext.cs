@@ -126,20 +126,29 @@ namespace ManagementSoftware.Models
             });
 
         }
-        public void CreateDatabase()
+        public bool CreateDatabase()
         {
-            this.Database.EnsureDeleted();
-            //init db
-            if (this.Database.EnsureCreated() == true)
+            try
             {
-                //tao quuyen cho admin
-                DALGroup.AddGroup(Common.GroupAdmin);
-                //tao tai khoan admin
-                DALUser.AddUser(Common.UserAdmin);
+                this.Database.EnsureDeleted();
+                //init db
+                if (this.Database.EnsureCreated() == true)
+                {
+                    //tao quuyen cho admin
+                    DALGroup.AddGroup(Common.GroupAdmin);
+                    //tao tai khoan admin
+                    DALUser.AddUser(Common.UserAdmin);
 
-                DALActivity.AddActivity(new Activity("Hệ thống", "Khởi tạo tài khoản admin.", Common.UserAdmin.Username));
+                    DALActivity.AddActivity(new Activity("Hệ thống", "Khởi tạo tài khoản admin.", Common.UserAdmin.Username));
 
+                }
+                return true;
             }
+            catch
+            {
+                return false;
+            }
+
             //for (int i = 0; i < 40; i++)
             //{
 

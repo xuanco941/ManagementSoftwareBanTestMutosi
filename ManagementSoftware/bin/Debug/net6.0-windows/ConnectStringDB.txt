@@ -1,0 +1,1 @@
+Data Source=DESKTOP-P4IC2M8\SQLEXPRESS;Initial Catalog=ManagementSoftwareBanTestMutosi;User ID=sa;Password=942001xX

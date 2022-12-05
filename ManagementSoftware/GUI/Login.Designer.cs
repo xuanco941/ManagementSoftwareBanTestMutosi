@@ -37,8 +37,8 @@
             this.buttonDangNhap = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonChangeStringConnect = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -178,26 +178,13 @@
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(555, 334);
+            this.pictureBox2.Location = new System.Drawing.Point(555, 336);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(87, 26);
+            this.pictureBox2.Size = new System.Drawing.Size(87, 24);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(543, 334);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(14, 21);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "|";
             // 
             // panel1
             // 
@@ -208,14 +195,30 @@
             this.panel1.Size = new System.Drawing.Size(642, 104);
             this.panel1.TabIndex = 19;
             // 
+            // buttonChangeStringConnect
+            // 
+            this.buttonChangeStringConnect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.buttonChangeStringConnect.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonChangeStringConnect.FlatAppearance.BorderSize = 0;
+            this.buttonChangeStringConnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonChangeStringConnect.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonChangeStringConnect.ForeColor = System.Drawing.Color.White;
+            this.buttonChangeStringConnect.Location = new System.Drawing.Point(0, 327);
+            this.buttonChangeStringConnect.Name = "buttonChangeStringConnect";
+            this.buttonChangeStringConnect.Size = new System.Drawing.Size(92, 33);
+            this.buttonChangeStringConnect.TabIndex = 21;
+            this.buttonChangeStringConnect.Text = "Thay chuỗi kết nối Database";
+            this.buttonChangeStringConnect.UseVisualStyleBackColor = false;
+            this.buttonChangeStringConnect.Click += new System.EventHandler(this.buttonBepTu_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(642, 361);
+            this.Controls.Add(this.buttonChangeStringConnect);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.textBoxMatKhau);
             this.Controls.Add(this.textBoxTaiKhoan);
@@ -247,7 +250,7 @@
         private LW_PhanMemBaoGia.MyControls.TextBoxT textBoxMatKhau;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label4;
         private Panel panel1;
+        private Button buttonChangeStringConnect;
     }
 }

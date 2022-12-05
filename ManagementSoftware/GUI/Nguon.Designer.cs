@@ -814,7 +814,6 @@
             this.inputNumPageGo = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
             this.gridLayout2 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
             this.gridLayout1 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPageGiamSat1.SuspendLayout();
             this.panel134.SuspendLayout();
@@ -11641,6 +11640,5 @@
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonPreviousPage;
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonCustomGoPage;
         private Syncfusion.Windows.Forms.Tools.IntegerTextBox inputNumPageGo;
-        private System.Windows.Forms.Timer timer1;
     }
 }

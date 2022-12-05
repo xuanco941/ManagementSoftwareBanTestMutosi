@@ -9,24 +9,21 @@ namespace ManagementSoftware.PLCSetting
 {
     public class PLCBepTu
     {
-        public PLC plc { get; set; }
-        public bool isConnected { get; set; }
+        public static PLC plc { get; set; }
         public static ExceptionCode errCode;
 
-        public string plcName = "PLC Jig Bếp Từ";
-        public string message { get; set; } = "";
+        public static string plcName = "PLC Jig Bếp Từ";
+        public static string message { get; set; } = "";
 
-        public PLCBepTu()
+
+        public static void Start()
         {
             string ip = "192.168.0.13";
             CPU_Type cpu = CPU_Type.S71200;
             short rack = 0;
             short slot = 1;
             plc = new PLC(cpu, ip, rack, slot);
-        }
 
-        public void Start()
-        {
             try
             {
                 if (string.IsNullOrEmpty(plc.IP))
@@ -51,12 +48,12 @@ namespace ManagementSoftware.PLCSetting
             }
             catch
             {
-                //message = "Không thể kết nối";
+                message = $"Không thể kết nối tới {plcName}";
             }
         }
 
 
-        public void Stop()
+        public static void Stop()
         {
             try
             {

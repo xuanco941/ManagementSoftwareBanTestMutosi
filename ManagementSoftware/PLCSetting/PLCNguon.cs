@@ -10,25 +10,21 @@ namespace ManagementSoftware.PLCSetting
 {
     public class PLCNguon
     {
-        public PLC plc { get; set; }
-        public bool isConnected { get; set; }
+        public static PLC plc { get; set; }
         public static ExceptionCode errCode;
 
-        public string plcName = "PLC Nguồn";
-        public string message { get; set; } = "";
+        public static string plcName = "PLC Nguồn";
+        public static string message { get; set; } = "";
+        public static List<Models.Nguon> listNguon { get; set; } = new List<Models.Nguon>();
 
-        public List<Nguon> listNguon { get; set; }
-        public PLCNguon()
+        public static void Start()
         {
             string ip = "192.168.0.17";
             CPU_Type cpu = CPU_Type.S71200;
             short rack = 0;
             short slot = 1;
             plc = new PLC(cpu, ip, rack, slot);
-        }
 
-        public void Start()
-        {
             try
             {
                 if (string.IsNullOrEmpty(plc.IP))
@@ -49,7 +45,7 @@ namespace ManagementSoftware.PLCSetting
                 }
 
                 // success
-                message = null;
+                message = "";
             }
             catch
             {
@@ -58,12 +54,12 @@ namespace ManagementSoftware.PLCSetting
         }
 
 
-        public void Stop()
+        public static void Stop()
         {
             try
             {
                 plc.Close();
-                message = null;
+                message = "";
             }
             catch (Exception ex)
             {
@@ -71,7 +67,7 @@ namespace ManagementSoftware.PLCSetting
             }
         }
 
-        public void GetData()
+        public static void GetData()
         {
             listNguon = new List<Nguon>();
             string db = "DB100.";
@@ -84,7 +80,7 @@ namespace ManagementSoftware.PLCSetting
 
             for (int i = 0; i <= 29; i++)
             {
-                Nguon nguon = new Nguon();
+                Models.Nguon nguon = new Models.Nguon();
                 nguon.DienApDC = Math.Round(PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, dienApCSAddr, 4))), 2, MidpointRounding.AwayFromZero);
                 nguon.DongDC = Math.Round(PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, dongDienCSAddr, 4))), 2, MidpointRounding.AwayFromZero);
                 nguon.CongSuat = Math.Round(PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, congSuatCSAddr, 4))), 2, MidpointRounding.AwayFromZero);

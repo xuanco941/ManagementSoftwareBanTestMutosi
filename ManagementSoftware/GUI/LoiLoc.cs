@@ -35,19 +35,26 @@ namespace ManagementSoftware.GUI
         {
             InitializeComponent();
 
-            ThreadGetDataPLC = new Thread(() =>
+            if (PLCJigLoiLoc.plc.IsConnected == true)
             {
-                aTimer = new System.Timers.Timer();
-                aTimer.Elapsed += new ElapsedEventHandler(MyTimer_Tick);
-                aTimer.Interval = 500;
-                aTimer.Start();
-            });
-            ThreadGetDataPLC.Start();
+                ThreadGetDataPLC = new Thread(() =>
+                {
+                    aTimer = new System.Timers.Timer();
+                    aTimer.Elapsed += new ElapsedEventHandler(MyTimer_Tick);
+                    aTimer.Interval = 500;
+                    aTimer.Start();
+                });
+                ThreadGetDataPLC.Start();
+            }
+
         }
         ~LoiLoc()
         {
-            aTimer.Stop();
-            aTimer.Dispose();
+            if (aTimer != null)
+            {
+                aTimer.Stop();
+                aTimer.Dispose();
+            }
             ThreadGetDataPLC.Abort();
         }
 
@@ -170,50 +177,44 @@ namespace ManagementSoftware.GUI
 
         private void MyTimer_Tick(object sender, EventArgs e)
         {
-            PLCJigLoiLoc plcMain = new PLCJigLoiLoc();
-            plcMain.Start();
+            PLCJigLoiLoc.GetData();
 
-
-            if (plcMain.plc.IsConnected == true && aTimer.Enabled == true)
+            if (PLCJigLoiLoc.loiloc.LoiLocName == TenThietBi.LoiLoc1)
             {
-                plcMain.GetData();
-
-                if (plcMain.loiloc.LoiLocName == TenThietBi.LoiLoc1)
-                {
-                    ThoiGianXa1.Text = plcMain.loiloc.ThoiGianXa.ToString();
-                    ThoiGianNen1.Text = plcMain.loiloc.ThoiGianNen.ToString();
-                    ThoiGianGiu1.Text = plcMain.loiloc.ThoiGianGiu.ToString();
-                    SoLanTestJig1.Text = plcMain.loiloc.SoLanTest.ToString();
-                    ApSuatTest1.Text = plcMain.loiloc.ApSuatTest.ToString();
-                }
-                else if (plcMain.loiloc.LoiLocName == TenThietBi.LoiLoc2)
-                {
-                    ThoiGianXa2.Text = plcMain.loiloc.ThoiGianXa.ToString();
-                    ThoiGianNen2.Text = plcMain.loiloc.ThoiGianNen.ToString();
-                    ThoiGianGiu2.Text = plcMain.loiloc.ThoiGianGiu.ToString();
-                    SoLanTestJig2.Text = plcMain.loiloc.SoLanTest.ToString();
-                    ApSuatTest2.Text = plcMain.loiloc.ApSuatTest.ToString();
-                }
-                else if (plcMain.loiloc.LoiLocName == TenThietBi.LoiLoc1va2)
-                {
-                    ThoiGianXa1va2.Text = plcMain.loiloc.ThoiGianXa.ToString();
-                    ThoiGianNen1va2.Text = plcMain.loiloc.ThoiGianNen.ToString();
-                    ThoiGianGiu1va2.Text = plcMain.loiloc.ThoiGianGiu.ToString();
-                    SoLanTestJig1va2.Text = plcMain.loiloc.SoLanTest.ToString();
-                    ApSuatTest1va2.Text = plcMain.loiloc.ApSuatTest.ToString();
-                }
-
-
+                ThoiGianXa1.Text = PLCJigLoiLoc.loiloc.ThoiGianXa.ToString();
+                ThoiGianNen1.Text = PLCJigLoiLoc.loiloc.ThoiGianNen.ToString();
+                ThoiGianGiu1.Text = PLCJigLoiLoc.loiloc.ThoiGianGiu.ToString();
+                SoLanTestJig1.Text = PLCJigLoiLoc.loiloc.SoLanTest.ToString();
+                ApSuatTest1.Text = PLCJigLoiLoc.loiloc.ApSuatTest.ToString();
+            }
+            else if (PLCJigLoiLoc.loiloc.LoiLocName == TenThietBi.LoiLoc2)
+            {
+                ThoiGianXa2.Text = PLCJigLoiLoc.loiloc.ThoiGianXa.ToString();
+                ThoiGianNen2.Text = PLCJigLoiLoc.loiloc.ThoiGianNen.ToString();
+                ThoiGianGiu2.Text = PLCJigLoiLoc.loiloc.ThoiGianGiu.ToString();
+                SoLanTestJig2.Text = PLCJigLoiLoc.loiloc.SoLanTest.ToString();
+                ApSuatTest2.Text = PLCJigLoiLoc.loiloc.ApSuatTest.ToString();
+            }
+            else if (PLCJigLoiLoc.loiloc.LoiLocName == TenThietBi.LoiLoc1va2)
+            {
+                ThoiGianXa1va2.Text = PLCJigLoiLoc.loiloc.ThoiGianXa.ToString();
+                ThoiGianNen1va2.Text = PLCJigLoiLoc.loiloc.ThoiGianNen.ToString();
+                ThoiGianGiu1va2.Text = PLCJigLoiLoc.loiloc.ThoiGianGiu.ToString();
+                SoLanTestJig1va2.Text = PLCJigLoiLoc.loiloc.SoLanTest.ToString();
+                ApSuatTest1va2.Text = PLCJigLoiLoc.loiloc.ApSuatTest.ToString();
             }
 
-            plcMain.Stop();
+
         }
 
 
         private void LoiLoc_FormClosing(object sender, FormClosingEventArgs e)
         {
-            aTimer.Stop();
-            aTimer.Dispose();
+            if (aTimer != null)
+            {
+                aTimer.Stop();
+                aTimer.Dispose();
+            }
         }
     }
 }

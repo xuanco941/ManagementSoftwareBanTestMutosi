@@ -1,4 +1,5 @@
 ﻿using ManagementSoftware.DAL;
+using ManagementSoftware.GUI;
 using ManagementSoftware.Models;
 using PROFINET_STEP_7.Profinet;
 using System;
@@ -12,26 +13,20 @@ namespace ManagementSoftware.PLCSetting
 {
     public class PLCJigLoiLoc
     {
-        public PLC plc { get; set; }
+        public static PLC plc { get; set; }
         public static ExceptionCode errCode;
+        public static string plcName = "PLC Jig Lõi Lọc";
+        public static string message { get; set; } = "";
+        public static Models.LoiLoc loiloc = new Models.LoiLoc();
 
-        public string plcName = "PLC Jig Lõi Lọc";
-        public string message { get; set; } = null;
-
-
-        public LoiLoc loiloc = new LoiLoc();
-
-        public PLCJigLoiLoc()
+        public static void Start()
         {
             string ip = "192.168.0.11";
             CPU_Type cpu = CPU_Type.S71200;
             short rack = 0;
             short slot = 1;
             plc = new PLC(cpu, ip, rack, slot);
-        }
 
-        public void Start()
-        {
             try
             {
                 if (string.IsNullOrEmpty(plc.IP))
@@ -52,7 +47,7 @@ namespace ManagementSoftware.PLCSetting
                 }
 
                 // success
-                message = null;
+                message = "";
             }
             catch
             {
@@ -61,12 +56,12 @@ namespace ManagementSoftware.PLCSetting
         }
 
 
-        public void Stop()
+        public static void Stop()
         {
             try
             {
                 plc.Close();
-                message = null;
+                message = "";
             }
             catch (Exception ex)
             {
@@ -74,8 +69,9 @@ namespace ManagementSoftware.PLCSetting
             }
         }
 
-        public void GetData()
+        public static void GetData()
         {
+            loiloc = new Models.LoiLoc();
             //time ms
             UInt32 ST_Time_Cap = (UInt32)plc.Read("DB100.DBD22");
             uint ST_Time_Giu = (uint)plc.Read("DB100.DBD26");

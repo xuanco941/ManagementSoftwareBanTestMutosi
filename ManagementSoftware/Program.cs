@@ -1,6 +1,7 @@
 ﻿using ManagementSoftware.Models;
 using ManagementSoftware.GUI;
 using ManagementSoftware.PLCSetting;
+using System.Diagnostics;
 
 namespace ManagementSoftware
 {
@@ -19,6 +20,16 @@ namespace ManagementSoftware
 
             //Syncfusion
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(Common.LicenseSyncfusion);
+
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "ConnectStringDB.txt");
+            string text = File.ReadAllText(path);
+            Common.ConnectionString = text;
+
+            if(new DataBaseContext().CreateDatabase() == false)
+            {
+                MessageBox.Show("Lỗi khởi tạo cơ sở dữ liệu, hãy thử xem lại đường dẫn kết nối của bạn.", "Lỗi kết nối",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            
 
             Application.Run(new Login());
 

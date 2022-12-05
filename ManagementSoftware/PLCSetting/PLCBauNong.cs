@@ -10,26 +10,22 @@ namespace ManagementSoftware.PLCSetting
 {
     public class PLCBauNong
     {
-        public PLC plc { get; set; }
-        public bool isConnected { get; set; }
+        public static PLC plc { get; set; }
         public static ExceptionCode errCode;
 
-        public string plcName = "PLC Jig Bầu Nóng";
-        public string message { get; set; } = "";
+        public static string plcName = "PLC Jig Bầu Nóng";
+        public static string message { get; set; } = "";
 
-        public List<BauNong> listBauNong = new List<BauNong>();
+        public static List<BauNong> listBauNong = new List<BauNong>();
 
-        public PLCBauNong()
+        public static void Start()
         {
             string ip = "192.168.0.15";
             CPU_Type cpu = CPU_Type.S71200;
             short rack = 0;
             short slot = 1;
             plc = new PLC(cpu, ip, rack, slot);
-        }
 
-        public void Start()
-        {
             try
             {
                 if (string.IsNullOrEmpty(plc.IP))
@@ -50,7 +46,7 @@ namespace ManagementSoftware.PLCSetting
                 }
 
                 // success
-                message = null;
+                message = "";
             }
             catch
             {
@@ -59,7 +55,7 @@ namespace ManagementSoftware.PLCSetting
         }
 
 
-        public void Stop()
+        public static void Stop()
         {
             try
             {
@@ -72,7 +68,7 @@ namespace ManagementSoftware.PLCSetting
             }
         }
 
-        public void GetData()
+        public static void GetData()
         {
             listBauNong = new List<BauNong>();
             string db = "DB100.";

@@ -8,20 +8,77 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ManagementSoftware.GUI.Section;
-
+using ManagementSoftware.PLCSetting;
 
 namespace ManagementSoftware.GUI
 {
     public partial class Main : Form
     {
+        public void ConnectPLC()
+        {
+            new Thread(() =>
+            {
+                PLCJigLoiLoc.Start();
+                if (PLCJigLoiLoc.plc.IsConnected == false)
+                {
+                    MessageBox.Show(PLCJigLoiLoc.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }).Start();
+
+            new Thread(() =>
+            {
+                PLCNguon.Start();
+                if (PLCNguon.plc.IsConnected == false)
+                {
+                    MessageBox.Show(PLCNguon.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }).Start();
+            new Thread(() =>
+            {
+                PLCBauNong.Start();
+                if (PLCBauNong.plc.IsConnected == false)
+                {
+                    MessageBox.Show(PLCBauNong.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }).Start();
+            new Thread(() =>
+            {
+                PLCBepTu.Start();
+                if (PLCBepTu.plc.IsConnected == false)
+                {
+                    MessageBox.Show(PLCBepTu.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }).Start();
+            new Thread(() =>
+            {
+                PLCCongTac.Start();
+                if (PLCCongTac.plc.IsConnected == false)
+                {
+                    MessageBox.Show(PLCCongTac.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }).Start();
+            new Thread(() =>
+            {
+                PLCJigMach.Start();
+                if (PLCJigMach.plc.IsConnected == false)
+                {
+                    MessageBox.Show(PLCJigMach.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }).Start();
+
+        }
         public Main()
         {
             InitializeComponent();
 
             //fullscreen
             this.WindowState = FormWindowState.Maximized;
+            
+            //connect plc
+            ConnectPLC();
 
         }
+
 
         public void Alert(string msg, FormAlert.enmType type)
         {
@@ -61,7 +118,7 @@ namespace ManagementSoftware.GUI
             form.Dock = DockStyle.Fill;
             form.Show();
             this.Font = Common.FontForm;
-            
+
         }
         private void ChangeFormContentWithHeaderName(Form form, string header)
         {
