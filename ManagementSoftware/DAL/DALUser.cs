@@ -1,5 +1,4 @@
-﻿using NinjaNye.SearchExtensions;
-using System.Text;
+﻿using System.Text;
 using ManagementSoftware.Models;
 using ManagementSoftware.ViewModels;
 
@@ -33,7 +32,7 @@ public class DALUser
     public static List<User> FindUserByFullNameOrUsername(string name)
     {
         DataBaseContext dbContext = new DataBaseContext();
-        var list = (dbContext.Users.Search(x => x.Username, x => x.FullName).Containing(name)).ToList();
+        var list = dbContext.Users.Where(x => x.Username.Contains(name) == true || x.FullName.Contains(name) == true).ToList();
         return list;
     }
 

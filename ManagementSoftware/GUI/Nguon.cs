@@ -53,6 +53,7 @@ namespace ManagementSoftware.GUI
                 });
                 ThreadGetDataPLC.Start();
             }
+            LoadFormThongKe();
 
         }
         ~Nguon()
