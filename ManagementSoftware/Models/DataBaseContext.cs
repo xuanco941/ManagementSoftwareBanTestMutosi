@@ -130,7 +130,7 @@ namespace ManagementSoftware.Models
         {
             try
             {
-                this.Database.EnsureDeleted();
+                //this.Database.EnsureDeleted();
                 //init db
                 if (this.Database.EnsureCreated() == true)
                 {
@@ -273,6 +273,32 @@ namespace ManagementSoftware.Models
             {
                 return false;
             }
+
+
+        }
+        public bool ResetDB()
+        {
+            try
+            {
+                if (this.Database.EnsureDeleted() == true && this.Database.EnsureCreated() == true)
+                {
+                    //tao quuyen cho admin
+                    DALGroup.AddGroup(Common.GroupAdmin);
+                    //tao tai khoan admin
+                    DALUser.AddUser(Common.UserAdmin);
+                    DALActivity.AddActivity(new Activity("Hệ thống", "Khởi tạo tài khoản admin.", Common.UserAdmin.Username));
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+
 
 
         }
