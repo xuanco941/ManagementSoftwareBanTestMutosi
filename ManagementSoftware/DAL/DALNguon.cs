@@ -24,7 +24,7 @@ namespace ManagementSoftware.DAL
                     i.TestNguonID = testID.TestNguonID;
                 }
             }
-            dbContext.Nguons.AddRange(list);
+            dbContext.Nguons.AddRange(list.ToList());
             dbContext.SaveChanges();
         }
     }

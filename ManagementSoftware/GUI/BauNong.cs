@@ -178,7 +178,7 @@ namespace ManagementSoftware.GUI
         private void MyTimer_Tick(object sender, EventArgs e)
         {
             PLCBauNong.GetData();
-            foreach (Models.BauNong item in PLCBauNong.listBauNong)
+            foreach (Models.BauNong item in PLCBauNong.listBauNong.ToList())
             {
                 if (item.BauNongName == TenThietBi.BauNong1)
                 {

@@ -69,6 +69,10 @@ namespace ManagementSoftware.PLCSetting
             }
         }
 
+        public static void GetData()
+        {
+
+        }
 
 
         public static void SaveData()

@@ -85,8 +85,8 @@ namespace ManagementSoftware.PLCSetting
             for (int i = 0; i <= 9; i++)
             {
                 BauNong obj = new BauNong();
-                obj.DongDienAC = PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, dongDienAC, 4)));
-                obj.NhietDo = (ushort)plc.Read(db + "DBW" + nhietDoPC);
+                obj.DongDienAC = Math.Round(PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, dongDienAC, 4))), 3, MidpointRounding.AwayFromZero);
+                obj.NhietDo = Math.Round( Convert.ToDouble( ((ushort)plc.Read(db + "DBW" + nhietDoPC)))/10,2,MidpointRounding.AwayFromZero);
                 obj.SoLanTest = (ushort)plc.Read(db + "DBW" + SoLanTest_ST_PC);
                 obj.NhietDoNgatCBNhiet = (ushort)plc.Read(db + "DBW" + nhietDoNgatCBNhiet);
                 obj.CBNhietThanBauNong = (ushort)plc.Read(db + "DBW" + cbNhiet) == 0 ? false : true;
@@ -109,7 +109,7 @@ namespace ManagementSoftware.PLCSetting
 
         public static void SaveData()
         {
-            if(listBauNong!= null && listBauNong.Count > 0)
+            if (listBauNong != null && listBauNong.Count > 0)
             {
                 DALBauNong.Add(listBauNong);
             }

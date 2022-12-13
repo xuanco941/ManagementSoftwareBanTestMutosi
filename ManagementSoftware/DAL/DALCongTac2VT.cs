@@ -24,7 +24,7 @@ namespace ManagementSoftware.DAL
                     i.TestCongTac2VTID = testID.TestCongTac2VTID;
                 }
             }
-            dbContext.CongTac2VTs.AddRange(list);
+            dbContext.CongTac2VTs.AddRange(list.ToList());
             dbContext.SaveChanges();
         }
     }

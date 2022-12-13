@@ -71,6 +71,12 @@ namespace ManagementSoftware.PLCSetting
                 message = "*Lỗi đóng máy: " + ex.Message;
             }
         }
+
+        public static void GetData()
+        {
+
+        }
+
         public static void SaveData()
         {
             if (listCT2VT != null && listCT2VT.Count>0)

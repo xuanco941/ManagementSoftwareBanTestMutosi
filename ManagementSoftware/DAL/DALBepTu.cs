@@ -24,7 +24,7 @@ namespace ManagementSoftware.DAL
                     i.TestBepTuID = testID.TestBepTuID;
                 }
             }
-            dbContext.BepTus.AddRange(list);
+            dbContext.BepTus.AddRange(list.ToList());
             dbContext.SaveChanges();
         }
     }

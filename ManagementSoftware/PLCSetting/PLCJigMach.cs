@@ -67,6 +67,10 @@ namespace ManagementSoftware.PLCSetting
                 message = "*Lỗi đóng máy: " + ex.Message;
             }
         }
+        public static void GetData()
+        {
+           
+        }
         public static void SaveData()
         {
             if ((listJigMachNguon != null && listJigMachNguon.Count > 0) && ((listJigMachTDS != null && listJigMachTDS.Count > 0)))

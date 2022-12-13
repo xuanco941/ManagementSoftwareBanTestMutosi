@@ -160,15 +160,11 @@ namespace ManagementSoftware.GUI
         private void SetTextControl(Control control, string text)
         {
 
-            if (control.InvokeRequired && control != null)
+            if (control.InvokeRequired)
             {
 
                 SetTextControlCallback d = new SetTextControlCallback(SetTextControl);
-                if (control.IsDisposed == false && this.IsDisposed == false)
-                {
-                    this.Invoke(d, new object[] { control, text });
-                }
-            }
+                this.Invoke(d, new object[] { control, text });            }
             else
             {
                 control.Text = text;
@@ -183,27 +179,73 @@ namespace ManagementSoftware.GUI
 
             if (PLCJigLoiLoc.loiloc.LoiLocName == TenThietBi.LoiLoc1)
             {
-                ThoiGianXa1.Text = PLCJigLoiLoc.loiloc.ThoiGianXa.ToString();
-                ThoiGianNen1.Text = PLCJigLoiLoc.loiloc.ThoiGianNen.ToString();
-                ThoiGianGiu1.Text = PLCJigLoiLoc.loiloc.ThoiGianGiu.ToString();
-                SoLanTestJig1.Text = PLCJigLoiLoc.loiloc.SoLanTest.ToString();
-                ApSuatTest1.Text = PLCJigLoiLoc.loiloc.ApSuatTest.ToString();
+
+                ThoiGianXa1.Invoke(new Action(() =>
+                {
+                    ThoiGianXa1.Text = PLCJigLoiLoc.loiloc.ThoiGianXa.ToString();
+                }));
+                ThoiGianNen1.Invoke(new Action(() =>
+                {
+                    ThoiGianNen1.Text = PLCJigLoiLoc.loiloc.ThoiGianNen.ToString();
+                }));
+                ThoiGianGiu1.Invoke(new Action(() =>
+                {
+                    ThoiGianGiu1.Text = PLCJigLoiLoc.loiloc.ThoiGianGiu.ToString();
+                }));
+                SoLanTestJig1.Invoke(new Action(() =>
+                {
+                    SoLanTestJig1.Text = PLCJigLoiLoc.loiloc.SoLanTest.ToString();
+                }));
+                ApSuatTest1.Invoke(new Action(() =>
+                {
+                    ApSuatTest1.Text = PLCJigLoiLoc.loiloc.ApSuatTest.ToString();
+                }));
             }
             else if (PLCJigLoiLoc.loiloc.LoiLocName == TenThietBi.LoiLoc2)
             {
-                ThoiGianXa2.Text = PLCJigLoiLoc.loiloc.ThoiGianXa.ToString();
-                ThoiGianNen2.Text = PLCJigLoiLoc.loiloc.ThoiGianNen.ToString();
-                ThoiGianGiu2.Text = PLCJigLoiLoc.loiloc.ThoiGianGiu.ToString();
-                SoLanTestJig2.Text = PLCJigLoiLoc.loiloc.SoLanTest.ToString();
-                ApSuatTest2.Text = PLCJigLoiLoc.loiloc.ApSuatTest.ToString();
+                ThoiGianXa2.Invoke(new Action(() =>
+                {
+                    ThoiGianXa2.Text = PLCJigLoiLoc.loiloc.ThoiGianXa.ToString();
+                }));
+                ThoiGianNen2.Invoke(new Action(() =>
+                {
+                    ThoiGianNen2.Text = PLCJigLoiLoc.loiloc.ThoiGianNen.ToString();
+                }));
+                ThoiGianGiu2.Invoke(new Action(() =>
+                {
+                    ThoiGianGiu2.Text = PLCJigLoiLoc.loiloc.ThoiGianGiu.ToString();
+                }));
+                SoLanTestJig2.Invoke(new Action(() =>
+                {
+                    SoLanTestJig2.Text = PLCJigLoiLoc.loiloc.SoLanTest.ToString();
+                }));
+                ApSuatTest2.Invoke(new Action(() =>
+                {
+                    ApSuatTest2.Text = PLCJigLoiLoc.loiloc.ApSuatTest.ToString();
+                }));
             }
             else if (PLCJigLoiLoc.loiloc.LoiLocName == TenThietBi.LoiLoc1va2)
             {
-                ThoiGianXa1va2.Text = PLCJigLoiLoc.loiloc.ThoiGianXa.ToString();
-                ThoiGianNen1va2.Text = PLCJigLoiLoc.loiloc.ThoiGianNen.ToString();
-                ThoiGianGiu1va2.Text = PLCJigLoiLoc.loiloc.ThoiGianGiu.ToString();
-                SoLanTestJig1va2.Text = PLCJigLoiLoc.loiloc.SoLanTest.ToString();
-                ApSuatTest1va2.Text = PLCJigLoiLoc.loiloc.ApSuatTest.ToString();
+                ThoiGianXa1va2.Invoke(new Action(() =>
+                {
+                    ThoiGianXa1va2.Text = PLCJigLoiLoc.loiloc.ThoiGianXa.ToString();
+                }));
+                ThoiGianNen1va2.Invoke(new Action(() =>
+                {
+                    ThoiGianNen1va2.Text = PLCJigLoiLoc.loiloc.ThoiGianNen.ToString();
+                }));
+                ThoiGianGiu1va2.Invoke(new Action(() =>
+                {
+                    ThoiGianGiu1va2.Text = PLCJigLoiLoc.loiloc.ThoiGianGiu.ToString();
+                }));
+                SoLanTestJig1va2.Invoke(new Action(() =>
+                {
+                    SoLanTestJig1va2.Text = PLCJigLoiLoc.loiloc.SoLanTest.ToString();
+                }));
+                ApSuatTest1va2.Invoke(new Action(() =>
+                {
+                    ApSuatTest1va2.Text = PLCJigLoiLoc.loiloc.ApSuatTest.ToString();
+                }));
             }
 
 

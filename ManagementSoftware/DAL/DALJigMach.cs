@@ -25,8 +25,8 @@ namespace ManagementSoftware.DAL
             {
                 i.TestJigMachID = testID.TestJigMachID;
             }
-            dbContext.JigMachNguons.AddRange(listMachNguon);
-            dbContext.JigMachTDSs.AddRange(listMachTDS);
+            dbContext.JigMachNguons.AddRange(listMachNguon.ToList());
+            dbContext.JigMachTDSs.AddRange(listMachTDS.ToList());
 
             dbContext.SaveChanges();
         }

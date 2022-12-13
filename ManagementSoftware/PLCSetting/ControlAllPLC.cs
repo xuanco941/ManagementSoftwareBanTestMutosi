@@ -11,28 +11,34 @@ namespace ManagementSoftware.PLCSetting
     {
         private void LoiLoc_Tick(object sender, EventArgs e)
         {
+            PLCJigLoiLoc.GetData();
             PLCJigLoiLoc.SaveData();
 
         }
         private void Nguon_Tick(object sender, EventArgs e)
         {
+            PLCNguon.GetData();
             PLCNguon.SaveData();
 
         }
         private void BauNong_Tick(object sender, EventArgs e)
         {
+            PLCBauNong.GetData();
             PLCBauNong.SaveData();
         }
         private void JigMach_Tick(object sender, EventArgs e)
         {
+            PLCJigMach.GetData();
             PLCJigMach.SaveData();
         }
         private void CongTac_Tick(object sender, EventArgs e)
         {
+            PLCCongTac.GetData();
             PLCCongTac.SaveData();
         }
         private void BepTu_Tick(object sender, EventArgs e)
         {
+            PLCBepTu.GetData();
             PLCBepTu.SaveData();
         }
         public void ConnectAndRun()
@@ -49,7 +55,7 @@ namespace ManagementSoftware.PLCSetting
                 {
                     System.Timers.Timer aTimer = new System.Timers.Timer();
                     aTimer.Elapsed += new ElapsedEventHandler(LoiLoc_Tick);
-                    aTimer.Interval = 500;
+                    aTimer.Interval = 5000;
                     aTimer.Start();
                 }
             }).Start();
@@ -65,7 +71,7 @@ namespace ManagementSoftware.PLCSetting
                 {
                     System.Timers.Timer aTimer = new System.Timers.Timer();
                     aTimer.Elapsed += new ElapsedEventHandler(Nguon_Tick);
-                    aTimer.Interval = 500;
+                    aTimer.Interval = 5000;
                     aTimer.Start();
                 }
             }).Start();
@@ -80,7 +86,7 @@ namespace ManagementSoftware.PLCSetting
                 {
                     System.Timers.Timer aTimer = new System.Timers.Timer();
                     aTimer.Elapsed += new ElapsedEventHandler(BauNong_Tick);
-                    aTimer.Interval = 500;
+                    aTimer.Interval = 5000;
                     aTimer.Start();
                 }
             }).Start();
@@ -95,7 +101,7 @@ namespace ManagementSoftware.PLCSetting
                 {
                     System.Timers.Timer aTimer = new System.Timers.Timer();
                     aTimer.Elapsed += new ElapsedEventHandler(BepTu_Tick);
-                    aTimer.Interval = 500;
+                    aTimer.Interval = 5000;
                     aTimer.Start();
                 }
             }).Start();
@@ -110,7 +116,7 @@ namespace ManagementSoftware.PLCSetting
                 {
                     System.Timers.Timer aTimer = new System.Timers.Timer();
                     aTimer.Elapsed += new ElapsedEventHandler(CongTac_Tick);
-                    aTimer.Interval = 500;
+                    aTimer.Interval = 5000;
                     aTimer.Start();
                 }
             }).Start();
@@ -125,7 +131,7 @@ namespace ManagementSoftware.PLCSetting
                 {
                     System.Timers.Timer aTimer = new System.Timers.Timer();
                     aTimer.Elapsed += new ElapsedEventHandler(JigMach_Tick);
-                    aTimer.Interval = 500;
+                    aTimer.Interval = 5000;
                     aTimer.Start();
                 }
             }).Start();
