@@ -83,7 +83,6 @@ namespace ManagementSoftware.GUI.NguonManagement
         {
             if (PLCNguon.plc.IsConnected == true)
             {
-                PLCNguon.GetDataTu1Den15();
                 foreach (Models.Nguon e in PLCNguon.listNguonTu1Den15.ToList())
                 {
                     if (e.NguonName == TenThietBi.Nguon1)
