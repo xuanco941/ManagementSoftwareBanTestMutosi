@@ -9,7 +9,7 @@ namespace ManagementSoftware.DAL.DALPagination
 {
     public class PaginationNguon
     {
-        public static int NumberRows { get; set; } = 2;
+        public static int NumberRows { get; set; } = 1;
         public int PageCurrent { get; set; } = 1;
         public int TotalPages { get; set; } = 1;
         public int TotalResults { get; set; } = 0;

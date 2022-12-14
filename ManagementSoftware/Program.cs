@@ -2,6 +2,7 @@
 using ManagementSoftware.GUI;
 using ManagementSoftware.PLCSetting;
 using System.Diagnostics;
+using ManagementSoftware.GUI.NguonManagement;
 
 namespace ManagementSoftware
 {
@@ -35,7 +36,7 @@ namespace ManagementSoftware
 
             if (Common.USERSESSION != null)
             {
-                new ControlAllPLC().ConnectAndRun();
+                ControlAllPLC.ConnectAndRunAll();
                 Application.Run(new Main());
             }
         }

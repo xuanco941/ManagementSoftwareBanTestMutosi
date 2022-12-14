@@ -9,33 +9,44 @@ namespace ManagementSoftware.PLCSetting
 {
     public class ControlAllPLC
     {
-        private void LoiLoc_Tick(object sender, EventArgs e)
+        private static void LoiLoc_Tick(object sender, EventArgs e)
         {
             PLCJigLoiLoc.SaveData();
 
         }
-        private void Nguon_Tick(object sender, EventArgs e)
+        private static void Nguon_Tick(object sender, EventArgs e)
         {
             PLCNguon.SaveData();
 
         }
-        private void BauNong_Tick(object sender, EventArgs e)
+        private static void BauNong_Tick(object sender, EventArgs e)
         {
             PLCBauNong.SaveData();
         }
-        private void JigMach_Tick(object sender, EventArgs e)
+        private static void JigMach_Tick(object sender, EventArgs e)
         {
             PLCJigMach.SaveData();
         }
-        private void CongTac_Tick(object sender, EventArgs e)
+        private static void CongTac_Tick(object sender, EventArgs e)
         {
             PLCCongTac.SaveData();
         }
-        private void BepTu_Tick(object sender, EventArgs e)
+        private static void BepTu_Tick(object sender, EventArgs e)
         {
             PLCBepTu.SaveData();
         }
-        public void ConnectAndRun()
+
+
+
+        public static System.Timers.Timer aTimerLoiLoc;
+        public static System.Timers.Timer aTimerNguon;
+        public static System.Timers.Timer aTimerBauNong;
+        public static System.Timers.Timer aTimerJigMach;
+        public static System.Timers.Timer aTimerBepTu;
+        public static System.Timers.Timer aTimerCongTac;
+
+
+        public static void RunLoiLoc()
         {
             new Thread(() =>
             {
@@ -47,13 +58,25 @@ namespace ManagementSoftware.PLCSetting
                 }
                 else
                 {
-                    System.Timers.Timer aTimer = new System.Timers.Timer();
-                    aTimer.Elapsed += new ElapsedEventHandler(LoiLoc_Tick);
-                    aTimer.Interval = 10000;
-                    aTimer.Start();
+                    aTimerLoiLoc = new System.Timers.Timer();
+                    aTimerLoiLoc.Elapsed += new ElapsedEventHandler(LoiLoc_Tick);
+                    aTimerLoiLoc.Interval = 15000;
+                    aTimerLoiLoc.Start();
                 }
             }).Start();
+        }
+        public static void StopLoiLoc()
+        {
+            if (aTimerLoiLoc != null && aTimerLoiLoc.Enabled)
+            {
+                aTimerLoiLoc.Stop();
+                aTimerLoiLoc.Dispose();
+            }
+        }
 
+
+        public static void RunNguon()
+        {
             new Thread(() =>
             {
                 PLCNguon.Start();
@@ -63,12 +86,24 @@ namespace ManagementSoftware.PLCSetting
                 }
                 else
                 {
-                    System.Timers.Timer aTimer = new System.Timers.Timer();
-                    aTimer.Elapsed += new ElapsedEventHandler(Nguon_Tick);
-                    aTimer.Interval = 10000;
-                    aTimer.Start();
+                    aTimerNguon = new System.Timers.Timer();
+                    aTimerNguon.Elapsed += new ElapsedEventHandler(Nguon_Tick);
+                    aTimerNguon.Interval = 15000;
+                    aTimerNguon.Start();
                 }
             }).Start();
+        }
+        public static void StopNguon()
+        {
+            if (aTimerNguon != null && aTimerNguon.Enabled)
+            {
+                aTimerNguon.Stop();
+                aTimerNguon.Dispose();
+            }
+        }
+
+        public static void RunBauNong()
+        {
             new Thread(() =>
             {
                 PLCBauNong.Start();
@@ -78,12 +113,25 @@ namespace ManagementSoftware.PLCSetting
                 }
                 else
                 {
-                    System.Timers.Timer aTimer = new System.Timers.Timer();
-                    aTimer.Elapsed += new ElapsedEventHandler(BauNong_Tick);
-                    aTimer.Interval = 10000;
-                    aTimer.Start();
+                    aTimerBauNong = new System.Timers.Timer();
+                    aTimerBauNong.Elapsed += new ElapsedEventHandler(BauNong_Tick);
+                    aTimerBauNong.Interval = 15000;
+                    aTimerBauNong.Start();
                 }
             }).Start();
+        }
+        public static void StopBauNong()
+        {
+            if (aTimerBauNong != null && aTimerBauNong.Enabled)
+            {
+                aTimerBauNong.Stop();
+                aTimerBauNong.Dispose();
+            }
+        }
+
+
+        public static void RunBepTu()
+        {
             new Thread(() =>
             {
                 PLCBepTu.Start();
@@ -93,27 +141,27 @@ namespace ManagementSoftware.PLCSetting
                 }
                 else
                 {
-                    System.Timers.Timer aTimer = new System.Timers.Timer();
-                    aTimer.Elapsed += new ElapsedEventHandler(BepTu_Tick);
-                    aTimer.Interval = 10000;
-                    aTimer.Start();
+                    aTimerBepTu = new System.Timers.Timer();
+                    aTimerBepTu.Elapsed += new ElapsedEventHandler(BepTu_Tick);
+                    aTimerBepTu.Interval = 15000;
+                    aTimerBepTu.Start();
                 }
             }).Start();
-            new Thread(() =>
+        }
+
+        public static void StopBepTu()
+        {
+            if (aTimerBepTu != null && aTimerBepTu.Enabled)
             {
-                PLCCongTac.Start();
-                if (PLCCongTac.plc.IsConnected == false)
-                {
-                    MessageBox.Show(PLCCongTac.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                {
-                    System.Timers.Timer aTimer = new System.Timers.Timer();
-                    aTimer.Elapsed += new ElapsedEventHandler(CongTac_Tick);
-                    aTimer.Interval = 10000;
-                    aTimer.Start();
-                }
-            }).Start();
+                aTimerBepTu.Stop();
+                aTimerBepTu.Dispose();
+            }
+        }
+
+
+
+        public static void RunJigMach()
+        {
             new Thread(() =>
             {
                 PLCJigMach.Start();
@@ -123,13 +171,59 @@ namespace ManagementSoftware.PLCSetting
                 }
                 else
                 {
-                    System.Timers.Timer aTimer = new System.Timers.Timer();
-                    aTimer.Elapsed += new ElapsedEventHandler(JigMach_Tick);
-                    aTimer.Interval = 10000;
-                    aTimer.Start();
+                    aTimerJigMach = new System.Timers.Timer();
+                    aTimerJigMach.Elapsed += new ElapsedEventHandler(JigMach_Tick);
+                    aTimerJigMach.Interval = 15000;
+                    aTimerJigMach.Start();
                 }
             }).Start();
+        }
+        public static void StopJigMach()
+        {
+            if (aTimerJigMach != null && aTimerJigMach.Enabled)
+            {
+                aTimerJigMach.Stop();
+                aTimerJigMach.Dispose();
+            }
+        }
 
+
+        public static void RunCongTac()
+        {
+            new Thread(() =>
+            {
+                PLCCongTac.Start();
+                if (PLCCongTac.plc.IsConnected == false)
+                {
+                    MessageBox.Show(PLCCongTac.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    aTimerCongTac = new System.Timers.Timer();
+                    aTimerCongTac.Elapsed += new ElapsedEventHandler(CongTac_Tick);
+                    aTimerCongTac.Interval = 15000;
+                    aTimerCongTac.Start();
+                }
+            }).Start();
+        }
+
+        public static void StopCongTac()
+        {
+            if (aTimerCongTac != null && aTimerCongTac.Enabled)
+            {
+                aTimerCongTac.Stop();
+                aTimerCongTac.Dispose();
+            }
+        }
+
+        public static void ConnectAndRunAll()
+        {
+            RunBauNong();
+            RunBepTu();
+            RunJigMach();
+            RunLoiLoc();
+            RunNguon();
+            RunCongTac();
         }
     }
 }

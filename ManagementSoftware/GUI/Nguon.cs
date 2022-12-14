@@ -47,9 +47,6 @@ namespace ManagementSoftware.GUI
             form.FormBorderStyle = FormBorderStyle.None;
             form.Dock = DockStyle.Fill;
             form.Show();
-
-            LoadFormThongKe();
-
         }
 
 
@@ -156,18 +153,12 @@ namespace ManagementSoftware.GUI
                 form.FormBorderStyle = FormBorderStyle.None;
                 form.Dock = DockStyle.Fill;
                 form.Show();
-                foreach (Form f in tabPageGiamSat2.Controls)
+                foreach (NguonTu16Den30 f in tabPageGiamSat2.Controls)
                 {
+                    f.CloseForm();
                     f.Dispose();
                     f.Close();
                 }
-                tabPageGiamSat2.Controls.Clear();
-                foreach (Form item in panelThongKe.Controls)
-                {
-                    item.Close();
-                    item.Dispose();
-                }
-                panelThongKe.Controls.Clear();
 
             }
             else if (tabControl1.SelectedTab == tabPageGiamSat2)
@@ -178,34 +169,29 @@ namespace ManagementSoftware.GUI
                 form.FormBorderStyle = FormBorderStyle.None;
                 form.Dock = DockStyle.Fill;
                 form.Show();
-                foreach (Form f in tabPageGiamSat1.Controls)
+                foreach (NguonTu1Den15 f in tabPageGiamSat1.Controls)
                 {
+                    f.CloseForm();
                     f.Dispose();
                     f.Close();
                 }
-                tabPageGiamSat1.Controls.Clear();
-                foreach (Form item in panelThongKe.Controls)
-                {
-                    item.Close();
-                    item.Dispose();
-                }
-                panelThongKe.Controls.Clear();
+
             }
-            else if (tabControl1.SelectedTab != tabPageThongKe)
+            else if (tabControl1.SelectedTab == tabPageThongKe)
             {
                 LoadFormThongKe();
-                foreach (Form f in tabPageGiamSat1.Controls)
+                foreach (NguonTu1Den15 f in tabPageGiamSat1.Controls)
                 {
+                    f.CloseForm();
                     f.Dispose();
                     f.Close();
                 }
-                tabPageGiamSat1.Controls.Clear();
-                foreach (Form f in tabPageGiamSat2.Controls)
+                foreach (NguonTu16Den30 f in tabPageGiamSat2.Controls)
                 {
+                    f.CloseForm();
                     f.Dispose();
                     f.Close();
                 }
-                tabPageGiamSat2.Controls.Clear();
 
             }
         }

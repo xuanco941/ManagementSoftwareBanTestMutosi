@@ -75,18 +75,25 @@ namespace ManagementSoftware.PLCSetting
             for (int i = 0; i <= 14; i++)
             {
                 Models.Nguon nguon = new Models.Nguon();
+                try
+                {
+                    object? dienApDCVar = plc.Read(db + "DBD" + dienApCSAddr);
+                    object? DongDCVar = plc.Read(db + "DBD" + dongDienCSAddr);
+                    object? congSuatVar = plc.Read(db + "DBD" + congSuatCSAddr);
+                    object? thoiGianTestVar = plc.Read(db + "DBD" + timeAddr);
+                    object? soLanTestVar = plc.Read(db + "DBW" + soLanTestAddr);
 
-                object? dienApDCVar = plc.Read(db + "DBD" + dienApCSAddr);
-                object? DongDCVar = plc.Read(db + "DBD" + dongDienCSAddr);
-                object? congSuatVar = plc.Read(db + "DBD" + congSuatCSAddr);
-                object? thoiGianTestVar = plc.Read(db + "DBD" + timeAddr);
-                object? soLanTestVar = plc.Read(db + "DBW" + soLanTestAddr);
-
-                nguon.DienApDC = dienApDCVar != null ? Conversion.ConvertToFloat((uint)dienApDCVar).ToString() : "N/A";
-                nguon.DongDC = DongDCVar != null ? Conversion.ConvertToFloat((uint)DongDCVar).ToString() : "N/A";
-                nguon.CongSuat = congSuatVar != null ? Conversion.ConvertToFloat((uint)congSuatVar).ToString() : "N/A";
-                nguon.ThoiGianTest = thoiGianTestVar != null ? ((uint)thoiGianTestVar).ToString() : "N/A";
-                nguon.SoLanTest = soLanTestVar != null ? ((ushort)soLanTestVar).ToString() : "N/A";
+                    nguon.DienApDC = dienApDCVar != null ? Math.Round(Conversion.ConvertToFloat((uint)dienApDCVar), 3, MidpointRounding.AwayFromZero).ToString() : "N/A";
+                    nguon.DongDC = DongDCVar != null ? Math.Round(Conversion.ConvertToFloat((uint)DongDCVar), 3, MidpointRounding.AwayFromZero).ToString() : "N/A";
+                    nguon.CongSuat = congSuatVar != null ? Math.Round(Conversion.ConvertToFloat((uint)congSuatVar), 3, MidpointRounding.AwayFromZero).ToString() : "N/A";
+                    nguon.ThoiGianTest = thoiGianTestVar != null ? ((uint)thoiGianTestVar).ToString() : "N/A";
+                    nguon.SoLanTest = soLanTestVar != null ? ((ushort)soLanTestVar).ToString() : "N/A";
+                }
+                catch
+                {
+                    Stop();
+                }
+                
 
 
                 //bool c = (bool)plc.Read("DB100.DBX544.1");
@@ -109,24 +116,31 @@ namespace ManagementSoftware.PLCSetting
             int dongDienCSAddr = 180;
             int congSuatCSAddr = 300;
             int timeAddr = 420;
-            int soLanTestAddr = 540;
+            int soLanTestAddr = 510;
 
 
             for (int i = 15; i <= 29; i++)
             {
                 Models.Nguon nguon = new Models.Nguon();
+                try
+                {
+                    object? dienApDCVar = plc.Read(db + "DBD" + dienApCSAddr);
+                    object? DongDCVar = plc.Read(db + "DBD" + dongDienCSAddr);
+                    object? congSuatVar = plc.Read(db + "DBD" + congSuatCSAddr);
+                    object? thoiGianTestVar = plc.Read(db + "DBD" + timeAddr);
+                    object? soLanTestVar = plc.Read(db + "DBW" + soLanTestAddr);
 
-                object? dienApDCVar = plc.Read(db + "DBD" + dienApCSAddr);
-                object? DongDCVar = plc.Read(db + "DBD" + dongDienCSAddr);
-                object? congSuatVar = plc.Read(db + "DBD" + congSuatCSAddr);
-                object? thoiGianTestVar = plc.Read(db + "DBD" + timeAddr);
-                object? soLanTestVar = plc.Read(db + "DBW" + soLanTestAddr);
+                    nguon.DienApDC = dienApDCVar != null ? Math.Round(Conversion.ConvertToFloat((uint)dienApDCVar), 3, MidpointRounding.AwayFromZero).ToString() : "N/A";
+                    nguon.DongDC = DongDCVar != null ? Math.Round(Conversion.ConvertToFloat((uint)DongDCVar), 3, MidpointRounding.AwayFromZero).ToString() : "N/A";
+                    nguon.CongSuat = congSuatVar != null ? Math.Round(Conversion.ConvertToFloat((uint)congSuatVar), 3, MidpointRounding.AwayFromZero).ToString() : "N/A";
+                    nguon.ThoiGianTest = thoiGianTestVar != null ? ((uint)thoiGianTestVar).ToString() : "N/A";
+                    nguon.SoLanTest = soLanTestVar != null ? ((ushort)soLanTestVar).ToString() : "N/A";
+                }
+                catch
+                {
+                    Stop();
+                }
 
-                nguon.DienApDC = dienApDCVar != null ? Conversion.ConvertToFloat((uint)dienApDCVar).ToString() : "N/A";
-                nguon.DongDC = DongDCVar != null ? Conversion.ConvertToFloat((uint)DongDCVar).ToString() : "N/A";
-                nguon.CongSuat = congSuatVar != null ? Conversion.ConvertToFloat((uint)congSuatVar).ToString() : "N/A";
-                nguon.ThoiGianTest = thoiGianTestVar != null ? ((uint)thoiGianTestVar).ToString() : "N/A";
-                nguon.SoLanTest = soLanTestVar != null ? ((ushort)soLanTestVar).ToString() : "N/A";
 
 
                 //bool c = (bool)plc.Read("DB100.DBX544.1");
@@ -141,6 +155,12 @@ namespace ManagementSoftware.PLCSetting
                 listNguonTu16Den30.Add(nguon);
             }
         }
+
+
+
+
+
+
         public static void SaveData()
         {
             List<Nguon> listNguonSave = new List<Models.Nguon>();
@@ -156,20 +176,27 @@ namespace ManagementSoftware.PLCSetting
             {
                 Models.Nguon nguon = new Models.Nguon();
 
+                try
+                {
+                    object? dienApDCVar = plc.Read(db + "DBD" + dienApCSAddr);
+                    object? DongDCVar = plc.Read(db + "DBD" + dongDienCSAddr);
+                    object? congSuatVar = plc.Read(db + "DBD" + congSuatCSAddr);
+                    object? thoiGianTestVar = plc.Read(db + "DBD" + timeAddr);
+                    object? soLanTestVar = plc.Read(db + "DBW" + soLanTestAddr);
 
-                object? dienApDCVar = plc.Read(db + "DBD" + dienApCSAddr);
-                object? DongDCVar = plc.Read(db + "DBD" + dongDienCSAddr);
-                object? congSuatVar = plc.Read(db + "DBD" + congSuatCSAddr);
-                object? thoiGianTestVar = plc.Read(db + "DBD" + timeAddr);
-                object? soLanTestVar = plc.Read(db + "DBW" + soLanTestAddr);
+                    nguon.DienApDC = dienApDCVar != null ? Math.Round(Conversion.ConvertToFloat((uint)dienApDCVar), 3, MidpointRounding.AwayFromZero).ToString() : "N/A";
+                    nguon.DongDC = DongDCVar != null ? Math.Round(Conversion.ConvertToFloat((uint)DongDCVar), 3, MidpointRounding.AwayFromZero).ToString() : "N/A";
+                    nguon.CongSuat = congSuatVar != null ? Math.Round(Conversion.ConvertToFloat((uint)congSuatVar), 3, MidpointRounding.AwayFromZero).ToString() : "N/A";
+                    nguon.ThoiGianTest = thoiGianTestVar != null ? ((uint)thoiGianTestVar).ToString() : "N/A";
+                    nguon.SoLanTest = soLanTestVar != null ? ((ushort)soLanTestVar).ToString() : "N/A";
+                    //bool c = (bool)plc.Read("DB100.DBX544.1");
+                }
+                catch
+                {
+                    ControlAllPLC.StopNguon();
+                    Stop();
+                }
 
-                nguon.DienApDC = dienApDCVar != null ? Conversion.ConvertToFloat((uint)dienApDCVar).ToString() : "N/A";
-                nguon.DongDC = DongDCVar != null ? Conversion.ConvertToFloat((uint)DongDCVar).ToString() : "N/A";
-                nguon.CongSuat = congSuatVar != null ? Conversion.ConvertToFloat((uint)congSuatVar).ToString() : "N/A";
-                nguon.ThoiGianTest = thoiGianTestVar != null ? ((uint)thoiGianTestVar).ToString() : "N/A";
-                nguon.SoLanTest = soLanTestVar != null ? ((ushort)soLanTestVar).ToString() : "N/A";
-
-                //bool c = (bool)plc.Read("DB100.DBX544.1");
 
                 nguon.NguonName = "Nguồn " + (i + 1);
                 dienApCSAddr += 4;

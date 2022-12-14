@@ -19,8 +19,12 @@ namespace ManagementSoftware.GUI.Section.ThongKe
             InitializeComponent();
             TimeID.Text = $"ID{testID.TestNguonID} - (" + testID.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture) + ")";
 
-            foreach (var e in nguon)
+            foreach (var e in nguon.ToList())
             {
+                if(e == null)
+                {
+                    continue;
+                }
                 if (e.NguonName == TenThietBi.Nguon1)
                 {
                     DongDC1.Text = e.DongDC.ToString();

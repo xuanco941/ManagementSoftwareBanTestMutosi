@@ -25,410 +25,153 @@ namespace ManagementSoftware.GUI.NguonManagement
                 {
                     aTimer = new System.Timers.Timer();
                     aTimer.Elapsed += new ElapsedEventHandler(MyTimer_Tick);
-                    aTimer.Interval = 500;
+                    aTimer.Interval = 1000;
                     aTimer.Start();
                 });
                 ThreadGetDataPLC.Start();
             }
         }
 
-        ~NguonTu1Den15()
+        private void SetTextNguon(Button dongDC, Button dienApDC, Button congSuat, Button time, Button soLanTest, Models.Nguon e)
         {
-            if (aTimer != null)
+            try
             {
-                aTimer.Stop();
-                aTimer.Dispose();
+                if (dongDC.IsHandleCreated)
+                {
+                    dongDC.Invoke(new Action(() =>
+                    {
+                        dongDC.Text = e.DongDC.ToString() + " A";
+                    }));
+                }
+                if (dienApDC.IsHandleCreated)
+                {
+                    dienApDC.Invoke(new Action(() =>
+                    {
+                        dienApDC.Text = e.DienApDC.ToString() + " V";
+                    }));
+                }
+                if (congSuat.IsHandleCreated)
+                {
+                    congSuat.Invoke(new Action(() =>
+                    {
+                        congSuat.Text = e.CongSuat.ToString() + " W";
+                    }));
+                }
+                if (time.IsHandleCreated)
+                {
+                    time.Invoke(new Action(() =>
+                    {
+                        time.Text = e.ThoiGianTest.ToString() + " giây";
+                    }));
+                }
+                if (soLanTest.IsHandleCreated)
+                {
+                    soLanTest.Invoke(new Action(() =>
+                    {
+                        soLanTest.Text = e.SoLanTest.ToString();
+                    }));
+                }
             }
-            ThreadGetDataPLC.Abort();
+            catch(Exception ex)
+            {
+
+            }
+
         }
-
-
-
 
         private void MyTimer_Tick(object sender, EventArgs eb)
         {
-
-            PLCNguon.GetDataTu1Den15();
-            foreach (Models.Nguon e in PLCNguon.listNguonTu1Den15.ToList())
+            if (PLCNguon.plc.IsConnected == true)
             {
-                if (e.NguonName == TenThietBi.Nguon1)
+                PLCNguon.GetDataTu1Den15();
+                foreach (Models.Nguon e in PLCNguon.listNguonTu1Den15.ToList())
                 {
-                    DongDC1.Invoke(new Action(() =>
+                    if (e.NguonName == TenThietBi.Nguon1)
                     {
-                        DongDC1.Text = e.DongDC.ToString() + " A";
-                    }));
-                    DienApDC1.Invoke(new Action(() =>
-                    {
-                        DienApDC1.Text = e.DienApDC.ToString() + " V";
-                    }));
-                    CongSuat1.Invoke(new Action(() =>
-                    {
-                        CongSuat1.Text = e.CongSuat.ToString() + " W";
-                    }));
-                    timeTest1.Invoke(new Action(() =>
-                    {
-                        timeTest1.Text = e.ThoiGianTest.ToString() + " giây";
-                    }));
-                    SoLanTest1.Invoke(new Action(() =>
-                    {
-                        SoLanTest1.Text = e.SoLanTest.ToString();
-                    }));
+                        SetTextNguon(DongDC1, DienApDC1, CongSuat1, timeTest1, SoLanTest1, e);
 
-                }
-                else if (e.NguonName == TenThietBi.Nguon2)
-                {
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon2)
+                    {
+                        SetTextNguon(DongDC2, DienApDC2, CongSuat2, timeTest2, SoLanTest2, e);
 
-                    DongDC2.Invoke(new Action(() =>
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon3)
                     {
-                        DongDC2.Text = e.DongDC.ToString() + " A";
-                    }));
-                    DienApDC2.Invoke(new Action(() =>
-                    {
-                        DienApDC2.Text = e.DienApDC.ToString() + " V";
-                    }));
-                    CongSuat2.Invoke(new Action(() =>
-                    {
-                        CongSuat2.Text = e.CongSuat.ToString() + " W";
-                    }));
-                    timeTest2.Invoke(new Action(() =>
-                    {
-                        timeTest2.Text = e.ThoiGianTest.ToString() + " giây";
-                    }));
-                    SoLanTest2.Invoke(new Action(() =>
-                    {
-                        SoLanTest2.Text = e.SoLanTest.ToString();
-                    }));
+
+                        SetTextNguon(DongDC3, DienApDC3, CongSuat3, timeTest3, SoLanTest3, e);
 
 
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon4)
+                    {
 
-                }
-                else if (e.NguonName == TenThietBi.Nguon3)
-                {
-
-                    DongDC3.Invoke(new Action(() =>
-                    {
-                        DongDC3.Text = e.DongDC.ToString() + " A";
-                    }));
-                    DienApDC3.Invoke(new Action(() =>
-                    {
-                        DienApDC3.Text = e.DienApDC.ToString() + " V";
-                    }));
-                    CongSuat3.Invoke(new Action(() =>
-                    {
-                        CongSuat3.Text = e.CongSuat.ToString() + " W";
-                    }));
-                    timeTest3.Invoke(new Action(() =>
-                    {
-                        timeTest3.Text = e.ThoiGianTest.ToString() + " giây";
-                    }));
-                    SoLanTest3.Invoke(new Action(() =>
-                    {
-                        SoLanTest3.Text = e.SoLanTest.ToString();
-                    }));
+                        SetTextNguon(DongDC4, DienApDC4, CongSuat4, timeTest4, SoLanTest4, e);
 
 
-                }
-                else if (e.NguonName == TenThietBi.Nguon4)
-                {
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon5)
+                    {
 
-                    DongDC4.Invoke(new Action(() =>
-                    {
-                        DongDC4.Text = e.DongDC.ToString() + " A";
-                    }));
-                    DienApDC4.Invoke(new Action(() =>
-                    {
-                        DienApDC4.Text = e.DienApDC.ToString() + " V";
-                    }));
-                    CongSuat4.Invoke(new Action(() =>
-                    {
-                        CongSuat4.Text = e.CongSuat.ToString() + " W";
-                    }));
-                    timeTest4.Invoke(new Action(() =>
-                    {
-                        timeTest4.Text = e.ThoiGianTest.ToString() + " giây";
-                    }));
-                    SoLanTest4.Invoke(new Action(() =>
-                    {
-                        SoLanTest4.Text = e.SoLanTest.ToString();
-                    }));
+                        SetTextNguon(DongDC5, DienApDC5, CongSuat5, timeTest5, SoLanTest5, e);
 
-                }
-                else if (e.NguonName == TenThietBi.Nguon5)
-                {
 
-                    DongDC5.Invoke(new Action(() =>
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon6)
                     {
-                        DongDC5.Text = e.DongDC.ToString() + " A";
-                    }));
-                    DienApDC5.Invoke(new Action(() =>
-                    {
-                        DienApDC5.Text = e.DienApDC.ToString() + " V";
-                    }));
-                    CongSuat5.Invoke(new Action(() =>
-                    {
-                        CongSuat5.Text = e.CongSuat.ToString() + " W";
-                    }));
-                    timeTest5.Invoke(new Action(() =>
-                    {
-                        timeTest5.Text = e.ThoiGianTest.ToString() + " giây";
-                    }));
-                    SoLanTest5.Invoke(new Action(() =>
-                    {
-                        SoLanTest5.Text = e.SoLanTest.ToString();
-                    }));
 
-                }
-                else if (e.NguonName == TenThietBi.Nguon6)
-                {
+                        SetTextNguon(DongDC6, DienApDC6, CongSuat6, timeTest6, SoLanTest6, e);
 
-                    DongDC6.Invoke(new Action(() =>
-                    {
-                        DongDC6.Text = e.DongDC.ToString() + " A";
-                    }));
-                    DienApDC6.Invoke(new Action(() =>
-                    {
-                        DienApDC6.Text = e.DienApDC.ToString() + " V";
-                    }));
-                    CongSuat6.Invoke(new Action(() =>
-                    {
-                        CongSuat6.Text = e.CongSuat.ToString() + " W";
-                    }));
-                    timeTest6.Invoke(new Action(() =>
-                    {
-                        timeTest6.Text = e.ThoiGianTest.ToString() + " giây";
-                    }));
-                    SoLanTest6.Invoke(new Action(() =>
-                    {
-                        SoLanTest6.Text = e.SoLanTest.ToString();
-                    }));
 
-                }
-                else if (e.NguonName == TenThietBi.Nguon7)
-                {
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon7)
+                    {
 
-                    DongDC7.Invoke(new Action(() =>
-                    {
-                        DongDC7.Text = e.DongDC.ToString() + " A";
-                    }));
-                    DienApDC7.Invoke(new Action(() =>
-                    {
-                        DienApDC7.Text = e.DienApDC.ToString() + " V";
-                    }));
-                    CongSuat7.Invoke(new Action(() =>
-                    {
-                        CongSuat7.Text = e.CongSuat.ToString() + " W";
-                    }));
-                    timeTest7.Invoke(new Action(() =>
-                    {
-                        timeTest7.Text = e.ThoiGianTest.ToString() + " giây";
-                    }));
-                    SoLanTest7.Invoke(new Action(() =>
-                    {
-                        SoLanTest7.Text = e.SoLanTest.ToString();
-                    }));
+                        SetTextNguon(DongDC7, DienApDC7, CongSuat7, timeTest7, SoLanTest7, e);
 
-                }
-                else if (e.NguonName == TenThietBi.Nguon8)
-                {
 
-                    DongDC8.Invoke(new Action(() =>
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon8)
                     {
-                        DongDC8.Text = e.DongDC.ToString() + " A";
-                    }));
-                    DienApDC8.Invoke(new Action(() =>
+                        SetTextNguon(DongDC8, DienApDC8, CongSuat8, timeTest8, SoLanTest8, e);
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon9)
                     {
-                        DienApDC8.Text = e.DienApDC.ToString() + " V";
-                    }));
-                    CongSuat8.Invoke(new Action(() =>
+                        SetTextNguon(DongDC9, DienApDC9, CongSuat9, timeTest9, SoLanTest9, e);
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon10)
                     {
-                        CongSuat8.Text = e.CongSuat.ToString() + " W";
-                    }));
-                    timeTest8.Invoke(new Action(() =>
+                        SetTextNguon(DongDC10, DienApDC10, CongSuat10, timeTest10, SoLanTest10, e);
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon11)
                     {
-                        timeTest8.Text = e.ThoiGianTest.ToString() + " giây";
-                    }));
-                    SoLanTest8.Invoke(new Action(() =>
-                    {
-                        SoLanTest8.Text = e.SoLanTest.ToString();
-                    }));
 
-                }
-                else if (e.NguonName == TenThietBi.Nguon9)
-                {
+                        SetTextNguon(DongDC11, DienApDC11, CongSuat11, timeTest11, SoLanTest11, e);
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon12)
+                    {
+                        SetTextNguon(DongDC12, DienApDC12, CongSuat12, timeTest12, SoLanTest12, e);
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon13)
+                    {
+                        SetTextNguon(DongDC13, DienApDC13, CongSuat13, timeTest13, SoLanTest13, e);
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon14)
+                    {
+                        SetTextNguon(DongDC14, DienApDC14, CongSuat14, timeTest14, SoLanTest14, e);
+                    }
+                    else if (e.NguonName == TenThietBi.Nguon15)
+                    {
 
-                    DongDC9.Invoke(new Action(() =>
-                    {
-                        DongDC9.Text = e.DongDC.ToString() + " A";
-                    }));
-                    DienApDC9.Invoke(new Action(() =>
-                    {
-                        DienApDC9.Text = e.DienApDC.ToString() + " V";
-                    }));
-                    CongSuat9.Invoke(new Action(() =>
-                    {
-                        CongSuat9.Text = e.CongSuat.ToString() + " W";
-                    }));
-                    timeTest9.Invoke(new Action(() =>
-                    {
-                        timeTest9.Text = e.ThoiGianTest.ToString() + " giây";
-                    }));
-                    SoLanTest9.Invoke(new Action(() =>
-                    {
-                        SoLanTest9.Text = e.SoLanTest.ToString();
-                    }));
-
-                }
-                else if (e.NguonName == TenThietBi.Nguon10)
-                {
-
-                    DongDC10.Invoke(new Action(() =>
-                    {
-                        DongDC10.Text = e.DongDC.ToString() + " A";
-                    }));
-                    DienApDC10.Invoke(new Action(() =>
-                    {
-                        DienApDC10.Text = e.DienApDC.ToString() + " V";
-                    }));
-                    CongSuat10.Invoke(new Action(() =>
-                    {
-                        CongSuat10.Text = e.CongSuat.ToString() + " W";
-                    }));
-                    timeTest10.Invoke(new Action(() =>
-                    {
-                        timeTest10.Text = e.ThoiGianTest.ToString() + " giây";
-                    }));
-                    SoLanTest10.Invoke(new Action(() =>
-                    {
-                        SoLanTest10.Text = e.SoLanTest.ToString();
-                    }));
-
-                }
-                else if (e.NguonName == TenThietBi.Nguon11)
-                {
-
-                    DongDC11.Invoke(new Action(() =>
-                    {
-                        DongDC11.Text = e.DongDC.ToString() + " A";
-                    }));
-                    DienApDC11.Invoke(new Action(() =>
-                    {
-                        DienApDC11.Text = e.DienApDC.ToString() + " V";
-                    }));
-                    CongSuat11.Invoke(new Action(() =>
-                    {
-                        CongSuat11.Text = e.CongSuat.ToString() + " W";
-                    }));
-                    timeTest11.Invoke(new Action(() =>
-                    {
-                        timeTest11.Text = e.ThoiGianTest.ToString() + " giây";
-                    }));
-                    SoLanTest11.Invoke(new Action(() =>
-                    {
-                        SoLanTest11.Text = e.SoLanTest.ToString();
-                    }));
-
-                }
-                else if (e.NguonName == TenThietBi.Nguon12)
-                {
-
-                    DongDC12.Invoke(new Action(() =>
-                    {
-                        DongDC12.Text = e.DongDC.ToString() + " A";
-                    }));
-                    DienApDC12.Invoke(new Action(() =>
-                    {
-                        DienApDC12.Text = e.DienApDC.ToString() + " V";
-                    }));
-                    CongSuat12.Invoke(new Action(() =>
-                    {
-                        CongSuat12.Text = e.CongSuat.ToString() + " W";
-                    }));
-                    timeTest12.Invoke(new Action(() =>
-                    {
-                        timeTest12.Text = e.ThoiGianTest.ToString() + " giây";
-                    }));
-                    SoLanTest12.Invoke(new Action(() =>
-                    {
-                        SoLanTest12.Text = e.SoLanTest.ToString();
-                    }));
-
-                }
-                else if (e.NguonName == TenThietBi.Nguon13)
-                {
-
-                    DongDC13.Invoke(new Action(() =>
-                    {
-                        DongDC13.Text = e.DongDC.ToString() + " A";
-                    }));
-                    DienApDC13.Invoke(new Action(() =>
-                    {
-                        DienApDC13.Text = e.DienApDC.ToString() + " V";
-                    }));
-                    CongSuat13.Invoke(new Action(() =>
-                    {
-                        CongSuat13.Text = e.CongSuat.ToString() + " W";
-                    }));
-                    timeTest13.Invoke(new Action(() =>
-                    {
-                        timeTest13.Text = e.ThoiGianTest.ToString() + " giây";
-                    }));
-                    SoLanTest13.Invoke(new Action(() =>
-                    {
-                        SoLanTest13.Text = e.SoLanTest.ToString();
-                    }));
-
-                }
-                else if (e.NguonName == TenThietBi.Nguon14)
-                {
-
-                    DongDC14.Invoke(new Action(() =>
-                    {
-                        DongDC14.Text = e.DongDC.ToString() + " A";
-                    }));
-                    DienApDC14.Invoke(new Action(() =>
-                    {
-                        DienApDC14.Text = e.DienApDC.ToString() + " V";
-                    }));
-                    CongSuat14.Invoke(new Action(() =>
-                    {
-                        CongSuat14.Text = e.CongSuat.ToString() + " W";
-                    }));
-                    timeTest14.Invoke(new Action(() =>
-                    {
-                        timeTest14.Text = e.ThoiGianTest.ToString() + " giây";
-                    }));
-                    SoLanTest14.Invoke(new Action(() =>
-                    {
-                        SoLanTest14.Text = e.SoLanTest.ToString();
-                    }));
-
-                }
-                else if (e.NguonName == TenThietBi.Nguon15)
-                {
-
-                    DongDC15.Invoke(new Action(() =>
-                    {
-                        DongDC15.Text = e.DongDC.ToString() + " A";
-                    }));
-                    DienApDC15.Invoke(new Action(() =>
-                    {
-                        DienApDC15.Text = e.DienApDC.ToString() + " V";
-                    }));
-                    CongSuat15.Invoke(new Action(() =>
-                    {
-                        CongSuat15.Text = e.CongSuat.ToString() + " W";
-                    }));
-                    timeTest15.Invoke(new Action(() =>
-                    {
-                        timeTest15.Text = e.ThoiGianTest.ToString() + " giây";
-                    }));
-                    SoLanTest15.Invoke(new Action(() =>
-                    {
-                        SoLanTest15.Text = e.SoLanTest.ToString();
-                    }));
-
+                        SetTextNguon(DongDC15, DienApDC15, CongSuat15, timeTest15, SoLanTest15, e);
+                    }
                 }
             }
+            else
+            {
+                CloseForm();
+            }
+           
         }
 
         private void NguonTu1Den15_FormClosing(object sender, FormClosingEventArgs e)
@@ -438,6 +181,15 @@ namespace ManagementSoftware.GUI.NguonManagement
                 aTimer.Stop();
                 aTimer.Dispose();
             }
+        }
+        public void CloseForm()
+        {
+            if (aTimer != null)
+            {
+                aTimer.Stop();
+                aTimer.Dispose();
+            }
+            ThreadGetDataPLC?.Interrupt();
         }
     }
 }

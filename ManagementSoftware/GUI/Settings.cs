@@ -126,7 +126,7 @@ namespace ManagementSoftware.GUI
         private void buttonConnectBauNong_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Enabled = false;
-            PLCBauNong.Start();
+            ControlAllPLC.RunBauNong();
             if(PLCBauNong.plc.IsConnected == true)
             {
                 callAlert?.Invoke("PLC Jig Bầu Nóng đã kết nối", FormAlert.enmType.Success);
@@ -143,7 +143,7 @@ namespace ManagementSoftware.GUI
         private void buttonCustomBepTu_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Enabled = false;
-            PLCBepTu.Start();
+            ControlAllPLC.RunBepTu();
             if (PLCBepTu.plc.IsConnected == true)
             {
                 callAlert?.Invoke("PLC Jig Bếp Từ đã kết nối", FormAlert.enmType.Success);
@@ -160,7 +160,7 @@ namespace ManagementSoftware.GUI
         private void buttonCustomCongTac_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Enabled = false;
-            PLCCongTac.Start();
+            ControlAllPLC.RunCongTac();
             if (PLCCongTac.plc.IsConnected == true)
             {
                 callAlert?.Invoke("PLC Jig Công Tắc đã kết nối", FormAlert.enmType.Success);
@@ -177,7 +177,7 @@ namespace ManagementSoftware.GUI
         private void buttonCustomJigMach_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Enabled = false;
-            PLCJigMach.Start();
+            ControlAllPLC.RunJigMach();
             if (PLCJigMach.plc.IsConnected == true)
             {
                 callAlert?.Invoke("PLC Jig Mạch đã kết nối", FormAlert.enmType.Success);
@@ -194,7 +194,7 @@ namespace ManagementSoftware.GUI
         private void buttonCustomLoiLoc_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Enabled = false;
-            PLCJigLoiLoc.Start();
+            ControlAllPLC.RunLoiLoc();
             if (PLCJigLoiLoc.plc.IsConnected == true)
             {
                 callAlert?.Invoke("PLC Jig Lõi Lọc đã kết nối", FormAlert.enmType.Success);
@@ -211,7 +211,7 @@ namespace ManagementSoftware.GUI
         private void buttonCustomNguon_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Enabled = false;
-            PLCNguon.Start();
+            ControlAllPLC.RunNguon();
             if (PLCNguon.plc.IsConnected == true)
             {
                 callAlert?.Invoke("PLC Jig Nguồn đã kết nối", FormAlert.enmType.Success);
