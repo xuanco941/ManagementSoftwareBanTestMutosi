@@ -1,7 +1,7 @@
 ﻿using ManagementSoftware.DAL;
 using ManagementSoftware.GUI;
 using ManagementSoftware.Models;
-using PROFINET_STEP_7.Profinet;
+using S7.Net;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +12,7 @@ namespace ManagementSoftware.PLCSetting
 {
     public class PLCCongTac
     {
-        public static PLC plc { get; set; }
-        public static ExceptionCode errCode;
+        public static Plc plc { get; set; }
 
         public static string plcName = "PLC Jig Công Tắc";
         public static string message { get; set; } = "";
@@ -26,10 +25,10 @@ namespace ManagementSoftware.PLCSetting
         public static void Start()
         {
             string ip = "192.168.0.21";
-            CPU_Type cpu = CPU_Type.S71200;
+            CpuType cpu = CpuType.S71200;
             short rack = 0;
             short slot = 1;
-            plc = new PLC(cpu, ip, rack, slot);
+            plc = new Plc(cpu, ip, rack, slot);
 
             try
             {
@@ -38,17 +37,13 @@ namespace ManagementSoftware.PLCSetting
                     message = $"*{plcName} thiếu địa chỉ IP";
                     throw new Exception($"Xin vui lòng nhập địa chỉ IP {plcName}");
                 }
-                if (!plc.IsAvailable)
+                plc.Open();
+                if (!plc.IsConnected)
                 {
                     message = $"*Không tìm thấy {plcName}!";
                     throw new Exception($"Không tìm thấy {plcName}!");
                 }
-                errCode = plc.Open();
-                if (errCode != ExceptionCode.ExceptionNo)
-                {
-                    message = $"*Lỗi {plcName}: " + plc.lastErrorString.ToString();
-                    throw new Exception(plc.lastErrorString);
-                }
+
 
                 // success
                 message = "";

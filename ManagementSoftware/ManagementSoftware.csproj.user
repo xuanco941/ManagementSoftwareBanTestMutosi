@@ -28,6 +28,12 @@
     <Compile Update="GUI\JigMach.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\NguonManagement\NguonTu16Den30.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\NguonManagement\NguonTu1Den15.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GUI\Section\FormStringConnectDatabase.cs">
       <SubType>Form</SubType>
     </Compile>

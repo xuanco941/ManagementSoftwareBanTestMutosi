@@ -9,7 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Test\**" />
+    <EmbeddedResource Remove="Test\**" />
+    <None Remove="Test\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
+    <PackageReference Include="S7netplus" Version="0.16.0" />
     <PackageReference Include="Syncfusion.Licensing" Version="20.2.0.36" />
     <PackageReference Include="Syncfusion.Shared.Base" Version="20.2.0.36" />
     <PackageReference Include="Syncfusion.Tools.Windows" Version="20.2.0.36" />
@@ -98,10 +105,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Test\" />
   </ItemGroup>
 
   <ItemGroup>

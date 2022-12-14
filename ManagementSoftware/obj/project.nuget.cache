@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "O+NYe+p3jX4QtNLm4ERPzJ5SkgvsXuANtG+x2TtExwEtb2ZAifj33AHE1TxpK1Q/U7jQeJcqFOIJ/Bz0atzdJw==",
+  "dgSpecHash": "xQD+5ONG0iWYp6rIK/hwQwIatE5U+8IKpvSB4xQB1AR7oq0KtlgHEWr1PnE6PA06pUKc6qL8rMXizVrmXU1amw==",
   "success": true,
   "projectFilePath": "D:\\WorkPlace\\C-Sharp\\Working\\DESKTOP\\Mutosi\\ManagementSoftwareBanTestMutosi\\ManagementSoftware\\ManagementSoftware.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\xuanc\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\xuanc\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\xuanc\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\xuanc\\.nuget\\packages\\s7netplus\\0.16.0\\s7netplus.0.16.0.nupkg.sha512",
     "C:\\Users\\xuanc\\.nuget\\packages\\syncfusion.chart.base\\20.2.0.36\\syncfusion.chart.base.20.2.0.36.nupkg.sha512",
     "C:\\Users\\xuanc\\.nuget\\packages\\syncfusion.chart.windows\\20.2.0.36\\syncfusion.chart.windows.20.2.0.36.nupkg.sha512",
     "C:\\Users\\xuanc\\.nuget\\packages\\syncfusion.compression.base\\20.2.0.36\\syncfusion.compression.base.20.2.0.36.nupkg.sha512",

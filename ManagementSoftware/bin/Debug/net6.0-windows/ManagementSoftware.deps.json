@@ -9,6 +9,7 @@
       "ManagementSoftware/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
+          "S7netplus": "0.16.0",
           "Syncfusion.Chart.Windows": "20.2.0.36",
           "Syncfusion.Gauge.Windows": "20.2.0.36",
           "Syncfusion.GridHelperClasses.Windows": "20.2.0.36",
@@ -311,6 +312,14 @@
       "Microsoft.Win32.SystemEvents/4.7.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0"
+        }
+      },
+      "S7netplus/0.16.0": {
+        "runtime": {
+          "lib/net5.0/S7.Net.dll": {
+            "assemblyVersion": "0.16.0.0",
+            "fileVersion": "0.16.0.0"
+          }
         }
       },
       "Syncfusion.Chart.Base/20.2.0.36": {
@@ -918,6 +927,13 @@
       "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
+    },
+    "S7netplus/0.16.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZqkWA7NTmaI+tPZoaQueW6oKMVeXDnrrOI8OP/KYx8417VvzTRuGcDSBcc67sFv/E5mKCH4U1tJkoCzt0Htvvw==",
+      "path": "s7netplus/0.16.0",
+      "hashPath": "s7netplus.0.16.0.nupkg.sha512"
     },
     "Syncfusion.Chart.Base/20.2.0.36": {
       "type": "package",

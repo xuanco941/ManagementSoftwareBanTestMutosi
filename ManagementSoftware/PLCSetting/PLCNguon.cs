@@ -1,30 +1,27 @@
 ﻿using ManagementSoftware.DAL;
 using ManagementSoftware.Models;
-using PROFINET_STEP_7.Profinet;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using S7.Net;
+
 
 namespace ManagementSoftware.PLCSetting
 {
     public class PLCNguon
     {
-        public static PLC plc { get; set; }
-        public static ExceptionCode errCode;
+        public static Plc plc { get; set; }
 
         public static string plcName = "PLC Nguồn";
         public static string message { get; set; } = "";
-        public static List<Models.Nguon> listNguon { get; set; } = new List<Models.Nguon>();
+        public static List<Models.Nguon> listNguonTu1Den15 { get; set; } = new List<Models.Nguon>();
+        public static List<Models.Nguon> listNguonTu16Den30 { get; set; } = new List<Models.Nguon>();
+
 
         public static void Start()
         {
             string ip = "192.168.0.17";
-            CPU_Type cpu = CPU_Type.S71200;
+            S7.Net.CpuType cpu = CpuType.S71200;
             short rack = 0;
             short slot = 1;
-            plc = new PLC(cpu, ip, rack, slot);
+            plc = new Plc(cpu, ip, rack, slot);
 
             try
             {
@@ -33,17 +30,13 @@ namespace ManagementSoftware.PLCSetting
                     message = $"*{plcName} thiếu địa chỉ IP";
                     throw new Exception($"Xin vui lòng nhập địa chỉ IP {plcName}");
                 }
-                if (!plc.IsAvailable)
+                plc.Open();
+                if (!plc.IsConnected)
                 {
                     message = $"*Không tìm thấy {plcName}!";
                     throw new Exception($"Không tìm thấy {plcName}!");
                 }
-                errCode = plc.Open();
-                if (errCode != ExceptionCode.ExceptionNo)
-                {
-                    message = $"*Lỗi {plcName}: " + plc.lastErrorString.ToString();
-                    throw new Exception(plc.lastErrorString);
-                }
+
 
                 // success
                 message = "";
@@ -68,9 +61,89 @@ namespace ManagementSoftware.PLCSetting
             }
         }
 
-        public static void GetData()
+        public static void GetDataTu1Den15()
         {
-            listNguon = new List<Models.Nguon>();
+            listNguonTu1Den15 = new List<Models.Nguon>();
+            string db = "DB100.";
+            int dienApCSAddr = 0;
+            int dongDienCSAddr = 120;
+            int congSuatCSAddr = 240;
+            int timeAddr = 360;
+            int soLanTestAddr = 480;
+
+
+            for (int i = 0; i <= 14; i++)
+            {
+                Models.Nguon nguon = new Models.Nguon();
+
+                object? dienApDCVar = plc.Read(db + "DBD" + dienApCSAddr);
+                object? DongDCVar = plc.Read(db + "DBD" + dongDienCSAddr);
+                object? congSuatVar = plc.Read(db + "DBD" + congSuatCSAddr);
+                object? thoiGianTestVar = plc.Read(db + "DBD" + timeAddr);
+                object? soLanTestVar = plc.Read(db + "DBW" + soLanTestAddr);
+
+                nguon.DienApDC = dienApDCVar != null ? Conversion.ConvertToFloat((uint)dienApDCVar).ToString() : "N/A";
+                nguon.DongDC = DongDCVar != null ? Conversion.ConvertToFloat((uint)DongDCVar).ToString() : "N/A";
+                nguon.CongSuat = congSuatVar != null ? Conversion.ConvertToFloat((uint)congSuatVar).ToString() : "N/A";
+                nguon.ThoiGianTest = thoiGianTestVar != null ? ((uint)thoiGianTestVar).ToString() : "N/A";
+                nguon.SoLanTest = soLanTestVar != null ? ((ushort)soLanTestVar).ToString() : "N/A";
+
+
+                //bool c = (bool)plc.Read("DB100.DBX544.1");
+
+                nguon.NguonName = "Nguồn " + (i + 1);
+                dienApCSAddr += 4;
+                dongDienCSAddr += 4;
+                congSuatCSAddr += 4;
+                timeAddr += 4;
+                soLanTestAddr += 2;
+
+                listNguonTu1Den15.Add(nguon);
+            }
+        }
+        public static void GetDataTu16Den30()
+        {
+            listNguonTu16Den30 = new List<Models.Nguon>();
+            string db = "DB100.";
+            int dienApCSAddr = 60;
+            int dongDienCSAddr = 180;
+            int congSuatCSAddr = 300;
+            int timeAddr = 420;
+            int soLanTestAddr = 540;
+
+
+            for (int i = 15; i <= 29; i++)
+            {
+                Models.Nguon nguon = new Models.Nguon();
+
+                object? dienApDCVar = plc.Read(db + "DBD" + dienApCSAddr);
+                object? DongDCVar = plc.Read(db + "DBD" + dongDienCSAddr);
+                object? congSuatVar = plc.Read(db + "DBD" + congSuatCSAddr);
+                object? thoiGianTestVar = plc.Read(db + "DBD" + timeAddr);
+                object? soLanTestVar = plc.Read(db + "DBW" + soLanTestAddr);
+
+                nguon.DienApDC = dienApDCVar != null ? Conversion.ConvertToFloat((uint)dienApDCVar).ToString() : "N/A";
+                nguon.DongDC = DongDCVar != null ? Conversion.ConvertToFloat((uint)DongDCVar).ToString() : "N/A";
+                nguon.CongSuat = congSuatVar != null ? Conversion.ConvertToFloat((uint)congSuatVar).ToString() : "N/A";
+                nguon.ThoiGianTest = thoiGianTestVar != null ? ((uint)thoiGianTestVar).ToString() : "N/A";
+                nguon.SoLanTest = soLanTestVar != null ? ((ushort)soLanTestVar).ToString() : "N/A";
+
+
+                //bool c = (bool)plc.Read("DB100.DBX544.1");
+
+                nguon.NguonName = "Nguồn " + (i + 1);
+                dienApCSAddr += 4;
+                dongDienCSAddr += 4;
+                congSuatCSAddr += 4;
+                timeAddr += 4;
+                soLanTestAddr += 2;
+
+                listNguonTu16Den30.Add(nguon);
+            }
+        }
+        public static void SaveData()
+        {
+            List<Nguon> listNguonSave = new List<Models.Nguon>();
             string db = "DB100.";
             int dienApCSAddr = 0;
             int dongDienCSAddr = 120;
@@ -82,12 +155,21 @@ namespace ManagementSoftware.PLCSetting
             for (int i = 0; i <= 29; i++)
             {
                 Models.Nguon nguon = new Models.Nguon();
-                nguon.DienApDC = Math.Round(PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, dienApCSAddr, 4))), 2, MidpointRounding.AwayFromZero);
-                nguon.DongDC = Math.Round(PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, dongDienCSAddr, 4))), 2, MidpointRounding.AwayFromZero);
-                nguon.CongSuat = Math.Round(PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, congSuatCSAddr, 4))), 2, MidpointRounding.AwayFromZero);
-                nguon.ThoiGianTest = (uint)plc.Read(db + "DBD" + timeAddr);
-                nguon.SoLanTest = (ushort)plc.Read(db + "DBW" + soLanTestAddr);
-                
+
+
+                object? dienApDCVar = plc.Read(db + "DBD" + dienApCSAddr);
+                object? DongDCVar = plc.Read(db + "DBD" + dongDienCSAddr);
+                object? congSuatVar = plc.Read(db + "DBD" + congSuatCSAddr);
+                object? thoiGianTestVar = plc.Read(db + "DBD" + timeAddr);
+                object? soLanTestVar = plc.Read(db + "DBW" + soLanTestAddr);
+
+                nguon.DienApDC = dienApDCVar != null ? Conversion.ConvertToFloat((uint)dienApDCVar).ToString() : "N/A";
+                nguon.DongDC = DongDCVar != null ? Conversion.ConvertToFloat((uint)DongDCVar).ToString() : "N/A";
+                nguon.CongSuat = congSuatVar != null ? Conversion.ConvertToFloat((uint)congSuatVar).ToString() : "N/A";
+                nguon.ThoiGianTest = thoiGianTestVar != null ? ((uint)thoiGianTestVar).ToString() : "N/A";
+                nguon.SoLanTest = soLanTestVar != null ? ((ushort)soLanTestVar).ToString() : "N/A";
+
+                //bool c = (bool)plc.Read("DB100.DBX544.1");
 
                 nguon.NguonName = "Nguồn " + (i + 1);
                 dienApCSAddr += 4;
@@ -96,15 +178,10 @@ namespace ManagementSoftware.PLCSetting
                 timeAddr += 4;
                 soLanTestAddr += 2;
 
-                listNguon.Add(nguon);
+                listNguonSave.Add(nguon);
             }
-        }
-        public static void SaveData()
-        {
-            if (listNguon != null && listNguon.Count > 0)
-            {
-                DALNguon.Add(listNguon);
-            }
+
+            DALNguon.Add(listNguonSave);
         }
     }
 }

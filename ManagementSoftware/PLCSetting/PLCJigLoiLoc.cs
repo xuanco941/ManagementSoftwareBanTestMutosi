@@ -1,7 +1,6 @@
 ﻿using ManagementSoftware.DAL;
-using ManagementSoftware.GUI;
 using ManagementSoftware.Models;
-using PROFINET_STEP_7.Profinet;
+using S7.Net;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +12,7 @@ namespace ManagementSoftware.PLCSetting
 {
     public class PLCJigLoiLoc
     {
-        public static PLC plc { get; set; }
-        public static ExceptionCode errCode;
+        public static Plc plc { get; set; }
         public static string plcName = "PLC Jig Lõi Lọc";
         public static string message { get; set; } = "";
         public static Models.LoiLoc loiloc = new Models.LoiLoc();
@@ -22,10 +20,10 @@ namespace ManagementSoftware.PLCSetting
         public static void Start()
         {
             string ip = "192.168.0.11";
-            CPU_Type cpu = CPU_Type.S71200;
+            CpuType cpu = CpuType.S71200;
             short rack = 0;
             short slot = 1;
-            plc = new PLC(cpu, ip, rack, slot);
+            plc = new Plc(cpu, ip, rack, slot);
 
             try
             {
@@ -34,17 +32,13 @@ namespace ManagementSoftware.PLCSetting
                     message = $"*{plcName} thiếu địa chỉ IP";
                     throw new Exception($"Xin vui lòng nhập địa chỉ IP {plcName}");
                 }
-                if (!plc.IsAvailable)
+                plc.Open();
+                if (!plc.IsConnected)
                 {
                     message = $"*Không tìm thấy {plcName}!";
                     throw new Exception($"Không tìm thấy {plcName}!");
                 }
-                errCode = plc.Open();
-                if (errCode != ExceptionCode.ExceptionNo)
-                {
-                    message = $"*Lỗi {plcName}: " + plc.lastErrorString.ToString();
-                    throw new Exception(plc.lastErrorString);
-                }
+
 
                 // success
                 message = "";
@@ -77,7 +71,7 @@ namespace ManagementSoftware.PLCSetting
             uint ST_Time_Giu = (uint)plc.Read("DB100.DBD26");
             uint ST_Time_Xa = (uint)plc.Read("DB100.DBD30");
 
-            double ST_Ap_Suat = Math.Round(PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, 36, 4))), 2, MidpointRounding.AwayFromZero);
+            double ST_Ap_Suat = Conversion.ConvertToFloat((uint)plc.Read("DB100.DBD36"));
 
             ushort ST_SL_Test = (ushort)plc.Read("DB100.DBW34");
             ushort loaiLoiLocTest = (ushort)plc.Read("DB100.DBW64");

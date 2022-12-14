@@ -353,3 +353,6 @@ D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\Mana
 D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.Section.ThongKe.ItemCongTac3VT.resources
 D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.Section.FormStringConnectDatabase.resources
 D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\bin\Debug\net6.0-windows\ConnectStringDB.txt
+D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\bin\Debug\net6.0-windows\S7.Net.dll
+D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.NguonManagement.NguonTu16Den30.resources
+D:\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.NguonManagement.NguonTu1Den15.resources

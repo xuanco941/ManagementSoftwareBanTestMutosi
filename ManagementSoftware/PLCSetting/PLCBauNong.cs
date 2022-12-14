@@ -1,6 +1,6 @@
 ﻿using ManagementSoftware.DAL;
 using ManagementSoftware.Models;
-using PROFINET_STEP_7.Profinet;
+using S7.Net;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +11,7 @@ namespace ManagementSoftware.PLCSetting
 {
     public class PLCBauNong
     {
-        public static PLC plc { get; set; }
-        public static ExceptionCode errCode;
+        public static Plc plc { get; set; }
 
         public static string plcName = "PLC Jig Bầu Nóng";
         public static string message { get; set; } = "";
@@ -22,10 +21,10 @@ namespace ManagementSoftware.PLCSetting
         public static void Start()
         {
             string ip = "192.168.0.15";
-            CPU_Type cpu = CPU_Type.S71200;
+            CpuType cpu = CpuType.S71200;
             short rack = 0;
             short slot = 1;
-            plc = new PLC(cpu, ip, rack, slot);
+            plc = new Plc(cpu, ip, rack, slot);
 
             try
             {
@@ -34,17 +33,13 @@ namespace ManagementSoftware.PLCSetting
                     message = $"*{plcName} thiếu địa chỉ IP";
                     throw new Exception($"Xin vui lòng nhập địa chỉ IP {plcName}");
                 }
-                if (!plc.IsAvailable)
+                plc.Open();
+                if (!plc.IsConnected)
                 {
                     message = $"*Không tìm thấy {plcName}!";
                     throw new Exception($"Không tìm thấy {plcName}!");
                 }
-                errCode = plc.Open();
-                if (errCode != ExceptionCode.ExceptionNo)
-                {
-                    message = $"*Lỗi {plcName}: " + plc.lastErrorString.ToString();
-                    throw new Exception(plc.lastErrorString);
-                }
+
 
                 // success
                 message = "";
@@ -85,7 +80,7 @@ namespace ManagementSoftware.PLCSetting
             for (int i = 0; i <= 9; i++)
             {
                 BauNong obj = new BauNong();
-                obj.DongDienAC = Math.Round(PROFINET_STEP_7.Types.Double.FromByteArray((plc.ReadBytes(DataType.DataBlock, 100, dongDienAC, 4))), 3, MidpointRounding.AwayFromZero);
+                obj.DongDienAC = Math.Round(Conversion.ConvertToFloat((uint)plc.Read(db + "DBD" + dongDienAC)), 3, MidpointRounding.AwayFromZero);
                 obj.NhietDo = Math.Round( Convert.ToDouble( ((ushort)plc.Read(db + "DBW" + nhietDoPC)))/10,2,MidpointRounding.AwayFromZero);
                 obj.SoLanTest = (ushort)plc.Read(db + "DBW" + SoLanTest_ST_PC);
                 obj.NhietDoNgatCBNhiet = (ushort)plc.Read(db + "DBW" + nhietDoNgatCBNhiet);
