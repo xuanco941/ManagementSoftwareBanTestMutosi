@@ -45,20 +45,16 @@ namespace ManagementSoftware.PLCSetting
         public static System.Timers.Timer aTimerBepTu;
         public static System.Timers.Timer aTimerCongTac;
 
-        public static bool checkFirst = false;
 
         public static void RunLoiLoc()
         {
-            new Thread(() =>
+            Thread t = new Thread(() =>
             {
 
                 PLCJigLoiLoc.Start();
                 if (PLCJigLoiLoc.plc.IsConnected == false)
                 {
-                    if (checkFirst)
-                    {
-                        MessageBox.Show(PLCJigLoiLoc.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
+                    MessageBox.Show(PLCJigLoiLoc.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -67,7 +63,8 @@ namespace ManagementSoftware.PLCSetting
                     aTimerLoiLoc.Interval = 500;
                     aTimerLoiLoc.Start();
                 }
-            }).Start();
+            });
+            t.Start();
         }
         public static void StopLoiLoc()
         {
@@ -81,15 +78,12 @@ namespace ManagementSoftware.PLCSetting
 
         public static void RunNguon()
         {
-            new Thread(() =>
+            Thread t = new Thread(() =>
             {
                 PLCNguon.Start();
                 if (PLCNguon.plc.IsConnected == false)
                 {
-                    if (checkFirst)
-                    {
-                        MessageBox.Show(PLCNguon.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
+                    MessageBox.Show(PLCNguon.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -98,7 +92,8 @@ namespace ManagementSoftware.PLCSetting
                     aTimerNguon.Interval = 500;
                     aTimerNguon.Start();
                 }
-            }).Start();
+            });
+            t.Start();
         }
         public static void StopNguon()
         {
@@ -111,15 +106,12 @@ namespace ManagementSoftware.PLCSetting
 
         public static void RunBauNong()
         {
-            new Thread(() =>
+            Thread t = new Thread(() =>
             {
                 PLCBauNong.Start();
                 if (PLCBauNong.plc.IsConnected == false)
                 {
-                    if (checkFirst)
-                    {
-                        MessageBox.Show(PLCBauNong.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
+                    MessageBox.Show(PLCBauNong.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -128,7 +120,8 @@ namespace ManagementSoftware.PLCSetting
                     aTimerBauNong.Interval = 500;
                     aTimerBauNong.Start();
                 }
-            }).Start();
+            });
+            t.Start();
         }
         public static void StopBauNong()
         {
@@ -142,15 +135,12 @@ namespace ManagementSoftware.PLCSetting
 
         public static void RunBepTu()
         {
-            new Thread(() =>
+            Thread t = new Thread(() =>
             {
                 PLCBepTu.Start();
                 if (PLCBepTu.plc.IsConnected == false)
                 {
-                    if (checkFirst)
-                    {
-                        MessageBox.Show(PLCBepTu.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
+                    MessageBox.Show(PLCBepTu.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -159,7 +149,8 @@ namespace ManagementSoftware.PLCSetting
                     aTimerBepTu.Interval = 500;
                     aTimerBepTu.Start();
                 }
-            }).Start();
+            });
+            t.Start();
         }
 
         public static void StopBepTu()
@@ -175,15 +166,12 @@ namespace ManagementSoftware.PLCSetting
 
         public static void RunJigMach()
         {
-            new Thread(() =>
+            Thread t = new Thread(() =>
             {
                 PLCJigMach.Start();
                 if (PLCJigMach.plc.IsConnected == false)
                 {
-                    if (checkFirst)
-                    {
-                        MessageBox.Show(PLCJigMach.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
+                    MessageBox.Show(PLCJigMach.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -192,7 +180,8 @@ namespace ManagementSoftware.PLCSetting
                     aTimerJigMach.Interval = 500;
                     aTimerJigMach.Start();
                 }
-            }).Start();
+            });
+            t.Start();
         }
         public static void StopJigMach()
         {
@@ -206,15 +195,12 @@ namespace ManagementSoftware.PLCSetting
 
         public static void RunCongTac()
         {
-            new Thread(() =>
+            Thread t = new Thread(() =>
             {
                 PLCCongTac.Start();
                 if (PLCCongTac.plc.IsConnected == false)
                 {
-                    if (checkFirst)
-                    {
-                        MessageBox.Show(PLCCongTac.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
+                    MessageBox.Show(PLCCongTac.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -223,7 +209,8 @@ namespace ManagementSoftware.PLCSetting
                     aTimerCongTac.Interval = 500;
                     aTimerCongTac.Start();
                 }
-            }).Start();
+            });
+            t.Start();
         }
 
         public static void StopCongTac()

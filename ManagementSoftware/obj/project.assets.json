@@ -3189,11 +3189,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WorkPlace\\C-Sharp\\Working\\DESKTOP\\Mutosi\\ManagementSoftwareBanTestMutosi\\ManagementSoftware\\ManagementSoftware.csproj",
+      "projectUniqueName": "C:\\Users\\xuanc\\Downloads\\ManagementSoftwareBanTestMutosi\\ManagementSoftware\\ManagementSoftware.csproj",
       "projectName": "ManagementSoftware",
-      "projectPath": "D:\\WorkPlace\\C-Sharp\\Working\\DESKTOP\\Mutosi\\ManagementSoftwareBanTestMutosi\\ManagementSoftware\\ManagementSoftware.csproj",
+      "projectPath": "C:\\Users\\xuanc\\Downloads\\ManagementSoftwareBanTestMutosi\\ManagementSoftware\\ManagementSoftware.csproj",
       "packagesPath": "C:\\Users\\xuanc\\.nuget\\packages\\",
-      "outputPath": "D:\\WorkPlace\\C-Sharp\\Working\\DESKTOP\\Mutosi\\ManagementSoftwareBanTestMutosi\\ManagementSoftware\\obj\\",
+      "outputPath": "C:\\Users\\xuanc\\Downloads\\ManagementSoftwareBanTestMutosi\\ManagementSoftware\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\xuanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3290,7 +3290,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
