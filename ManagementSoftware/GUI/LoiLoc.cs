@@ -1,12 +1,13 @@
 ﻿using ManagementSoftware.DAL.DALPagination;
 using ManagementSoftware.GUI.Section;
 using ManagementSoftware.GUI.Section.ThongKe;
-using ManagementSoftware.Models;
+using ManagementSoftware.Models.LoiLocModel;
 using ManagementSoftware.PLCSetting;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Timers;
 using System.Windows.Forms;
+using static System.Windows.Forms.AxHost;
 
 namespace ManagementSoftware.GUI
 {
@@ -27,38 +28,8 @@ namespace ManagementSoftware.GUI
         // tổng số trang
         private int TotalPages = 0;
         //Data
-        Dictionary<TestLoiLoc, List<Models.LoiLoc>> ListResults;
+        Dictionary<TestLoiLoc, List<Models.LoiLocModel.LoiLoc>> ListResults;
 
-        Thread ThreadGetDataPLC;
-        System.Timers.Timer aTimer;
-        public LoiLoc()
-        {
-            InitializeComponent();
-
-            if (PLCJigLoiLoc.plc.IsConnected == true)
-            {
-                ThreadGetDataPLC = new Thread(() =>
-                {
-                    aTimer = new System.Timers.Timer();
-                    aTimer.Elapsed += new ElapsedEventHandler(MyTimer_Tick);
-                    aTimer.Interval = 500;
-                    aTimer.Start();
-                });
-                ThreadGetDataPLC.Start();
-            }
-            LoadFormThongKe();
-
-
-        }
-        ~LoiLoc()
-        {
-            if (aTimer != null)
-            {
-                aTimer.Stop();
-                aTimer.Dispose();
-            }
-            ThreadGetDataPLC.Abort();
-        }
 
         private void buttonPreviousPage_Click(object sender, EventArgs e)
         {
@@ -148,117 +119,125 @@ namespace ManagementSoftware.GUI
 
 
 
-
-
-
-
-
-
         // Giam sat
 
-        delegate void SetTextControlCallback(Control control, string text);
-        private void SetTextControl(Control control, string text)
+        PLCLoiLoc plc;
+
+        System.Threading.Timer timer;
+        int TIME_INTERVAL_IN_MILLISECONDS = 1000;
+
+
+
+        public LoiLoc()
         {
+            InitializeComponent();
 
-            if (control.InvokeRequired)
+            plc = new PLCLoiLoc(ControlAllPLC.ipLoiLoc, ControlAllPLC.PLCLoiLoc);
+
+            LoadFormThongKe();
+
+        }
+
+
+
+        private async void LoiLoc_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (timer != null)
             {
+                this.timer.Change(Timeout.Infinite, Timeout.Infinite);
+                timer.Dispose();
+            }
+            await plc.Close();
 
-                SetTextControlCallback d = new SetTextControlCallback(SetTextControl);
-                this.Invoke(d, new object[] { control, text });            }
+        }
+
+        private async void LoiLoc_Load(object sender, EventArgs e)
+        {
+            if (await plc.Open() == true)
+            {
+                timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+            }
             else
             {
-                control.Text = text;
+                MessageBox.Show("Không thể kết nối tới " + plc.plcName, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
         }
 
 
-        private void MyTimer_Tick(object sender, EventArgs e)
+
+        private async void Callback(Object state)
         {
-            PLCJigLoiLoc.GetData();
+            Stopwatch watch = new Stopwatch();
 
-            if (PLCJigLoiLoc.loiloc.LoiLocName == TenThietBi.LoiLoc1)
-            {
+            watch.Start();
 
-                ThoiGianXa1.Invoke(new Action(() =>
-                {
-                    ThoiGianXa1.Text = PLCJigLoiLoc.loiloc.ThoiGianXa.ToString();
-                }));
-                ThoiGianNen1.Invoke(new Action(() =>
-                {
-                    ThoiGianNen1.Text = PLCJigLoiLoc.loiloc.ThoiGianNen.ToString();
-                }));
-                ThoiGianGiu1.Invoke(new Action(() =>
-                {
-                    ThoiGianGiu1.Text = PLCJigLoiLoc.loiloc.ThoiGianGiu.ToString();
-                }));
-                SoLanTestJig1.Invoke(new Action(() =>
-                {
-                    SoLanTestJig1.Text = PLCJigLoiLoc.loiloc.SoLanTest.ToString();
-                }));
-                ApSuatTest1.Invoke(new Action(() =>
-                {
-                    ApSuatTest1.Text = PLCJigLoiLoc.loiloc.ApSuatTest.ToString();
-                }));
-            }
-            else if (PLCJigLoiLoc.loiloc.LoiLocName == TenThietBi.LoiLoc2)
+
+            // update data
+            // Long running operation
+
+            Models.LoiLocModel.LoiLoc loiLoc = await plc.GetData();
+            if (loiLoc != null)
             {
-                ThoiGianXa2.Invoke(new Action(() =>
-                {
-                    ThoiGianXa2.Text = PLCJigLoiLoc.loiloc.ThoiGianXa.ToString();
-                }));
-                ThoiGianNen2.Invoke(new Action(() =>
-                {
-                    ThoiGianNen2.Text = PLCJigLoiLoc.loiloc.ThoiGianNen.ToString();
-                }));
-                ThoiGianGiu2.Invoke(new Action(() =>
-                {
-                    ThoiGianGiu2.Text = PLCJigLoiLoc.loiloc.ThoiGianGiu.ToString();
-                }));
-                SoLanTestJig2.Invoke(new Action(() =>
-                {
-                    SoLanTestJig2.Text = PLCJigLoiLoc.loiloc.SoLanTest.ToString();
-                }));
-                ApSuatTest2.Invoke(new Action(() =>
-                {
-                    ApSuatTest2.Text = PLCJigLoiLoc.loiloc.ApSuatTest.ToString();
-                }));
-            }
-            else if (PLCJigLoiLoc.loiloc.LoiLocName == TenThietBi.LoiLoc1va2)
-            {
-                ThoiGianXa1va2.Invoke(new Action(() =>
-                {
-                    ThoiGianXa1va2.Text = PLCJigLoiLoc.loiloc.ThoiGianXa.ToString();
-                }));
-                ThoiGianNen1va2.Invoke(new Action(() =>
-                {
-                    ThoiGianNen1va2.Text = PLCJigLoiLoc.loiloc.ThoiGianNen.ToString();
-                }));
-                ThoiGianGiu1va2.Invoke(new Action(() =>
-                {
-                    ThoiGianGiu1va2.Text = PLCJigLoiLoc.loiloc.ThoiGianGiu.ToString();
-                }));
-                SoLanTestJig1va2.Invoke(new Action(() =>
-                {
-                    SoLanTestJig1va2.Text = PLCJigLoiLoc.loiloc.SoLanTest.ToString();
-                }));
-                ApSuatTest1va2.Invoke(new Action(() =>
-                {
-                    ApSuatTest1va2.Text = PLCJigLoiLoc.loiloc.ApSuatTest.ToString();
-                }));
+                UpdateData(loiLoc);
             }
 
 
+            timer.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
         }
 
 
-        private void LoiLoc_FormClosing(object sender, FormClosingEventArgs e)
+
+        private void UpdateData(Models.LoiLocModel.LoiLoc loiloc)
         {
-            if (aTimer != null)
+
+            if (IsHandleCreated && InvokeRequired)
             {
-                aTimer.Stop();
-                aTimer.Dispose();
+                BeginInvoke(new Action<Models.LoiLocModel.LoiLoc>(UpdateData), loiloc);
+                return;
+            }
+
+
+            //update gui
+
+            if (loiloc.LoiLocName == TenThietBi.LoiLoc1)
+            {
+
+                ThoiGianXa1.Text = loiloc.ThoiGianXa.ToString();
+
+                ThoiGianNen1.Text = loiloc.ThoiGianNen.ToString();
+
+                ThoiGianGiu1.Text = loiloc.ThoiGianGiu.ToString();
+
+                SoLanTestJig1.Text = loiloc.SoLanTest.ToString();
+
+                ApSuatTest1.Text = loiloc.ApSuatTest.ToString();
+            }
+            else if (loiloc.LoiLocName == TenThietBi.LoiLoc2)
+            {
+
+                ThoiGianXa2.Text = loiloc.ThoiGianXa.ToString();
+
+                ThoiGianNen2.Text = loiloc.ThoiGianNen.ToString();
+
+                ThoiGianGiu2.Text = loiloc.ThoiGianGiu.ToString();
+                SoLanTestJig2.Text = loiloc.SoLanTest.ToString();
+
+                ApSuatTest2.Text = loiloc.ApSuatTest.ToString();
+            }
+            else
+            {
+                ThoiGianXa1va2.Text = loiloc.ThoiGianXa.ToString();
+                ThoiGianNen1va2.Text = loiloc.ThoiGianNen.ToString();
+                ThoiGianGiu1va2.Text = loiloc.ThoiGianGiu.ToString();
+
+                SoLanTestJig1va2.Text = loiloc.SoLanTest.ToString();
+
+                ApSuatTest1va2.Text = loiloc.ApSuatTest.ToString();
             }
         }
+
+
+
+
     }
 }

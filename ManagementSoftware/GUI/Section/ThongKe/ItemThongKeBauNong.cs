@@ -1,4 +1,4 @@
-﻿using ManagementSoftware.Models;
+﻿using ManagementSoftware.Models.BauNongModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +14,7 @@ namespace ManagementSoftware.GUI.Section.ThongKe
 {
     public partial class ItemThongKeBauNong : Form
     {
-        public ItemThongKeBauNong(TestBauNong testID, List<Models.BauNong> bauNongs)
+        public ItemThongKeBauNong(TestBauNong testID, List<Models.BauNongModel.BauNong> bauNongs)
         {
             InitializeComponent();
             TimeID.Text = $"ID{testID.TestBauNongID} - (" + testID.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture) + ")";

@@ -8,15 +8,18 @@ using System.Threading.Tasks;
 
 namespace ManagementSoftware.Models
 {
-    [Table("JigMachNguon")]
-    public class JigMachNguon
+    [Table("JigMachTDS")]
+
+    public class JigMachTDS
     {
         [Key]
-        public int JigMachNguonID { get; set; }
-        public string JigMachNguonName { get; set; }
-        public double DongDien { get; set; }
-        public double DienAp { get; set; }
-        public double CongSuat { get; set; }
+        public int JigMachTDSID { get; set; }
+        public string JigMachTDSName { get; set; } = "";
+        public double ApDC { get; set; }
+        public bool Van { get; set; }
+        public bool CBApSuat { get; set; }
+        public uint SoLanTest { get; set; }
+
         public int TestJigMachID { get; set; }
         public TestJigMach TestJigMach { get; set; }
     }

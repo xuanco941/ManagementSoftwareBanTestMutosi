@@ -630,10 +630,10 @@
             this.panel327.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel327.Controls.Add(this.panel328);
             this.panel327.Controls.Add(this.panel339);
-            this.panel327.Location = new System.Drawing.Point(0, 0);
+            this.panel327.Location = new System.Drawing.Point(2, 0);
             this.panel327.Name = "panel327";
             this.gridLayout2.SetParticipateInLayout(this.panel327, true);
-            this.panel327.Size = new System.Drawing.Size(160, 150);
+            this.panel327.Size = new System.Drawing.Size(56, 87);
             this.panel327.TabIndex = 86;
             // 
             // panel328
@@ -918,10 +918,10 @@
             this.panel340.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel340.Controls.Add(this.panel341);
             this.panel340.Controls.Add(this.panel352);
-            this.panel340.Location = new System.Drawing.Point(160, 0);
+            this.panel340.Location = new System.Drawing.Point(58, 0);
             this.panel340.Name = "panel340";
             this.gridLayout2.SetParticipateInLayout(this.panel340, true);
-            this.panel340.Size = new System.Drawing.Size(160, 150);
+            this.panel340.Size = new System.Drawing.Size(56, 87);
             this.panel340.TabIndex = 85;
             // 
             // panel341
@@ -1206,10 +1206,10 @@
             this.panel353.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel353.Controls.Add(this.panel354);
             this.panel353.Controls.Add(this.panel365);
-            this.panel353.Location = new System.Drawing.Point(320, 0);
+            this.panel353.Location = new System.Drawing.Point(114, 0);
             this.panel353.Name = "panel353";
             this.gridLayout2.SetParticipateInLayout(this.panel353, true);
-            this.panel353.Size = new System.Drawing.Size(160, 150);
+            this.panel353.Size = new System.Drawing.Size(56, 87);
             this.panel353.TabIndex = 84;
             // 
             // panel354
@@ -1494,10 +1494,10 @@
             this.panel366.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel366.Controls.Add(this.panel367);
             this.panel366.Controls.Add(this.panel378);
-            this.panel366.Location = new System.Drawing.Point(480, 0);
+            this.panel366.Location = new System.Drawing.Point(170, 0);
             this.panel366.Name = "panel366";
             this.gridLayout2.SetParticipateInLayout(this.panel366, true);
-            this.panel366.Size = new System.Drawing.Size(160, 150);
+            this.panel366.Size = new System.Drawing.Size(56, 87);
             this.panel366.TabIndex = 83;
             // 
             // panel367
@@ -1782,10 +1782,10 @@
             this.panel379.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel379.Controls.Add(this.panel380);
             this.panel379.Controls.Add(this.panel391);
-            this.panel379.Location = new System.Drawing.Point(640, 0);
+            this.panel379.Location = new System.Drawing.Point(226, 0);
             this.panel379.Name = "panel379";
             this.gridLayout2.SetParticipateInLayout(this.panel379, true);
-            this.panel379.Size = new System.Drawing.Size(160, 150);
+            this.panel379.Size = new System.Drawing.Size(56, 87);
             this.panel379.TabIndex = 82;
             // 
             // panel380
@@ -2070,10 +2070,10 @@
             this.panel249.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel249.Controls.Add(this.panel250);
             this.panel249.Controls.Add(this.panel274);
-            this.panel249.Location = new System.Drawing.Point(0, 150);
+            this.panel249.Location = new System.Drawing.Point(2, 87);
             this.panel249.Name = "panel249";
             this.gridLayout2.SetParticipateInLayout(this.panel249, true);
-            this.panel249.Size = new System.Drawing.Size(160, 150);
+            this.panel249.Size = new System.Drawing.Size(56, 87);
             this.panel249.TabIndex = 81;
             // 
             // panel250
@@ -2358,10 +2358,10 @@
             this.panel275.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel275.Controls.Add(this.panel276);
             this.panel275.Controls.Add(this.panel287);
-            this.panel275.Location = new System.Drawing.Point(160, 150);
+            this.panel275.Location = new System.Drawing.Point(58, 87);
             this.panel275.Name = "panel275";
             this.gridLayout2.SetParticipateInLayout(this.panel275, true);
-            this.panel275.Size = new System.Drawing.Size(160, 150);
+            this.panel275.Size = new System.Drawing.Size(56, 87);
             this.panel275.TabIndex = 80;
             // 
             // panel276
@@ -2646,10 +2646,10 @@
             this.panel288.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel288.Controls.Add(this.panel289);
             this.panel288.Controls.Add(this.panel300);
-            this.panel288.Location = new System.Drawing.Point(320, 150);
+            this.panel288.Location = new System.Drawing.Point(114, 87);
             this.panel288.Name = "panel288";
             this.gridLayout2.SetParticipateInLayout(this.panel288, true);
-            this.panel288.Size = new System.Drawing.Size(160, 150);
+            this.panel288.Size = new System.Drawing.Size(56, 87);
             this.panel288.TabIndex = 79;
             // 
             // panel289
@@ -2934,10 +2934,10 @@
             this.panel301.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel301.Controls.Add(this.panel302);
             this.panel301.Controls.Add(this.panel313);
-            this.panel301.Location = new System.Drawing.Point(480, 150);
+            this.panel301.Location = new System.Drawing.Point(170, 87);
             this.panel301.Name = "panel301";
             this.gridLayout2.SetParticipateInLayout(this.panel301, true);
-            this.panel301.Size = new System.Drawing.Size(160, 150);
+            this.panel301.Size = new System.Drawing.Size(56, 87);
             this.panel301.TabIndex = 78;
             // 
             // panel302
@@ -3222,10 +3222,10 @@
             this.panel314.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel314.Controls.Add(this.panel315);
             this.panel314.Controls.Add(this.panel326);
-            this.panel314.Location = new System.Drawing.Point(640, 150);
+            this.panel314.Location = new System.Drawing.Point(226, 87);
             this.panel314.Name = "panel314";
             this.gridLayout2.SetParticipateInLayout(this.panel314, true);
-            this.panel314.Size = new System.Drawing.Size(160, 150);
+            this.panel314.Size = new System.Drawing.Size(56, 87);
             this.panel314.TabIndex = 77;
             // 
             // panel315
@@ -3510,10 +3510,10 @@
             this.panel236.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel236.Controls.Add(this.panel237);
             this.panel236.Controls.Add(this.panel248);
-            this.panel236.Location = new System.Drawing.Point(0, 300);
+            this.panel236.Location = new System.Drawing.Point(2, 174);
             this.panel236.Name = "panel236";
             this.gridLayout2.SetParticipateInLayout(this.panel236, true);
-            this.panel236.Size = new System.Drawing.Size(160, 150);
+            this.panel236.Size = new System.Drawing.Size(56, 87);
             this.panel236.TabIndex = 76;
             // 
             // panel237
@@ -3798,10 +3798,10 @@
             this.panel223.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel223.Controls.Add(this.panel224);
             this.panel223.Controls.Add(this.panel235);
-            this.panel223.Location = new System.Drawing.Point(160, 300);
+            this.panel223.Location = new System.Drawing.Point(58, 174);
             this.panel223.Name = "panel223";
             this.gridLayout2.SetParticipateInLayout(this.panel223, true);
-            this.panel223.Size = new System.Drawing.Size(160, 150);
+            this.panel223.Size = new System.Drawing.Size(56, 87);
             this.panel223.TabIndex = 75;
             // 
             // panel224
@@ -4086,10 +4086,10 @@
             this.panel210.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel210.Controls.Add(this.panel211);
             this.panel210.Controls.Add(this.panel222);
-            this.panel210.Location = new System.Drawing.Point(320, 300);
+            this.panel210.Location = new System.Drawing.Point(114, 174);
             this.panel210.Name = "panel210";
             this.gridLayout2.SetParticipateInLayout(this.panel210, true);
-            this.panel210.Size = new System.Drawing.Size(160, 150);
+            this.panel210.Size = new System.Drawing.Size(56, 87);
             this.panel210.TabIndex = 74;
             // 
             // panel211
@@ -4374,10 +4374,10 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel209);
-            this.panel1.Location = new System.Drawing.Point(480, 300);
+            this.panel1.Location = new System.Drawing.Point(170, 174);
             this.panel1.Name = "panel1";
             this.gridLayout2.SetParticipateInLayout(this.panel1, true);
-            this.panel1.Size = new System.Drawing.Size(160, 150);
+            this.panel1.Size = new System.Drawing.Size(56, 87);
             this.panel1.TabIndex = 73;
             // 
             // panel3
@@ -4662,10 +4662,10 @@
             this.panel251.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel251.Controls.Add(this.panel252);
             this.panel251.Controls.Add(this.panel263);
-            this.panel251.Location = new System.Drawing.Point(640, 300);
+            this.panel251.Location = new System.Drawing.Point(226, 174);
             this.panel251.Name = "panel251";
             this.gridLayout2.SetParticipateInLayout(this.panel251, true);
-            this.panel251.Size = new System.Drawing.Size(160, 150);
+            this.panel251.Size = new System.Drawing.Size(56, 87);
             this.panel251.TabIndex = 72;
             // 
             // panel252

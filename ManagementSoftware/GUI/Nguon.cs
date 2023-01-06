@@ -35,7 +35,7 @@ namespace ManagementSoftware.GUI
         // tổng số trang
         private int TotalPages = 0;
         //Data
-        Dictionary<TestNguon, List<Models.Nguon>> ListResults;
+        Dictionary<Models.NguonModel.TestNguon, List<Models.NguonModel.Nguon>> ListResults;
 
 
         public Nguon()
@@ -138,11 +138,6 @@ namespace ManagementSoftware.GUI
 
 
 
-
-
-
-        // Giam sat
-
         private void tabControl1_Selected_1(object sender, TabControlEventArgs e)
         {
             if (tabControl1.SelectedTab == tabPageGiamSat1)
@@ -155,7 +150,6 @@ namespace ManagementSoftware.GUI
                 form.Show();
                 foreach (NguonTu16Den30 f in tabPageGiamSat2.Controls)
                 {
-                    f.CloseForm();
                     f.Dispose();
                     f.Close();
                 }
@@ -171,7 +165,6 @@ namespace ManagementSoftware.GUI
                 form.Show();
                 foreach (NguonTu1Den15 f in tabPageGiamSat1.Controls)
                 {
-                    f.CloseForm();
                     f.Dispose();
                     f.Close();
                 }
@@ -182,13 +175,11 @@ namespace ManagementSoftware.GUI
                 LoadFormThongKe();
                 foreach (NguonTu1Den15 f in tabPageGiamSat1.Controls)
                 {
-                    f.CloseForm();
                     f.Dispose();
                     f.Close();
                 }
                 foreach (NguonTu16Den30 f in tabPageGiamSat2.Controls)
                 {
-                    f.CloseForm();
                     f.Dispose();
                     f.Close();
                 }

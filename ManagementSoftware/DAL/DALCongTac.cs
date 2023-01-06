@@ -1,4 +1,5 @@
 ﻿using ManagementSoftware.Models;
+using ManagementSoftware.Models.CongTacModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,24 +8,24 @@ using System.Threading.Tasks;
 
 namespace ManagementSoftware.DAL
 {
-    public class DALCongTac3VT
+    public class DALCongTac
     {
-        public static void Add(List<CongTac3VT> list)
+        public static void Add(List<CongTac> list)
         {
             DataBaseContext dbContext = new DataBaseContext();
-            TestCongTac3VT testID = new TestCongTac3VT();
+            TestCongTac testID = new TestCongTac();
 
-            dbContext.TestCongTac3VTs.Add(testID);
+            dbContext.TestCongTacs.Add(testID);
             dbContext.SaveChanges();
 
             foreach (var i in list)
             {
                 if (i != null)
                 {
-                    i.TestCongTac3VTID = testID.TestCongTac3VTID;
+                    i.TestCongTacID = testID.TestCongTacID;
                 }
             }
-            dbContext.CongTac3VTs.AddRange(list.ToList());
+            dbContext.CongTacs.AddRange(list.ToList());
             dbContext.SaveChanges();
         }
     }

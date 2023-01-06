@@ -6,14 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManagementSoftware.Models
+namespace ManagementSoftware.Models.BauNongModel
 {
     [Table("BauNong")]
     public class BauNong
     {
         [Key]
         public int BauNongID { get; set; }
-        public string BauNongName { get; set; }
+        public string BauNongName { get; set; } = "";
         public double DongDienAC { get; set; }
         public double NhietDo { get; set; }
         public ushort SoLanTest { get; set; }

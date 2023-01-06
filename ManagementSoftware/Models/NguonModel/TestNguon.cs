@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManagementSoftware.Models
+namespace ManagementSoftware.Models.NguonModel
 {
     [Table("TestNguon")]
     public class TestNguon

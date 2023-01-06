@@ -3189,11 +3189,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\xuanc\\Downloads\\ManagementSoftwareBanTestMutosi\\ManagementSoftware\\ManagementSoftware.csproj",
+      "projectUniqueName": "C:\\Users\\xuanc\\OneDrive\\Desktop\\WorkPlace\\C-Sharp\\Working\\DESKTOP\\Mutosi\\ManagementSoftwareBanTestMutosi\\ManagementSoftware\\ManagementSoftware.csproj",
       "projectName": "ManagementSoftware",
-      "projectPath": "C:\\Users\\xuanc\\Downloads\\ManagementSoftwareBanTestMutosi\\ManagementSoftware\\ManagementSoftware.csproj",
+      "projectPath": "C:\\Users\\xuanc\\OneDrive\\Desktop\\WorkPlace\\C-Sharp\\Working\\DESKTOP\\Mutosi\\ManagementSoftwareBanTestMutosi\\ManagementSoftware\\ManagementSoftware.csproj",
       "packagesPath": "C:\\Users\\xuanc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\xuanc\\Downloads\\ManagementSoftwareBanTestMutosi\\ManagementSoftware\\obj\\",
+      "outputPath": "C:\\Users\\xuanc\\OneDrive\\Desktop\\WorkPlace\\C-Sharp\\Working\\DESKTOP\\Mutosi\\ManagementSoftwareBanTestMutosi\\ManagementSoftware\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\xuanc\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -86,6 +86,7 @@
             this.tabControl1.Controls.Add(this.tabPageGiamSat2);
             this.tabControl1.Controls.Add(this.tabPageThongKe);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -95,10 +96,10 @@
             // 
             // tabPageGiamSat1
             // 
-            this.tabPageGiamSat1.Location = new System.Drawing.Point(4, 24);
+            this.tabPageGiamSat1.Location = new System.Drawing.Point(4, 34);
             this.tabPageGiamSat1.Name = "tabPageGiamSat1";
             this.tabPageGiamSat1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGiamSat1.Size = new System.Drawing.Size(1049, 450);
+            this.tabPageGiamSat1.Size = new System.Drawing.Size(1049, 440);
             this.tabPageGiamSat1.TabIndex = 2;
             this.tabPageGiamSat1.Text = "Giám sát Nguồn 1-15";
             this.tabPageGiamSat1.UseVisualStyleBackColor = true;

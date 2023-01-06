@@ -1,4 +1,4 @@
-﻿using ManagementSoftware.Models;
+﻿using ManagementSoftware.Models.BepTuModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +14,7 @@ namespace ManagementSoftware.GUI.Section.ThongKe
 {
     public partial class ItemThongKeBepTu : Form
     {
-        public ItemThongKeBepTu(TestBepTu testID, List<Models.BepTu> bepTus)
+        public ItemThongKeBepTu(TestBepTu testID, List<Models.BepTuModel.BepTu> bepTus)
         {
             InitializeComponent();
             TimeID.Text = $"ID{testID.TestBepTuID} - (" + testID.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture) + ")";

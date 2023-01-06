@@ -6,14 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManagementSoftware.Models
+namespace ManagementSoftware.Models.BepTuModel
 {
     [Table("BepTu")]
     public class BepTu
     {
         [Key]
         public int BepTuID { get; set; }
-        public string BepTuName { get; set; }
+        public string BepTuName { get; set; } = "";
         public double DongAC { get; set; }
         public double ApAC { get; set; }
         public double CongSuatAC { get; set; }

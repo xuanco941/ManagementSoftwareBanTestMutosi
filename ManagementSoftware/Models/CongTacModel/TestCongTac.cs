@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManagementSoftware.Models
+namespace ManagementSoftware.Models.CongTacModel
 {
-    [Table("TestCongTac3VT")]
-    public class TestCongTac3VT
+    [Table("TestCongTac")]
+    public class TestCongTac
     {
         [Key]
-        public int TestCongTac3VTID { get; set; }
+        public int TestCongTacID { get; set; }
         public DateTime CreateAt { get; set; }
     }
 }

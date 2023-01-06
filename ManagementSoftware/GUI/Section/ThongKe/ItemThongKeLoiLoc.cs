@@ -1,4 +1,4 @@
-﻿using ManagementSoftware.Models;
+﻿using ManagementSoftware.Models.LoiLocModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +14,7 @@ namespace ManagementSoftware.GUI.Section.ThongKe
 {
     public partial class ItemThongKeLoiLoc : Form
     {
-        public ItemThongKeLoiLoc(TestLoiLoc testID, List<Models.LoiLoc> loiLoc)
+        public ItemThongKeLoiLoc(TestLoiLoc testID, List<Models.LoiLocModel.LoiLoc> loiLoc)
         {
             InitializeComponent();
 

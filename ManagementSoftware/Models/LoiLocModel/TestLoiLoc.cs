@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManagementSoftware.Models
+namespace ManagementSoftware.Models.LoiLocModel
 {
-    [Table("TestBepTu")]
-    public class TestBepTu
+    [Table("TestLoiLoc")]
+    public class TestLoiLoc
     {
         [Key]
-        public int TestBepTuID { get; set; }
+        public int TestLoiLocID { get; set; }
         public DateTime CreateAt { get; set; }
     }
 }

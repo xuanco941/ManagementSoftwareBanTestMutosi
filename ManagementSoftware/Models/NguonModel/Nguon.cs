@@ -6,19 +6,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManagementSoftware.Models
+namespace ManagementSoftware.Models.NguonModel
 {
     [Table("Nguon")]
     public class Nguon
     {
         [Key]
         public int NguonID { get; set; }
-        public string NguonName { get; set; }
-        public string? DongDC { get; set; } // double
-        public string? DienApDC { get; set; } // double
-        public string? CongSuat { get; set; } //double
-        public string? ThoiGianTest { get; set; } // uint
-        public string? SoLanTest { get; set; } //ushort 
+        public string NguonName { get; set; } = "";
+        public double DongDC { get; set; } // double
+        public double DienApDC { get; set; } // double
+        public double CongSuat { get; set; } //double
+        public uint ThoiGianTest { get; set; } // uint
+        public ushort SoLanTest { get; set; } //ushort 
         public int TestNguonID { get; set; }
         public TestNguon TestNguon { get; set; }
     }

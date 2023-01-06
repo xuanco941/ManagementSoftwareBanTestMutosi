@@ -1,4 +1,5 @@
 ﻿using ManagementSoftware.Models;
+using ManagementSoftware.Models.LoiLocModel;
 using ManagementSoftware.ViewModels;
 using System;
 using System.Collections.Generic;

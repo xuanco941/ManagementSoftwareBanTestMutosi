@@ -1,4 +1,5 @@
 ﻿using ManagementSoftware.Models;
+using ManagementSoftware.Models.BepTuModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;

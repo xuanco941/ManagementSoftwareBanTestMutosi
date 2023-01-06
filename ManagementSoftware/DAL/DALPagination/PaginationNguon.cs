@@ -13,14 +13,14 @@ namespace ManagementSoftware.DAL.DALPagination
         public int PageCurrent { get; set; } = 1;
         public int TotalPages { get; set; } = 1;
         public int TotalResults { get; set; } = 0;
-        public Dictionary<TestNguon, List<Nguon>> ListResults { get; set; } = new Dictionary<TestNguon, List<Nguon>>();
+        public Dictionary<Models.NguonModel.TestNguon, List<Models.NguonModel.Nguon>> ListResults { get; set; } = new Dictionary<Models.NguonModel.TestNguon, List<Models.NguonModel.Nguon>>();
         public void Set(int page, DateTime? start, DateTime? end)
         {
             DataBaseContext dbContext = new DataBaseContext();
 
             int position = (page - 1) * NumberRows;
 
-            List<TestNguon> listTest = new List<TestNguon>();
+            List<Models.NguonModel.TestNguon> listTest = new List<Models.NguonModel.TestNguon>();
             if (start != null && end != null)
             {
                 listTest = dbContext.TestNguons.OrderByDescending(t => t.TestNguonID)
@@ -43,7 +43,7 @@ namespace ManagementSoftware.DAL.DALPagination
 
             foreach (var elm in listTest)
             {
-                List<Nguon> l = new List<Nguon>();
+                List<Models.NguonModel.Nguon> l = new List<Models.NguonModel.Nguon>();
                 l = dbContext.Nguons.Where(e => e.TestNguonID == elm.TestNguonID).ToList();
                 ListResults.Add(elm, l);
             }

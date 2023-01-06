@@ -14,7 +14,7 @@ namespace ManagementSoftware.GUI.Section.ThongKe
 {
     public partial class ItemThongKeNguon : Form
     {
-        public ItemThongKeNguon(TestNguon testID, List<Models.Nguon> nguon)
+        public ItemThongKeNguon(Models.NguonModel.TestNguon testID, List<Models.NguonModel.Nguon> nguon)
         {
             InitializeComponent();
             TimeID.Text = $"ID{testID.TestNguonID} - (" + testID.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture) + ")";

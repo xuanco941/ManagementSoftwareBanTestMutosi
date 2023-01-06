@@ -1,4 +1,9 @@
 ﻿using ManagementSoftware.DAL;
+using ManagementSoftware.Models.BauNongModel;
+using ManagementSoftware.Models.BepTuModel;
+using ManagementSoftware.Models.CongTacModel;
+using ManagementSoftware.Models.LoiLocModel;
+using ManagementSoftware.Models.NguonModel;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
@@ -32,12 +37,9 @@ namespace ManagementSoftware.Models
         public DbSet<Nguon> Nguons { get; set; }
 
         //Cong tac 2vt
-        public DbSet<TestCongTac2VT> TestCongTac2VTs { get; set; }
-        public DbSet<CongTac2VT> CongTac2VTs { get; set; }
+        public DbSet<TestCongTac> TestCongTacs { get; set; }
+        public DbSet<CongTac> CongTacs { get; set; }
 
-        //Cong tac 3vt
-        public DbSet<TestCongTac3VT> TestCongTac3VTs { get; set; }
-        public DbSet<CongTac3VT> CongTac3VTs { get; set; }
 
 
 
@@ -114,13 +116,8 @@ namespace ManagementSoftware.Models
             {
                 entity.Property(e => e.CreateAt).HasDefaultValueSql("(getdate())");
             });
-            //Cong tac 2 vt
-            modelBuilder.Entity<TestCongTac2VT>(entity =>
-            {
-                entity.Property(e => e.CreateAt).HasDefaultValueSql("(getdate())");
-            });
-            //Cong tac 3 vt
-            modelBuilder.Entity<TestCongTac3VT>(entity =>
+            //Cong tac 
+            modelBuilder.Entity<TestCongTac>(entity =>
             {
                 entity.Property(e => e.CreateAt).HasDefaultValueSql("(getdate())");
             });
@@ -130,7 +127,7 @@ namespace ManagementSoftware.Models
         {
             try
             {
-                this.Database.EnsureDeleted();
+                //this.Database.EnsureDeleted();
                 //init db
                 if (this.Database.EnsureCreated() == true)
                 {
@@ -199,10 +196,10 @@ namespace ManagementSoftware.Models
                     //    for (int j = 1; j <= 30; j++)
                     //    {
                     //        Nguon nguon = new Nguon();
-                    //        nguon.DienApDC = 7;
-                    //        nguon.DongDC = 4.32;
-                    //        nguon.CongSuat = 5.3;
-                    //        nguon.SoLanTest = 1;
+                    //        nguon.DienApDC = 7.ToString();
+                    //        nguon.DongDC = 4.32.ToString();
+                    //        nguon.CongSuat = 5.3.ToString();
+                    //        nguon.SoLanTest = 1.ToString();
                     //        nguon.NguonName = "Nguồn " + j;
                     //        nguons.Add(nguon);
                     //    }

@@ -1,7 +1,7 @@
 ﻿using ManagementSoftware.DAL.DALPagination;
 using ManagementSoftware.GUI.Section;
 using ManagementSoftware.GUI.Section.ThongKe;
-using ManagementSoftware.Models;
+using ManagementSoftware.Models.BepTuModel;
 using Syncfusion.XPS;
 using System;
 using System.Collections.Generic;
@@ -31,7 +31,7 @@ namespace ManagementSoftware.GUI
         // tổng số trang
         private int TotalPages = 0;
         //Data
-        Dictionary<TestBepTu, List<Models.BepTu>> ListResults;
+        Dictionary<TestBepTu, List<Models.BepTuModel.BepTu>> ListResults;
         public BepTu()
         {
             InitializeComponent();

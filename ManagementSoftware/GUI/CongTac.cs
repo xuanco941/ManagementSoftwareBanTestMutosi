@@ -88,7 +88,7 @@ namespace ManagementSoftware.GUI
             panelThongKe2VT.Controls.Clear();
 
 
-            PaginationCongTac2VT pagination = new PaginationCongTac2VT();
+            PaginationCongTac pagination = new PaginationCongTac();
             pagination.Set(page2VT, timeStart2VT, timeEnd2VT);
             this.ListResults2VT = pagination.ListResults;
             this.TotalPages2VT = pagination.TotalPages;

@@ -36,7 +36,7 @@ namespace ManagementSoftware
 
             if (Common.USERSESSION != null)
             {
-                ControlAllPLC.ConnectAndRunAll();
+                //ControlAllPLC.ConnectAndRunAll();
                 Application.Run(new Main());
             }
         }

@@ -1,7 +1,7 @@
 ﻿using ManagementSoftware.DAL.DALPagination;
 using ManagementSoftware.GUI.Section;
 using ManagementSoftware.GUI.Section.ThongKe;
-using ManagementSoftware.Models;
+using ManagementSoftware.Models.BauNongModel;
 using ManagementSoftware.PLCSetting;
 using Syncfusion.XPS;
 using System;
@@ -34,7 +34,7 @@ namespace ManagementSoftware.GUI
         // tổng số trang
         private int TotalPages = 0;
         //Data
-        Dictionary<TestBauNong, List<Models.BauNong>> ListResults;
+        Dictionary<TestBauNong, List<Models.BauNongModel.BauNong>> ListResults;
 
 
 
@@ -178,7 +178,7 @@ namespace ManagementSoftware.GUI
         private void MyTimer_Tick(object sender, EventArgs e)
         {
             PLCBauNong.GetData();
-            foreach (Models.BauNong item in PLCBauNong.listBauNong.ToList())
+            foreach (Models.BauNongModel.BauNong item in PLCBauNong.listBauNong.ToList())
             {
                 if (item.BauNongName == TenThietBi.BauNong1)
                 {
