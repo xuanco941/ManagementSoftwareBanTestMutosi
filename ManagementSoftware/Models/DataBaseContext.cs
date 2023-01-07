@@ -127,7 +127,7 @@ namespace ManagementSoftware.Models
         {
             try
             {
-                this.Database.EnsureDeleted();
+                //this.Database.EnsureDeleted();
                 //init db
                 if (this.Database.EnsureCreated() == true)
                 {
