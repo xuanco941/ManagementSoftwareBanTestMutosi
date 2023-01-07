@@ -367,7 +367,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(178, 82);
             this.label14.TabIndex = 3;
-            this.label14.Text = "Thời gian xả (ms) : ";
+            this.label14.Text = "Thời gian xả (s) : ";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel37
@@ -410,7 +410,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(178, 82);
             this.label15.TabIndex = 3;
-            this.label15.Text = "Thời gian nén (ms) : ";
+            this.label15.Text = "Thời gian nén (s) : ";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel39
@@ -518,7 +518,7 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(178, 85);
             this.label18.TabIndex = 4;
-            this.label18.Text = "Thời gian giữ (ms) : ";
+            this.label18.Text = "Thời gian giữ (s) : ";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel44
@@ -656,7 +656,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(178, 82);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Thời gian xả (ms) : ";
+            this.label2.Text = "Thời gian xả (s) : ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel9
@@ -699,7 +699,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(178, 82);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Thời gian nén (ms) : ";
+            this.label3.Text = "Thời gian nén (s) : ";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel11
@@ -807,7 +807,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(178, 85);
             this.label7.TabIndex = 5;
-            this.label7.Text = "Thời gian giữ (ms) : ";
+            this.label7.Text = "Thời gian giữ (s) : ";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel20
@@ -944,7 +944,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(178, 82);
             this.label8.TabIndex = 4;
-            this.label8.Text = "Thời gian xả (ms) : ";
+            this.label8.Text = "Thời gian xả (s) : ";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel25
@@ -987,7 +987,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(178, 82);
             this.label9.TabIndex = 4;
-            this.label9.Text = "Thời gian nén (ms) : ";
+            this.label9.Text = "Thời gian nén (s) : ";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel27
@@ -1095,7 +1095,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(178, 85);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Thời gian giữ (ms) : ";
+            this.label1.Text = "Thời gian giữ (s) : ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel31

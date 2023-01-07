@@ -25,9 +25,9 @@ namespace ManagementSoftware.PLCSetting
             LoiLoc loiloc = new Models.LoiLocModel.LoiLoc();
 
 
-            var thoiGianNen = this.ConvertUDIntToUInt(22);
-            var thoiGianGiu = this.ConvertUDIntToUInt(26);
-            var thoiGianXa = this.ConvertUDIntToUInt(30);
+            var thoiGianNen = this.ConvertUDIntToUInt(74);
+            var thoiGianGiu = this.ConvertUDIntToUInt(78);
+            var thoiGianXa = this.ConvertUDIntToUInt(82);
             var ApSuatTest = this.ConvertRealToDouble(36);
             var SoLanTest = this.ConvertUIntToUshort(34);
             var loaiLoiLocTest = this.ConvertUIntToUshort(64);

@@ -176,8 +176,6 @@ C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\Managem
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.BauNong.resources
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.BepTu.resources
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.CongTac.resources
-C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.CongTacManagement.TemplateCongTac2VT.resources
-C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.CongTacManagement.TemplateCongTac3VT.resources
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.Employee.resources
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.EmployeeManagement.FormAddGroup.resources
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.EmployeeManagement.FormAddUser.resources
@@ -192,8 +190,6 @@ C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\Managem
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.NguonManagement.NguonTu1Den15.resources
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.Section.FormAlert.resources
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.Section.FormStringConnectDatabase.resources
-C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.Section.ThongKe.ItemCongTac2VT.resources
-C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.Section.ThongKe.ItemCongTac3VT.resources
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.Section.ThongKe.ItemThongKeBauNong.resources
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.Section.ThongKe.ItemThongKeBepTu.resources
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.Section.ThongKe.ItemThongKeJigMach.resources
@@ -212,3 +208,5 @@ C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\Managem
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.pdb
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.genruntimeconfig.cache
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ref\ManagementSoftware.dll
+C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.CongTacManagement.TemplateJigCongTac.resources
+C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.Section.ThongKe.ItemCongTac.resources

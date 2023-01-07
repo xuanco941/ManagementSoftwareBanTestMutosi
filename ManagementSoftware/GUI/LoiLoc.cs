@@ -7,7 +7,6 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Timers;
 using System.Windows.Forms;
-using static System.Windows.Forms.AxHost;
 
 namespace ManagementSoftware.GUI
 {
@@ -133,9 +132,6 @@ namespace ManagementSoftware.GUI
             InitializeComponent();
 
             plc = new PLCLoiLoc(ControlAllPLC.ipLoiLoc, ControlAllPLC.PLCLoiLoc);
-
-            LoadFormThongKe();
-
         }
 
 
@@ -153,14 +149,23 @@ namespace ManagementSoftware.GUI
 
         private async void LoiLoc_Load(object sender, EventArgs e)
         {
+
+
             if (await plc.Open() == true)
             {
                 timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
             }
             else
             {
-                MessageBox.Show("Không thể kết nối tới " + plc.plcName, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if (CheckLoad.checkLoiLoc == false)
+                {
+                    MessageBox.Show("Không thể kết nối tới " + plc.plcName, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    CheckLoad.checkLoiLoc = true;
+                }
             }
+
+            LoadFormThongKe();
+
         }
 
 
@@ -202,37 +207,37 @@ namespace ManagementSoftware.GUI
             if (loiloc.LoiLocName == TenThietBi.LoiLoc1)
             {
 
-                ThoiGianXa1.Text = loiloc.ThoiGianXa.ToString();
+                ThoiGianXa1.Text = loiloc.ThoiGianXa.ToString() + " s";
 
-                ThoiGianNen1.Text = loiloc.ThoiGianNen.ToString();
+                ThoiGianNen1.Text = loiloc.ThoiGianNen.ToString() + " s";
 
-                ThoiGianGiu1.Text = loiloc.ThoiGianGiu.ToString();
+                ThoiGianGiu1.Text = loiloc.ThoiGianGiu.ToString() + " s";
 
                 SoLanTestJig1.Text = loiloc.SoLanTest.ToString();
 
-                ApSuatTest1.Text = loiloc.ApSuatTest.ToString();
+                ApSuatTest1.Text = loiloc.ApSuatTest.ToString() + " bar";
             }
             else if (loiloc.LoiLocName == TenThietBi.LoiLoc2)
             {
 
-                ThoiGianXa2.Text = loiloc.ThoiGianXa.ToString();
+                ThoiGianXa2.Text = loiloc.ThoiGianXa.ToString() + " s";
 
-                ThoiGianNen2.Text = loiloc.ThoiGianNen.ToString();
+                ThoiGianNen2.Text = loiloc.ThoiGianNen.ToString() + " s";
 
-                ThoiGianGiu2.Text = loiloc.ThoiGianGiu.ToString();
+                ThoiGianGiu2.Text = loiloc.ThoiGianGiu.ToString() + " s";
                 SoLanTestJig2.Text = loiloc.SoLanTest.ToString();
 
-                ApSuatTest2.Text = loiloc.ApSuatTest.ToString();
+                ApSuatTest2.Text = loiloc.ApSuatTest.ToString() + " bar";
             }
             else
             {
-                ThoiGianXa1va2.Text = loiloc.ThoiGianXa.ToString();
-                ThoiGianNen1va2.Text = loiloc.ThoiGianNen.ToString();
-                ThoiGianGiu1va2.Text = loiloc.ThoiGianGiu.ToString();
+                ThoiGianXa1va2.Text = loiloc.ThoiGianXa.ToString() + " s";
+                ThoiGianNen1va2.Text = loiloc.ThoiGianNen.ToString() + " s";
+                ThoiGianGiu1va2.Text = loiloc.ThoiGianGiu.ToString() + " s";
 
                 SoLanTestJig1va2.Text = loiloc.SoLanTest.ToString();
 
-                ApSuatTest1va2.Text = loiloc.ApSuatTest.ToString();
+                ApSuatTest1va2.Text = loiloc.ApSuatTest.ToString() + " bar";
             }
         }
 

@@ -1,6 +1,6 @@
 ﻿namespace ManagementSoftware.GUI.CongTacManagement
 {
-    partial class TemplateCongTac2VT
+    partial class TemplateJigCongTac
     {
         /// <summary>
         /// Required designer variable.
@@ -35,6 +35,7 @@
             this.panel31 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.panel32 = new System.Windows.Forms.Panel();
+            this.TrangThaiCT5 = new System.Windows.Forms.Button();
             this.panel33 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel34 = new System.Windows.Forms.Panel();
@@ -47,6 +48,7 @@
             this.panel24 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.panel25 = new System.Windows.Forms.Panel();
+            this.TrangThaiCT4 = new System.Windows.Forms.Button();
             this.panel26 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -59,6 +61,7 @@
             this.panel17 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.TrangThaiCT3 = new System.Windows.Forms.Button();
             this.panel19 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
@@ -71,6 +74,7 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.TrangThaiCT2 = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -83,6 +87,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.TrangThaiCT1 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -93,11 +98,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelNameJig = new System.Windows.Forms.Label();
-            this.TrangThaiCT1 = new System.Windows.Forms.Button();
-            this.TrangThaiCT2 = new System.Windows.Forms.Button();
-            this.TrangThaiCT3 = new System.Windows.Forms.Button();
-            this.TrangThaiCT4 = new System.Windows.Forms.Button();
-            this.TrangThaiCT5 = new System.Windows.Forms.Button();
             this.panelItem.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -235,6 +235,17 @@
             this.panel32.Size = new System.Drawing.Size(97, 51);
             this.panel32.TabIndex = 3;
             // 
+            // TrangThaiCT5
+            // 
+            this.TrangThaiCT5.BackColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiCT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiCT5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiCT5.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiCT5.Name = "TrangThaiCT5";
+            this.TrangThaiCT5.Size = new System.Drawing.Size(95, 49);
+            this.TrangThaiCT5.TabIndex = 4;
+            this.TrangThaiCT5.UseVisualStyleBackColor = false;
+            // 
             // panel33
             // 
             this.panel33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -370,6 +381,17 @@
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(96, 51);
             this.panel25.TabIndex = 3;
+            // 
+            // TrangThaiCT4
+            // 
+            this.TrangThaiCT4.BackColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiCT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiCT4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiCT4.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiCT4.Name = "TrangThaiCT4";
+            this.TrangThaiCT4.Size = new System.Drawing.Size(94, 49);
+            this.TrangThaiCT4.TabIndex = 4;
+            this.TrangThaiCT4.UseVisualStyleBackColor = false;
             // 
             // panel26
             // 
@@ -507,6 +529,17 @@
             this.panel18.Size = new System.Drawing.Size(96, 51);
             this.panel18.TabIndex = 3;
             // 
+            // TrangThaiCT3
+            // 
+            this.TrangThaiCT3.BackColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiCT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiCT3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiCT3.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiCT3.Name = "TrangThaiCT3";
+            this.TrangThaiCT3.Size = new System.Drawing.Size(94, 49);
+            this.TrangThaiCT3.TabIndex = 4;
+            this.TrangThaiCT3.UseVisualStyleBackColor = false;
+            // 
             // panel19
             // 
             this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -642,6 +675,17 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(96, 51);
             this.panel11.TabIndex = 3;
+            // 
+            // TrangThaiCT2
+            // 
+            this.TrangThaiCT2.BackColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiCT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiCT2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiCT2.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiCT2.Name = "TrangThaiCT2";
+            this.TrangThaiCT2.Size = new System.Drawing.Size(94, 49);
+            this.TrangThaiCT2.TabIndex = 4;
+            this.TrangThaiCT2.UseVisualStyleBackColor = false;
             // 
             // panel12
             // 
@@ -779,6 +823,17 @@
             this.panel8.Size = new System.Drawing.Size(96, 51);
             this.panel8.TabIndex = 3;
             // 
+            // TrangThaiCT1
+            // 
+            this.TrangThaiCT1.BackColor = System.Drawing.SystemColors.Control;
+            this.TrangThaiCT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangThaiCT1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TrangThaiCT1.Location = new System.Drawing.Point(0, 0);
+            this.TrangThaiCT1.Name = "TrangThaiCT1";
+            this.TrangThaiCT1.Size = new System.Drawing.Size(94, 49);
+            this.TrangThaiCT1.TabIndex = 4;
+            this.TrangThaiCT1.UseVisualStyleBackColor = false;
+            // 
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -892,70 +947,16 @@
             this.labelNameJig.Text = "Jig 1";
             this.labelNameJig.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TrangThaiCT1
-            // 
-            this.TrangThaiCT1.BackColor = System.Drawing.SystemColors.Control;
-            this.TrangThaiCT1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TrangThaiCT1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TrangThaiCT1.Location = new System.Drawing.Point(0, 0);
-            this.TrangThaiCT1.Name = "TrangThaiCT1";
-            this.TrangThaiCT1.Size = new System.Drawing.Size(94, 49);
-            this.TrangThaiCT1.TabIndex = 4;
-            this.TrangThaiCT1.UseVisualStyleBackColor = false;
-            // 
-            // TrangThaiCT2
-            // 
-            this.TrangThaiCT2.BackColor = System.Drawing.SystemColors.Control;
-            this.TrangThaiCT2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TrangThaiCT2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TrangThaiCT2.Location = new System.Drawing.Point(0, 0);
-            this.TrangThaiCT2.Name = "TrangThaiCT2";
-            this.TrangThaiCT2.Size = new System.Drawing.Size(94, 49);
-            this.TrangThaiCT2.TabIndex = 4;
-            this.TrangThaiCT2.UseVisualStyleBackColor = false;
-            // 
-            // TrangThaiCT3
-            // 
-            this.TrangThaiCT3.BackColor = System.Drawing.SystemColors.Control;
-            this.TrangThaiCT3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TrangThaiCT3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TrangThaiCT3.Location = new System.Drawing.Point(0, 0);
-            this.TrangThaiCT3.Name = "TrangThaiCT3";
-            this.TrangThaiCT3.Size = new System.Drawing.Size(94, 49);
-            this.TrangThaiCT3.TabIndex = 4;
-            this.TrangThaiCT3.UseVisualStyleBackColor = false;
-            // 
-            // TrangThaiCT4
-            // 
-            this.TrangThaiCT4.BackColor = System.Drawing.SystemColors.Control;
-            this.TrangThaiCT4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TrangThaiCT4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TrangThaiCT4.Location = new System.Drawing.Point(0, 0);
-            this.TrangThaiCT4.Name = "TrangThaiCT4";
-            this.TrangThaiCT4.Size = new System.Drawing.Size(94, 49);
-            this.TrangThaiCT4.TabIndex = 4;
-            this.TrangThaiCT4.UseVisualStyleBackColor = false;
-            // 
-            // TrangThaiCT5
-            // 
-            this.TrangThaiCT5.BackColor = System.Drawing.SystemColors.Control;
-            this.TrangThaiCT5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TrangThaiCT5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TrangThaiCT5.Location = new System.Drawing.Point(0, 0);
-            this.TrangThaiCT5.Name = "TrangThaiCT5";
-            this.TrangThaiCT5.Size = new System.Drawing.Size(95, 49);
-            this.TrangThaiCT5.TabIndex = 4;
-            this.TrangThaiCT5.UseVisualStyleBackColor = false;
-            // 
-            // TemplateCongTac2VT
+            // TemplateJigCongTac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1064, 214);
             this.Controls.Add(this.panelItem);
-            this.Name = "TemplateCongTac2VT";
+            this.Name = "TemplateJigCongTac";
             this.Padding = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.Text = "TemplateCongTac2VT";
+            this.Load += new System.EventHandler(this.TemplateJigCongTac_Load);
             this.panelItem.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

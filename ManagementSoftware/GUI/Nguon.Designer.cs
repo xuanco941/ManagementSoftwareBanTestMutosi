@@ -107,10 +107,10 @@
             // tabPageGiamSat2
             // 
             this.tabPageGiamSat2.AutoScroll = true;
-            this.tabPageGiamSat2.Location = new System.Drawing.Point(4, 24);
+            this.tabPageGiamSat2.Location = new System.Drawing.Point(4, 34);
             this.tabPageGiamSat2.Name = "tabPageGiamSat2";
             this.tabPageGiamSat2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGiamSat2.Size = new System.Drawing.Size(1049, 450);
+            this.tabPageGiamSat2.Size = new System.Drawing.Size(1049, 440);
             this.tabPageGiamSat2.TabIndex = 0;
             this.tabPageGiamSat2.Text = "Giám sát Nguồn 16-30";
             this.tabPageGiamSat2.UseVisualStyleBackColor = true;
@@ -119,10 +119,10 @@
             // 
             this.tabPageThongKe.Controls.Add(this.panelThongKe);
             this.tabPageThongKe.Controls.Add(this.panel2);
-            this.tabPageThongKe.Location = new System.Drawing.Point(4, 24);
+            this.tabPageThongKe.Location = new System.Drawing.Point(4, 34);
             this.tabPageThongKe.Name = "tabPageThongKe";
             this.tabPageThongKe.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageThongKe.Size = new System.Drawing.Size(1049, 450);
+            this.tabPageThongKe.Size = new System.Drawing.Size(1049, 440);
             this.tabPageThongKe.TabIndex = 1;
             this.tabPageThongKe.Text = "Thống kê";
             this.tabPageThongKe.UseVisualStyleBackColor = true;
@@ -134,7 +134,7 @@
             this.panelThongKe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelThongKe.Location = new System.Drawing.Point(3, 3);
             this.panelThongKe.Name = "panelThongKe";
-            this.panelThongKe.Size = new System.Drawing.Size(1043, 384);
+            this.panelThongKe.Size = new System.Drawing.Size(1043, 374);
             this.panelThongKe.TabIndex = 4;
             // 
             // panel2
@@ -145,7 +145,7 @@
             this.panel2.Controls.Add(this.buttonCustomGoPage);
             this.panel2.Controls.Add(this.inputNumPageGo);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(3, 387);
+            this.panel2.Location = new System.Drawing.Point(3, 377);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1043, 60);
@@ -549,6 +549,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Nguon";
             this.Text = "JigMach";
+            this.Load += new System.EventHandler(this.Nguon_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageThongKe.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

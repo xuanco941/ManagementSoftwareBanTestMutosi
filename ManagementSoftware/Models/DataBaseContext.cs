@@ -127,7 +127,7 @@ namespace ManagementSoftware.Models
         {
             try
             {
-                //this.Database.EnsureDeleted();
+                this.Database.EnsureDeleted();
                 //init db
                 if (this.Database.EnsureCreated() == true)
                 {
@@ -143,126 +143,126 @@ namespace ManagementSoftware.Models
 
 
 
-                    ////test
-                    //for (int i = 0; i < 40; i++)
-                    //{
+                    //test
+                    for (int i = 0; i < 40; i++)
+                    {
 
-                    //    //loiloc
-                    //    Models.LoiLoc loiLoca = new Models.LoiLoc();
-                    //    loiLoca.LoiLocName = TenThietBi.LoiLoc1;
-                    //    loiLoca.ThoiGianXa = 3;
-                    //    loiLoca.SoLanTest = 2;
-                    //    DALLoiLoc.Add(loiLoca);
+                        //loiloc
+                        Models.LoiLocModel.LoiLoc loiLoca = new Models.LoiLocModel.LoiLoc();
+                        loiLoca.LoiLocName = TenThietBi.LoiLoc1;
+                        loiLoca.ThoiGianXa = 3;
+                        loiLoca.SoLanTest = 2;
+                        DALLoiLoc.Add(loiLoca);
 
-                    //    //beptu test
-                    //    List<Models.BepTu> bepTus = new List<BepTu>();
-                    //    BepTu beptu1 = new BepTu();
-                    //    beptu1.BepTuName = TenThietBi.BepTu1;
-                    //    beptu1.ApAC = 6;
-                    //    beptu1.CongSuatAC = 10;
-                    //    beptu1.DongAC = 75;
-                    //    beptu1.NhietDo = 87;
-                    //    beptu1.ThoiGianSoi = 7;
-                    //    BepTu beptu2 = new BepTu();
-                    //    beptu2.BepTuName = TenThietBi.BepTu2;
-                    //    beptu2.ApAC = 6;
-                    //    beptu2.CongSuatAC = 10;
-                    //    beptu2.DongAC = 75;
-                    //    beptu2.NhietDo = 87;
-                    //    beptu2.ThoiGianSoi = 7;
-                    //    bepTus.Add(beptu1);
-                    //    bepTus.Add(beptu2);
-                    //    DALBepTu.Add(bepTus);
-
-
-
-                    //    //BauNong
-                    //    List<BauNong> bauNongs = new List<BauNong>();
-
-                    //    for (int j = 1; j <= 10; j++)
-                    //    {
-                    //        BauNong baunong1 = new BauNong();
-                    //        baunong1.CBNhietThanBauNong = true;
-                    //        baunong1.BauNongName = "Jig " + j;
-                    //        baunong1.CBNhietThanBauNong = true;
-                    //        baunong1.DongDienAC = 32;
-                    //        bauNongs.Add(baunong1);
-                    //    }
-                    //    DALBauNong.Add(bauNongs);
-
-
-                    //    //Nguon
-                    //    List<Nguon> nguons = new List<Nguon>();
-                    //    for (int j = 1; j <= 30; j++)
-                    //    {
-                    //        Nguon nguon = new Nguon();
-                    //        nguon.DienApDC = 7.ToString();
-                    //        nguon.DongDC = 4.32.ToString();
-                    //        nguon.CongSuat = 5.3.ToString();
-                    //        nguon.SoLanTest = 1.ToString();
-                    //        nguon.NguonName = "Nguồn " + j;
-                    //        nguons.Add(nguon);
-                    //    }
-                    //    DALNguon.Add(nguons);
-
-
-                    //    //jig mach
-                    //    List<JigMachNguon> jigmachs = new List<JigMachNguon>();
-                    //    List<JigMachTDS> jigMachTDs = new List<JigMachTDS>();
-                    //    for (int j = 1; j <= 10; j++)
-                    //    {
-                    //        JigMachNguon jigMachNguon = new JigMachNguon();
-                    //        jigMachNguon.JigMachNguonName = "Jig " + j;
-                    //        jigMachNguon.CongSuat = 23;
-                    //        jigMachNguon.DongDien = 12;
-                    //        jigMachNguon.DienAp = 21;
-                    //        jigmachs.Add(jigMachNguon);
-
-                    //        JigMachTDS jigMachTDS = new JigMachTDS();
-                    //        jigMachTDS.JigMachTDSName = "Jig " + j;
-                    //        jigMachTDS.ApDC = 23;
-                    //        jigMachTDS.CBApSuat = true;
-                    //        jigMachTDS.Van = false;
-                    //        jigMachTDs.Add(jigMachTDS);
-                    //    }
-                    //    DALJigMach.Add(jigmachs, jigMachTDs);
-
-
-                    //    //cong tac
-                    //    List<CongTac2VT> ct2vt = new List<CongTac2VT>();
-                    //    for (int j = 1; j <= 10; j++)
-                    //    {
-                    //        for (int k = 1; k <= 5; k++)
-                    //        {
-                    //            CongTac2VT ct = new CongTac2VT();
-                    //            ct.SoLanTest = k + 3;
-                    //            ct.JigCongTac2VTName = "Jig " + j;
-                    //            ct.CongTac2VTName = "Công tắc " + k;
-                    //            ct.TrangThai = true;
-                    //            ct2vt.Add(ct);
-                    //        }
-                    //    }
-                    //    DALCongTac2VT.Add(ct2vt);
+                        //beptu test
+                        List<Models.BepTuModel.BepTu> bepTus = new List<BepTu>();
+                        BepTu beptu1 = new BepTu();
+                        beptu1.BepTuName = TenThietBi.BepTu1;
+                        beptu1.ApAC = 6;
+                        beptu1.CongSuatAC = 10;
+                        beptu1.DongAC = 75;
+                        beptu1.NhietDo = 87;
+                        beptu1.ThoiGianSoi = 7;
+                        BepTu beptu2 = new BepTu();
+                        beptu2.BepTuName = TenThietBi.BepTu2;
+                        beptu2.ApAC = 6;
+                        beptu2.CongSuatAC = 10;
+                        beptu2.DongAC = 75;
+                        beptu2.NhietDo = 87;
+                        beptu2.ThoiGianSoi = 7;
+                        bepTus.Add(beptu1);
+                        bepTus.Add(beptu2);
+                        DALBepTu.Add(bepTus);
 
 
 
-                    //    //cong tac
-                    //    List<CongTac3VT> ct3vt = new List<CongTac3VT>();
-                    //    for (int j = 1; j <= 10; j++)
-                    //    {
-                    //        for (int k = 1; k <= 5; k++)
-                    //        {
-                    //            CongTac3VT ct = new CongTac3VT();
-                    //            ct.SoLanTest = k + 3;
-                    //            ct.JigCongTac3VTName = "Jig " + j;
-                    //            ct.CongTac3VTName = "Công tắc " + k;
-                    //            ct.TrangThai1 = true;
-                    //            ct.TrangThai2 = false;
-                    //            ct3vt.Add(ct);
-                    //        }
-                    //    }
-                    //    DALCongTac3VT.Add(ct3vt);
-                    //}
+                        //BauNong
+                        List<BauNong> bauNongs = new List<BauNong>();
+
+                        for (int j = 1; j <= 10; j++)
+                        {
+                            BauNong baunong1 = new BauNong();
+                            baunong1.CBNhietThanBauNong = true;
+                            baunong1.BauNongName = "Jig " + j;
+                            baunong1.CBNhietThanBauNong = true;
+                            baunong1.DongDienAC = 32;
+                            bauNongs.Add(baunong1);
+                        }
+                        DALBauNong.Add(bauNongs);
+
+
+                        //Nguon
+                        List<Nguon> nguons = new List<Nguon>();
+                        for (int j = 1; j <= 30; j++)
+                        {
+                            Nguon nguon = new Nguon();
+                            nguon.DienApDC = 7;
+                            nguon.DongDC = 4.32;
+                            nguon.CongSuat = 5.3;
+                            nguon.SoLanTest = 1;
+                            nguon.NguonName = "Nguồn " + j;
+                            nguons.Add(nguon);
+                        }
+                        DALNguon.Add(nguons);
+
+
+                        //jig mach
+                        List<JigMachNguon> jigmachs = new List<JigMachNguon>();
+                        List<JigMachTDS> jigMachTDs = new List<JigMachTDS>();
+                        for (int j = 1; j <= 10; j++)
+                        {
+                            JigMachNguon jigMachNguon = new JigMachNguon();
+                            jigMachNguon.JigMachNguonName = "Jig " + j;
+                            jigMachNguon.CongSuat = 23;
+                            jigMachNguon.DongDien = 12;
+                            jigMachNguon.DienAp = 21;
+                            jigmachs.Add(jigMachNguon);
+
+                            JigMachTDS jigMachTDS = new JigMachTDS();
+                            jigMachTDS.JigMachTDSName = "Jig " + j;
+                            jigMachTDS.ApDC = 23;
+                            jigMachTDS.CBApSuat = true;
+                            jigMachTDS.Van = false;
+                            jigMachTDs.Add(jigMachTDS);
+                        }
+                        DALJigMach.Add(jigmachs, jigMachTDs);
+
+
+                        ////cong tac
+                        //List<CongTac2VT> ct2vt = new List<CongTac2VT>();
+                        //for (int j = 1; j <= 10; j++)
+                        //{
+                        //    for (int k = 1; k <= 5; k++)
+                        //    {
+                        //        CongTac2VT ct = new CongTac2VT();
+                        //        ct.SoLanTest = k + 3;
+                        //        ct.JigCongTac2VTName = "Jig " + j;
+                        //        ct.CongTac2VTName = "Công tắc " + k;
+                        //        ct.TrangThai = true;
+                        //        ct2vt.Add(ct);
+                        //    }
+                        //}
+                        //DALCongTac2VT.Add(ct2vt);
+
+
+
+                        ////cong tac
+                        //List<CongTac3VT> ct3vt = new List<CongTac3VT>();
+                        //for (int j = 1; j <= 10; j++)
+                        //{
+                        //    for (int k = 1; k <= 5; k++)
+                        //    {
+                        //        CongTac3VT ct = new CongTac3VT();
+                        //        ct.SoLanTest = k + 3;
+                        //        ct.JigCongTac3VTName = "Jig " + j;
+                        //        ct.CongTac3VTName = "Công tắc " + k;
+                        //        ct.TrangThai1 = true;
+                        //        ct.TrangThai2 = false;
+                        //        ct3vt.Add(ct);
+                        //    }
+                        //}
+                        //DALCongTac3VT.Add(ct3vt);
+                    }
                 }
                 return true;
             }

@@ -79,15 +79,23 @@ namespace ManagementSoftware.PLCSetting
             {
                 Func<ushort> func = () =>
                 {
-                    object? data = plc.Read(db + "DBW" + diaChi);
-                    if (data != null)
+                    try
                     {
-                        return (ushort)data;
+                        object? data = plc.Read(db + "DBW" + diaChi);
+                        if (data != null)
+                        {
+                            return (ushort)data;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
                     }
-                    else
+                    catch
                     {
                         return 0;
                     }
+                    
                 };
                 Task<ushort> task = new Task<ushort>(func);
                 task.Start();
@@ -110,15 +118,23 @@ namespace ManagementSoftware.PLCSetting
             {
                 Func<uint> func = () =>
                 {
-                    object? data = plc.Read(db + "DBD" + diaChi);
-                    if (data != null)
+                    try
                     {
-                        return (uint)data;
+                        object? data = plc.Read(db + "DBD" + diaChi);
+                        if (data != null)
+                        {
+                            return (uint)data;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
                     }
-                    else
+                    catch
                     {
                         return 0;
                     }
+                    
                 };
                 Task<uint> task = new Task<uint>(func);
                 task.Start();
@@ -141,15 +157,23 @@ namespace ManagementSoftware.PLCSetting
             {
                 Func<double> func = () =>
                 {
-                    object? data = plc.Read(db + "DBD" + diaChi);
-                    if (data != null)
+                    try
                     {
-                        return Math.Round(Conversion.ConvertToFloat((uint)data), 2, MidpointRounding.AwayFromZero);
+                        object? data = plc.Read(db + "DBD" + diaChi);
+                        if (data != null)
+                        {
+                            return Math.Round(Conversion.ConvertToFloat((uint)data), 2, MidpointRounding.AwayFromZero);
+                        }
+                        else
+                        {
+                            return 0;
+                        }
                     }
-                    else
+                    catch
                     {
                         return 0;
                     }
+                   
                 };
                 Task<double> task = new Task<double>(func);
                 task.Start();

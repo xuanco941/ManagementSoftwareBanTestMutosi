@@ -41,12 +41,6 @@ namespace ManagementSoftware.GUI
         public Nguon()
         {
             InitializeComponent();
-            NguonTu1Den15 form = new NguonTu1Den15();
-            form.TopLevel = false;
-            tabPageGiamSat1.Controls.Add(form);
-            form.FormBorderStyle = FormBorderStyle.None;
-            form.Dock = DockStyle.Fill;
-            form.Show();
         }
 
 
@@ -185,6 +179,18 @@ namespace ManagementSoftware.GUI
                 }
 
             }
+        }
+
+        private void Nguon_Load(object sender, EventArgs e)
+        {
+            NguonTu1Den15 form = new NguonTu1Den15();
+            form.TopLevel = false;
+            tabPageGiamSat1.Controls.Add(form);
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+            form.Show();
+
+
         }
     }
 

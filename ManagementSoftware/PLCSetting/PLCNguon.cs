@@ -34,7 +34,7 @@ namespace ManagementSoftware.PLCSetting
                 nguon.SoLanTest = await this.ConvertUIntToUshort(soLanTestAddr);
                 nguon.NguonName = "Nguồn " + (i + 1);
 
-                listNguonTu1Den15[i] = nguon;
+                listNguonTu1Den15.Add(nguon);
 
                 dienApCSAddr += 4;
                 dongDienCSAddr += 4;
@@ -69,7 +69,7 @@ namespace ManagementSoftware.PLCSetting
                 nguon.SoLanTest = await this.ConvertUIntToUshort(soLanTestAddr);
                 nguon.NguonName = "Nguồn " + (i + 1);
 
-                listNguonTu16Den30[i] = nguon;
+                listNguonTu16Den30.Add(nguon);
 
                 dienApCSAddr += 4;
                 dongDienCSAddr += 4;

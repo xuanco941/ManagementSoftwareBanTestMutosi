@@ -30,12 +30,12 @@ namespace ManagementSoftware.PLCSetting
 
 
 
-        static PLCBauNong plcBauNong = new PLCBauNong(ipBauNong, PLCBauNong);
-        static PLCBepTu plcBepTu = new PLCBepTu(ipBepTu, PLCBepTu);
-        static PLCCongTac plcCongTac = new PLCCongTac(ipCongTac, PLCCongTac);
-        static PLCLoiLoc plcLoiLoc = new PLCLoiLoc(ipLoiLoc, PLCLoiLoc);
-        static PLCMach plcMach = new PLCMach(ipMach, PLCMach);
-        static PLCNguon plcNguon = new PLCNguon(ipNguon, PLCNguon);
+        public static PLCBauNong plcBauNong = new PLCBauNong(ipBauNong, PLCBauNong);
+        public static PLCBepTu plcBepTu = new PLCBepTu(ipBepTu, PLCBepTu);
+        public static PLCCongTac plcCongTac = new PLCCongTac(ipCongTac, PLCCongTac);
+        public static PLCLoiLoc plcLoiLoc = new PLCLoiLoc(ipLoiLoc, PLCLoiLoc);
+        public static PLCMach plcMach = new PLCMach(ipMach, PLCMach);
+        public static PLCNguon plcNguon = new PLCNguon(ipNguon, PLCNguon);
 
 
         //    private static void LoiLoc_Tick(object sender, EventArgs e)

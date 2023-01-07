@@ -77,9 +77,6 @@
     <Compile Update="GUI\CongTac.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\CongTacManagement\TemplateCongTac3VT.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="GUI\Nguon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,7 +89,7 @@
     <Compile Update="GUI\Section\ThongKe\ItemThongKeBauNong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\Section\ThongKe\ItemCongTac2VT.cs">
+    <Compile Update="GUI\Section\ThongKe\ItemCongTac.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\Section\ThongKe\ItemThongKeNguon.cs">

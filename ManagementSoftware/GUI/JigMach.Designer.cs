@@ -214,12 +214,15 @@
             this.panel277 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel37 = new System.Windows.Forms.TableLayoutPanel();
             this.panel278 = new System.Windows.Forms.Panel();
+            this.MachTDSCBApSuatJig10 = new System.Windows.Forms.Button();
             this.panel279 = new System.Windows.Forms.Panel();
             this.label120 = new System.Windows.Forms.Label();
             this.panel280 = new System.Windows.Forms.Panel();
+            this.MachTDSVanJig10 = new System.Windows.Forms.Button();
             this.panel281 = new System.Windows.Forms.Panel();
             this.label121 = new System.Windows.Forms.Label();
             this.panel282 = new System.Windows.Forms.Panel();
+            this.MachTDSApDCJig10 = new System.Windows.Forms.Button();
             this.panel283 = new System.Windows.Forms.Panel();
             this.label122 = new System.Windows.Forms.Label();
             this.panel284 = new System.Windows.Forms.Panel();
@@ -228,12 +231,15 @@
             this.panel286 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel38 = new System.Windows.Forms.TableLayoutPanel();
             this.panel287 = new System.Windows.Forms.Panel();
+            this.MachTDSCBApSuatJig9 = new System.Windows.Forms.Button();
             this.panel288 = new System.Windows.Forms.Panel();
             this.label124 = new System.Windows.Forms.Label();
             this.panel289 = new System.Windows.Forms.Panel();
+            this.MachTDSVanJig9 = new System.Windows.Forms.Button();
             this.panel290 = new System.Windows.Forms.Panel();
             this.label125 = new System.Windows.Forms.Label();
             this.panel291 = new System.Windows.Forms.Panel();
+            this.MachTDSApDCJig9 = new System.Windows.Forms.Button();
             this.panel292 = new System.Windows.Forms.Panel();
             this.label126 = new System.Windows.Forms.Label();
             this.panel293 = new System.Windows.Forms.Panel();
@@ -242,12 +248,15 @@
             this.panel295 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel39 = new System.Windows.Forms.TableLayoutPanel();
             this.panel296 = new System.Windows.Forms.Panel();
+            this.MachTDSCBApSuatJig8 = new System.Windows.Forms.Button();
             this.panel297 = new System.Windows.Forms.Panel();
             this.label128 = new System.Windows.Forms.Label();
             this.panel298 = new System.Windows.Forms.Panel();
+            this.MachTDSVanJig8 = new System.Windows.Forms.Button();
             this.panel299 = new System.Windows.Forms.Panel();
             this.label129 = new System.Windows.Forms.Label();
             this.panel300 = new System.Windows.Forms.Panel();
+            this.MachTDSApDCJig8 = new System.Windows.Forms.Button();
             this.panel301 = new System.Windows.Forms.Panel();
             this.label130 = new System.Windows.Forms.Label();
             this.panel302 = new System.Windows.Forms.Panel();
@@ -256,12 +265,15 @@
             this.panel304 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel40 = new System.Windows.Forms.TableLayoutPanel();
             this.panel305 = new System.Windows.Forms.Panel();
+            this.MachTDSCBApSuatJig7 = new System.Windows.Forms.Button();
             this.panel306 = new System.Windows.Forms.Panel();
             this.label132 = new System.Windows.Forms.Label();
             this.panel307 = new System.Windows.Forms.Panel();
+            this.MachTDSVanJig7 = new System.Windows.Forms.Button();
             this.panel308 = new System.Windows.Forms.Panel();
             this.label133 = new System.Windows.Forms.Label();
             this.panel309 = new System.Windows.Forms.Panel();
+            this.MachTDSApDCJig7 = new System.Windows.Forms.Button();
             this.panel310 = new System.Windows.Forms.Panel();
             this.label134 = new System.Windows.Forms.Label();
             this.panel311 = new System.Windows.Forms.Panel();
@@ -270,12 +282,15 @@
             this.panel313 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel41 = new System.Windows.Forms.TableLayoutPanel();
             this.panel314 = new System.Windows.Forms.Panel();
+            this.MachTDSCBApSuatJig6 = new System.Windows.Forms.Button();
             this.panel315 = new System.Windows.Forms.Panel();
             this.label136 = new System.Windows.Forms.Label();
             this.panel316 = new System.Windows.Forms.Panel();
+            this.MachTDSVanJig6 = new System.Windows.Forms.Button();
             this.panel317 = new System.Windows.Forms.Panel();
             this.label137 = new System.Windows.Forms.Label();
             this.panel318 = new System.Windows.Forms.Panel();
+            this.MachTDSApDCJig6 = new System.Windows.Forms.Button();
             this.panel319 = new System.Windows.Forms.Panel();
             this.label138 = new System.Windows.Forms.Label();
             this.panel320 = new System.Windows.Forms.Panel();
@@ -284,12 +299,15 @@
             this.panel322 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel42 = new System.Windows.Forms.TableLayoutPanel();
             this.panel323 = new System.Windows.Forms.Panel();
+            this.MachTDSCBApSuatJig5 = new System.Windows.Forms.Button();
             this.panel324 = new System.Windows.Forms.Panel();
             this.label140 = new System.Windows.Forms.Label();
             this.panel325 = new System.Windows.Forms.Panel();
+            this.MachTDSVanJig5 = new System.Windows.Forms.Button();
             this.panel326 = new System.Windows.Forms.Panel();
             this.label141 = new System.Windows.Forms.Label();
             this.panel327 = new System.Windows.Forms.Panel();
+            this.MachTDSApDCJig5 = new System.Windows.Forms.Button();
             this.panel328 = new System.Windows.Forms.Panel();
             this.label142 = new System.Windows.Forms.Label();
             this.panel329 = new System.Windows.Forms.Panel();
@@ -298,12 +316,15 @@
             this.panel331 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel43 = new System.Windows.Forms.TableLayoutPanel();
             this.panel332 = new System.Windows.Forms.Panel();
+            this.MachTDSCBApSuatJig4 = new System.Windows.Forms.Button();
             this.panel333 = new System.Windows.Forms.Panel();
             this.label144 = new System.Windows.Forms.Label();
             this.panel334 = new System.Windows.Forms.Panel();
+            this.MachTDSVanJig4 = new System.Windows.Forms.Button();
             this.panel335 = new System.Windows.Forms.Panel();
             this.label145 = new System.Windows.Forms.Label();
             this.panel336 = new System.Windows.Forms.Panel();
+            this.MachTDSApDCJig4 = new System.Windows.Forms.Button();
             this.panel337 = new System.Windows.Forms.Panel();
             this.label146 = new System.Windows.Forms.Label();
             this.panel338 = new System.Windows.Forms.Panel();
@@ -312,12 +333,15 @@
             this.panel340 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel44 = new System.Windows.Forms.TableLayoutPanel();
             this.panel341 = new System.Windows.Forms.Panel();
+            this.MachTDSCBApSuatJig3 = new System.Windows.Forms.Button();
             this.panel342 = new System.Windows.Forms.Panel();
             this.label148 = new System.Windows.Forms.Label();
             this.panel343 = new System.Windows.Forms.Panel();
+            this.MachTDSVanJig3 = new System.Windows.Forms.Button();
             this.panel344 = new System.Windows.Forms.Panel();
             this.label149 = new System.Windows.Forms.Label();
             this.panel345 = new System.Windows.Forms.Panel();
+            this.MachTDSApDCJig3 = new System.Windows.Forms.Button();
             this.panel346 = new System.Windows.Forms.Panel();
             this.label150 = new System.Windows.Forms.Label();
             this.panel347 = new System.Windows.Forms.Panel();
@@ -326,12 +350,15 @@
             this.panel349 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel45 = new System.Windows.Forms.TableLayoutPanel();
             this.panel350 = new System.Windows.Forms.Panel();
+            this.MachTDSCBApSuatJig2 = new System.Windows.Forms.Button();
             this.panel351 = new System.Windows.Forms.Panel();
             this.label152 = new System.Windows.Forms.Label();
             this.panel352 = new System.Windows.Forms.Panel();
+            this.MachTDSVanJig2 = new System.Windows.Forms.Button();
             this.panel353 = new System.Windows.Forms.Panel();
             this.label153 = new System.Windows.Forms.Label();
             this.panel354 = new System.Windows.Forms.Panel();
+            this.MachTDSApDCJig2 = new System.Windows.Forms.Button();
             this.panel355 = new System.Windows.Forms.Panel();
             this.label154 = new System.Windows.Forms.Label();
             this.panel356 = new System.Windows.Forms.Panel();
@@ -340,12 +367,15 @@
             this.panel358 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel46 = new System.Windows.Forms.TableLayoutPanel();
             this.panel359 = new System.Windows.Forms.Panel();
+            this.MachTDSCBApSuatJig1 = new System.Windows.Forms.Button();
             this.panel360 = new System.Windows.Forms.Panel();
             this.label156 = new System.Windows.Forms.Label();
             this.panel361 = new System.Windows.Forms.Panel();
+            this.MachTDSVanJig1 = new System.Windows.Forms.Button();
             this.panel362 = new System.Windows.Forms.Panel();
             this.label157 = new System.Windows.Forms.Label();
             this.panel363 = new System.Windows.Forms.Panel();
+            this.MachTDSApDCJig1 = new System.Windows.Forms.Button();
             this.panel364 = new System.Windows.Forms.Panel();
             this.label158 = new System.Windows.Forms.Label();
             this.panel365 = new System.Windows.Forms.Panel();
@@ -723,36 +753,6 @@
             this.button28 = new System.Windows.Forms.Button();
             this.panel181 = new System.Windows.Forms.Panel();
             this.label77 = new System.Windows.Forms.Label();
-            this.MachTDSApDCJig1 = new System.Windows.Forms.Button();
-            this.MachTDSVanJig1 = new System.Windows.Forms.Button();
-            this.MachTDSCBApSuatJig1 = new System.Windows.Forms.Button();
-            this.MachTDSApDCJig2 = new System.Windows.Forms.Button();
-            this.MachTDSVanJig2 = new System.Windows.Forms.Button();
-            this.MachTDSCBApSuatJig2 = new System.Windows.Forms.Button();
-            this.MachTDSApDCJig3 = new System.Windows.Forms.Button();
-            this.MachTDSVanJig3 = new System.Windows.Forms.Button();
-            this.MachTDSCBApSuatJig3 = new System.Windows.Forms.Button();
-            this.MachTDSApDCJig4 = new System.Windows.Forms.Button();
-            this.MachTDSVanJig4 = new System.Windows.Forms.Button();
-            this.MachTDSCBApSuatJig4 = new System.Windows.Forms.Button();
-            this.MachTDSApDCJig5 = new System.Windows.Forms.Button();
-            this.MachTDSVanJig5 = new System.Windows.Forms.Button();
-            this.MachTDSCBApSuatJig5 = new System.Windows.Forms.Button();
-            this.MachTDSApDCJig10 = new System.Windows.Forms.Button();
-            this.MachTDSVanJig10 = new System.Windows.Forms.Button();
-            this.MachTDSCBApSuatJig10 = new System.Windows.Forms.Button();
-            this.MachTDSApDCJig9 = new System.Windows.Forms.Button();
-            this.MachTDSVanJig9 = new System.Windows.Forms.Button();
-            this.MachTDSCBApSuatJig9 = new System.Windows.Forms.Button();
-            this.MachTDSApDCJig8 = new System.Windows.Forms.Button();
-            this.MachTDSVanJig8 = new System.Windows.Forms.Button();
-            this.MachTDSCBApSuatJig8 = new System.Windows.Forms.Button();
-            this.MachTDSCBApSuatJig7 = new System.Windows.Forms.Button();
-            this.MachTDSVanJig7 = new System.Windows.Forms.Button();
-            this.MachTDSApDCJig7 = new System.Windows.Forms.Button();
-            this.MachTDSApDCJig6 = new System.Windows.Forms.Button();
-            this.MachTDSVanJig6 = new System.Windows.Forms.Button();
-            this.MachTDSCBApSuatJig6 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPageGiamSatJigNguon.SuspendLayout();
             this.panel183.SuspendLayout();
@@ -1184,6 +1184,7 @@
             this.tabControl1.Controls.Add(this.tabPageGiamSatJigTDS);
             this.tabControl1.Controls.Add(this.tabPageThongKe);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -1195,10 +1196,10 @@
             this.tabPageGiamSatJigNguon.AutoScroll = true;
             this.tabPageGiamSatJigNguon.Controls.Add(this.panel183);
             this.tabPageGiamSatJigNguon.Controls.Add(this.panel182);
-            this.tabPageGiamSatJigNguon.Location = new System.Drawing.Point(4, 24);
+            this.tabPageGiamSatJigNguon.Location = new System.Drawing.Point(4, 34);
             this.tabPageGiamSatJigNguon.Name = "tabPageGiamSatJigNguon";
             this.tabPageGiamSatJigNguon.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGiamSatJigNguon.Size = new System.Drawing.Size(1038, 506);
+            this.tabPageGiamSatJigNguon.Size = new System.Drawing.Size(1038, 496);
             this.tabPageGiamSatJigNguon.TabIndex = 0;
             this.tabPageGiamSatJigNguon.Text = "Giám sát Jig Mạch Nguồn";
             this.tabPageGiamSatJigNguon.UseVisualStyleBackColor = true;
@@ -1210,7 +1211,7 @@
             this.panel183.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel183.Location = new System.Drawing.Point(3, 46);
             this.panel183.Name = "panel183";
-            this.panel183.Size = new System.Drawing.Size(1032, 457);
+            this.panel183.Size = new System.Drawing.Size(1032, 447);
             this.panel183.TabIndex = 2;
             // 
             // tableLayoutPanel25
@@ -1237,7 +1238,7 @@
             this.tableLayoutPanel25.RowCount = 2;
             this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel25.Size = new System.Drawing.Size(1030, 455);
+            this.tableLayoutPanel25.Size = new System.Drawing.Size(1030, 445);
             this.tableLayoutPanel25.TabIndex = 2;
             // 
             // panel184
@@ -1247,9 +1248,9 @@
             this.panel184.Controls.Add(this.panel185);
             this.panel184.Controls.Add(this.panel192);
             this.panel184.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel184.Location = new System.Drawing.Point(827, 230);
+            this.panel184.Location = new System.Drawing.Point(827, 225);
             this.panel184.Name = "panel184";
-            this.panel184.Size = new System.Drawing.Size(200, 222);
+            this.panel184.Size = new System.Drawing.Size(200, 217);
             this.panel184.TabIndex = 9;
             // 
             // panel185
@@ -1258,7 +1259,7 @@
             this.panel185.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel185.Location = new System.Drawing.Point(0, 39);
             this.panel185.Name = "panel185";
-            this.panel185.Size = new System.Drawing.Size(198, 181);
+            this.panel185.Size = new System.Drawing.Size(198, 176);
             this.panel185.TabIndex = 1;
             // 
             // tableLayoutPanel26
@@ -1279,16 +1280,16 @@
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel26.Size = new System.Drawing.Size(198, 181);
+            this.tableLayoutPanel26.Size = new System.Drawing.Size(198, 176);
             this.tableLayoutPanel26.TabIndex = 0;
             // 
             // panel186
             // 
             this.panel186.Controls.Add(this.MachNguonCongSuatJig10);
             this.panel186.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel186.Location = new System.Drawing.Point(102, 123);
+            this.panel186.Location = new System.Drawing.Point(102, 119);
             this.panel186.Name = "panel186";
-            this.panel186.Size = new System.Drawing.Size(93, 55);
+            this.panel186.Size = new System.Drawing.Size(93, 54);
             this.panel186.TabIndex = 5;
             // 
             // MachNguonCongSuatJig10
@@ -1298,7 +1299,7 @@
             this.MachNguonCongSuatJig10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonCongSuatJig10.Location = new System.Drawing.Point(0, 0);
             this.MachNguonCongSuatJig10.Name = "MachNguonCongSuatJig10";
-            this.MachNguonCongSuatJig10.Size = new System.Drawing.Size(93, 55);
+            this.MachNguonCongSuatJig10.Size = new System.Drawing.Size(93, 54);
             this.MachNguonCongSuatJig10.TabIndex = 1;
             this.MachNguonCongSuatJig10.UseVisualStyleBackColor = false;
             // 
@@ -1306,9 +1307,9 @@
             // 
             this.panel187.Controls.Add(this.label79);
             this.panel187.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel187.Location = new System.Drawing.Point(3, 123);
+            this.panel187.Location = new System.Drawing.Point(3, 119);
             this.panel187.Name = "panel187";
-            this.panel187.Size = new System.Drawing.Size(93, 55);
+            this.panel187.Size = new System.Drawing.Size(93, 54);
             this.panel187.TabIndex = 4;
             // 
             // label79
@@ -1318,7 +1319,7 @@
             this.label79.ForeColor = System.Drawing.SystemColors.Control;
             this.label79.Location = new System.Drawing.Point(0, 0);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(93, 55);
+            this.label79.Size = new System.Drawing.Size(93, 54);
             this.label79.TabIndex = 3;
             this.label79.Text = "Công suất : ";
             this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1327,9 +1328,9 @@
             // 
             this.panel188.Controls.Add(this.MachNguonDienApJig10);
             this.panel188.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel188.Location = new System.Drawing.Point(102, 63);
+            this.panel188.Location = new System.Drawing.Point(102, 61);
             this.panel188.Name = "panel188";
-            this.panel188.Size = new System.Drawing.Size(93, 54);
+            this.panel188.Size = new System.Drawing.Size(93, 52);
             this.panel188.TabIndex = 3;
             // 
             // MachNguonDienApJig10
@@ -1339,7 +1340,7 @@
             this.MachNguonDienApJig10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDienApJig10.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDienApJig10.Name = "MachNguonDienApJig10";
-            this.MachNguonDienApJig10.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig10.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDienApJig10.TabIndex = 1;
             this.MachNguonDienApJig10.UseVisualStyleBackColor = false;
             // 
@@ -1347,9 +1348,9 @@
             // 
             this.panel189.Controls.Add(this.label80);
             this.panel189.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel189.Location = new System.Drawing.Point(3, 63);
+            this.panel189.Location = new System.Drawing.Point(3, 61);
             this.panel189.Name = "panel189";
-            this.panel189.Size = new System.Drawing.Size(93, 54);
+            this.panel189.Size = new System.Drawing.Size(93, 52);
             this.panel189.TabIndex = 2;
             // 
             // label80
@@ -1359,7 +1360,7 @@
             this.label80.ForeColor = System.Drawing.SystemColors.Control;
             this.label80.Location = new System.Drawing.Point(0, 0);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(93, 54);
+            this.label80.Size = new System.Drawing.Size(93, 52);
             this.label80.TabIndex = 3;
             this.label80.Text = "Điện áp : ";
             this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1370,7 +1371,7 @@
             this.panel190.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel190.Location = new System.Drawing.Point(102, 3);
             this.panel190.Name = "panel190";
-            this.panel190.Size = new System.Drawing.Size(93, 54);
+            this.panel190.Size = new System.Drawing.Size(93, 52);
             this.panel190.TabIndex = 1;
             // 
             // MachNguonDongDienJig10
@@ -1380,7 +1381,7 @@
             this.MachNguonDongDienJig10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDongDienJig10.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDongDienJig10.Name = "MachNguonDongDienJig10";
-            this.MachNguonDongDienJig10.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig10.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDongDienJig10.TabIndex = 1;
             this.MachNguonDongDienJig10.UseVisualStyleBackColor = false;
             // 
@@ -1390,7 +1391,7 @@
             this.panel191.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel191.Location = new System.Drawing.Point(3, 3);
             this.panel191.Name = "panel191";
-            this.panel191.Size = new System.Drawing.Size(93, 54);
+            this.panel191.Size = new System.Drawing.Size(93, 52);
             this.panel191.TabIndex = 0;
             // 
             // label81
@@ -1400,7 +1401,7 @@
             this.label81.ForeColor = System.Drawing.SystemColors.Control;
             this.label81.Location = new System.Drawing.Point(0, 0);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(93, 54);
+            this.label81.Size = new System.Drawing.Size(93, 52);
             this.label81.TabIndex = 2;
             this.label81.Text = "Dòng điện : ";
             this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1435,9 +1436,9 @@
             this.panel193.Controls.Add(this.panel194);
             this.panel193.Controls.Add(this.panel201);
             this.panel193.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel193.Location = new System.Drawing.Point(621, 230);
+            this.panel193.Location = new System.Drawing.Point(621, 225);
             this.panel193.Name = "panel193";
-            this.panel193.Size = new System.Drawing.Size(200, 222);
+            this.panel193.Size = new System.Drawing.Size(200, 217);
             this.panel193.TabIndex = 8;
             // 
             // panel194
@@ -1446,7 +1447,7 @@
             this.panel194.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel194.Location = new System.Drawing.Point(0, 39);
             this.panel194.Name = "panel194";
-            this.panel194.Size = new System.Drawing.Size(198, 181);
+            this.panel194.Size = new System.Drawing.Size(198, 176);
             this.panel194.TabIndex = 1;
             // 
             // tableLayoutPanel27
@@ -1467,16 +1468,16 @@
             this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel27.Size = new System.Drawing.Size(198, 181);
+            this.tableLayoutPanel27.Size = new System.Drawing.Size(198, 176);
             this.tableLayoutPanel27.TabIndex = 0;
             // 
             // panel195
             // 
             this.panel195.Controls.Add(this.MachNguonCongSuatJig9);
             this.panel195.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel195.Location = new System.Drawing.Point(102, 123);
+            this.panel195.Location = new System.Drawing.Point(102, 119);
             this.panel195.Name = "panel195";
-            this.panel195.Size = new System.Drawing.Size(93, 55);
+            this.panel195.Size = new System.Drawing.Size(93, 54);
             this.panel195.TabIndex = 5;
             // 
             // MachNguonCongSuatJig9
@@ -1486,7 +1487,7 @@
             this.MachNguonCongSuatJig9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonCongSuatJig9.Location = new System.Drawing.Point(0, 0);
             this.MachNguonCongSuatJig9.Name = "MachNguonCongSuatJig9";
-            this.MachNguonCongSuatJig9.Size = new System.Drawing.Size(93, 55);
+            this.MachNguonCongSuatJig9.Size = new System.Drawing.Size(93, 54);
             this.MachNguonCongSuatJig9.TabIndex = 1;
             this.MachNguonCongSuatJig9.UseVisualStyleBackColor = false;
             // 
@@ -1494,9 +1495,9 @@
             // 
             this.panel196.Controls.Add(this.label83);
             this.panel196.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel196.Location = new System.Drawing.Point(3, 123);
+            this.panel196.Location = new System.Drawing.Point(3, 119);
             this.panel196.Name = "panel196";
-            this.panel196.Size = new System.Drawing.Size(93, 55);
+            this.panel196.Size = new System.Drawing.Size(93, 54);
             this.panel196.TabIndex = 4;
             // 
             // label83
@@ -1506,7 +1507,7 @@
             this.label83.ForeColor = System.Drawing.SystemColors.Control;
             this.label83.Location = new System.Drawing.Point(0, 0);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(93, 55);
+            this.label83.Size = new System.Drawing.Size(93, 54);
             this.label83.TabIndex = 3;
             this.label83.Text = "Công suất : ";
             this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1515,9 +1516,9 @@
             // 
             this.panel197.Controls.Add(this.MachNguonDienApJig9);
             this.panel197.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel197.Location = new System.Drawing.Point(102, 63);
+            this.panel197.Location = new System.Drawing.Point(102, 61);
             this.panel197.Name = "panel197";
-            this.panel197.Size = new System.Drawing.Size(93, 54);
+            this.panel197.Size = new System.Drawing.Size(93, 52);
             this.panel197.TabIndex = 3;
             // 
             // MachNguonDienApJig9
@@ -1527,7 +1528,7 @@
             this.MachNguonDienApJig9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDienApJig9.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDienApJig9.Name = "MachNguonDienApJig9";
-            this.MachNguonDienApJig9.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig9.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDienApJig9.TabIndex = 1;
             this.MachNguonDienApJig9.UseVisualStyleBackColor = false;
             // 
@@ -1535,9 +1536,9 @@
             // 
             this.panel198.Controls.Add(this.label84);
             this.panel198.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel198.Location = new System.Drawing.Point(3, 63);
+            this.panel198.Location = new System.Drawing.Point(3, 61);
             this.panel198.Name = "panel198";
-            this.panel198.Size = new System.Drawing.Size(93, 54);
+            this.panel198.Size = new System.Drawing.Size(93, 52);
             this.panel198.TabIndex = 2;
             // 
             // label84
@@ -1547,7 +1548,7 @@
             this.label84.ForeColor = System.Drawing.SystemColors.Control;
             this.label84.Location = new System.Drawing.Point(0, 0);
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(93, 54);
+            this.label84.Size = new System.Drawing.Size(93, 52);
             this.label84.TabIndex = 3;
             this.label84.Text = "Điện áp : ";
             this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1558,7 +1559,7 @@
             this.panel199.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel199.Location = new System.Drawing.Point(102, 3);
             this.panel199.Name = "panel199";
-            this.panel199.Size = new System.Drawing.Size(93, 54);
+            this.panel199.Size = new System.Drawing.Size(93, 52);
             this.panel199.TabIndex = 1;
             // 
             // MachNguonDongDienJig9
@@ -1568,7 +1569,7 @@
             this.MachNguonDongDienJig9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDongDienJig9.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDongDienJig9.Name = "MachNguonDongDienJig9";
-            this.MachNguonDongDienJig9.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig9.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDongDienJig9.TabIndex = 1;
             this.MachNguonDongDienJig9.UseVisualStyleBackColor = false;
             // 
@@ -1578,7 +1579,7 @@
             this.panel200.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel200.Location = new System.Drawing.Point(3, 3);
             this.panel200.Name = "panel200";
-            this.panel200.Size = new System.Drawing.Size(93, 54);
+            this.panel200.Size = new System.Drawing.Size(93, 52);
             this.panel200.TabIndex = 0;
             // 
             // label85
@@ -1588,7 +1589,7 @@
             this.label85.ForeColor = System.Drawing.SystemColors.Control;
             this.label85.Location = new System.Drawing.Point(0, 0);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(93, 54);
+            this.label85.Size = new System.Drawing.Size(93, 52);
             this.label85.TabIndex = 2;
             this.label85.Text = "Dòng điện : ";
             this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1623,9 +1624,9 @@
             this.panel202.Controls.Add(this.panel203);
             this.panel202.Controls.Add(this.panel210);
             this.panel202.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel202.Location = new System.Drawing.Point(415, 230);
+            this.panel202.Location = new System.Drawing.Point(415, 225);
             this.panel202.Name = "panel202";
-            this.panel202.Size = new System.Drawing.Size(200, 222);
+            this.panel202.Size = new System.Drawing.Size(200, 217);
             this.panel202.TabIndex = 7;
             // 
             // panel203
@@ -1634,7 +1635,7 @@
             this.panel203.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel203.Location = new System.Drawing.Point(0, 39);
             this.panel203.Name = "panel203";
-            this.panel203.Size = new System.Drawing.Size(198, 181);
+            this.panel203.Size = new System.Drawing.Size(198, 176);
             this.panel203.TabIndex = 1;
             // 
             // tableLayoutPanel28
@@ -1655,16 +1656,16 @@
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel28.Size = new System.Drawing.Size(198, 181);
+            this.tableLayoutPanel28.Size = new System.Drawing.Size(198, 176);
             this.tableLayoutPanel28.TabIndex = 0;
             // 
             // panel204
             // 
             this.panel204.Controls.Add(this.MachNguonCongSuatJig8);
             this.panel204.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel204.Location = new System.Drawing.Point(102, 123);
+            this.panel204.Location = new System.Drawing.Point(102, 119);
             this.panel204.Name = "panel204";
-            this.panel204.Size = new System.Drawing.Size(93, 55);
+            this.panel204.Size = new System.Drawing.Size(93, 54);
             this.panel204.TabIndex = 5;
             // 
             // MachNguonCongSuatJig8
@@ -1674,7 +1675,7 @@
             this.MachNguonCongSuatJig8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonCongSuatJig8.Location = new System.Drawing.Point(0, 0);
             this.MachNguonCongSuatJig8.Name = "MachNguonCongSuatJig8";
-            this.MachNguonCongSuatJig8.Size = new System.Drawing.Size(93, 55);
+            this.MachNguonCongSuatJig8.Size = new System.Drawing.Size(93, 54);
             this.MachNguonCongSuatJig8.TabIndex = 1;
             this.MachNguonCongSuatJig8.UseVisualStyleBackColor = false;
             // 
@@ -1682,9 +1683,9 @@
             // 
             this.panel205.Controls.Add(this.label87);
             this.panel205.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel205.Location = new System.Drawing.Point(3, 123);
+            this.panel205.Location = new System.Drawing.Point(3, 119);
             this.panel205.Name = "panel205";
-            this.panel205.Size = new System.Drawing.Size(93, 55);
+            this.panel205.Size = new System.Drawing.Size(93, 54);
             this.panel205.TabIndex = 4;
             // 
             // label87
@@ -1694,7 +1695,7 @@
             this.label87.ForeColor = System.Drawing.SystemColors.Control;
             this.label87.Location = new System.Drawing.Point(0, 0);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(93, 55);
+            this.label87.Size = new System.Drawing.Size(93, 54);
             this.label87.TabIndex = 3;
             this.label87.Text = "Công suất : ";
             this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1703,9 +1704,9 @@
             // 
             this.panel206.Controls.Add(this.MachNguonDienApJig8);
             this.panel206.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel206.Location = new System.Drawing.Point(102, 63);
+            this.panel206.Location = new System.Drawing.Point(102, 61);
             this.panel206.Name = "panel206";
-            this.panel206.Size = new System.Drawing.Size(93, 54);
+            this.panel206.Size = new System.Drawing.Size(93, 52);
             this.panel206.TabIndex = 3;
             // 
             // MachNguonDienApJig8
@@ -1715,7 +1716,7 @@
             this.MachNguonDienApJig8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDienApJig8.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDienApJig8.Name = "MachNguonDienApJig8";
-            this.MachNguonDienApJig8.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig8.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDienApJig8.TabIndex = 1;
             this.MachNguonDienApJig8.UseVisualStyleBackColor = false;
             // 
@@ -1723,9 +1724,9 @@
             // 
             this.panel207.Controls.Add(this.label88);
             this.panel207.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel207.Location = new System.Drawing.Point(3, 63);
+            this.panel207.Location = new System.Drawing.Point(3, 61);
             this.panel207.Name = "panel207";
-            this.panel207.Size = new System.Drawing.Size(93, 54);
+            this.panel207.Size = new System.Drawing.Size(93, 52);
             this.panel207.TabIndex = 2;
             // 
             // label88
@@ -1735,7 +1736,7 @@
             this.label88.ForeColor = System.Drawing.SystemColors.Control;
             this.label88.Location = new System.Drawing.Point(0, 0);
             this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(93, 54);
+            this.label88.Size = new System.Drawing.Size(93, 52);
             this.label88.TabIndex = 3;
             this.label88.Text = "Điện áp : ";
             this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1746,7 +1747,7 @@
             this.panel208.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel208.Location = new System.Drawing.Point(102, 3);
             this.panel208.Name = "panel208";
-            this.panel208.Size = new System.Drawing.Size(93, 54);
+            this.panel208.Size = new System.Drawing.Size(93, 52);
             this.panel208.TabIndex = 1;
             // 
             // MachNguonDongDienJig8
@@ -1756,7 +1757,7 @@
             this.MachNguonDongDienJig8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDongDienJig8.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDongDienJig8.Name = "MachNguonDongDienJig8";
-            this.MachNguonDongDienJig8.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig8.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDongDienJig8.TabIndex = 1;
             this.MachNguonDongDienJig8.UseVisualStyleBackColor = false;
             // 
@@ -1766,7 +1767,7 @@
             this.panel209.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel209.Location = new System.Drawing.Point(3, 3);
             this.panel209.Name = "panel209";
-            this.panel209.Size = new System.Drawing.Size(93, 54);
+            this.panel209.Size = new System.Drawing.Size(93, 52);
             this.panel209.TabIndex = 0;
             // 
             // label89
@@ -1776,7 +1777,7 @@
             this.label89.ForeColor = System.Drawing.SystemColors.Control;
             this.label89.Location = new System.Drawing.Point(0, 0);
             this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(93, 54);
+            this.label89.Size = new System.Drawing.Size(93, 52);
             this.label89.TabIndex = 2;
             this.label89.Text = "Dòng điện : ";
             this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1811,9 +1812,9 @@
             this.panel211.Controls.Add(this.panel212);
             this.panel211.Controls.Add(this.panel219);
             this.panel211.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel211.Location = new System.Drawing.Point(209, 230);
+            this.panel211.Location = new System.Drawing.Point(209, 225);
             this.panel211.Name = "panel211";
-            this.panel211.Size = new System.Drawing.Size(200, 222);
+            this.panel211.Size = new System.Drawing.Size(200, 217);
             this.panel211.TabIndex = 6;
             // 
             // panel212
@@ -1822,7 +1823,7 @@
             this.panel212.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel212.Location = new System.Drawing.Point(0, 39);
             this.panel212.Name = "panel212";
-            this.panel212.Size = new System.Drawing.Size(198, 181);
+            this.panel212.Size = new System.Drawing.Size(198, 176);
             this.panel212.TabIndex = 1;
             // 
             // tableLayoutPanel29
@@ -1843,16 +1844,16 @@
             this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel29.Size = new System.Drawing.Size(198, 181);
+            this.tableLayoutPanel29.Size = new System.Drawing.Size(198, 176);
             this.tableLayoutPanel29.TabIndex = 0;
             // 
             // panel213
             // 
             this.panel213.Controls.Add(this.MachNguonCongSuatJig7);
             this.panel213.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel213.Location = new System.Drawing.Point(102, 123);
+            this.panel213.Location = new System.Drawing.Point(102, 119);
             this.panel213.Name = "panel213";
-            this.panel213.Size = new System.Drawing.Size(93, 55);
+            this.panel213.Size = new System.Drawing.Size(93, 54);
             this.panel213.TabIndex = 5;
             // 
             // MachNguonCongSuatJig7
@@ -1862,7 +1863,7 @@
             this.MachNguonCongSuatJig7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonCongSuatJig7.Location = new System.Drawing.Point(0, 0);
             this.MachNguonCongSuatJig7.Name = "MachNguonCongSuatJig7";
-            this.MachNguonCongSuatJig7.Size = new System.Drawing.Size(93, 55);
+            this.MachNguonCongSuatJig7.Size = new System.Drawing.Size(93, 54);
             this.MachNguonCongSuatJig7.TabIndex = 1;
             this.MachNguonCongSuatJig7.UseVisualStyleBackColor = false;
             // 
@@ -1870,9 +1871,9 @@
             // 
             this.panel214.Controls.Add(this.label91);
             this.panel214.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel214.Location = new System.Drawing.Point(3, 123);
+            this.panel214.Location = new System.Drawing.Point(3, 119);
             this.panel214.Name = "panel214";
-            this.panel214.Size = new System.Drawing.Size(93, 55);
+            this.panel214.Size = new System.Drawing.Size(93, 54);
             this.panel214.TabIndex = 4;
             // 
             // label91
@@ -1882,7 +1883,7 @@
             this.label91.ForeColor = System.Drawing.SystemColors.Control;
             this.label91.Location = new System.Drawing.Point(0, 0);
             this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(93, 55);
+            this.label91.Size = new System.Drawing.Size(93, 54);
             this.label91.TabIndex = 3;
             this.label91.Text = "Công suất : ";
             this.label91.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1891,9 +1892,9 @@
             // 
             this.panel215.Controls.Add(this.MachNguonDienApJig7);
             this.panel215.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel215.Location = new System.Drawing.Point(102, 63);
+            this.panel215.Location = new System.Drawing.Point(102, 61);
             this.panel215.Name = "panel215";
-            this.panel215.Size = new System.Drawing.Size(93, 54);
+            this.panel215.Size = new System.Drawing.Size(93, 52);
             this.panel215.TabIndex = 3;
             // 
             // MachNguonDienApJig7
@@ -1903,7 +1904,7 @@
             this.MachNguonDienApJig7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDienApJig7.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDienApJig7.Name = "MachNguonDienApJig7";
-            this.MachNguonDienApJig7.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig7.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDienApJig7.TabIndex = 1;
             this.MachNguonDienApJig7.UseVisualStyleBackColor = false;
             // 
@@ -1911,9 +1912,9 @@
             // 
             this.panel216.Controls.Add(this.label92);
             this.panel216.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel216.Location = new System.Drawing.Point(3, 63);
+            this.panel216.Location = new System.Drawing.Point(3, 61);
             this.panel216.Name = "panel216";
-            this.panel216.Size = new System.Drawing.Size(93, 54);
+            this.panel216.Size = new System.Drawing.Size(93, 52);
             this.panel216.TabIndex = 2;
             // 
             // label92
@@ -1923,7 +1924,7 @@
             this.label92.ForeColor = System.Drawing.SystemColors.Control;
             this.label92.Location = new System.Drawing.Point(0, 0);
             this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(93, 54);
+            this.label92.Size = new System.Drawing.Size(93, 52);
             this.label92.TabIndex = 3;
             this.label92.Text = "Điện áp : ";
             this.label92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1934,7 +1935,7 @@
             this.panel217.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel217.Location = new System.Drawing.Point(102, 3);
             this.panel217.Name = "panel217";
-            this.panel217.Size = new System.Drawing.Size(93, 54);
+            this.panel217.Size = new System.Drawing.Size(93, 52);
             this.panel217.TabIndex = 1;
             // 
             // MachNguonDongDienJig7
@@ -1944,7 +1945,7 @@
             this.MachNguonDongDienJig7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDongDienJig7.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDongDienJig7.Name = "MachNguonDongDienJig7";
-            this.MachNguonDongDienJig7.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig7.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDongDienJig7.TabIndex = 1;
             this.MachNguonDongDienJig7.UseVisualStyleBackColor = false;
             // 
@@ -1954,7 +1955,7 @@
             this.panel218.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel218.Location = new System.Drawing.Point(3, 3);
             this.panel218.Name = "panel218";
-            this.panel218.Size = new System.Drawing.Size(93, 54);
+            this.panel218.Size = new System.Drawing.Size(93, 52);
             this.panel218.TabIndex = 0;
             // 
             // label93
@@ -1964,7 +1965,7 @@
             this.label93.ForeColor = System.Drawing.SystemColors.Control;
             this.label93.Location = new System.Drawing.Point(0, 0);
             this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(93, 54);
+            this.label93.Size = new System.Drawing.Size(93, 52);
             this.label93.TabIndex = 2;
             this.label93.Text = "Dòng điện : ";
             this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1999,9 +2000,9 @@
             this.panel220.Controls.Add(this.panel221);
             this.panel220.Controls.Add(this.panel228);
             this.panel220.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel220.Location = new System.Drawing.Point(3, 230);
+            this.panel220.Location = new System.Drawing.Point(3, 225);
             this.panel220.Name = "panel220";
-            this.panel220.Size = new System.Drawing.Size(200, 222);
+            this.panel220.Size = new System.Drawing.Size(200, 217);
             this.panel220.TabIndex = 5;
             // 
             // panel221
@@ -2010,7 +2011,7 @@
             this.panel221.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel221.Location = new System.Drawing.Point(0, 39);
             this.panel221.Name = "panel221";
-            this.panel221.Size = new System.Drawing.Size(198, 181);
+            this.panel221.Size = new System.Drawing.Size(198, 176);
             this.panel221.TabIndex = 1;
             // 
             // tableLayoutPanel30
@@ -2031,16 +2032,16 @@
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel30.Size = new System.Drawing.Size(198, 181);
+            this.tableLayoutPanel30.Size = new System.Drawing.Size(198, 176);
             this.tableLayoutPanel30.TabIndex = 0;
             // 
             // panel222
             // 
             this.panel222.Controls.Add(this.MachNguonCongSuatJig6);
             this.panel222.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel222.Location = new System.Drawing.Point(102, 123);
+            this.panel222.Location = new System.Drawing.Point(102, 119);
             this.panel222.Name = "panel222";
-            this.panel222.Size = new System.Drawing.Size(93, 55);
+            this.panel222.Size = new System.Drawing.Size(93, 54);
             this.panel222.TabIndex = 5;
             // 
             // MachNguonCongSuatJig6
@@ -2050,7 +2051,7 @@
             this.MachNguonCongSuatJig6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonCongSuatJig6.Location = new System.Drawing.Point(0, 0);
             this.MachNguonCongSuatJig6.Name = "MachNguonCongSuatJig6";
-            this.MachNguonCongSuatJig6.Size = new System.Drawing.Size(93, 55);
+            this.MachNguonCongSuatJig6.Size = new System.Drawing.Size(93, 54);
             this.MachNguonCongSuatJig6.TabIndex = 1;
             this.MachNguonCongSuatJig6.UseVisualStyleBackColor = false;
             // 
@@ -2058,9 +2059,9 @@
             // 
             this.panel223.Controls.Add(this.label95);
             this.panel223.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel223.Location = new System.Drawing.Point(3, 123);
+            this.panel223.Location = new System.Drawing.Point(3, 119);
             this.panel223.Name = "panel223";
-            this.panel223.Size = new System.Drawing.Size(93, 55);
+            this.panel223.Size = new System.Drawing.Size(93, 54);
             this.panel223.TabIndex = 4;
             // 
             // label95
@@ -2070,7 +2071,7 @@
             this.label95.ForeColor = System.Drawing.SystemColors.Control;
             this.label95.Location = new System.Drawing.Point(0, 0);
             this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(93, 55);
+            this.label95.Size = new System.Drawing.Size(93, 54);
             this.label95.TabIndex = 3;
             this.label95.Text = "Công suất : ";
             this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2079,9 +2080,9 @@
             // 
             this.panel224.Controls.Add(this.MachNguonDienApJig6);
             this.panel224.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel224.Location = new System.Drawing.Point(102, 63);
+            this.panel224.Location = new System.Drawing.Point(102, 61);
             this.panel224.Name = "panel224";
-            this.panel224.Size = new System.Drawing.Size(93, 54);
+            this.panel224.Size = new System.Drawing.Size(93, 52);
             this.panel224.TabIndex = 3;
             // 
             // MachNguonDienApJig6
@@ -2091,7 +2092,7 @@
             this.MachNguonDienApJig6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDienApJig6.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDienApJig6.Name = "MachNguonDienApJig6";
-            this.MachNguonDienApJig6.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig6.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDienApJig6.TabIndex = 1;
             this.MachNguonDienApJig6.UseVisualStyleBackColor = false;
             // 
@@ -2099,9 +2100,9 @@
             // 
             this.panel225.Controls.Add(this.label96);
             this.panel225.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel225.Location = new System.Drawing.Point(3, 63);
+            this.panel225.Location = new System.Drawing.Point(3, 61);
             this.panel225.Name = "panel225";
-            this.panel225.Size = new System.Drawing.Size(93, 54);
+            this.panel225.Size = new System.Drawing.Size(93, 52);
             this.panel225.TabIndex = 2;
             // 
             // label96
@@ -2111,7 +2112,7 @@
             this.label96.ForeColor = System.Drawing.SystemColors.Control;
             this.label96.Location = new System.Drawing.Point(0, 0);
             this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(93, 54);
+            this.label96.Size = new System.Drawing.Size(93, 52);
             this.label96.TabIndex = 3;
             this.label96.Text = "Điện áp : ";
             this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2122,7 +2123,7 @@
             this.panel226.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel226.Location = new System.Drawing.Point(102, 3);
             this.panel226.Name = "panel226";
-            this.panel226.Size = new System.Drawing.Size(93, 54);
+            this.panel226.Size = new System.Drawing.Size(93, 52);
             this.panel226.TabIndex = 1;
             // 
             // MachNguonDongDienJig6
@@ -2132,7 +2133,7 @@
             this.MachNguonDongDienJig6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDongDienJig6.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDongDienJig6.Name = "MachNguonDongDienJig6";
-            this.MachNguonDongDienJig6.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig6.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDongDienJig6.TabIndex = 1;
             this.MachNguonDongDienJig6.UseVisualStyleBackColor = false;
             // 
@@ -2142,7 +2143,7 @@
             this.panel227.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel227.Location = new System.Drawing.Point(3, 3);
             this.panel227.Name = "panel227";
-            this.panel227.Size = new System.Drawing.Size(93, 54);
+            this.panel227.Size = new System.Drawing.Size(93, 52);
             this.panel227.TabIndex = 0;
             // 
             // label97
@@ -2152,7 +2153,7 @@
             this.label97.ForeColor = System.Drawing.SystemColors.Control;
             this.label97.Location = new System.Drawing.Point(0, 0);
             this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(93, 54);
+            this.label97.Size = new System.Drawing.Size(93, 52);
             this.label97.TabIndex = 2;
             this.label97.Text = "Dòng điện : ";
             this.label97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2189,7 +2190,7 @@
             this.panel229.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel229.Location = new System.Drawing.Point(827, 3);
             this.panel229.Name = "panel229";
-            this.panel229.Size = new System.Drawing.Size(200, 221);
+            this.panel229.Size = new System.Drawing.Size(200, 216);
             this.panel229.TabIndex = 4;
             // 
             // panel230
@@ -2198,7 +2199,7 @@
             this.panel230.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel230.Location = new System.Drawing.Point(0, 39);
             this.panel230.Name = "panel230";
-            this.panel230.Size = new System.Drawing.Size(198, 180);
+            this.panel230.Size = new System.Drawing.Size(198, 175);
             this.panel230.TabIndex = 1;
             // 
             // tableLayoutPanel31
@@ -2219,16 +2220,16 @@
             this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel31.Size = new System.Drawing.Size(198, 180);
+            this.tableLayoutPanel31.Size = new System.Drawing.Size(198, 175);
             this.tableLayoutPanel31.TabIndex = 0;
             // 
             // panel231
             // 
             this.panel231.Controls.Add(this.MachNguonCongSuatJig5);
             this.panel231.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel231.Location = new System.Drawing.Point(102, 123);
+            this.panel231.Location = new System.Drawing.Point(102, 119);
             this.panel231.Name = "panel231";
-            this.panel231.Size = new System.Drawing.Size(93, 54);
+            this.panel231.Size = new System.Drawing.Size(93, 53);
             this.panel231.TabIndex = 5;
             // 
             // MachNguonCongSuatJig5
@@ -2238,7 +2239,7 @@
             this.MachNguonCongSuatJig5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonCongSuatJig5.Location = new System.Drawing.Point(0, 0);
             this.MachNguonCongSuatJig5.Name = "MachNguonCongSuatJig5";
-            this.MachNguonCongSuatJig5.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonCongSuatJig5.Size = new System.Drawing.Size(93, 53);
             this.MachNguonCongSuatJig5.TabIndex = 1;
             this.MachNguonCongSuatJig5.UseVisualStyleBackColor = false;
             // 
@@ -2246,9 +2247,9 @@
             // 
             this.panel232.Controls.Add(this.label99);
             this.panel232.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel232.Location = new System.Drawing.Point(3, 123);
+            this.panel232.Location = new System.Drawing.Point(3, 119);
             this.panel232.Name = "panel232";
-            this.panel232.Size = new System.Drawing.Size(93, 54);
+            this.panel232.Size = new System.Drawing.Size(93, 53);
             this.panel232.TabIndex = 4;
             // 
             // label99
@@ -2258,7 +2259,7 @@
             this.label99.ForeColor = System.Drawing.SystemColors.Control;
             this.label99.Location = new System.Drawing.Point(0, 0);
             this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(93, 54);
+            this.label99.Size = new System.Drawing.Size(93, 53);
             this.label99.TabIndex = 3;
             this.label99.Text = "Công suất : ";
             this.label99.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2267,9 +2268,9 @@
             // 
             this.panel233.Controls.Add(this.MachNguonDienApJig5);
             this.panel233.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel233.Location = new System.Drawing.Point(102, 63);
+            this.panel233.Location = new System.Drawing.Point(102, 61);
             this.panel233.Name = "panel233";
-            this.panel233.Size = new System.Drawing.Size(93, 54);
+            this.panel233.Size = new System.Drawing.Size(93, 52);
             this.panel233.TabIndex = 3;
             // 
             // MachNguonDienApJig5
@@ -2279,7 +2280,7 @@
             this.MachNguonDienApJig5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDienApJig5.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDienApJig5.Name = "MachNguonDienApJig5";
-            this.MachNguonDienApJig5.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig5.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDienApJig5.TabIndex = 1;
             this.MachNguonDienApJig5.UseVisualStyleBackColor = false;
             // 
@@ -2287,9 +2288,9 @@
             // 
             this.panel234.Controls.Add(this.label100);
             this.panel234.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel234.Location = new System.Drawing.Point(3, 63);
+            this.panel234.Location = new System.Drawing.Point(3, 61);
             this.panel234.Name = "panel234";
-            this.panel234.Size = new System.Drawing.Size(93, 54);
+            this.panel234.Size = new System.Drawing.Size(93, 52);
             this.panel234.TabIndex = 2;
             // 
             // label100
@@ -2299,7 +2300,7 @@
             this.label100.ForeColor = System.Drawing.SystemColors.Control;
             this.label100.Location = new System.Drawing.Point(0, 0);
             this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(93, 54);
+            this.label100.Size = new System.Drawing.Size(93, 52);
             this.label100.TabIndex = 3;
             this.label100.Text = "Điện áp : ";
             this.label100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2310,7 +2311,7 @@
             this.panel235.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel235.Location = new System.Drawing.Point(102, 3);
             this.panel235.Name = "panel235";
-            this.panel235.Size = new System.Drawing.Size(93, 54);
+            this.panel235.Size = new System.Drawing.Size(93, 52);
             this.panel235.TabIndex = 1;
             // 
             // MachNguonDongDienJig5
@@ -2320,7 +2321,7 @@
             this.MachNguonDongDienJig5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDongDienJig5.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDongDienJig5.Name = "MachNguonDongDienJig5";
-            this.MachNguonDongDienJig5.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig5.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDongDienJig5.TabIndex = 1;
             this.MachNguonDongDienJig5.UseVisualStyleBackColor = false;
             // 
@@ -2330,7 +2331,7 @@
             this.panel236.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel236.Location = new System.Drawing.Point(3, 3);
             this.panel236.Name = "panel236";
-            this.panel236.Size = new System.Drawing.Size(93, 54);
+            this.panel236.Size = new System.Drawing.Size(93, 52);
             this.panel236.TabIndex = 0;
             // 
             // label101
@@ -2340,7 +2341,7 @@
             this.label101.ForeColor = System.Drawing.SystemColors.Control;
             this.label101.Location = new System.Drawing.Point(0, 0);
             this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(93, 54);
+            this.label101.Size = new System.Drawing.Size(93, 52);
             this.label101.TabIndex = 2;
             this.label101.Text = "Dòng điện : ";
             this.label101.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2377,7 +2378,7 @@
             this.panel238.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel238.Location = new System.Drawing.Point(621, 3);
             this.panel238.Name = "panel238";
-            this.panel238.Size = new System.Drawing.Size(200, 221);
+            this.panel238.Size = new System.Drawing.Size(200, 216);
             this.panel238.TabIndex = 3;
             // 
             // panel239
@@ -2386,7 +2387,7 @@
             this.panel239.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel239.Location = new System.Drawing.Point(0, 39);
             this.panel239.Name = "panel239";
-            this.panel239.Size = new System.Drawing.Size(198, 180);
+            this.panel239.Size = new System.Drawing.Size(198, 175);
             this.panel239.TabIndex = 1;
             // 
             // tableLayoutPanel32
@@ -2407,16 +2408,16 @@
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel32.Size = new System.Drawing.Size(198, 180);
+            this.tableLayoutPanel32.Size = new System.Drawing.Size(198, 175);
             this.tableLayoutPanel32.TabIndex = 0;
             // 
             // panel240
             // 
             this.panel240.Controls.Add(this.MachNguonCongSuatJig4);
             this.panel240.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel240.Location = new System.Drawing.Point(102, 123);
+            this.panel240.Location = new System.Drawing.Point(102, 119);
             this.panel240.Name = "panel240";
-            this.panel240.Size = new System.Drawing.Size(93, 54);
+            this.panel240.Size = new System.Drawing.Size(93, 53);
             this.panel240.TabIndex = 5;
             // 
             // MachNguonCongSuatJig4
@@ -2426,7 +2427,7 @@
             this.MachNguonCongSuatJig4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonCongSuatJig4.Location = new System.Drawing.Point(0, 0);
             this.MachNguonCongSuatJig4.Name = "MachNguonCongSuatJig4";
-            this.MachNguonCongSuatJig4.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonCongSuatJig4.Size = new System.Drawing.Size(93, 53);
             this.MachNguonCongSuatJig4.TabIndex = 1;
             this.MachNguonCongSuatJig4.UseVisualStyleBackColor = false;
             // 
@@ -2434,9 +2435,9 @@
             // 
             this.panel241.Controls.Add(this.label103);
             this.panel241.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel241.Location = new System.Drawing.Point(3, 123);
+            this.panel241.Location = new System.Drawing.Point(3, 119);
             this.panel241.Name = "panel241";
-            this.panel241.Size = new System.Drawing.Size(93, 54);
+            this.panel241.Size = new System.Drawing.Size(93, 53);
             this.panel241.TabIndex = 4;
             // 
             // label103
@@ -2446,7 +2447,7 @@
             this.label103.ForeColor = System.Drawing.SystemColors.Control;
             this.label103.Location = new System.Drawing.Point(0, 0);
             this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(93, 54);
+            this.label103.Size = new System.Drawing.Size(93, 53);
             this.label103.TabIndex = 3;
             this.label103.Text = "Công suất : ";
             this.label103.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2455,9 +2456,9 @@
             // 
             this.panel242.Controls.Add(this.MachNguonDienApJig4);
             this.panel242.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel242.Location = new System.Drawing.Point(102, 63);
+            this.panel242.Location = new System.Drawing.Point(102, 61);
             this.panel242.Name = "panel242";
-            this.panel242.Size = new System.Drawing.Size(93, 54);
+            this.panel242.Size = new System.Drawing.Size(93, 52);
             this.panel242.TabIndex = 3;
             // 
             // MachNguonDienApJig4
@@ -2467,7 +2468,7 @@
             this.MachNguonDienApJig4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDienApJig4.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDienApJig4.Name = "MachNguonDienApJig4";
-            this.MachNguonDienApJig4.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig4.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDienApJig4.TabIndex = 1;
             this.MachNguonDienApJig4.UseVisualStyleBackColor = false;
             // 
@@ -2475,9 +2476,9 @@
             // 
             this.panel243.Controls.Add(this.label104);
             this.panel243.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel243.Location = new System.Drawing.Point(3, 63);
+            this.panel243.Location = new System.Drawing.Point(3, 61);
             this.panel243.Name = "panel243";
-            this.panel243.Size = new System.Drawing.Size(93, 54);
+            this.panel243.Size = new System.Drawing.Size(93, 52);
             this.panel243.TabIndex = 2;
             // 
             // label104
@@ -2487,7 +2488,7 @@
             this.label104.ForeColor = System.Drawing.SystemColors.Control;
             this.label104.Location = new System.Drawing.Point(0, 0);
             this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(93, 54);
+            this.label104.Size = new System.Drawing.Size(93, 52);
             this.label104.TabIndex = 3;
             this.label104.Text = "Điện áp : ";
             this.label104.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2498,7 +2499,7 @@
             this.panel244.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel244.Location = new System.Drawing.Point(102, 3);
             this.panel244.Name = "panel244";
-            this.panel244.Size = new System.Drawing.Size(93, 54);
+            this.panel244.Size = new System.Drawing.Size(93, 52);
             this.panel244.TabIndex = 1;
             // 
             // MachNguonDongDienJig4
@@ -2508,7 +2509,7 @@
             this.MachNguonDongDienJig4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDongDienJig4.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDongDienJig4.Name = "MachNguonDongDienJig4";
-            this.MachNguonDongDienJig4.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig4.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDongDienJig4.TabIndex = 1;
             this.MachNguonDongDienJig4.UseVisualStyleBackColor = false;
             // 
@@ -2518,7 +2519,7 @@
             this.panel245.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel245.Location = new System.Drawing.Point(3, 3);
             this.panel245.Name = "panel245";
-            this.panel245.Size = new System.Drawing.Size(93, 54);
+            this.panel245.Size = new System.Drawing.Size(93, 52);
             this.panel245.TabIndex = 0;
             // 
             // label105
@@ -2528,7 +2529,7 @@
             this.label105.ForeColor = System.Drawing.SystemColors.Control;
             this.label105.Location = new System.Drawing.Point(0, 0);
             this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(93, 54);
+            this.label105.Size = new System.Drawing.Size(93, 52);
             this.label105.TabIndex = 2;
             this.label105.Text = "Dòng điện : ";
             this.label105.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2565,7 +2566,7 @@
             this.panel247.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel247.Location = new System.Drawing.Point(415, 3);
             this.panel247.Name = "panel247";
-            this.panel247.Size = new System.Drawing.Size(200, 221);
+            this.panel247.Size = new System.Drawing.Size(200, 216);
             this.panel247.TabIndex = 2;
             // 
             // panel248
@@ -2574,7 +2575,7 @@
             this.panel248.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel248.Location = new System.Drawing.Point(0, 39);
             this.panel248.Name = "panel248";
-            this.panel248.Size = new System.Drawing.Size(198, 180);
+            this.panel248.Size = new System.Drawing.Size(198, 175);
             this.panel248.TabIndex = 1;
             // 
             // tableLayoutPanel33
@@ -2595,16 +2596,16 @@
             this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel33.Size = new System.Drawing.Size(198, 180);
+            this.tableLayoutPanel33.Size = new System.Drawing.Size(198, 175);
             this.tableLayoutPanel33.TabIndex = 0;
             // 
             // panel249
             // 
             this.panel249.Controls.Add(this.MachNguonCongSuatJig3);
             this.panel249.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel249.Location = new System.Drawing.Point(102, 123);
+            this.panel249.Location = new System.Drawing.Point(102, 119);
             this.panel249.Name = "panel249";
-            this.panel249.Size = new System.Drawing.Size(93, 54);
+            this.panel249.Size = new System.Drawing.Size(93, 53);
             this.panel249.TabIndex = 5;
             // 
             // MachNguonCongSuatJig3
@@ -2614,7 +2615,7 @@
             this.MachNguonCongSuatJig3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonCongSuatJig3.Location = new System.Drawing.Point(0, 0);
             this.MachNguonCongSuatJig3.Name = "MachNguonCongSuatJig3";
-            this.MachNguonCongSuatJig3.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonCongSuatJig3.Size = new System.Drawing.Size(93, 53);
             this.MachNguonCongSuatJig3.TabIndex = 1;
             this.MachNguonCongSuatJig3.UseVisualStyleBackColor = false;
             // 
@@ -2622,9 +2623,9 @@
             // 
             this.panel250.Controls.Add(this.label107);
             this.panel250.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel250.Location = new System.Drawing.Point(3, 123);
+            this.panel250.Location = new System.Drawing.Point(3, 119);
             this.panel250.Name = "panel250";
-            this.panel250.Size = new System.Drawing.Size(93, 54);
+            this.panel250.Size = new System.Drawing.Size(93, 53);
             this.panel250.TabIndex = 4;
             // 
             // label107
@@ -2634,7 +2635,7 @@
             this.label107.ForeColor = System.Drawing.SystemColors.Control;
             this.label107.Location = new System.Drawing.Point(0, 0);
             this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(93, 54);
+            this.label107.Size = new System.Drawing.Size(93, 53);
             this.label107.TabIndex = 3;
             this.label107.Text = "Công suất : ";
             this.label107.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2643,9 +2644,9 @@
             // 
             this.panel251.Controls.Add(this.MachNguonDienApJig3);
             this.panel251.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel251.Location = new System.Drawing.Point(102, 63);
+            this.panel251.Location = new System.Drawing.Point(102, 61);
             this.panel251.Name = "panel251";
-            this.panel251.Size = new System.Drawing.Size(93, 54);
+            this.panel251.Size = new System.Drawing.Size(93, 52);
             this.panel251.TabIndex = 3;
             // 
             // MachNguonDienApJig3
@@ -2655,7 +2656,7 @@
             this.MachNguonDienApJig3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDienApJig3.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDienApJig3.Name = "MachNguonDienApJig3";
-            this.MachNguonDienApJig3.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig3.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDienApJig3.TabIndex = 1;
             this.MachNguonDienApJig3.UseVisualStyleBackColor = false;
             // 
@@ -2663,9 +2664,9 @@
             // 
             this.panel252.Controls.Add(this.label108);
             this.panel252.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel252.Location = new System.Drawing.Point(3, 63);
+            this.panel252.Location = new System.Drawing.Point(3, 61);
             this.panel252.Name = "panel252";
-            this.panel252.Size = new System.Drawing.Size(93, 54);
+            this.panel252.Size = new System.Drawing.Size(93, 52);
             this.panel252.TabIndex = 2;
             // 
             // label108
@@ -2675,7 +2676,7 @@
             this.label108.ForeColor = System.Drawing.SystemColors.Control;
             this.label108.Location = new System.Drawing.Point(0, 0);
             this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(93, 54);
+            this.label108.Size = new System.Drawing.Size(93, 52);
             this.label108.TabIndex = 3;
             this.label108.Text = "Điện áp : ";
             this.label108.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2686,7 +2687,7 @@
             this.panel253.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel253.Location = new System.Drawing.Point(102, 3);
             this.panel253.Name = "panel253";
-            this.panel253.Size = new System.Drawing.Size(93, 54);
+            this.panel253.Size = new System.Drawing.Size(93, 52);
             this.panel253.TabIndex = 1;
             // 
             // MachNguonDongDienJig3
@@ -2696,7 +2697,7 @@
             this.MachNguonDongDienJig3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDongDienJig3.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDongDienJig3.Name = "MachNguonDongDienJig3";
-            this.MachNguonDongDienJig3.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig3.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDongDienJig3.TabIndex = 1;
             this.MachNguonDongDienJig3.UseVisualStyleBackColor = false;
             // 
@@ -2706,7 +2707,7 @@
             this.panel254.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel254.Location = new System.Drawing.Point(3, 3);
             this.panel254.Name = "panel254";
-            this.panel254.Size = new System.Drawing.Size(93, 54);
+            this.panel254.Size = new System.Drawing.Size(93, 52);
             this.panel254.TabIndex = 0;
             // 
             // label109
@@ -2716,7 +2717,7 @@
             this.label109.ForeColor = System.Drawing.SystemColors.Control;
             this.label109.Location = new System.Drawing.Point(0, 0);
             this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(93, 54);
+            this.label109.Size = new System.Drawing.Size(93, 52);
             this.label109.TabIndex = 2;
             this.label109.Text = "Dòng điện : ";
             this.label109.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2753,7 +2754,7 @@
             this.panel256.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel256.Location = new System.Drawing.Point(209, 3);
             this.panel256.Name = "panel256";
-            this.panel256.Size = new System.Drawing.Size(200, 221);
+            this.panel256.Size = new System.Drawing.Size(200, 216);
             this.panel256.TabIndex = 1;
             // 
             // panel257
@@ -2762,7 +2763,7 @@
             this.panel257.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel257.Location = new System.Drawing.Point(0, 39);
             this.panel257.Name = "panel257";
-            this.panel257.Size = new System.Drawing.Size(198, 180);
+            this.panel257.Size = new System.Drawing.Size(198, 175);
             this.panel257.TabIndex = 1;
             // 
             // tableLayoutPanel34
@@ -2783,16 +2784,16 @@
             this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel34.Size = new System.Drawing.Size(198, 180);
+            this.tableLayoutPanel34.Size = new System.Drawing.Size(198, 175);
             this.tableLayoutPanel34.TabIndex = 0;
             // 
             // panel258
             // 
             this.panel258.Controls.Add(this.MachNguonCongSuatJig2);
             this.panel258.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel258.Location = new System.Drawing.Point(102, 123);
+            this.panel258.Location = new System.Drawing.Point(102, 119);
             this.panel258.Name = "panel258";
-            this.panel258.Size = new System.Drawing.Size(93, 54);
+            this.panel258.Size = new System.Drawing.Size(93, 53);
             this.panel258.TabIndex = 5;
             // 
             // MachNguonCongSuatJig2
@@ -2802,7 +2803,7 @@
             this.MachNguonCongSuatJig2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonCongSuatJig2.Location = new System.Drawing.Point(0, 0);
             this.MachNguonCongSuatJig2.Name = "MachNguonCongSuatJig2";
-            this.MachNguonCongSuatJig2.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonCongSuatJig2.Size = new System.Drawing.Size(93, 53);
             this.MachNguonCongSuatJig2.TabIndex = 1;
             this.MachNguonCongSuatJig2.UseVisualStyleBackColor = false;
             // 
@@ -2810,9 +2811,9 @@
             // 
             this.panel259.Controls.Add(this.label111);
             this.panel259.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel259.Location = new System.Drawing.Point(3, 123);
+            this.panel259.Location = new System.Drawing.Point(3, 119);
             this.panel259.Name = "panel259";
-            this.panel259.Size = new System.Drawing.Size(93, 54);
+            this.panel259.Size = new System.Drawing.Size(93, 53);
             this.panel259.TabIndex = 4;
             // 
             // label111
@@ -2822,7 +2823,7 @@
             this.label111.ForeColor = System.Drawing.SystemColors.Control;
             this.label111.Location = new System.Drawing.Point(0, 0);
             this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(93, 54);
+            this.label111.Size = new System.Drawing.Size(93, 53);
             this.label111.TabIndex = 3;
             this.label111.Text = "Công suất : ";
             this.label111.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2831,9 +2832,9 @@
             // 
             this.panel260.Controls.Add(this.MachNguonDienApJig2);
             this.panel260.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel260.Location = new System.Drawing.Point(102, 63);
+            this.panel260.Location = new System.Drawing.Point(102, 61);
             this.panel260.Name = "panel260";
-            this.panel260.Size = new System.Drawing.Size(93, 54);
+            this.panel260.Size = new System.Drawing.Size(93, 52);
             this.panel260.TabIndex = 3;
             // 
             // MachNguonDienApJig2
@@ -2843,7 +2844,7 @@
             this.MachNguonDienApJig2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDienApJig2.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDienApJig2.Name = "MachNguonDienApJig2";
-            this.MachNguonDienApJig2.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig2.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDienApJig2.TabIndex = 1;
             this.MachNguonDienApJig2.UseVisualStyleBackColor = false;
             // 
@@ -2851,9 +2852,9 @@
             // 
             this.panel261.Controls.Add(this.label112);
             this.panel261.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel261.Location = new System.Drawing.Point(3, 63);
+            this.panel261.Location = new System.Drawing.Point(3, 61);
             this.panel261.Name = "panel261";
-            this.panel261.Size = new System.Drawing.Size(93, 54);
+            this.panel261.Size = new System.Drawing.Size(93, 52);
             this.panel261.TabIndex = 2;
             // 
             // label112
@@ -2863,7 +2864,7 @@
             this.label112.ForeColor = System.Drawing.SystemColors.Control;
             this.label112.Location = new System.Drawing.Point(0, 0);
             this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(93, 54);
+            this.label112.Size = new System.Drawing.Size(93, 52);
             this.label112.TabIndex = 3;
             this.label112.Text = "Điện áp : ";
             this.label112.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2874,7 +2875,7 @@
             this.panel262.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel262.Location = new System.Drawing.Point(102, 3);
             this.panel262.Name = "panel262";
-            this.panel262.Size = new System.Drawing.Size(93, 54);
+            this.panel262.Size = new System.Drawing.Size(93, 52);
             this.panel262.TabIndex = 1;
             // 
             // MachNguonDongDienJig2
@@ -2884,7 +2885,7 @@
             this.MachNguonDongDienJig2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDongDienJig2.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDongDienJig2.Name = "MachNguonDongDienJig2";
-            this.MachNguonDongDienJig2.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig2.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDongDienJig2.TabIndex = 1;
             this.MachNguonDongDienJig2.UseVisualStyleBackColor = false;
             // 
@@ -2894,7 +2895,7 @@
             this.panel263.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel263.Location = new System.Drawing.Point(3, 3);
             this.panel263.Name = "panel263";
-            this.panel263.Size = new System.Drawing.Size(93, 54);
+            this.panel263.Size = new System.Drawing.Size(93, 52);
             this.panel263.TabIndex = 0;
             // 
             // label113
@@ -2904,7 +2905,7 @@
             this.label113.ForeColor = System.Drawing.SystemColors.Control;
             this.label113.Location = new System.Drawing.Point(0, 0);
             this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(93, 54);
+            this.label113.Size = new System.Drawing.Size(93, 52);
             this.label113.TabIndex = 2;
             this.label113.Text = "Dòng điện : ";
             this.label113.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2941,7 +2942,7 @@
             this.panel265.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel265.Location = new System.Drawing.Point(3, 3);
             this.panel265.Name = "panel265";
-            this.panel265.Size = new System.Drawing.Size(200, 221);
+            this.panel265.Size = new System.Drawing.Size(200, 216);
             this.panel265.TabIndex = 0;
             // 
             // panel266
@@ -2950,7 +2951,7 @@
             this.panel266.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel266.Location = new System.Drawing.Point(0, 39);
             this.panel266.Name = "panel266";
-            this.panel266.Size = new System.Drawing.Size(198, 180);
+            this.panel266.Size = new System.Drawing.Size(198, 175);
             this.panel266.TabIndex = 1;
             // 
             // tableLayoutPanel35
@@ -2971,16 +2972,16 @@
             this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel35.Size = new System.Drawing.Size(198, 180);
+            this.tableLayoutPanel35.Size = new System.Drawing.Size(198, 175);
             this.tableLayoutPanel35.TabIndex = 0;
             // 
             // panel267
             // 
             this.panel267.Controls.Add(this.MachNguonCongSuatJig1);
             this.panel267.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel267.Location = new System.Drawing.Point(102, 123);
+            this.panel267.Location = new System.Drawing.Point(102, 119);
             this.panel267.Name = "panel267";
-            this.panel267.Size = new System.Drawing.Size(93, 54);
+            this.panel267.Size = new System.Drawing.Size(93, 53);
             this.panel267.TabIndex = 5;
             // 
             // MachNguonCongSuatJig1
@@ -2990,7 +2991,7 @@
             this.MachNguonCongSuatJig1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonCongSuatJig1.Location = new System.Drawing.Point(0, 0);
             this.MachNguonCongSuatJig1.Name = "MachNguonCongSuatJig1";
-            this.MachNguonCongSuatJig1.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonCongSuatJig1.Size = new System.Drawing.Size(93, 53);
             this.MachNguonCongSuatJig1.TabIndex = 1;
             this.MachNguonCongSuatJig1.UseVisualStyleBackColor = false;
             // 
@@ -2998,9 +2999,9 @@
             // 
             this.panel268.Controls.Add(this.label115);
             this.panel268.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel268.Location = new System.Drawing.Point(3, 123);
+            this.panel268.Location = new System.Drawing.Point(3, 119);
             this.panel268.Name = "panel268";
-            this.panel268.Size = new System.Drawing.Size(93, 54);
+            this.panel268.Size = new System.Drawing.Size(93, 53);
             this.panel268.TabIndex = 4;
             // 
             // label115
@@ -3010,7 +3011,7 @@
             this.label115.ForeColor = System.Drawing.SystemColors.Control;
             this.label115.Location = new System.Drawing.Point(0, 0);
             this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(93, 54);
+            this.label115.Size = new System.Drawing.Size(93, 53);
             this.label115.TabIndex = 2;
             this.label115.Text = "Công suất : ";
             this.label115.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3019,9 +3020,9 @@
             // 
             this.panel269.Controls.Add(this.MachNguonDienApJig1);
             this.panel269.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel269.Location = new System.Drawing.Point(102, 63);
+            this.panel269.Location = new System.Drawing.Point(102, 61);
             this.panel269.Name = "panel269";
-            this.panel269.Size = new System.Drawing.Size(93, 54);
+            this.panel269.Size = new System.Drawing.Size(93, 52);
             this.panel269.TabIndex = 3;
             // 
             // MachNguonDienApJig1
@@ -3031,7 +3032,7 @@
             this.MachNguonDienApJig1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDienApJig1.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDienApJig1.Name = "MachNguonDienApJig1";
-            this.MachNguonDienApJig1.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDienApJig1.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDienApJig1.TabIndex = 1;
             this.MachNguonDienApJig1.UseVisualStyleBackColor = false;
             // 
@@ -3039,9 +3040,9 @@
             // 
             this.panel270.Controls.Add(this.label116);
             this.panel270.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel270.Location = new System.Drawing.Point(3, 63);
+            this.panel270.Location = new System.Drawing.Point(3, 61);
             this.panel270.Name = "panel270";
-            this.panel270.Size = new System.Drawing.Size(93, 54);
+            this.panel270.Size = new System.Drawing.Size(93, 52);
             this.panel270.TabIndex = 2;
             // 
             // label116
@@ -3051,7 +3052,7 @@
             this.label116.ForeColor = System.Drawing.SystemColors.Control;
             this.label116.Location = new System.Drawing.Point(0, 0);
             this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(93, 54);
+            this.label116.Size = new System.Drawing.Size(93, 52);
             this.label116.TabIndex = 2;
             this.label116.Text = "Điện áp : ";
             this.label116.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3062,7 +3063,7 @@
             this.panel271.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel271.Location = new System.Drawing.Point(102, 3);
             this.panel271.Name = "panel271";
-            this.panel271.Size = new System.Drawing.Size(93, 54);
+            this.panel271.Size = new System.Drawing.Size(93, 52);
             this.panel271.TabIndex = 1;
             // 
             // MachNguonDongDienJig1
@@ -3072,7 +3073,7 @@
             this.MachNguonDongDienJig1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MachNguonDongDienJig1.Location = new System.Drawing.Point(0, 0);
             this.MachNguonDongDienJig1.Name = "MachNguonDongDienJig1";
-            this.MachNguonDongDienJig1.Size = new System.Drawing.Size(93, 54);
+            this.MachNguonDongDienJig1.Size = new System.Drawing.Size(93, 52);
             this.MachNguonDongDienJig1.TabIndex = 0;
             this.MachNguonDongDienJig1.UseVisualStyleBackColor = false;
             // 
@@ -3082,7 +3083,7 @@
             this.panel272.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel272.Location = new System.Drawing.Point(3, 3);
             this.panel272.Name = "panel272";
-            this.panel272.Size = new System.Drawing.Size(93, 54);
+            this.panel272.Size = new System.Drawing.Size(93, 52);
             this.panel272.TabIndex = 0;
             // 
             // label117
@@ -3092,7 +3093,7 @@
             this.label117.ForeColor = System.Drawing.SystemColors.Control;
             this.label117.Location = new System.Drawing.Point(0, 0);
             this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(93, 54);
+            this.label117.Size = new System.Drawing.Size(93, 52);
             this.label117.TabIndex = 1;
             this.label117.Text = "Dòng điện : ";
             this.label117.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3243,6 +3244,17 @@
             this.panel278.Size = new System.Drawing.Size(94, 56);
             this.panel278.TabIndex = 5;
             // 
+            // MachTDSCBApSuatJig10
+            // 
+            this.MachTDSCBApSuatJig10.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig10.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig10.Name = "MachTDSCBApSuatJig10";
+            this.MachTDSCBApSuatJig10.Size = new System.Drawing.Size(94, 56);
+            this.MachTDSCBApSuatJig10.TabIndex = 1;
+            this.MachTDSCBApSuatJig10.UseVisualStyleBackColor = false;
+            // 
             // panel279
             // 
             this.panel279.Controls.Add(this.label120);
@@ -3273,6 +3285,17 @@
             this.panel280.Size = new System.Drawing.Size(94, 54);
             this.panel280.TabIndex = 3;
             // 
+            // MachTDSVanJig10
+            // 
+            this.MachTDSVanJig10.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig10.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig10.Name = "MachTDSVanJig10";
+            this.MachTDSVanJig10.Size = new System.Drawing.Size(94, 54);
+            this.MachTDSVanJig10.TabIndex = 1;
+            this.MachTDSVanJig10.UseVisualStyleBackColor = false;
+            // 
             // panel281
             // 
             this.panel281.Controls.Add(this.label121);
@@ -3302,6 +3325,17 @@
             this.panel282.Name = "panel282";
             this.panel282.Size = new System.Drawing.Size(94, 54);
             this.panel282.TabIndex = 1;
+            // 
+            // MachTDSApDCJig10
+            // 
+            this.MachTDSApDCJig10.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig10.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig10.Name = "MachTDSApDCJig10";
+            this.MachTDSApDCJig10.Size = new System.Drawing.Size(94, 54);
+            this.MachTDSApDCJig10.TabIndex = 1;
+            this.MachTDSApDCJig10.UseVisualStyleBackColor = false;
             // 
             // panel283
             // 
@@ -3398,6 +3432,17 @@
             this.panel287.Size = new System.Drawing.Size(93, 56);
             this.panel287.TabIndex = 5;
             // 
+            // MachTDSCBApSuatJig9
+            // 
+            this.MachTDSCBApSuatJig9.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig9.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig9.Name = "MachTDSCBApSuatJig9";
+            this.MachTDSCBApSuatJig9.Size = new System.Drawing.Size(93, 56);
+            this.MachTDSCBApSuatJig9.TabIndex = 1;
+            this.MachTDSCBApSuatJig9.UseVisualStyleBackColor = false;
+            // 
             // panel288
             // 
             this.panel288.Controls.Add(this.label124);
@@ -3428,6 +3473,17 @@
             this.panel289.Size = new System.Drawing.Size(93, 54);
             this.panel289.TabIndex = 3;
             // 
+            // MachTDSVanJig9
+            // 
+            this.MachTDSVanJig9.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig9.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig9.Name = "MachTDSVanJig9";
+            this.MachTDSVanJig9.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSVanJig9.TabIndex = 1;
+            this.MachTDSVanJig9.UseVisualStyleBackColor = false;
+            // 
             // panel290
             // 
             this.panel290.Controls.Add(this.label125);
@@ -3457,6 +3513,17 @@
             this.panel291.Name = "panel291";
             this.panel291.Size = new System.Drawing.Size(93, 54);
             this.panel291.TabIndex = 1;
+            // 
+            // MachTDSApDCJig9
+            // 
+            this.MachTDSApDCJig9.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig9.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig9.Name = "MachTDSApDCJig9";
+            this.MachTDSApDCJig9.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSApDCJig9.TabIndex = 1;
+            this.MachTDSApDCJig9.UseVisualStyleBackColor = false;
             // 
             // panel292
             // 
@@ -3553,6 +3620,17 @@
             this.panel296.Size = new System.Drawing.Size(93, 56);
             this.panel296.TabIndex = 5;
             // 
+            // MachTDSCBApSuatJig8
+            // 
+            this.MachTDSCBApSuatJig8.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig8.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig8.Name = "MachTDSCBApSuatJig8";
+            this.MachTDSCBApSuatJig8.Size = new System.Drawing.Size(93, 56);
+            this.MachTDSCBApSuatJig8.TabIndex = 1;
+            this.MachTDSCBApSuatJig8.UseVisualStyleBackColor = false;
+            // 
             // panel297
             // 
             this.panel297.Controls.Add(this.label128);
@@ -3583,6 +3661,17 @@
             this.panel298.Size = new System.Drawing.Size(93, 54);
             this.panel298.TabIndex = 3;
             // 
+            // MachTDSVanJig8
+            // 
+            this.MachTDSVanJig8.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig8.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig8.Name = "MachTDSVanJig8";
+            this.MachTDSVanJig8.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSVanJig8.TabIndex = 1;
+            this.MachTDSVanJig8.UseVisualStyleBackColor = false;
+            // 
             // panel299
             // 
             this.panel299.Controls.Add(this.label129);
@@ -3612,6 +3701,17 @@
             this.panel300.Name = "panel300";
             this.panel300.Size = new System.Drawing.Size(93, 54);
             this.panel300.TabIndex = 1;
+            // 
+            // MachTDSApDCJig8
+            // 
+            this.MachTDSApDCJig8.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig8.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig8.Name = "MachTDSApDCJig8";
+            this.MachTDSApDCJig8.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSApDCJig8.TabIndex = 1;
+            this.MachTDSApDCJig8.UseVisualStyleBackColor = false;
             // 
             // panel301
             // 
@@ -3708,6 +3808,17 @@
             this.panel305.Size = new System.Drawing.Size(93, 56);
             this.panel305.TabIndex = 5;
             // 
+            // MachTDSCBApSuatJig7
+            // 
+            this.MachTDSCBApSuatJig7.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig7.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig7.Name = "MachTDSCBApSuatJig7";
+            this.MachTDSCBApSuatJig7.Size = new System.Drawing.Size(93, 56);
+            this.MachTDSCBApSuatJig7.TabIndex = 1;
+            this.MachTDSCBApSuatJig7.UseVisualStyleBackColor = false;
+            // 
             // panel306
             // 
             this.panel306.Controls.Add(this.label132);
@@ -3738,6 +3849,17 @@
             this.panel307.Size = new System.Drawing.Size(93, 54);
             this.panel307.TabIndex = 3;
             // 
+            // MachTDSVanJig7
+            // 
+            this.MachTDSVanJig7.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig7.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig7.Name = "MachTDSVanJig7";
+            this.MachTDSVanJig7.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSVanJig7.TabIndex = 1;
+            this.MachTDSVanJig7.UseVisualStyleBackColor = false;
+            // 
             // panel308
             // 
             this.panel308.Controls.Add(this.label133);
@@ -3767,6 +3889,17 @@
             this.panel309.Name = "panel309";
             this.panel309.Size = new System.Drawing.Size(93, 54);
             this.panel309.TabIndex = 1;
+            // 
+            // MachTDSApDCJig7
+            // 
+            this.MachTDSApDCJig7.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig7.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig7.Name = "MachTDSApDCJig7";
+            this.MachTDSApDCJig7.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSApDCJig7.TabIndex = 1;
+            this.MachTDSApDCJig7.UseVisualStyleBackColor = false;
             // 
             // panel310
             // 
@@ -3863,6 +3996,17 @@
             this.panel314.Size = new System.Drawing.Size(93, 56);
             this.panel314.TabIndex = 5;
             // 
+            // MachTDSCBApSuatJig6
+            // 
+            this.MachTDSCBApSuatJig6.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig6.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig6.Name = "MachTDSCBApSuatJig6";
+            this.MachTDSCBApSuatJig6.Size = new System.Drawing.Size(93, 56);
+            this.MachTDSCBApSuatJig6.TabIndex = 1;
+            this.MachTDSCBApSuatJig6.UseVisualStyleBackColor = false;
+            // 
             // panel315
             // 
             this.panel315.Controls.Add(this.label136);
@@ -3893,6 +4037,17 @@
             this.panel316.Size = new System.Drawing.Size(93, 54);
             this.panel316.TabIndex = 3;
             // 
+            // MachTDSVanJig6
+            // 
+            this.MachTDSVanJig6.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig6.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig6.Name = "MachTDSVanJig6";
+            this.MachTDSVanJig6.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSVanJig6.TabIndex = 1;
+            this.MachTDSVanJig6.UseVisualStyleBackColor = false;
+            // 
             // panel317
             // 
             this.panel317.Controls.Add(this.label137);
@@ -3922,6 +4077,17 @@
             this.panel318.Name = "panel318";
             this.panel318.Size = new System.Drawing.Size(93, 54);
             this.panel318.TabIndex = 1;
+            // 
+            // MachTDSApDCJig6
+            // 
+            this.MachTDSApDCJig6.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig6.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig6.Name = "MachTDSApDCJig6";
+            this.MachTDSApDCJig6.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSApDCJig6.TabIndex = 1;
+            this.MachTDSApDCJig6.UseVisualStyleBackColor = false;
             // 
             // panel319
             // 
@@ -4018,6 +4184,17 @@
             this.panel323.Size = new System.Drawing.Size(94, 55);
             this.panel323.TabIndex = 5;
             // 
+            // MachTDSCBApSuatJig5
+            // 
+            this.MachTDSCBApSuatJig5.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig5.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig5.Name = "MachTDSCBApSuatJig5";
+            this.MachTDSCBApSuatJig5.Size = new System.Drawing.Size(94, 55);
+            this.MachTDSCBApSuatJig5.TabIndex = 1;
+            this.MachTDSCBApSuatJig5.UseVisualStyleBackColor = false;
+            // 
             // panel324
             // 
             this.panel324.Controls.Add(this.label140);
@@ -4048,6 +4225,17 @@
             this.panel325.Size = new System.Drawing.Size(94, 54);
             this.panel325.TabIndex = 3;
             // 
+            // MachTDSVanJig5
+            // 
+            this.MachTDSVanJig5.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig5.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig5.Name = "MachTDSVanJig5";
+            this.MachTDSVanJig5.Size = new System.Drawing.Size(94, 54);
+            this.MachTDSVanJig5.TabIndex = 1;
+            this.MachTDSVanJig5.UseVisualStyleBackColor = false;
+            // 
             // panel326
             // 
             this.panel326.Controls.Add(this.label141);
@@ -4077,6 +4265,17 @@
             this.panel327.Name = "panel327";
             this.panel327.Size = new System.Drawing.Size(94, 54);
             this.panel327.TabIndex = 1;
+            // 
+            // MachTDSApDCJig5
+            // 
+            this.MachTDSApDCJig5.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig5.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig5.Name = "MachTDSApDCJig5";
+            this.MachTDSApDCJig5.Size = new System.Drawing.Size(94, 54);
+            this.MachTDSApDCJig5.TabIndex = 1;
+            this.MachTDSApDCJig5.UseVisualStyleBackColor = false;
             // 
             // panel328
             // 
@@ -4173,6 +4372,17 @@
             this.panel332.Size = new System.Drawing.Size(93, 55);
             this.panel332.TabIndex = 5;
             // 
+            // MachTDSCBApSuatJig4
+            // 
+            this.MachTDSCBApSuatJig4.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig4.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig4.Name = "MachTDSCBApSuatJig4";
+            this.MachTDSCBApSuatJig4.Size = new System.Drawing.Size(93, 55);
+            this.MachTDSCBApSuatJig4.TabIndex = 1;
+            this.MachTDSCBApSuatJig4.UseVisualStyleBackColor = false;
+            // 
             // panel333
             // 
             this.panel333.Controls.Add(this.label144);
@@ -4203,6 +4413,17 @@
             this.panel334.Size = new System.Drawing.Size(93, 54);
             this.panel334.TabIndex = 3;
             // 
+            // MachTDSVanJig4
+            // 
+            this.MachTDSVanJig4.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig4.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig4.Name = "MachTDSVanJig4";
+            this.MachTDSVanJig4.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSVanJig4.TabIndex = 1;
+            this.MachTDSVanJig4.UseVisualStyleBackColor = false;
+            // 
             // panel335
             // 
             this.panel335.Controls.Add(this.label145);
@@ -4232,6 +4453,17 @@
             this.panel336.Name = "panel336";
             this.panel336.Size = new System.Drawing.Size(93, 54);
             this.panel336.TabIndex = 1;
+            // 
+            // MachTDSApDCJig4
+            // 
+            this.MachTDSApDCJig4.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig4.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig4.Name = "MachTDSApDCJig4";
+            this.MachTDSApDCJig4.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSApDCJig4.TabIndex = 1;
+            this.MachTDSApDCJig4.UseVisualStyleBackColor = false;
             // 
             // panel337
             // 
@@ -4328,6 +4560,17 @@
             this.panel341.Size = new System.Drawing.Size(93, 55);
             this.panel341.TabIndex = 5;
             // 
+            // MachTDSCBApSuatJig3
+            // 
+            this.MachTDSCBApSuatJig3.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig3.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig3.Name = "MachTDSCBApSuatJig3";
+            this.MachTDSCBApSuatJig3.Size = new System.Drawing.Size(93, 55);
+            this.MachTDSCBApSuatJig3.TabIndex = 1;
+            this.MachTDSCBApSuatJig3.UseVisualStyleBackColor = false;
+            // 
             // panel342
             // 
             this.panel342.Controls.Add(this.label148);
@@ -4358,6 +4601,17 @@
             this.panel343.Size = new System.Drawing.Size(93, 54);
             this.panel343.TabIndex = 3;
             // 
+            // MachTDSVanJig3
+            // 
+            this.MachTDSVanJig3.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig3.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig3.Name = "MachTDSVanJig3";
+            this.MachTDSVanJig3.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSVanJig3.TabIndex = 1;
+            this.MachTDSVanJig3.UseVisualStyleBackColor = false;
+            // 
             // panel344
             // 
             this.panel344.Controls.Add(this.label149);
@@ -4387,6 +4641,17 @@
             this.panel345.Name = "panel345";
             this.panel345.Size = new System.Drawing.Size(93, 54);
             this.panel345.TabIndex = 1;
+            // 
+            // MachTDSApDCJig3
+            // 
+            this.MachTDSApDCJig3.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig3.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig3.Name = "MachTDSApDCJig3";
+            this.MachTDSApDCJig3.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSApDCJig3.TabIndex = 1;
+            this.MachTDSApDCJig3.UseVisualStyleBackColor = false;
             // 
             // panel346
             // 
@@ -4483,6 +4748,17 @@
             this.panel350.Size = new System.Drawing.Size(93, 55);
             this.panel350.TabIndex = 5;
             // 
+            // MachTDSCBApSuatJig2
+            // 
+            this.MachTDSCBApSuatJig2.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig2.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig2.Name = "MachTDSCBApSuatJig2";
+            this.MachTDSCBApSuatJig2.Size = new System.Drawing.Size(93, 55);
+            this.MachTDSCBApSuatJig2.TabIndex = 1;
+            this.MachTDSCBApSuatJig2.UseVisualStyleBackColor = false;
+            // 
             // panel351
             // 
             this.panel351.Controls.Add(this.label152);
@@ -4513,6 +4789,17 @@
             this.panel352.Size = new System.Drawing.Size(93, 54);
             this.panel352.TabIndex = 3;
             // 
+            // MachTDSVanJig2
+            // 
+            this.MachTDSVanJig2.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig2.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig2.Name = "MachTDSVanJig2";
+            this.MachTDSVanJig2.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSVanJig2.TabIndex = 1;
+            this.MachTDSVanJig2.UseVisualStyleBackColor = false;
+            // 
             // panel353
             // 
             this.panel353.Controls.Add(this.label153);
@@ -4542,6 +4829,17 @@
             this.panel354.Name = "panel354";
             this.panel354.Size = new System.Drawing.Size(93, 54);
             this.panel354.TabIndex = 1;
+            // 
+            // MachTDSApDCJig2
+            // 
+            this.MachTDSApDCJig2.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig2.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig2.Name = "MachTDSApDCJig2";
+            this.MachTDSApDCJig2.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSApDCJig2.TabIndex = 1;
+            this.MachTDSApDCJig2.UseVisualStyleBackColor = false;
             // 
             // panel355
             // 
@@ -4638,6 +4936,17 @@
             this.panel359.Size = new System.Drawing.Size(93, 55);
             this.panel359.TabIndex = 5;
             // 
+            // MachTDSCBApSuatJig1
+            // 
+            this.MachTDSCBApSuatJig1.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSCBApSuatJig1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSCBApSuatJig1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSCBApSuatJig1.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSCBApSuatJig1.Name = "MachTDSCBApSuatJig1";
+            this.MachTDSCBApSuatJig1.Size = new System.Drawing.Size(93, 55);
+            this.MachTDSCBApSuatJig1.TabIndex = 1;
+            this.MachTDSCBApSuatJig1.UseVisualStyleBackColor = false;
+            // 
             // panel360
             // 
             this.panel360.Controls.Add(this.label156);
@@ -4668,6 +4977,17 @@
             this.panel361.Size = new System.Drawing.Size(93, 54);
             this.panel361.TabIndex = 3;
             // 
+            // MachTDSVanJig1
+            // 
+            this.MachTDSVanJig1.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSVanJig1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSVanJig1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSVanJig1.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSVanJig1.Name = "MachTDSVanJig1";
+            this.MachTDSVanJig1.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSVanJig1.TabIndex = 1;
+            this.MachTDSVanJig1.UseVisualStyleBackColor = false;
+            // 
             // panel362
             // 
             this.panel362.Controls.Add(this.label157);
@@ -4697,6 +5017,17 @@
             this.panel363.Name = "panel363";
             this.panel363.Size = new System.Drawing.Size(93, 54);
             this.panel363.TabIndex = 1;
+            // 
+            // MachTDSApDCJig1
+            // 
+            this.MachTDSApDCJig1.BackColor = System.Drawing.SystemColors.Control;
+            this.MachTDSApDCJig1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MachTDSApDCJig1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MachTDSApDCJig1.Location = new System.Drawing.Point(0, 0);
+            this.MachTDSApDCJig1.Name = "MachTDSApDCJig1";
+            this.MachTDSApDCJig1.Size = new System.Drawing.Size(93, 54);
+            this.MachTDSApDCJig1.TabIndex = 1;
+            this.MachTDSApDCJig1.UseVisualStyleBackColor = false;
             // 
             // panel364
             // 
@@ -8958,336 +9289,6 @@
             this.label77.TabIndex = 3;
             this.label77.Text = "Công suất : ";
             this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // MachTDSApDCJig1
-            // 
-            this.MachTDSApDCJig1.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSApDCJig1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSApDCJig1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSApDCJig1.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSApDCJig1.Name = "MachTDSApDCJig1";
-            this.MachTDSApDCJig1.Size = new System.Drawing.Size(93, 54);
-            this.MachTDSApDCJig1.TabIndex = 1;
-            this.MachTDSApDCJig1.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSVanJig1
-            // 
-            this.MachTDSVanJig1.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSVanJig1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSVanJig1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSVanJig1.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSVanJig1.Name = "MachTDSVanJig1";
-            this.MachTDSVanJig1.Size = new System.Drawing.Size(93, 54);
-            this.MachTDSVanJig1.TabIndex = 1;
-            this.MachTDSVanJig1.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSCBApSuatJig1
-            // 
-            this.MachTDSCBApSuatJig1.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSCBApSuatJig1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSCBApSuatJig1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSCBApSuatJig1.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSCBApSuatJig1.Name = "MachTDSCBApSuatJig1";
-            this.MachTDSCBApSuatJig1.Size = new System.Drawing.Size(93, 55);
-            this.MachTDSCBApSuatJig1.TabIndex = 1;
-            this.MachTDSCBApSuatJig1.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSApDCJig2
-            // 
-            this.MachTDSApDCJig2.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSApDCJig2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSApDCJig2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSApDCJig2.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSApDCJig2.Name = "MachTDSApDCJig2";
-            this.MachTDSApDCJig2.Size = new System.Drawing.Size(93, 54);
-            this.MachTDSApDCJig2.TabIndex = 1;
-            this.MachTDSApDCJig2.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSVanJig2
-            // 
-            this.MachTDSVanJig2.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSVanJig2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSVanJig2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSVanJig2.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSVanJig2.Name = "MachTDSVanJig2";
-            this.MachTDSVanJig2.Size = new System.Drawing.Size(93, 54);
-            this.MachTDSVanJig2.TabIndex = 1;
-            this.MachTDSVanJig2.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSCBApSuatJig2
-            // 
-            this.MachTDSCBApSuatJig2.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSCBApSuatJig2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSCBApSuatJig2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSCBApSuatJig2.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSCBApSuatJig2.Name = "MachTDSCBApSuatJig2";
-            this.MachTDSCBApSuatJig2.Size = new System.Drawing.Size(93, 55);
-            this.MachTDSCBApSuatJig2.TabIndex = 1;
-            this.MachTDSCBApSuatJig2.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSApDCJig3
-            // 
-            this.MachTDSApDCJig3.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSApDCJig3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSApDCJig3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSApDCJig3.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSApDCJig3.Name = "MachTDSApDCJig3";
-            this.MachTDSApDCJig3.Size = new System.Drawing.Size(93, 54);
-            this.MachTDSApDCJig3.TabIndex = 1;
-            this.MachTDSApDCJig3.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSVanJig3
-            // 
-            this.MachTDSVanJig3.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSVanJig3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSVanJig3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSVanJig3.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSVanJig3.Name = "MachTDSVanJig3";
-            this.MachTDSVanJig3.Size = new System.Drawing.Size(93, 54);
-            this.MachTDSVanJig3.TabIndex = 1;
-            this.MachTDSVanJig3.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSCBApSuatJig3
-            // 
-            this.MachTDSCBApSuatJig3.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSCBApSuatJig3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSCBApSuatJig3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSCBApSuatJig3.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSCBApSuatJig3.Name = "MachTDSCBApSuatJig3";
-            this.MachTDSCBApSuatJig3.Size = new System.Drawing.Size(93, 55);
-            this.MachTDSCBApSuatJig3.TabIndex = 1;
-            this.MachTDSCBApSuatJig3.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSApDCJig4
-            // 
-            this.MachTDSApDCJig4.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSApDCJig4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSApDCJig4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSApDCJig4.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSApDCJig4.Name = "MachTDSApDCJig4";
-            this.MachTDSApDCJig4.Size = new System.Drawing.Size(93, 54);
-            this.MachTDSApDCJig4.TabIndex = 1;
-            this.MachTDSApDCJig4.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSVanJig4
-            // 
-            this.MachTDSVanJig4.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSVanJig4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSVanJig4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSVanJig4.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSVanJig4.Name = "MachTDSVanJig4";
-            this.MachTDSVanJig4.Size = new System.Drawing.Size(93, 54);
-            this.MachTDSVanJig4.TabIndex = 1;
-            this.MachTDSVanJig4.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSCBApSuatJig4
-            // 
-            this.MachTDSCBApSuatJig4.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSCBApSuatJig4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSCBApSuatJig4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSCBApSuatJig4.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSCBApSuatJig4.Name = "MachTDSCBApSuatJig4";
-            this.MachTDSCBApSuatJig4.Size = new System.Drawing.Size(93, 55);
-            this.MachTDSCBApSuatJig4.TabIndex = 1;
-            this.MachTDSCBApSuatJig4.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSApDCJig5
-            // 
-            this.MachTDSApDCJig5.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSApDCJig5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSApDCJig5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSApDCJig5.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSApDCJig5.Name = "MachTDSApDCJig5";
-            this.MachTDSApDCJig5.Size = new System.Drawing.Size(94, 54);
-            this.MachTDSApDCJig5.TabIndex = 1;
-            this.MachTDSApDCJig5.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSVanJig5
-            // 
-            this.MachTDSVanJig5.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSVanJig5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSVanJig5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSVanJig5.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSVanJig5.Name = "MachTDSVanJig5";
-            this.MachTDSVanJig5.Size = new System.Drawing.Size(94, 54);
-            this.MachTDSVanJig5.TabIndex = 1;
-            this.MachTDSVanJig5.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSCBApSuatJig5
-            // 
-            this.MachTDSCBApSuatJig5.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSCBApSuatJig5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSCBApSuatJig5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSCBApSuatJig5.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSCBApSuatJig5.Name = "MachTDSCBApSuatJig5";
-            this.MachTDSCBApSuatJig5.Size = new System.Drawing.Size(94, 55);
-            this.MachTDSCBApSuatJig5.TabIndex = 1;
-            this.MachTDSCBApSuatJig5.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSApDCJig10
-            // 
-            this.MachTDSApDCJig10.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSApDCJig10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSApDCJig10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSApDCJig10.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSApDCJig10.Name = "MachTDSApDCJig10";
-            this.MachTDSApDCJig10.Size = new System.Drawing.Size(94, 54);
-            this.MachTDSApDCJig10.TabIndex = 1;
-            this.MachTDSApDCJig10.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSVanJig10
-            // 
-            this.MachTDSVanJig10.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSVanJig10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSVanJig10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSVanJig10.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSVanJig10.Name = "MachTDSVanJig10";
-            this.MachTDSVanJig10.Size = new System.Drawing.Size(94, 54);
-            this.MachTDSVanJig10.TabIndex = 1;
-            this.MachTDSVanJig10.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSCBApSuatJig10
-            // 
-            this.MachTDSCBApSuatJig10.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSCBApSuatJig10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSCBApSuatJig10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSCBApSuatJig10.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSCBApSuatJig10.Name = "MachTDSCBApSuatJig10";
-            this.MachTDSCBApSuatJig10.Size = new System.Drawing.Size(94, 56);
-            this.MachTDSCBApSuatJig10.TabIndex = 1;
-            this.MachTDSCBApSuatJig10.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSApDCJig9
-            // 
-            this.MachTDSApDCJig9.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSApDCJig9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSApDCJig9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSApDCJig9.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSApDCJig9.Name = "MachTDSApDCJig9";
-            this.MachTDSApDCJig9.Size = new System.Drawing.Size(93, 54);
-            this.MachTDSApDCJig9.TabIndex = 1;
-            this.MachTDSApDCJig9.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSVanJig9
-            // 
-            this.MachTDSVanJig9.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSVanJig9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSVanJig9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSVanJig9.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSVanJig9.Name = "MachTDSVanJig9";
-            this.MachTDSVanJig9.Size = new System.Drawing.Size(93, 54);
-            this.MachTDSVanJig9.TabIndex = 1;
-            this.MachTDSVanJig9.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSCBApSuatJig9
-            // 
-            this.MachTDSCBApSuatJig9.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSCBApSuatJig9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSCBApSuatJig9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSCBApSuatJig9.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSCBApSuatJig9.Name = "MachTDSCBApSuatJig9";
-            this.MachTDSCBApSuatJig9.Size = new System.Drawing.Size(93, 56);
-            this.MachTDSCBApSuatJig9.TabIndex = 1;
-            this.MachTDSCBApSuatJig9.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSApDCJig8
-            // 
-            this.MachTDSApDCJig8.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSApDCJig8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSApDCJig8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSApDCJig8.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSApDCJig8.Name = "MachTDSApDCJig8";
-            this.MachTDSApDCJig8.Size = new System.Drawing.Size(93, 54);
-            this.MachTDSApDCJig8.TabIndex = 1;
-            this.MachTDSApDCJig8.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSVanJig8
-            // 
-            this.MachTDSVanJig8.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSVanJig8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSVanJig8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSVanJig8.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSVanJig8.Name = "MachTDSVanJig8";
-            this.MachTDSVanJig8.Size = new System.Drawing.Size(93, 54);
-            this.MachTDSVanJig8.TabIndex = 1;
-            this.MachTDSVanJig8.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSCBApSuatJig8
-            // 
-            this.MachTDSCBApSuatJig8.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSCBApSuatJig8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSCBApSuatJig8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSCBApSuatJig8.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSCBApSuatJig8.Name = "MachTDSCBApSuatJig8";
-            this.MachTDSCBApSuatJig8.Size = new System.Drawing.Size(93, 56);
-            this.MachTDSCBApSuatJig8.TabIndex = 1;
-            this.MachTDSCBApSuatJig8.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSCBApSuatJig7
-            // 
-            this.MachTDSCBApSuatJig7.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSCBApSuatJig7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSCBApSuatJig7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSCBApSuatJig7.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSCBApSuatJig7.Name = "MachTDSCBApSuatJig7";
-            this.MachTDSCBApSuatJig7.Size = new System.Drawing.Size(93, 56);
-            this.MachTDSCBApSuatJig7.TabIndex = 1;
-            this.MachTDSCBApSuatJig7.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSVanJig7
-            // 
-            this.MachTDSVanJig7.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSVanJig7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSVanJig7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSVanJig7.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSVanJig7.Name = "MachTDSVanJig7";
-            this.MachTDSVanJig7.Size = new System.Drawing.Size(93, 54);
-            this.MachTDSVanJig7.TabIndex = 1;
-            this.MachTDSVanJig7.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSApDCJig7
-            // 
-            this.MachTDSApDCJig7.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSApDCJig7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSApDCJig7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSApDCJig7.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSApDCJig7.Name = "MachTDSApDCJig7";
-            this.MachTDSApDCJig7.Size = new System.Drawing.Size(93, 54);
-            this.MachTDSApDCJig7.TabIndex = 1;
-            this.MachTDSApDCJig7.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSApDCJig6
-            // 
-            this.MachTDSApDCJig6.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSApDCJig6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSApDCJig6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSApDCJig6.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSApDCJig6.Name = "MachTDSApDCJig6";
-            this.MachTDSApDCJig6.Size = new System.Drawing.Size(93, 54);
-            this.MachTDSApDCJig6.TabIndex = 1;
-            this.MachTDSApDCJig6.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSVanJig6
-            // 
-            this.MachTDSVanJig6.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSVanJig6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSVanJig6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSVanJig6.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSVanJig6.Name = "MachTDSVanJig6";
-            this.MachTDSVanJig6.Size = new System.Drawing.Size(93, 54);
-            this.MachTDSVanJig6.TabIndex = 1;
-            this.MachTDSVanJig6.UseVisualStyleBackColor = false;
-            // 
-            // MachTDSCBApSuatJig6
-            // 
-            this.MachTDSCBApSuatJig6.BackColor = System.Drawing.SystemColors.Control;
-            this.MachTDSCBApSuatJig6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MachTDSCBApSuatJig6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MachTDSCBApSuatJig6.Location = new System.Drawing.Point(0, 0);
-            this.MachTDSCBApSuatJig6.Name = "MachTDSCBApSuatJig6";
-            this.MachTDSCBApSuatJig6.Size = new System.Drawing.Size(93, 56);
-            this.MachTDSCBApSuatJig6.TabIndex = 1;
-            this.MachTDSCBApSuatJig6.UseVisualStyleBackColor = false;
             // 
             // JigMach
             // 

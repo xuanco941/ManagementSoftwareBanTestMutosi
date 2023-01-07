@@ -23,7 +23,7 @@ namespace ManagementSoftware.GUI.NguonManagement
         PLCNguon plc;
 
         System.Threading.Timer timer;
-        int TIME_INTERVAL_IN_MILLISECONDS = 1500;
+        int TIME_INTERVAL_IN_MILLISECONDS = 1000;
 
         public NguonTu1Den15()
         {
@@ -49,7 +49,11 @@ namespace ManagementSoftware.GUI.NguonManagement
             }
             else
             {
-                MessageBox.Show("Không thể kết nối tới " + plc.plcName, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if (CheckLoad.checkNguon == false)
+                {
+                    MessageBox.Show("Không thể kết nối tới " + plc.plcName, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    CheckLoad.checkNguon = true;
+                }
             }
         }
 

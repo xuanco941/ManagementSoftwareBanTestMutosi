@@ -1,6 +1,6 @@
 ﻿namespace ManagementSoftware.GUI.Section.ThongKe
 {
-    partial class ItemCongTac2VT
+    partial class ItemCongTac
     {
         /// <summary>
         /// Required designer variable.

@@ -21,7 +21,7 @@ namespace ManagementSoftware.GUI.NguonManagement
         PLCNguon plc;
 
         System.Threading.Timer timer;
-        int TIME_INTERVAL_IN_MILLISECONDS = 1500;
+        int TIME_INTERVAL_IN_MILLISECONDS = 1000;
 
         public NguonTu16Den30()
         {
@@ -29,20 +29,21 @@ namespace ManagementSoftware.GUI.NguonManagement
             plc = new PLCNguon(ControlAllPLC.ipNguon, ControlAllPLC.PLCNguon);
         }
 
-        private async void NguonTu16Den30_Load(object sender, EventArgs e)
+        private async void NguonTu16Den30_Load_1(object sender, EventArgs e)
         {
-
-
             if (await plc.Open() == true)
             {
                 timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
             }
             else
             {
-                MessageBox.Show("Không thể kết nối tới " + plc.plcName, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if (CheckLoad.checkNguon == false)
+                {
+                    MessageBox.Show("Không thể kết nối tới " + plc.plcName, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    CheckLoad.checkNguon = true;
+                }
             }
         }
-
         private async void NguonTu16Den30_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (timer != null)
@@ -218,8 +219,6 @@ namespace ManagementSoftware.GUI.NguonManagement
             }
 
         }
-
-
 
 
     }

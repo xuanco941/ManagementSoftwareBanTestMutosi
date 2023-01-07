@@ -85,9 +85,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(96, 134);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(397, 15);
+            this.label2.Size = new System.Drawing.Size(406, 15);
             this.label2.TabIndex = 19;
-            this.label2.Text = "VD : Data Source=DESKTOP-P4IC2M8\\SQLEXPRESS;Initial Catalog=Mutosi;";
+            this.label2.Text = "VD : Data Source=DESKTOP-P4IC2M8\\SQLEXPRESS;Initial Catalog=TenCSDL;";
             // 
             // label3
             // 
@@ -96,9 +96,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
             this.label3.Location = new System.Drawing.Point(96, 147);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(154, 15);
+            this.label3.Size = new System.Drawing.Size(142, 15);
             this.label3.TabIndex = 20;
-            this.label3.Text = "User ID=sa;Password=12345";
+            this.label3.Text = "User ID=sa;Password=123";
             // 
             // label4
             // 
@@ -139,7 +139,7 @@
             this.MaximizeBox = false;
             this.Name = "FormStringConnectDatabase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Thay đổi chuỗi kết nối cơ sở dữ liệu";
+            this.Text = "Thay đổi cơ sở dữ liệu";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -22,62 +22,24 @@ namespace ManagementSoftware.GUI
         public CallAlert callAlert;
 
 
-        void LoadTabPageCongTac2VT()
-        {
-            for (int i = 10; i >= 1; i--)
-            {
-                TemplateCongTac2VT form = new TemplateCongTac2VT(i);
-                form.TopLevel = false;
-                form.FormBorderStyle = FormBorderStyle.None;
-                form.Dock = DockStyle.Top;
-                tabPageCT2ViTri.Controls.Add(form);
-                form.Show();
-
-            }
-        }
-
-        void LoadTabPageCongTac3VT()
-        {
-            for (int i = 10; i >= 1; i--)
-            {
-                TemplateCongTac3VT form = new TemplateCongTac3VT(i);
-                form.TopLevel = false;
-                form.FormBorderStyle = FormBorderStyle.None;
-                form.Dock = DockStyle.Top;
-                tabPageCT3ViTri.Controls.Add(form);
-                form.Show();
-            }
-        }
-
-
 
 
 
         //CT2VT
-        private DateTime? timeStart2VT = null;
-        private DateTime? timeEnd2VT = null;
-        private int page2VT = 1;
-        private int TotalPages2VT = 0;
-        Dictionary<TestCongTac2VT, List<Models.CongTac2VT>> ListResults2VT;
+        private DateTime? timeStart = null;
+        private DateTime? timeEnd = null;
+        private int page = 1;
+        private int TotalPages = 0;
+        Dictionary<Models.CongTacModel.TestCongTac, List<Models.CongTacModel.CongTac>> ListResults;
 
-        //CT3VT
-        private DateTime? timeStart3VT = null;
-        private DateTime? timeEnd3VT = null;
-        private int page3VT = 1;
-        private int TotalPages3VT = 0;
-        Dictionary<TestCongTac3VT, List<Models.CongTac3VT>> ListResults3VT;
+       
 
         public CongTac()
         {
             InitializeComponent();
-
-            LoadTabPageCongTac2VT();
-            LoadTabPageCongTac3VT();
-            LoadFormThongKe2VT();
-            LoadFormThongKe3VT();
         }
 
-        void LoadFormThongKe2VT()
+        void LoadFormThongKe()
         {
             panelSearchPage2VT.Enabled = false;
             foreach (Form item in panelThongKe2VT.Controls)
@@ -89,21 +51,21 @@ namespace ManagementSoftware.GUI
 
 
             PaginationCongTac pagination = new PaginationCongTac();
-            pagination.Set(page2VT, timeStart2VT, timeEnd2VT);
-            this.ListResults2VT = pagination.ListResults;
-            this.TotalPages2VT = pagination.TotalPages;
-            lbTotalPages2VT.Text = this.TotalPages2VT.ToString();
+            pagination.Set(page, timeStart, timeEnd);
+            this.ListResults = pagination.ListResults;
+            this.TotalPages = pagination.TotalPages;
+            lbTotalPages2VT.Text = this.TotalPages.ToString();
 
-            buttonPreviousPage2VT.Enabled = this.page2VT > 1;
-            buttonNextPage2VT.Enabled = this.page2VT < this.TotalPages2VT;
-            buttonPage2VT.Text = this.page2VT.ToString();
+            buttonPreviousPage2VT.Enabled = this.page > 1;
+            buttonNextPage2VT.Enabled = this.page < this.TotalPages;
+            buttonPage2VT.Text = this.page.ToString();
 
             pageNumberGoto2VT.MinValue = 1;
-            pageNumberGoto2VT.MaxValue = this.TotalPages2VT != 0 ? this.TotalPages2VT : 1;
+            pageNumberGoto2VT.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1;
 
-            for (int i = ListResults2VT.Count - 1; i >= 0; i--)
+            for (int i = ListResults.Count - 1; i >= 0; i--)
             {
-                ItemCongTac2VT form = new ItemCongTac2VT(ListResults2VT.ElementAt(i).Key, ListResults2VT.ElementAt(i).Value);
+                ItemCongTac form = new ItemCongTac(ListResults.ElementAt(i).Key, ListResults.ElementAt(i).Value);
                 form.TopLevel = false;
                 panelThongKe2VT.Controls.Add(form);
                 form.FormBorderStyle = FormBorderStyle.None;
@@ -113,101 +75,64 @@ namespace ManagementSoftware.GUI
             panelSearchPage2VT.Enabled = true;
         }
 
-        void LoadFormThongKe3VT()
-        {
-            panelSearchPage3VT.Enabled = false;
-            foreach (Form item in panelThongKe3VT.Controls)
-            {
-                item.Close();
-                item.Dispose();
-            }
-            panelThongKe3VT.Controls.Clear();
-
-
-            PaginationCongTac3VT pagination = new PaginationCongTac3VT();
-            pagination.Set(page3VT, timeStart3VT, timeEnd3VT);
-            this.ListResults3VT = pagination.ListResults;
-            this.TotalPages3VT = pagination.TotalPages;
-            lbTotalPages3VT.Text = this.TotalPages3VT.ToString();
-
-            buttonPreviousPage3VT.Enabled = this.page3VT > 1;
-            buttonNextPage3VT.Enabled = this.page3VT < this.TotalPages3VT;
-            buttonPage3VT.Text = this.page3VT.ToString();
-
-            pageNumberGoto3VT.MinValue = 1;
-            pageNumberGoto3VT.MaxValue = this.TotalPages3VT != 0 ? this.TotalPages3VT : 1;
-
-            for (int i = ListResults3VT.Count - 1; i >= 0; i--)
-            {
-                ItemCongTac3VT form = new ItemCongTac3VT(ListResults3VT.ElementAt(i).Key, ListResults3VT.ElementAt(i).Value);
-                form.TopLevel = false;
-                panelThongKe3VT.Controls.Add(form);
-                form.FormBorderStyle = FormBorderStyle.None;
-                form.Dock = DockStyle.Top;
-                form.Show();
-            }
-            panelSearchPage3VT.Enabled = true;
-        }
-
+        
 
         private void buttonPreviousPage2VT_Click(object sender, EventArgs e)
         {
-            if (this.page2VT > 1)
+            if (this.page > 1)
             {
-                this.page2VT = this.page2VT - 1;
-                LoadFormThongKe2VT();
+                this.page = this.page - 1;
+                LoadFormThongKe();
             }
         }
 
         private void buttonNextPage2VT_Click(object sender, EventArgs e)
         {
-            if (this.page2VT < this.TotalPages2VT)
+            if (this.page < this.TotalPages)
             {
-                this.page2VT = this.page2VT + 1;
-                LoadFormThongKe2VT();
+                this.page = this.page + 1;
+                LoadFormThongKe();
             }
         }
 
         private void buttonSearch2VT_Click(object sender, EventArgs e)
         {
-            timeStart2VT = TimeStart2VT.Value;
-            timeEnd2VT = TimeEnd2VT.Value;
-            LoadFormThongKe2VT();
+            timeStart = TimeStart2VT.Value;
+            timeEnd = TimeEnd2VT.Value;
+            LoadFormThongKe();
         }
 
         private void buttonGoto2VT_Click(object sender, EventArgs e)
         {
-            this.page2VT = int.Parse(pageNumberGoto2VT.Text);
-            LoadFormThongKe2VT();
-        }
-        private void buttonPreviousPage3VT_Click(object sender, EventArgs e)
-        {
-            if (this.page3VT > 1)
-            {
-                this.page3VT = this.page3VT - 1;
-                LoadFormThongKe3VT();
-            }
-        }
-        private void buttonNextPage3VT_Click(object sender, EventArgs e)
-        {
-            if (this.page3VT < this.TotalPages3VT)
-            {
-                this.page3VT = this.page3VT + 1;
-                LoadFormThongKe3VT();
-            }
+            this.page = int.Parse(pageNumberGoto2VT.Text);
+            LoadFormThongKe();
         }
 
-        private void buttonSearch3VT_Click(object sender, EventArgs e)
+        private void CongTac_Load(object sender, EventArgs e)
         {
-            timeStart3VT = TimeStart3VT.Value;
-            timeEnd3VT = TimeEnd3VT.Value;
-            LoadFormThongKe3VT();
+            for (int i = 10; i >= 1; i--)
+            {
+                TemplateJigCongTac form = new TemplateJigCongTac(i);
+                form.TopLevel = false;
+                form.FormBorderStyle = FormBorderStyle.None;
+                form.Dock = DockStyle.Top;
+                tabPageGiamSat.Controls.Add(form);
+                form.Show();
+
+            }
+
+
+            LoadFormThongKe();
+
         }
 
-        private void buttonGoto3VT_Click(object sender, EventArgs e)
+        private void CongTac_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.page3VT = int.Parse(pageNumberGoto3VT.Text);
-            LoadFormThongKe3VT();
+            foreach (TemplateJigCongTac item in tabPageGiamSat.Controls)
+            {
+                item.Close();
+                item.Dispose();
+            }
         }
     }
 }

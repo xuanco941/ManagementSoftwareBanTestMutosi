@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Syncfusion.Windows.Forms.Tools;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,12 +11,18 @@ using System.Windows.Forms;
 
 namespace ManagementSoftware.GUI.CongTacManagement
 {
-    public partial class TemplateCongTac3VT : Form
+    public partial class TemplateJigCongTac : Form
     {
-        public TemplateCongTac3VT(int j)
+        public TemplateJigCongTac(int j)
         {
             InitializeComponent();
             labelNameJig.Text = "Jig " + j;
+
+        }
+
+        private void TemplateJigCongTac_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

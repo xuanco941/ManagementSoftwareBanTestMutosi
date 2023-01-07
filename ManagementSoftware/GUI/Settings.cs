@@ -20,10 +20,11 @@ namespace ManagementSoftware.GUI
         public delegate void CallAlert(string msg, FormAlert.enmType type);
         public CallAlert callAlert;
 
+        
 
         void LoadBauNong()
         {
-            if (PLCBauNong.plc.IsConnected == true)
+            if (ControlAllPLC.plcBauNong.plc.IsConnected == true)
             {
                 buttonConnectBauNong.Text = "Đã kết nối";
                 buttonConnectBauNong.BackColor = Color.Green;
@@ -33,12 +34,12 @@ namespace ManagementSoftware.GUI
             }
             else
             {
-                labelBauNong.Text = PLCBauNong.message;
+                labelBauNong.Text = "Chưa thể kết nối tới " + ControlAllPLC.plcBauNong.plcName;
             }
         }
         void LoadBepTu()
         {
-            if (PLCBepTu.plc.IsConnected == true)
+            if (ControlAllPLC.plcBepTu.plc.IsConnected == true)
             {
                 buttonCustomBepTu.Text = "Đã kết nối";
                 buttonCustomBepTu.BackColor = Color.Green;
@@ -48,12 +49,12 @@ namespace ManagementSoftware.GUI
             }
             else
             {
-                labelBepTu.Text = PLCBepTu.message;
+                labelBepTu.Text = "Chưa thể kết nối tới " + ControlAllPLC.plcBepTu.plcName;
             }
         }
         void LoadCongTac()
         {
-            if (PLCCongTac.plc.IsConnected == true)
+            if (ControlAllPLC.plcCongTac.plc.IsConnected == true)
             {
                 buttonCustomCongTac.Text = "Đã kết nối";
                 buttonCustomCongTac.BackColor = Color.Green;
@@ -63,13 +64,13 @@ namespace ManagementSoftware.GUI
             }
             else
             {
-                labelCongTac.Text = PLCCongTac.message;
+                labelCongTac.Text = "Chưa thể kết nối tới " + ControlAllPLC.plcCongTac.plcName;
             }
         }
         void LoadLoiLoc()
         {
 
-            if (PLCJigLoiLoc.plc.IsConnected == true)
+            if (ControlAllPLC.plcLoiLoc.plc.IsConnected == true)
             {
                 buttonCustomLoiLoc.Text = "Đã kết nối";
                 buttonCustomLoiLoc.BackColor = Color.Green;
@@ -79,12 +80,12 @@ namespace ManagementSoftware.GUI
             }
             else
             {
-                labelLoiLoc.Text = PLCJigLoiLoc.message;
+                labelLoiLoc.Text = "Chưa thể kết nối tới " + ControlAllPLC.plcLoiLoc.plcName;
             }
         }
         void LoadJigMach()
         {
-            if (PLCJigMach.plc.IsConnected == true)
+            if (ControlAllPLC.plcMach.plc.IsConnected == true)
             {
                 buttonCustomJigMach.Text = "Đã kết nối";
                 buttonCustomJigMach.BackColor = Color.Green;
@@ -94,12 +95,12 @@ namespace ManagementSoftware.GUI
             }
             else
             {
-                labelJigMach.Text = PLCJigMach.message;
+                labelJigMach.Text = "Chưa thể kết nối tới " + ControlAllPLC.plcMach.plcName;
             }
         }
         void LoadNguon()
         {
-            if (PLCNguon.plc.IsConnected == true)
+            if (ControlAllPLC.plcNguon.plc.IsConnected == true)
             {
                 buttonCustomNguon.Text = "Đã kết nối";
                 buttonCustomNguon.BackColor = Color.Green;
@@ -109,7 +110,7 @@ namespace ManagementSoftware.GUI
             }
             else
             {
-                labelNguon.Text = PLCNguon.message;
+                labelNguon.Text = "Chưa thể kết nối tới " + ControlAllPLC.plcNguon.plcName;
             }
         }
         public Settings()
@@ -126,16 +127,16 @@ namespace ManagementSoftware.GUI
         private void buttonConnectBauNong_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Enabled = false;
-            ControlAllPLC.RunBauNong();
-            if(PLCBauNong.plc.IsConnected == true)
-            {
-                callAlert?.Invoke("PLC Jig Bầu Nóng đã kết nối", FormAlert.enmType.Success);
-            }
-            else
-            {
-                callAlert?.Invoke(PLCBauNong.message, FormAlert.enmType.Error);
-            }
-            LoadBauNong();
+            //ControlAllPLC.RunBauNong();
+            //if(PLCBauNong.plc.IsConnected == true)
+            //{
+            //    callAlert?.Invoke("PLC Jig Bầu Nóng đã kết nối", FormAlert.enmType.Success);
+            //}
+            //else
+            //{
+            //    callAlert?.Invoke(PLCBauNong.message, FormAlert.enmType.Error);
+            //}
+            //LoadBauNong();
             tableLayoutPanel1.Enabled = true;
 
         }
@@ -143,16 +144,16 @@ namespace ManagementSoftware.GUI
         private void buttonCustomBepTu_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Enabled = false;
-            ControlAllPLC.RunBepTu();
-            if (PLCBepTu.plc.IsConnected == true)
-            {
-                callAlert?.Invoke("PLC Jig Bếp Từ đã kết nối", FormAlert.enmType.Success);
-            }
-            else
-            {
-                callAlert?.Invoke(PLCBepTu.message, FormAlert.enmType.Error);
-            }
-            LoadBepTu();
+            //ControlAllPLC.RunBepTu();
+            //if (PLCBepTu.plc.IsConnected == true)
+            //{
+            //    callAlert?.Invoke("PLC Jig Bếp Từ đã kết nối", FormAlert.enmType.Success);
+            //}
+            //else
+            //{
+            //    callAlert?.Invoke(PLCBepTu.message, FormAlert.enmType.Error);
+            //}
+            //LoadBepTu();
             tableLayoutPanel1.Enabled = true;
 
         }
@@ -160,16 +161,16 @@ namespace ManagementSoftware.GUI
         private void buttonCustomCongTac_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Enabled = false;
-            ControlAllPLC.RunCongTac();
-            if (PLCCongTac.plc.IsConnected == true)
-            {
-                callAlert?.Invoke("PLC Jig Công Tắc đã kết nối", FormAlert.enmType.Success);
-            }
-            else
-            {
-                callAlert?.Invoke(PLCCongTac.message, FormAlert.enmType.Error);
-            }
-            LoadCongTac();
+            //ControlAllPLC.RunCongTac();
+            //if (PLCCongTac.plc.IsConnected == true)
+            //{
+            //    callAlert?.Invoke("PLC Jig Công Tắc đã kết nối", FormAlert.enmType.Success);
+            //}
+            //else
+            //{
+            //    callAlert?.Invoke(PLCCongTac.message, FormAlert.enmType.Error);
+            //}
+            //LoadCongTac();
             tableLayoutPanel1.Enabled = true;
 
         }
@@ -177,16 +178,16 @@ namespace ManagementSoftware.GUI
         private void buttonCustomJigMach_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Enabled = false;
-            ControlAllPLC.RunJigMach();
-            if (PLCJigMach.plc.IsConnected == true)
-            {
-                callAlert?.Invoke("PLC Jig Mạch đã kết nối", FormAlert.enmType.Success);
-            }
-            else
-            {
-                callAlert?.Invoke(PLCJigMach.message, FormAlert.enmType.Error);
-            }
-            LoadJigMach();
+            //ControlAllPLC.RunJigMach();
+            //if (PLCJigMach.plc.IsConnected == true)
+            //{
+            //    callAlert?.Invoke("PLC Jig Mạch đã kết nối", FormAlert.enmType.Success);
+            //}
+            //else
+            //{
+            //    callAlert?.Invoke(PLCJigMach.message, FormAlert.enmType.Error);
+            //}
+            //LoadJigMach();
             tableLayoutPanel1.Enabled = true;
 
         }
@@ -194,16 +195,16 @@ namespace ManagementSoftware.GUI
         private void buttonCustomLoiLoc_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Enabled = false;
-            ControlAllPLC.RunLoiLoc();
-            if (PLCJigLoiLoc.plc.IsConnected == true)
-            {
-                callAlert?.Invoke("PLC Jig Lõi Lọc đã kết nối", FormAlert.enmType.Success);
-            }
-            else
-            {
-                callAlert?.Invoke(PLCJigLoiLoc.message, FormAlert.enmType.Error);
-            }
-            LoadLoiLoc();
+            //ControlAllPLC.RunLoiLoc();
+            //if (PLCJigLoiLoc.plc.IsConnected == true)
+            //{
+            //    callAlert?.Invoke("PLC Jig Lõi Lọc đã kết nối", FormAlert.enmType.Success);
+            //}
+            //else
+            //{
+            //    callAlert?.Invoke(PLCJigLoiLoc.message, FormAlert.enmType.Error);
+            //}
+            //LoadLoiLoc();
             tableLayoutPanel1.Enabled = true;
 
         }
@@ -211,16 +212,16 @@ namespace ManagementSoftware.GUI
         private void buttonCustomNguon_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Enabled = false;
-            ControlAllPLC.RunNguon();
-            if (PLCNguon.plc.IsConnected == true)
-            {
-                callAlert?.Invoke("PLC Jig Nguồn đã kết nối", FormAlert.enmType.Success);
-            }
-            else
-            {
-                callAlert?.Invoke(PLCNguon.message, FormAlert.enmType.Error);
-            }
-            LoadNguon();
+            //ControlAllPLC.RunNguon();
+            //if (PLCNguon.plc.IsConnected == true)
+            //{
+            //    callAlert?.Invoke("PLC Jig Nguồn đã kết nối", FormAlert.enmType.Success);
+            //}
+            //else
+            //{
+            //    callAlert?.Invoke(PLCNguon.message, FormAlert.enmType.Error);
+            //}
+            //LoadNguon();
             tableLayoutPanel1.Enabled = true;
 
         }

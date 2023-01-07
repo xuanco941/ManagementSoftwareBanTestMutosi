@@ -37,35 +37,11 @@ namespace ManagementSoftware.GUI
         Dictionary<TestBauNong, List<Models.BauNongModel.BauNong>> ListResults;
 
 
-
-        Thread ThreadGetDataPLC;
-        System.Timers.Timer aTimer;
         public BauNong()
         {
             InitializeComponent();
 
-            if (PLCBauNong.plc.IsConnected == true)
-            {
-                ThreadGetDataPLC = new Thread(() =>
-                {
-                    aTimer = new System.Timers.Timer();
-                    aTimer.Elapsed += new ElapsedEventHandler(MyTimer_Tick);
-                    aTimer.Interval = 500;
-                    aTimer.Start();
-                });
-                ThreadGetDataPLC.Start();
-            }
-            LoadFormThongKe();
-
-        }
-        ~BauNong()
-        {
-            if (aTimer != null)
-            {
-                aTimer.Stop();
-                aTimer.Dispose();
-            }
-            ThreadGetDataPLC.Abort();
+            plc = new PLCBauNong(ControlAllPLC.ipBauNong, ControlAllPLC.PLCBauNong);
         }
 
         void LoadFormThongKe()
@@ -152,197 +128,154 @@ namespace ManagementSoftware.GUI
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         // Giam sat
 
-        delegate void SetTextControlCallback(Control control, string text);
-        private void SetTextControl(Control control, string text)
+        PLCBauNong plc;
+
+        System.Threading.Timer timer;
+        int TIME_INTERVAL_IN_MILLISECONDS = 1000;
+
+
+
+
+
+        private async void Callback(Object state)
         {
+            Stopwatch watch = new Stopwatch();
 
-            if (control.InvokeRequired && control != null)
+            watch.Start();
+
+
+            // update data
+            // Long running operation
+
+            List<Models.BauNongModel.BauNong> list = await plc.GetAllData();
+            if (list != null && list.Count > 0)
             {
-
-                SetTextControlCallback d = new SetTextControlCallback(SetTextControl);
-                if (control.IsDisposed == false && this.IsDisposed == false)
-                {
-                    this.Invoke(d, new object[] { control, text });
-                }
-            }
-            else
-            {
-                control.Text = text;
+                UpdateData(list);
             }
 
+
+            timer.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
         }
 
 
-        private void MyTimer_Tick(object sender, EventArgs e)
+
+        private void SetTextControl(Button dongAC, Button nhietDo, Button nhietDoNgatCB, Button soLanTest, Button cbNhiet, Models.BauNongModel.BauNong bauNong)
         {
-            PLCBauNong.GetData();
-            foreach (Models.BauNongModel.BauNong item in PLCBauNong.listBauNong.ToList())
+            dongAC.Text = bauNong.DongDienAC.ToString();
+            nhietDo.Text = bauNong.NhietDo.ToString();
+            nhietDoNgatCB.Text = bauNong.NhietDoNgatCBNhiet.ToString();
+            soLanTest.Text = bauNong.SoLanTest.ToString();
+            cbNhiet.Text = bauNong.CBNhietThanBauNong == true ? "on" : "off";
+          
+        }
+
+
+        private void UpdateData(List<Models.BauNongModel.BauNong> list)
+        {
+
+            if (IsHandleCreated && InvokeRequired)
+            {
+                BeginInvoke(new Action<List<Models.BauNongModel.BauNong>>(UpdateData), list);
+                return;
+            }
+
+
+            //update gui
+            foreach (var item in list)
             {
                 if (item.BauNongName == TenThietBi.BauNong1)
                 {
-                    SetTextControl(DongAC1, item.DongDienAC.ToString());
-                    SetTextControl(NhietDo1, item.NhietDo.ToString());
-                    SetTextControl(NhietDoNgatCB1, item.NhietDoNgatCBNhiet.ToString());
-                    SetTextControl(SoLanTest1, item.SoLanTest.ToString());
-                    if (item.CBNhietThanBauNong == true)
-                    {
-                        SetTextControl(CBNhiet1, "on");
-                    }
-                    else
-                    {
-                        SetTextControl(CBNhiet1, "off");
-                    }
+                    SetTextControl(DongAC1, NhietDo1, NhietDoNgatCB1, SoLanTest1, CBNhiet1, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong2)
                 {
-                    SetTextControl(DongAC2, item.DongDienAC.ToString());
-                    SetTextControl(NhietDo2, item.NhietDo.ToString());
-                    SetTextControl(NhietDoNgatCB2, item.NhietDoNgatCBNhiet.ToString());
-                    SetTextControl(SoLanTest2, item.SoLanTest.ToString());
-                    if (item.CBNhietThanBauNong == true)
-                    {
-                        SetTextControl(CBNhiet2, "on");
-                    }
-                    else
-                    {
-                        SetTextControl(CBNhiet2, "off");
-                    }
+                    SetTextControl(DongAC2, NhietDo2, NhietDoNgatCB2, SoLanTest2, CBNhiet2, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong3)
                 {
-                    SetTextControl(DongAC3, item.DongDienAC.ToString());
-                    SetTextControl(NhietDo3, item.NhietDo.ToString());
-                    SetTextControl(NhietDoNgatCB3, item.NhietDoNgatCBNhiet.ToString());
-                    SetTextControl(SoLanTest3, item.SoLanTest.ToString());
-                    if (item.CBNhietThanBauNong == true)
-                    {
-                        SetTextControl(CBNhiet3, "on");
-                    }
-                    else
-                    {
-                        SetTextControl(CBNhiet3, "off");
-                    }
+                    SetTextControl(DongAC3, NhietDo3, NhietDoNgatCB3, SoLanTest3, CBNhiet3, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong4)
                 {
-                    SetTextControl(DongAC4, item.DongDienAC.ToString());
-                    SetTextControl(NhietDo4, item.NhietDo.ToString());
-                    SetTextControl(NhietDoNgatCB4, item.NhietDoNgatCBNhiet.ToString());
-                    SetTextControl(SoLanTest4, item.SoLanTest.ToString());
-                    if (item.CBNhietThanBauNong == true)
-                    {
-                        SetTextControl(CBNhiet4, "on");
-                    }
-                    else
-                    {
-                        SetTextControl(CBNhiet4, "off");
-                    }
+                    SetTextControl(DongAC4, NhietDo4, NhietDoNgatCB4, SoLanTest4, CBNhiet4, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong5)
                 {
-                    SetTextControl(DongAC5, item.DongDienAC.ToString());
-                    SetTextControl(NhietDo5, item.NhietDo.ToString());
-                    SetTextControl(NhietDoNgatCB5, item.NhietDoNgatCBNhiet.ToString());
-                    SetTextControl(SoLanTest5, item.SoLanTest.ToString());
-                    if (item.CBNhietThanBauNong == true)
-                    {
-                        SetTextControl(CBNhiet5, "on");
-                    }
-                    else
-                    {
-                        SetTextControl(CBNhiet5, "off");
-                    }
+                    SetTextControl(DongAC5, NhietDo5, NhietDoNgatCB5, SoLanTest5, CBNhiet5, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong6)
                 {
-                    SetTextControl(DongAC6, item.DongDienAC.ToString());
-                    SetTextControl(NhietDo6, item.NhietDo.ToString());
-                    SetTextControl(NhietDoNgatCB6, item.NhietDoNgatCBNhiet.ToString());
-                    SetTextControl(SoLanTest6, item.SoLanTest.ToString());
-                    if (item.CBNhietThanBauNong == true)
-                    {
-                        SetTextControl(CBNhiet6, "on");
-                    }
-                    else
-                    {
-                        SetTextControl(CBNhiet6, "off");
-                    }
+                    SetTextControl(DongAC6, NhietDo6, NhietDoNgatCB6, SoLanTest6, CBNhiet6, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong7)
                 {
-                    SetTextControl(DongAC7, item.DongDienAC.ToString());
-                    SetTextControl(NhietDo7, item.NhietDo.ToString());
-                    SetTextControl(NhietDoNgatCB7, item.NhietDoNgatCBNhiet.ToString());
-                    SetTextControl(SoLanTest7, item.SoLanTest.ToString());
-                    if (item.CBNhietThanBauNong == true)
-                    {
-                        SetTextControl(CBNhiet7, "on");
-                    }
-                    else
-                    {
-                        SetTextControl(CBNhiet7, "off");
-                    }
+                    SetTextControl(DongAC7, NhietDo7, NhietDoNgatCB7, SoLanTest7, CBNhiet7, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong8)
                 {
-                    SetTextControl(DongAC8, item.DongDienAC.ToString());
-                    SetTextControl(NhietDo8, item.NhietDo.ToString());
-                    SetTextControl(NhietDoNgatCB8, item.NhietDoNgatCBNhiet.ToString());
-                    SetTextControl(SoLanTest8, item.SoLanTest.ToString());
-                    if (item.CBNhietThanBauNong == true)
-                    {
-                        SetTextControl(CBNhiet8, "on");
-                    }
-                    else
-                    {
-                        SetTextControl(CBNhiet8, "off");
-                    }
+                    SetTextControl(DongAC8, NhietDo8, NhietDoNgatCB8, SoLanTest8, CBNhiet8, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong9)
                 {
-                    SetTextControl(DongAC9, item.DongDienAC.ToString());
-                    SetTextControl(NhietDo9, item.NhietDo.ToString());
-                    SetTextControl(NhietDoNgatCB9, item.NhietDoNgatCBNhiet.ToString());
-                    SetTextControl(SoLanTest9, item.SoLanTest.ToString());
-                    if (item.CBNhietThanBauNong == true)
-                    {
-                        SetTextControl(CBNhiet9, "on");
-                    }
-                    else
-                    {
-                        SetTextControl(CBNhiet9, "off");
-                    }
+                    SetTextControl(DongAC9, NhietDo9, NhietDoNgatCB9, SoLanTest9, CBNhiet9, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong10)
                 {
-                    SetTextControl(DongAC10, item.DongDienAC.ToString());
-                    SetTextControl(NhietDo10, item.NhietDo.ToString());
-                    SetTextControl(NhietDoNgatCB10, item.NhietDoNgatCBNhiet.ToString());
-                    SetTextControl(SoLanTest10, item.SoLanTest.ToString());
-                    if (item.CBNhietThanBauNong == true)
-                    {
-                        SetTextControl(CBNhiet10, "on");
-                    }
-                    else
-                    {
-                        SetTextControl(CBNhiet10, "off");
-                    }
+                    SetTextControl(DongAC10, NhietDo10, NhietDoNgatCB10, SoLanTest10, CBNhiet10, item);
                 }
-
-
             }
+
+
 
         }
 
-        private void BauNong_FormClosing(object sender, FormClosingEventArgs e)
+        private async void BauNong_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (aTimer != null)
+            if (timer != null)
             {
-                aTimer.Stop();
-                aTimer.Dispose();
+                this.timer.Change(Timeout.Infinite, Timeout.Infinite);
+                timer.Dispose();
             }
+            await plc.Close();
+        }
+
+        private async void BauNong_Load(object sender, EventArgs e)
+        {
+            if (await plc.Open() == true)
+            {
+                timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+            }
+            else
+            {
+                if (CheckLoad.checkBauNong == false)
+                {
+                    MessageBox.Show("Không thể kết nối tới " + plc.plcName, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    CheckLoad.checkBauNong = true;
+                }
+            }
+
+            LoadFormThongKe();
         }
     }
 }
