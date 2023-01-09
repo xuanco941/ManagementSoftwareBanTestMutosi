@@ -6,7 +6,6 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,8 +15,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <AdditionalFiles Remove="app.manifest" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
     <PackageReference Include="S7netplus" Version="0.16.0" />
+    <PackageReference Include="Syncfusion.Grid.Windows" Version="20.2.0.36" />
     <PackageReference Include="Syncfusion.Licensing" Version="20.2.0.36" />
     <PackageReference Include="Syncfusion.Shared.Base" Version="20.2.0.36" />
     <PackageReference Include="Syncfusion.Tools.Windows" Version="20.2.0.36" />
@@ -81,19 +85,7 @@
     <Compile Update="GUI\Nguon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\Section\ThongKe\ItemThongKeLoiLoc.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="GUI\Section\ThongKe\ItemThongKeBepTu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUI\Section\ThongKe\ItemThongKeBauNong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUI\Section\ThongKe\ItemCongTac.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUI\Section\ThongKe\ItemThongKeNguon.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

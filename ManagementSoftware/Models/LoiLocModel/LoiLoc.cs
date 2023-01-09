@@ -19,7 +19,7 @@ namespace ManagementSoftware.Models.LoiLocModel
         public uint ThoiGianNen { get; set; } //ms
         public uint ThoiGianXa { get; set; } //ms
         public uint ThoiGianGiu { get; set; } //ms
-        public int TestLoiLocID { get; set; }
-        public TestLoiLoc TestLoiLoc { get; set; }
+        public DateTime CreateAt { get; set; }
+
     }
 }

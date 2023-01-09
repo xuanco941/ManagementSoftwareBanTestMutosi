@@ -28,5 +28,12 @@ namespace ManagementSoftware.DAL
             dbContext.BepTus.AddRange(list.ToList());
             dbContext.SaveChanges();
         }
+        public static List<BepTu>? GetDataFromIDTest(int id)
+        {
+            DataBaseContext dbContext = new DataBaseContext();
+
+            return dbContext.BepTus.Where(a => a.TestBepTuID == id).ToList();
+
+        }
     }
 }

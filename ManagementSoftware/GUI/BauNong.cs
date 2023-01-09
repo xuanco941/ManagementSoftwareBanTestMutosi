@@ -34,7 +34,7 @@ namespace ManagementSoftware.GUI
         // tổng số trang
         private int TotalPages = 0;
         //Data
-        Dictionary<TestBauNong, List<Models.BauNongModel.BauNong>> ListResults;
+        List<TestBauNong> ListResults = new List<TestBauNong>();
 
 
         public BauNong()
@@ -47,12 +47,7 @@ namespace ManagementSoftware.GUI
         void LoadFormThongKe()
         {
             panel2.Enabled = false;
-            foreach (Form item in panelThongKe.Controls)
-            {
-                item.Close();
-                item.Dispose();
-            }
-            panelThongKe.Controls.Clear();
+
 
 
             PaginationBauNong pagination = new PaginationBauNong();
@@ -68,15 +63,8 @@ namespace ManagementSoftware.GUI
             pageNumberGoto.MinValue = 1;
             pageNumberGoto.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1;
 
-            for (int i = ListResults.Count - 1; i >= 0; i--)
-            {
-                ItemThongKeBauNong form = new ItemThongKeBauNong(ListResults.ElementAt(i).Key, ListResults.ElementAt(i).Value);
-                form.TopLevel = false;
-                panelThongKe.Controls.Add(form);
-                form.FormBorderStyle = FormBorderStyle.None;
-                form.Dock = DockStyle.Top;
-                form.Show();
-            }
+  
+
             panel2.Enabled = true;
         }
 
@@ -182,11 +170,11 @@ namespace ManagementSoftware.GUI
 
         private void SetTextControl(Button dongAC, Button nhietDo, Button nhietDoNgatCB, Button soLanTest, Button cbNhiet, Models.BauNongModel.BauNong bauNong)
         {
-            dongAC.Text = bauNong.DongDienAC.ToString();
+            dongAC.Text = bauNong.DongDien.ToString();
             nhietDo.Text = bauNong.NhietDo.ToString();
-            nhietDoNgatCB.Text = bauNong.NhietDoNgatCBNhiet.ToString();
-            soLanTest.Text = bauNong.SoLanTest.ToString();
-            cbNhiet.Text = bauNong.CBNhietThanBauNong == true ? "on" : "off";
+            nhietDoNgatCB.Text = bauNong.ThoiGian.ToString();
+            soLanTest.Text = bauNong.LanTestThu.ToString();
+            cbNhiet.Text = bauNong.TrangThaiCBNhiet == true ? "on" : "off";
           
         }
 
@@ -265,14 +253,6 @@ namespace ManagementSoftware.GUI
             if (await plc.Open() == true)
             {
                 timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
-            }
-            else
-            {
-                if (CheckLoad.checkBauNong == false)
-                {
-                    MessageBox.Show("Không thể kết nối tới " + plc.plcName, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    CheckLoad.checkBauNong = true;
-                }
             }
 
             LoadFormThongKe();

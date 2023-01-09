@@ -1,13 +1,18 @@
-﻿using ManagementSoftware.DAL.DALPagination;
+﻿using ManagementSoftware.DAL;
+using ManagementSoftware.DAL.DALPagination;
+using ManagementSoftware.GUI.JigMachManagement;
+using ManagementSoftware.GUI.NguonManagement;
 using ManagementSoftware.GUI.Section;
 using ManagementSoftware.GUI.Section.ThongKe;
 using ManagementSoftware.Models;
+using ManagementSoftware.Models.JigMachModel;
 using Syncfusion.XPS;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +26,21 @@ namespace ManagementSoftware.GUI
         public CallAlert callAlert;
 
 
+
+        public JigMach()
+        {
+            InitializeComponent();
+        }
+        private void JigMach_Load(object sender, EventArgs e)
+        {
+            GiamSatJigMachNguon form = new GiamSatJigMachNguon();
+            form.TopLevel = false;
+            tabPageGiamSatJigNguon.Controls.Add(form);
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+            form.Show();
+        }
+
         // ngày để query 
         private DateTime? timeStart = null;
         private DateTime? timeEnd = null;
@@ -32,25 +52,11 @@ namespace ManagementSoftware.GUI
         // tổng số trang
         private int TotalPages = 0;
         //Data
-        Dictionary<TestJigMach, JigMachResponse> ListResults;
-
-
-        public JigMach()
-        {
-            InitializeComponent();
-            LoadFormThongKe();
-        }
+        List<TestJigMach> ListResults = new List<TestJigMach>();
 
         private void LoadFormThongKe()
         {
             panel2.Enabled = false;
-            foreach (Form item in panelThongKe.Controls)
-            {
-                item.Close();
-                item.Dispose();
-            }
-            panelThongKe.Controls.Clear();
-
 
             PaginationJigMach pagination = new PaginationJigMach();
             pagination.Set(page, timeStart, timeEnd);
@@ -65,15 +71,35 @@ namespace ManagementSoftware.GUI
             pageNumberGoto.MinValue = 1;
             pageNumberGoto.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1;
 
-            for (int i = ListResults.Count - 1; i >= 0; i--)
+
+            DataTable dt = new DataTable();
+            dt.Columns.Add("ID-Date");
+            dt.Columns.Add("Jig");
+            dt.Columns.Add("Lần test thứ");
+            dt.Columns.Add("Điện áp DC (V)");
+            dt.Columns.Add("Dòng điện DC (A)");
+            dt.Columns.Add("Công suất (W)");
+            dt.Columns.Add("Thời gian (giây)");
+
+            foreach (var item in this.ListResults)
             {
-                ItemThongKeJigMach form = new ItemThongKeJigMach(ListResults.ElementAt(i).Key, ListResults.ElementAt(i).Value.JigMachNguons, ListResults.ElementAt(i).Value.JigMachTDs);
-                form.TopLevel = false;
-                panelThongKe.Controls.Add(form);
-                form.FormBorderStyle = FormBorderStyle.None;
-                form.Dock = DockStyle.Top;
-                form.Show();
+                List<Models.JigMachModel.JigMachNguon>? l = DALJigMach.GetDataFromIDTest(item.TestJigMachID);
+
+
+                string id_date = "ID" + item.TestJigMachID + " - " + item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                if (l != null && l.Count > 0)
+                {
+                    foreach (var i in l)
+                    {
+                        dt.Rows.Add(id_date, i.JigMachNguonName, i.LanTestThu, String.Format("{0:0.00}", i.DienApDC), String.Format("{0:0.00}", i.DongDienDC), String.Format("{0:0.00}", i.CongSuat), i.ThoiGian);
+                    }
+                }
+                dt.Rows.Add("", "", "", "", "", "", "");
+
             }
+
+            dataGridView1.DataSource = dt;
+
             panel2.Enabled = true;
         }
 
@@ -106,6 +132,182 @@ namespace ManagementSoftware.GUI
         {
             this.page = int.Parse(pageNumberGoto.Text);
             LoadFormThongKe();
+        }
+
+
+
+        private void tabControl1_Selected(object sender, TabControlEventArgs e)
+        {
+            if (tabControl1.SelectedTab == tabPageGiamSatJigNguon)
+            {
+                GiamSatJigMachNguon form = new GiamSatJigMachNguon();
+                form.TopLevel = false;
+                tabPageGiamSatJigNguon.Controls.Add(form);
+                form.FormBorderStyle = FormBorderStyle.None;
+                form.Dock = DockStyle.Fill;
+                form.Show();
+                foreach (GiamSatJigMachTDS f in tabPageGiamSatJigTDS.Controls)
+                {
+                    f.Close();
+                    f.Dispose();
+                }
+
+            }
+            else if (tabControl1.SelectedTab == tabPageGiamSatJigTDS)
+            {
+                GiamSatJigMachTDS form = new GiamSatJigMachTDS();
+                form.TopLevel = false;
+                tabPageGiamSatJigTDS.Controls.Add(form);
+                form.FormBorderStyle = FormBorderStyle.None;
+                form.Dock = DockStyle.Fill;
+                form.Show();
+                foreach (GiamSatJigMachNguon f in tabPageGiamSatJigNguon.Controls)
+                {
+                    f.Close();
+                    f.Dispose();
+                }
+
+            }
+            else if (tabControl1.SelectedTab == tabPageThongKe)
+            {
+                LoadFormThongKe();
+                foreach (GiamSatJigMachNguon f in tabPageGiamSatJigNguon.Controls)
+                {
+                    f.Close();
+                    f.Dispose();
+                }
+                foreach (GiamSatJigMachTDS f in tabPageGiamSatJigTDS.Controls)
+                {
+                    f.Close();
+                    f.Dispose();
+                }
+
+            }
+            else if (tabControl1.SelectedTab == tabPageThongKeTDS)
+            {
+                LoadFormThongKeTDS();
+                foreach (GiamSatJigMachNguon f in tabPageGiamSatJigNguon.Controls)
+                {
+                    f.Close();
+                    f.Dispose();
+                }
+                foreach (GiamSatJigMachTDS f in tabPageGiamSatJigTDS.Controls)
+                {
+                    f.Close();
+                    f.Dispose();
+                }
+
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // ngày để query 
+        private DateTime? timeStart2 = null;
+        private DateTime? timeEnd2 = null;
+        // trang hiện tại
+        private int page2 = 1;
+
+
+
+        // tổng số trang
+        private int TotalPages2 = 0;
+        //Data
+        List<TestJigMach> ListResults2 = new List<TestJigMach>();
+
+        private void LoadFormThongKeTDS()
+        {
+            panelSearch2.Enabled = false;
+
+            PaginationJigMach pagination = new PaginationJigMach();
+            pagination.Set(page2, timeStart2, timeEnd2);
+            this.ListResults2 = pagination.ListResults;
+            this.TotalPages2 = pagination.TotalPages;
+            lbTotalPages2.Text = this.TotalPages2.ToString();
+
+            buttonPreviousPage2.Enabled = this.page2 > 1;
+            buttonNextPage2.Enabled = this.page2 < this.TotalPages2;
+            buttonPage2.Text = this.page2.ToString();
+
+            pageNumberGoto2.MinValue = 1;
+            pageNumberGoto2.MaxValue = this.TotalPages2 != 0 ? this.TotalPages2 : 1;
+
+
+            DataTable dt = new DataTable();
+            dt.Columns.Add("ID-Date");
+            dt.Columns.Add("Jig");
+            dt.Columns.Add("Lần test thứ");
+            dt.Columns.Add("Van điện từ");
+            dt.Columns.Add("Van áp cao");
+            dt.Columns.Add("Thời gian (giây)");
+
+            foreach (var item in this.ListResults)
+            {
+                List<Models.JigMachModel.JigMachTDS>? l = DALJigMach.GetDataFromIDTestTDS(item.TestJigMachID);
+
+
+                string id_date = "ID" + item.TestJigMachID + " - " + item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                if (l != null && l.Count > 0)
+                {
+                    foreach (var i in l)
+                    {
+                        string vandt = i.VanDienTu == true ? "on" : "off";
+                        string vanapcao = i.VanApCao == true ? "on" : "off";
+
+                        dt.Rows.Add(id_date, i.JigMachTDSName, i.LanTestThu, vandt, vanapcao, i.ThoiGian);
+                    }
+                }
+                dt.Rows.Add("", "", "", "", "", "");
+
+            }
+
+            dataGridView2.DataSource = dt;
+
+            panelSearch2.Enabled = true;
+        }
+
+        private void buttonPreviousPage2_Click(object sender, EventArgs e)
+        {
+            if (this.page2 > 1)
+            {
+                this.page2 = this.page2 - 1;
+                LoadFormThongKeTDS();
+            }
+        }
+
+        private void buttonNextPage2_Click(object sender, EventArgs e)
+        {
+            if (this.page2 < this.TotalPages2)
+            {
+                this.page2 = this.page2 + 1;
+                LoadFormThongKeTDS();
+            }
+        }
+
+        private void buttonSearch2_Click(object sender, EventArgs e)
+        {
+            timeStart2 = TimeStart2.Value;
+            timeEnd2 = TimeEnd2.Value;
+            LoadFormThongKeTDS();
+        }
+
+        private void buttonGoto2_Click(object sender, EventArgs e)
+        {
+            this.page2 = int.Parse(pageNumberGoto2.Text);
+            LoadFormThongKeTDS();
         }
     }
 }

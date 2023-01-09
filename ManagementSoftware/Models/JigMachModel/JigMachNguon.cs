@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManagementSoftware.Models
+namespace ManagementSoftware.Models.JigMachModel
 {
     [Table("JigMachNguon")]
     public class JigMachNguon
@@ -14,10 +14,11 @@ namespace ManagementSoftware.Models
         [Key]
         public int JigMachNguonID { get; set; }
         public string JigMachNguonName { get; set; } = "";
-        public double DongDien { get; set; }
-        public double DienAp { get; set; }
+        public double DienApDC { get; set; }
+        public double DongDienDC { get; set; }
         public double CongSuat { get; set; }
-        public uint SoLanTest { get; set; }
+        public uint ThoiGian { get; set; }
+        public ushort LanTestThu { get; set; }
         public int TestJigMachID { get; set; }
         public TestJigMach TestJigMach { get; set; }
     }

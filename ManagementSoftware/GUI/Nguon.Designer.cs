@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Nguon));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageGiamSat1 = new System.Windows.Forms.TabPage();
             this.tabPageGiamSat2 = new System.Windows.Forms.TabPage();
@@ -61,8 +65,10 @@
             this.buttonPreviousPage = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.buttonCustomGoPage = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.inputNumPageGo = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPageThongKe.SuspendLayout();
+            this.panelThongKe.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel31.SuspendLayout();
             this.tableLayoutPanel32.SuspendLayout();
@@ -78,6 +84,7 @@
             this.panel399.SuspendLayout();
             this.panel400.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inputNumPageGo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -131,6 +138,7 @@
             // 
             this.panelThongKe.AutoScroll = true;
             this.panelThongKe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelThongKe.Controls.Add(this.dataGridView1);
             this.panelThongKe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelThongKe.Location = new System.Drawing.Point(3, 3);
             this.panelThongKe.Name = "panelThongKe";
@@ -540,6 +548,47 @@
             this.inputNumPageGo.Text = "1";
             this.inputNumPageGo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.RowHeadersVisible = false;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(1041, 372);
+            this.dataGridView1.TabIndex = 1;
+            // 
             // Nguon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -552,6 +601,7 @@
             this.Load += new System.EventHandler(this.Nguon_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageThongKe.ResumeLayout(false);
+            this.panelThongKe.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tableLayoutPanel31.ResumeLayout(false);
@@ -569,6 +619,7 @@
             this.panel399.ResumeLayout(false);
             this.panel400.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.inputNumPageGo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -607,5 +658,6 @@
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonPreviousPage;
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonCustomGoPage;
         private Syncfusion.Windows.Forms.Tools.IntegerTextBox inputNumPageGo;
+        private DataGridView dataGridView1;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using ManagementSoftware.Models;
+using ManagementSoftware.Models.JigMachModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +30,20 @@ namespace ManagementSoftware.DAL
             dbContext.JigMachTDSs.AddRange(listMachTDS.ToList());
 
             dbContext.SaveChanges();
+        }
+        public static List<JigMachNguon>? GetDataFromIDTest(int id)
+        {
+            DataBaseContext dbContext = new DataBaseContext();
+
+            return dbContext.JigMachNguons.Where(a => a.TestJigMachID == id).ToList();
+
+        }
+        public static List<JigMachTDS>? GetDataFromIDTestTDS(int id)
+        {
+            DataBaseContext dbContext = new DataBaseContext();
+
+            return dbContext.JigMachTDSs.Where(a => a.TestJigMachID == id).ToList();
+
         }
     }
 }

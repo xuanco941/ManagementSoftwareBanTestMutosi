@@ -20,16 +20,16 @@ namespace ManagementSoftware
         public const string BepTu2 = "Bếp 2";
 
         //BauNong
-        public const string BauNong1 = "Jig 1";
-        public const string BauNong2 = "Jig 2";
-        public const string BauNong3 = "Jig 3";
-        public const string BauNong4 = "Jig 4";
-        public const string BauNong5 = "Jig 5";
-        public const string BauNong6 = "Jig 6";
-        public const string BauNong7 = "Jig 7";
-        public const string BauNong8 = "Jig 8";
-        public const string BauNong9 = "Jig 9";
-        public const string BauNong10 = "Jig 10";
+        public const string BauNong1 = "Bầu 1";
+        public const string BauNong2 = "Bầu 2";
+        public const string BauNong3 = "Bầu 3";
+        public const string BauNong4 = "Bầu 4";
+        public const string BauNong5 = "Bầu 5";
+        public const string BauNong6 = "Bầu 6";
+        public const string BauNong7 = "Bầu 7";
+        public const string BauNong8 = "Bầu 8";
+        public const string BauNong9 = "Bầu 9";
+        public const string BauNong10 = "Bầu 10";
 
         //Nguồn
         public const string Nguon1 = "Nguồn 1";

@@ -31,7 +31,7 @@ namespace ManagementSoftware.GUI
         // tổng số trang
         private int TotalPages = 0;
         //Data
-        Dictionary<TestBepTu, List<Models.BepTuModel.BepTu>> ListResults;
+        List<TestBepTu> ListResults = new List<TestBepTu>();
         public BepTu()
         {
             InitializeComponent();
@@ -42,12 +42,7 @@ namespace ManagementSoftware.GUI
         void LoadFormThongKe()
         {
             panel2.Enabled = false;
-            foreach (Form item in panelThongKe.Controls)
-            {
-                item.Close();
-                item.Dispose();
-            }
-            panelThongKe.Controls.Clear();
+
 
 
             PaginationBepTu pagination = new PaginationBepTu();
@@ -63,15 +58,7 @@ namespace ManagementSoftware.GUI
             pageNumberGoto.MinValue = 1;
             pageNumberGoto.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1;
 
-            for (int i = ListResults.Count - 1; i >= 0; i--)
-            {
-                ItemThongKeBepTu form = new ItemThongKeBepTu(ListResults.ElementAt(i).Key, ListResults.ElementAt(i).Value);
-                form.TopLevel = false;
-                panelThongKe.Controls.Add(form);
-                form.FormBorderStyle = FormBorderStyle.None;
-                form.Dock = DockStyle.Top;
-                form.Show();
-            }
+           
             panel2.Enabled = true;
         }
 

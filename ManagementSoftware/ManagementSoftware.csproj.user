@@ -28,6 +28,12 @@
     <Compile Update="GUI\JigMach.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\JigMachManagement\GiamSatJigMachNguon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\JigMachManagement\GiamSatJigMachTDS.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GUI\NguonManagement\NguonTu16Den30.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -35,9 +41,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\Section\FormStringConnectDatabase.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUI\Section\ThongKe\ItemThongKeJigMach.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\Settings.cs">

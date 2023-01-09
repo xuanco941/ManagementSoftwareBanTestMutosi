@@ -127,7 +127,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 193F));
             this.tableLayoutPanel1.Controls.Add(this.panel18, 2, 5);
             this.tableLayoutPanel1.Controls.Add(this.panel17, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.panel16, 0, 5);
@@ -163,9 +163,9 @@
             // 
             this.panel18.Controls.Add(this.buttonCustomNguon);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel18.Location = new System.Drawing.Point(785, 309);
+            this.panel18.Location = new System.Drawing.Point(742, 309);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(144, 57);
+            this.panel18.Size = new System.Drawing.Size(187, 57);
             this.panel18.TabIndex = 17;
             // 
             // buttonCustomNguon
@@ -180,19 +180,18 @@
             this.buttonCustomNguon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCustomNguon.Font = new System.Drawing.Font("Bahnschrift SemiLight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonCustomNguon.ForeColor = System.Drawing.Color.White;
-            this.buttonCustomNguon.Image = global::ManagementSoftware.Properties.Resources.iconfinder_Synchronize_278832;
-            this.buttonCustomNguon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCustomNguon.Image = global::ManagementSoftware.Properties.Resources.red_x_10333;
+            this.buttonCustomNguon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonCustomNguon.Location = new System.Drawing.Point(0, 0);
             this.buttonCustomNguon.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonCustomNguon.Name = "buttonCustomNguon";
-            this.buttonCustomNguon.Size = new System.Drawing.Size(144, 57);
+            this.buttonCustomNguon.Size = new System.Drawing.Size(187, 57);
             this.buttonCustomNguon.TabIndex = 80;
-            this.buttonCustomNguon.Text = "Kết nối lại";
-            this.buttonCustomNguon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonCustomNguon.Text = "Không có kết nối";
+            this.buttonCustomNguon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCustomNguon.TextColor = System.Drawing.Color.White;
-            this.buttonCustomNguon.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.buttonCustomNguon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonCustomNguon.UseVisualStyleBackColor = false;
-            this.buttonCustomNguon.Click += new System.EventHandler(this.buttonCustomNguon_Click);
             // 
             // panel17
             // 
@@ -200,7 +199,7 @@
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel17.Location = new System.Drawing.Point(105, 309);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(673, 57);
+            this.panel17.Size = new System.Drawing.Size(630, 57);
             this.panel17.TabIndex = 16;
             // 
             // labelNguon
@@ -209,7 +208,7 @@
             this.labelNguon.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelNguon.Location = new System.Drawing.Point(0, 0);
             this.labelNguon.Name = "labelNguon";
-            this.labelNguon.Size = new System.Drawing.Size(673, 57);
+            this.labelNguon.Size = new System.Drawing.Size(630, 57);
             this.labelNguon.TabIndex = 1;
             this.labelNguon.Text = "label6";
             this.labelNguon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -238,9 +237,9 @@
             // 
             this.panel15.Controls.Add(this.buttonCustomLoiLoc);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(785, 248);
+            this.panel15.Location = new System.Drawing.Point(742, 248);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(144, 54);
+            this.panel15.Size = new System.Drawing.Size(187, 54);
             this.panel15.TabIndex = 14;
             // 
             // buttonCustomLoiLoc
@@ -255,19 +254,18 @@
             this.buttonCustomLoiLoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCustomLoiLoc.Font = new System.Drawing.Font("Bahnschrift SemiLight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonCustomLoiLoc.ForeColor = System.Drawing.Color.White;
-            this.buttonCustomLoiLoc.Image = global::ManagementSoftware.Properties.Resources.iconfinder_Synchronize_278832;
-            this.buttonCustomLoiLoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCustomLoiLoc.Image = global::ManagementSoftware.Properties.Resources.red_x_10333;
+            this.buttonCustomLoiLoc.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonCustomLoiLoc.Location = new System.Drawing.Point(0, 0);
             this.buttonCustomLoiLoc.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonCustomLoiLoc.Name = "buttonCustomLoiLoc";
-            this.buttonCustomLoiLoc.Size = new System.Drawing.Size(144, 54);
+            this.buttonCustomLoiLoc.Size = new System.Drawing.Size(187, 54);
             this.buttonCustomLoiLoc.TabIndex = 80;
-            this.buttonCustomLoiLoc.Text = "Kết nối lại";
-            this.buttonCustomLoiLoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonCustomLoiLoc.Text = "Không có kết nối";
+            this.buttonCustomLoiLoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCustomLoiLoc.TextColor = System.Drawing.Color.White;
-            this.buttonCustomLoiLoc.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.buttonCustomLoiLoc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonCustomLoiLoc.UseVisualStyleBackColor = false;
-            this.buttonCustomLoiLoc.Click += new System.EventHandler(this.buttonCustomLoiLoc_Click);
             // 
             // panel14
             // 
@@ -275,7 +273,7 @@
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel14.Location = new System.Drawing.Point(105, 248);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(673, 54);
+            this.panel14.Size = new System.Drawing.Size(630, 54);
             this.panel14.TabIndex = 13;
             // 
             // labelLoiLoc
@@ -284,7 +282,7 @@
             this.labelLoiLoc.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelLoiLoc.Location = new System.Drawing.Point(0, 0);
             this.labelLoiLoc.Name = "labelLoiLoc";
-            this.labelLoiLoc.Size = new System.Drawing.Size(673, 54);
+            this.labelLoiLoc.Size = new System.Drawing.Size(630, 54);
             this.labelLoiLoc.TabIndex = 1;
             this.labelLoiLoc.Text = "label5";
             this.labelLoiLoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -313,9 +311,9 @@
             // 
             this.panel12.Controls.Add(this.buttonCustomJigMach);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(785, 187);
+            this.panel12.Location = new System.Drawing.Point(742, 187);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(144, 54);
+            this.panel12.Size = new System.Drawing.Size(187, 54);
             this.panel12.TabIndex = 11;
             // 
             // buttonCustomJigMach
@@ -330,19 +328,18 @@
             this.buttonCustomJigMach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCustomJigMach.Font = new System.Drawing.Font("Bahnschrift SemiLight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonCustomJigMach.ForeColor = System.Drawing.Color.White;
-            this.buttonCustomJigMach.Image = global::ManagementSoftware.Properties.Resources.iconfinder_Synchronize_278832;
-            this.buttonCustomJigMach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCustomJigMach.Image = global::ManagementSoftware.Properties.Resources.red_x_10333;
+            this.buttonCustomJigMach.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonCustomJigMach.Location = new System.Drawing.Point(0, 0);
             this.buttonCustomJigMach.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonCustomJigMach.Name = "buttonCustomJigMach";
-            this.buttonCustomJigMach.Size = new System.Drawing.Size(144, 54);
+            this.buttonCustomJigMach.Size = new System.Drawing.Size(187, 54);
             this.buttonCustomJigMach.TabIndex = 80;
-            this.buttonCustomJigMach.Text = "Kết nối lại";
-            this.buttonCustomJigMach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonCustomJigMach.Text = "Không có kết nối";
+            this.buttonCustomJigMach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCustomJigMach.TextColor = System.Drawing.Color.White;
-            this.buttonCustomJigMach.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.buttonCustomJigMach.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonCustomJigMach.UseVisualStyleBackColor = false;
-            this.buttonCustomJigMach.Click += new System.EventHandler(this.buttonCustomJigMach_Click);
             // 
             // panel11
             // 
@@ -350,7 +347,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(105, 187);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(673, 54);
+            this.panel11.Size = new System.Drawing.Size(630, 54);
             this.panel11.TabIndex = 10;
             // 
             // labelJigMach
@@ -359,7 +356,7 @@
             this.labelJigMach.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelJigMach.Location = new System.Drawing.Point(0, 0);
             this.labelJigMach.Name = "labelJigMach";
-            this.labelJigMach.Size = new System.Drawing.Size(673, 54);
+            this.labelJigMach.Size = new System.Drawing.Size(630, 54);
             this.labelJigMach.TabIndex = 1;
             this.labelJigMach.Text = "label4";
             this.labelJigMach.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -388,9 +385,9 @@
             // 
             this.panel9.Controls.Add(this.buttonCustomCongTac);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(785, 126);
+            this.panel9.Location = new System.Drawing.Point(742, 126);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(144, 54);
+            this.panel9.Size = new System.Drawing.Size(187, 54);
             this.panel9.TabIndex = 8;
             // 
             // buttonCustomCongTac
@@ -405,19 +402,18 @@
             this.buttonCustomCongTac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCustomCongTac.Font = new System.Drawing.Font("Bahnschrift SemiLight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonCustomCongTac.ForeColor = System.Drawing.Color.White;
-            this.buttonCustomCongTac.Image = global::ManagementSoftware.Properties.Resources.iconfinder_Synchronize_278832;
-            this.buttonCustomCongTac.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCustomCongTac.Image = global::ManagementSoftware.Properties.Resources.red_x_10333;
+            this.buttonCustomCongTac.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonCustomCongTac.Location = new System.Drawing.Point(0, 0);
             this.buttonCustomCongTac.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonCustomCongTac.Name = "buttonCustomCongTac";
-            this.buttonCustomCongTac.Size = new System.Drawing.Size(144, 54);
+            this.buttonCustomCongTac.Size = new System.Drawing.Size(187, 54);
             this.buttonCustomCongTac.TabIndex = 80;
-            this.buttonCustomCongTac.Text = "Kết nối lại";
-            this.buttonCustomCongTac.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonCustomCongTac.Text = "Không có kết nối";
+            this.buttonCustomCongTac.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCustomCongTac.TextColor = System.Drawing.Color.White;
-            this.buttonCustomCongTac.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.buttonCustomCongTac.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonCustomCongTac.UseVisualStyleBackColor = false;
-            this.buttonCustomCongTac.Click += new System.EventHandler(this.buttonCustomCongTac_Click);
             // 
             // panel8
             // 
@@ -425,7 +421,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(105, 126);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(673, 54);
+            this.panel8.Size = new System.Drawing.Size(630, 54);
             this.panel8.TabIndex = 7;
             // 
             // labelCongTac
@@ -434,7 +430,7 @@
             this.labelCongTac.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelCongTac.Location = new System.Drawing.Point(0, 0);
             this.labelCongTac.Name = "labelCongTac";
-            this.labelCongTac.Size = new System.Drawing.Size(673, 54);
+            this.labelCongTac.Size = new System.Drawing.Size(630, 54);
             this.labelCongTac.TabIndex = 1;
             this.labelCongTac.Text = "label3";
             this.labelCongTac.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -463,9 +459,9 @@
             // 
             this.panel6.Controls.Add(this.buttonCustomBepTu);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(785, 65);
+            this.panel6.Location = new System.Drawing.Point(742, 65);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(144, 54);
+            this.panel6.Size = new System.Drawing.Size(187, 54);
             this.panel6.TabIndex = 5;
             // 
             // buttonCustomBepTu
@@ -480,19 +476,18 @@
             this.buttonCustomBepTu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCustomBepTu.Font = new System.Drawing.Font("Bahnschrift SemiLight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonCustomBepTu.ForeColor = System.Drawing.Color.White;
-            this.buttonCustomBepTu.Image = global::ManagementSoftware.Properties.Resources.iconfinder_Synchronize_278832;
-            this.buttonCustomBepTu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCustomBepTu.Image = global::ManagementSoftware.Properties.Resources.red_x_10333;
+            this.buttonCustomBepTu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonCustomBepTu.Location = new System.Drawing.Point(0, 0);
             this.buttonCustomBepTu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonCustomBepTu.Name = "buttonCustomBepTu";
-            this.buttonCustomBepTu.Size = new System.Drawing.Size(144, 54);
+            this.buttonCustomBepTu.Size = new System.Drawing.Size(187, 54);
             this.buttonCustomBepTu.TabIndex = 80;
-            this.buttonCustomBepTu.Text = "Kết nối lại";
-            this.buttonCustomBepTu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonCustomBepTu.Text = "Không có kết nối";
+            this.buttonCustomBepTu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCustomBepTu.TextColor = System.Drawing.Color.White;
-            this.buttonCustomBepTu.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.buttonCustomBepTu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonCustomBepTu.UseVisualStyleBackColor = false;
-            this.buttonCustomBepTu.Click += new System.EventHandler(this.buttonCustomBepTu_Click);
             // 
             // panel5
             // 
@@ -500,7 +495,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(105, 65);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(673, 54);
+            this.panel5.Size = new System.Drawing.Size(630, 54);
             this.panel5.TabIndex = 4;
             // 
             // labelBepTu
@@ -509,7 +504,7 @@
             this.labelBepTu.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelBepTu.Location = new System.Drawing.Point(0, 0);
             this.labelBepTu.Name = "labelBepTu";
-            this.labelBepTu.Size = new System.Drawing.Size(673, 54);
+            this.labelBepTu.Size = new System.Drawing.Size(630, 54);
             this.labelBepTu.TabIndex = 1;
             this.labelBepTu.Text = "label2";
             this.labelBepTu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -560,7 +555,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(105, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(673, 54);
+            this.panel2.Size = new System.Drawing.Size(630, 54);
             this.panel2.TabIndex = 1;
             // 
             // labelBauNong
@@ -569,7 +564,7 @@
             this.labelBauNong.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelBauNong.Location = new System.Drawing.Point(0, 0);
             this.labelBauNong.Name = "labelBauNong";
-            this.labelBauNong.Size = new System.Drawing.Size(673, 54);
+            this.labelBauNong.Size = new System.Drawing.Size(630, 54);
             this.labelBauNong.TabIndex = 0;
             this.labelBauNong.Text = "label1";
             this.labelBauNong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -578,9 +573,9 @@
             // 
             this.panel3.Controls.Add(this.buttonConnectBauNong);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(785, 4);
+            this.panel3.Location = new System.Drawing.Point(742, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(144, 54);
+            this.panel3.Size = new System.Drawing.Size(187, 54);
             this.panel3.TabIndex = 2;
             // 
             // buttonConnectBauNong
@@ -595,19 +590,18 @@
             this.buttonConnectBauNong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonConnectBauNong.Font = new System.Drawing.Font("Bahnschrift SemiLight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonConnectBauNong.ForeColor = System.Drawing.Color.White;
-            this.buttonConnectBauNong.Image = global::ManagementSoftware.Properties.Resources.iconfinder_Synchronize_278832;
-            this.buttonConnectBauNong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonConnectBauNong.Image = global::ManagementSoftware.Properties.Resources.red_x_10333;
+            this.buttonConnectBauNong.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonConnectBauNong.Location = new System.Drawing.Point(0, 0);
             this.buttonConnectBauNong.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonConnectBauNong.Name = "buttonConnectBauNong";
-            this.buttonConnectBauNong.Size = new System.Drawing.Size(144, 54);
+            this.buttonConnectBauNong.Size = new System.Drawing.Size(187, 54);
             this.buttonConnectBauNong.TabIndex = 79;
-            this.buttonConnectBauNong.Text = "Kết nối lại";
-            this.buttonConnectBauNong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonConnectBauNong.Text = "Không có kết nối";
+            this.buttonConnectBauNong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonConnectBauNong.TextColor = System.Drawing.Color.White;
-            this.buttonConnectBauNong.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.buttonConnectBauNong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonConnectBauNong.UseVisualStyleBackColor = false;
-            this.buttonConnectBauNong.Click += new System.EventHandler(this.buttonConnectBauNong_Click);
             // 
             // Settings
             // 

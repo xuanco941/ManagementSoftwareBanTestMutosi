@@ -15,7 +15,7 @@ namespace ManagementSoftware.Models.CongTacModel
         [Key]
         public int CongTacID { get; set; }
         public string CongTacName { get; set; } = "";
-        public int SoLanTest { get; set; }
+        public int LanTestThu { get; set; }
         public bool TrangThai { get; set; }
         public string JigCongTac { get; set; } = "";
         public int TestCongTacID { get; set; }

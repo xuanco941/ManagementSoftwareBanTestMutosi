@@ -1,4 +1,5 @@
-﻿using ManagementSoftware.DAL.DALPagination;
+﻿using ManagementSoftware.DAL;
+using ManagementSoftware.DAL.DALPagination;
 using ManagementSoftware.GUI.NguonManagement;
 using ManagementSoftware.GUI.Section;
 using ManagementSoftware.GUI.Section.ThongKe;
@@ -11,6 +12,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,7 +37,7 @@ namespace ManagementSoftware.GUI
         // tổng số trang
         private int TotalPages = 0;
         //Data
-        Dictionary<Models.NguonModel.TestNguon, List<Models.NguonModel.Nguon>> ListResults;
+        List<Models.NguonModel.TestNguon> ListResults = new List<Models.NguonModel.TestNguon>();
 
 
         public Nguon()
@@ -78,13 +80,6 @@ namespace ManagementSoftware.GUI
         private void LoadFormThongKe()
         {
             panel2.Enabled = false;
-            foreach (Form item in panelThongKe.Controls)
-            {
-                item.Close();
-                item.Dispose();
-            }
-            panelThongKe.Controls.Clear();
-
 
             PaginationNguon pagination = new PaginationNguon();
             pagination.Set(page, timeStart, timeEnd);
@@ -99,15 +94,35 @@ namespace ManagementSoftware.GUI
             pageNumberGoto.MinValue = 1;
             pageNumberGoto.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1;
 
-            for (int i = ListResults.Count - 1; i >= 0; i--)
+
+            DataTable dt = new DataTable();
+            dt.Columns.Add("ID-Date");
+            dt.Columns.Add("Nguồn");
+            dt.Columns.Add("Lần test thứ");
+            dt.Columns.Add("Điện áp DC (V)");
+            dt.Columns.Add("Dòng DC (A)");
+            dt.Columns.Add("Công suất (W)");
+            dt.Columns.Add("Thời gian (giây)");
+
+            foreach (var item in this.ListResults)
             {
-                ItemThongKeNguon form = new ItemThongKeNguon(ListResults.ElementAt(i).Key, ListResults.ElementAt(i).Value);
-                form.TopLevel = false;
-                panelThongKe.Controls.Add(form);
-                form.FormBorderStyle = FormBorderStyle.None;
-                form.Dock = DockStyle.Top;
-                form.Show();
+                List<Models.NguonModel.Nguon>? l = DALNguon.GetDataFromIDTest(item.TestNguonID);
+
+
+                string id_date = "ID" + item.TestNguonID + " - " + item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                if (l != null && l.Count > 0)
+                {
+                    foreach (var i in l)
+                    {
+                        dt.Rows.Add(id_date, i.NguonName, i.LanTestThu, String.Format("{0:0.00}", i.DienApDC), String.Format("{0:0.00}", i.DongDC), String.Format("{0:0.00}", i.CongSuat), i.ThoiGianTest);
+                    }
+                }
+                dt.Rows.Add("", "", "", "", "", "", "");
+
             }
+
+            dataGridView1.DataSource = dt;
+
             panel2.Enabled = true;
 
         }

@@ -13,15 +13,9 @@ namespace ManagementSoftware.DAL
         public static void Add(LoiLoc loiloc)
         {
             DataBaseContext dbContext = new DataBaseContext();
-            TestLoiLoc testID = new TestLoiLoc();
-
-            dbContext.TestLoiLocs.Add(testID);
-            dbContext.SaveChanges();
-
 
             if (loiloc != null)
             {
-                loiloc.TestLoiLocID = testID.TestLoiLocID;
                 dbContext.LoiLocs.Add(loiloc);
                 dbContext.SaveChanges();
             }

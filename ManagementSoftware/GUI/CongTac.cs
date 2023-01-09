@@ -30,7 +30,7 @@ namespace ManagementSoftware.GUI
         private DateTime? timeEnd = null;
         private int page = 1;
         private int TotalPages = 0;
-        Dictionary<Models.CongTacModel.TestCongTac, List<Models.CongTacModel.CongTac>> ListResults;
+        List<Models.CongTacModel.TestCongTac> ListResults = new List<Models.CongTacModel.TestCongTac>();
 
        
 
@@ -42,12 +42,9 @@ namespace ManagementSoftware.GUI
         void LoadFormThongKe()
         {
             panelSearchPage2VT.Enabled = false;
-            foreach (Form item in panelThongKe2VT.Controls)
-            {
-                item.Close();
-                item.Dispose();
-            }
-            panelThongKe2VT.Controls.Clear();
+
+
+
 
 
             PaginationCongTac pagination = new PaginationCongTac();
@@ -63,15 +60,9 @@ namespace ManagementSoftware.GUI
             pageNumberGoto2VT.MinValue = 1;
             pageNumberGoto2VT.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1;
 
-            for (int i = ListResults.Count - 1; i >= 0; i--)
-            {
-                ItemCongTac form = new ItemCongTac(ListResults.ElementAt(i).Key, ListResults.ElementAt(i).Value);
-                form.TopLevel = false;
-                panelThongKe2VT.Controls.Add(form);
-                form.FormBorderStyle = FormBorderStyle.None;
-                form.Dock = DockStyle.Top;
-                form.Show();
-            }
+          
+
+
             panelSearchPage2VT.Enabled = true;
         }
 

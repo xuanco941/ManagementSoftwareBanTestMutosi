@@ -3173,6 +3173,7 @@
       "S7netplus >= 0.16.0",
       "Syncfusion.Chart.Windows >= 20.2.0.36",
       "Syncfusion.Gauge.Windows >= 20.2.0.36",
+      "Syncfusion.Grid.Windows >= 20.2.0.36",
       "Syncfusion.GridHelperClasses.Windows >= 20.2.0.36",
       "Syncfusion.Licensing >= 20.2.0.36",
       "Syncfusion.PdfViewer.Windows >= 20.2.0.36",
@@ -3235,6 +3236,10 @@
             "version": "[20.2.0.36, )"
           },
           "Syncfusion.Gauge.Windows": {
+            "target": "Package",
+            "version": "[20.2.0.36, )"
+          },
+          "Syncfusion.Grid.Windows": {
             "target": "Package",
             "version": "[20.2.0.36, )"
           },

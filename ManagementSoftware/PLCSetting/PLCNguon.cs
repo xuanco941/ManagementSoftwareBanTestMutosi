@@ -31,7 +31,7 @@ namespace ManagementSoftware.PLCSetting
                 nguon.DongDC = await this.ConvertRealToDouble(dongDienCSAddr);
                 nguon.CongSuat = await this.ConvertRealToDouble(congSuatCSAddr);
                 nguon.ThoiGianTest = await this.ConvertUDIntToUInt(timeAddr);
-                nguon.SoLanTest = await this.ConvertUIntToUshort(soLanTestAddr);
+                nguon.LanTestThu = await this.ConvertUIntToUshort(soLanTestAddr);
                 nguon.NguonName = "Nguồn " + (i + 1);
 
                 listNguonTu1Den15.Add(nguon);
@@ -66,7 +66,7 @@ namespace ManagementSoftware.PLCSetting
                 nguon.DongDC = await this.ConvertRealToDouble(dongDienCSAddr);
                 nguon.CongSuat = await this.ConvertRealToDouble(congSuatCSAddr);
                 nguon.ThoiGianTest = await this.ConvertUDIntToUInt(timeAddr);
-                nguon.SoLanTest = await this.ConvertUIntToUshort(soLanTestAddr);
+                nguon.LanTestThu = await this.ConvertUIntToUshort(soLanTestAddr);
                 nguon.NguonName = "Nguồn " + (i + 1);
 
                 listNguonTu16Den30.Add(nguon);

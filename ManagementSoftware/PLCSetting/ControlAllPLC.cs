@@ -1,5 +1,8 @@
-﻿using System;
+﻿using ManagementSoftware.Models.JigMachModel;
+using S7.Net;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,235 +33,237 @@ namespace ManagementSoftware.PLCSetting
 
 
 
-        public static PLCBauNong plcBauNong = new PLCBauNong(ipBauNong, PLCBauNong);
-        public static PLCBepTu plcBepTu = new PLCBepTu(ipBepTu, PLCBepTu);
-        public static PLCCongTac plcCongTac = new PLCCongTac(ipCongTac, PLCCongTac);
-        public static PLCLoiLoc plcLoiLoc = new PLCLoiLoc(ipLoiLoc, PLCLoiLoc);
-        public static PLCMach plcMach = new PLCMach(ipMach, PLCMach);
-        public static PLCNguon plcNguon = new PLCNguon(ipNguon, PLCNguon);
-
-
-        //    private static void LoiLoc_Tick(object sender, EventArgs e)
-        //    {
-        //        plcJigLoiLoc.SaveData();
-
-        //    }
-        //    private static void Nguon_Tick(object sender, EventArgs e)
-        //    {
-        //        plcNguon.SaveData();
-
-        //    }
-        //    private static void BauNong_Tick(object sender, EventArgs e)
-        //    {
-        //        plcBauNong.SaveData();
-        //    }
-        //    private static void JigMach_Tick(object sender, EventArgs e)
-        //    {
-        //        plcJigMach.SaveData();
-        //    }
-        //    private static void CongTac_Tick(object sender, EventArgs e)
-        //    {
-        //        plcCongTac.SaveData();
-        //    }
-        //    private static void BepTu_Tick(object sender, EventArgs e)
-        //    {
-        //        plcBepTu.SaveData();
-        //    }
+        public PLCBauNong plcBauNong = new PLCBauNong(ipBauNong, PLCBauNong);
+        public PLCBepTu plcBepTu = new PLCBepTu(ipBepTu, PLCBepTu);
+        public PLCCongTac plcCongTac = new PLCCongTac(ipCongTac, PLCCongTac);
+        public PLCLoiLoc plcLoiLoc = new PLCLoiLoc(ipLoiLoc, PLCLoiLoc);
+        public PLCMach plcMach = new PLCMach(ipMach, PLCMach);
+        public PLCNguon plcNguon = new PLCNguon(ipNguon, PLCNguon);
 
 
 
-        //    public static System.Timers.Timer aTimerLoiLoc;
-        //    public static System.Timers.Timer aTimerNguon;
-        //    public static System.Timers.Timer aTimerBauNong;
-        //    public static System.Timers.Timer aTimerJigMach;
-        //    public static System.Timers.Timer aTimerBepTu;
-        //    public static System.Timers.Timer aTimerCongTac;
+        int TIME_INTERVAL_SAVE = 10000;
 
 
-        //    public static void RunLoiLoc()
-        //    {
-        //        Thread t = new Thread(() =>
-        //        {
-
-        //            plcJigLoiLoc.Start();
-        //            if (plcJigLoiLoc.plc.IsConnected == false)
-        //            {
-        //                MessageBox.Show(plcJigLoiLoc.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //            }
-        //            else
-        //            {
-        //                aTimerLoiLoc = new System.Timers.Timer();
-        //                aTimerLoiLoc.Elapsed += new ElapsedEventHandler(LoiLoc_Tick);
-        //                aTimerLoiLoc.Interval = 2000;
-        //                aTimerLoiLoc.Start();
-        //            }
-        //        });
-        //        t.Start();
-        //    }
-        //    public static void StopLoiLoc()
-        //    {
-        //        if (aTimerLoiLoc != null && aTimerLoiLoc.Enabled)
-        //        {
-        //            aTimerLoiLoc.Stop();
-        //            aTimerLoiLoc.Dispose();
-        //        }
-        //    }
-
-
-        //    public static void RunNguon()
-        //    {
-        //        Thread t = new Thread(() =>
-        //        {
-        //            plcNguon.Start();
-        //            if (plcNguon.plc.IsConnected == false)
-        //            {
-        //                MessageBox.Show(plcNguon.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //            }
-        //            else
-        //            {
-        //                aTimerNguon = new System.Timers.Timer();
-        //                aTimerNguon.Elapsed += new ElapsedEventHandler(Nguon_Tick);
-        //                aTimerNguon.Interval = 2000;
-        //                aTimerNguon.Start();
-        //            }
-        //        });
-        //        t.Start();
-        //    }
-        //    public static void StopNguon()
-        //    {
-        //        if (aTimerNguon != null && aTimerNguon.Enabled)
-        //        {
-        //            aTimerNguon.Stop();
-        //            aTimerNguon.Dispose();
-        //        }
-        //    }
-
-        //    public static void RunBauNong()
-        //    {
-        //        Thread t = new Thread(() =>
-        //        {
-        //            plcBauNong.Start();
-        //            if (plcBauNong.plc.IsConnected == false)
-        //            {
-        //                MessageBox.Show(plcBauNong.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //            }
-        //            else
-        //            {
-        //                aTimerBauNong = new System.Timers.Timer();
-        //                aTimerBauNong.Elapsed += new ElapsedEventHandler(BauNong_Tick);
-        //                aTimerBauNong.Interval = 2000;
-        //                aTimerBauNong.Start();
-        //            }
-        //        });
-        //        t.Start();
-        //    }
-        //    public static void StopBauNong()
-        //    {
-        //        if (aTimerBauNong != null && aTimerBauNong.Enabled)
-        //        {
-        //            aTimerBauNong.Stop();
-        //            aTimerBauNong.Dispose();
-        //        }
-        //    }
-
-
-        //    public static void RunBepTu()
-        //    {
-        //        Thread t = new Thread(() =>
-        //        {
-        //            plcBepTu.Start();
-        //            if (plcBepTu.plc.IsConnected == false)
-        //            {
-        //                MessageBox.Show(plcBepTu.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //            }
-        //            else
-        //            {
-        //                aTimerBepTu = new System.Timers.Timer();
-        //                aTimerBepTu.Elapsed += new ElapsedEventHandler(BepTu_Tick);
-        //                aTimerBepTu.Interval = 2000;
-        //                aTimerBepTu.Start();
-        //            }
-        //        });
-        //        t.Start();
-        //    }
-
-        //    public static void StopBepTu()
-        //    {
-        //        if (aTimerBepTu != null && aTimerBepTu.Enabled)
-        //        {
-        //            aTimerBepTu.Stop();
-        //            aTimerBepTu.Dispose();
-        //        }
-        //    }
+        System.Threading.Timer timerBauNong;
+        System.Threading.Timer timerBepTu;
+        System.Threading.Timer timerCongTac;
+        System.Threading.Timer timerLoiLoc;
+        System.Threading.Timer timerMach;
+        System.Threading.Timer timerNguon;
 
 
 
-        //    public static void RunJigMach()
-        //    {
-        //        Thread t = new Thread(() =>
-        //        {
-        //            plcJigMach.Start();
-        //            if (plcJigMach.plc.IsConnected == false)
-        //            {
-        //                MessageBox.Show(plcJigMach.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //            }
-        //            else
-        //            {
-        //                aTimerJigMach = new System.Timers.Timer();
-        //                aTimerJigMach.Elapsed += new ElapsedEventHandler(JigMach_Tick);
-        //                aTimerJigMach.Interval = 2000;
-        //                aTimerJigMach.Start();
-        //            }
-        //        });
-        //        t.Start();
-        //    }
-        //    public static void StopJigMach()
-        //    {
-        //        if (aTimerJigMach != null && aTimerJigMach.Enabled)
-        //        {
-        //            aTimerJigMach.Stop();
-        //            aTimerJigMach.Dispose();
-        //        }
-        //    }
+        private async void CallbackBauNong(Object state)
+        {
+            Stopwatch watch = new Stopwatch();
+
+            watch.Start();
 
 
-        //    public static void RunCongTac()
-        //    {
-        //        Thread t = new Thread(() =>
-        //        {
-        //            plcCongTac.Start();
-        //            if (plcCongTac.plc.IsConnected == false)
-        //            {
-        //                MessageBox.Show(plcCongTac.message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //            }
-        //            else
-        //            {
-        //                aTimerCongTac = new System.Timers.Timer();
-        //                aTimerCongTac.Elapsed += new ElapsedEventHandler(CongTac_Tick);
-        //                aTimerCongTac.Interval = 2000;
-        //                aTimerCongTac.Start();
-        //            }
-        //        });
-        //        t.Start();
-        //    }
+            // update data
+            // Long running operation
 
-        //    public static void StopCongTac()
-        //    {
-        //        if (aTimerCongTac != null && aTimerCongTac.Enabled)
-        //        {
-        //            aTimerCongTac.Stop();
-        //            aTimerCongTac.Dispose();
-        //        }
-        //    }
+            try
+            {
+                if (await plcBauNong.Open() == true)
+                {
+                    List<Models.BauNongModel.BauNong> list = await plcBauNong.GetAllData();
 
-        //    public static void ConnectAndRunAll()
-        //    {
-        //        RunBauNong();
-        //        RunBepTu();
-        //        RunJigMach();
-        //        RunLoiLoc();
-        //        RunNguon();
-        //        RunCongTac();
-        //    }
+                    plcBauNong.SaveData(list);
+                    await plcBauNong.Close();
+                }
+
+
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                timerBauNong.Change(Math.Max(TIME_INTERVAL_SAVE, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
+            }
+
+        }
+
+        private async void CallbackLoiLoc(Object state)
+        {
+            Stopwatch watch = new Stopwatch();
+
+            watch.Start();
+
+
+            // update data
+            // Long running operation
+            try
+            {
+                if (await plcLoiLoc.Open() == true)
+                {
+                    Models.LoiLocModel.LoiLoc list = await plcLoiLoc.GetData();
+
+                    plcLoiLoc.SaveData(list);
+                    await plcLoiLoc.Close();
+                }
+
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                //long x = Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds);
+                timerLoiLoc.Change(Math.Max(TIME_INTERVAL_SAVE, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
+            }
+
+
+        }
+
+
+        private async void CallbackNguon(Object state)
+        {
+            Stopwatch watch = new Stopwatch();
+
+            watch.Start();
+
+
+            // update data
+            // Long running operation
+
+            try
+            {
+                if (await plcNguon.Open())
+                {
+                    List<Models.NguonModel.Nguon> list1 = await plcNguon.GetDataNguon1Den15();
+                    List<Models.NguonModel.Nguon> list2 = await plcNguon.GetDataNguon16Den30();
+
+                    List<Models.NguonModel.Nguon> list3 = new List<Models.NguonModel.Nguon>();
+                    list3.AddRange(list1);
+                    list3.AddRange(list2);
+
+
+                    plcNguon.SaveData(list3);
+                    await plcNguon.Close();
+                }
+
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                timerNguon.Change(Math.Max(TIME_INTERVAL_SAVE, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
+            }
+
+        }
+
+        private async void CallbackCongTac(Object state)
+        {
+            Stopwatch watch = new Stopwatch();
+
+            watch.Start();
+
+
+            // update data
+            // Long running operation
+            try
+            {
+                if (await plcCongTac.Open())
+                {
+                    List<Models.CongTacModel.CongTac> list = await plcCongTac.GetData();
+                    plcCongTac.SaveData(list);
+                    await plcCongTac.Close();
+                }
+
+            }
+
+            catch
+            {
+
+            }
+            finally
+            {
+                timerCongTac.Change(Math.Max(TIME_INTERVAL_SAVE, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
+
+            }
+        }
+
+        private async void CallbackMach(Object state)
+        {
+            Stopwatch watch = new Stopwatch();
+
+            watch.Start();
+
+
+            // update data
+            // Long running operation
+            try
+            {
+                if (await plcMach.Open())
+                {
+                    List<JigMachNguon> list = await plcMach.GetDataMachNguon();
+                    List<JigMachTDS> list2 = await plcMach.GetDataMachTDS();
+
+                    plcMach.SaveData(list, list2);
+                    await plcMach.Close();
+                }
+
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                timerMach.Change(Math.Max(TIME_INTERVAL_SAVE, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
+
+            }
+        }
+
+
+        private async void CallbackBepTu(Object state)
+        {
+            Stopwatch watch = new Stopwatch();
+
+            watch.Start();
+
+
+            // update data
+            // Long running operation
+            try
+            {
+                if (await plcBepTu.Open())
+                {
+                    List<Models.BepTuModel.BepTu> list = await plcBepTu.GetData();
+
+                    plcBepTu.SaveData(list);
+                    await plcBepTu.Close();
+                }
+
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                timerBepTu.Change(Math.Max(TIME_INTERVAL_SAVE, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
+
+            }
+        }
+
+
+        public void ConnectAndRunSaveAll()
+        {
+            timerBauNong = new System.Threading.Timer(CallbackBauNong, null, 2000, 2000);
+            timerBepTu = new System.Threading.Timer(CallbackBepTu, null, 2000, 2000);
+            timerCongTac = new System.Threading.Timer(CallbackCongTac, null, 2000, 2000);
+            timerLoiLoc = new System.Threading.Timer(CallbackLoiLoc, null, 2000, 2000);
+            timerMach = new System.Threading.Timer(CallbackMach, null, 2000, 2000);
+            timerNguon = new System.Threading.Timer(CallbackNguon, null, 2000, 2000);
+
+        }
     }
 }

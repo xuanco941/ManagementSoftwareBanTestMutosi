@@ -24,8 +24,7 @@ namespace ManagementSoftware.PLCSetting
             int dongDienAC = 0;
             int nhietDoPC = 40;
             int SoLanTest_ST_PC = 60;
-            int SoLanTest_SP_PC = 80;
-            int nhietDoNgatCBNhiet = 100;
+            int thoigian = 100;
 
             int cbNhiet = 120;
 
@@ -33,19 +32,18 @@ namespace ManagementSoftware.PLCSetting
             for (int i = 0; i <= 9; i++)
             {
                 BauNong obj = new BauNong();
-                obj.DongDienAC = await this.ConvertRealToDouble(dongDienAC);
+                obj.DongDien = await this.ConvertRealToDouble(dongDienAC);
                 obj.NhietDo = await this.ConvertRealToDouble(nhietDoPC);
-                obj.SoLanTest = await this.ConvertUIntToUshort(SoLanTest_ST_PC);
-                obj.NhietDoNgatCBNhiet = await this.ConvertUIntToUshort(nhietDoNgatCBNhiet);
-                obj.CBNhietThanBauNong = await this.ConvertUIntToUshort(cbNhiet) == 0 ? false : true;
+                obj.LanTestThu = await this.ConvertUIntToUshort(SoLanTest_ST_PC);
+                obj.ThoiGian = await this.ConvertUDIntToUInt(thoigian);
+                obj.TrangThaiCBNhiet = await this.ConvertUIntToUshort(cbNhiet) == 0 ? false : true;
 
 
-                obj.BauNongName = "Jig " + (i + 1);
+                obj.BauNongName = "Bầu " + (i + 1);
                 dongDienAC += 4;
                 nhietDoPC += 2;
                 SoLanTest_ST_PC += 2;
-                SoLanTest_SP_PC += 2;
-                nhietDoNgatCBNhiet += 2;
+                thoigian += 4;
                 cbNhiet += 2;
 
                 listBauNong.Add(obj);

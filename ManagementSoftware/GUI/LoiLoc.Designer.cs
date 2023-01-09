@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoiLoc));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageGiamSat = new System.Windows.Forms.TabPage();
@@ -110,6 +114,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.tabPageThongKe = new System.Windows.Forms.TabPage();
             this.panelThongKe = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -198,6 +203,8 @@
             this.panel1.SuspendLayout();
             this.panel31.SuspendLayout();
             this.tabPageThongKe.SuspendLayout();
+            this.panelThongKe.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
@@ -410,7 +417,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(178, 82);
             this.label15.TabIndex = 3;
-            this.label15.Text = "Thời gian nén (s) : ";
+            this.label15.Text = "Thời gian cấp (s) : ";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel39
@@ -453,7 +460,7 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(178, 82);
             this.label16.TabIndex = 3;
-            this.label16.Text = "Áp suất test : ";
+            this.label16.Text = "Áp suất test (bar) : ";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel41
@@ -496,7 +503,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(178, 82);
             this.label17.TabIndex = 2;
-            this.label17.Text = "Số lần test : ";
+            this.label17.Text = "Lần test thứ : ";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel43
@@ -699,7 +706,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(178, 82);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Thời gian nén (s) : ";
+            this.label3.Text = "Thời gian cấp (s) : ";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel11
@@ -742,7 +749,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(178, 82);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Áp suất test : ";
+            this.label4.Text = "Áp suất test (bar) : ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel17
@@ -785,7 +792,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(178, 82);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Số lần test : ";
+            this.label5.Text = "Lần test thứ : ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel19
@@ -987,7 +994,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(178, 82);
             this.label9.TabIndex = 4;
-            this.label9.Text = "Thời gian nén (s) : ";
+            this.label9.Text = "Thời gian cấp (s) : ";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel27
@@ -1030,7 +1037,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(178, 82);
             this.label10.TabIndex = 3;
-            this.label10.Text = "Áp suất test : ";
+            this.label10.Text = "Áp suất test (bar) : ";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel29
@@ -1073,7 +1080,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(178, 82);
             this.label11.TabIndex = 2;
-            this.label11.Text = "Số lần test : ";
+            this.label11.Text = "Lần test thứ : ";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -1137,12 +1144,53 @@
             // panelThongKe
             // 
             this.panelThongKe.AutoScroll = true;
-            this.panelThongKe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelThongKe.Controls.Add(this.dataGridView1);
             this.panelThongKe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelThongKe.Location = new System.Drawing.Point(3, 3);
             this.panelThongKe.Name = "panelThongKe";
             this.panelThongKe.Size = new System.Drawing.Size(1125, 445);
             this.panelThongKe.TabIndex = 2;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.RowHeadersVisible = false;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(1125, 445);
+            this.dataGridView1.TabIndex = 0;
             // 
             // panel2
             // 
@@ -1752,6 +1800,8 @@
             this.panel1.ResumeLayout(false);
             this.panel31.ResumeLayout(false);
             this.tabPageThongKe.ResumeLayout(false);
+            this.panelThongKe.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
@@ -1785,7 +1835,6 @@
         private TabControl tabControl1;
         private TabPage tabPageGiamSat;
         private TabPage tabPageThongKe;
-        private Panel panelThongKe;
         private Panel panel2;
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonCustomGoPage;
         private Syncfusion.Windows.Forms.Tools.IntegerTextBox inputNumPageGo;
@@ -1904,5 +1953,7 @@
         private Label label8;
         private Label label9;
         private Label label1;
+        private Panel panelThongKe;
+        private DataGridView dataGridView1;
     }
 }

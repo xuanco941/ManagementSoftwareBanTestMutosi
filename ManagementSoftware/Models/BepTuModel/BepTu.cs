@@ -19,7 +19,7 @@ namespace ManagementSoftware.Models.BepTuModel
         public double CongSuatAC { get; set; }
         public double NhietDo { get; set; }
         public double ThoiGianSoi { get; set; }
-        public int SoLanTest { get; set; }
+        public int LanTestThu { get; set; }
         public int TestBepTuID { get; set; }
         public TestBepTu TestBepTu { get; set; }
     }

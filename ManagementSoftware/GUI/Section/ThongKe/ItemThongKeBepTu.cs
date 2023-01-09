@@ -29,8 +29,8 @@ namespace ManagementSoftware.GUI.Section.ThongKe
                     ApACBep1.Text = e.ApAC.ToString();
                     CongSuatACBep1.Text = e.CongSuatAC.ToString();
                     NhietDoBep1.Text = e.NhietDo.ToString();
-                    ThoiGianSoi1.Text = e.ThoiGianSoi.ToString() + " phút";
-                    SoLanTest1.Text = e.SoLanTest.ToString();
+                    ThoiGianSoi1.Text = e.ThoiGianSoi.ToString() + " giây";
+                    SoLanTest1.Text = e.LanTestThu.ToString();
                 }
                 else if (e.BepTuName == TenThietBi.BepTu2)
                 {
@@ -39,8 +39,8 @@ namespace ManagementSoftware.GUI.Section.ThongKe
                     ApACBep2.Text = e.ApAC.ToString();
                     CongSuatACBep2.Text = e.CongSuatAC.ToString();
                     NhietDoBep2.Text = e.NhietDo.ToString();
-                    ThoiGianSoi2.Text = e.ThoiGianSoi.ToString() + " phút";
-                    SoLanTest2.Text = e.SoLanTest.ToString();
+                    ThoiGianSoi2.Text = e.ThoiGianSoi.ToString() + " giây";
+                    SoLanTest2.Text = e.LanTestThu.ToString();
                 }
 
             }

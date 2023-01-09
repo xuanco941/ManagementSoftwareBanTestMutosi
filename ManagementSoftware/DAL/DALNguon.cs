@@ -28,5 +28,13 @@ namespace ManagementSoftware.DAL
             dbContext.Nguons.AddRange(list.ToList());
             dbContext.SaveChanges();
         }
+
+        public static List<Nguon>? GetDataFromIDTest(int id)
+        {
+            DataBaseContext dbContext = new DataBaseContext();
+
+            return dbContext.Nguons.Where(a => a.TestNguonID == id).ToList();
+            
+        }
     }
 }

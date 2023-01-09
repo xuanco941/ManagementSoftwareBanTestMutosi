@@ -11,43 +11,35 @@ namespace ManagementSoftware.DAL.DALPagination
 {
     public class PaginationLoiLoc
     {
-        public static int NumberRows { get; set; } = 15;
+        public static int NumberRows { get; set; } = 50;
         public int PageCurrent { get; set; } = 1;
         public int TotalPages { get; set; } = 1;
         public int TotalResults { get; set; } = 0;
-        public Dictionary<TestLoiLoc, List<LoiLoc>> ListResults { get; set; } = new Dictionary<TestLoiLoc, List<LoiLoc>>();
+        public List<LoiLoc> ListResults { get; set; } = new List<LoiLoc>();
         public void Set(int page, DateTime? start, DateTime? end)
         {
             DataBaseContext dbContext = new DataBaseContext();
 
             int position = (page - 1) * NumberRows;
 
-            List<TestLoiLoc> listTest = new List<TestLoiLoc>();
             if (start != null && end != null)
             {
-                listTest = dbContext.TestLoiLocs.OrderByDescending(t => t.TestLoiLocID)
+                this.ListResults = dbContext.LoiLocs.OrderByDescending(t => t.LoiLocID)
                 .Where(a => start <= a.CreateAt && end >= a.CreateAt)
                 .Skip(position)
                 .Take(NumberRows)
                 .ToList();
 
-                this.TotalResults = dbContext.TestLoiLocs.Where(a => start <= a.CreateAt && end >= a.CreateAt).Count();
+                this.TotalResults = dbContext.LoiLocs.Where(a => start <= a.CreateAt && end >= a.CreateAt).Count();
 
             }
             else
             {
-                listTest = dbContext.TestLoiLocs.OrderByDescending(t => t.TestLoiLocID)
+                this.ListResults = dbContext.LoiLocs.OrderByDescending(t => t.LoiLocID)
                 .Skip(position)
                 .Take(NumberRows)
                 .ToList();
-                this.TotalResults = dbContext.TestLoiLocs.Count();
-            }
-
-            foreach(var elm in listTest)
-            {
-                List<LoiLoc> l = new List<LoiLoc>();
-                l = dbContext.LoiLocs.Where(e => e.TestLoiLocID == elm.TestLoiLocID).ToList();
-                ListResults.Add(elm, l);
+                this.TotalResults = dbContext.LoiLocs.Count();
             }
 
             this.PageCurrent = page;

@@ -28,5 +28,12 @@ namespace ManagementSoftware.DAL
             dbContext.BauNongs.AddRange(list.ToList());
             dbContext.SaveChanges();
         }
+        public static List<BauNong>? GetDataFromIDTest(int id)
+        {
+            DataBaseContext dbContext = new DataBaseContext();
+
+            return dbContext.BauNongs.Where(a => a.TestBauNongID == id).ToList();
+
+        }
     }
 }

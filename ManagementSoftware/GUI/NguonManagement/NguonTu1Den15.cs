@@ -36,7 +36,6 @@ namespace ManagementSoftware.GUI.NguonManagement
             if (timer != null)
             {
                 this.timer.Change(Timeout.Infinite, Timeout.Infinite);
-                timer.Dispose();
             }
             await plc.Close();
         }
@@ -47,14 +46,7 @@ namespace ManagementSoftware.GUI.NguonManagement
             {
                 timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
             }
-            else
-            {
-                if (CheckLoad.checkNguon == false)
-                {
-                    MessageBox.Show("Không thể kết nối tới " + plc.plcName, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    CheckLoad.checkNguon = true;
-                }
-            }
+
         }
 
 
@@ -84,15 +76,15 @@ namespace ManagementSoftware.GUI.NguonManagement
         private void SetTextNguon(Button dongDC, Button dienApDC, Button congSuat, Button time, Button soLanTest, Models.NguonModel.Nguon e)
         {
 
-            dongDC.Text = e.DongDC.ToString() + " A";
+            dongDC.Text = String.Format("{0:0.00}", e.DongDC) + " A";
 
-            dienApDC.Text = e.DienApDC.ToString() + " V";
+            dienApDC.Text = String.Format("{0:0.00}", e.DienApDC) + " V";
 
-            congSuat.Text = e.CongSuat.ToString() + " W";
+            congSuat.Text = String.Format("{0:0.00}", e.CongSuat) + " W";
 
             time.Text = e.ThoiGianTest.ToString() + " giây";
 
-            soLanTest.Text = e.SoLanTest.ToString();
+            soLanTest.Text = e.LanTestThu.ToString();
 
         }
 

@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[20.2.0.36, )"
             },
+            "Syncfusion.Grid.Windows": {
+              "target": "Package",
+              "version": "[20.2.0.36, )"
+            },
             "Syncfusion.GridHelperClasses.Windows": {
               "target": "Package",
               "version": "[20.2.0.36, )"

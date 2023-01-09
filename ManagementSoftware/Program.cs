@@ -30,13 +30,13 @@ namespace ManagementSoftware
             {
                 MessageBox.Show("Lỗi khởi tạo cơ sở dữ liệu, hãy thử xem lại đường dẫn kết nối của bạn.", "Lỗi kết nối",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
-            
+
+            new ControlAllPLC().ConnectAndRunSaveAll();
 
             Application.Run(new Login());
 
             if (Common.USERSESSION != null)
             {
-                //ControlAllPLC.ConnectAndRunAll();
                 Application.Run(new Main());
             }
         }

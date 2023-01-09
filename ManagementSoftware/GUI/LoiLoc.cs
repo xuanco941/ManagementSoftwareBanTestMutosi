@@ -4,7 +4,9 @@ using ManagementSoftware.GUI.Section.ThongKe;
 using ManagementSoftware.Models.LoiLocModel;
 using ManagementSoftware.PLCSetting;
 using System.ComponentModel;
+using System.Data;
 using System.Diagnostics;
+using System.Globalization;
 using System.Timers;
 using System.Windows.Forms;
 
@@ -27,7 +29,7 @@ namespace ManagementSoftware.GUI
         // tổng số trang
         private int TotalPages = 0;
         //Data
-        Dictionary<TestLoiLoc, List<Models.LoiLocModel.LoiLoc>> ListResults;
+        List<Models.LoiLocModel.LoiLoc> ListResults = new List<Models.LoiLocModel.LoiLoc>();
 
 
         private void buttonPreviousPage_Click(object sender, EventArgs e)
@@ -66,13 +68,6 @@ namespace ManagementSoftware.GUI
         private void LoadFormThongKe()
         {
             panel2.Enabled = false;
-            foreach (Form item in panelThongKe.Controls)
-            {
-                item.Close();
-                item.Dispose();
-            }
-            panelThongKe.Controls.Clear();
-
 
             PaginationLoiLoc pagination = new PaginationLoiLoc();
             pagination.Set(page, timeStart, timeEnd);
@@ -87,15 +82,28 @@ namespace ManagementSoftware.GUI
             pageNumberGoto.MinValue = 1;
             pageNumberGoto.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1;
 
-            for (int i = ListResults.Count - 1; i >= 0; i--)
+            DataTable dt = new DataTable();
+            dt.Columns.Add("No.");
+            dt.Columns.Add("Lõi Lọc");
+            dt.Columns.Add("Lần test thứ");
+            dt.Columns.Add("Áp suất test (bar)");
+            dt.Columns.Add("Thời gian cấp (giây)");
+            dt.Columns.Add("Thời gian giữ (giây)");
+            dt.Columns.Add("Thời gian xả (giây)");
+            dt.Columns.Add("Ngày tạo");
+
+            if (ListResults != null && ListResults.Count > 0)
             {
-                ItemThongKeLoiLoc form = new ItemThongKeLoiLoc(ListResults.ElementAt(i).Key, ListResults.ElementAt(i).Value);
-                form.TopLevel = false;
-                panelThongKe.Controls.Add(form);
-                form.FormBorderStyle = FormBorderStyle.None;
-                form.Dock = DockStyle.Top;
-                form.Show();
+                int i = 1;
+                foreach (var item in this.ListResults.ToList())
+                {
+                    dt.Rows.Add(i, item.LoiLocName, item.SoLanTest, item.ApSuatTest, item.ThoiGianNen, item.ThoiGianGiu, item.ThoiGianXa, item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture));
+                    i++;
+                }
             }
+            dataGridView1.DataSource = dt;
+
+
             panel2.Enabled = true;
         }
 
@@ -132,6 +140,8 @@ namespace ManagementSoftware.GUI
             InitializeComponent();
 
             plc = new PLCLoiLoc(ControlAllPLC.ipLoiLoc, ControlAllPLC.PLCLoiLoc);
+
+            dataGridView1.RowTemplate.Height = 37;
         }
 
 
@@ -155,14 +165,7 @@ namespace ManagementSoftware.GUI
             {
                 timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
             }
-            else
-            {
-                if (CheckLoad.checkLoiLoc == false)
-                {
-                    MessageBox.Show("Không thể kết nối tới " + plc.plcName, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    CheckLoad.checkLoiLoc = true;
-                }
-            }
+
 
             LoadFormThongKe();
 

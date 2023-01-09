@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManagementSoftware.Models
+namespace ManagementSoftware.Models.JigMachModel
 {
     [Table("TestJigMach")]
     public class TestJigMach

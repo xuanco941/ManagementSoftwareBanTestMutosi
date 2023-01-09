@@ -14,11 +14,11 @@ namespace ManagementSoftware.Models.BauNongModel
         [Key]
         public int BauNongID { get; set; }
         public string BauNongName { get; set; } = "";
-        public double DongDienAC { get; set; }
+        public double DongDien { get; set; }
         public double NhietDo { get; set; }
-        public ushort SoLanTest { get; set; }
-        public ushort NhietDoNgatCBNhiet { get; set; }
-        public bool CBNhietThanBauNong { get; set; }
+        public uint ThoiGian { get; set; }
+        public ushort LanTestThu { get; set; }
+        public bool TrangThaiCBNhiet { get; set; }
         public int TestBauNongID { get; set; }
         public TestBauNong TestBauNong { get; set; }
     }

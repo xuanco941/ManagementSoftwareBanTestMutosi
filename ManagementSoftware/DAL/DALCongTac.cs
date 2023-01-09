@@ -28,5 +28,12 @@ namespace ManagementSoftware.DAL
             dbContext.CongTacs.AddRange(list.ToList());
             dbContext.SaveChanges();
         }
+        public static List<CongTac>? GetDataFromIDTest(int id)
+        {
+            DataBaseContext dbContext = new DataBaseContext();
+
+            return dbContext.CongTacs.Where(a => a.TestCongTacID == id).ToList();
+
+        }
     }
 }

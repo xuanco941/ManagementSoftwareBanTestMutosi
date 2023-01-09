@@ -13,17 +13,16 @@ namespace ManagementSoftware.DAL.DALPagination
         public int PageCurrent { get; set; } = 1;
         public int TotalPages { get; set; } = 1;
         public int TotalResults { get; set; } = 0;
-        public Dictionary<Models.CongTacModel.TestCongTac, List<Models.CongTacModel.CongTac>> ListResults { get; set; } = new Dictionary<Models.CongTacModel.TestCongTac, List<Models.CongTacModel.CongTac>>();
+        public List<Models.CongTacModel.TestCongTac> ListResults { get; set; } = new List<Models.CongTacModel.TestCongTac>();
         public void Set(int page, DateTime? start, DateTime? end)
         {
             DataBaseContext dbContext = new DataBaseContext();
 
             int position = (page - 1) * NumberRows;
 
-            List< Models.CongTacModel.TestCongTac> listTest = new List<Models.CongTacModel.TestCongTac>();
             if (start != null && end != null)
             {
-                listTest = dbContext.TestCongTacs.OrderByDescending(t => t.TestCongTacID)
+                ListResults = dbContext.TestCongTacs.OrderByDescending(t => t.TestCongTacID)
                 .Where(a => start <= a.CreateAt && end >= a.CreateAt)
                 .Skip(position)
                 .Take(NumberRows)
@@ -34,18 +33,11 @@ namespace ManagementSoftware.DAL.DALPagination
             }
             else
             {
-                listTest = dbContext.TestCongTacs.OrderByDescending(t => t.TestCongTacID)
+                ListResults = dbContext.TestCongTacs.OrderByDescending(t => t.TestCongTacID)
                 .Skip(position)
                 .Take(NumberRows)
                 .ToList();
                 this.TotalResults = dbContext.TestCongTacs.Count();
-            }
-
-            foreach (var elm in listTest)
-            {
-                List< Models.CongTacModel.CongTac> l = new List<Models.CongTacModel.CongTac>();
-                l = dbContext.CongTacs.Where(e => e.TestCongTacID == elm.TestCongTacID).ToList();
-                ListResults.Add(elm, l);
             }
 
             this.PageCurrent = page;

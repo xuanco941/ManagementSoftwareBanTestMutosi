@@ -18,14 +18,18 @@ namespace ManagementSoftware.PLCSetting
         }
 
 
-        public void GetData()
+        public async Task<List<Models.CongTacModel.CongTac>> GetData()
         {
+            List<Models.CongTacModel.CongTac> list = new List<CongTac>();
 
+            double z = await this.ConvertRealToDouble(20);
+
+
+
+            return list;
         }
 
-        List<CongTac> listCT = new List<CongTac>();
-
-        public void SaveData()
+        public void SaveData(List<Models.CongTacModel.CongTac> listCT)
         {
             if (listCT != null && listCT.Count>0)
             {
