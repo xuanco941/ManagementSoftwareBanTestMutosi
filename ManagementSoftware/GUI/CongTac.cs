@@ -99,42 +99,67 @@ namespace ManagementSoftware.GUI
             LoadFormThongKe();
         }
 
+
+
+        void AddCT(TemplateJigCongTac form)
+        {
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Top;
+            tabPageGiamSat.Controls.Add(form);
+            form.Show();
+        }
         private void CongTac_Load(object sender, EventArgs e)
         {
-            TemplateJigCongTac form10 = new TemplateJigCongTac(104,106,108,110,112,10);
-            TemplateJigCongTac form9 = new TemplateJigCongTac(94, 96, 98, 100, 102, 9);
-            TemplateJigCongTac form8 = new TemplateJigCongTac(84, 86, 88, 90, 92, 8);
-            TemplateJigCongTac form7 = new TemplateJigCongTac(74, 76, 78, 80, 82, 7);
-            TemplateJigCongTac form6 = new TemplateJigCongTac(64, 66, 70, 52, 72, 6);
-            TemplateJigCongTac form5 = new TemplateJigCongTac(40, 42, 44, 46, 48, 5);
-            TemplateJigCongTac form4 = new TemplateJigCongTac(30, 32, 34, 36, 38, 4);
-            TemplateJigCongTac form3 = new TemplateJigCongTac(20, 22, 24, 26, 28, 3);
-            TemplateJigCongTac form2 = new TemplateJigCongTac(50, 12, 14, 16, 18, 2);
-            TemplateJigCongTac form1 = new TemplateJigCongTac(0, 2, 4, 6, 8, 1);
+            TemplateJigCongTac form10 = new TemplateJigCongTac(104,106,108,110,112,10,1070);
+            AddCT(form10);
+            TemplateJigCongTac form9 = new TemplateJigCongTac(94, 96, 98, 100, 102, 9,1030);
+            AddCT(form9);
+            TemplateJigCongTac form8 = new TemplateJigCongTac(84, 86, 88, 90, 92, 8,1035);
+            AddCT(form8);
+
+            TemplateJigCongTac form7 = new TemplateJigCongTac(74, 76, 78, 80, 82, 7,1050);
+            AddCT(form7);
+
+            TemplateJigCongTac form6 = new TemplateJigCongTac(64, 66, 70, 52, 72, 6,1000);
+            AddCT(form6);
+
+            TemplateJigCongTac form5 = new TemplateJigCongTac(40, 42, 44, 46, 48, 5,980);
+            AddCT(form5);
+
+            TemplateJigCongTac form4 = new TemplateJigCongTac(30, 32, 34, 36, 38, 4,970);
+            AddCT(form4);
+
+            TemplateJigCongTac form3 = new TemplateJigCongTac(20, 22, 24, 26, 28, 3,990);
+            AddCT(form3);
+
+            TemplateJigCongTac form2 = new TemplateJigCongTac(50, 12, 14, 16, 18, 2,960);
+            AddCT(form2);
+
+            TemplateJigCongTac form1 = new TemplateJigCongTac(0, 2, 4, 6, 8, 1,950);
+            AddCT(form1);
 
 
-            List<TemplateJigCongTac> list = new List<TemplateJigCongTac>() { form10, form9, form8, form7, form6, form5, form4, form3, form2, form1 };
 
-            foreach (TemplateJigCongTac form in list)
-            {
-                form.TopLevel = false;
-                form.FormBorderStyle = FormBorderStyle.None;
-                form.Dock = DockStyle.Top;
-                tabPageGiamSat.Controls.Add(form);
-                form.Show();
-            }
+            //List<TemplateJigCongTac> list = new List<TemplateJigCongTac>() { form10, form9, form8, form7, form6, form5, form4, form3, form2, form1 };
+
+
+            //for (int i = 0; i < 10; i++)
+            //{
+
+            //}
+
+            //foreach (TemplateJigCongTac form in list.ToList())
+            //{
+            //    form.TopLevel = false;
+            //    form.FormBorderStyle = FormBorderStyle.None;
+            //    form.Dock = DockStyle.Top;
+            //    tabPageGiamSat.Controls.Add(form);
+            //    form.Show();
+            //}
 
             LoadFormThongKe();
 
-        }
-
-        private void CongTac_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            foreach (TemplateJigCongTac item in tabPageGiamSat.Controls)
-            {
-                item.Close();
-                item.Dispose();
-            }
         }
     }
 }

@@ -10,7 +10,7 @@ namespace ManagementSoftware.DAL
 {
     public class DALCongTac
     {
-        public static void Add(List<CongTac> list)
+        public void Add(List<CongTac> list)
         {
             DataBaseContext dbContext = new DataBaseContext();
             TestCongTac testID = new TestCongTac();
@@ -28,7 +28,7 @@ namespace ManagementSoftware.DAL
             dbContext.CongTacs.AddRange(list.ToList());
             dbContext.SaveChanges();
         }
-        public static List<CongTac>? GetDataFromIDTest(int id)
+        public List<CongTac>? GetDataFromIDTest(int id)
         {
             DataBaseContext dbContext = new DataBaseContext();
 

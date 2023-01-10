@@ -10,7 +10,7 @@ namespace ManagementSoftware.DAL
 {
     public class DALLoiLoc
     {
-        public static void Add(LoiLoc loiloc)
+        public void Add(LoiLoc loiloc)
         {
             DataBaseContext dbContext = new DataBaseContext();
 

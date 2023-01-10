@@ -10,7 +10,7 @@ namespace ManagementSoftware.DAL
 {
     public class DALJigMach
     {
-        public static void Add(List<JigMachNguon> listMachNguon, List<JigMachTDS> listMachTDS)
+        public void Add(List<JigMachNguon> listMachNguon, List<JigMachTDS> listMachTDS)
         {
             DataBaseContext dbContext = new DataBaseContext();
             TestJigMach testID = new TestJigMach();
@@ -31,14 +31,14 @@ namespace ManagementSoftware.DAL
 
             dbContext.SaveChanges();
         }
-        public static List<JigMachNguon>? GetDataFromIDTest(int id)
+        public List<JigMachNguon>? GetDataFromIDTest(int id)
         {
             DataBaseContext dbContext = new DataBaseContext();
 
             return dbContext.JigMachNguons.Where(a => a.TestJigMachID == id).ToList();
 
         }
-        public static List<JigMachTDS>? GetDataFromIDTestTDS(int id)
+        public List<JigMachTDS>? GetDataFromIDTestTDS(int id)
         {
             DataBaseContext dbContext = new DataBaseContext();
 

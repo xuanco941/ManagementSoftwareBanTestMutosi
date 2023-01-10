@@ -92,7 +92,7 @@ namespace ManagementSoftware.PLCSetting
         {
             if (listNguon != null && listNguon.Count >0 && listTDS!=null && listTDS.Count>0)
             {
-                DALJigMach.Add(listNguon,listTDS);
+                new DALJigMach().Add(listNguon,listTDS);
             }
         }
 

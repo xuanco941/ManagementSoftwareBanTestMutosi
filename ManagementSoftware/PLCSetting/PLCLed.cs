@@ -81,7 +81,7 @@ namespace ManagementSoftware.PLCSetting
         {
             if (list != null && list.Count > 0)
             {
-                DALLed.Add(list);
+                new DALLed().Add(list);
             }
         }
     }

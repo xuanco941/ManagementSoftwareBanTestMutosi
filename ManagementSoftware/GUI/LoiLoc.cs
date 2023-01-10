@@ -141,7 +141,7 @@ namespace ManagementSoftware.GUI
 
             plc = new PLCLoiLoc(ControlAllPLC.ipLoiLoc, ControlAllPLC.PLCLoiLoc);
 
-            dataGridView1.RowTemplate.Height = 37;
+            dataGridView1.RowTemplate.Height = 35;
         }
 
 
@@ -151,7 +151,6 @@ namespace ManagementSoftware.GUI
             if (timer != null)
             {
                 this.timer.Change(Timeout.Infinite, Timeout.Infinite);
-                timer.Dispose();
             }
             await plc.Close();
 

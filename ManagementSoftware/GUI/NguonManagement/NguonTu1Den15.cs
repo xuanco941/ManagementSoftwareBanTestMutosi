@@ -31,7 +31,17 @@ namespace ManagementSoftware.GUI.NguonManagement
             plc = new PLCNguon(ControlAllPLC.ipNguon, ControlAllPLC.PLCNguon);
         }
 
-        private async void NguonTu1Den15_FormClosing(object sender, FormClosingEventArgs e)
+
+
+        public async void StartTimer()
+        {
+            if (await plc.Open() == true)
+            {
+                timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+            }
+        }
+
+        public async void StopTimer()
         {
             if (timer != null)
             {
@@ -40,14 +50,14 @@ namespace ManagementSoftware.GUI.NguonManagement
             await plc.Close();
         }
 
-        private async void NguonTu1Den15_Load(object sender, EventArgs e)
-        {
-            if (await plc.Open() == true)
-            {
-                timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
-            }
 
+
+
+        private void NguonTu1Den15_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            StopTimer();
         }
+
 
 
 
@@ -64,7 +74,7 @@ namespace ManagementSoftware.GUI.NguonManagement
             List<Models.NguonModel.Nguon> list = await plc.GetDataNguon1Den15();
             if (list != null && list.Count > 0)
             {
-                UpdateData(list);
+                UpdateData(list.ToList());
             }
 
 

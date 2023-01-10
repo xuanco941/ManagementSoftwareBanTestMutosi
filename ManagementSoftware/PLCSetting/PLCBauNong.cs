@@ -56,7 +56,7 @@ namespace ManagementSoftware.PLCSetting
         {
             if (listBauNong != null && listBauNong.Count > 0)
             {
-                DALBauNong.Add(listBauNong);
+                new DALBauNong().Add(listBauNong);
             }
         }
     }

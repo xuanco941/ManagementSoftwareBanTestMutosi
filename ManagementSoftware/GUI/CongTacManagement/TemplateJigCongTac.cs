@@ -27,8 +27,8 @@ namespace ManagementSoftware.GUI.CongTacManagement
         PLCCongTac plc;
 
         System.Threading.Timer timer;
-        int TIME_INTERVAL_IN_MILLISECONDS = 500;
-        public TemplateJigCongTac(double addrCT1, double addrCT2, double addrCT3, double addrCT4, double addrCT5, int jig)
+        int TIME_INTERVAL_IN_MILLISECONDS = 1000;
+        public TemplateJigCongTac(double addrCT1, double addrCT2, double addrCT3, double addrCT4, double addrCT5, int jig,int time)
         {
             InitializeComponent();
             labelNameJig.Text = "Jig " + jig;
@@ -39,7 +39,7 @@ namespace ManagementSoftware.GUI.CongTacManagement
             a4 = addrCT4;
             a5 = addrCT5;
             plc = new PLCCongTac(ControlAllPLC.ipCongTac, ControlAllPLC.PLCCongTac);
-
+            TIME_INTERVAL_IN_MILLISECONDS = time;
         }
 
         private async void TemplateJigCongTac_Load(object sender, EventArgs e)
@@ -72,8 +72,8 @@ namespace ManagementSoftware.GUI.CongTacManagement
             // update data
             // Long running operation
 
-            Models.CongTacModel.CongTac[] list = await plc.GetData(a1, a2, a3, a4, a5, Jig);
-            if (list != null && list.Length == 5)
+            List<Models.CongTacModel.CongTac> list = await plc.GetData(a1, a2, a3, a4, a5, Jig);
+            if (list != null && list.Count> 0)
             {
                 UpdateData(list);
             }
@@ -82,12 +82,12 @@ namespace ManagementSoftware.GUI.CongTacManagement
             timer.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
         }
 
-        private void UpdateData(Models.CongTacModel.CongTac[] list)
+        private void UpdateData(List<Models.CongTacModel.CongTac> list)
         {
 
             if (IsHandleCreated && InvokeRequired)
             {
-                BeginInvoke(new Action<Models.CongTacModel.CongTac[]>(UpdateData), list);
+                BeginInvoke(new Action<List<Models.CongTacModel.CongTac>>(UpdateData), list);
                 return;
             }
 

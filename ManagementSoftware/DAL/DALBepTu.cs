@@ -10,7 +10,7 @@ namespace ManagementSoftware.DAL
 {
     public class DALBepTu
     {
-        public static void Add(List<BepTu> list)
+        public void Add(List<BepTu> list)
         {
             DataBaseContext dbContext = new DataBaseContext();
             TestBepTu testID = new TestBepTu();
@@ -28,7 +28,7 @@ namespace ManagementSoftware.DAL
             dbContext.BepTus.AddRange(list.ToList());
             dbContext.SaveChanges();
         }
-        public static List<BepTu>? GetDataFromIDTest(int id)
+        public List<BepTu>? GetDataFromIDTest(int id)
         {
             DataBaseContext dbContext = new DataBaseContext();
 

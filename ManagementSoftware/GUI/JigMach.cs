@@ -41,7 +41,7 @@ namespace ManagementSoftware.GUI
             giamSatJigMachNguon.FormBorderStyle = FormBorderStyle.None;
             giamSatJigMachNguon.Dock = DockStyle.Fill;
             giamSatJigMachNguon.Show();
-
+            giamSatJigMachNguon.StartTimer();
 
             giamSatJigMachTDS.TopLevel = false;
             tabPageGiamSatJigTDS.Controls.Add(giamSatJigMachTDS);
@@ -93,7 +93,7 @@ namespace ManagementSoftware.GUI
 
             foreach (var item in this.ListResults)
             {
-                List<Models.JigMachModel.JigMachNguon>? l = DALJigMach.GetDataFromIDTest(item.TestJigMachID);
+                List<Models.JigMachModel.JigMachNguon>? l = new DALJigMach().GetDataFromIDTest(item.TestJigMachID);
 
 
                 string id_date = "ID" + item.TestJigMachID + " - " + item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
@@ -237,7 +237,7 @@ namespace ManagementSoftware.GUI
 
             foreach (var item in this.ListResults)
             {
-                List<Models.JigMachModel.JigMachTDS>? l = DALJigMach.GetDataFromIDTestTDS(item.TestJigMachID);
+                List<Models.JigMachModel.JigMachTDS>? l = new DALJigMach().GetDataFromIDTestTDS(item.TestJigMachID);
 
 
                 string id_date = "ID" + item.TestJigMachID + " - " + item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);

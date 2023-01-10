@@ -24,7 +24,7 @@ namespace ManagementSoftware
         public const string LicenseSyncfusion = "NzE5NjE0QDMyMzAyZTMyMmUzMFlqaFh1Qk9GKytyNHNaaE16dktXZFg0cERMU2Qvai9KQmdEYUZSL0U4OE09";
 
         //App
-        public static User USERSESSION { get; set; }
+        public static User? USERSESSION { get; set; }
         public static int NumberRows = 40;
 
         //Key ID

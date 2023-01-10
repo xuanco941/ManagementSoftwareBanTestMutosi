@@ -10,7 +10,7 @@ namespace ManagementSoftware.DAL
 {
     public class DALBauNong
     {
-        public static void Add(List<BauNong> list)
+        public void Add(List<BauNong> list)
         {
             DataBaseContext dbContext = new DataBaseContext();
             TestBauNong testID = new TestBauNong();
@@ -28,7 +28,7 @@ namespace ManagementSoftware.DAL
             dbContext.BauNongs.AddRange(list.ToList());
             dbContext.SaveChanges();
         }
-        public static List<BauNong>? GetDataFromIDTest(int id)
+        public List<BauNong>? GetDataFromIDTest(int id)
         {
             DataBaseContext dbContext = new DataBaseContext();
 

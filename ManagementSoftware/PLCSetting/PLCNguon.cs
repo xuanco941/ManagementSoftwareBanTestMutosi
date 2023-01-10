@@ -16,7 +16,7 @@ namespace ManagementSoftware.PLCSetting
         public async Task<List<Nguon>> GetDataNguon1Den15()
         {
 
-        List<Nguon> listNguonTu1Den15 = new List<Nguon>();
+            List<Nguon> listNguonTu1Den15 = new List<Nguon>();
 
             int dienApCSAddr = 0;
             int dongDienCSAddr = 120;
@@ -82,12 +82,46 @@ namespace ManagementSoftware.PLCSetting
         }
 
 
+        public async Task<List<Models.LedModel.Led>> GetDataLED()
+        {
+
+            List<Models.LedModel.Led> listLED = new List<Models.LedModel.Led>();
+
+            int thoiGianTest = 660;
+            int soLanTestAddr = 780;
+
+            for (int i = 0; i < 30; i++)
+            {
+                Models.LedModel.Led led = new Models.LedModel.Led();
+                led.ThoiGianTest = await this.ConvertUDIntToUInt(660);
+                led.LanTestThu = await this.ConvertUIntToUshort(780);
+                led.LedName = "Nguồn " + (i + 1);
+
+                listLED.Add(led);
+
+                thoiGianTest += 4;
+                soLanTestAddr += 2;
+            }
+
+            return listLED;
+        }
+
+
+
 
         public void SaveData(List<Nguon> list)
         {
-            if (list != null && list.Count > 0 )
+            if (list != null && list.Count > 0)
             {
-                DALNguon.Add(list);
+                new DALNguon().Add(list);
+            }
+        }
+
+        public void SaveDataLed(List<Models.LedModel.Led> list)
+        {
+            if (list != null && list.Count > 0)
+            {
+                new DALLed().Add(list);
             }
         }
     }

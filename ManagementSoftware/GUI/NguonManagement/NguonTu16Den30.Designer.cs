@@ -4967,7 +4967,6 @@
             this.Name = "NguonTu16Den30";
             this.Text = "NguonTu16Den30";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NguonTu16Den30_FormClosing);
-            this.Load += new System.EventHandler(this.NguonTu16Den30_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.gridLayout2)).EndInit();
             this.panel327.ResumeLayout(false);
             this.panel328.ResumeLayout(false);

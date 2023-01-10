@@ -117,17 +117,26 @@ namespace ManagementSoftware.GUI
                 labelNguon.Text = "Chưa thể kết nối tới " + plcNguon.plcName;
             }
         }
+
+
+
+
+
+
         public Settings()
         {
             InitializeComponent();
+
             LoadBauNong();
             LoadBepTu();
             LoadCongTac();
             LoadJigMach();
             LoadLoiLoc();
             LoadNguon();
-        }
 
-        
+        }
+       
+
+
     }
 }

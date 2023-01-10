@@ -243,7 +243,6 @@ namespace ManagementSoftware.GUI
             if (timer != null)
             {
                 this.timer.Change(Timeout.Infinite, Timeout.Infinite);
-                timer.Dispose();
             }
             await plc.Close();
         }

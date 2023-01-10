@@ -210,7 +210,6 @@
             this.labelNguon.Name = "labelNguon";
             this.labelNguon.Size = new System.Drawing.Size(630, 57);
             this.labelNguon.TabIndex = 1;
-            this.labelNguon.Text = "label6";
             this.labelNguon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel16
@@ -284,7 +283,6 @@
             this.labelLoiLoc.Name = "labelLoiLoc";
             this.labelLoiLoc.Size = new System.Drawing.Size(630, 54);
             this.labelLoiLoc.TabIndex = 1;
-            this.labelLoiLoc.Text = "label5";
             this.labelLoiLoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel13
@@ -358,7 +356,6 @@
             this.labelJigMach.Name = "labelJigMach";
             this.labelJigMach.Size = new System.Drawing.Size(630, 54);
             this.labelJigMach.TabIndex = 1;
-            this.labelJigMach.Text = "label4";
             this.labelJigMach.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel10
@@ -432,7 +429,6 @@
             this.labelCongTac.Name = "labelCongTac";
             this.labelCongTac.Size = new System.Drawing.Size(630, 54);
             this.labelCongTac.TabIndex = 1;
-            this.labelCongTac.Text = "label3";
             this.labelCongTac.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel7
@@ -506,7 +502,6 @@
             this.labelBepTu.Name = "labelBepTu";
             this.labelBepTu.Size = new System.Drawing.Size(630, 54);
             this.labelBepTu.TabIndex = 1;
-            this.labelBepTu.Text = "label2";
             this.labelBepTu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
@@ -566,7 +561,6 @@
             this.labelBauNong.Name = "labelBauNong";
             this.labelBauNong.Size = new System.Drawing.Size(630, 54);
             this.labelBauNong.TabIndex = 0;
-            this.labelBauNong.Text = "label1";
             this.labelBauNong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3

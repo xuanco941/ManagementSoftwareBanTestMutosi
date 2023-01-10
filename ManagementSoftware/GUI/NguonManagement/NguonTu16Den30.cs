@@ -29,22 +29,28 @@ namespace ManagementSoftware.GUI.NguonManagement
             plc = new PLCNguon(ControlAllPLC.ipNguon, ControlAllPLC.PLCNguon);
         }
 
-        private async void NguonTu16Den30_Load_1(object sender, EventArgs e)
+
+        public async void StartTimer()
         {
             if (await plc.Open() == true)
             {
                 timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
             }
         }
-        private async void NguonTu16Den30_FormClosing(object sender, FormClosingEventArgs e)
+
+        public async void StopTimer()
         {
             if (timer != null)
             {
                 this.timer.Change(Timeout.Infinite, Timeout.Infinite);
-                timer.Dispose();
             }
             await plc.Close();
+        }
 
+        private async void NguonTu16Den30_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            StopTimer();
         }
 
 
@@ -62,7 +68,7 @@ namespace ManagementSoftware.GUI.NguonManagement
             List<Models.NguonModel.Nguon> list = await plc.GetDataNguon16Den30();
             if (list != null && list.Count > 0)
             {
-                UpdateData(list);
+                UpdateData(list.ToList());
             }
 
 

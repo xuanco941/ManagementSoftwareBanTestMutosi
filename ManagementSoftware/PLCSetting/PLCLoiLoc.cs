@@ -65,7 +65,7 @@ namespace ManagementSoftware.PLCSetting
         {
             if (loiLoc != null)
             {
-                DALLoiLoc.Add(loiLoc);
+               new DALLoiLoc().Add(loiLoc);
             }
         }
     }

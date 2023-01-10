@@ -30,7 +30,7 @@ namespace ManagementSoftware.PLCSetting
         {
             if (listBepTu != null && listBepTu.Count > 0)
             {
-                DALBepTu.Add(listBepTu);
+                new DALBepTu().Add(listBepTu);
             }
         }
 

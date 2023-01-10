@@ -11,7 +11,7 @@ namespace ManagementSoftware.DAL
 {
     public class DALLed
     {
-        public static void Add(List<Led> list)
+        public void Add(List<Led> list)
         {
             DataBaseContext dbContext = new DataBaseContext();
             TestLed testID = new TestLed();
@@ -30,7 +30,7 @@ namespace ManagementSoftware.DAL
             dbContext.SaveChanges();
         }
 
-        public static List<Led>? GetDataFromIDTest(int id)
+        public List<Led>? GetDataFromIDTest(int id)
         {
             DataBaseContext dbContext = new DataBaseContext();
 

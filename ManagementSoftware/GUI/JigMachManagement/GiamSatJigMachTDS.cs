@@ -54,7 +54,7 @@ namespace ManagementSoftware.GUI.JigMachManagement
             List<Models.JigMachModel.JigMachTDS> list = await plc.GetDataMachTDS();
             if (list != null && list.Count > 0)
             {
-                UpdateData(list);
+                UpdateData(list.ToList());
             }
 
 

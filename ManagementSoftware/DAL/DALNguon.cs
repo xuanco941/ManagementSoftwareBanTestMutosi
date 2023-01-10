@@ -10,7 +10,7 @@ namespace ManagementSoftware.DAL
 {
     public class DALNguon
     {
-        public static void Add(List<Nguon> list)
+        public void Add(List<Nguon> list)
         {
             DataBaseContext dbContext = new DataBaseContext();
             TestNguon testID = new TestNguon();
@@ -29,7 +29,7 @@ namespace ManagementSoftware.DAL
             dbContext.SaveChanges();
         }
 
-        public static List<Nguon>? GetDataFromIDTest(int id)
+        public List<Nguon>? GetDataFromIDTest(int id)
         {
             DataBaseContext dbContext = new DataBaseContext();
 

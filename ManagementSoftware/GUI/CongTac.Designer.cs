@@ -544,7 +544,6 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "CongTac";
             this.Text = "Công tắc";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CongTac_FormClosing);
             this.Load += new System.EventHandler(this.CongTac_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageThongKe.ResumeLayout(false);

@@ -55,7 +55,7 @@ namespace ManagementSoftware.GUI.JigMachManagement
             List<Models.JigMachModel.JigMachNguon> list = await plc.GetDataMachNguon();
             if (list != null && list.Count > 0)
             {
-                UpdateData(list);
+                UpdateData(list.ToList());
             }
 
 

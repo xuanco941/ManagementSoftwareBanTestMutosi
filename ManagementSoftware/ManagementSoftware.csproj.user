@@ -40,6 +40,9 @@
     <Compile Update="GUI\NguonManagement\NguonTu1Den15.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\NguonManagement\FormTestLed.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GUI\Section\FormStringConnectDatabase.cs">
       <SubType>Form</SubType>
     </Compile>
