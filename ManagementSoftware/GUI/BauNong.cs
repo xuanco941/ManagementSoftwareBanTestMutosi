@@ -168,13 +168,13 @@ namespace ManagementSoftware.GUI
 
 
 
-        private void SetTextControl(Button dongAC, Button nhietDo, Button nhietDoNgatCB, Button soLanTest, Button cbNhiet, Models.BauNongModel.BauNong bauNong)
+        private void SetTextControl(Button dongAC, Button nhietDo, Button thoigian, Button soLanTest, Button cbNhiet, Models.BauNongModel.BauNong bauNong)
         {
-            dongAC.Text = bauNong.DongDien.ToString();
-            nhietDo.Text = bauNong.NhietDo.ToString();
-            nhietDoNgatCB.Text = bauNong.ThoiGian.ToString();
+            dongAC.Text = String.Format("{0:0.00}", bauNong.DongDien) + " A";
+            nhietDo.Text = String.Format("{0:0.00}", bauNong.NhietDo) + " °C";
+            thoigian.Text = bauNong.ThoiGian.ToString() + " s";
             soLanTest.Text = bauNong.LanTestThu.ToString();
-            cbNhiet.Text = bauNong.TrangThaiCBNhiet == true ? "on" : "off";
+            cbNhiet.Text = bauNong.TrangThaiCBNhiet == true ? "ON" : "OFF";
           
         }
 

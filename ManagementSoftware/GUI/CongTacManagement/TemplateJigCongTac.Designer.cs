@@ -956,6 +956,7 @@
             this.Name = "TemplateJigCongTac";
             this.Padding = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.Text = "TemplateCongTac2VT";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TemplateJigCongTac_FormClosing);
             this.Load += new System.EventHandler(this.TemplateJigCongTac_Load);
             this.panelItem.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

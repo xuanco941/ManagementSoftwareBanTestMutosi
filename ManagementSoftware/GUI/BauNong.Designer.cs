@@ -30,6 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BauNong));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageGiamSat = new System.Windows.Forms.TabPage();
             this.panelGiamSat = new System.Windows.Forms.Panel();
@@ -313,6 +317,7 @@
             this.buttonCustomGoPage = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.inputNumPageGo = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
             this.gridLayout1 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPageGiamSat.SuspendLayout();
             this.panelGiamSat.SuspendLayout();
@@ -457,6 +462,7 @@
             this.panel140.SuspendLayout();
             this.panel89.SuspendLayout();
             this.tabPageThongKe.SuspendLayout();
+            this.panelThongKe.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
@@ -473,6 +479,7 @@
             this.panel120.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inputNumPageGo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLayout1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -626,7 +633,7 @@
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(108, 32);
             this.label46.TabIndex = 3;
-            this.label46.Text = "CB nhiệt thân bầu nóng : ";
+            this.label46.Text = "Trạng thái CB nhiệt : ";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel105
@@ -669,7 +676,7 @@
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(108, 32);
             this.label47.TabIndex = 3;
-            this.label47.Text = "Số lần test :";
+            this.label47.Text = "Lần test thứ :";
             this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel107
@@ -755,7 +762,7 @@
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(108, 32);
             this.label49.TabIndex = 2;
-            this.label49.Text = "Dòng AC : ";
+            this.label49.Text = "Dòng điện : ";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel121
@@ -777,7 +784,7 @@
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(108, 32);
             this.label52.TabIndex = 4;
-            this.label52.Text = "Nhiệt độ ngắt cb nhiệt";
+            this.label52.Text = "Thời gian :";
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel111
@@ -892,7 +899,7 @@
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(108, 32);
             this.label41.TabIndex = 4;
-            this.label41.Text = "CB nhiệt thân bầu nóng : ";
+            this.label41.Text = "Trạng thái CB nhiệt : ";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel94
@@ -935,7 +942,7 @@
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(108, 32);
             this.label42.TabIndex = 3;
-            this.label42.Text = "Số lần test :";
+            this.label42.Text = "Lần test thứ :";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel96
@@ -1021,7 +1028,7 @@
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(108, 32);
             this.label44.TabIndex = 2;
-            this.label44.Text = "Dòng AC : ";
+            this.label44.Text = "Dòng điện : ";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel123
@@ -1043,7 +1050,7 @@
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(108, 32);
             this.label55.TabIndex = 4;
-            this.label55.Text = "Nhiệt độ ngắt cb nhiệt";
+            this.label55.Text = "Thời gian :";
             this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel124
@@ -1180,7 +1187,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 32);
             this.label1.TabIndex = 5;
-            this.label1.Text = "CB nhiệt thân bầu nóng : ";
+            this.label1.Text = "Trạng thái CB nhiệt : ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel72
@@ -1223,7 +1230,7 @@
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(108, 32);
             this.label32.TabIndex = 3;
-            this.label32.Text = "Số lần test :";
+            this.label32.Text = "Lần test thứ :";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel74
@@ -1309,7 +1316,7 @@
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(108, 32);
             this.label36.TabIndex = 2;
-            this.label36.Text = "Dòng AC : ";
+            this.label36.Text = "Dòng điện : ";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel125
@@ -1331,7 +1338,7 @@
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(108, 32);
             this.label56.TabIndex = 4;
-            this.label56.Text = "Nhiệt độ ngắt cb nhiệt";
+            this.label56.Text = "Thời gian :";
             this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel126
@@ -1467,7 +1474,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(108, 32);
             this.label6.TabIndex = 5;
-            this.label6.Text = "CB nhiệt thân bầu nóng : ";
+            this.label6.Text = "Trạng thái CB nhiệt : ";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel61
@@ -1510,7 +1517,7 @@
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(108, 32);
             this.label27.TabIndex = 3;
-            this.label27.Text = "Số lần test :";
+            this.label27.Text = "Lần test thứ :";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel63
@@ -1596,7 +1603,7 @@
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(108, 32);
             this.label29.TabIndex = 2;
-            this.label29.Text = "Dòng AC : ";
+            this.label29.Text = "Dòng điện : ";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel127
@@ -1618,7 +1625,7 @@
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(108, 32);
             this.label57.TabIndex = 4;
-            this.label57.Text = "Nhiệt độ ngắt cb nhiệt";
+            this.label57.Text = "Thời gian :";
             this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel128
@@ -1754,7 +1761,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(108, 32);
             this.label11.TabIndex = 5;
-            this.label11.Text = "CB nhiệt thân bầu nóng : ";
+            this.label11.Text = "Trạng thái CB nhiệt : ";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel50
@@ -1797,7 +1804,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(108, 32);
             this.label22.TabIndex = 3;
-            this.label22.Text = "Số lần test :";
+            this.label22.Text = "Lần test thứ :";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel52
@@ -1883,7 +1890,7 @@
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(108, 32);
             this.label24.TabIndex = 2;
-            this.label24.Text = "Dòng AC : ";
+            this.label24.Text = "Dòng điện : ";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel129
@@ -1905,7 +1912,7 @@
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(108, 32);
             this.label58.TabIndex = 4;
-            this.label58.Text = "Nhiệt độ ngắt cb nhiệt";
+            this.label58.Text = "Thời gian :";
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel130
@@ -2041,7 +2048,7 @@
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(108, 32);
             this.label34.TabIndex = 5;
-            this.label34.Text = "CB nhiệt thân bầu nóng : ";
+            this.label34.Text = "Trạng thái CB nhiệt : ";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel39
@@ -2084,7 +2091,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(108, 32);
             this.label17.TabIndex = 3;
-            this.label17.Text = "Số lần test :";
+            this.label17.Text = "Lần test thứ :";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel41
@@ -2170,7 +2177,7 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(108, 32);
             this.label19.TabIndex = 2;
-            this.label19.Text = "Dòng AC : ";
+            this.label19.Text = "Dòng điện : ";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel131
@@ -2192,7 +2199,7 @@
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(108, 32);
             this.label59.TabIndex = 4;
-            this.label59.Text = "Nhiệt độ ngắt cb nhiệt";
+            this.label59.Text = "Thời gian :";
             this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel132
@@ -2328,7 +2335,7 @@
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(108, 33);
             this.label31.TabIndex = 5;
-            this.label31.Text = "CB nhiệt thân bầu nóng : ";
+            this.label31.Text = "Trạng thái CB nhiệt : ";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel28
@@ -2371,7 +2378,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(108, 32);
             this.label12.TabIndex = 3;
-            this.label12.Text = "Số lần test :";
+            this.label12.Text = "Lần test thứ :";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel30
@@ -2457,7 +2464,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(108, 32);
             this.label14.TabIndex = 2;
-            this.label14.Text = "Dòng AC : ";
+            this.label14.Text = "Dòng điện : ";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel133
@@ -2479,7 +2486,7 @@
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(108, 32);
             this.label60.TabIndex = 4;
-            this.label60.Text = "Nhiệt độ ngắt cb nhiệt";
+            this.label60.Text = "Thời gian :";
             this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel134
@@ -2615,7 +2622,7 @@
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(108, 33);
             this.label26.TabIndex = 5;
-            this.label26.Text = "CB nhiệt thân bầu nóng : ";
+            this.label26.Text = "Trạng thái CB nhiệt : ";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel17
@@ -2658,7 +2665,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(108, 32);
             this.label7.TabIndex = 3;
-            this.label7.Text = "Số lần test :";
+            this.label7.Text = "Lần test thứ :";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel19
@@ -2744,7 +2751,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(108, 32);
             this.label9.TabIndex = 2;
-            this.label9.Text = "Dòng AC : ";
+            this.label9.Text = "Dòng điện : ";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel135
@@ -2766,7 +2773,7 @@
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(108, 32);
             this.label61.TabIndex = 4;
-            this.label61.Text = "Nhiệt độ ngắt cb nhiệt";
+            this.label61.Text = "Thời gian :";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel136
@@ -2902,7 +2909,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(108, 34);
             this.label21.TabIndex = 5;
-            this.label21.Text = "CB nhiệt thân bầu nóng : ";
+            this.label21.Text = "Trạng thái CB nhiệt : ";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel6
@@ -2945,7 +2952,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 32);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Số lần test :";
+            this.label2.Text = "Lần test thứ :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel8
@@ -3031,7 +3038,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(108, 32);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Dòng AC : ";
+            this.label4.Text = "Dòng điện : ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel137
@@ -3053,7 +3060,7 @@
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(108, 32);
             this.label62.TabIndex = 4;
-            this.label62.Text = "Nhiệt độ ngắt cb nhiệt";
+            this.label62.Text = "Thời gian :";
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel138
@@ -3189,7 +3196,7 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(108, 33);
             this.label16.TabIndex = 5;
-            this.label16.Text = "CB nhiệt thân bầu nóng : ";
+            this.label16.Text = "Trạng thái CB nhiệt : ";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel83
@@ -3232,7 +3239,7 @@
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(108, 32);
             this.label35.TabIndex = 3;
-            this.label35.Text = "Số lần test :";
+            this.label35.Text = "Lần test thứ :";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel85
@@ -3318,7 +3325,7 @@
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(108, 32);
             this.label38.TabIndex = 2;
-            this.label38.Text = "Dòng AC : ";
+            this.label38.Text = "Dòng điện : ";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel139
@@ -3340,7 +3347,7 @@
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(108, 32);
             this.label63.TabIndex = 4;
-            this.label63.Text = "Nhiệt độ ngắt cb nhiệt";
+            this.label63.Text = "Thời gian :";
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel140
@@ -3392,10 +3399,10 @@
             // 
             this.tabPageThongKe.Controls.Add(this.panelThongKe);
             this.tabPageThongKe.Controls.Add(this.panel2);
-            this.tabPageThongKe.Location = new System.Drawing.Point(4, 24);
+            this.tabPageThongKe.Location = new System.Drawing.Point(4, 34);
             this.tabPageThongKe.Name = "tabPageThongKe";
             this.tabPageThongKe.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageThongKe.Size = new System.Drawing.Size(1178, 497);
+            this.tabPageThongKe.Size = new System.Drawing.Size(1178, 487);
             this.tabPageThongKe.TabIndex = 1;
             this.tabPageThongKe.Text = "Thống kê";
             this.tabPageThongKe.UseVisualStyleBackColor = true;
@@ -3404,10 +3411,11 @@
             // 
             this.panelThongKe.AutoScroll = true;
             this.panelThongKe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelThongKe.Controls.Add(this.dataGridView1);
             this.panelThongKe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelThongKe.Location = new System.Drawing.Point(3, 3);
             this.panelThongKe.Name = "panelThongKe";
-            this.panelThongKe.Size = new System.Drawing.Size(1172, 431);
+            this.panelThongKe.Size = new System.Drawing.Size(1172, 421);
             this.panelThongKe.TabIndex = 4;
             // 
             // panel2
@@ -3418,7 +3426,7 @@
             this.panel2.Controls.Add(this.buttonCustomGoPage);
             this.panel2.Controls.Add(this.inputNumPageGo);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(3, 434);
+            this.panel2.Location = new System.Drawing.Point(3, 424);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1172, 60);
@@ -3819,6 +3827,47 @@
             this.gridLayout1.ContainerControl = this.panelGiamSat;
             this.gridLayout1.Rows = 2;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.RowHeadersVisible = false;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(1170, 419);
+            this.dataGridView1.TabIndex = 1;
+            // 
             // BauNong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -3974,6 +4023,7 @@
             this.panel140.ResumeLayout(false);
             this.panel89.ResumeLayout(false);
             this.tabPageThongKe.ResumeLayout(false);
+            this.panelThongKe.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tableLayoutPanel11.ResumeLayout(false);
@@ -3992,6 +4042,7 @@
             this.panel120.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.inputNumPageGo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLayout1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4281,5 +4332,6 @@
         private Label label63;
         private Panel panel140;
         private Button NhietDoNgatCB10;
+        private DataGridView dataGridView1;
     }
 }

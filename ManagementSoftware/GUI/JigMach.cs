@@ -30,15 +30,25 @@ namespace ManagementSoftware.GUI
         public JigMach()
         {
             InitializeComponent();
+            giamSatJigMachNguon = new GiamSatJigMachNguon();
+            giamSatJigMachTDS = new GiamSatJigMachTDS();
+
         }
         private void JigMach_Load(object sender, EventArgs e)
         {
-            GiamSatJigMachNguon form = new GiamSatJigMachNguon();
-            form.TopLevel = false;
-            tabPageGiamSatJigNguon.Controls.Add(form);
-            form.FormBorderStyle = FormBorderStyle.None;
-            form.Dock = DockStyle.Fill;
-            form.Show();
+            giamSatJigMachNguon.TopLevel = false;
+            tabPageGiamSatJigNguon.Controls.Add(giamSatJigMachNguon);
+            giamSatJigMachNguon.FormBorderStyle = FormBorderStyle.None;
+            giamSatJigMachNguon.Dock = DockStyle.Fill;
+            giamSatJigMachNguon.Show();
+
+
+            giamSatJigMachTDS.TopLevel = false;
+            tabPageGiamSatJigTDS.Controls.Add(giamSatJigMachTDS);
+            giamSatJigMachTDS.FormBorderStyle = FormBorderStyle.None;
+            giamSatJigMachTDS.Dock = DockStyle.Fill;
+            giamSatJigMachTDS.Show();
+
         }
 
         // ngày để query 
@@ -136,66 +146,37 @@ namespace ManagementSoftware.GUI
 
 
 
+        GiamSatJigMachNguon giamSatJigMachNguon;
+        GiamSatJigMachTDS giamSatJigMachTDS;
+
+
         private void tabControl1_Selected(object sender, TabControlEventArgs e)
         {
             if (tabControl1.SelectedTab == tabPageGiamSatJigNguon)
             {
-                GiamSatJigMachNguon form = new GiamSatJigMachNguon();
-                form.TopLevel = false;
-                tabPageGiamSatJigNguon.Controls.Add(form);
-                form.FormBorderStyle = FormBorderStyle.None;
-                form.Dock = DockStyle.Fill;
-                form.Show();
-                foreach (GiamSatJigMachTDS f in tabPageGiamSatJigTDS.Controls)
-                {
-                    f.Close();
-                    f.Dispose();
-                }
+                giamSatJigMachNguon.StartTimer();
+                giamSatJigMachTDS.StopTimer();
 
             }
             else if (tabControl1.SelectedTab == tabPageGiamSatJigTDS)
             {
-                GiamSatJigMachTDS form = new GiamSatJigMachTDS();
-                form.TopLevel = false;
-                tabPageGiamSatJigTDS.Controls.Add(form);
-                form.FormBorderStyle = FormBorderStyle.None;
-                form.Dock = DockStyle.Fill;
-                form.Show();
-                foreach (GiamSatJigMachNguon f in tabPageGiamSatJigNguon.Controls)
-                {
-                    f.Close();
-                    f.Dispose();
-                }
+                giamSatJigMachTDS.StartTimer();
+                giamSatJigMachNguon.StopTimer();
 
             }
             else if (tabControl1.SelectedTab == tabPageThongKe)
             {
                 LoadFormThongKe();
-                foreach (GiamSatJigMachNguon f in tabPageGiamSatJigNguon.Controls)
-                {
-                    f.Close();
-                    f.Dispose();
-                }
-                foreach (GiamSatJigMachTDS f in tabPageGiamSatJigTDS.Controls)
-                {
-                    f.Close();
-                    f.Dispose();
-                }
+                giamSatJigMachTDS.StopTimer();
+                giamSatJigMachNguon.StopTimer();
+
 
             }
             else if (tabControl1.SelectedTab == tabPageThongKeTDS)
             {
                 LoadFormThongKeTDS();
-                foreach (GiamSatJigMachNguon f in tabPageGiamSatJigNguon.Controls)
-                {
-                    f.Close();
-                    f.Dispose();
-                }
-                foreach (GiamSatJigMachTDS f in tabPageGiamSatJigTDS.Controls)
-                {
-                    f.Close();
-                    f.Dispose();
-                }
+                giamSatJigMachTDS.StopTimer();
+                giamSatJigMachNguon.StopTimer();
 
             }
 

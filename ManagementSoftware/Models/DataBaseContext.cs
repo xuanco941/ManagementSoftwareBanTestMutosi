@@ -3,6 +3,7 @@ using ManagementSoftware.Models.BauNongModel;
 using ManagementSoftware.Models.BepTuModel;
 using ManagementSoftware.Models.CongTacModel;
 using ManagementSoftware.Models.JigMachModel;
+using ManagementSoftware.Models.LedModel;
 using ManagementSoftware.Models.LoiLocModel;
 using ManagementSoftware.Models.NguonModel;
 using Microsoft.EntityFrameworkCore;
@@ -35,6 +36,10 @@ namespace ManagementSoftware.Models
         //Nguon
         public DbSet<TestNguon> TestNguons { get; set; }
         public DbSet<Nguon> Nguons { get; set; }
+
+        //Led
+        public DbSet<TestLed> TestLeds { get; set; }
+        public DbSet<Led> Leds { get; set; }
 
         //Cong tac 2vt
         public DbSet<TestCongTac> TestCongTacs { get; set; }
@@ -118,6 +123,11 @@ namespace ManagementSoftware.Models
             });
             //Cong tac 
             modelBuilder.Entity<TestCongTac>(entity =>
+            {
+                entity.Property(e => e.CreateAt).HasDefaultValueSql("(getdate())");
+            });
+            //Cong tac 
+            modelBuilder.Entity<TestLed>(entity =>
             {
                 entity.Property(e => e.CreateAt).HasDefaultValueSql("(getdate())");
             });
