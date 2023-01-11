@@ -49,8 +49,41 @@ namespace ManagementSoftware.GUI
             giamSatJigMachTDS.Dock = DockStyle.Fill;
             giamSatJigMachTDS.Show();
 
-        }
+            LoadDGV();
+            LoadDGV2();
 
+        }
+        void LoadDGV()
+        {
+            DataGridViewColumn STT = new DataGridViewTextBoxColumn();
+            STT.HeaderText = "ID-Date";
+            DataGridViewColumn name = new DataGridViewTextBoxColumn();
+            name.HeaderText = "Jig";
+            DataGridViewColumn lanTest = new DataGridViewTextBoxColumn();
+            lanTest.HeaderText = "Lần test thứ";
+            DataGridViewColumn dienAp = new DataGridViewTextBoxColumn();
+            dienAp.HeaderText = "Dòng áp DC (V)";
+            DataGridViewColumn dongDC = new DataGridViewTextBoxColumn();
+            dongDC.HeaderText = "Dòng điện DC (A)";
+            DataGridViewColumn congSuat = new DataGridViewTextBoxColumn();
+            congSuat.HeaderText = "Công suất (W)";
+            DataGridViewColumn ThoiGian = new DataGridViewTextBoxColumn();
+            ThoiGian.HeaderText = "Thời gian (giây)";
+
+
+
+            dataGridView1.Columns.Add(STT);
+            dataGridView1.Columns.Add(name);
+            dataGridView1.Columns.Add(lanTest);
+            dataGridView1.Columns.Add(dienAp);
+            dataGridView1.Columns.Add(dongDC);
+            dataGridView1.Columns.Add(congSuat);
+            dataGridView1.Columns.Add(ThoiGian);
+
+
+            dataGridView1.RowTemplate.Height = 35;
+
+        }
         // ngày để query 
         private DateTime? timeStart = null;
         private DateTime? timeEnd = null;
@@ -68,6 +101,9 @@ namespace ManagementSoftware.GUI
         {
             panel2.Enabled = false;
 
+            dataGridView1.Rows.Clear();
+
+
             PaginationJigMach pagination = new PaginationJigMach();
             pagination.Set(page, timeStart, timeEnd);
             this.ListResults = pagination.ListResults;
@@ -82,33 +118,33 @@ namespace ManagementSoftware.GUI
             pageNumberGoto.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1;
 
 
-            DataTable dt = new DataTable();
-            dt.Columns.Add("ID-Date");
-            dt.Columns.Add("Jig");
-            dt.Columns.Add("Lần test thứ");
-            dt.Columns.Add("Điện áp DC (V)");
-            dt.Columns.Add("Dòng điện DC (A)");
-            dt.Columns.Add("Công suất (W)");
-            dt.Columns.Add("Thời gian (giây)");
+
 
             foreach (var item in this.ListResults)
             {
                 List<Models.JigMachModel.JigMachNguon>? l = new DALJigMach().GetDataFromIDTest(item.TestJigMachID);
 
-
-                string id_date = "ID" + item.TestJigMachID + " - " + item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
                 if (l != null && l.Count > 0)
                 {
+                    string date = "ID" + item.TestJigMachID + " - " + item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
                     foreach (var i in l)
                     {
-                        dt.Rows.Add(id_date, i.JigMachNguonName, i.LanTestThu, String.Format("{0:0.00}", i.DienApDC), String.Format("{0:0.00}", i.DongDienDC), String.Format("{0:0.00}", i.CongSuat), i.ThoiGian);
+                        int rowId = dataGridView1.Rows.Add();
+                        DataGridViewRow row = dataGridView1.Rows[rowId];
+
+                        row.Cells[0].Value = date;
+                        row.Cells[1].Value = i.JigMachNguonName;
+                        row.Cells[2].Value = i.LanTestThu;
+                        row.Cells[3].Value = String.Format("{0:0.00}", i.DienApDC);
+                        row.Cells[4].Value = String.Format("{0:0.00}", i.DongDienDC);
+                        row.Cells[5].Value = String.Format("{0:0.00}", i.CongSuat);
+                        row.Cells[6].Value = i.ThoiGian;
+                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
                     }
+                    dataGridView1.Rows.Add();
                 }
-                dt.Rows.Add("", "", "", "", "", "", "");
 
             }
-
-            dataGridView1.DataSource = dt;
 
             panel2.Enabled = true;
         }
@@ -209,9 +245,42 @@ namespace ManagementSoftware.GUI
         //Data
         List<TestJigMach> ListResults2 = new List<TestJigMach>();
 
+
+        void LoadDGV2()
+        {
+            DataGridViewColumn STT = new DataGridViewTextBoxColumn();
+            STT.HeaderText = "ID-Date";
+            DataGridViewColumn name = new DataGridViewTextBoxColumn();
+            name.HeaderText = "Jig";
+            DataGridViewColumn lanTest = new DataGridViewTextBoxColumn();
+            lanTest.HeaderText = "Lần test thứ";
+            DataGridViewColumn dienAp = new DataGridViewTextBoxColumn();
+            dienAp.HeaderText = "Van điện từ";
+            DataGridViewColumn dongDC = new DataGridViewTextBoxColumn();
+            dongDC.HeaderText = "Van áp cao";
+            DataGridViewColumn ThoiGian = new DataGridViewTextBoxColumn();
+            ThoiGian.HeaderText = "Thời gian (giây)";
+
+
+
+            dataGridView2.Columns.Add(STT);
+            dataGridView2.Columns.Add(name);
+            dataGridView2.Columns.Add(lanTest);
+            dataGridView2.Columns.Add(dienAp);
+            dataGridView2.Columns.Add(dongDC);
+            dataGridView2.Columns.Add(ThoiGian);
+
+
+            dataGridView2.RowTemplate.Height = 35;
+
+        }
+
         private void LoadFormThongKeTDS()
         {
             panelSearch2.Enabled = false;
+
+            dataGridView2.Rows.Clear();
+
 
             PaginationJigMach pagination = new PaginationJigMach();
             pagination.Set(page2, timeStart2, timeEnd2);
@@ -227,35 +296,32 @@ namespace ManagementSoftware.GUI
             pageNumberGoto2.MaxValue = this.TotalPages2 != 0 ? this.TotalPages2 : 1;
 
 
-            DataTable dt = new DataTable();
-            dt.Columns.Add("ID-Date");
-            dt.Columns.Add("Jig");
-            dt.Columns.Add("Lần test thứ");
-            dt.Columns.Add("Van điện từ");
-            dt.Columns.Add("Van áp cao");
-            dt.Columns.Add("Thời gian (giây)");
 
-            foreach (var item in this.ListResults)
+
+            foreach (var item in this.ListResults2)
             {
                 List<Models.JigMachModel.JigMachTDS>? l = new DALJigMach().GetDataFromIDTestTDS(item.TestJigMachID);
 
-
-                string id_date = "ID" + item.TestJigMachID + " - " + item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
                 if (l != null && l.Count > 0)
                 {
+                    string date = "ID" + item.TestJigMachID + " - " + item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
                     foreach (var i in l)
                     {
-                        string vandt = i.VanDienTu == true ? "on" : "off";
-                        string vanapcao = i.VanApCao == true ? "on" : "off";
+                        int rowId = dataGridView2.Rows.Add();
+                        DataGridViewRow row = dataGridView2.Rows[rowId];
 
-                        dt.Rows.Add(id_date, i.JigMachTDSName, i.LanTestThu, vandt, vanapcao, i.ThoiGian);
+                        row.Cells[0].Value = date;
+                        row.Cells[1].Value = i.JigMachTDSName;
+                        row.Cells[2].Value = i.LanTestThu;
+                        row.Cells[3].Value = i.VanDienTu == true ? "ON" : "OFF";
+                        row.Cells[4].Value = i.VanApCao == true ? "ON" : "OFF";
+                        row.Cells[5].Value = i.ThoiGian;
+                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
                     }
+                    dataGridView2.Rows.Add();
                 }
-                dt.Rows.Add("", "", "", "", "", "");
 
             }
-
-            dataGridView2.DataSource = dt;
 
             panelSearch2.Enabled = true;
         }

@@ -1,4 +1,5 @@
-﻿using ManagementSoftware.DAL.DALPagination;
+﻿using ManagementSoftware.DAL;
+using ManagementSoftware.DAL.DALPagination;
 using ManagementSoftware.GUI.CongTacManagement;
 using ManagementSoftware.GUI.Section;
 using ManagementSoftware.GUI.Section.ThongKe;
@@ -9,6 +10,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,12 +40,33 @@ namespace ManagementSoftware.GUI
         {
             InitializeComponent();
         }
+        void LoadDGV()
+        {
+            DataGridViewColumn STT = new DataGridViewTextBoxColumn();
+            STT.HeaderText = "ID-Date";
+            DataGridViewColumn name = new DataGridViewTextBoxColumn();
+            name.HeaderText = "Công tắc";
+            DataGridViewColumn dienAp = new DataGridViewTextBoxColumn();
+            dienAp.HeaderText = "Trạng thái";
+            DataGridViewColumn lanTest = new DataGridViewTextBoxColumn();
+            lanTest.HeaderText = "Lần test thứ";
 
+
+
+            dataGridView1.Columns.Add(STT);
+            dataGridView1.Columns.Add(name);
+            dataGridView1.Columns.Add(lanTest);
+            dataGridView1.Columns.Add(dienAp);
+
+
+            dataGridView1.RowTemplate.Height = 35;
+
+        }
         void LoadFormThongKe()
         {
             panelSearchPage2VT.Enabled = false;
 
-
+            dataGridView1.Rows.Clear();
 
 
 
@@ -60,7 +83,30 @@ namespace ManagementSoftware.GUI
             pageNumberGoto2VT.MinValue = 1;
             pageNumberGoto2VT.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1;
 
-          
+
+            foreach (var item in this.ListResults)
+            {
+                List<Models.CongTacModel.CongTac>? l = new DALCongTac().GetDataFromIDTest(item.TestCongTacID);
+
+                if (l != null && l.Count > 0)
+                {
+                    string date = "ID" + item.TestCongTacID + " - " + item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    foreach (var i in l)
+                    {
+                        int rowId = dataGridView1.Rows.Add();
+                        DataGridViewRow row = dataGridView1.Rows[rowId];
+
+                        row.Cells[0].Value = date;
+                        row.Cells[1].Value = i.CongTacName + " - " + i.JigCongTac ;
+                        row.Cells[2].Value = i.TrangThai == true ? "ON" : "OFF";
+                        row.Cells[3].Value = i.LanTestThu;
+                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                    }
+                    dataGridView1.Rows.Add();
+                }
+
+            }
+
 
 
             panelSearchPage2VT.Enabled = true;
@@ -140,24 +186,7 @@ namespace ManagementSoftware.GUI
             AddCT(form1);
 
 
-
-            //List<TemplateJigCongTac> list = new List<TemplateJigCongTac>() { form10, form9, form8, form7, form6, form5, form4, form3, form2, form1 };
-
-
-            //for (int i = 0; i < 10; i++)
-            //{
-
-            //}
-
-            //foreach (TemplateJigCongTac form in list.ToList())
-            //{
-            //    form.TopLevel = false;
-            //    form.FormBorderStyle = FormBorderStyle.None;
-            //    form.Dock = DockStyle.Top;
-            //    tabPageGiamSat.Controls.Add(form);
-            //    form.Show();
-            //}
-
+            LoadDGV();
             LoadFormThongKe();
 
         }

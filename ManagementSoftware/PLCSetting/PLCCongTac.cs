@@ -22,11 +22,14 @@ namespace ManagementSoftware.PLCSetting
         {
             List<Models.CongTacModel.CongTac> list = new List<CongTac>();
 
+            ushort lantestValue = await this.ConvertUIntToUshort(118);
+
+
             CongTac ct1 = new CongTac();
             ct1.TrangThai = await this.ConvertUIntToUshort(addrCT1) == 0 ? false : true;
             ct1.CongTacName = TenThietBi.CongTac1Jig1;
             ct1.JigCongTac = "Jig " + jig;
-            ct1.LanTestThu = await this.ConvertUIntToUshort(118); ;
+            ct1.LanTestThu = lantestValue;
             list.Add(ct1);
 
 
@@ -34,21 +37,21 @@ namespace ManagementSoftware.PLCSetting
             ct2.TrangThai = await this.ConvertUIntToUshort(addrCT2) == 0 ? false : true;
             ct2.CongTacName = TenThietBi.CongTac2Jig1;
             ct2.JigCongTac = "Jig " + jig;
-            ct2.LanTestThu = await this.ConvertUIntToUshort(118); ;
+            ct2.LanTestThu = lantestValue;
             list.Add(ct2);
 
             CongTac ct3 = new CongTac();
             ct3.TrangThai = await this.ConvertUIntToUshort(addrCT3) == 0 ? false : true;
             ct3.CongTacName = TenThietBi.CongTac3Jig1;
             ct3.JigCongTac = "Jig " + jig;
-            ct3.LanTestThu = await this.ConvertUIntToUshort(118); ;
+            ct3.LanTestThu = lantestValue;
             list.Add(ct3);
 
             CongTac ct4 = new CongTac();
             ct4.TrangThai = await this.ConvertUIntToUshort(addrCT4) == 0 ? false : true;
             ct4.CongTacName = TenThietBi.CongTac4Jig1;
             ct4.JigCongTac = "Jig " + jig;
-            ct4.LanTestThu = await this.ConvertUIntToUshort(118); ;
+            ct4.LanTestThu = lantestValue;
             list.Add(ct4);
 
 
@@ -56,7 +59,7 @@ namespace ManagementSoftware.PLCSetting
             ct5.TrangThai = await this.ConvertUIntToUshort(addrCT5) == 0 ? false : true;
             ct5.CongTacName = TenThietBi.CongTac5Jig1;
             ct5.JigCongTac = "Jig " + jig;
-            ct5.LanTestThu = await this.ConvertUIntToUshort(118); ;
+            ct5.LanTestThu = lantestValue;
             list.Add(ct5);
 
 

@@ -75,7 +75,7 @@ namespace ManagementSoftware.GUI.NguonManagement
         private void SetTextNguon(Button time, Button soLanTest, Models.LedModel.Led e)
         {
 
-            time.Text = e.ThoiGianTest.ToString() + " s";
+            time.Text = e.ThoiGianTest.ToString();
 
             soLanTest.Text = e.LanTestThu.ToString();
 

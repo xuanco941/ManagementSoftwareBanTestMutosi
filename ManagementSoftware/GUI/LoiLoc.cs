@@ -1,4 +1,5 @@
-﻿using ManagementSoftware.DAL.DALPagination;
+﻿using ManagementSoftware.DAL;
+using ManagementSoftware.DAL.DALPagination;
 using ManagementSoftware.GUI.Section;
 using ManagementSoftware.GUI.Section.ThongKe;
 using ManagementSoftware.Models.LoiLocModel;
@@ -63,11 +64,43 @@ namespace ManagementSoftware.GUI
             LoadFormThongKe();
         }
 
+        void LoadDGV()
+        {
+            DataGridViewColumn STT = new DataGridViewTextBoxColumn();
+            STT.HeaderText = "ID-Date";
+            DataGridViewColumn name = new DataGridViewTextBoxColumn();
+            name.HeaderText = "Lõi lọc";
+            DataGridViewColumn lanTest = new DataGridViewTextBoxColumn();
+            lanTest.HeaderText = "Lần test thứ";
+            DataGridViewColumn dienAp = new DataGridViewTextBoxColumn();
+            dienAp.HeaderText = "Áp suất test (bar)";
+            DataGridViewColumn dongDC = new DataGridViewTextBoxColumn();
+            dongDC.HeaderText = "Thời gian cấp (giây)";
+            DataGridViewColumn congSuat = new DataGridViewTextBoxColumn();
+            congSuat.HeaderText = "Thời gian giữ (giây)";
+            DataGridViewColumn ThoiGian = new DataGridViewTextBoxColumn();
+            ThoiGian.HeaderText = "Thời gian xả (giây)";
 
+
+
+            dataGridView1.Columns.Add(STT);
+            dataGridView1.Columns.Add(name);
+            dataGridView1.Columns.Add(lanTest);
+            dataGridView1.Columns.Add(dienAp);
+            dataGridView1.Columns.Add(dongDC);
+            dataGridView1.Columns.Add(congSuat);
+            dataGridView1.Columns.Add(ThoiGian);
+
+
+            dataGridView1.RowTemplate.Height = 35;
+
+        }
 
         private void LoadFormThongKe()
         {
             panel2.Enabled = false;
+
+            dataGridView1.Rows.Clear();
 
             PaginationLoiLoc pagination = new PaginationLoiLoc();
             pagination.Set(page, timeStart, timeEnd);
@@ -82,27 +115,32 @@ namespace ManagementSoftware.GUI
             pageNumberGoto.MinValue = 1;
             pageNumberGoto.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1;
 
-            DataTable dt = new DataTable();
-            dt.Columns.Add("No.");
-            dt.Columns.Add("Lõi Lọc");
-            dt.Columns.Add("Lần test thứ");
-            dt.Columns.Add("Áp suất test (bar)");
-            dt.Columns.Add("Thời gian cấp (giây)");
-            dt.Columns.Add("Thời gian giữ (giây)");
-            dt.Columns.Add("Thời gian xả (giây)");
-            dt.Columns.Add("Ngày tạo");
 
-            if (ListResults != null && ListResults.Count > 0)
+
+
+
+            bool checkColor = false;
+            foreach (var item in this.ListResults)
             {
-                int i = 1;
-                foreach (var item in this.ListResults.ToList())
-                {
-                    dt.Rows.Add(i, item.LoiLocName, item.SoLanTest, item.ApSuatTest, item.ThoiGianNen, item.ThoiGianGiu, item.ThoiGianXa, item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture));
-                    i++;
-                }
-            }
-            dataGridView1.DataSource = dt;
+                string date = "ID" + item.LoiLocID + " - " + item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
 
+                int rowId = dataGridView1.Rows.Add();
+                DataGridViewRow row = dataGridView1.Rows[rowId];
+
+                row.Cells[0].Value = date;
+                row.Cells[1].Value = item.LoiLocName;
+                row.Cells[2].Value = item.SoLanTest;
+                row.Cells[3].Value = item.ApSuatTest;
+                row.Cells[4].Value = item.ThoiGianNen;
+                row.Cells[5].Value = item.ThoiGianGiu;
+                row.Cells[6].Value = item.ThoiGianXa;
+                if(checkColor == true)
+                {
+                    row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                }
+                checkColor = !checkColor;
+
+            }
 
             panel2.Enabled = true;
         }
@@ -159,6 +197,7 @@ namespace ManagementSoftware.GUI
         private async void LoiLoc_Load(object sender, EventArgs e)
         {
 
+            LoadDGV();
 
             if (await plc.Open() == true)
             {
@@ -209,37 +248,37 @@ namespace ManagementSoftware.GUI
             if (loiloc.LoiLocName == TenThietBi.LoiLoc1)
             {
 
-                ThoiGianXa1.Text = loiloc.ThoiGianXa.ToString() + " s";
+                ThoiGianXa1.Text = loiloc.ThoiGianXa.ToString();
 
-                ThoiGianNen1.Text = loiloc.ThoiGianNen.ToString() + " s";
+                ThoiGianNen1.Text = loiloc.ThoiGianNen.ToString();
 
-                ThoiGianGiu1.Text = loiloc.ThoiGianGiu.ToString() + " s";
+                ThoiGianGiu1.Text = loiloc.ThoiGianGiu.ToString();
 
                 SoLanTestJig1.Text = loiloc.SoLanTest.ToString();
 
-                ApSuatTest1.Text = loiloc.ApSuatTest.ToString() + " bar";
+                ApSuatTest1.Text = loiloc.ApSuatTest.ToString();
             }
             else if (loiloc.LoiLocName == TenThietBi.LoiLoc2)
             {
 
-                ThoiGianXa2.Text = loiloc.ThoiGianXa.ToString() + " s";
+                ThoiGianXa2.Text = loiloc.ThoiGianXa.ToString();
 
-                ThoiGianNen2.Text = loiloc.ThoiGianNen.ToString() + " s";
+                ThoiGianNen2.Text = loiloc.ThoiGianNen.ToString();
 
-                ThoiGianGiu2.Text = loiloc.ThoiGianGiu.ToString() + " s";
+                ThoiGianGiu2.Text = loiloc.ThoiGianGiu.ToString();
                 SoLanTestJig2.Text = loiloc.SoLanTest.ToString();
 
-                ApSuatTest2.Text = loiloc.ApSuatTest.ToString() + " bar";
+                ApSuatTest2.Text = loiloc.ApSuatTest.ToString();
             }
             else
             {
-                ThoiGianXa1va2.Text = loiloc.ThoiGianXa.ToString() + " s";
-                ThoiGianNen1va2.Text = loiloc.ThoiGianNen.ToString() + " s";
-                ThoiGianGiu1va2.Text = loiloc.ThoiGianGiu.ToString() + " s";
+                ThoiGianXa1va2.Text = loiloc.ThoiGianXa.ToString();
+                ThoiGianNen1va2.Text = loiloc.ThoiGianNen.ToString();
+                ThoiGianGiu1va2.Text = loiloc.ThoiGianGiu.ToString();
 
                 SoLanTestJig1va2.Text = loiloc.SoLanTest.ToString();
 
-                ApSuatTest1va2.Text = loiloc.ApSuatTest.ToString() + " bar";
+                ApSuatTest1va2.Text = loiloc.ApSuatTest.ToString();
             }
         }
 

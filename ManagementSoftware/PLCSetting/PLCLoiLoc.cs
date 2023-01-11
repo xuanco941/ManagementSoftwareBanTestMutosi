@@ -53,7 +53,7 @@ namespace ManagementSoftware.PLCSetting
             {
                 loiloc.LoiLocName = TenThietBi.LoiLoc2;
             }
-            else if (loaiLoiLocTest.Result == 3)
+            else
             {
                 loiloc.LoiLocName = TenThietBi.LoiLoc1va2;
             }

@@ -1,4 +1,5 @@
-﻿using ManagementSoftware.DAL.DALPagination;
+﻿using ManagementSoftware.DAL;
+using ManagementSoftware.DAL.DALPagination;
 using ManagementSoftware.GUI.Section;
 using ManagementSoftware.GUI.Section.ThongKe;
 using ManagementSoftware.Models.BauNongModel;
@@ -10,6 +11,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,11 +45,41 @@ namespace ManagementSoftware.GUI
 
             plc = new PLCBauNong(ControlAllPLC.ipBauNong, ControlAllPLC.PLCBauNong);
         }
+        void LoadDGV()
+        {
+            DataGridViewColumn STT = new DataGridViewTextBoxColumn();
+            STT.HeaderText = "ID-Date";
+            DataGridViewColumn name = new DataGridViewTextBoxColumn();
+            name.HeaderText = "Bầu nóng";
+            DataGridViewColumn lanTest = new DataGridViewTextBoxColumn();
+            lanTest.HeaderText = "Lần test thứ";
+            DataGridViewColumn dienAp = new DataGridViewTextBoxColumn();
+            dienAp.HeaderText = "Dòng điện AC (A)";
+            DataGridViewColumn dongDC = new DataGridViewTextBoxColumn();
+            dongDC.HeaderText = "Nhiệt độ (°C)";
+            DataGridViewColumn congSuat = new DataGridViewTextBoxColumn();
+            congSuat.HeaderText = "Nhiệt độ ngắt cb nhiệt (°C)";
+            DataGridViewColumn ThoiGian = new DataGridViewTextBoxColumn();
+            ThoiGian.HeaderText = "Trạng thái cb nhiệt";
 
+
+
+            dataGridView1.Columns.Add(STT);
+            dataGridView1.Columns.Add(name);
+            dataGridView1.Columns.Add(lanTest);
+            dataGridView1.Columns.Add(dienAp);
+            dataGridView1.Columns.Add(dongDC);
+            dataGridView1.Columns.Add(congSuat);
+            dataGridView1.Columns.Add(ThoiGian);
+
+
+            dataGridView1.RowTemplate.Height = 35;
+
+        }
         void LoadFormThongKe()
         {
             panel2.Enabled = false;
-
+            dataGridView1.Rows.Clear();
 
 
             PaginationBauNong pagination = new PaginationBauNong();
@@ -63,7 +95,33 @@ namespace ManagementSoftware.GUI
             pageNumberGoto.MinValue = 1;
             pageNumberGoto.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1;
 
-  
+
+
+            foreach (var item in this.ListResults)
+            {
+                List<Models.BauNongModel.BauNong>? l = new DALBauNong().GetDataFromIDTest(item.TestBauNongID);
+
+                if (l != null && l.Count > 0)
+                {
+                    string date = "ID" + item.TestBauNongID + " - " + item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    foreach (var i in l)
+                    {
+                        int rowId = dataGridView1.Rows.Add();
+                        DataGridViewRow row = dataGridView1.Rows[rowId];
+
+                        row.Cells[0].Value = date;
+                        row.Cells[1].Value = i.BauNongName;
+                        row.Cells[2].Value = i.LanTestThu;
+                        row.Cells[3].Value = i.DongDien;
+                        row.Cells[4].Value = i.NhietDo;
+                        row.Cells[5].Value = i.NhietDoNgatCBNhiet;
+                        row.Cells[6].Value = i.TrangThaiCBNhiet == true ? "ON" : "OFF";
+                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                    }
+                    dataGridView1.Rows.Add();
+                }
+
+            }
 
             panel2.Enabled = true;
         }
@@ -168,11 +226,11 @@ namespace ManagementSoftware.GUI
 
 
 
-        private void SetTextControl(Button dongAC, Button nhietDo, Button thoigian, Button soLanTest, Button cbNhiet, Models.BauNongModel.BauNong bauNong)
+        private void SetTextControl(Button dongAC, Button nhietDo, Button nhietdoNgatCB, Button soLanTest, Button cbNhiet, Models.BauNongModel.BauNong bauNong)
         {
             dongAC.Text = String.Format("{0:0.00}", bauNong.DongDien) + " A";
             nhietDo.Text = String.Format("{0:0.00}", bauNong.NhietDo) + " °C";
-            thoigian.Text = bauNong.ThoiGian.ToString() + " s";
+            nhietdoNgatCB.Text = bauNong.NhietDoNgatCBNhiet.ToString() + " °C";
             soLanTest.Text = bauNong.LanTestThu.ToString();
             cbNhiet.Text = bauNong.TrangThaiCBNhiet == true ? "ON" : "OFF";
           
@@ -253,7 +311,7 @@ namespace ManagementSoftware.GUI
             {
                 timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
             }
-
+            LoadDGV();
             LoadFormThongKe();
         }
     }

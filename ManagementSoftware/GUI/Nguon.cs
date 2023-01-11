@@ -224,6 +224,13 @@ namespace ManagementSoftware.GUI
                 formTestLed.StopTimer();
 
             }
+            else if(tabControl1.SelectedTab == tabPageThongKeLed)
+            {
+                LoadFormThongKe2();
+                nguonTu1Den15.StopTimer();
+                NguonTu16Den30.StopTimer();
+                formTestLed.StopTimer();
+            }
         }
 
         private void Nguon_Load(object sender, EventArgs e)
@@ -343,8 +350,9 @@ namespace ManagementSoftware.GUI
                         DataGridViewRow row = dataGridView2.Rows[rowId];
 
                         row.Cells[0].Value = date;
-                        row.Cells[1].Value = i.LanTestThu;
-                        row.Cells[2].Value = i.ThoiGianTest;
+                        row.Cells[1].Value = i.LedName;
+                        row.Cells[2].Value = i.LanTestThu;
+                        row.Cells[3].Value = i.ThoiGianTest;
                         row.DefaultCellStyle.BackColor = Color.PaleGreen;
                     }
                    dataGridView2.Rows.Add();

@@ -145,6 +145,11 @@ namespace ManagementSoftware.PLCSetting
 
 
                     plcNguon.SaveData(list3);
+
+
+
+                    List<Models.LedModel.Led> listLed = await plcNguon.GetDataLED();
+                    plcNguon.SaveDataLed(listLed);
                     await plcNguon.Close();
                 }
 
@@ -262,7 +267,7 @@ namespace ManagementSoftware.PLCSetting
             {
                 if (await plcBepTu.Open())
                 {
-                    List<Models.BepTuModel.BepTu> list = await plcBepTu.GetData();
+                    List<Models.BepTuModel.BepTu> list = await plcBepTu.GetAllData();
 
                     plcBepTu.SaveData(list);
                     await plcBepTu.Close();

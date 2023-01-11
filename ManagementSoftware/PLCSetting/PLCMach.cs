@@ -45,7 +45,7 @@ namespace ManagementSoftware.PLCSetting
                 jig.LanTestThu = await this.ConvertUIntToUshort(lantestthu);
 
 
-                listMachNguon[i] = jig;
+                listMachNguon.Add(jig);
 
                 dienAp = dienAp + 4;
                 dongDien = dongDien + 4;
@@ -77,7 +77,7 @@ namespace ManagementSoftware.PLCSetting
                 jig.VanApCao = await this.ConvertUIntToUshort(vanapcao) == 0 ? false : true;
 
 
-                listJigMachTDS[i] = jig;
+                listJigMachTDS.Add(jig);
 
                 time = time + 4;
                 lantestthu = lantestthu + 2;

@@ -24,7 +24,7 @@ namespace ManagementSoftware.PLCSetting
             int dongDienAC = 0;
             int nhietDoPC = 40;
             int SoLanTest_ST_PC = 60;
-            int thoigian = 100;
+            int nhietdongatcb = 100;
 
             int cbNhiet = 120;
 
@@ -33,9 +33,9 @@ namespace ManagementSoftware.PLCSetting
             {
                 BauNong obj = new BauNong();
                 obj.DongDien = await this.ConvertRealToDouble(dongDienAC);
-                obj.NhietDo = await this.ConvertRealToDouble(nhietDoPC);
+                obj.NhietDo = Math.Round(Convert.ToDouble(await this.ConvertUIntToUshort(nhietDoPC)) / 10, 2, MidpointRounding.AwayFromZero);
                 obj.LanTestThu = await this.ConvertUIntToUshort(SoLanTest_ST_PC);
-                obj.ThoiGian = await this.ConvertUDIntToUInt(thoigian);
+                obj.NhietDoNgatCBNhiet = await this.ConvertUIntToUshort(nhietdongatcb);
                 obj.TrangThaiCBNhiet = await this.ConvertUIntToUshort(cbNhiet) == 0 ? false : true;
 
 
@@ -43,7 +43,7 @@ namespace ManagementSoftware.PLCSetting
                 dongDienAC += 4;
                 nhietDoPC += 2;
                 SoLanTest_ST_PC += 2;
-                thoigian += 4;
+                nhietdongatcb += 2;
                 cbNhiet += 2;
 
                 listBauNong.Add(obj);

@@ -16,7 +16,7 @@ namespace ManagementSoftware.PLCSetting
         
         }
        
-        public async Task<List<BepTu>> GetData()
+        public async Task<List<BepTu>> GetAllData()
         {
             List<BepTu> list = new List<BepTu>();
 

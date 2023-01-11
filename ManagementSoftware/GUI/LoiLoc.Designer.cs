@@ -1458,13 +1458,14 @@
             this.buttonSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonSearch.ForeColor = System.Drawing.Color.Black;
             this.buttonSearch.Image = ((System.Drawing.Image)(resources.GetObject("buttonSearch.Image")));
-            this.buttonSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonSearch.Location = new System.Drawing.Point(482, 0);
             this.buttonSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(105, 50);
             this.buttonSearch.TabIndex = 32;
             this.buttonSearch.Text = "Tìm kiếm";
+            this.buttonSearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonSearch.TextColor = System.Drawing.Color.Black;
             this.buttonSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonSearch.UseVisualStyleBackColor = false;

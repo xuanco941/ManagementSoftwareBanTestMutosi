@@ -17,6 +17,7 @@ namespace ManagementSoftware.Models.BauNongModel
         public double DongDien { get; set; }
         public double NhietDo { get; set; }
         public uint ThoiGian { get; set; }
+        public ushort NhietDoNgatCBNhiet { get; set; }
         public ushort LanTestThu { get; set; }
         public bool TrangThaiCBNhiet { get; set; }
         public int TestBauNongID { get; set; }
