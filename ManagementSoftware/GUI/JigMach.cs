@@ -35,6 +35,9 @@ namespace ManagementSoftware.GUI
         }
         private void JigMach_Load(object sender, EventArgs e)
         {
+            LoadDGV();
+            LoadDGV2();
+
             giamSatJigMachNguon.TopLevel = false;
             tabPageGiamSatJigNguon.Controls.Add(giamSatJigMachNguon);
             giamSatJigMachNguon.FormBorderStyle = FormBorderStyle.None;
@@ -47,9 +50,6 @@ namespace ManagementSoftware.GUI
             giamSatJigMachTDS.FormBorderStyle = FormBorderStyle.None;
             giamSatJigMachTDS.Dock = DockStyle.Fill;
             giamSatJigMachTDS.Show();
-
-            LoadDGV();
-            LoadDGV2();
 
         }
         void LoadDGV()

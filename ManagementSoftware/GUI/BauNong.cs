@@ -306,12 +306,13 @@ namespace ManagementSoftware.GUI
 
         private async void BauNong_Load(object sender, EventArgs e)
         {
+            LoadDGV();
+            LoadFormThongKe();
             if (await plc.Open() == true)
             {
                 timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
             }
-            LoadDGV();
-            LoadFormThongKe();
+
         }
     }
 }

@@ -197,6 +197,7 @@ namespace ManagementSoftware.GUI
         {
 
             LoadDGV();
+            LoadFormThongKe();
 
             if (await plc.Open() == true)
             {
@@ -204,7 +205,6 @@ namespace ManagementSoftware.GUI
             }
 
 
-            LoadFormThongKe();
 
         }
 

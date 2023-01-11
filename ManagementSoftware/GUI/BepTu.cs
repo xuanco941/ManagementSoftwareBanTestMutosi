@@ -172,11 +172,12 @@ namespace ManagementSoftware.GUI
         private async void BepTu_Load(object sender, EventArgs e)
         {
             LoadDGV();
+            LoadFormThongKe();
+
             if (await plc.Open() == true)
             {
                 timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
             }
-            LoadFormThongKe();
         }
 
         private async void BepTu_FormClosing(object sender, FormClosingEventArgs e)

@@ -156,6 +156,9 @@ namespace ManagementSoftware.GUI
         }
         private void CongTac_Load(object sender, EventArgs e)
         {
+            LoadDGV();
+            LoadFormThongKe();
+
             TemplateJigCongTac form10 = new TemplateJigCongTac(104,106,108,110,112,10,1070);
             AddCT(form10);
             TemplateJigCongTac form9 = new TemplateJigCongTac(94, 96, 98, 100, 102, 9,1030);
@@ -185,8 +188,7 @@ namespace ManagementSoftware.GUI
             AddCT(form1);
 
 
-            LoadDGV();
-            LoadFormThongKe();
+
 
         }
     }

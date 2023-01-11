@@ -234,6 +234,9 @@ namespace ManagementSoftware.GUI
 
         private void Nguon_Load(object sender, EventArgs e)
         {
+            LoadDGV();
+            LoadDGV2();
+
             nguonTu1Den15.TopLevel = false;
             tabPageGiamSat1.Controls.Add(nguonTu1Den15);
             nguonTu1Den15.FormBorderStyle = FormBorderStyle.None;
@@ -254,8 +257,7 @@ namespace ManagementSoftware.GUI
             formTestLed.Show();
 
 
-            LoadDGV();
-            LoadDGV2();
+
         }
 
 
