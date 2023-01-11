@@ -1,7 +1,6 @@
 ﻿using ManagementSoftware.DAL;
 using ManagementSoftware.DAL.DALPagination;
 using ManagementSoftware.GUI.Section;
-using ManagementSoftware.GUI.Section.ThongKe;
 using ManagementSoftware.Models.LoiLocModel;
 using ManagementSoftware.PLCSetting;
 using System.ComponentModel;

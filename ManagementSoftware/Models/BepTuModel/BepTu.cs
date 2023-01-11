@@ -14,11 +14,12 @@ namespace ManagementSoftware.Models.BepTuModel
         [Key]
         public int BepTuID { get; set; }
         public string BepTuName { get; set; } = "";
-        public double DongAC { get; set; }
-        public double ApAC { get; set; }
-        public double CongSuatAC { get; set; }
+        public double DienAp { get; set; }
+        public double DongDien { get; set; }
+        public double CongSuat { get; set; }
         public double NhietDo { get; set; }
-        public double ThoiGianSoi { get; set; }
+        public double CongSuatTieuThu { get; set; }
+        public bool TrangThai { get; set; }
         public int LanTestThu { get; set; }
         public int TestBepTuID { get; set; }
         public TestBepTu TestBepTu { get; set; }

@@ -2,7 +2,6 @@
 using ManagementSoftware.DAL.DALPagination;
 using ManagementSoftware.GUI.NguonManagement;
 using ManagementSoftware.GUI.Section;
-using ManagementSoftware.GUI.Section.ThongKe;
 using ManagementSoftware.Models;
 using ManagementSoftware.PLCSetting;
 using Syncfusion.XPS;

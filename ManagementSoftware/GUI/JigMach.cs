@@ -3,7 +3,6 @@ using ManagementSoftware.DAL.DALPagination;
 using ManagementSoftware.GUI.JigMachManagement;
 using ManagementSoftware.GUI.NguonManagement;
 using ManagementSoftware.GUI.Section;
-using ManagementSoftware.GUI.Section.ThongKe;
 using ManagementSoftware.Models;
 using ManagementSoftware.Models.JigMachModel;
 using Syncfusion.XPS;

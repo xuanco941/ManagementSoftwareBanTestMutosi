@@ -24,6 +24,10 @@ namespace ManagementSoftware.DAL.DALPagination
 
             if (start != null && end != null)
             {
+                if (end.HasValue)
+                {
+                    end = end.Value.AddDays(1);
+                }
                 this.ListResults = dbContext.LoiLocs.OrderByDescending(t => t.LoiLocID)
                 .Where(a => start <= a.CreateAt && end >= a.CreateAt)
                 .Skip(position)

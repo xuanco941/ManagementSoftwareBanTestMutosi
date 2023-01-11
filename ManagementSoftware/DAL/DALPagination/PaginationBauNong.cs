@@ -23,6 +23,10 @@ namespace ManagementSoftware.DAL.DALPagination
 
             if (start != null && end != null)
             {
+                if (end.HasValue)
+                {
+                    end = end.Value.AddDays(1);
+                }
                 ListResults = dbContext.TestBauNongs.OrderByDescending(t => t.TestBauNongID)
                 .Where(a => start <= a.CreateAt && end >= a.CreateAt)
                 .Skip(position)

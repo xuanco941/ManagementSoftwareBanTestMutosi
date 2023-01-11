@@ -85,9 +85,6 @@
     <Compile Update="GUI\Nguon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\Section\ThongKe\ItemThongKeBepTu.cs">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>
