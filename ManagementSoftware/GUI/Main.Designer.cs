@@ -122,12 +122,12 @@ namespace ManagementSoftware.GUI
             this.buttonSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSetting.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonSetting.ForeColor = System.Drawing.Color.White;
-            this.buttonSetting.Image = global::ManagementSoftware.Properties.Resources.setting_24;
+            this.buttonSetting.Image = ((System.Drawing.Image)(resources.GetObject("buttonSetting.Image")));
             this.buttonSetting.Location = new System.Drawing.Point(0, 632);
             this.buttonSetting.Name = "buttonSetting";
             this.buttonSetting.Size = new System.Drawing.Size(192, 79);
             this.buttonSetting.TabIndex = 11;
-            this.buttonSetting.Text = "Cài đặt";
+            this.buttonSetting.Text = "Kết nối";
             this.buttonSetting.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonSetting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.buttonSetting.UseVisualStyleBackColor = true;

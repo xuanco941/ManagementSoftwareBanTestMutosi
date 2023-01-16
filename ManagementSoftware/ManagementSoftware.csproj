@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
@@ -35,6 +36,9 @@
 </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="Interop.ActUtlTypeLib">
+      <HintPath>Interop.ActUtlTypeLib.dll</HintPath>
+    </Reference>
     <Reference Include="Syncfusion.Chart.Base">
       <HintPath>..\..\..\..\..\..\..\Syncfusion\Ensential Studio\Windows\20.2.0.36\precompiledassemblies\net5.0\Syncfusion.Chart.Base.dll</HintPath>
     </Reference>

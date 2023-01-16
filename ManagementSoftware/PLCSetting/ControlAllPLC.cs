@@ -43,7 +43,7 @@ namespace ManagementSoftware.PLCSetting
 
 
 
-        int TIME_INTERVAL_SAVE = 10000;
+        int TIME_INTERVAL_SAVE = 9000;
 
 
         System.Threading.Timer timerBauNong;
@@ -288,12 +288,12 @@ namespace ManagementSoftware.PLCSetting
 
         public void ConnectAndRunSaveAll()
         {
-            timerBauNong = new System.Threading.Timer(CallbackBauNong, null, 2000, 2000);
-            timerBepTu = new System.Threading.Timer(CallbackBepTu, null, 2000, 2000);
-            timerCongTac = new System.Threading.Timer(CallbackCongTac, null, 2000, 2000);
-            timerLoiLoc = new System.Threading.Timer(CallbackLoiLoc, null, 2000, 2000);
-            timerMach = new System.Threading.Timer(CallbackMach, null, 2000, 2000);
-            timerNguon = new System.Threading.Timer(CallbackNguon, null, 2000, 2000);
+            timerBauNong = new System.Threading.Timer(CallbackBauNong, null, 9000, 9000);
+            timerBepTu = new System.Threading.Timer(CallbackBepTu, null, 9000, 9000);
+            timerCongTac = new System.Threading.Timer(CallbackCongTac, null, 9000, 9000);
+            timerLoiLoc = new System.Threading.Timer(CallbackLoiLoc, null, 9000, 9000);
+            timerMach = new System.Threading.Timer(CallbackMach, null, 9000, 9000);
+            timerNguon = new System.Threading.Timer(CallbackNguon, null, 9000, 9000);
 
         }
     }

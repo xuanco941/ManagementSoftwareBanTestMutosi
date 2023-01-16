@@ -26,17 +26,26 @@ namespace ManagementSoftware
             string text = File.ReadAllText(path);
             Common.ConnectionString = text;
 
-            if(new DataBaseContext().CreateDatabase() == false)
+            if (new DataBaseContext().CreateDatabase() == false)
             {
-                MessageBox.Show("Lỗi khởi tạo cơ sở dữ liệu, hãy thử xem lại đường dẫn kết nối của bạn.", "Lỗi kết nối",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi khởi tạo cơ sở dữ liệu, hãy thử xem lại đường dẫn kết nối của bạn.", "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            new ControlAllPLC().ConnectAndRunSaveAll();
 
             Application.Run(new Login());
 
             if (Common.USERSESSION != null)
             {
+
+                bool checkStartPC = new CheckStartPC().Start();
+
+                if (checkStartPC == false)
+                {
+                    MessageBox.Show("Lỗi kết nối PC - PLC Mitsubisi.", "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                new ControlAllPLC().ConnectAndRunSaveAll();
+
                 Application.Run(new Main());
             }
         }
