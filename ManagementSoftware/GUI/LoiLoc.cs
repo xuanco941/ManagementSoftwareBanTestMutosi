@@ -101,7 +101,10 @@ namespace ManagementSoftware.GUI
 
         public void StartTimer2()
         {
-            timer2 = new System.Threading.Timer(Callback2, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+            if (timer2 == null)
+            {
+                timer2 = new System.Threading.Timer(Callback2, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+            }
         }
 
         public void StopTimer2()
@@ -311,8 +314,10 @@ namespace ManagementSoftware.GUI
 
         public async void StartTimer1()
         {
-
-            timer = new System.Threading.Timer(Callback1, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+            if (timer == null && await plc.Open())
+            {
+                timer = new System.Threading.Timer(Callback1, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+            }
         }
 
         public async void StopTimer1()
@@ -323,26 +328,23 @@ namespace ManagementSoftware.GUI
                 timer.Dispose();
                 timer = null;
             }
+            await plc.Close();
         }
 
 
-        private async void LoiLoc_FormClosing(object sender, FormClosingEventArgs e)
+        private void LoiLoc_FormClosing(object sender, FormClosingEventArgs e)
         {
             StopTimer1();
             StopTimer2();
-            await plc.Close();
 
         }
 
-        private async void LoiLoc_Load(object sender, EventArgs e)
+        private void LoiLoc_Load(object sender, EventArgs e)
         {
-            await plc.Open();
-
             LoadDGV();
             LoadFormThongKe();
 
             StartTimer1();
-
 
         }
 

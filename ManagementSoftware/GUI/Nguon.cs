@@ -208,7 +208,8 @@ namespace ManagementSoftware.GUI
 
             LoadDGV();
             LoadDGV2();
-
+            LoadFormThongKe();
+            LoadFormThongKe2();
 
 
         }
@@ -223,7 +224,10 @@ namespace ManagementSoftware.GUI
 
         public void StartTimer1()
         {
-            timer1 = new System.Threading.Timer(Callback1, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+            if(timer1 == null)
+            {
+                timer1 = new System.Threading.Timer(Callback1, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+            }
         }
 
         public void StopTimer1()
@@ -417,7 +421,10 @@ namespace ManagementSoftware.GUI
 
         public void StartTimer2()
         {
-            timer2 = new System.Threading.Timer(Callback2, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+            if(timer2 == null)
+            {
+                timer2 = new System.Threading.Timer(Callback2, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+            }
         }
 
         public void StopTimer2()
