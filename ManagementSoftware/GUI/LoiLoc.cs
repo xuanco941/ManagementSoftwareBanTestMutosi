@@ -1,5 +1,6 @@
 ﻿using ManagementSoftware.DAL;
 using ManagementSoftware.DAL.DALPagination;
+using ManagementSoftware.GUI.NguonManagement;
 using ManagementSoftware.GUI.Section;
 using ManagementSoftware.Models.LoiLocModel;
 using ManagementSoftware.PLCSetting;
@@ -95,8 +96,122 @@ namespace ManagementSoftware.GUI
 
         }
 
+
+
+
+        public void StartTimer2()
+        {
+            timer2 = new System.Threading.Timer(Callback2, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+        }
+
+        public void StopTimer2()
+        {
+            if (timer2 != null)
+            {
+                this.timer2.Change(Timeout.Infinite, Timeout.Infinite);
+                timer2.Dispose();
+                timer2 = null;
+            }
+        }
+
+        private async void Callback2(Object state)
+        {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
+
+            PaginationLoiLoc pagination = new PaginationLoiLoc();
+            pagination.Set(page, timeStart, timeEnd);
+
+            // Nếu có dữ liệu mới và khác với dữ liệu cũ
+            if (pagination.ListResults != null && pagination.ListResults.Count > 0
+                && (!this.ListResults?.SequenceEqual(pagination.ListResults) ?? true))
+            {
+                this.ListResults = new List<Models.LoiLocModel.LoiLoc>(pagination.ListResults);
+                this.TotalPages = pagination.TotalPages;
+                UpdateData2(pagination.ListResults);
+            }
+
+            if (timer2 != null)
+            {
+                timer2.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+            }
+        }
+
+
+
+
+        private void UpdateData2(List<Models.LoiLocModel.LoiLoc> list)
+        {
+
+            if (IsHandleCreated && InvokeRequired)
+            {
+                BeginInvoke(new Action<List<Models.LoiLocModel.LoiLoc>>(UpdateData2), list);
+                return;
+            }
+
+
+            //update gui
+            dataGridView1.Rows.Clear();
+            lbTotalPages.Text = this.TotalPages.ToString();
+
+            buttonPreviousPage.Enabled = this.page > 1;
+            buttonNextPage.Enabled = this.page < this.TotalPages;
+            buttonPage.Text = this.page.ToString();
+
+            pageNumberGoto.MinValue = 1;
+            pageNumberGoto.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1;
+
+
+
+
+
+
+            bool checkColor = false;
+            foreach (var item in list)
+            {
+                string date = item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+
+                int rowId = dataGridView1.Rows.Add();
+                DataGridViewRow row = dataGridView1.Rows[rowId];
+
+                row.Cells[0].Value = date;
+                row.Cells[1].Value = item.LoiLocName;
+                row.Cells[2].Value = item.SoLanTest;
+                row.Cells[3].Value = item.ApSuatTest;
+                row.Cells[4].Value = item.ThoiGianNen;
+                row.Cells[5].Value = item.ThoiGianGiu;
+                row.Cells[6].Value = item.ThoiGianXa;
+                if (checkColor == true)
+                {
+                    row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                }
+                checkColor = !checkColor;
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         private void LoadFormThongKe()
         {
+            StopTimer2();
             panel2.Enabled = false;
 
             dataGridView1.Rows.Clear();
@@ -121,7 +236,7 @@ namespace ManagementSoftware.GUI
             bool checkColor = false;
             foreach (var item in this.ListResults)
             {
-                string date = item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                string date = item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
 
                 int rowId = dataGridView1.Rows.Add();
                 DataGridViewRow row = dataGridView1.Rows[rowId];
@@ -133,7 +248,7 @@ namespace ManagementSoftware.GUI
                 row.Cells[4].Value = item.ThoiGianNen;
                 row.Cells[5].Value = item.ThoiGianGiu;
                 row.Cells[6].Value = item.ThoiGianXa;
-                if(checkColor == true)
+                if (checkColor == true)
                 {
                     row.DefaultCellStyle.BackColor = Color.PaleGreen;
                 }
@@ -142,7 +257,17 @@ namespace ManagementSoftware.GUI
             }
 
             panel2.Enabled = true;
+            StartTimer2();
         }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -167,7 +292,9 @@ namespace ManagementSoftware.GUI
 
         PLCLoiLoc plc;
 
-        System.Threading.Timer timer;
+        System.Threading.Timer? timer = null;
+        System.Threading.Timer? timer2 = null;
+
         int TIME_INTERVAL_IN_MILLISECONDS = 0;
 
 
@@ -182,8 +309,13 @@ namespace ManagementSoftware.GUI
         }
 
 
+        public async void StartTimer1()
+        {
 
-        private async void LoiLoc_FormClosing(object sender, FormClosingEventArgs e)
+            timer = new System.Threading.Timer(Callback1, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+        }
+
+        public async void StopTimer1()
         {
             if (timer != null)
             {
@@ -191,28 +323,32 @@ namespace ManagementSoftware.GUI
                 timer.Dispose();
                 timer = null;
             }
+        }
+
+
+        private async void LoiLoc_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            StopTimer1();
+            StopTimer2();
             await plc.Close();
 
         }
 
         private async void LoiLoc_Load(object sender, EventArgs e)
         {
+            await plc.Open();
 
             LoadDGV();
             LoadFormThongKe();
 
-            if (await plc.Open() == true)
-            {
-                timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
-            }
-
+            StartTimer1();
 
 
         }
 
 
 
-        private async void Callback(Object state)
+        private async void Callback1(Object state)
         {
             Stopwatch watch = new Stopwatch();
 
@@ -286,8 +422,19 @@ namespace ManagementSoftware.GUI
             }
         }
 
+        private void tabControl1_Selected(object sender, TabControlEventArgs e)
+        {
+            if (tabControl1.SelectedTab == tabPageGiamSat)
+            {
+                this.StartTimer1();
+                this.StopTimer2();
 
-
-
+            }
+            else if (tabControl1.SelectedTab == tabPageThongKe)
+            {
+                this.StartTimer2();
+                this.StopTimer1();
+            }
+        }
     }
 }

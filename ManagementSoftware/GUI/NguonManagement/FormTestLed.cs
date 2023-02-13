@@ -16,7 +16,7 @@ namespace ManagementSoftware.GUI.NguonManagement
     {
         PLCNguon plc;
 
-        System.Threading.Timer timer;
+        System.Threading.Timer? timer = null;
         int TIME_INTERVAL_IN_MILLISECONDS = 0;
         public FormTestLed()
         {
@@ -78,12 +78,12 @@ namespace ManagementSoftware.GUI.NguonManagement
                 timer.Dispose();
                 timer = null;
             }
+            await plc.Close();
         }
 
-        private async void FormTestLed_FormClosing(object sender, FormClosingEventArgs e)
+        private void FormTestLed_FormClosing(object sender, FormClosingEventArgs e)
         {
             StopTimer();
-            await plc.Close();
 
         }
 

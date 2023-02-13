@@ -187,7 +187,7 @@
             this.buttonCustomNguon.Name = "buttonCustomNguon";
             this.buttonCustomNguon.Size = new System.Drawing.Size(187, 57);
             this.buttonCustomNguon.TabIndex = 80;
-            this.buttonCustomNguon.Text = "Không có kết nối";
+            this.buttonCustomNguon.Text = "Đang kết nối . . .";
             this.buttonCustomNguon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCustomNguon.TextColor = System.Drawing.Color.White;
             this.buttonCustomNguon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -260,7 +260,7 @@
             this.buttonCustomLoiLoc.Name = "buttonCustomLoiLoc";
             this.buttonCustomLoiLoc.Size = new System.Drawing.Size(187, 54);
             this.buttonCustomLoiLoc.TabIndex = 80;
-            this.buttonCustomLoiLoc.Text = "Không có kết nối";
+            this.buttonCustomLoiLoc.Text = "Đang kết nối . . .";
             this.buttonCustomLoiLoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCustomLoiLoc.TextColor = System.Drawing.Color.White;
             this.buttonCustomLoiLoc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -333,7 +333,7 @@
             this.buttonCustomJigMach.Name = "buttonCustomJigMach";
             this.buttonCustomJigMach.Size = new System.Drawing.Size(187, 54);
             this.buttonCustomJigMach.TabIndex = 80;
-            this.buttonCustomJigMach.Text = "Không có kết nối";
+            this.buttonCustomJigMach.Text = "Đang kết nối . . .";
             this.buttonCustomJigMach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCustomJigMach.TextColor = System.Drawing.Color.White;
             this.buttonCustomJigMach.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -406,7 +406,7 @@
             this.buttonCustomCongTac.Name = "buttonCustomCongTac";
             this.buttonCustomCongTac.Size = new System.Drawing.Size(187, 54);
             this.buttonCustomCongTac.TabIndex = 80;
-            this.buttonCustomCongTac.Text = "Không có kết nối";
+            this.buttonCustomCongTac.Text = "Đang kết nối . . .";
             this.buttonCustomCongTac.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCustomCongTac.TextColor = System.Drawing.Color.White;
             this.buttonCustomCongTac.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -479,7 +479,7 @@
             this.buttonCustomBepTu.Name = "buttonCustomBepTu";
             this.buttonCustomBepTu.Size = new System.Drawing.Size(187, 54);
             this.buttonCustomBepTu.TabIndex = 80;
-            this.buttonCustomBepTu.Text = "Không có kết nối";
+            this.buttonCustomBepTu.Text = "Đang kết nối . . .";
             this.buttonCustomBepTu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCustomBepTu.TextColor = System.Drawing.Color.White;
             this.buttonCustomBepTu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -591,7 +591,7 @@
             this.buttonConnectBauNong.Name = "buttonConnectBauNong";
             this.buttonConnectBauNong.Size = new System.Drawing.Size(187, 54);
             this.buttonConnectBauNong.TabIndex = 79;
-            this.buttonConnectBauNong.Text = "Không có kết nối";
+            this.buttonConnectBauNong.Text = "Đang kết nối . . .";
             this.buttonConnectBauNong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonConnectBauNong.TextColor = System.Drawing.Color.White;
             this.buttonConnectBauNong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

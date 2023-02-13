@@ -293,7 +293,7 @@ namespace ManagementSoftware.GUI
 
                 if (l != null && l.Count > 0)
                 {
-                    string date = item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    string date = item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
                     foreach (var i in l)
                     {
                         int rowId = dataGridView1.Rows.Add();
@@ -306,9 +306,19 @@ namespace ManagementSoftware.GUI
                         row.Cells[4].Value = i.DongDC;
                         row.Cells[5].Value = i.CongSuat;
                         row.Cells[6].Value = i.ThoiGianTest;
-                        if (i.isError)
+                        if (i.isErrorDong || i.isErrorAp)
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
+                            if (i.isErrorDong)
+                            {
+                                row.Cells[4].Style.BackColor = Color.Red;
+                                row.Cells[4].Style.ForeColor = Color.White;
+                            }
+                            if (i.isErrorAp)
+                            {
+                                row.Cells[3].Style.BackColor = Color.Red;
+                                row.Cells[3].Style.ForeColor = Color.White;
+                            }
                         }
                         else
                         {
@@ -477,7 +487,7 @@ namespace ManagementSoftware.GUI
 
                 if (l != null && l.Count > 0)
                 {
-                    string date = item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    string date = item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
                     foreach (var i in l)
                     {
                         int rowId = dataGridView2.Rows.Add();
@@ -553,7 +563,7 @@ namespace ManagementSoftware.GUI
 
                 if (l != null && l.Count > 0)
                 {
-                    string date = "ID" + item.TestNguonID + " - " + item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    string date = item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
                     foreach (var i in l)
                     {
                         int rowId = dataGridView1.Rows.Add();
@@ -566,7 +576,24 @@ namespace ManagementSoftware.GUI
                         row.Cells[4].Value = i.DongDC;
                         row.Cells[5].Value = i.CongSuat;
                         row.Cells[6].Value = i.ThoiGianTest;
-                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        if (i.isErrorDong || i.isErrorAp)
+                        {
+                            row.DefaultCellStyle.BackColor = Color.Crimson;
+                            if (i.isErrorDong)
+                            {
+                                row.Cells[4].Style.BackColor = Color.Red;
+                                row.Cells[4].Style.ForeColor = Color.White;
+                            }
+                            if (i.isErrorAp)
+                            {
+                                row.Cells[3].Style.BackColor = Color.Red;
+                                row.Cells[3].Style.ForeColor = Color.White;
+                            }
+                        }
+                        else
+                        {
+                            row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        }
                     }
                     dataGridView1.Rows.Add();
                 }
@@ -617,7 +644,7 @@ namespace ManagementSoftware.GUI
 
                 if (l != null && l.Count > 0)
                 {
-                    string date = "ID" + item.TestLedID + " - " + item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    string date = item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
                     foreach (var i in l)
                     {
                         int rowId = dataGridView2.Rows.Add();

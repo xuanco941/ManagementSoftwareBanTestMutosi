@@ -43,6 +43,7 @@ namespace ManagementSoftware.GUI
             }
             else
             {
+                buttonConnectBauNong.Text = "Kết nối thất bại";
                 labelBauNong.Text = "Chưa thể kết nối tới " + plcBauNong.plcName;
             }
         }
@@ -57,6 +58,7 @@ namespace ManagementSoftware.GUI
             }
             else
             {
+                buttonCustomBepTu.Text = "Kết nối thất bại";
                 labelBepTu.Text = "Chưa thể kết nối tới " + plcBepTu.plcName;
             }
         }
@@ -71,6 +73,7 @@ namespace ManagementSoftware.GUI
             }
             else
             {
+                buttonCustomCongTac.Text = "Kết nối thất bại";
                 labelCongTac.Text = "Chưa thể kết nối tới " + plcCongTac.plcName;
             }
         }
@@ -86,6 +89,8 @@ namespace ManagementSoftware.GUI
             }
             else
             {
+                buttonCustomLoiLoc.Text = "Kết nối thất bại";
+
                 labelLoiLoc.Text = "Chưa thể kết nối tới " + plcLoiLoc.plcName;
             }
         }
@@ -100,6 +105,7 @@ namespace ManagementSoftware.GUI
             }
             else
             {
+                buttonCustomJigMach.Text = "Kết nối thất bại";
                 labelJigMach.Text = "Chưa thể kết nối tới " + plcMach.plcName;
             }
         }
@@ -114,6 +120,7 @@ namespace ManagementSoftware.GUI
             }
             else
             {
+                buttonCustomNguon.Text = "Kết nối thất bại";
                 labelNguon.Text = "Chưa thể kết nối tới " + plcNguon.plcName;
             }
         }

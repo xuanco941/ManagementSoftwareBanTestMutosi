@@ -16,13 +16,15 @@ namespace ManagementSoftware.PLCSetting
         public async Task<List<Nguon>> GetDataNguon()
         {
 
-            List<Nguon> listNguonTu1Den15 = new List<Nguon>();
+            List<Nguon> listNguon = new List<Nguon>();
 
             int dienApCSAddr = 0;
             int dongDienCSAddr = 120;
             int congSuatCSAddr = 240;
             int timeAddr = 360;
             int soLanTestAddr = 480;
+            int errDong = 540;
+            int errAp = 600;
 
             for (int i = 0; i < 30; i++)
             {
@@ -32,18 +34,23 @@ namespace ManagementSoftware.PLCSetting
                 nguon.CongSuat = await this.ConvertRealToDouble(congSuatCSAddr);
                 nguon.ThoiGianTest = await this.ConvertUDIntToUInt(timeAddr);
                 nguon.LanTestThu = await this.ConvertUIntToUshort(soLanTestAddr);
+                nguon.isErrorDong = await this.ConvertUIntToUshort(errDong) == 0 ? false : true;
+                nguon.isErrorAp = await this.ConvertUIntToUshort(errAp) == 0 ? false : true;
+
                 nguon.NguonName = "Nguồn " + (i + 1);
 
-                listNguonTu1Den15.Add(nguon);
+                listNguon.Add(nguon);
 
                 dienApCSAddr += 4;
                 dongDienCSAddr += 4;
                 congSuatCSAddr += 4;
                 timeAddr += 4;
                 soLanTestAddr += 2;
+                errDong += 2;
+                errAp += 2;
             }
 
-            return listNguonTu1Den15;
+            return listNguon;
         }
 
 

@@ -23,7 +23,7 @@ namespace ManagementSoftware.GUI.NguonManagement
 
         PLCNguon plc;
 
-        System.Threading.Timer timer;
+        System.Threading.Timer? timer = null;
         int TIME_INTERVAL_IN_MILLISECONDS = 0;
 
         public FormTestNguon()
@@ -36,7 +36,7 @@ namespace ManagementSoftware.GUI.NguonManagement
 
         public async void StartTimer()
         {
-            if (await plc.Open() == true)
+            if(await plc.Open() == true)
             {
                 timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
             }
@@ -103,12 +103,35 @@ namespace ManagementSoftware.GUI.NguonManagement
             for (int i = 0; i < list.Count; i++)
             {
                 dataGridView1.Rows[i].Cells[0].Value = list[i].NguonName;
-                dataGridView1.Rows[i].Cells[1].Value = String.Format("{0:0.00}", list[i].DongDC) ;
+                dataGridView1.Rows[i].Cells[1].Value = String.Format("{0:0.00}", list[i].DongDC);
                 dataGridView1.Rows[i].Cells[2].Value = String.Format("{0:0.00}", list[i].DienApDC);
                 dataGridView1.Rows[i].Cells[3].Value = String.Format("{0:0.00}", list[i].CongSuat);
                 dataGridView1.Rows[i].Cells[4].Value = list[i].ThoiGianTest;
                 dataGridView1.Rows[i].Cells[5].Value = list[i].LanTestThu;
-
+                if (list[i].isErrorDong || list[i].isErrorAp)
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Crimson;
+                    if (list[i].isErrorDong)
+                    {
+                        dataGridView1.Rows[i].Cells[1].Style.BackColor = Color.Red;
+                    }
+                    else
+                    {
+                        dataGridView1.Rows[i].Cells[1].Style.BackColor = Color.FromArgb(41, 44, 51);
+                    }
+                    if (list[i].isErrorAp)
+                    {
+                        dataGridView1.Rows[i].Cells[2].Style.BackColor = Color.Red;
+                    }
+                    else
+                    {
+                        dataGridView1.Rows[i].Cells[2].Style.BackColor = Color.FromArgb(41, 44, 51);
+                    }
+                }
+                else
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
+                }
             }
 
 
@@ -118,7 +141,7 @@ namespace ManagementSoftware.GUI.NguonManagement
         private void FormTestNguon_Load(object sender, EventArgs e)
         {
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Nguồn", SortMode = DataGridViewColumnSortMode.NotSortable });
-            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() {HeaderText="Dòng DC (A)", SortMode = DataGridViewColumnSortMode.NotSortable });
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Dòng DC (A)", SortMode = DataGridViewColumnSortMode.NotSortable });
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Điện áp DC (V)", SortMode = DataGridViewColumnSortMode.NotSortable });
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Công suất (W)", SortMode = DataGridViewColumnSortMode.NotSortable });
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Thời gian test (giây)", SortMode = DataGridViewColumnSortMode.NotSortable });
@@ -137,13 +160,13 @@ namespace ManagementSoftware.GUI.NguonManagement
             dataGridView1.RowTemplate.Height = 40;
             dataGridView1.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.DefaultCellStyle.ForeColor = Color.White;
-            dataGridView1.DefaultCellStyle.Font = new Font("Segoe UI",12,FontStyle.Regular);
+            dataGridView1.DefaultCellStyle.Font = new Font("Segoe UI", 12, FontStyle.Regular);
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersVisible = false;
 
-            
+
 
 
 
@@ -151,9 +174,10 @@ namespace ManagementSoftware.GUI.NguonManagement
             for (int i = 0; i < 30; i++)
             {
                 int id = dataGridView1.Rows.Add();
-               dataGridView1.Rows[id].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
+                dataGridView1.Rows[id].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
 
             }
+            
 
 
 
