@@ -17,7 +17,7 @@ namespace ManagementSoftware.GUI.NguonManagement
         PLCNguon plc;
 
         System.Threading.Timer timer;
-        int TIME_INTERVAL_IN_MILLISECONDS = 1000;
+        int TIME_INTERVAL_IN_MILLISECONDS = 0;
         public FormTestLed()
         {
             InitializeComponent();
@@ -26,6 +26,40 @@ namespace ManagementSoftware.GUI.NguonManagement
 
         private void FormTestLed_Load(object sender, EventArgs e)
         {
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "LED", SortMode = DataGridViewColumnSortMode.NotSortable });
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Thời gian (giây)", SortMode = DataGridViewColumnSortMode.NotSortable });
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Lần test thứ", SortMode = DataGridViewColumnSortMode.NotSortable });
+
+
+
+
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.DarkOrange;
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 13, FontStyle.Bold);
+
+
+            dataGridView1.RowTemplate.Height = 40;
+            dataGridView1.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.DefaultCellStyle.ForeColor = Color.White;
+            dataGridView1.DefaultCellStyle.Font = new Font("Segoe UI", 12, FontStyle.Regular);
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersVisible = false;
+
+
+
+
+
+
+            for (int i = 0; i < 30; i++)
+            {
+                int id = dataGridView1.Rows.Add();
+                dataGridView1.Rows[id].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
+
+            }
         }
 
         public async void StartTimer()
@@ -41,13 +75,15 @@ namespace ManagementSoftware.GUI.NguonManagement
             if (timer != null)
             {
                 this.timer.Change(Timeout.Infinite, Timeout.Infinite);
+                timer.Dispose();
+                timer = null;
             }
-            await plc.Close();
         }
 
-        private void FormTestLed_FormClosing(object sender, FormClosingEventArgs e)
+        private async void FormTestLed_FormClosing(object sender, FormClosingEventArgs e)
         {
             StopTimer();
+            await plc.Close();
 
         }
 
@@ -64,27 +100,15 @@ namespace ManagementSoftware.GUI.NguonManagement
             List<Models.LedModel.Led> list = await plc.GetDataLED();
             if (list != null && list.Count > 0)
             {
-                UpdateData(list.ToList());
+                UpdateData(list);
             }
 
 
-            timer.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+            if (timer != null)
+            {
+                timer.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+            }
         }
-
-
-        private void SetTextNguon(Button time, Button soLanTest, Models.LedModel.Led e)
-        {
-
-            time.Text = e.ThoiGianTest.ToString();
-
-            soLanTest.Text = e.LanTestThu.ToString();
-
-        }
-
-
-
-
-
 
 
 
@@ -102,165 +126,19 @@ namespace ManagementSoftware.GUI.NguonManagement
             //update gui
 
 
-
-
-            foreach (Models.LedModel.Led e in list)
+            for (int i = 0; i < list.Count; i++)
             {
-                if (e.LedName == TenThietBi.Nguon1)
-                {
-                    SetTextNguon(ThoiGian1, LanTest1, e);
 
-                }
-                else if (e.LedName == TenThietBi.Nguon2)
-                {
-                    SetTextNguon(ThoiGian2, LanTest2, e);
+                dataGridView1.Rows[i].Cells[0].Value = list[i].LedName;
+                dataGridView1.Rows[i].Cells[1].Value = list[i].ThoiGianTest;
+                dataGridView1.Rows[i].Cells[2].Value = list[i].LanTestThu;
 
-                }
-                else if (e.LedName == TenThietBi.Nguon3)
-                {
-
-                    SetTextNguon(ThoiGian3, LanTest3, e);
-
-
-                }
-                else if (e.LedName == TenThietBi.Nguon4)
-                {
-
-                    SetTextNguon(ThoiGian4, LanTest4, e);
-
-
-                }
-                else if (e.LedName == TenThietBi.Nguon5)
-                {
-
-                    SetTextNguon(ThoiGian5, LanTest5, e);
-
-
-                }
-                else if (e.LedName == TenThietBi.Nguon6)
-                {
-
-                    SetTextNguon(ThoiGian6, LanTest6, e);
-
-
-                }
-                else if (e.LedName == TenThietBi.Nguon7)
-                {
-
-                    SetTextNguon(ThoiGian7, LanTest7, e);
-
-
-                }
-                else if (e.LedName == TenThietBi.Nguon8)
-                {
-                    SetTextNguon(ThoiGian8, LanTest8, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon9)
-                {
-                    SetTextNguon(ThoiGian9, LanTest9, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon10)
-                {
-                    SetTextNguon(ThoiGian10, LanTest10, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon11)
-                {
-
-                    SetTextNguon(ThoiGian11, LanTest11, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon12)
-                {
-                    SetTextNguon(ThoiGian12, LanTest12, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon13)
-                {
-                    SetTextNguon(ThoiGian13, LanTest13, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon14)
-                {
-                    SetTextNguon(ThoiGian14, LanTest14, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon15)
-                {
-
-                    SetTextNguon(ThoiGian15, LanTest15, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon16)
-                {
-
-                    SetTextNguon(ThoiGian16, LanTest16, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon17)
-                {
-
-                    SetTextNguon(ThoiGian17, LanTest17, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon18)
-                {
-
-                    SetTextNguon(ThoiGian18, LanTest18, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon19)
-                {
-
-                    SetTextNguon(ThoiGian19, LanTest19, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon20)
-                {
-
-                    SetTextNguon(ThoiGian20, LanTest20, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon21)
-                {
-
-                    SetTextNguon(ThoiGian21, LanTest21, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon22)
-                {
-
-                    SetTextNguon(ThoiGian22, LanTest22, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon23)
-                {
-
-                    SetTextNguon(ThoiGian23, LanTest23, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon24)
-                {
-
-                    SetTextNguon(ThoiGian24, LanTest24, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon25)
-                {
-
-                    SetTextNguon(ThoiGian25, LanTest25, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon26)
-                {
-
-                    SetTextNguon(ThoiGian26, LanTest26, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon27)
-                {
-
-                    SetTextNguon(ThoiGian27, LanTest27, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon28)
-                {
-
-                    SetTextNguon(ThoiGian28, LanTest28, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon29)
-                {
-
-                    SetTextNguon(ThoiGian29, LanTest29, e);
-                }
-                else if (e.LedName == TenThietBi.Nguon30)
-                {
-
-                    SetTextNguon(ThoiGian30, LanTest30, e);
-                }
             }
+
+
+
+
+
 
         }
     }

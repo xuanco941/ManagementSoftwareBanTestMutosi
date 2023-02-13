@@ -106,7 +106,7 @@ namespace ManagementSoftware.GUI
 
                 if (l != null && l.Count > 0)
                 {
-                    string date = "ID" + item.TestBepTuID + " - " + item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    string date = item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
                     foreach (var i in l)
                     {
                         int rowId = dataGridView1.Rows.Add();
@@ -185,6 +185,8 @@ namespace ManagementSoftware.GUI
             if (timer != null)
             {
                 this.timer.Change(Timeout.Infinite, Timeout.Infinite);
+                timer.Dispose();
+                timer = null;
             }
             await plc.Close();
         }
@@ -199,7 +201,7 @@ namespace ManagementSoftware.GUI
         PLCBepTu plc;
 
         System.Threading.Timer timer;
-        int TIME_INTERVAL_IN_MILLISECONDS = 800;
+        int TIME_INTERVAL_IN_MILLISECONDS = 0;
 
 
 
@@ -222,7 +224,10 @@ namespace ManagementSoftware.GUI
             }
 
 
-            timer.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+            if (timer != null)
+            {
+                timer.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+            }
         }
 
 

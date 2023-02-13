@@ -21,6 +21,7 @@ namespace ManagementSoftware.Models.BepTuModel
         public double CongSuatTieuThu { get; set; }
         public bool TrangThai { get; set; }
         public int LanTestThu { get; set; }
+        public bool isError { get; set; }
         public int TestBepTuID { get; set; }
         public TestBepTu TestBepTu { get; set; }
     }

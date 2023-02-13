@@ -1,6 +1,6 @@
 ﻿namespace ManagementSoftware.GUI.NguonManagement
 {
-    partial class FormTestLed
+    partial class FormTestNguon
     {
         /// <summary>
         /// Required designer variable.
@@ -41,18 +41,19 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(800, 450);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.TabIndex = 0;
             // 
-            // FormTestLed
+            // FormTestNguon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "FormTestLed";
-            this.Text = "TestLed";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormTestLed_FormClosing);
-            this.Load += new System.EventHandler(this.FormTestLed_Load);
+            this.Name = "FormTestNguon";
+            this.Text = "NguonTu1Den15";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NguonTu1Den15_FormClosing);
+            this.Load += new System.EventHandler(this.FormTestNguon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

@@ -20,6 +20,7 @@ namespace ManagementSoftware.Models.BauNongModel
         public ushort NhietDoNgatCBNhiet { get; set; }
         public ushort LanTestThu { get; set; }
         public bool TrangThaiCBNhiet { get; set; }
+        public bool isError { get; set; }
         public int TestBauNongID { get; set; }
         public TestBauNong TestBauNong { get; set; }
     }

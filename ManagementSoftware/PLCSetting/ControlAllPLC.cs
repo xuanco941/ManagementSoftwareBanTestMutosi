@@ -136,15 +136,8 @@ namespace ManagementSoftware.PLCSetting
             {
                 if (await plcNguon.Open())
                 {
-                    List<Models.NguonModel.Nguon> list1 = await plcNguon.GetDataNguon1Den15();
-                    List<Models.NguonModel.Nguon> list2 = await plcNguon.GetDataNguon16Den30();
-
-                    List<Models.NguonModel.Nguon> list3 = new List<Models.NguonModel.Nguon>();
-                    list3.AddRange(list1);
-                    list3.AddRange(list2);
-
-
-                    plcNguon.SaveData(list3);
+                    List<Models.NguonModel.Nguon> list = await plcNguon.GetDataNguon();
+                    plcNguon.SaveData(list);
 
 
 

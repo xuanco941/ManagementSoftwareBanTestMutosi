@@ -31,10 +31,7 @@
     <Compile Update="GUI\JigMachManagement\GiamSatJigMachTDS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\NguonManagement\NguonTu16Den30.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUI\NguonManagement\NguonTu1Den15.cs">
+    <Compile Update="GUI\NguonManagement\FormTestNguon.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\NguonManagement\FormTestLed.cs">

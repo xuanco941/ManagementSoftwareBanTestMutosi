@@ -105,7 +105,7 @@ namespace ManagementSoftware.GUI
 
                 if (l != null && l.Count > 0)
                 {
-                    string date = "ID" + item.TestCongTacID + " - " + item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    string date = item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
                     foreach (var i in l)
                     {
                         int rowId = dataGridView1.Rows.Add();
@@ -174,7 +174,7 @@ namespace ManagementSoftware.GUI
 
 
         System.Threading.Timer timer;
-        int TIME_INTERVAL_IN_MILLISECONDS = 950;
+        int TIME_INTERVAL_IN_MILLISECONDS = 0;
         private async void CongTac_Load(object sender, EventArgs e)
         {
             LoadDGV();
@@ -238,7 +238,11 @@ namespace ManagementSoftware.GUI
                     {
                         UpdateData(list);
                     }
-                    timer.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+
+                    if (timer != null)
+                    {
+                        timer.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+                    }
                 });
 
 
@@ -334,6 +338,8 @@ namespace ManagementSoftware.GUI
             if (timer != null)
             {
                 this.timer.Change(Timeout.Infinite, Timeout.Infinite);
+                timer.Dispose();
+                timer = null;
             }
             await plc1.Close();
             await plc2.Close();

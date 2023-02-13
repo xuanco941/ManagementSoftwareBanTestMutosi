@@ -19,7 +19,7 @@ namespace ManagementSoftware.GUI
         public Login()
         {
             InitializeComponent();
-            this.ActiveControl = textBoxTaiKhoan;
+            this.ActiveControl = textBoxMatKhau;
             //buttonChangeStringConnect.Enabled = false;
         }
 
@@ -76,6 +76,11 @@ namespace ManagementSoftware.GUI
         private void buttonBepTu_Click(object sender, EventArgs e)
         {
             new FormStringConnectDatabase().ShowDialog();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            textBoxTaiKhoan.Texts = "admin";
         }
     }
 }

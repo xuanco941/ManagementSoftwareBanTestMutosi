@@ -18,6 +18,7 @@ namespace ManagementSoftware.Models.LedModel
         public bool TrangThai { get; set; }
         public uint ThoiGianTest { get; set; } // uint
         public ushort LanTestThu { get; set; } //ushort 
+        public bool isError { get; set; }
         public int TestLedID { get; set; }
         public TestLed TestLed { get; set; }
     }

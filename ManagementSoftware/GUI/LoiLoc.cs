@@ -121,7 +121,7 @@ namespace ManagementSoftware.GUI
             bool checkColor = false;
             foreach (var item in this.ListResults)
             {
-                string date = "ID" + item.LoiLocID + " - " + item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                string date = item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
 
                 int rowId = dataGridView1.Rows.Add();
                 DataGridViewRow row = dataGridView1.Rows[rowId];
@@ -168,7 +168,7 @@ namespace ManagementSoftware.GUI
         PLCLoiLoc plc;
 
         System.Threading.Timer timer;
-        int TIME_INTERVAL_IN_MILLISECONDS = 1000;
+        int TIME_INTERVAL_IN_MILLISECONDS = 0;
 
 
 
@@ -188,6 +188,8 @@ namespace ManagementSoftware.GUI
             if (timer != null)
             {
                 this.timer.Change(Timeout.Infinite, Timeout.Infinite);
+                timer.Dispose();
+                timer = null;
             }
             await plc.Close();
 
@@ -227,7 +229,10 @@ namespace ManagementSoftware.GUI
             }
 
 
-            timer.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+            if (timer != null)
+            {
+                timer.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+            }
         }
 
 

@@ -36,14 +36,6 @@ namespace ManagementSoftware
 
             if (Common.USERSESSION != null)
             {
-
-                bool checkStartPC = new CheckStartPC().Start();
-
-                if (checkStartPC == false)
-                {
-                    MessageBox.Show("Lỗi kết nối PC - PLC Mitsubisi.", "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
                 new ControlAllPLC().ConnectAndRunSaveAll();
 
                 Application.Run(new Main());

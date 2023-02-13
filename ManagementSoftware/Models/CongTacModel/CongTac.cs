@@ -18,6 +18,7 @@ namespace ManagementSoftware.Models.CongTacModel
         public ushort LanTestThu { get; set; }
         public bool TrangThai { get; set; }
         public string JigCongTac { get; set; } = "";
+        public bool isError { get; set; }
         public int TestCongTacID { get; set; }
         public TestCongTac TestCongTac { get; set; }
     }

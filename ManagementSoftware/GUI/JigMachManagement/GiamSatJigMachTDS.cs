@@ -17,7 +17,7 @@ namespace ManagementSoftware.GUI.JigMachManagement
         PLCMach plc;
 
         System.Threading.Timer timer;
-        int TIME_INTERVAL_IN_MILLISECONDS = 1000;
+        int TIME_INTERVAL_IN_MILLISECONDS = 0;
         public GiamSatJigMachTDS()
         {
             InitializeComponent();
@@ -37,6 +37,8 @@ namespace ManagementSoftware.GUI.JigMachManagement
             if (timer != null)
             {
                 this.timer.Change(Timeout.Infinite, Timeout.Infinite);
+                timer.Dispose();
+                timer = null;
             }
             await plc.Close();
         }
@@ -58,7 +60,10 @@ namespace ManagementSoftware.GUI.JigMachManagement
             }
 
 
-            timer.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+            if (timer != null)
+            {
+                timer.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+            }
         }
 
 

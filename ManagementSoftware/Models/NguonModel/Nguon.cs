@@ -19,6 +19,7 @@ namespace ManagementSoftware.Models.NguonModel
         public double CongSuat { get; set; } //double
         public uint ThoiGianTest { get; set; } // uint
         public ushort LanTestThu { get; set; } //ushort 
+        public bool isError { get; set; }
         public int TestNguonID { get; set; }
         public TestNguon TestNguon { get; set; }
     }

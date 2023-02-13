@@ -27,7 +27,7 @@ namespace ManagementSoftware.GUI.CongTacManagement
         PLCCongTac plc;
 
         System.Threading.Timer timer;
-        int TIME_INTERVAL_IN_MILLISECONDS = 1000;
+        int TIME_INTERVAL_IN_MILLISECONDS = 0;
         public TemplateJigCongTac(double addrCT1, double addrCT2, double addrCT3, double addrCT4, double addrCT5, int jig,int time)
         {
             InitializeComponent();
@@ -55,6 +55,8 @@ namespace ManagementSoftware.GUI.CongTacManagement
             if (timer != null)
             {
                 this.timer.Change(Timeout.Infinite, Timeout.Infinite);
+                timer.Dispose();
+                timer = null;
             }
             await plc.Close();
         }
@@ -79,7 +81,10 @@ namespace ManagementSoftware.GUI.CongTacManagement
             }
 
 
-            timer.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+            if (timer != null)
+            {
+                timer.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+            }
         }
 
         private void UpdateData(List<Models.CongTacModel.CongTac> list)

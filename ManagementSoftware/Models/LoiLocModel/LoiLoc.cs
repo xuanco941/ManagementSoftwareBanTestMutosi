@@ -20,6 +20,8 @@ namespace ManagementSoftware.Models.LoiLocModel
         public uint ThoiGianXa { get; set; } //ms
         public uint ThoiGianGiu { get; set; } //ms
         public DateTime CreateAt { get; set; }
+        public bool isError { get; set; }
+
 
     }
 }

@@ -18,37 +18,24 @@ namespace ManagementSoftware.DAL.DALPagination
         public List<LoiLoc> ListResults { get; set; } = new List<LoiLoc>();
         public void Set(int page, DateTime? start, DateTime? end)
         {
-            DataBaseContext dbContext = new DataBaseContext();
-
+            using var dbContext = new DataBaseContext();
             int position = (page - 1) * NumberRows;
+            IQueryable<LoiLoc> query = dbContext.LoiLocs.OrderByDescending(t => t.LoiLocID);
 
-            if (start != null && end != null)
+            if (start.HasValue && end.HasValue)
             {
-                if (end.HasValue)
-                {
-                    end = end.Value.AddDays(1);
-                }
-                this.ListResults = dbContext.LoiLocs.OrderByDescending(t => t.LoiLocID)
-                .Where(a => start <= a.CreateAt && end >= a.CreateAt)
+                end = end.Value.AddDays(1);
+                query = query.Where(a => start <= a.CreateAt && end >= a.CreateAt);
+            }
+
+            this.ListResults = query
                 .Skip(position)
                 .Take(NumberRows)
                 .ToList();
 
-                this.TotalResults = dbContext.LoiLocs.Where(a => start <= a.CreateAt && end >= a.CreateAt).Count();
-
-            }
-            else
-            {
-                this.ListResults = dbContext.LoiLocs.OrderByDescending(t => t.LoiLocID)
-                .Skip(position)
-                .Take(NumberRows)
-                .ToList();
-                this.TotalResults = dbContext.LoiLocs.Count();
-            }
-
+            this.TotalResults = query.Count();
             this.PageCurrent = page;
             this.TotalPages = TotalResults % NumberRows == 0 ? TotalResults / NumberRows : (TotalResults / NumberRows) + 1;
-
         }
     }
 }
