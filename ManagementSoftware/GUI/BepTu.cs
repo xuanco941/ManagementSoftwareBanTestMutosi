@@ -59,8 +59,6 @@ namespace ManagementSoftware.GUI
             congSuat.HeaderText = "Dòng điện (A)";
             DataGridViewColumn ThoiGian = new DataGridViewTextBoxColumn();
             ThoiGian.HeaderText = "Công suất (Kw)";
-            DataGridViewColumn cstt = new DataGridViewTextBoxColumn();
-            cstt.HeaderText = "Công suất (Kw)";
 
 
 
@@ -293,6 +291,7 @@ namespace ManagementSoftware.GUI
                 timer.Dispose();
                 timer = null;
             }
+            StopTimer();
             await plc.Close();
         }
 
@@ -305,7 +304,7 @@ namespace ManagementSoftware.GUI
 
         PLCBepTu plc;
 
-        System.Threading.Timer timer;
+        System.Threading.Timer? timer = null;
         int TIME_INTERVAL_IN_MILLISECONDS = 0;
 
 

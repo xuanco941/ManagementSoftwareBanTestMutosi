@@ -2,6 +2,7 @@
 using ManagementSoftware.DAL.DALPagination;
 using ManagementSoftware.GUI.Section;
 using ManagementSoftware.Models.BauNongModel;
+using ManagementSoftware.Models.BepTuModel;
 using ManagementSoftware.PLCSetting;
 using Syncfusion.XPS;
 using System;
@@ -77,6 +78,7 @@ namespace ManagementSoftware.GUI
         }
         void LoadFormThongKe()
         {
+            StopTimer();
             panel2.Enabled = false;
             dataGridView1.Rows.Clear();
 
@@ -102,7 +104,7 @@ namespace ManagementSoftware.GUI
 
                 if (l != null && l.Count > 0)
                 {
-                    string date = item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    string date = item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
                     foreach (var i in l)
                     {
                         int rowId = dataGridView1.Rows.Add();
@@ -123,6 +125,7 @@ namespace ManagementSoftware.GUI
             }
 
             panel2.Enabled = true;
+            StartTimer();
         }
 
         private void buttonPreviousPage_Click(object sender, EventArgs e)
@@ -159,10 +162,98 @@ namespace ManagementSoftware.GUI
 
 
 
+        System.Threading.Timer? timer2 = null;
+        private void StopTimer()
+        {
+            if (timer2 != null)
+            {
+                this.timer2.Change(Timeout.Infinite, Timeout.Infinite);
+                timer2.Dispose();
+                timer2 = null;
+            }
+        }
+        private void StartTimer()
+        {
+            if (timer2 == null)
+            {
+                timer2 = new System.Threading.Timer(Callback2, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+            }
+        }
+
+        private async void Callback2(Object state)
+        {
+            Stopwatch watch = new Stopwatch();
+
+            watch.Start();
 
 
+            // update data
+            // Long running operation
+            PaginationBauNong pagination = new PaginationBauNong();
+            pagination.Set(page, timeStart, timeEnd);
+            // Nếu có dữ liệu mới và khác với dữ liệu cũ
+            if (pagination.ListResults != null && pagination.ListResults.Count > 0
+                && (!this.ListResults?.SequenceEqual(pagination.ListResults) ?? true))
+            {
+                this.ListResults = new List<Models.BauNongModel.TestBauNong>(pagination.ListResults);
+                this.TotalPages = pagination.TotalPages;
+                UpdateData2(pagination.ListResults);
+            }
 
 
+            if (timer2 != null)
+            {
+                timer2.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+            }
+        }
+
+        void UpdateData2(List<TestBauNong> list)
+        {
+            if (IsHandleCreated && InvokeRequired)
+            {
+                BeginInvoke(new Action<List<Models.BauNongModel.TestBauNong>>(UpdateData2), list);
+                return;
+            }
+
+
+            //update gui
+            dataGridView1.Rows.Clear();
+            lbTotalPages.Text = this.TotalPages.ToString();
+
+            buttonPreviousPage.Enabled = this.page > 1;
+            buttonNextPage.Enabled = this.page < this.TotalPages;
+            buttonPage.Text = this.page.ToString();
+
+            pageNumberGoto.MinValue = 1;
+            pageNumberGoto.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1;
+
+
+            foreach (var item in list)
+            {
+                List<Models.BauNongModel.BauNong>? l = new DALBauNong().GetDataFromIDTest(item.TestBauNongID);
+
+                if (l != null && l.Count > 0)
+                {
+                    string date = item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    foreach (var i in l)
+                    {
+                        int rowId = dataGridView1.Rows.Add();
+                        DataGridViewRow row = dataGridView1.Rows[rowId];
+
+                        row.Cells[0].Value = date;
+                        row.Cells[1].Value = i.BauNongName;
+                        row.Cells[2].Value = i.LanTestThu;
+                        row.Cells[3].Value = i.DongDien;
+                        row.Cells[4].Value = i.NhietDo;
+                        row.Cells[5].Value = i.NhietDoNgatCBNhiet;
+                        row.Cells[6].Value = i.TrangThaiCBNhiet == true ? "ON" : "OFF";
+                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                    }
+                    dataGridView1.Rows.Add();
+                }
+
+            }
+        }
 
 
 
@@ -196,8 +287,8 @@ namespace ManagementSoftware.GUI
 
         PLCBauNong plc;
 
-        System.Threading.Timer timer;
-        int TIME_INTERVAL_IN_MILLISECONDS = 1000;
+        System.Threading.Timer? timer = null;
+        int TIME_INTERVAL_IN_MILLISECONDS = 0;
 
 
 
@@ -307,17 +398,31 @@ namespace ManagementSoftware.GUI
                 timer = null;
             }
             await plc.Close();
+            StopTimer();
         }
 
         private async void BauNong_Load(object sender, EventArgs e)
         {
             LoadDGV();
-            LoadFormThongKe();
             if (await plc.Open() == true)
             {
                 timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
             }
+            LoadFormThongKe();
 
+
+        }
+
+        private void tabControl1_Selected(object sender, TabControlEventArgs e)
+        {
+            if (tabControl1.SelectedTab == tabPageThongKe)
+            {
+                this.StartTimer();
+            }
+            else
+            {
+                this.StopTimer();
+            }
         }
     }
 }
