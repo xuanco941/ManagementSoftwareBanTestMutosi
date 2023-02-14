@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CongTac));
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPageGiamSat = new System.Windows.Forms.TabPage();
+            this.dataGridViewGiamSat = new System.Windows.Forms.DataGridView();
             this.tabPageThongKe = new System.Windows.Forms.TabPage();
             this.panelThongKe2VT = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -130,9 +132,10 @@
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.tabPageGiamSat = new System.Windows.Forms.TabPage();
-            this.dataGridViewGiamSat = new System.Windows.Forms.DataGridView();
+            this.buttonXuatExcel = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.tabControl1.SuspendLayout();
+            this.tabPageGiamSat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGiamSat)).BeginInit();
             this.tabPageThongKe.SuspendLayout();
             this.panelThongKe2VT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -189,8 +192,6 @@
             this.panel28.SuspendLayout();
             this.panel29.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
-            this.tabPageGiamSat.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGiamSat)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -205,6 +206,28 @@
             this.tabControl1.Size = new System.Drawing.Size(988, 531);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
+            // 
+            // tabPageGiamSat
+            // 
+            this.tabPageGiamSat.Controls.Add(this.dataGridViewGiamSat);
+            this.tabPageGiamSat.Location = new System.Drawing.Point(4, 34);
+            this.tabPageGiamSat.Name = "tabPageGiamSat";
+            this.tabPageGiamSat.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageGiamSat.Size = new System.Drawing.Size(980, 493);
+            this.tabPageGiamSat.TabIndex = 2;
+            this.tabPageGiamSat.Text = "Giám sát";
+            this.tabPageGiamSat.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewGiamSat
+            // 
+            this.dataGridViewGiamSat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.dataGridViewGiamSat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewGiamSat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewGiamSat.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewGiamSat.Name = "dataGridViewGiamSat";
+            this.dataGridViewGiamSat.RowTemplate.Height = 25;
+            this.dataGridViewGiamSat.Size = new System.Drawing.Size(974, 487);
+            this.dataGridViewGiamSat.TabIndex = 1;
             // 
             // tabPageThongKe
             // 
@@ -223,6 +246,7 @@
             this.panelThongKe2VT.AutoScroll = true;
             this.panelThongKe2VT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelThongKe2VT.Controls.Add(this.dataGridView1);
+            this.panelThongKe2VT.Controls.Add(this.buttonXuatExcel);
             this.panelThongKe2VT.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelThongKe2VT.Location = new System.Drawing.Point(3, 3);
             this.panelThongKe2VT.Name = "panelThongKe2VT";
@@ -234,40 +258,40 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersVisible = false;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(972, 425);
+            this.dataGridView1.Size = new System.Drawing.Size(972, 395);
             this.dataGridView1.TabIndex = 2;
             // 
             // panelSearchPage2VT
@@ -1418,27 +1442,30 @@
             this.tableLayoutPanel9.Size = new System.Drawing.Size(200, 100);
             this.tableLayoutPanel9.TabIndex = 0;
             // 
-            // tabPageGiamSat
+            // buttonXuatExcel
             // 
-            this.tabPageGiamSat.Controls.Add(this.dataGridViewGiamSat);
-            this.tabPageGiamSat.Location = new System.Drawing.Point(4, 34);
-            this.tabPageGiamSat.Name = "tabPageGiamSat";
-            this.tabPageGiamSat.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGiamSat.Size = new System.Drawing.Size(980, 493);
-            this.tabPageGiamSat.TabIndex = 2;
-            this.tabPageGiamSat.Text = "Giám sát";
-            this.tabPageGiamSat.UseVisualStyleBackColor = true;
-            // 
-            // dataGridViewGiamSat
-            // 
-            this.dataGridViewGiamSat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.dataGridViewGiamSat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewGiamSat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewGiamSat.Location = new System.Drawing.Point(3, 3);
-            this.dataGridViewGiamSat.Name = "dataGridViewGiamSat";
-            this.dataGridViewGiamSat.RowTemplate.Height = 25;
-            this.dataGridViewGiamSat.Size = new System.Drawing.Size(974, 487);
-            this.dataGridViewGiamSat.TabIndex = 1;
+            this.buttonXuatExcel.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonXuatExcel.BackgroundColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonXuatExcel.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.buttonXuatExcel.BorderRadius = 3;
+            this.buttonXuatExcel.BorderSize = 0;
+            this.buttonXuatExcel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonXuatExcel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonXuatExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonXuatExcel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonXuatExcel.ForeColor = System.Drawing.Color.Black;
+            this.buttonXuatExcel.Image = global::ManagementSoftware.Properties.Resources.Logoexe;
+            this.buttonXuatExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonXuatExcel.Location = new System.Drawing.Point(0, 395);
+            this.buttonXuatExcel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.buttonXuatExcel.Name = "buttonXuatExcel";
+            this.buttonXuatExcel.Size = new System.Drawing.Size(972, 30);
+            this.buttonXuatExcel.TabIndex = 22;
+            this.buttonXuatExcel.Text = "Xuất file Excel";
+            this.buttonXuatExcel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonXuatExcel.TextColor = System.Drawing.Color.Black;
+            this.buttonXuatExcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonXuatExcel.UseVisualStyleBackColor = false;
             // 
             // CongTac
             // 
@@ -1452,6 +1479,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CongTac_FormClosing);
             this.Load += new System.EventHandler(this.CongTac_Load);
             this.tabControl1.ResumeLayout(false);
+            this.tabPageGiamSat.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGiamSat)).EndInit();
             this.tabPageThongKe.ResumeLayout(false);
             this.panelThongKe2VT.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -1510,8 +1539,6 @@
             this.panel28.ResumeLayout(false);
             this.panel29.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
-            this.tabPageGiamSat.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGiamSat)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1617,5 +1644,6 @@
         private TableLayoutPanel tableLayoutPanel9;
         private TabPage tabPageGiamSat;
         private DataGridView dataGridViewGiamSat;
+        private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonXuatExcel;
     }
 }

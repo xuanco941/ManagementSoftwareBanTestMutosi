@@ -115,6 +115,7 @@
             this.tabPageThongKe = new System.Windows.Forms.TabPage();
             this.panelThongKe = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonXuatExcel = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -1143,6 +1144,7 @@
             // 
             this.panelThongKe.AutoScroll = true;
             this.panelThongKe.Controls.Add(this.dataGridView1);
+            this.panelThongKe.Controls.Add(this.buttonXuatExcel);
             this.panelThongKe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelThongKe.Location = new System.Drawing.Point(3, 3);
             this.panelThongKe.Name = "panelThongKe";
@@ -1187,8 +1189,33 @@
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(1125, 445);
+            this.dataGridView1.Size = new System.Drawing.Size(1125, 415);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // buttonXuatExcel
+            // 
+            this.buttonXuatExcel.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonXuatExcel.BackgroundColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonXuatExcel.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.buttonXuatExcel.BorderRadius = 3;
+            this.buttonXuatExcel.BorderSize = 0;
+            this.buttonXuatExcel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonXuatExcel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonXuatExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonXuatExcel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonXuatExcel.ForeColor = System.Drawing.Color.Black;
+            this.buttonXuatExcel.Image = global::ManagementSoftware.Properties.Resources.Logoexe;
+            this.buttonXuatExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonXuatExcel.Location = new System.Drawing.Point(0, 415);
+            this.buttonXuatExcel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.buttonXuatExcel.Name = "buttonXuatExcel";
+            this.buttonXuatExcel.Size = new System.Drawing.Size(1125, 30);
+            this.buttonXuatExcel.TabIndex = 20;
+            this.buttonXuatExcel.Text = "Xuất file Excel";
+            this.buttonXuatExcel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonXuatExcel.TextColor = System.Drawing.Color.Black;
+            this.buttonXuatExcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonXuatExcel.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -1954,5 +1981,6 @@
         private Label label1;
         private Panel panelThongKe;
         private DataGridView dataGridView1;
+        private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonXuatExcel;
     }
 }

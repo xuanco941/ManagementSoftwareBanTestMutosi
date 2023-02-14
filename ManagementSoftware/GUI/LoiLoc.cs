@@ -314,7 +314,7 @@ namespace ManagementSoftware.GUI
 
         public async void StartTimer1()
         {
-            if (timer == null)
+            if (timer == null && await plc.Open()==true)
             {
                 timer = new System.Threading.Timer(Callback1, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
             }
@@ -328,23 +328,23 @@ namespace ManagementSoftware.GUI
                 timer.Dispose();
                 timer = null;
             }
+            await plc.Close();
         }
 
 
         private async void LoiLoc_FormClosing(object sender, FormClosingEventArgs e)
         {
-            StopTimer1();
             StopTimer2();
-            await plc.Close();
+            StopTimer1();
 
         }
 
         private async void LoiLoc_Load(object sender, EventArgs e)
         {
-            await plc.Open();
+            LoadDGV();
+
             StartTimer1();
 
-            LoadDGV();
 
 
         }
