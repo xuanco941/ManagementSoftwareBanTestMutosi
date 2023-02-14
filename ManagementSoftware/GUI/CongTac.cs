@@ -81,7 +81,7 @@ namespace ManagementSoftware.GUI
         }
         void LoadFormThongKe()
         {
-            StopTimer();
+            StopTimer2();
             panelSearchPage2VT.Enabled = false;
 
             dataGridView1.Rows.Clear();
@@ -128,7 +128,7 @@ namespace ManagementSoftware.GUI
 
 
             panelSearchPage2VT.Enabled = true;
-            StartTimer();
+            StartTimer2();
         }
 
 
@@ -136,7 +136,7 @@ namespace ManagementSoftware.GUI
 
 
 
-        private void StopTimer()
+        private void StopTimer2()
         {
             if (timer2 != null)
             {
@@ -145,7 +145,7 @@ namespace ManagementSoftware.GUI
                 timer2 = null;
             }
         }
-        private void StartTimer()
+        private void StartTimer2()
         {
             if (timer2 == null)
             {
@@ -309,9 +309,8 @@ namespace ManagementSoftware.GUI
         private async void CongTac_Load(object sender, EventArgs e)
         {
             LoadDGV();
-            LoadFormThongKe();
 
-            if (await plc1.Open() == true && await plc2.Open() && await plc3.Open() && await plc4.Open() && await plc5.Open()
+            if (timer == null && await plc1.Open() == true && await plc2.Open() && await plc3.Open() && await plc4.Open() && await plc5.Open()
                 && await plc6.Open() && await plc7.Open() && await plc8.Open() && await plc9.Open() && await plc10.Open())
             {
                 timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
@@ -472,7 +471,7 @@ namespace ManagementSoftware.GUI
                 timer.Dispose();
                 timer = null;
             }
-            StopTimer();
+            StopTimer2();
             await plc1.Close();
             await plc2.Close();
             await plc3.Close();
@@ -486,15 +485,36 @@ namespace ManagementSoftware.GUI
 
         }
 
-        private void tabControl1_Selected(object sender, TabControlEventArgs e)
+        private async void tabControl1_Selected(object sender, TabControlEventArgs e)
         {
             if (tabControl1.SelectedTab == tabPageThongKe)
             {
-                this.StartTimer();
+                LoadFormThongKe();
+                if (timer != null)
+                {
+                    this.timer.Change(Timeout.Infinite, Timeout.Infinite);
+                    timer.Dispose();
+                    timer = null;
+                }
+                await plc1.Close();
+                await plc2.Close();
+                await plc3.Close();
+                await plc4.Close();
+                await plc5.Close();
+                await plc6.Close();
+                await plc7.Close();
+                await plc8.Close();
+                await plc9.Close();
+                await plc10.Close();
             }
             else
             {
-                this.StopTimer();
+                this.StopTimer2();
+                if (timer == null && await plc1.Open() == true && await plc2.Open() && await plc3.Open() && await plc4.Open() && await plc5.Open()
+                    && await plc6.Open() && await plc7.Open() && await plc8.Open() && await plc9.Open() && await plc10.Open())
+                {
+                    timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+                }
             }
         }
     }

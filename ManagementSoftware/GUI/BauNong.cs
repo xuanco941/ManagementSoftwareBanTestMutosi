@@ -404,24 +404,34 @@ namespace ManagementSoftware.GUI
         private async void BauNong_Load(object sender, EventArgs e)
         {
             LoadDGV();
-            if (await plc.Open() == true)
+            if (timer == null && await plc.Open() == true)
             {
                 timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
             }
-            LoadFormThongKe();
 
 
         }
 
-        private void tabControl1_Selected(object sender, TabControlEventArgs e)
+        private async void tabControl1_Selected(object sender, TabControlEventArgs e)
         {
             if (tabControl1.SelectedTab == tabPageThongKe)
             {
-                this.StartTimer();
+                LoadFormThongKe();
+                if (timer != null)
+                {
+                    this.timer.Change(Timeout.Infinite, Timeout.Infinite);
+                    timer.Dispose();
+                    timer = null;
+                }
+                await plc.Close();
             }
             else
             {
                 this.StopTimer();
+                if (timer == null && await plc.Open() == true)
+                {
+                    timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+                }
             }
         }
     }

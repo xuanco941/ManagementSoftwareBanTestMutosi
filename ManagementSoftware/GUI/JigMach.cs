@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
@@ -98,6 +99,7 @@ namespace ManagementSoftware.GUI
 
         private void LoadFormThongKe()
         {
+            StopTimer1();
             panel2.Enabled = false;
 
             dataGridView1.Rows.Clear();
@@ -125,7 +127,7 @@ namespace ManagementSoftware.GUI
 
                 if (l != null && l.Count > 0)
                 {
-                    string date = "ID" + item.TestJigMachID + " - " + item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    string date = "ID" + item.TestJigMachID + " - " + item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
                     foreach (var i in l)
                     {
                         int rowId = dataGridView1.Rows.Add();
@@ -146,6 +148,7 @@ namespace ManagementSoftware.GUI
             }
 
             panel2.Enabled = true;
+            StartTimer1();
         }
 
         private void buttonPreviousPage_Click(object sender, EventArgs e)
@@ -191,12 +194,16 @@ namespace ManagementSoftware.GUI
             {
                 giamSatJigMachNguon.StartTimer();
                 giamSatJigMachTDS.StopTimer();
+                StopTimer1();
+                StopTimer2();
 
             }
             else if (tabControl1.SelectedTab == tabPageGiamSatJigTDS)
             {
                 giamSatJigMachTDS.StartTimer();
                 giamSatJigMachNguon.StopTimer();
+                StopTimer1();
+                StopTimer2();
 
             }
             else if (tabControl1.SelectedTab == tabPageThongKe)
@@ -204,6 +211,7 @@ namespace ManagementSoftware.GUI
                 LoadFormThongKe();
                 giamSatJigMachTDS.StopTimer();
                 giamSatJigMachNguon.StopTimer();
+                StopTimer2();
 
 
             }
@@ -212,6 +220,7 @@ namespace ManagementSoftware.GUI
                 LoadFormThongKeTDS();
                 giamSatJigMachTDS.StopTimer();
                 giamSatJigMachNguon.StopTimer();
+                StopTimer1();
 
             }
 
@@ -276,6 +285,7 @@ namespace ManagementSoftware.GUI
 
         private void LoadFormThongKeTDS()
         {
+            StopTimer2();
             panelSearch2.Enabled = false;
 
             dataGridView2.Rows.Clear();
@@ -303,7 +313,7 @@ namespace ManagementSoftware.GUI
 
                 if (l != null && l.Count > 0)
                 {
-                    string date = item.CreateAt.ToString($"hh:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    string date = item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
                     foreach (var i in l)
                     {
                         int rowId = dataGridView2.Rows.Add();
@@ -323,6 +333,7 @@ namespace ManagementSoftware.GUI
             }
 
             panelSearch2.Enabled = true;
+            StartTimer2();
         }
 
         private void buttonPreviousPage2_Click(object sender, EventArgs e)
@@ -355,5 +366,235 @@ namespace ManagementSoftware.GUI
             this.page2 = int.Parse(pageNumberGoto2.Text);
             LoadFormThongKeTDS();
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        System.Threading.Timer? timer1 = null;
+        System.Threading.Timer? timer2 = null;
+
+        int TIME_INTERVAL_IN_MILLISECONDS = 0;
+
+
+        public void StartTimer1()
+        {
+            if (timer1 == null)
+            {
+                timer1 = new System.Threading.Timer(Callback1, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+            }
+        }
+
+        public void StopTimer1()
+        {
+            if (timer1 != null)
+            {
+                this.timer1.Change(Timeout.Infinite, Timeout.Infinite);
+                timer1.Dispose();
+                timer1 = null;
+            }
+        }
+
+        public void StartTimer2()
+        {
+            if (timer2 == null)
+            {
+                timer2 = new System.Threading.Timer(Callback2, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+            }
+        }
+
+        public void StopTimer2()
+        {
+            if (timer2 != null)
+            {
+                this.timer2.Change(Timeout.Infinite, Timeout.Infinite);
+                timer2.Dispose();
+                timer2 = null;
+            }
+        }
+
+
+
+        private async void Callback1(Object state)
+        {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
+
+            PaginationJigMach pagination = new PaginationJigMach();
+            pagination.Set(page, timeStart, timeEnd);
+
+            // Nếu có dữ liệu mới và khác với dữ liệu cũ
+            if (pagination.ListResults != null && pagination.ListResults.Count > 0
+                && (!this.ListResults?.SequenceEqual(pagination.ListResults) ?? true))
+            {
+                this.ListResults = new List<Models.JigMachModel.TestJigMach>(pagination.ListResults);
+                this.TotalPages = pagination.TotalPages;
+                UpdateData1(pagination.ListResults);
+            }
+
+            if (timer1 != null)
+            {
+                timer1.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+            }
+        }
+
+
+
+        private void UpdateData1(List<Models.JigMachModel.TestJigMach> list)
+        {
+
+            if (IsHandleCreated && InvokeRequired)
+            {
+                BeginInvoke(new Action<List<Models.JigMachModel.TestJigMach>>(UpdateData1), list);
+                return;
+            }
+
+
+            //update gui
+            dataGridView1.Rows.Clear();
+            lbTotalPages.Text = this.TotalPages.ToString();
+
+            buttonPreviousPage.Enabled = this.page > 1;
+            buttonNextPage.Enabled = this.page < this.TotalPages;
+            buttonPage.Text = this.page.ToString();
+
+            pageNumberGoto.MinValue = 1;
+            pageNumberGoto.MaxValue = this.TotalPages != 0 ? this.TotalPages : 1;
+
+
+
+
+
+
+            foreach (var item in list)
+            {
+                List<Models.JigMachModel.JigMachNguon>? l = new DALJigMach().GetDataFromIDTest(item.TestJigMachID);
+
+                if (l != null && l.Count > 0)
+                {
+                    string date = item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    foreach (var i in l)
+                    {
+                        int rowId = dataGridView1.Rows.Add();
+                        DataGridViewRow row = dataGridView1.Rows[rowId];
+
+                        row.Cells[0].Value = date;
+                        row.Cells[1].Value = i.JigMachNguonName;
+                        row.Cells[2].Value = i.LanTestThu;
+                        row.Cells[3].Value = String.Format("{0:0.00}", i.DienApDC);
+                        row.Cells[4].Value = String.Format("{0:0.00}", i.DongDienDC);
+                        row.Cells[5].Value = String.Format("{0:0.00}", i.CongSuat);
+                        row.Cells[6].Value = i.ThoiGian;
+                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                    }
+                    dataGridView1.Rows.Add();
+                }
+
+            }
+        }
+
+
+
+        private async void Callback2(Object state)
+        {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
+
+            PaginationJigMach pagination = new PaginationJigMach();
+            pagination.Set(page2, timeStart2, timeEnd2);
+
+            // Nếu có dữ liệu mới và khác với dữ liệu cũ
+            if (pagination.ListResults != null && pagination.ListResults.Count > 0
+                && (!this.ListResults2?.SequenceEqual(pagination.ListResults) ?? true))
+            {
+                this.ListResults2 = new List<Models.JigMachModel.TestJigMach>(pagination.ListResults);
+                this.TotalPages2 = pagination.TotalPages;
+                UpdateData2(pagination.ListResults);
+            }
+
+            if (timer2 != null)
+            {
+                timer2.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+            }
+        }
+
+
+
+        private void UpdateData2(List<Models.JigMachModel.TestJigMach> list)
+        {
+
+            if (IsHandleCreated && InvokeRequired)
+            {
+                BeginInvoke(new Action<List<Models.JigMachModel.TestJigMach>>(UpdateData2), list);
+                return;
+            }
+
+
+            //update gui
+            dataGridView2.Rows.Clear();
+            lbTotalPages2.Text = this.TotalPages2.ToString();
+
+            buttonPreviousPage2.Enabled = this.page2 > 1;
+            buttonNextPage2.Enabled = this.page2 < this.TotalPages2;
+            buttonPage2.Text = this.page2.ToString();
+
+            pageNumberGoto2.MinValue = 1;
+            pageNumberGoto2.MaxValue = this.TotalPages2 != 0 ? this.TotalPages2 : 1;
+
+
+
+
+
+
+            foreach (var item in this.ListResults2)
+            {
+                List<Models.JigMachModel.JigMachTDS>? l = new DALJigMach().GetDataFromIDTestTDS(item.TestJigMachID);
+
+                if (l != null && l.Count > 0)
+                {
+                    string date = item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    foreach (var i in l)
+                    {
+                        int rowId = dataGridView2.Rows.Add();
+                        DataGridViewRow row = dataGridView2.Rows[rowId];
+
+                        row.Cells[0].Value = date;
+                        row.Cells[1].Value = i.JigMachTDSName;
+                        row.Cells[2].Value = i.LanTestThu;
+                        row.Cells[3].Value = i.VanDienTu == true ? "ON" : "OFF";
+                        row.Cells[4].Value = i.VanApCao == true ? "ON" : "OFF";
+                        row.Cells[5].Value = i.ThoiGian;
+                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                    }
+                    dataGridView2.Rows.Add();
+                }
+
+            }
+        }
+
+
+
+
+
+
+
     }
 }

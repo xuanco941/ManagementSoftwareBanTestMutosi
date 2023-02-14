@@ -208,8 +208,7 @@ namespace ManagementSoftware.GUI
 
             LoadDGV();
             LoadDGV2();
-            LoadFormThongKe();
-            LoadFormThongKe2();
+
 
 
         }
@@ -387,7 +386,7 @@ namespace ManagementSoftware.GUI
             }
             else if (tabControl1.SelectedTab == tabPageThongKe)
             {
-                this.StartTimer1();
+                LoadFormThongKe();
                 this.StopTimer2();
                 formTestNguon.StopTimer();
                 formTestLed.StopTimer();
@@ -395,7 +394,7 @@ namespace ManagementSoftware.GUI
             }
             else if (tabControl1.SelectedTab == tabPageThongKeLed)
             {
-                this.StartTimer2();
+                this.LoadFormThongKe2();
                 this.StopTimer1();
                 formTestNguon.StopTimer();
                 formTestLed.StopTimer();

@@ -314,7 +314,7 @@ namespace ManagementSoftware.GUI
 
         public async void StartTimer1()
         {
-            if (timer == null && await plc.Open())
+            if (timer == null)
             {
                 timer = new System.Threading.Timer(Callback1, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
             }
@@ -328,23 +328,24 @@ namespace ManagementSoftware.GUI
                 timer.Dispose();
                 timer = null;
             }
-            await plc.Close();
         }
 
 
-        private void LoiLoc_FormClosing(object sender, FormClosingEventArgs e)
+        private async void LoiLoc_FormClosing(object sender, FormClosingEventArgs e)
         {
             StopTimer1();
             StopTimer2();
+            await plc.Close();
 
         }
 
-        private void LoiLoc_Load(object sender, EventArgs e)
+        private async void LoiLoc_Load(object sender, EventArgs e)
         {
-            LoadDGV();
-            LoadFormThongKe();
-
+            await plc.Open();
             StartTimer1();
+
+            LoadDGV();
+
 
         }
 
@@ -434,7 +435,7 @@ namespace ManagementSoftware.GUI
             }
             else if (tabControl1.SelectedTab == tabPageThongKe)
             {
-                this.StartTimer2();
+                LoadFormThongKe();
                 this.StopTimer1();
             }
         }
