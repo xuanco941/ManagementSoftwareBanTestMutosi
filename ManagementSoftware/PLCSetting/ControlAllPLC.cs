@@ -172,32 +172,10 @@ namespace ManagementSoftware.PLCSetting
                 if (await plcCongTac.Open())
                 {
 
-                    List<CongTac> jig10 = await plcCongTac.GetData(104, 106, 108, 110, 112, 10);
-                    List<CongTac> jig9 = await plcCongTac.GetData(94, 96, 98, 100, 102, 9);
-                    List<CongTac> jig8 = await plcCongTac.GetData(84, 86, 88, 90, 92, 8);
-                    List<CongTac> jig7 = await plcCongTac.GetData(74, 76, 78, 80, 82, 7);
-                    List<CongTac> jig6 = await plcCongTac.GetData(64, 66, 70, 52, 72, 6);
-                    List<CongTac> jig5 = await plcCongTac.GetData(40, 42, 44, 46, 48, 5);
-                    List<CongTac> jig4 = await plcCongTac.GetData(30, 32, 34, 36, 38, 4);
-                    List<CongTac> jig3 = await plcCongTac.GetData(20, 22, 24, 26, 28, 3);
-                    List<CongTac> jig2 = await plcCongTac.GetData(50, 12, 14, 16, 18, 2);
-                    List<CongTac> jig1 = await plcCongTac.GetData(0, 2, 4, 6, 8, 1);
 
-
-                    List<CongTac> list = new List<CongTac>();
-                    list.AddRange(jig1);
-                    list.AddRange(jig2);
-                    list.AddRange(jig3);
-                    list.AddRange(jig4);
-                    list.AddRange(jig5);
-                    list.AddRange(jig6);
-                    list.AddRange(jig7);
-                    list.AddRange(jig8);
-                    list.AddRange(jig9);
-                    list.AddRange(jig10);
-
-
-                    plcCongTac.SaveData(list.ToList());
+                    List<CongTac> list = await plcCongTac.GetAllData();
+                   
+                    plcCongTac.SaveData(list);
                     await plcCongTac.Close();
                 }
 

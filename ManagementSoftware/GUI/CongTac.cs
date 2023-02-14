@@ -1,6 +1,5 @@
 ﻿using ManagementSoftware.DAL;
 using ManagementSoftware.DAL.DALPagination;
-using ManagementSoftware.GUI.CongTacManagement;
 using ManagementSoftware.GUI.Section;
 using ManagementSoftware.Models;
 using ManagementSoftware.Models.BepTuModel;
@@ -308,6 +307,48 @@ namespace ManagementSoftware.GUI
         int TIME_INTERVAL_IN_MILLISECONDS = 0;
         private async void CongTac_Load(object sender, EventArgs e)
         {
+
+            dataGridViewGiamSat.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Công tắc", SortMode = DataGridViewColumnSortMode.NotSortable });
+            dataGridViewGiamSat.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Trạng thái", SortMode = DataGridViewColumnSortMode.NotSortable });
+            dataGridViewGiamSat.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Lần test thứ", SortMode = DataGridViewColumnSortMode.NotSortable });
+
+
+
+
+            dataGridViewGiamSat.ColumnHeadersDefaultCellStyle.BackColor = Color.DarkOrange;
+            dataGridViewGiamSat.EnableHeadersVisualStyles = false;
+            dataGridViewGiamSat.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewGiamSat.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewGiamSat.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 13, FontStyle.Bold);
+
+
+            dataGridViewGiamSat.RowTemplate.Height = 40;
+            dataGridViewGiamSat.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewGiamSat.DefaultCellStyle.ForeColor = Color.White;
+            dataGridViewGiamSat.DefaultCellStyle.Font = new Font("Segoe UI", 12, FontStyle.Regular);
+            dataGridViewGiamSat.AllowUserToAddRows = false;
+            dataGridViewGiamSat.AllowUserToDeleteRows = false;
+            dataGridViewGiamSat.ReadOnly = true;
+            dataGridViewGiamSat.RowHeadersVisible = false;
+
+
+
+
+
+
+            for (int i = 0; i < 50; i++)
+            {
+                int id = dataGridViewGiamSat.Rows.Add();
+                dataGridViewGiamSat.Rows[id].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
+
+            }
+
+
+
+
+
+
+
             LoadDGV();
 
             if (timer == null && await plc1.Open() == true && await plc2.Open() && await plc3.Open() && await plc4.Open() && await plc5.Open()
@@ -333,16 +374,16 @@ namespace ManagementSoftware.GUI
             // Long running operation
 
 
-            Task<List<Models.CongTacModel.CongTac>> task1 = Task.Run(() => plc1.GetData(0, 2, 4, 6, 8, 1));
-            Task<List<Models.CongTacModel.CongTac>> task2 = Task.Run(() => plc2.GetData(50, 12, 14, 16, 18, 2));
-            Task<List<Models.CongTacModel.CongTac>> task3 = Task.Run(() => plc3.GetData(20, 22, 24, 26, 28, 3));
-            Task<List<Models.CongTacModel.CongTac>> task4 = Task.Run(() => plc4.GetData(30, 32, 34, 36, 38, 4));
-            Task<List<Models.CongTacModel.CongTac>> task5 = Task.Run(() => plc5.GetData(40, 42, 44, 46, 48, 5));
-            Task<List<Models.CongTacModel.CongTac>> task6 = Task.Run(() => plc6.GetData(64, 66, 70, 52, 72, 6));
-            Task<List<Models.CongTacModel.CongTac>> task7 = Task.Run(() => plc7.GetData(74, 76, 78, 80, 82, 7));
-            Task<List<Models.CongTacModel.CongTac>> task8 = Task.Run(() => plc8.GetData(84, 86, 88, 90, 92, 8));
-            Task<List<Models.CongTacModel.CongTac>> task9 = Task.Run(() => plc9.GetData(94, 96, 98, 100, 102, 9));
-            Task<List<Models.CongTacModel.CongTac>> task10 = Task.Run(() => plc10.GetData(104, 106, 108, 110, 112, 10));
+            Task<List<Models.CongTacModel.CongTac>> task1 = Task.Run(() => plc1.GetData(0, 2, 4, 6, 8, 1, 120));
+            Task<List<Models.CongTacModel.CongTac>> task2 = Task.Run(() => plc2.GetData(50, 12, 14, 16, 18, 2, 130));
+            Task<List<Models.CongTacModel.CongTac>> task3 = Task.Run(() => plc3.GetData(20, 22, 24, 26, 28, 3, 140));
+            Task<List<Models.CongTacModel.CongTac>> task4 = Task.Run(() => plc4.GetData(30, 32, 34, 36, 38, 4, 150));
+            Task<List<Models.CongTacModel.CongTac>> task5 = Task.Run(() => plc5.GetData(40, 42, 44, 46, 48, 5, 160));
+            Task<List<Models.CongTacModel.CongTac>> task6 = Task.Run(() => plc6.GetData(64, 66, 70, 52, 72, 6, 170));
+            Task<List<Models.CongTacModel.CongTac>> task7 = Task.Run(() => plc7.GetData(74, 76, 78, 80, 82, 7, 180));
+            Task<List<Models.CongTacModel.CongTac>> task8 = Task.Run(() => plc8.GetData(84, 86, 88, 90, 92, 8, 190));
+            Task<List<Models.CongTacModel.CongTac>> task9 = Task.Run(() => plc9.GetData(94, 96, 98, 100, 102, 9, 200));
+            Task<List<Models.CongTacModel.CongTac>> task10 = Task.Run(() => plc10.GetData(104, 106, 108, 110, 112, 10, 210));
 
 
 
@@ -394,56 +435,21 @@ namespace ManagementSoftware.GUI
 
             //update gui
 
-            SetTextControl(SLT1, TT1, list[0]);
-            SetTextControl(SLT2, TT2, list[1]);
-            SetTextControl(SLT3, TT3, list[2]);
-            SetTextControl(SLT4, TT4, list[3]);
-            SetTextControl(SLT5, TT5, list[4]);
-            SetTextControl(SLT6, TT6, list[5]);
-            SetTextControl(SLT7, TT7, list[6]);
-            SetTextControl(SLT8, TT8, list[7]);
-            SetTextControl(SLT9, TT9, list[8]);
-            SetTextControl(SLT10, TT10, list[9]);
-            SetTextControl(SLT11, TT11, list[10]);
-            SetTextControl(SLT12, TT12, list[11]);
-            SetTextControl(SLT13, TT13, list[12]);
-            SetTextControl(SLT14, TT14, list[13]);
-            SetTextControl(SLT15, TT15, list[14]);
-            SetTextControl(SLT16, TT16, list[15]);
-            SetTextControl(SLT17, TT17, list[16]);
-            SetTextControl(SLT18, TT18, list[17]);
-            SetTextControl(SLT19, TT19, list[18]);
-            SetTextControl(SLT20, TT20, list[19]);
-            SetTextControl(SLT21, TT21, list[20]);
-            SetTextControl(SLT22, TT22, list[21]);
-            SetTextControl(SLT23, TT23, list[22]);
-            SetTextControl(SLT24, TT24, list[23]);
-            SetTextControl(SLT25, TT25, list[24]);
-            SetTextControl(SLT26, TT26, list[25]);
-            SetTextControl(SLT27, TT27, list[26]);
-            SetTextControl(SLT28, TT28, list[27]);
-            SetTextControl(SLT29, TT29, list[28]);
-            SetTextControl(SLT30, TT30, list[29]);
-            SetTextControl(SLT31, TT31, list[30]);
-            SetTextControl(SLT32, TT32, list[31]);
-            SetTextControl(SLT33, TT33, list[32]);
-            SetTextControl(SLT34, TT34, list[33]);
-            SetTextControl(SLT35, TT35, list[34]);
-            SetTextControl(SLT36, TT36, list[35]);
-            SetTextControl(SLT37, TT37, list[36]);
-            SetTextControl(SLT38, TT38, list[37]);
-            SetTextControl(SLT39, TT39, list[38]);
-            SetTextControl(SLT40, TT40, list[39]);
-            SetTextControl(SLT41, TT41, list[40]);
-            SetTextControl(SLT42, TT42, list[41]);
-            SetTextControl(SLT43, TT43, list[42]);
-            SetTextControl(SLT44, TT44, list[43]);
-            SetTextControl(SLT45, TT45, list[44]);
-            SetTextControl(SLT46, TT46, list[45]);
-            SetTextControl(SLT47, TT47, list[46]);
-            SetTextControl(SLT48, TT48, list[47]);
-            SetTextControl(SLT49, TT49, list[48]);
-            SetTextControl(SLT50, TT50, list[49]);
+            for (int i = 0; i < list.Count; i++)
+            {
+                dataGridViewGiamSat.Rows[i].Cells[0].Value = list[i].JigCongTac + " - "+ list[i].CongTacName;
+                dataGridViewGiamSat.Rows[i].Cells[1].Value = list[i].TrangThai == true ? "ON" : "OFF";
+                dataGridViewGiamSat.Rows[i].Cells[2].Value = list[i].LanTestThu;
+                
+                if (list[i].isError)
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Crimson;
+                }
+                else
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
+                }
+            }
 
 
 
@@ -451,16 +457,6 @@ namespace ManagementSoftware.GUI
 
 
         }
-
-        private void SetTextControl(Button lanTestThu, Button TrangThai, Models.CongTacModel.CongTac e)
-        {
-
-            lanTestThu.Text = e.LanTestThu.ToString();
-
-            TrangThai.Text = e.TrangThai == true ? "ON" : "OFF";
-
-        }
-
 
 
         private async void CongTac_FormClosing(object sender, FormClosingEventArgs e)
