@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.100.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
     <PackageReference Include="S7netplus" Version="0.16.0" />
     <PackageReference Include="Syncfusion.Grid.Windows" Version="20.2.0.36" />

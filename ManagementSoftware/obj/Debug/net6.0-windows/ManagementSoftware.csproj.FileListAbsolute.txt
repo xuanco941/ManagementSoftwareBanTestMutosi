@@ -303,3 +303,9 @@ C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\ManagementSoft
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\bin\Debug\net6.0-windows\Interop.ActUtlTypeLib.dll
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.NguonManagement.FormTestNguon.resources
 C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\obj\Debug\net6.0-windows\ManagementSoftware.GUI.CaiDat.resources
+C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\bin\Debug\net6.0-windows\ClosedXML.dll
+C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\bin\Debug\net6.0-windows\DocumentFormat.OpenXml.dll
+C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\bin\Debug\net6.0-windows\ExcelNumberFormat.dll
+C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\bin\Debug\net6.0-windows\Irony.dll
+C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\bin\Debug\net6.0-windows\SixLabors.Fonts.dll
+C:\Users\xuanc\OneDrive\Desktop\WorkPlace\C-Sharp\Working\DESKTOP\Mutosi\ManagementSoftwareBanTestMutosi\ManagementSoftware\bin\Debug\net6.0-windows\XLParser.dll

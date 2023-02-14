@@ -1,4 +1,5 @@
-﻿using ManagementSoftware.DAL;
+﻿using ClosedXML.Excel;
+using ManagementSoftware.DAL;
 using ManagementSoftware.DAL.DALPagination;
 using ManagementSoftware.GUI.NguonManagement;
 using ManagementSoftware.GUI.Section;
@@ -127,7 +128,7 @@ namespace ManagementSoftware.GUI
 
             // Nếu có dữ liệu mới và khác với dữ liệu cũ
             if (pagination.ListResults != null && pagination.ListResults.Count > 0
-                && (!this.ListResults?.SequenceEqual(pagination.ListResults) ?? true))
+                && (this.ListResults?.SequenceEqual(pagination.ListResults) == false) )
             {
                 this.ListResults = new List<Models.LoiLocModel.LoiLoc>(pagination.ListResults);
                 this.TotalPages = pagination.TotalPages;
@@ -191,6 +192,8 @@ namespace ManagementSoftware.GUI
                 checkColor = !checkColor;
 
             }
+
+
         }
 
 
@@ -216,6 +219,7 @@ namespace ManagementSoftware.GUI
         {
             StopTimer2();
             panel2.Enabled = false;
+
 
             dataGridView1.Rows.Clear();
 
@@ -258,6 +262,7 @@ namespace ManagementSoftware.GUI
                 checkColor = !checkColor;
 
             }
+
 
             panel2.Enabled = true;
             StartTimer2();
@@ -314,7 +319,7 @@ namespace ManagementSoftware.GUI
 
         public async void StartTimer1()
         {
-            if (timer == null && await plc.Open()==true)
+            if (timer == null && await plc.Open() == true)
             {
                 timer = new System.Threading.Timer(Callback1, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
             }
@@ -438,6 +443,118 @@ namespace ManagementSoftware.GUI
                 LoadFormThongKe();
                 this.StopTimer1();
             }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //Xuat Excel
+
+        void XuatExcel(string title, DataGridView dgv)
+        {
+            if (dgv.Rows != null && dgv.Rows.Count != 0)
+            {
+
+                using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Excel | *.xlsx | Excel 2016 | *.xls" })
+                    if (sfd.ShowDialog() == DialogResult.OK)
+                    {
+                        try
+                        {
+                            using (var workBook = new XLWorkbook())
+                            {
+
+
+                                var ws = workBook.Worksheets.Add("Lịch sử test");
+
+                                ws.Range(ws.Cell("A1"), ws.Cell("B1")).Merge();
+                                ws.Range(ws.Cell("A1"), ws.Cell("B1")).Value = title;
+                                ws.Range(ws.Cell("A1"), ws.Cell("B1")).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                                ws.Range(ws.Cell("A1"), ws.Cell("B1")).Style.Font.Bold = true;
+                                ws.Range(ws.Cell("A1"), ws.Cell("B1")).Style.Font.FontSize = 14;
+
+
+                                for (int i = 0; i < dgv.Columns.Count; i++)
+                                {
+                                    ws.Cell(2, 1 + i).Value = dgv.Columns[i].HeaderText;
+                                }
+
+                                for (int i = 0; i < dgv.Rows.Count; i++)
+                                {
+                                    for (int j = 0; j < dgv.Columns.Count; j++)
+                                    {
+                                        ws.Cell(i + 3, j + 1).Value = dgv.Rows[i].Cells[j].Value.ToString();
+                                        ws.Cell(i + 3, j + 1).Style.Alignment.Vertical = XLAlignmentVerticalValues.Center;
+                                    }
+                                }
+
+                                string tenfile = ".xlsx";
+                                workBook.SaveAs(sfd.FileName + DateTime.Now.ToString("dd_mm_yyyy_hhmmss") + tenfile);
+                                MessageBox.Show("xuất file thành công");
+                            }
+                    }
+                        catch
+                {
+                    MessageBox.Show("Không thể xuất file", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy dữ liệu để xuất Excel.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
+
+        private void buttonXuatExcel_Click(object sender, EventArgs e)
+        {
+            StopTimer2();
+            XuatExcel("Test Lõi Lọc", dataGridView1);
+            StartTimer2();
         }
     }
 }

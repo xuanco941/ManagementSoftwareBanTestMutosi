@@ -1216,6 +1216,7 @@
             this.buttonXuatExcel.TextColor = System.Drawing.Color.Black;
             this.buttonXuatExcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonXuatExcel.UseVisualStyleBackColor = false;
+            this.buttonXuatExcel.Click += new System.EventHandler(this.buttonXuatExcel_Click);
             // 
             // panel2
             // 
