@@ -151,5 +151,12 @@ namespace ManagementSoftware.GUI
             form.callAlert = new Nguon.CallAlert(Alert);
             ChangeFormContent(form, sender);
         }
+
+        private void buttonXoaData_Click(object sender, EventArgs e)
+        {
+            CaiDat form = new CaiDat();
+            form.callAlert = new CaiDat.CallAlert(Alert);
+            ChangeFormContent(form, sender);
+        }
     }
 }

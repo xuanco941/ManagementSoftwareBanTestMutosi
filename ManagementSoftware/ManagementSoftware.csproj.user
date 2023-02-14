@@ -10,6 +10,9 @@
     <Compile Update="GUI\ActivityManagement\FormEmployeeActivities.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\CaiDat.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GUI\Employee.cs">
       <SubType>Form</SubType>
     </Compile>
