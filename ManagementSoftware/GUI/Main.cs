@@ -48,11 +48,10 @@ namespace ManagementSoftware.GUI
 
             //remove controls in panel
 
-            panelContent.Controls.Clear();
             foreach (Form mainScreen in panelContent.Controls)
             {
-                mainScreen.Dispose();
                 mainScreen.Close();
+                mainScreen.Dispose();
             }
 
             //set new content
@@ -157,6 +156,17 @@ namespace ManagementSoftware.GUI
             CaiDat form = new CaiDat();
             form.callAlert = new CaiDat.CallAlert(Alert);
             ChangeFormContent(form, sender);
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            //set new content
+            Hello form = new Hello();
+            form.TopLevel = false;
+            panelContent.Controls.Add(form);
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+            form.Show();
         }
     }
 }

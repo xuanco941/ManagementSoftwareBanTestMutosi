@@ -99,7 +99,6 @@ namespace ManagementSoftware.GUI
 
 
 
-
         public void StartTimer2()
         {
             if (timer2 == null)
@@ -116,12 +115,17 @@ namespace ManagementSoftware.GUI
                 timer2.Dispose();
                 timer2 = null;
             }
+
+
         }
 
         private async void Callback2(Object state)
         {
             Stopwatch watch = new Stopwatch();
             watch.Start();
+
+
+           
 
             PaginationLoiLoc pagination = new PaginationLoiLoc();
             pagination.Set(page, timeStart, timeEnd);
@@ -134,6 +138,7 @@ namespace ManagementSoftware.GUI
                 this.TotalPages = pagination.TotalPages;
                 UpdateData2(pagination.ListResults);
             }
+
 
             if (timer2 != null)
             {
@@ -192,6 +197,9 @@ namespace ManagementSoftware.GUI
                 checkColor = !checkColor;
 
             }
+
+
+           
 
 
         }

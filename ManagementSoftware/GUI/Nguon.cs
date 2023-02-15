@@ -674,6 +674,11 @@ namespace ManagementSoftware.GUI
             this.StartTimer2();
         }
 
+        private void Nguon_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            formTestNguon.Close();
+            formTestLed.Close();
+        }
     }
 
 

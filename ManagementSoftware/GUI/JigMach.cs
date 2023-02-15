@@ -590,11 +590,10 @@ namespace ManagementSoftware.GUI
             }
         }
 
-
-
-
-
-
-
+        private void JigMach_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            giamSatJigMachNguon.Close();
+            giamSatJigMachTDS.Close();
+        }
     }
 }

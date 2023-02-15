@@ -43,6 +43,7 @@
             this.tabPageThongKe = new System.Windows.Forms.TabPage();
             this.panelThongKe = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonXuatExcel = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel31 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel32 = new System.Windows.Forms.TableLayoutPanel();
@@ -72,6 +73,7 @@
             this.inputNumPageGo = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
             this.tabPageThongKeLed = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.buttonXuatExcelLed = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.panelThongKeLed = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -99,8 +101,6 @@
             this.buttonPreviousPage2 = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.buttonCustom6 = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.integerTextBox2 = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
-            this.buttonXuatExcel = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
-            this.buttonXuatExcelLed = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.tabControl1.SuspendLayout();
             this.tabPageThongKe.SuspendLayout();
             this.panelThongKe.SuspendLayout();
@@ -238,6 +238,31 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(1041, 342);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // buttonXuatExcel
+            // 
+            this.buttonXuatExcel.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonXuatExcel.BackgroundColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonXuatExcel.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.buttonXuatExcel.BorderRadius = 3;
+            this.buttonXuatExcel.BorderSize = 0;
+            this.buttonXuatExcel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonXuatExcel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonXuatExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonXuatExcel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonXuatExcel.ForeColor = System.Drawing.Color.Black;
+            this.buttonXuatExcel.Image = global::ManagementSoftware.Properties.Resources.Logoexe;
+            this.buttonXuatExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonXuatExcel.Location = new System.Drawing.Point(0, 342);
+            this.buttonXuatExcel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.buttonXuatExcel.Name = "buttonXuatExcel";
+            this.buttonXuatExcel.Size = new System.Drawing.Size(1041, 30);
+            this.buttonXuatExcel.TabIndex = 22;
+            this.buttonXuatExcel.Text = "Xuất file Excel";
+            this.buttonXuatExcel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonXuatExcel.TextColor = System.Drawing.Color.Black;
+            this.buttonXuatExcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonXuatExcel.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -696,6 +721,31 @@
             this.dataGridView2.Size = new System.Drawing.Size(1049, 350);
             this.dataGridView2.TabIndex = 4;
             // 
+            // buttonXuatExcelLed
+            // 
+            this.buttonXuatExcelLed.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonXuatExcelLed.BackgroundColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonXuatExcelLed.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.buttonXuatExcelLed.BorderRadius = 3;
+            this.buttonXuatExcelLed.BorderSize = 0;
+            this.buttonXuatExcelLed.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonXuatExcelLed.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonXuatExcelLed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonXuatExcelLed.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonXuatExcelLed.ForeColor = System.Drawing.Color.Black;
+            this.buttonXuatExcelLed.Image = global::ManagementSoftware.Properties.Resources.Logoexe;
+            this.buttonXuatExcelLed.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonXuatExcelLed.Location = new System.Drawing.Point(0, 350);
+            this.buttonXuatExcelLed.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.buttonXuatExcelLed.Name = "buttonXuatExcelLed";
+            this.buttonXuatExcelLed.Size = new System.Drawing.Size(1049, 30);
+            this.buttonXuatExcelLed.TabIndex = 22;
+            this.buttonXuatExcelLed.Text = "Xuất file Excel";
+            this.buttonXuatExcelLed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonXuatExcelLed.TextColor = System.Drawing.Color.Black;
+            this.buttonXuatExcelLed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonXuatExcelLed.UseVisualStyleBackColor = false;
+            // 
             // panelThongKeLed
             // 
             this.panelThongKeLed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
@@ -1100,56 +1150,6 @@
             this.integerTextBox2.Text = "1";
             this.integerTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // buttonXuatExcel
-            // 
-            this.buttonXuatExcel.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.buttonXuatExcel.BackgroundColor = System.Drawing.Color.LightSkyBlue;
-            this.buttonXuatExcel.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.buttonXuatExcel.BorderRadius = 3;
-            this.buttonXuatExcel.BorderSize = 0;
-            this.buttonXuatExcel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonXuatExcel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonXuatExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonXuatExcel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonXuatExcel.ForeColor = System.Drawing.Color.Black;
-            this.buttonXuatExcel.Image = global::ManagementSoftware.Properties.Resources.Logoexe;
-            this.buttonXuatExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonXuatExcel.Location = new System.Drawing.Point(0, 342);
-            this.buttonXuatExcel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.buttonXuatExcel.Name = "buttonXuatExcel";
-            this.buttonXuatExcel.Size = new System.Drawing.Size(1041, 30);
-            this.buttonXuatExcel.TabIndex = 22;
-            this.buttonXuatExcel.Text = "Xuất file Excel";
-            this.buttonXuatExcel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonXuatExcel.TextColor = System.Drawing.Color.Black;
-            this.buttonXuatExcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonXuatExcel.UseVisualStyleBackColor = false;
-            // 
-            // buttonXuatExcelLed
-            // 
-            this.buttonXuatExcelLed.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.buttonXuatExcelLed.BackgroundColor = System.Drawing.Color.LightSkyBlue;
-            this.buttonXuatExcelLed.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.buttonXuatExcelLed.BorderRadius = 3;
-            this.buttonXuatExcelLed.BorderSize = 0;
-            this.buttonXuatExcelLed.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonXuatExcelLed.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonXuatExcelLed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonXuatExcelLed.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonXuatExcelLed.ForeColor = System.Drawing.Color.Black;
-            this.buttonXuatExcelLed.Image = global::ManagementSoftware.Properties.Resources.Logoexe;
-            this.buttonXuatExcelLed.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonXuatExcelLed.Location = new System.Drawing.Point(0, 350);
-            this.buttonXuatExcelLed.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.buttonXuatExcelLed.Name = "buttonXuatExcelLed";
-            this.buttonXuatExcelLed.Size = new System.Drawing.Size(1049, 30);
-            this.buttonXuatExcelLed.TabIndex = 22;
-            this.buttonXuatExcelLed.Text = "Xuất file Excel";
-            this.buttonXuatExcelLed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonXuatExcelLed.TextColor = System.Drawing.Color.Black;
-            this.buttonXuatExcelLed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonXuatExcelLed.UseVisualStyleBackColor = false;
-            // 
             // Nguon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1159,6 +1159,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Nguon";
             this.Text = "JigMach";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Nguon_FormClosing);
             this.Load += new System.EventHandler(this.Nguon_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageThongKe.ResumeLayout(false);
