@@ -33,6 +33,13 @@ namespace ManagementSoftware.PLCSetting
             int congSuat = 80;
             int time = 240;
             int lantestthu = 340;
+
+            //err
+            int errDong = 160;
+            int errDienAp = 180;
+            int err_th_van_dt = 220;
+
+
             for (int i = 0; i < 10; i++)
             {
                 JigMachNguon jig = new JigMachNguon();
@@ -45,6 +52,22 @@ namespace ManagementSoftware.PLCSetting
                 jig.LanTestThu = await this.ConvertUIntToUshort(lantestthu);
 
 
+
+                //err
+                ushort err1 = await this.ConvertUIntToUshort(errDong);
+                ushort err2 = await this.ConvertUIntToUshort(errDienAp);
+                ushort err3 = await this.ConvertUIntToUshort(err_th_van_dt);
+                if(err1 != 0 && err2 !=0 && err3 != 0)
+                {
+                    jig.isError = true;
+                }
+                else
+                {
+                    jig.isError = false;
+                }
+
+
+
                 listMachNguon.Add(jig);
 
                 dienAp = dienAp + 4;
@@ -52,6 +75,12 @@ namespace ManagementSoftware.PLCSetting
                 congSuat = congSuat + 4;
                 time = time + 4;
                 lantestthu = lantestthu + 2;
+
+                //err
+                errDong = errDong+ 2;
+                errDienAp = errDienAp + 2;
+                err_th_van_dt = err_th_van_dt + 2;
+
             }
             return listMachNguon;
 

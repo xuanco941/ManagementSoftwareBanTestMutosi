@@ -117,7 +117,16 @@ namespace ManagementSoftware.GUI
                         row.Cells[1].Value = i.CongTacName + " - " + i.JigCongTac;
                         row.Cells[2].Value = i.TrangThai == true ? "ON" : "OFF";
                         row.Cells[3].Value = i.LanTestThu;
-                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        if (i.isError == true)
+                        {
+                            row.DefaultCellStyle.BackColor = Color.Crimson;
+                        }
+                        else
+                        {
+                            row.DefaultCellStyle.BackColor = Color.PaleGreen;
+
+                        }
+
                     }
                     dataGridView1.Rows.Add();
                 }
@@ -221,7 +230,15 @@ namespace ManagementSoftware.GUI
                         row.Cells[1].Value = i.CongTacName + " - " + i.JigCongTac;
                         row.Cells[2].Value = i.TrangThai == true ? "ON" : "OFF";
                         row.Cells[3].Value = i.LanTestThu;
-                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        if (i.isError == true)
+                        {
+                            row.DefaultCellStyle.BackColor = Color.Crimson;
+                        }
+                        else
+                        {
+                            row.DefaultCellStyle.BackColor = Color.PaleGreen;
+
+                        }
                     }
                     dataGridView1.Rows.Add();
                 }

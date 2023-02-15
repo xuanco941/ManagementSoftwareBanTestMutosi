@@ -29,6 +29,8 @@ namespace ManagementSoftware.PLCSetting
             int cbNhiet = 120;
 
 
+
+
             for (int i = 0; i <= 9; i++)
             {
                 BauNong obj = new BauNong();
