@@ -115,6 +115,7 @@
             this.tabPageThongKe = new System.Windows.Forms.TabPage();
             this.panelThongKe = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonUpdateHistory = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.buttonXuatExcel = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -158,6 +159,7 @@
             this.button28 = new System.Windows.Forms.Button();
             this.panel82 = new System.Windows.Forms.Panel();
             this.label34 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.tabControl1.SuspendLayout();
             this.tabPageGiamSat.SuspendLayout();
             this.panelGiamSat.SuspendLayout();
@@ -228,6 +230,7 @@
             this.tableLayoutPanel8.SuspendLayout();
             this.panel81.SuspendLayout();
             this.panel82.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -1144,7 +1147,7 @@
             // 
             this.panelThongKe.AutoScroll = true;
             this.panelThongKe.Controls.Add(this.dataGridView1);
-            this.panelThongKe.Controls.Add(this.buttonXuatExcel);
+            this.panelThongKe.Controls.Add(this.tableLayoutPanel9);
             this.panelThongKe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelThongKe.Location = new System.Drawing.Point(3, 3);
             this.panelThongKe.Name = "panelThongKe";
@@ -1189,8 +1192,34 @@
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(1125, 415);
+            this.dataGridView1.Size = new System.Drawing.Size(1125, 413);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // buttonUpdateHistory
+            // 
+            this.buttonUpdateHistory.BackColor = System.Drawing.Color.Thistle;
+            this.buttonUpdateHistory.BackgroundColor = System.Drawing.Color.Thistle;
+            this.buttonUpdateHistory.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.buttonUpdateHistory.BorderRadius = 3;
+            this.buttonUpdateHistory.BorderSize = 0;
+            this.buttonUpdateHistory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonUpdateHistory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonUpdateHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUpdateHistory.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonUpdateHistory.ForeColor = System.Drawing.Color.Black;
+            this.buttonUpdateHistory.Image = global::ManagementSoftware.Properties.Resources.iconfinder_Synchronize_278832;
+            this.buttonUpdateHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonUpdateHistory.Location = new System.Drawing.Point(4, 3);
+            this.buttonUpdateHistory.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.buttonUpdateHistory.Name = "buttonUpdateHistory";
+            this.buttonUpdateHistory.Size = new System.Drawing.Size(554, 26);
+            this.buttonUpdateHistory.TabIndex = 21;
+            this.buttonUpdateHistory.Text = "Stop Update";
+            this.buttonUpdateHistory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonUpdateHistory.TextColor = System.Drawing.Color.Black;
+            this.buttonUpdateHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonUpdateHistory.UseVisualStyleBackColor = false;
+            this.buttonUpdateHistory.Click += new System.EventHandler(this.buttonUpdateHistory_Click);
             // 
             // buttonXuatExcel
             // 
@@ -1200,16 +1229,16 @@
             this.buttonXuatExcel.BorderRadius = 3;
             this.buttonXuatExcel.BorderSize = 0;
             this.buttonXuatExcel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonXuatExcel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonXuatExcel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonXuatExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonXuatExcel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonXuatExcel.ForeColor = System.Drawing.Color.Black;
             this.buttonXuatExcel.Image = global::ManagementSoftware.Properties.Resources.Logoexe;
             this.buttonXuatExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonXuatExcel.Location = new System.Drawing.Point(0, 415);
+            this.buttonXuatExcel.Location = new System.Drawing.Point(566, 3);
             this.buttonXuatExcel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonXuatExcel.Name = "buttonXuatExcel";
-            this.buttonXuatExcel.Size = new System.Drawing.Size(1125, 30);
+            this.buttonXuatExcel.Size = new System.Drawing.Size(555, 26);
             this.buttonXuatExcel.TabIndex = 20;
             this.buttonXuatExcel.Text = "Xuất file Excel";
             this.buttonXuatExcel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1770,6 +1799,22 @@
             this.label34.Text = "Thời gian : ";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.ColumnCount = 2;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.Controls.Add(this.buttonUpdateHistory, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.buttonXuatExcel, 1, 0);
+            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 413);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 1;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(1125, 32);
+            this.tableLayoutPanel9.TabIndex = 22;
+            // 
             // LoiLoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1853,6 +1898,7 @@
             this.tableLayoutPanel8.ResumeLayout(false);
             this.panel81.ResumeLayout(false);
             this.panel82.ResumeLayout(false);
+            this.tableLayoutPanel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1983,5 +2029,7 @@
         private Panel panelThongKe;
         private DataGridView dataGridView1;
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonXuatExcel;
+        private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonUpdateHistory;
+        private TableLayoutPanel tableLayoutPanel9;
     }
 }

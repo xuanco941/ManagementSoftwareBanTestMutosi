@@ -142,13 +142,17 @@ namespace ManagementSoftware.GUI
                 this.timer2.Change(Timeout.Infinite, Timeout.Infinite);
                 timer2.Dispose();
                 timer2 = null;
+                buttonUpdateHistory.BackColor = Color.Crimson;
+                buttonUpdateHistory.Text = "Start Update";
             }
         }
         private void StartTimer2()
         {
             if (timer2 == null)
             {
-                timer2 = new System.Threading.Timer(Callback2, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+                timer2 = new System.Threading.Timer(Callback2, null, Common.TIME_INTERVAL_UPDATE_DATA_ON_HISTORY, Timeout.Infinite);
+                buttonUpdateHistory.BackColor = Color.Thistle;
+                buttonUpdateHistory.Text = "Stop Update";
             }
         }
 
@@ -175,7 +179,7 @@ namespace ManagementSoftware.GUI
 
             if (timer2 != null)
             {
-                timer2.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+                timer2.Change(Math.Max(0, Common.TIME_INTERVAL_UPDATE_DATA_ON_HISTORY - watch.ElapsedMilliseconds), Timeout.Infinite);
             }
         }
 
@@ -511,6 +515,53 @@ namespace ManagementSoftware.GUI
                 {
                     timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
                 }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        private void buttonXuatExcel_Click(object sender, EventArgs e)
+        {
+            StopTimer2();
+            new XuatExcel().Xuat("Test Công Tắc", dataGridView1);
+            StartTimer2();
+        }
+
+        private void buttonUpdateHistory_Click(object sender, EventArgs e)
+        {
+            if (timer2 != null)
+            {
+                StopTimer2();
+
+            }
+            else
+            {
+                StartTimer2();
+
             }
         }
     }

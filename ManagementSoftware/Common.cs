@@ -33,5 +33,9 @@ namespace ManagementSoftware
         public const string GROUPS = "GR";
         public const string ACTIVITIES = "A";
 
+
+
+        //Timer Interval
+        public const int TIME_INTERVAL_UPDATE_DATA_ON_HISTORY = 5000;
     }
 }

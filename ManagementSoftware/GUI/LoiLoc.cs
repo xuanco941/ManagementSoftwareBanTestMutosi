@@ -103,7 +103,10 @@ namespace ManagementSoftware.GUI
         {
             if (timer2 == null)
             {
-                timer2 = new System.Threading.Timer(Callback2, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
+                timer2 = new System.Threading.Timer(Callback2, null, Common.TIME_INTERVAL_UPDATE_DATA_ON_HISTORY, Timeout.Infinite);
+
+                buttonUpdateHistory.BackColor = Color.Thistle;
+                buttonUpdateHistory.Text = "Stop Update";
             }
         }
 
@@ -114,6 +117,9 @@ namespace ManagementSoftware.GUI
                 this.timer2.Change(Timeout.Infinite, Timeout.Infinite);
                 timer2.Dispose();
                 timer2 = null;
+
+                buttonUpdateHistory.BackColor = Color.Crimson;
+                buttonUpdateHistory.Text = "Start Update";
             }
 
 
@@ -142,7 +148,7 @@ namespace ManagementSoftware.GUI
 
             if (timer2 != null)
             {
-                timer2.Change(Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds), Timeout.Infinite);
+                timer2.Change(Math.Max(0, Common.TIME_INTERVAL_UPDATE_DATA_ON_HISTORY - watch.ElapsedMilliseconds), Timeout.Infinite);
             }
         }
 
@@ -501,68 +507,27 @@ namespace ManagementSoftware.GUI
 
         //Xuat Excel
 
-        void XuatExcel(string title, DataGridView dgv)
-        {
-            if (dgv.Rows != null && dgv.Rows.Count != 0)
-            {
-
-                using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Excel | *.xlsx | Excel 2016 | *.xls" })
-                    if (sfd.ShowDialog() == DialogResult.OK)
-                    {
-                        try
-                        {
-                            using (var workBook = new XLWorkbook())
-                            {
-
-
-                                var ws = workBook.Worksheets.Add("Lịch sử test");
-
-                                ws.Range(ws.Cell("A1"), ws.Cell("B1")).Merge();
-                                ws.Range(ws.Cell("A1"), ws.Cell("B1")).Value = title;
-                                ws.Range(ws.Cell("A1"), ws.Cell("B1")).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                                ws.Range(ws.Cell("A1"), ws.Cell("B1")).Style.Font.Bold = true;
-                                ws.Range(ws.Cell("A1"), ws.Cell("B1")).Style.Font.FontSize = 14;
-
-
-                                for (int i = 0; i < dgv.Columns.Count; i++)
-                                {
-                                    ws.Cell(2, 1 + i).Value = dgv.Columns[i].HeaderText;
-                                }
-
-                                for (int i = 0; i < dgv.Rows.Count; i++)
-                                {
-                                    for (int j = 0; j < dgv.Columns.Count; j++)
-                                    {
-                                        ws.Cell(i + 3, j + 1).Value = dgv.Rows[i].Cells[j].Value.ToString();
-                                        ws.Cell(i + 3, j + 1).Style.Alignment.Vertical = XLAlignmentVerticalValues.Center;
-                                    }
-                                }
-
-                                string tenfile = ".xlsx";
-                                workBook.SaveAs(sfd.FileName + DateTime.Now.ToString("dd_mm_yyyy_hhmmss") + tenfile);
-                                MessageBox.Show("xuất file thành công");
-                            }
-                    }
-                        catch
-                {
-                    MessageBox.Show("Không thể xuất file", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-
-            }
-            else
-            {
-                MessageBox.Show("Không tìm thấy dữ liệu để xuất Excel.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-
-        }
-
 
         private void buttonXuatExcel_Click(object sender, EventArgs e)
         {
             StopTimer2();
-            XuatExcel("Test Lõi Lọc", dataGridView1);
+            new XuatExcel().Xuat("Test Lõi Lọc", dataGridView1);
             StartTimer2();
+        }
+
+
+        private void buttonUpdateHistory_Click(object sender, EventArgs e)
+        {
+            if(timer2 != null)
+            {
+                StopTimer2();
+
+            }
+            else
+            {
+                StartTimer2();
+
+            }
         }
     }
 }
