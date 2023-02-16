@@ -3,6 +3,7 @@ using ManagementSoftware.GUI;
 using ManagementSoftware.PLCSetting;
 using System.Diagnostics;
 using ManagementSoftware.GUI.NguonManagement;
+using ManagementSoftware.ManageHistoryData;
 
 namespace ManagementSoftware
 {
@@ -36,7 +37,7 @@ namespace ManagementSoftware
 
             if (Common.USERSESSION != null)
             {
-                new ControlAllPLC().ConnectAndRunSaveAll();
+                new SaveToDatabase().ConnectAndRunSaveAll();
 
                 Application.Run(new Main());
             }

@@ -16,11 +16,13 @@ namespace ManagementSoftware.Models.LoiLocModel
         public string LoiLocName { get; set; } = "";
         public ushort SoLanTest { get; set; }
         public double ApSuatTest { get; set; }
-        public uint ThoiGianNen { get; set; } //ms
-        public uint ThoiGianXa { get; set; } //ms
-        public uint ThoiGianGiu { get; set; } //ms
+        public uint ThoiGianNen { get; set; } //s
+        public uint ThoiGianXa { get; set; } //s
+        public uint ThoiGianGiu { get; set; } //s
         public DateTime CreateAt { get; set; }
         public bool isError { get; set; }
+        public string Error { get; set; } = "Không";
+
 
 
     }

@@ -109,6 +109,8 @@ namespace ManagementSoftware.GUI
             dataGridView1.Columns.Add(dongDC);
             dataGridView1.Columns.Add(congSuat);
             dataGridView1.Columns.Add(ThoiGian);
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Lỗi"});
+
 
 
             dataGridView1.RowTemplate.Height = 35;
@@ -135,6 +137,8 @@ namespace ManagementSoftware.GUI
             dataGridView2.Columns.Add(name);
             dataGridView2.Columns.Add(lanTest);
             dataGridView2.Columns.Add(ThoiGian);
+            dataGridView2.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Lỗi" });
+
 
             dataGridView2.RowTemplate.Height = 35;
 
@@ -206,6 +210,11 @@ namespace ManagementSoftware.GUI
             formTestLed.Dock = DockStyle.Fill;
             formTestLed.Show();
 
+            dataGridView1.ReadOnly = true;
+            dataGridView2.ReadOnly = true;
+            
+
+
             LoadDGV();
             LoadDGV2();
 
@@ -221,7 +230,7 @@ namespace ManagementSoftware.GUI
 
         public void StartTimer1()
         {
-            if(timer1 == null)
+            if (timer1 == null)
             {
                 timer1 = new System.Threading.Timer(Callback1, null, Common.TIME_INTERVAL_UPDATE_DATA_ON_HISTORY, Timeout.Infinite);
                 buttonUpdateHistory.BackColor = Color.Thistle;
@@ -312,19 +321,11 @@ namespace ManagementSoftware.GUI
                         row.Cells[4].Value = i.DongDC;
                         row.Cells[5].Value = i.CongSuat;
                         row.Cells[6].Value = i.ThoiGianTest;
-                        if (i.isErrorDong || i.isErrorAp)
+                        row.Cells[7].Value = i.Error;
+
+                        if (i.Error != "Không")
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
-                            if (i.isErrorDong)
-                            {
-                                row.Cells[4].Style.BackColor = Color.Red;
-                                row.Cells[4].Style.ForeColor = Color.White;
-                            }
-                            if (i.isErrorAp)
-                            {
-                                row.Cells[3].Style.BackColor = Color.Red;
-                                row.Cells[3].Style.ForeColor = Color.White;
-                            }
                         }
                         else
                         {
@@ -423,7 +424,7 @@ namespace ManagementSoftware.GUI
 
         public void StartTimer2()
         {
-            if(timer2 == null)
+            if (timer2 == null)
             {
                 timer2 = new System.Threading.Timer(Callback2, null, Common.TIME_INTERVAL_UPDATE_DATA_ON_HISTORY, Timeout.Infinite);
                 buttonUpdateHistory2.BackColor = Color.Thistle;
@@ -510,7 +511,9 @@ namespace ManagementSoftware.GUI
                         row.Cells[1].Value = i.LedName;
                         row.Cells[2].Value = i.LanTestThu;
                         row.Cells[3].Value = i.ThoiGianTest;
-                        if (i.isError)
+                        row.Cells[4].Value = i.Error;
+
+                        if (i.Error != "Không")
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -589,19 +592,11 @@ namespace ManagementSoftware.GUI
                         row.Cells[4].Value = i.DongDC;
                         row.Cells[5].Value = i.CongSuat;
                         row.Cells[6].Value = i.ThoiGianTest;
-                        if (i.isErrorDong || i.isErrorAp)
+                        row.Cells[7].Value = i.Error;
+
+                        if (i.Error != "Không")
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
-                            if (i.isErrorDong)
-                            {
-                                row.Cells[4].Style.BackColor = Color.Red;
-                                row.Cells[4].Style.ForeColor = Color.White;
-                            }
-                            if (i.isErrorAp)
-                            {
-                                row.Cells[3].Style.BackColor = Color.Red;
-                                row.Cells[3].Style.ForeColor = Color.White;
-                            }
                         }
                         else
                         {
@@ -667,7 +662,16 @@ namespace ManagementSoftware.GUI
                         row.Cells[1].Value = i.LedName;
                         row.Cells[2].Value = i.LanTestThu;
                         row.Cells[3].Value = i.ThoiGianTest;
-                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        row.Cells[4].Value = i.Error;
+
+                        if (i.Error != "Không")
+                        {
+                            row.DefaultCellStyle.BackColor = Color.Crimson;
+                        }
+                        else
+                        {
+                            row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        }
                     }
                     dataGridView2.Rows.Add();
                 }

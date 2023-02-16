@@ -37,7 +37,6 @@ namespace ManagementSoftware.PLCSetting
             //err
             int errDong = 160;
             int errDienAp = 180;
-            int err_th_van_dt = 220;
 
 
             for (int i = 0; i < 10; i++)
@@ -54,19 +53,13 @@ namespace ManagementSoftware.PLCSetting
 
 
                 //err
-                ushort err1 = await this.ConvertUIntToUshort(errDong);
-                ushort err2 = await this.ConvertUIntToUshort(errDienAp);
-                ushort err3 = await this.ConvertUIntToUshort(err_th_van_dt);
-                if(err1 != 0 && err2 !=0 && err3 != 0)
-                {
-                    jig.isError = true;
-                }
-                else
-                {
-                    jig.isError = false;
-                }
+                jig.Error_Dong = await this.ConvertUIntToUshort(errDong) != 0 ? true : false;
+                jig.Error_Ap = await this.ConvertUIntToUshort(errDienAp) != 0 ? true : false;
 
-
+                jig.Error = jig.Error_Dong && jig.Error_Ap ? "Lỗi dòng, lỗi áp" :
+                                jig.Error_Dong ? "Lỗi dòng" :
+                                jig.Error_Ap ? "Lỗi áp" :
+                                "Không";
 
                 listMachNguon.Add(jig);
 
@@ -79,7 +72,6 @@ namespace ManagementSoftware.PLCSetting
                 //err
                 errDong = errDong+ 2;
                 errDienAp = errDienAp + 2;
-                err_th_van_dt = err_th_van_dt + 2;
 
             }
             return listMachNguon;
@@ -94,6 +86,9 @@ namespace ManagementSoftware.PLCSetting
             int lantestthu = 320;
             int vandt = 220;
             int vanapcao = 180;
+
+            int err_th_van_dt = 220;
+
             List<JigMachTDS> listJigMachTDS = new List<JigMachTDS>();
 
             for (int i = 0; i < 10; i++)
@@ -105,6 +100,9 @@ namespace ManagementSoftware.PLCSetting
                 jig.VanDienTu = await this.ConvertUIntToUshort(vandt) == 0 ? false : true;
                 jig.VanApCao = await this.ConvertUIntToUshort(vanapcao) == 0 ? false : true;
 
+                jig.Error_Van_DT = await this.ConvertUIntToUshort(err_th_van_dt) != 0 ? true : false;
+
+                jig.Error = jig.Error_Van_DT==true ? "Lỗi van điện từ" : "Không";
 
                 listJigMachTDS.Add(jig);
 
@@ -112,6 +110,7 @@ namespace ManagementSoftware.PLCSetting
                 lantestthu = lantestthu + 2;
                 vanapcao = vanapcao + 2;
                 vandt = vandt + 2;
+                err_th_van_dt = err_th_van_dt + 2;
             }
 
             return listJigMachTDS;

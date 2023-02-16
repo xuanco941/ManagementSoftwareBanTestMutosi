@@ -71,6 +71,7 @@ namespace ManagementSoftware.GUI
             dataGridView1.Columns.Add(ThoiGian);
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Công suất tiêu thụ(Kwh)" });
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Trạng thái" });
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Lỗi" });
 
 
             dataGridView1.RowTemplate.Height = 35;
@@ -173,7 +174,16 @@ namespace ManagementSoftware.GUI
                         row.Cells[7].Value = i.CongSuatTieuThu;
                         row.Cells[8].Value = i.TrangThai == true ? "ON" : "OFF";
 
-                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        row.Cells[9].Value = i.Error;
+
+                        if (i.Error != "Không")
+                        {
+                            row.DefaultCellStyle.BackColor = Color.Crimson;
+                        }
+                        else
+                        {
+                            row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        }
                     }
                     dataGridView1.Rows.Add();
                 }
@@ -229,7 +239,16 @@ namespace ManagementSoftware.GUI
                         row.Cells[7].Value = i.CongSuatTieuThu;
                         row.Cells[8].Value = i.TrangThai == true ? "ON" : "OFF";
 
-                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        row.Cells[9].Value = i.Error;
+
+                        if (i.Error != "Không")
+                        {
+                            row.DefaultCellStyle.BackColor = Color.Crimson;
+                        }
+                        else
+                        {
+                            row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        }
                     }
                     dataGridView1.Rows.Add();
                 }
@@ -279,6 +298,7 @@ namespace ManagementSoftware.GUI
 
         private async void BepTu_Load(object sender, EventArgs e)
         {
+            dataGridView1.ReadOnly = true;
             LoadDGV();
 
             if (timer == null && await plc.Open() == true)
@@ -362,6 +382,14 @@ namespace ManagementSoftware.GUI
                     CongSuat1.Text = String.Format("{0:0.00}", item.CongSuat);
                     CongSuatTieuThu1.Text = String.Format("{0:0.00}", item.CongSuatTieuThu);
                     TrangThai1.Text = item.TrangThai == true ? "ON" : "OFF";
+                    if (item.Error != "Không")
+                    {
+                        labelBep1.BackColor = Color.Crimson;
+                    }
+                    else
+                    {
+                        labelBep1.BackColor = Color.DarkOrange;
+                    }
                 }
                 else if (item.BepTuName == TenThietBi.BepTu2)
                 {
@@ -372,6 +400,14 @@ namespace ManagementSoftware.GUI
                     CongSuat2.Text = String.Format("{0:0.00}", item.CongSuat);
                     CongSuatTieuThu2.Text = String.Format("{0:0.00}", item.CongSuatTieuThu);
                     TrangThai2.Text = item.TrangThai == true ? "ON" : "OFF";
+                    if (item.Error != "Không")
+                    {
+                        labelBep2.BackColor = Color.Crimson;
+                    }
+                    else
+                    {
+                        labelBep2.BackColor = Color.DarkOrange;
+                    }
                 }
             }
         }

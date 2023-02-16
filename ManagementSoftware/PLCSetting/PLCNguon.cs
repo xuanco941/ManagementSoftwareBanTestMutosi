@@ -34,8 +34,16 @@ namespace ManagementSoftware.PLCSetting
                 nguon.CongSuat = await this.ConvertRealToDouble(congSuatCSAddr);
                 nguon.ThoiGianTest = await this.ConvertUDIntToUInt(timeAddr);
                 nguon.LanTestThu = await this.ConvertUIntToUshort(soLanTestAddr);
-                nguon.isErrorDong = await this.ConvertUIntToUshort(errDong) == 0 ? false : true;
-                nguon.isErrorAp = await this.ConvertUIntToUshort(errAp) == 0 ? false : true;
+
+
+                nguon.Error_Dong = await this.ConvertUIntToUshort(errDong) != 0 ? true : false;
+                nguon.Error_Ap = await this.ConvertUIntToUshort(errAp) != 0 ? true : false;
+
+                nguon.Error = nguon.Error_Dong && nguon.Error_Ap ? "Lỗi dòng, lỗi áp" :
+                                nguon.Error_Dong ? "Lỗi dòng" :
+                                nguon.Error_Ap ? "Lỗi áp" :
+                                "Không";
+
 
                 nguon.NguonName = "Nguồn " + (i + 1);
 

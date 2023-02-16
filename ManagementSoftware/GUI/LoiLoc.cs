@@ -81,6 +81,8 @@ namespace ManagementSoftware.GUI
             congSuat.HeaderText = "Thời gian giữ (giây)";
             DataGridViewColumn ThoiGian = new DataGridViewTextBoxColumn();
             ThoiGian.HeaderText = "Thời gian xả (giây)";
+            DataGridViewColumn Loi = new DataGridViewTextBoxColumn();
+            Loi.HeaderText = "Lỗi";
 
 
 
@@ -91,6 +93,8 @@ namespace ManagementSoftware.GUI
             dataGridView1.Columns.Add(dongDC);
             dataGridView1.Columns.Add(congSuat);
             dataGridView1.Columns.Add(ThoiGian);
+            dataGridView1.Columns.Add(Loi);
+
 
 
             dataGridView1.RowTemplate.Height = 35;
@@ -196,10 +200,21 @@ namespace ManagementSoftware.GUI
                 row.Cells[4].Value = item.ThoiGianNen;
                 row.Cells[5].Value = item.ThoiGianGiu;
                 row.Cells[6].Value = item.ThoiGianXa;
-                if (checkColor == true)
+                row.Cells[7].Value = item.Error;
+
+                
+                if (item.Error != "Không")
                 {
-                    row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                    row.DefaultCellStyle.BackColor = Color.Crimson;
                 }
+                else
+                {
+                    if (checkColor == true)
+                    {
+                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                    }
+                }
+
                 checkColor = !checkColor;
 
             }
@@ -269,10 +284,20 @@ namespace ManagementSoftware.GUI
                 row.Cells[4].Value = item.ThoiGianNen;
                 row.Cells[5].Value = item.ThoiGianGiu;
                 row.Cells[6].Value = item.ThoiGianXa;
-                if (checkColor == true)
+                row.Cells[7].Value = item.Error;
+
+                if (item.Error != "Không")
                 {
-                    row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                    row.DefaultCellStyle.BackColor = Color.Crimson;
                 }
+                else
+                {
+                    if (checkColor == true)
+                    {
+                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                    }
+                }
+
                 checkColor = !checkColor;
 
             }
@@ -360,6 +385,7 @@ namespace ManagementSoftware.GUI
 
         private async void LoiLoc_Load(object sender, EventArgs e)
         {
+            dataGridView1.ReadOnly = true;
             LoadDGV();
 
             StartTimer1();
@@ -419,6 +445,17 @@ namespace ManagementSoftware.GUI
                 SoLanTestJig1.Text = loiloc.SoLanTest.ToString();
 
                 ApSuatTest1.Text = loiloc.ApSuatTest.ToString();
+
+                if (loiloc.Error != "Không")
+                {
+                    labelLoai1.BackColor = Color.Crimson;
+                }
+                else
+                {
+                    labelLoai1.BackColor = Color.DarkOrange;
+                }
+                labelLoai2.BackColor = Color.DarkOrange;
+                labelLoai3.BackColor = Color.DarkOrange;
             }
             else if (loiloc.LoiLocName == TenThietBi.LoiLoc2)
             {
@@ -431,6 +468,16 @@ namespace ManagementSoftware.GUI
                 SoLanTestJig2.Text = loiloc.SoLanTest.ToString();
 
                 ApSuatTest2.Text = loiloc.ApSuatTest.ToString();
+                if (loiloc.Error != "Không")
+                {
+                    labelLoai2.BackColor = Color.Crimson;
+                }
+                else
+                {
+                    labelLoai2.BackColor = Color.DarkOrange;
+                }
+                labelLoai1.BackColor = Color.DarkOrange;
+                labelLoai3.BackColor = Color.DarkOrange;
             }
             else
             {
@@ -441,6 +488,16 @@ namespace ManagementSoftware.GUI
                 SoLanTestJig1va2.Text = loiloc.SoLanTest.ToString();
 
                 ApSuatTest1va2.Text = loiloc.ApSuatTest.ToString();
+                if (loiloc.Error != "Không")
+                {
+                    labelLoai1.BackColor = Color.Crimson;
+                }
+                else
+                {
+                    labelLoai1.BackColor = Color.DarkOrange;
+                }
+                labelLoai1.BackColor = Color.DarkOrange;
+                labelLoai2.BackColor = Color.DarkOrange;
             }
         }
 

@@ -72,7 +72,7 @@ namespace ManagementSoftware.GUI
             dataGridView1.Columns.Add(name);
             dataGridView1.Columns.Add(dienAp);
             dataGridView1.Columns.Add(lanTest);
-
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Lỗi" });
 
 
             dataGridView1.RowTemplate.Height = 35;
@@ -117,14 +117,15 @@ namespace ManagementSoftware.GUI
                         row.Cells[1].Value = i.CongTacName + " - " + i.JigCongTac;
                         row.Cells[2].Value = i.TrangThai == true ? "ON" : "OFF";
                         row.Cells[3].Value = i.LanTestThu;
-                        if (i.isError == true)
+                        row.Cells[4].Value = i.Error;
+
+                        if (i.Error != "Không")
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
                         else
                         {
                             row.DefaultCellStyle.BackColor = Color.PaleGreen;
-
                         }
 
                     }
@@ -230,14 +231,15 @@ namespace ManagementSoftware.GUI
                         row.Cells[1].Value = i.CongTacName + " - " + i.JigCongTac;
                         row.Cells[2].Value = i.TrangThai == true ? "ON" : "OFF";
                         row.Cells[3].Value = i.LanTestThu;
-                        if (i.isError == true)
+                        row.Cells[4].Value = i.Error;
+
+                        if (i.Error != "Không")
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
                         else
                         {
                             row.DefaultCellStyle.BackColor = Color.PaleGreen;
-
                         }
                     }
                     dataGridView1.Rows.Add();
@@ -352,6 +354,7 @@ namespace ManagementSoftware.GUI
             dataGridViewGiamSat.ReadOnly = true;
             dataGridViewGiamSat.RowHeadersVisible = false;
 
+            dataGridView1.ReadOnly = true;
 
 
 
@@ -462,7 +465,7 @@ namespace ManagementSoftware.GUI
                 dataGridViewGiamSat.Rows[i].Cells[1].Value = list[i].TrangThai == true ? "ON" : "OFF";
                 dataGridViewGiamSat.Rows[i].Cells[2].Value = list[i].LanTestThu;
                 
-                if (list[i].isError)
+                if (list[i].Error != "Không")
                 {
                     dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Crimson;
                 }

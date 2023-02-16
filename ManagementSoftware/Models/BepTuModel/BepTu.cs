@@ -22,6 +22,7 @@ namespace ManagementSoftware.Models.BepTuModel
         public bool TrangThai { get; set; }
         public int LanTestThu { get; set; }
         public bool isError { get; set; }
+        public string Error { get; set; } = "Không";
         public int TestBepTuID { get; set; }
         public TestBepTu TestBepTu { get; set; }
     }

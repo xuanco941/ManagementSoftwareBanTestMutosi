@@ -36,6 +36,8 @@ namespace ManagementSoftware.GUI
         }
         private void JigMach_Load(object sender, EventArgs e)
         {
+            dataGridView1.ReadOnly = true;
+            dataGridView2.ReadOnly = true;
             LoadDGV();
             LoadDGV2();
 
@@ -79,6 +81,8 @@ namespace ManagementSoftware.GUI
             dataGridView1.Columns.Add(dongDC);
             dataGridView1.Columns.Add(congSuat);
             dataGridView1.Columns.Add(ThoiGian);
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Lỗi"});
+
 
 
             dataGridView1.RowTemplate.Height = 35;
@@ -140,7 +144,16 @@ namespace ManagementSoftware.GUI
                         row.Cells[4].Value = String.Format("{0:0.00}", i.DongDienDC);
                         row.Cells[5].Value = String.Format("{0:0.00}", i.CongSuat);
                         row.Cells[6].Value = i.ThoiGian;
-                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        row.Cells[7].Value = i.Error;
+
+                        if (i.Error != "Không")
+                        {
+                            row.DefaultCellStyle.BackColor = Color.Crimson;
+                        }
+                        else
+                        {
+                            row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        }
                     }
                     dataGridView1.Rows.Add();
                 }
@@ -277,6 +290,8 @@ namespace ManagementSoftware.GUI
             dataGridView2.Columns.Add(dienAp);
             dataGridView2.Columns.Add(dongDC);
             dataGridView2.Columns.Add(ThoiGian);
+            dataGridView2.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Lỗi"});
+
 
 
             dataGridView2.RowTemplate.Height = 35;
@@ -325,7 +340,16 @@ namespace ManagementSoftware.GUI
                         row.Cells[3].Value = i.VanDienTu == true ? "ON" : "OFF";
                         row.Cells[4].Value = i.VanApCao == true ? "ON" : "OFF";
                         row.Cells[5].Value = i.ThoiGian;
-                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        row.Cells[6].Value = i.Error;
+
+                        if (i.Error != "Không")
+                        {
+                            row.DefaultCellStyle.BackColor = Color.Crimson;
+                        }
+                        else
+                        {
+                            row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        }
                     }
                     dataGridView2.Rows.Add();
                 }
@@ -510,7 +534,16 @@ namespace ManagementSoftware.GUI
                         row.Cells[4].Value = String.Format("{0:0.00}", i.DongDienDC);
                         row.Cells[5].Value = String.Format("{0:0.00}", i.CongSuat);
                         row.Cells[6].Value = i.ThoiGian;
-                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        row.Cells[7].Value = i.Error;
+
+                        if (i.Error != "Không")
+                        {
+                            row.DefaultCellStyle.BackColor = Color.Crimson;
+                        }
+                        else
+                        {
+                            row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        }
                     }
                     dataGridView1.Rows.Add();
                 }
@@ -589,7 +622,16 @@ namespace ManagementSoftware.GUI
                         row.Cells[3].Value = i.VanDienTu == true ? "ON" : "OFF";
                         row.Cells[4].Value = i.VanApCao == true ? "ON" : "OFF";
                         row.Cells[5].Value = i.ThoiGian;
-                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        row.Cells[6].Value = i.Error;
+
+                        if (i.Error != "Không")
+                        {
+                            row.DefaultCellStyle.BackColor = Color.Crimson;
+                        }
+                        else
+                        {
+                            row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        }
                     }
                     dataGridView2.Rows.Add();
                 }

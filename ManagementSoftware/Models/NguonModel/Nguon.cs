@@ -19,9 +19,9 @@ namespace ManagementSoftware.Models.NguonModel
         public double CongSuat { get; set; } //double
         public uint ThoiGianTest { get; set; } // uint
         public ushort LanTestThu { get; set; } //ushort 
-        public bool isErrorDong { get; set; }
-        public bool isErrorAp { get; set; }
-
+        public bool Error_Dong { get; set; }
+        public bool Error_Ap { get; set; }
+        public string Error { get; set; } = "Không";
         public int TestNguonID { get; set; }
         public TestNguon TestNguon { get; set; }
     }

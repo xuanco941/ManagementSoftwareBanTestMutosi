@@ -19,7 +19,6 @@ namespace ManagementSoftware.PLCSetting
 
         }
 
-
         public async Task<LoiLoc> GetData()
         {
             LoiLoc loiloc = new Models.LoiLocModel.LoiLoc();
@@ -38,10 +37,9 @@ namespace ManagementSoftware.PLCSetting
             loiloc.ThoiGianNen = thoiGianNen.Result;
             loiloc.ThoiGianGiu = thoiGianGiu.Result;
             loiloc.ThoiGianXa = thoiGianXa.Result;
-
             loiloc.ApSuatTest = ApSuatTest.Result;
-
             loiloc.SoLanTest = SoLanTest.Result;
+
 
 
 
@@ -58,6 +56,7 @@ namespace ManagementSoftware.PLCSetting
                 loiloc.LoiLocName = TenThietBi.LoiLoc1va2;
             }
 
+
             return loiloc;
 
         }
@@ -65,7 +64,7 @@ namespace ManagementSoftware.PLCSetting
         {
             if (loiLoc != null)
             {
-               new DALLoiLoc().Add(loiLoc);
+                new DALLoiLoc().Add(loiLoc);
             }
         }
     }

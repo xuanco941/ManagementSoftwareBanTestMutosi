@@ -61,7 +61,7 @@
             this.panel121 = new System.Windows.Forms.Panel();
             this.label52 = new System.Windows.Forms.Label();
             this.panel111 = new System.Windows.Forms.Panel();
-            this.label50 = new System.Windows.Forms.Label();
+            this.labelJig1 = new System.Windows.Forms.Label();
             this.panel90 = new System.Windows.Forms.Panel();
             this.panel91 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
@@ -86,7 +86,7 @@
             this.panel124 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB2 = new System.Windows.Forms.Button();
             this.panel100 = new System.Windows.Forms.Panel();
-            this.label45 = new System.Windows.Forms.Label();
+            this.labelJig2 = new System.Windows.Forms.Label();
             this.panel68 = new System.Windows.Forms.Panel();
             this.panel69 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -111,7 +111,7 @@
             this.panel126 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB3 = new System.Windows.Forms.Button();
             this.panel78 = new System.Windows.Forms.Panel();
-            this.label40 = new System.Windows.Forms.Label();
+            this.labelJig3 = new System.Windows.Forms.Label();
             this.panel57 = new System.Windows.Forms.Panel();
             this.panel58 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
@@ -136,7 +136,7 @@
             this.panel128 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB4 = new System.Windows.Forms.Button();
             this.panel67 = new System.Windows.Forms.Panel();
-            this.label30 = new System.Windows.Forms.Label();
+            this.labelJig4 = new System.Windows.Forms.Label();
             this.panel46 = new System.Windows.Forms.Panel();
             this.panel47 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -161,7 +161,7 @@
             this.panel130 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB5 = new System.Windows.Forms.Button();
             this.panel56 = new System.Windows.Forms.Panel();
-            this.label25 = new System.Windows.Forms.Label();
+            this.labelJig5 = new System.Windows.Forms.Label();
             this.panel35 = new System.Windows.Forms.Panel();
             this.panel36 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -186,7 +186,7 @@
             this.panel132 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB6 = new System.Windows.Forms.Button();
             this.panel45 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
+            this.labelJig6 = new System.Windows.Forms.Label();
             this.panel24 = new System.Windows.Forms.Panel();
             this.panel25 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -211,7 +211,7 @@
             this.panel134 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB7 = new System.Windows.Forms.Button();
             this.panel34 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
+            this.labelJig7 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -236,7 +236,7 @@
             this.panel136 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB8 = new System.Windows.Forms.Button();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.labelJig8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -261,7 +261,7 @@
             this.panel138 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB9 = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelJig9 = new System.Windows.Forms.Label();
             this.panel79 = new System.Windows.Forms.Panel();
             this.panel80 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
@@ -286,7 +286,7 @@
             this.panel140 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB10 = new System.Windows.Forms.Button();
             this.panel89 = new System.Windows.Forms.Panel();
-            this.label39 = new System.Windows.Forms.Label();
+            this.labelJig10 = new System.Windows.Forms.Label();
             this.tabPageThongKe = new System.Windows.Forms.TabPage();
             this.panelThongKe = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -796,25 +796,26 @@
             // 
             this.panel111.BackColor = System.Drawing.Color.DarkOrange;
             this.panel111.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel111.Controls.Add(this.label50);
+            this.panel111.Controls.Add(this.labelJig1);
             this.panel111.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel111.Location = new System.Drawing.Point(0, 0);
             this.panel111.Name = "panel111";
             this.panel111.Size = new System.Drawing.Size(232, 38);
             this.panel111.TabIndex = 0;
             // 
-            // label50
+            // labelJig1
             // 
-            this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label50.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label50.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label50.Location = new System.Drawing.Point(0, 0);
-            this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(230, 36);
-            this.label50.TabIndex = 8;
-            this.label50.Text = "Jig 1";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelJig1.BackColor = System.Drawing.Color.DarkOrange;
+            this.labelJig1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelJig1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelJig1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.labelJig1.Location = new System.Drawing.Point(0, 0);
+            this.labelJig1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelJig1.Name = "labelJig1";
+            this.labelJig1.Size = new System.Drawing.Size(230, 36);
+            this.labelJig1.TabIndex = 8;
+            this.labelJig1.Text = "Jig 1";
+            this.labelJig1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel90
             // 
@@ -1083,25 +1084,25 @@
             // 
             this.panel100.BackColor = System.Drawing.Color.DarkOrange;
             this.panel100.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel100.Controls.Add(this.label45);
+            this.panel100.Controls.Add(this.labelJig2);
             this.panel100.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel100.Location = new System.Drawing.Point(0, 0);
             this.panel100.Name = "panel100";
             this.panel100.Size = new System.Drawing.Size(232, 38);
             this.panel100.TabIndex = 0;
             // 
-            // label45
+            // labelJig2
             // 
-            this.label45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label45.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label45.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label45.Location = new System.Drawing.Point(0, 0);
-            this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(230, 36);
-            this.label45.TabIndex = 8;
-            this.label45.Text = "Jig 2";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelJig2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelJig2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelJig2.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.labelJig2.Location = new System.Drawing.Point(0, 0);
+            this.labelJig2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelJig2.Name = "labelJig2";
+            this.labelJig2.Size = new System.Drawing.Size(230, 36);
+            this.labelJig2.TabIndex = 8;
+            this.labelJig2.Text = "Jig 2";
+            this.labelJig2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel68
             // 
@@ -1371,25 +1372,25 @@
             // 
             this.panel78.BackColor = System.Drawing.Color.DarkOrange;
             this.panel78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel78.Controls.Add(this.label40);
+            this.panel78.Controls.Add(this.labelJig3);
             this.panel78.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel78.Location = new System.Drawing.Point(0, 0);
             this.panel78.Name = "panel78";
             this.panel78.Size = new System.Drawing.Size(232, 38);
             this.panel78.TabIndex = 0;
             // 
-            // label40
+            // labelJig3
             // 
-            this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label40.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label40.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label40.Location = new System.Drawing.Point(0, 0);
-            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(230, 36);
-            this.label40.TabIndex = 8;
-            this.label40.Text = "Jig 3";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelJig3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelJig3.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelJig3.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.labelJig3.Location = new System.Drawing.Point(0, 0);
+            this.labelJig3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelJig3.Name = "labelJig3";
+            this.labelJig3.Size = new System.Drawing.Size(230, 36);
+            this.labelJig3.TabIndex = 8;
+            this.labelJig3.Text = "Jig 3";
+            this.labelJig3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel57
             // 
@@ -1658,25 +1659,25 @@
             // 
             this.panel67.BackColor = System.Drawing.Color.DarkOrange;
             this.panel67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel67.Controls.Add(this.label30);
+            this.panel67.Controls.Add(this.labelJig4);
             this.panel67.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel67.Location = new System.Drawing.Point(0, 0);
             this.panel67.Name = "panel67";
             this.panel67.Size = new System.Drawing.Size(232, 38);
             this.panel67.TabIndex = 0;
             // 
-            // label30
+            // labelJig4
             // 
-            this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label30.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label30.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label30.Location = new System.Drawing.Point(0, 0);
-            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(230, 36);
-            this.label30.TabIndex = 8;
-            this.label30.Text = "Jig 4";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelJig4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelJig4.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelJig4.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.labelJig4.Location = new System.Drawing.Point(0, 0);
+            this.labelJig4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelJig4.Name = "labelJig4";
+            this.labelJig4.Size = new System.Drawing.Size(230, 36);
+            this.labelJig4.TabIndex = 8;
+            this.labelJig4.Text = "Jig 4";
+            this.labelJig4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel46
             // 
@@ -1945,25 +1946,25 @@
             // 
             this.panel56.BackColor = System.Drawing.Color.DarkOrange;
             this.panel56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel56.Controls.Add(this.label25);
+            this.panel56.Controls.Add(this.labelJig5);
             this.panel56.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel56.Location = new System.Drawing.Point(0, 0);
             this.panel56.Name = "panel56";
             this.panel56.Size = new System.Drawing.Size(232, 38);
             this.panel56.TabIndex = 0;
             // 
-            // label25
+            // labelJig5
             // 
-            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label25.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label25.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label25.Location = new System.Drawing.Point(0, 0);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(230, 36);
-            this.label25.TabIndex = 8;
-            this.label25.Text = "Jig 5";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelJig5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelJig5.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelJig5.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.labelJig5.Location = new System.Drawing.Point(0, 0);
+            this.labelJig5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelJig5.Name = "labelJig5";
+            this.labelJig5.Size = new System.Drawing.Size(230, 36);
+            this.labelJig5.TabIndex = 8;
+            this.labelJig5.Text = "Jig 5";
+            this.labelJig5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel35
             // 
@@ -2232,25 +2233,25 @@
             // 
             this.panel45.BackColor = System.Drawing.Color.DarkOrange;
             this.panel45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel45.Controls.Add(this.label20);
+            this.panel45.Controls.Add(this.labelJig6);
             this.panel45.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel45.Location = new System.Drawing.Point(0, 0);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(232, 38);
             this.panel45.TabIndex = 0;
             // 
-            // label20
+            // labelJig6
             // 
-            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label20.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label20.Location = new System.Drawing.Point(0, 0);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(230, 36);
-            this.label20.TabIndex = 8;
-            this.label20.Text = "Jig 6";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelJig6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelJig6.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelJig6.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.labelJig6.Location = new System.Drawing.Point(0, 0);
+            this.labelJig6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelJig6.Name = "labelJig6";
+            this.labelJig6.Size = new System.Drawing.Size(230, 36);
+            this.labelJig6.TabIndex = 8;
+            this.labelJig6.Text = "Jig 6";
+            this.labelJig6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel24
             // 
@@ -2519,25 +2520,25 @@
             // 
             this.panel34.BackColor = System.Drawing.Color.DarkOrange;
             this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel34.Controls.Add(this.label15);
+            this.panel34.Controls.Add(this.labelJig7);
             this.panel34.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel34.Location = new System.Drawing.Point(0, 0);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(232, 37);
             this.panel34.TabIndex = 0;
             // 
-            // label15
+            // labelJig7
             // 
-            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label15.Location = new System.Drawing.Point(0, 0);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(230, 35);
-            this.label15.TabIndex = 8;
-            this.label15.Text = "Jig 7";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelJig7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelJig7.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelJig7.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.labelJig7.Location = new System.Drawing.Point(0, 0);
+            this.labelJig7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelJig7.Name = "labelJig7";
+            this.labelJig7.Size = new System.Drawing.Size(230, 35);
+            this.labelJig7.TabIndex = 8;
+            this.labelJig7.Text = "Jig 7";
+            this.labelJig7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel13
             // 
@@ -2806,25 +2807,25 @@
             // 
             this.panel23.BackColor = System.Drawing.Color.DarkOrange;
             this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel23.Controls.Add(this.label10);
+            this.panel23.Controls.Add(this.labelJig8);
             this.panel23.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel23.Location = new System.Drawing.Point(0, 0);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(232, 37);
             this.panel23.TabIndex = 0;
             // 
-            // label10
+            // labelJig8
             // 
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label10.Location = new System.Drawing.Point(0, 0);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(230, 35);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Jig 8";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelJig8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelJig8.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelJig8.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.labelJig8.Location = new System.Drawing.Point(0, 0);
+            this.labelJig8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelJig8.Name = "labelJig8";
+            this.labelJig8.Size = new System.Drawing.Size(230, 35);
+            this.labelJig8.TabIndex = 8;
+            this.labelJig8.Text = "Jig 8";
+            this.labelJig8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -3093,25 +3094,25 @@
             // 
             this.panel12.BackColor = System.Drawing.Color.DarkOrange;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.label5);
+            this.panel12.Controls.Add(this.labelJig9);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 0);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(232, 36);
             this.panel12.TabIndex = 0;
             // 
-            // label5
+            // labelJig9
             // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(230, 34);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Jig 9";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelJig9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelJig9.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelJig9.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.labelJig9.Location = new System.Drawing.Point(0, 0);
+            this.labelJig9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelJig9.Name = "labelJig9";
+            this.labelJig9.Size = new System.Drawing.Size(230, 34);
+            this.labelJig9.TabIndex = 8;
+            this.labelJig9.Text = "Jig 9";
+            this.labelJig9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel79
             // 
@@ -3380,25 +3381,25 @@
             // 
             this.panel89.BackColor = System.Drawing.Color.DarkOrange;
             this.panel89.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel89.Controls.Add(this.label39);
+            this.panel89.Controls.Add(this.labelJig10);
             this.panel89.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel89.Location = new System.Drawing.Point(0, 0);
             this.panel89.Name = "panel89";
             this.panel89.Size = new System.Drawing.Size(232, 37);
             this.panel89.TabIndex = 0;
             // 
-            // label39
+            // labelJig10
             // 
-            this.label39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label39.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label39.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label39.Location = new System.Drawing.Point(0, 0);
-            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(230, 35);
-            this.label39.TabIndex = 8;
-            this.label39.Text = "Jig 10";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelJig10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelJig10.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelJig10.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.labelJig10.Location = new System.Drawing.Point(0, 0);
+            this.labelJig10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelJig10.Name = "labelJig10";
+            this.labelJig10.Size = new System.Drawing.Size(230, 35);
+            this.labelJig10.TabIndex = 8;
+            this.labelJig10.Text = "Jig 10";
+            this.labelJig10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabPageThongKe
             // 
@@ -4148,7 +4149,7 @@
         private Panel panel88;
         private Label label38;
         private Panel panel89;
-        private Label label39;
+        private Label labelJig10;
         private Panel panel13;
         private Panel panel14;
         private TableLayoutPanel tableLayoutPanel2;
@@ -4167,7 +4168,7 @@
         private Panel panel22;
         private Label label9;
         private Panel panel23;
-        private Label label10;
+        private Label labelJig8;
         private Panel panel1;
         private Panel panel3;
         private TableLayoutPanel tableLayoutPanel1;
@@ -4186,7 +4187,7 @@
         private Panel panel11;
         private Label label4;
         private Panel panel12;
-        private Label label5;
+        private Label labelJig9;
         private Panel panel101;
         private Panel panel102;
         private TableLayoutPanel tableLayoutPanel10;
@@ -4206,7 +4207,7 @@
         private Panel panel110;
         private Label label49;
         private Panel panel111;
-        private Label label50;
+        private Label labelJig1;
         private Panel panel90;
         private Panel panel91;
         private TableLayoutPanel tableLayoutPanel9;
@@ -4225,7 +4226,7 @@
         private Panel panel99;
         private Label label44;
         private Panel panel100;
-        private Label label45;
+        private Label labelJig2;
         private Panel panel68;
         private Panel panel69;
         private TableLayoutPanel tableLayoutPanel7;
@@ -4244,7 +4245,7 @@
         private Panel panel77;
         private Label label36;
         private Panel panel78;
-        private Label label40;
+        private Label labelJig3;
         private Panel panel57;
         private Panel panel58;
         private TableLayoutPanel tableLayoutPanel6;
@@ -4263,7 +4264,7 @@
         private Panel panel66;
         private Label label29;
         private Panel panel67;
-        private Label label30;
+        private Label labelJig4;
         private Panel panel46;
         private Panel panel47;
         private TableLayoutPanel tableLayoutPanel5;
@@ -4282,7 +4283,7 @@
         private Panel panel55;
         private Label label24;
         private Panel panel56;
-        private Label label25;
+        private Label labelJig5;
         private Panel panel35;
         private Panel panel36;
         private TableLayoutPanel tableLayoutPanel4;
@@ -4301,7 +4302,7 @@
         private Panel panel44;
         private Label label19;
         private Panel panel45;
-        private Label label20;
+        private Label labelJig6;
         private Panel panel24;
         private Panel panel25;
         private TableLayoutPanel tableLayoutPanel3;
@@ -4320,7 +4321,7 @@
         private Panel panel33;
         private Label label14;
         private Panel panel34;
-        private Label label15;
+        private Label labelJig7;
         private Label label41;
         private Label label1;
         private Label label6;

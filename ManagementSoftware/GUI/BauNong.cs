@@ -71,6 +71,7 @@ namespace ManagementSoftware.GUI
             dataGridView1.Columns.Add(dongDC);
             dataGridView1.Columns.Add(congSuat);
             dataGridView1.Columns.Add(ThoiGian);
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Lỗi" });
 
 
             dataGridView1.RowTemplate.Height = 35;
@@ -117,7 +118,16 @@ namespace ManagementSoftware.GUI
                         row.Cells[4].Value = i.NhietDo;
                         row.Cells[5].Value = i.NhietDoNgatCBNhiet;
                         row.Cells[6].Value = i.TrangThaiCBNhiet == true ? "ON" : "OFF";
-                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        row.Cells[7].Value = i.Error;
+
+                        if (i.Error != "Không")
+                        {
+                            row.DefaultCellStyle.BackColor = Color.Crimson;
+                        }
+                        else
+                        {
+                            row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        }
                     }
                     dataGridView1.Rows.Add();
                 }
@@ -252,7 +262,16 @@ namespace ManagementSoftware.GUI
                         row.Cells[4].Value = i.NhietDo;
                         row.Cells[5].Value = i.NhietDoNgatCBNhiet;
                         row.Cells[6].Value = i.TrangThaiCBNhiet == true ? "ON" : "OFF";
-                        row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        row.Cells[7].Value = i.Error;
+
+                        if (i.Error != "Không")
+                        {
+                            row.DefaultCellStyle.BackColor = Color.Crimson;
+                        }
+                        else
+                        {
+                            row.DefaultCellStyle.BackColor = Color.PaleGreen;
+                        }
                     }
                     dataGridView1.Rows.Add();
                 }
@@ -324,13 +343,21 @@ namespace ManagementSoftware.GUI
 
 
 
-        private void SetTextControl(Button dongAC, Button nhietDo, Button nhietdoNgatCB, Button soLanTest, Button cbNhiet, Models.BauNongModel.BauNong bauNong)
+        private void SetTextControl(Button dongAC, Button nhietDo, Button nhietdoNgatCB, Button soLanTest, Button cbNhiet,Label lbJig ,Models.BauNongModel.BauNong bauNong)
         {
             dongAC.Text = String.Format("{0:0.00}", bauNong.DongDien) + " A";
             nhietDo.Text = String.Format("{0:0.00}", bauNong.NhietDo) + " °C";
             nhietdoNgatCB.Text = bauNong.NhietDoNgatCBNhiet.ToString() + " °C";
             soLanTest.Text = bauNong.LanTestThu.ToString();
             cbNhiet.Text = bauNong.TrangThaiCBNhiet == true ? "ON" : "OFF";
+            if (bauNong.Error != "Không")
+            {
+                lbJig.BackColor = Color.Crimson;
+            }
+            else
+            {
+                lbJig.BackColor = Color.DarkOrange;
+            }
           
         }
 
@@ -350,43 +377,43 @@ namespace ManagementSoftware.GUI
             {
                 if (item.BauNongName == TenThietBi.BauNong1)
                 {
-                    SetTextControl(DongAC1, NhietDo1, NhietDoNgatCB1, SoLanTest1, CBNhiet1, item);
+                    SetTextControl(DongAC1, NhietDo1, NhietDoNgatCB1, SoLanTest1, CBNhiet1,labelJig1, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong2)
                 {
-                    SetTextControl(DongAC2, NhietDo2, NhietDoNgatCB2, SoLanTest2, CBNhiet2, item);
+                    SetTextControl(DongAC2, NhietDo2, NhietDoNgatCB2, SoLanTest2, CBNhiet2, labelJig2, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong3)
                 {
-                    SetTextControl(DongAC3, NhietDo3, NhietDoNgatCB3, SoLanTest3, CBNhiet3, item);
+                    SetTextControl(DongAC3, NhietDo3, NhietDoNgatCB3, SoLanTest3, CBNhiet3, labelJig3, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong4)
                 {
-                    SetTextControl(DongAC4, NhietDo4, NhietDoNgatCB4, SoLanTest4, CBNhiet4, item);
+                    SetTextControl(DongAC4, NhietDo4, NhietDoNgatCB4, SoLanTest4, CBNhiet4, labelJig4, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong5)
                 {
-                    SetTextControl(DongAC5, NhietDo5, NhietDoNgatCB5, SoLanTest5, CBNhiet5, item);
+                    SetTextControl(DongAC5, NhietDo5, NhietDoNgatCB5, SoLanTest5, CBNhiet5, labelJig5, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong6)
                 {
-                    SetTextControl(DongAC6, NhietDo6, NhietDoNgatCB6, SoLanTest6, CBNhiet6, item);
+                    SetTextControl(DongAC6, NhietDo6, NhietDoNgatCB6, SoLanTest6, CBNhiet6, labelJig6, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong7)
                 {
-                    SetTextControl(DongAC7, NhietDo7, NhietDoNgatCB7, SoLanTest7, CBNhiet7, item);
+                    SetTextControl(DongAC7, NhietDo7, NhietDoNgatCB7, SoLanTest7, CBNhiet7, labelJig7, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong8)
                 {
-                    SetTextControl(DongAC8, NhietDo8, NhietDoNgatCB8, SoLanTest8, CBNhiet8, item);
+                    SetTextControl(DongAC8, NhietDo8, NhietDoNgatCB8, SoLanTest8, CBNhiet8, labelJig8, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong9)
                 {
-                    SetTextControl(DongAC9, NhietDo9, NhietDoNgatCB9, SoLanTest9, CBNhiet9, item);
+                    SetTextControl(DongAC9, NhietDo9, NhietDoNgatCB9, SoLanTest9, CBNhiet9, labelJig9, item);
                 }
                 else if (item.BauNongName == TenThietBi.BauNong10)
                 {
-                    SetTextControl(DongAC10, NhietDo10, NhietDoNgatCB10, SoLanTest10, CBNhiet10, item);
+                    SetTextControl(DongAC10, NhietDo10, NhietDoNgatCB10, SoLanTest10, CBNhiet10, labelJig10, item);
                 }
             }
 
@@ -408,6 +435,7 @@ namespace ManagementSoftware.GUI
 
         private async void BauNong_Load(object sender, EventArgs e)
         {
+            dataGridView1.ReadOnly = true;
             LoadDGV();
             if (timer == null && await plc.Open() == true)
             {

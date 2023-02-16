@@ -36,7 +36,7 @@ namespace ManagementSoftware.GUI.NguonManagement
 
         public async void StartTimer()
         {
-            if(await plc.Open() == true)
+            if (await plc.Open() == true)
             {
                 timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
             }
@@ -108,25 +108,10 @@ namespace ManagementSoftware.GUI.NguonManagement
                 dataGridView1.Rows[i].Cells[3].Value = String.Format("{0:0.00}", list[i].CongSuat);
                 dataGridView1.Rows[i].Cells[4].Value = list[i].ThoiGianTest;
                 dataGridView1.Rows[i].Cells[5].Value = list[i].LanTestThu;
-                if (list[i].isErrorDong || list[i].isErrorAp)
+                if (list[i].Error != "Không")
                 {
                     dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Crimson;
-                    if (list[i].isErrorDong)
-                    {
-                        dataGridView1.Rows[i].Cells[1].Style.BackColor = Color.Red;
-                    }
-                    else
-                    {
-                        dataGridView1.Rows[i].Cells[1].Style.BackColor = Color.FromArgb(41, 44, 51);
-                    }
-                    if (list[i].isErrorAp)
-                    {
-                        dataGridView1.Rows[i].Cells[2].Style.BackColor = Color.Red;
-                    }
-                    else
-                    {
-                        dataGridView1.Rows[i].Cells[2].Style.BackColor = Color.FromArgb(41, 44, 51);
-                    }
+
                 }
                 else
                 {
@@ -177,7 +162,7 @@ namespace ManagementSoftware.GUI.NguonManagement
                 dataGridView1.Rows[id].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
 
             }
-            
+
 
 
 

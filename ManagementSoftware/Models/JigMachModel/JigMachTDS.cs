@@ -19,7 +19,8 @@ namespace ManagementSoftware.Models.JigMachModel
         public bool VanApCao { get; set; }
         public uint ThoiGian { get; set; }
         public ushort LanTestThu { get; set; }
-        public bool isError { get; set; }
+        public bool Error_Van_DT { get; set; }
+        public string Error { get; set; } = "Không";
         public int TestJigMachID { get; set; }
         public TestJigMach TestJigMach { get; set; }
     }

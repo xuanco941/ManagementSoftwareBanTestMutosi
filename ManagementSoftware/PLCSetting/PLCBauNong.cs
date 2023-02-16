@@ -27,6 +27,10 @@ namespace ManagementSoftware.PLCSetting
             int nhietdongatcb = 100;
 
             int cbNhiet = 120;
+            int errCbNhietCao = 140;
+            int errCbNhietThap = 160;
+            int errCbCangDot = 180;
+
 
 
 
@@ -39,6 +43,40 @@ namespace ManagementSoftware.PLCSetting
                 obj.LanTestThu = await this.ConvertUIntToUshort(SoLanTest_ST_PC);
                 obj.NhietDoNgatCBNhiet = await this.ConvertUIntToUshort(nhietdongatcb);
                 obj.TrangThaiCBNhiet = await this.ConvertUIntToUshort(cbNhiet) == 0 ? false : true;
+                obj.Error_CB_Nhiet_Cao = await this.ConvertUIntToUshort(errCbNhietCao) == 0 ? false : true;
+                obj.Error_CB_Nhiet_Thap = await this.ConvertUIntToUshort(errCbNhietThap) == 0 ? false : true;
+                obj.Error_CB_Cang_Dot = await this.ConvertUIntToUshort(errCbCangDot) == 0 ? false : true;
+
+
+
+                if(obj.Error_CB_Nhiet_Cao==false && obj.Error_CB_Nhiet_Thap == false && obj.Error_CB_Cang_Dot == false)
+                {
+                    obj.Error = "Không";
+                }
+                else
+                {
+                    string strerrCbNhietCao = "";
+                    string strerrCbNhietThap = "";
+                    string strerrCbCangDot = "";
+                    if (obj.Error_CB_Nhiet_Cao)
+                    {
+                        strerrCbNhietCao = "Nhiệt độ cao, ";
+                    }
+                    if (obj.Error_CB_Nhiet_Thap)
+                    {
+                        strerrCbNhietCao = "Nhiệt độ thấp, ";
+                    }
+                    if (obj.Error_CB_Cang_Dot)
+                    {
+                        strerrCbNhietCao = "Càng đốt, ";
+                    }
+                    string strErr = strerrCbNhietCao + strerrCbNhietThap + strerrCbCangDot;
+                    obj.Error = strErr.Substring(0, strErr.Length - 2);
+                }
+
+
+
+
 
 
                 obj.BauNongName = "Bầu " + (i + 1);
@@ -47,7 +85,9 @@ namespace ManagementSoftware.PLCSetting
                 SoLanTest_ST_PC += 2;
                 nhietdongatcb += 2;
                 cbNhiet += 2;
-
+                errCbNhietCao += 2;
+                errCbNhietThap += 2;
+                errCbCangDot += 2;
                 listBauNong.Add(obj);
             }
 
