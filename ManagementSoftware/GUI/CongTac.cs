@@ -467,11 +467,11 @@ namespace ManagementSoftware.GUI
                 
                 if (list[i].Error != "Không")
                 {
-                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Crimson;
+                    dataGridViewGiamSat.Rows[i].DefaultCellStyle.BackColor = Color.Crimson;
                 }
                 else
                 {
-                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
+                    dataGridViewGiamSat.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
                 }
             }
 

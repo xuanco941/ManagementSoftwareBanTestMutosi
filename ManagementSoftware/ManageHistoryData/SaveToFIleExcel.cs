@@ -1,6 +1,7 @@
 ﻿using ClosedXML.Excel;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -23,15 +24,17 @@ namespace ManagementSoftware.ManageHistoryData
             // Tìm kiếm file Excel trong thư mục với tên tương ứng với giờ trong ngày
             var excelFile = Directory.GetFiles(folderPath, fileName).FirstOrDefault();
 
-
             if (excelFile != null)
             {
                 // Nếu tìm thấy file Excel, thêm giá trị vào dòng tiếp theo trong file này
+                // Mở file Excel dùng làm bản mẫu
                 try
                 {
-                    // Mở file Excel dùng làm bản mẫu
+
+
                     using (var templateWorkbook = new XLWorkbook(excelFile))
                     {
+
                         // Lấy worksheet đầu tiên trong file Excel
                         var ws = templateWorkbook.Worksheet(1);
 
@@ -66,10 +69,11 @@ namespace ManagementSoftware.ManageHistoryData
                         templateWorkbook.SaveAs(excelFile);
                     }
                 }
-                catch (Exception ex)
+                catch
                 {
 
                 }
+
 
             }
             else
@@ -130,7 +134,8 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(3, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
 
-                        workBook.SaveAs(excelFile);
+                        workBook.SaveAs(Path.Combine(folderPath, fileName));
+                        workBook.Dispose();
                     }
                 }
                 catch
@@ -292,7 +297,9 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-                        workBook.SaveAs(excelFile);
+                        workBook.SaveAs(Path.Combine(folderPath, fileName));
+                        workBook.Dispose();
+
                     }
                 }
                 catch
@@ -443,7 +450,9 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-                        workBook.SaveAs(excelFile);
+                        workBook.SaveAs(Path.Combine(folderPath, fileName));
+                        workBook.Dispose();
+
                     }
                 }
                 catch
@@ -565,7 +574,8 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-                        workBook.SaveAs(excelFile);
+                        workBook.SaveAs(Path.Combine(folderPath, fileName));
+                        workBook.Dispose();
                     }
                 }
                 catch
@@ -713,7 +723,8 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-                        workBook.SaveAs(excelFile);
+                        workBook.SaveAs(Path.Combine(folderPath, fileName));
+                        workBook.Dispose();
                     }
                 }
                 catch
@@ -859,7 +870,8 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-                        workBook.SaveAs(excelFile);
+                        workBook.SaveAs(Path.Combine(folderPath, fileName));
+                        workBook.Dispose();
                     }
                 }
                 catch
@@ -982,7 +994,8 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-                        workBook.SaveAs(excelFile);
+                        workBook.SaveAs(Path.Combine(folderPath, fileName));
+                        workBook.Dispose();
                     }
                 }
                 catch
@@ -1127,7 +1140,8 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-                        workBook.SaveAs(excelFile);
+                        workBook.SaveAs(Path.Combine(folderPath, fileName));
+                        workBook.Dispose();
                     }
                 }
                 catch
