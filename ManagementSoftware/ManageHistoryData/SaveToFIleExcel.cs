@@ -10,7 +10,8 @@ namespace ManagementSoftware.ManageHistoryData
 {
     public class SaveToFIleExcel
     {
-        public void SaveLoiLoc(string nameBanTest, Models.LoiLocModel.LoiLoc loiLoc, string nameDisk)
+        string nameDisk = "D";
+        public void SaveLoiLoc(string nameBanTest, Models.LoiLocModel.LoiLoc loiLoc)
         {
             DateTime date = DateTime.Now;
             var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"), date.Day.ToString("00"));
@@ -125,7 +126,7 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(3, 7).Value = loiLoc.ThoiGianXa;
                         ws.Cell(3, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                        ws.Cell(3, 8).Value = loiLoc.ThoiGianXa;
+                        ws.Cell(3, 8).Value = loiLoc.Error;
                         ws.Cell(3, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
 
@@ -152,7 +153,7 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-        public void SaveBepTu(string nameBanTest, List<Models.BepTuModel.BepTu> list, string nameDisk)
+        public void SaveBepTu(string nameBanTest, List<Models.BepTuModel.BepTu> list)
         {
             DateTime date = DateTime.Now;
             var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"), date.Day.ToString("00"));
@@ -315,7 +316,7 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-        public void SaveNguon(string nameBanTest, List<Models.NguonModel.Nguon> list, string nameDisk)
+        public void SaveNguon(string nameBanTest, List<Models.NguonModel.Nguon> list)
         {
             DateTime date = DateTime.Now;
             var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"), date.Day.ToString("00"));
@@ -459,7 +460,7 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-        public void SaveLed(string nameBanTest, List<Models.LedModel.Led> list, string nameDisk)
+        public void SaveLed(string nameBanTest, List<Models.LedModel.Led> list)
         {
             DateTime date = DateTime.Now;
             var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"), date.Day.ToString("00"));
@@ -587,7 +588,7 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-        public void SaveJigMachNguon(string nameBanTest, List<Models.JigMachModel.JigMachNguon> list, string nameDisk)
+        public void SaveJigMachNguon(string nameBanTest, List<Models.JigMachModel.JigMachNguon> list)
         {
             DateTime date = DateTime.Now;
             var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"), date.Day.ToString("00"));
@@ -740,7 +741,7 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-        public void SaveJigMachTDS(string nameBanTest, List<Models.JigMachModel.JigMachTDS> list, string nameDisk)
+        public void SaveJigMachTDS(string nameBanTest, List<Models.JigMachModel.JigMachTDS> list)
         {
             DateTime date = DateTime.Now;
             var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"), date.Day.ToString("00"));
@@ -877,7 +878,7 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-        public void SaveCongTac(string nameBanTest, List<Models.CongTacModel.CongTac> list, string nameDisk)
+        public void SaveCongTac(string nameBanTest, List<Models.CongTacModel.CongTac> list)
         {
             DateTime date = DateTime.Now;
             var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"), date.Day.ToString("00"));
@@ -1001,7 +1002,7 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-        public void SaveBauNong(string nameBanTest, List<Models.BauNongModel.BauNong> list, string nameDisk)
+        public void SaveBauNong(string nameBanTest, List<Models.BauNongModel.BauNong> list)
         {
             DateTime date = DateTime.Now;
             var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"), date.Day.ToString("00"));

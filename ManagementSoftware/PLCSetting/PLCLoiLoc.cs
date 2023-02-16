@@ -31,7 +31,9 @@ namespace ManagementSoftware.PLCSetting
             var SoLanTest = this.ConvertUIntToUshort(34);
             var loaiLoiLocTest = this.ConvertUIntToUshort(64);
 
-            await Task.WhenAll(thoiGianNen, thoiGianXa, thoiGianGiu, ApSuatTest, SoLanTest, loaiLoiLocTest);
+            var err = this.ConvertUIntToUshort(86);
+
+            await Task.WhenAll(thoiGianNen, thoiGianXa, thoiGianGiu, ApSuatTest, SoLanTest, loaiLoiLocTest, err);
 
 
             loiloc.ThoiGianNen = thoiGianNen.Result;
@@ -39,7 +41,7 @@ namespace ManagementSoftware.PLCSetting
             loiloc.ThoiGianXa = thoiGianXa.Result;
             loiloc.ApSuatTest = ApSuatTest.Result;
             loiloc.SoLanTest = SoLanTest.Result;
-
+            loiloc.Error = err.Result != 0 ? "Lỗi" : "Không";
 
 
 

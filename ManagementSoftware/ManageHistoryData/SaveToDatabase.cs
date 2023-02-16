@@ -21,7 +21,7 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-        int TIME_INTERVAL_SAVE = 10000;
+        int TIME_INTERVAL_SAVE = 5000;
 
 
         System.Threading.Timer timerBauNong;
@@ -51,7 +51,7 @@ namespace ManagementSoftware.ManageHistoryData
 
                     plcBauNong.SaveData(list);
 
-                    new SaveToFIleExcel().SaveBauNong("Test Bầu Nóng",list,"C");
+                    new SaveToFIleExcel().SaveBauNong("Test Bầu Nóng",list);
 
                     await plcBauNong.Close();
                 }
@@ -86,7 +86,7 @@ namespace ManagementSoftware.ManageHistoryData
 
                     plcLoiLoc.SaveData(list);
 
-                    new SaveToFIleExcel().SaveLoiLoc("Test Lõi Lọc", list, "C");
+                    new SaveToFIleExcel().SaveLoiLoc("Test Lõi Lọc", list);
 
 
                     await plcLoiLoc.Close();
@@ -129,8 +129,8 @@ namespace ManagementSoftware.ManageHistoryData
                     List<Models.LedModel.Led> listLed = await plcNguon.GetDataLED();
                     plcNguon.SaveDataLed(listLed);
 
-                    new SaveToFIleExcel().SaveNguon("Test Nguồn", list, "C");
-                    new SaveToFIleExcel().SaveLed("Test Led", listLed, "C");
+                    new SaveToFIleExcel().SaveNguon("Test Nguồn", list);
+                    new SaveToFIleExcel().SaveLed("Test Led", listLed);
 
                     await plcNguon.Close();
                 }
@@ -165,7 +165,7 @@ namespace ManagementSoftware.ManageHistoryData
                     List<Models.CongTacModel.CongTac> list = await plcCongTac.GetAllData();
                     plcCongTac.SaveData(list);
 
-                    new SaveToFIleExcel().SaveCongTac("Test Công Tắc", list, "C");
+                    new SaveToFIleExcel().SaveCongTac("Test Công Tắc", list);
 
 
                     await plcCongTac.Close();
@@ -202,8 +202,8 @@ namespace ManagementSoftware.ManageHistoryData
 
                     plcMach.SaveData(list, list2);
 
-                    new SaveToFIleExcel().SaveJigMachNguon("Test Mạch Nguồn", list, "C");
-                    new SaveToFIleExcel().SaveJigMachTDS("Test Mạch TDS", list2, "C");
+                    new SaveToFIleExcel().SaveJigMachNguon("Test Mạch Nguồn", list);
+                    new SaveToFIleExcel().SaveJigMachTDS("Test Mạch TDS", list2);
 
 
                     await plcMach.Close();
@@ -239,7 +239,7 @@ namespace ManagementSoftware.ManageHistoryData
 
                     plcBepTu.SaveData(list);
 
-                    new SaveToFIleExcel().SaveBepTu("Test Bếp Từ", list, "C");
+                    new SaveToFIleExcel().SaveBepTu("Test Bếp Từ", list);
 
 
                     await plcBepTu.Close();
@@ -260,12 +260,12 @@ namespace ManagementSoftware.ManageHistoryData
 
         public void ConnectAndRunSaveAll()
         {
-            timerBauNong = new System.Threading.Timer(CallbackBauNong, null, 10000, 10000);
-            timerBepTu = new System.Threading.Timer(CallbackBepTu, null, 10000, 10000);
-            timerCongTac = new System.Threading.Timer(CallbackCongTac, null, 10000, 10000);
-            timerLoiLoc = new System.Threading.Timer(CallbackLoiLoc, null, 10000, 10000);
-            timerMach = new System.Threading.Timer(CallbackMach, null, 10000, 10000);
-            timerNguon = new System.Threading.Timer(CallbackNguon, null, 10000, 10000);
+            timerBauNong = new System.Threading.Timer(CallbackBauNong, null, 5000, 5000);
+            timerBepTu = new System.Threading.Timer(CallbackBepTu, null, 5000, 5000);
+            timerCongTac = new System.Threading.Timer(CallbackCongTac, null, 5000, 5000);
+            timerLoiLoc = new System.Threading.Timer(CallbackLoiLoc, null, 5000, 5000);
+            timerMach = new System.Threading.Timer(CallbackMach, null, 5000, 5000);
+            timerNguon = new System.Threading.Timer(CallbackNguon, null, 5000, 5000);
 
         }
     }
