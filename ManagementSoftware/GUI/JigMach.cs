@@ -678,7 +678,7 @@ namespace ManagementSoftware.GUI
         private void buttonXuatExcel_Click(object sender, EventArgs e)
         {
             StopTimer1();
-            new XuatExcel().Xuat("Test Jig Mạch Nguôn", dataGridView1);
+            new XuatExcel().Xuat("Test Jig Mạch Nguồn", dataGridView1);
             StartTimer1();
         }
 

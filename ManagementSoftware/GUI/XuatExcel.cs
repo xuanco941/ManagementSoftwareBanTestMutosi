@@ -41,8 +41,15 @@ namespace ManagementSoftware.GUI
                                 {
                                     for (int j = 0; j < dgv.Columns.Count; j++)
                                     {
-                                        ws.Cell(i + 3, j + 1).Value = dgv.Rows[i].Cells[j].Value.ToString();
-                                        ws.Cell(i + 3, j + 1).Style.Alignment.Vertical = XLAlignmentVerticalValues.Center;
+                                        if(dgv.Rows[i].Cells[j].Value != null)
+                                        {
+                                            ws.Cell(i + 3, j + 1).Value = dgv.Rows[i].Cells[j].Value.ToString();
+                                            ws.Cell(i + 3, j + 1).Style.Alignment.Vertical = XLAlignmentVerticalValues.Center;
+                                        }
+                                        else
+                                        {
+                                            continue;
+                                        }
                                     }
                                 }
 
