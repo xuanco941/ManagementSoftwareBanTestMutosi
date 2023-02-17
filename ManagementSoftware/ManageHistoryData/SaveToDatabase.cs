@@ -21,7 +21,7 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-        int TIME_INTERVAL_SAVE = 5000;
+        int TIME_INTERVAL_SAVE = 10000;
 
 
         System.Threading.Timer timerBauNong;
