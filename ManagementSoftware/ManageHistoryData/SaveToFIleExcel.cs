@@ -11,7 +11,7 @@ namespace ManagementSoftware.ManageHistoryData
 {
     public class SaveToFIleExcel
     {
-        string nameDisk = "C";
+        string nameDisk = "D";
         public void SaveLoiLoc(string nameBanTest, Models.LoiLocModel.LoiLoc loiLoc)
         {
             DateTime date = DateTime.Now;
@@ -104,6 +104,16 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 6).Value = "Thời gian giữ (giây)";
                         ws.Cell(2, 7).Value = "Thời gian xả (giây)";
                         ws.Cell(2, 8).Value = "Lỗi";
+
+                        ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
 
 
 
@@ -265,6 +275,18 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 8).Value = "Công suất tiêu thụ(Kwh)";
                         ws.Cell(2, 9).Value = "Trạng thái";
                         ws.Cell(2, 10).Value = "Lỗi";
+
+                        ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
 
 
                         ws.Cell(3, 1).Value = "#";
@@ -433,6 +455,16 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 7).Value = "Thời gian (giây)";
                         ws.Cell(2, 8).Value = "Lỗi";
 
+                        ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -574,6 +606,12 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 3).Value = "Lần test thứ";
                         ws.Cell(2, 4).Value = "Thời gian (giây)";
                         ws.Cell(2, 5).Value = "Lỗi";
+
+                        ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
 
                         ws.Cell(3, 1).Value = "#";
@@ -724,6 +762,15 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 6).Value = "Công suất (W)";
                         ws.Cell(2, 7).Value = "Thời gian (giây)";
                         ws.Cell(2, 8).Value = "Lỗi";
+
+                        ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
 
                         ws.Cell(3, 1).Value = "#";
@@ -884,6 +931,14 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 6).Value = "Thời gian (giây)";
                         ws.Cell(2, 7).Value = "Lỗi";
 
+                        ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -1022,6 +1077,12 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 3).Value = "Trạng thái";
                         ws.Cell(2, 4).Value = "Lần test thứ";
                         ws.Cell(2, 5).Value = "Lỗi";
+
+                        ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
 
                         ws.Cell(3, 1).Value = "#";
@@ -1168,6 +1229,15 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 6).Value = "Nhiệt độ ngắt cb nhiệt (°C)";
                         ws.Cell(2, 7).Value = "Trạng thái cb nhiệt";
                         ws.Cell(2, 8).Value = "Lỗi";
+
+                        ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(2, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
 
                         ws.Cell(3, 1).Value = "#";
