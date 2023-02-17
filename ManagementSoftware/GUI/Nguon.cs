@@ -193,6 +193,8 @@ namespace ManagementSoftware.GUI
 
         private void Nguon_Load(object sender, EventArgs e)
         {
+            dataGridView1.ReadOnly = true;
+            dataGridView2.ReadOnly = true;
             LoadDGV();
             LoadDGV2();
 
@@ -201,8 +203,6 @@ namespace ManagementSoftware.GUI
             formTestNguon.FormBorderStyle = FormBorderStyle.None;
             formTestNguon.Dock = DockStyle.Fill;
             formTestNguon.Show();
-            formTestNguon.StartTimer();
-
 
 
             formTestLed.TopLevel = false;
@@ -211,8 +211,14 @@ namespace ManagementSoftware.GUI
             formTestLed.Dock = DockStyle.Fill;
             formTestLed.Show();
 
-            dataGridView1.ReadOnly = true;
-            dataGridView2.ReadOnly = true;
+
+            formTestNguon.StartTimer();
+
+
+
+
+
+
             
 
 

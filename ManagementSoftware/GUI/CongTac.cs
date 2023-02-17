@@ -359,12 +359,20 @@ namespace ManagementSoftware.GUI
 
 
 
-
+            int jig = 1;
+            int ct  = 1;
             for (int i = 0; i < 50; i++)
             {
                 int id = dataGridViewGiamSat.Rows.Add();
                 dataGridViewGiamSat.Rows[id].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
+                dataGridViewGiamSat.Rows[i].Cells[0].Value = "Jig "+jig + " - " + "Công tắc "+ct;
 
+                ct++;
+                if (ct == 6)
+                {
+                    jig++;
+                    ct = 1;
+                }
             }
 
 
@@ -461,7 +469,6 @@ namespace ManagementSoftware.GUI
 
             for (int i = 0; i < list.Count; i++)
             {
-                dataGridViewGiamSat.Rows[i].Cells[0].Value = list[i].JigCongTac + " - "+ list[i].CongTacName;
                 dataGridViewGiamSat.Rows[i].Cells[1].Value = list[i].TrangThai == true ? "ON" : "OFF";
                 dataGridViewGiamSat.Rows[i].Cells[2].Value = list[i].LanTestThu;
                 

@@ -49,9 +49,10 @@ namespace ManagementSoftware.ManageHistoryData
                 {
                     List<Models.BauNongModel.BauNong> list = await plcBauNong.GetAllData();
 
-                    plcBauNong.SaveData(list);
 
-                    new SaveToFIleExcel().SaveBauNong("Test Bầu Nóng",list);
+                    Task.Run(() => plcBauNong.SaveData(list));
+
+                    Task.Run(() => new SaveToFIleExcel().SaveBauNong("Test Bầu Nóng", list));
 
                     await plcBauNong.Close();
                 }
@@ -85,9 +86,11 @@ namespace ManagementSoftware.ManageHistoryData
                 {
                     Models.LoiLocModel.LoiLoc list = await plcLoiLoc.GetData();
 
-                    plcLoiLoc.SaveData(list);
+                    Task.Run(() => plcLoiLoc.SaveData(list));
 
-                    new SaveToFIleExcel().SaveLoiLoc("Test Lõi Lọc", list);
+                    Task.Run(() => new SaveToFIleExcel().SaveLoiLoc("Test Lõi Lọc", list));
+
+                    
 
                     await plcLoiLoc.Close();
                 }
@@ -121,15 +124,16 @@ namespace ManagementSoftware.ManageHistoryData
                 if (await plcNguon.Open())
                 {
                     List<Models.NguonModel.Nguon> list = await plcNguon.GetDataNguon();
-                    plcNguon.SaveData(list);
-
-
-
                     List<Models.LedModel.Led> listLed = await plcNguon.GetDataLED();
-                    plcNguon.SaveDataLed(listLed);
 
-                    new SaveToFIleExcel().SaveNguon("Test Nguồn", list);
-                    new SaveToFIleExcel().SaveLed("Test Led", listLed);
+                    Task.Run(() => plcNguon.SaveData(list));
+                    Task.Run(() => plcNguon.SaveDataLed(listLed));
+
+
+
+                    Task.Run(() => new SaveToFIleExcel().SaveNguon("Test Nguồn", list));
+                    Task.Run(() => new SaveToFIleExcel().SaveLed("Test Led", listLed));
+                    
 
                     await plcNguon.Close();
                 }
@@ -162,9 +166,9 @@ namespace ManagementSoftware.ManageHistoryData
 
 
                     List<Models.CongTacModel.CongTac> list = await plcCongTac.GetAllData();
-                    plcCongTac.SaveData(list);
 
-                    new SaveToFIleExcel().SaveCongTac("Test Công Tắc", list);
+                    Task.Run(() => plcCongTac.SaveData(list));
+                    Task.Run(() => new SaveToFIleExcel().SaveCongTac("Test Công Tắc", list));
 
 
                     await plcCongTac.Close();
@@ -199,10 +203,12 @@ namespace ManagementSoftware.ManageHistoryData
                     List<JigMachNguon> list = await plcMach.GetDataMachNguon();
                     List<JigMachTDS> list2 = await plcMach.GetDataMachTDS();
 
-                    plcMach.SaveData(list, list2);
 
-                    new SaveToFIleExcel().SaveJigMachNguon("Test Mạch Nguồn", list);
-                    new SaveToFIleExcel().SaveJigMachTDS("Test Mạch TDS", list2);
+                    Task.Run(() => plcMach.SaveData(list, list2));
+
+                    Task.Run(() => new SaveToFIleExcel().SaveJigMachNguon("Test Mạch Nguồn", list));
+                    Task.Run(() => new SaveToFIleExcel().SaveJigMachTDS("Test Mạch TDS", list2));
+                    
 
 
                     await plcMach.Close();
@@ -236,9 +242,8 @@ namespace ManagementSoftware.ManageHistoryData
                 {
                     List<Models.BepTuModel.BepTu> list = await plcBepTu.GetAllData();
 
-                    plcBepTu.SaveData(list);
-
-                    new SaveToFIleExcel().SaveBepTu("Test Bếp Từ", list);
+                    Task.Run(() => plcBepTu.SaveData(list));
+                    Task.Run(() => new SaveToFIleExcel().SaveBepTu("Test Bếp Từ", list));
 
 
                     await plcBepTu.Close();

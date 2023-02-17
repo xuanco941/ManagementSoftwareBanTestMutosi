@@ -16,7 +16,7 @@ namespace ManagementSoftware.GUI.JigMachManagement
     {
         PLCMach plc;
 
-        System.Threading.Timer timer;
+        System.Threading.Timer? timer = null;
         int TIME_INTERVAL_IN_MILLISECONDS = 0;
         public GiamSatJigMachTDS()
         {
@@ -26,7 +26,7 @@ namespace ManagementSoftware.GUI.JigMachManagement
 
         public async void StartTimer()
         {
-            if (await plc.Open() == true)
+            if (timer == null && await plc.Open() == true)
             {
                 timer = new System.Threading.Timer(Callback, null, TIME_INTERVAL_IN_MILLISECONDS, Timeout.Infinite);
             }
