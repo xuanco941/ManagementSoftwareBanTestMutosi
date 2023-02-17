@@ -193,7 +193,8 @@ namespace ManagementSoftware.GUI
 
         private void Nguon_Load(object sender, EventArgs e)
         {
-
+            LoadDGV();
+            LoadDGV2();
 
             formTestNguon.TopLevel = false;
             tabPageGiamSat1.Controls.Add(formTestNguon);
@@ -215,8 +216,7 @@ namespace ManagementSoftware.GUI
             
 
 
-            LoadDGV();
-            LoadDGV2();
+
 
 
 

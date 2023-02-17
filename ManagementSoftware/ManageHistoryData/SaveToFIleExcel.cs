@@ -11,7 +11,7 @@ namespace ManagementSoftware.ManageHistoryData
 {
     public class SaveToFIleExcel
     {
-        string nameDisk = "D";
+        string nameDisk = "C";
         public void SaveLoiLoc(string nameBanTest, Models.LoiLocModel.LoiLoc loiLoc)
         {
             DateTime date = DateTime.Now;
@@ -39,7 +39,7 @@ namespace ManagementSoftware.ManageHistoryData
                         var ws = templateWorkbook.Worksheet(1);
 
                         // Tìm dòng cuối cùng đã sử dụng trong file Excel
-                        var lastUsedRow = ws.LastRowUsed().RowNumber();
+                        var lastUsedRow = ws.LastRowUsed().RowNumber() + 1;
 
                         // Thêm giá trị vào ô tiếp theo trong dòng cuối cùng
                         ws.Cell(lastUsedRow, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
@@ -183,41 +183,48 @@ namespace ManagementSoftware.ManageHistoryData
                         var ws = templateWorkbook.Worksheet(1);
 
                         // Tìm dòng cuối cùng đã sử dụng trong file Excel
-                        var lastUsedRow = ws.LastRowUsed().RowNumber();
+                        var lastUsedRow = ws.LastRowUsed().RowNumber() + 1;
 
                         // Thêm giá trị vào ô tiếp theo trong dòng cuối cùng
+                        ws.Cell(lastUsedRow, 1).Value = "#";
+                        ws.Cell(lastUsedRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        int i = 1;
                         foreach (var item in list)
                         {
-                            ws.Cell(lastUsedRow, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
-                            ws.Cell(lastUsedRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                            ws.Cell(lastUsedRow + i, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 2).Value = item.BepTuName;
-                            ws.Cell(lastUsedRow, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 2).Value = item.BepTuName;
+                            ws.Cell(lastUsedRow + i, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 3).Value = item.LanTestThu;
-                            ws.Cell(lastUsedRow, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 3).Value = item.LanTestThu;
+                            ws.Cell(lastUsedRow + i, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 4).Value = item.NhietDo;
-                            ws.Cell(lastUsedRow, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 4).Value = item.NhietDo;
+                            ws.Cell(lastUsedRow + i, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 5).Value = item.DienAp;
-                            ws.Cell(lastUsedRow, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 5).Value = item.DienAp;
+                            ws.Cell(lastUsedRow + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 6).Value = item.DongDien;
-                            ws.Cell(lastUsedRow, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 6).Value = item.DongDien;
+                            ws.Cell(lastUsedRow + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 7).Value = item.CongSuat;
-                            ws.Cell(lastUsedRow, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 7).Value = item.CongSuat;
+                            ws.Cell(lastUsedRow + i, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 8).Value = item.CongSuatTieuThu;
-                            ws.Cell(lastUsedRow, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 8).Value = item.CongSuatTieuThu;
+                            ws.Cell(lastUsedRow + i, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 9).Value = item.TrangThai == true ? "ON" : "OFF";
-                            ws.Cell(lastUsedRow, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 9).Value = item.TrangThai == true ? "ON" : "OFF";
+                            ws.Cell(lastUsedRow + i, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 10).Value = item.Error;
-                            ws.Cell(lastUsedRow, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 10).Value = item.Error;
+                            ws.Cell(lastUsedRow + i, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            i++;
                         }
+
+
                         // Lưu lại file Excel
                         templateWorkbook.SaveAs(excelFile);
                     }
@@ -260,40 +267,43 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 10).Value = "Lỗi";
 
 
-
+                        ws.Cell(3, 1).Value = "#";
+                        ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        int i = 1;
                         foreach (var item in list)
                         {
-                            ws.Cell(3, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
-                            ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                            ws.Cell(3 + i, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 2).Value = item.BepTuName;
-                            ws.Cell(3, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 2).Value = item.BepTuName;
+                            ws.Cell(3 + i, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 3).Value = item.LanTestThu;
-                            ws.Cell(3, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 3).Value = item.LanTestThu;
+                            ws.Cell(3 + i, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 4).Value = item.NhietDo;
-                            ws.Cell(3, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 4).Value = item.NhietDo;
+                            ws.Cell(3 + i, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 5).Value = item.DienAp;
-                            ws.Cell(3, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 5).Value = item.DienAp;
+                            ws.Cell(3 + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 6).Value = item.DongDien;
-                            ws.Cell(3, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 6).Value = item.DongDien;
+                            ws.Cell(3 + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 7).Value = item.CongSuat;
-                            ws.Cell(3, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 7).Value = item.CongSuat;
+                            ws.Cell(3 + i, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 8).Value = item.CongSuatTieuThu;
-                            ws.Cell(3, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 8).Value = item.CongSuatTieuThu;
+                            ws.Cell(3 + i, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 9).Value = item.TrangThai == true ? "ON" : "OFF";
-                            ws.Cell(3, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 9).Value = item.TrangThai == true ? "ON" : "OFF";
+                            ws.Cell(3 + i, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 10).Value = item.Error;
-                            ws.Cell(3, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 10).Value = item.Error;
+                            ws.Cell(3 + i, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            i++;
                         }
-
 
 
 
@@ -348,36 +358,42 @@ namespace ManagementSoftware.ManageHistoryData
                         var ws = templateWorkbook.Worksheet(1);
 
                         // Tìm dòng cuối cùng đã sử dụng trong file Excel
-                        var lastUsedRow = ws.LastRowUsed().RowNumber();
+                        var lastUsedRow = ws.LastRowUsed().RowNumber() + 1;
 
                         // Thêm giá trị vào ô tiếp theo trong dòng cuối cùng
+                        ws.Cell(lastUsedRow, 1).Value = "#";
+                        ws.Cell(lastUsedRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        int i = 1;
                         foreach (var item in list)
                         {
-                            ws.Cell(lastUsedRow, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
-                            ws.Cell(lastUsedRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                            ws.Cell(lastUsedRow + i, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 2).Value = item.NguonName;
-                            ws.Cell(lastUsedRow, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 2).Value = item.NguonName;
+                            ws.Cell(lastUsedRow + i, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 3).Value = item.LanTestThu;
-                            ws.Cell(lastUsedRow, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 3).Value = item.LanTestThu;
+                            ws.Cell(lastUsedRow + i, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 4).Value = item.DienApDC;
-                            ws.Cell(lastUsedRow, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 4).Value = item.DienApDC;
+                            ws.Cell(lastUsedRow + i, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 5).Value = item.DongDC;
-                            ws.Cell(lastUsedRow, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 5).Value = item.DongDC;
+                            ws.Cell(lastUsedRow + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 6).Value = item.CongSuat;
-                            ws.Cell(lastUsedRow, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 6).Value = item.CongSuat;
+                            ws.Cell(lastUsedRow + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 7).Value = item.ThoiGianTest;
-                            ws.Cell(lastUsedRow, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 7).Value = item.ThoiGianTest;
+                            ws.Cell(lastUsedRow + i, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
 
-                            ws.Cell(lastUsedRow, 8).Value = item.Error;
-                            ws.Cell(lastUsedRow, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 8).Value = item.Error;
+                            ws.Cell(lastUsedRow + i, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            i++;
                         }
+
                         // Lưu lại file Excel
                         templateWorkbook.SaveAs(excelFile);
                     }
@@ -418,33 +434,37 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 8).Value = "Lỗi";
 
 
-
+                        ws.Cell(3, 1).Value = "#";
+                        ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        int i = 1;
                         foreach (var item in list)
                         {
-                            ws.Cell(3, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
-                            ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                            ws.Cell(3 + i, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 2).Value = item.NguonName;
-                            ws.Cell(3, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 2).Value = item.NguonName;
+                            ws.Cell(3 + i, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 3).Value = item.LanTestThu;
-                            ws.Cell(3, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 3).Value = item.LanTestThu;
+                            ws.Cell(3 + i, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 4).Value = item.DienApDC;
-                            ws.Cell(3, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 4).Value = item.DienApDC;
+                            ws.Cell(3 + i, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 5).Value = item.DongDC;
-                            ws.Cell(3, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 5).Value = item.DongDC;
+                            ws.Cell(3 + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 6).Value = item.CongSuat;
-                            ws.Cell(3, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 6).Value = item.CongSuat;
+                            ws.Cell(3 + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 7).Value = item.ThoiGianTest;
-                            ws.Cell(3, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 7).Value = item.ThoiGianTest;
+                            ws.Cell(3 + i, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
 
-                            ws.Cell(3, 8).Value = item.Error;
-                            ws.Cell(3, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 8).Value = item.Error;
+                            ws.Cell(3 + i, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            i++;
                         }
 
 
@@ -494,25 +514,30 @@ namespace ManagementSoftware.ManageHistoryData
                         var ws = templateWorkbook.Worksheet(1);
 
                         // Tìm dòng cuối cùng đã sử dụng trong file Excel
-                        var lastUsedRow = ws.LastRowUsed().RowNumber();
+                        var lastUsedRow = ws.LastRowUsed().RowNumber() + 1;
 
                         // Thêm giá trị vào ô tiếp theo trong dòng cuối cùng
+                        ws.Cell(lastUsedRow, 1).Value = "#";
+                        ws.Cell(lastUsedRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        int i = 1;
                         foreach (var item in list)
                         {
-                            ws.Cell(lastUsedRow, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
-                            ws.Cell(lastUsedRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                            ws.Cell(lastUsedRow + i, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 2).Value = item.LedName;
-                            ws.Cell(lastUsedRow, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 2).Value = item.LedName;
+                            ws.Cell(lastUsedRow + i, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 3).Value = item.LanTestThu;
-                            ws.Cell(lastUsedRow, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 3).Value = item.LanTestThu;
+                            ws.Cell(lastUsedRow + i, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 4).Value = item.ThoiGianTest;
-                            ws.Cell(lastUsedRow, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 4).Value = item.ThoiGianTest;
+                            ws.Cell(lastUsedRow + i, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 5).Value = item.Error;
-                            ws.Cell(lastUsedRow, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 5).Value = item.Error;
+                            ws.Cell(lastUsedRow + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            i++;
                         }
                         // Lưu lại file Excel
                         templateWorkbook.SaveAs(excelFile);
@@ -551,24 +576,28 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 5).Value = "Lỗi";
 
 
-
+                        ws.Cell(3, 1).Value = "#";
+                        ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        int i = 1;
                         foreach (var item in list)
                         {
-                            ws.Cell(3, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
-                            ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                            ws.Cell(3 + i, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 2).Value = item.LedName;
-                            ws.Cell(3, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 2).Value = item.LedName;
+                            ws.Cell(3 + i, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 3).Value = item.LanTestThu;
-                            ws.Cell(3, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 3).Value = item.LanTestThu;
+                            ws.Cell(3 + i, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 4).Value = item.ThoiGianTest;
-                            ws.Cell(3, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 4).Value = item.ThoiGianTest;
+                            ws.Cell(3 + i, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
 
-                            ws.Cell(3, 5).Value = item.Error;
-                            ws.Cell(3, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 5).Value = item.Error;
+                            ws.Cell(3 + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            i++;
                         }
 
 
@@ -623,34 +652,39 @@ namespace ManagementSoftware.ManageHistoryData
                         var ws = templateWorkbook.Worksheet(1);
 
                         // Tìm dòng cuối cùng đã sử dụng trong file Excel
-                        var lastUsedRow = ws.LastRowUsed().RowNumber();
+                        var lastUsedRow = ws.LastRowUsed().RowNumber() + 1;
 
                         // Thêm giá trị vào ô tiếp theo trong dòng cuối cùng
+                        ws.Cell(lastUsedRow, 1).Value = "#";
+                        ws.Cell(lastUsedRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        int i = 1;
                         foreach (var item in list)
                         {
-                            ws.Cell(lastUsedRow, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
-                            ws.Cell(lastUsedRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                            ws.Cell(lastUsedRow + i, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 2).Value = item.JigMachNguonName;
-                            ws.Cell(lastUsedRow, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 2).Value = item.JigMachNguonName;
+                            ws.Cell(lastUsedRow + i, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 3).Value = item.LanTestThu;
-                            ws.Cell(lastUsedRow, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 3).Value = item.LanTestThu;
+                            ws.Cell(lastUsedRow + i, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 4).Value = item.DienApDC;
-                            ws.Cell(lastUsedRow, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 4).Value = item.DienApDC;
+                            ws.Cell(lastUsedRow + i, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 5).Value = item.DongDienDC;
-                            ws.Cell(lastUsedRow, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 5).Value = item.DongDienDC;
+                            ws.Cell(lastUsedRow + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 6).Value = item.CongSuat;
-                            ws.Cell(lastUsedRow, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 6).Value = item.CongSuat;
+                            ws.Cell(lastUsedRow + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 7).Value = item.ThoiGian;
-                            ws.Cell(lastUsedRow, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 7).Value = item.ThoiGian;
+                            ws.Cell(lastUsedRow + i, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 8).Value = item.Error;
-                            ws.Cell(lastUsedRow, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 8).Value = item.Error;
+                            ws.Cell(lastUsedRow + i, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            i++;
                         }
                         // Lưu lại file Excel
                         templateWorkbook.SaveAs(excelFile);
@@ -692,32 +726,36 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 8).Value = "Lỗi";
 
 
-
+                        ws.Cell(3, 1).Value = "#";
+                        ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        int i = 1;
                         foreach (var item in list)
                         {
-                            ws.Cell(3, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
-                            ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                            ws.Cell(3 + i, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 2).Value = item.JigMachNguonName;
-                            ws.Cell(3, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 2).Value = item.JigMachNguonName;
+                            ws.Cell(3 + i, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 3).Value = item.LanTestThu;
-                            ws.Cell(3, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 3).Value = item.LanTestThu;
+                            ws.Cell(3 + i, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 4).Value = item.DienApDC;
-                            ws.Cell(3, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 4).Value = item.DienApDC;
+                            ws.Cell(3 + i, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 5).Value = item.DongDienDC;
-                            ws.Cell(3, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 5).Value = item.DongDienDC;
+                            ws.Cell(3 + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 6).Value = item.CongSuat;
-                            ws.Cell(3, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 6).Value = item.CongSuat;
+                            ws.Cell(3 + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 7).Value = item.ThoiGian;
-                            ws.Cell(3, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 7).Value = item.ThoiGian;
+                            ws.Cell(3 + i, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 8).Value = item.Error;
-                            ws.Cell(3, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 8).Value = item.Error;
+                            ws.Cell(3 + i, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            i++;
                         }
 
 
@@ -777,31 +815,36 @@ namespace ManagementSoftware.ManageHistoryData
                         var ws = templateWorkbook.Worksheet(1);
 
                         // Tìm dòng cuối cùng đã sử dụng trong file Excel
-                        var lastUsedRow = ws.LastRowUsed().RowNumber();
+                        var lastUsedRow = ws.LastRowUsed().RowNumber() + 1;
 
                         // Thêm giá trị vào ô tiếp theo trong dòng cuối cùng
+                        ws.Cell(lastUsedRow, 1).Value = "#";
+                        ws.Cell(lastUsedRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        int i = 1;
                         foreach (var item in list)
                         {
-                            ws.Cell(lastUsedRow, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
-                            ws.Cell(lastUsedRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                            ws.Cell(lastUsedRow + i, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 2).Value = item.JigMachTDSName;
-                            ws.Cell(lastUsedRow, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 2).Value = item.JigMachTDSName;
+                            ws.Cell(lastUsedRow + i, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 3).Value = item.LanTestThu;
-                            ws.Cell(lastUsedRow, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 3).Value = item.LanTestThu;
+                            ws.Cell(lastUsedRow + i, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 4).Value = item.VanDienTu == true ? "ON" : "OFF";
-                            ws.Cell(lastUsedRow, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 4).Value = item.VanDienTu == true ? "ON" : "OFF";
+                            ws.Cell(lastUsedRow + i, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 5).Value = item.VanApCao == true ? "ON" : "OFF";
-                            ws.Cell(lastUsedRow, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 5).Value = item.VanApCao == true ? "ON" : "OFF";
+                            ws.Cell(lastUsedRow + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 6).Value = item.ThoiGian;
-                            ws.Cell(lastUsedRow, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 6).Value = item.ThoiGian;
+                            ws.Cell(lastUsedRow + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 7).Value = item.Error;
-                            ws.Cell(lastUsedRow, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 7).Value = item.Error;
+                            ws.Cell(lastUsedRow + i, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            i++;
                         }
                         // Lưu lại file Excel
                         templateWorkbook.SaveAs(excelFile);
@@ -842,29 +885,33 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 7).Value = "Lỗi";
 
 
-
+                        ws.Cell(3, 1).Value = "#";
+                        ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        int i = 1;
                         foreach (var item in list)
                         {
-                            ws.Cell(3, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
-                            ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                            ws.Cell(3 + i, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 2).Value = item.JigMachTDSName;
-                            ws.Cell(3, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 2).Value = item.JigMachTDSName;
+                            ws.Cell(3 + i, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 3).Value = item.LanTestThu;
-                            ws.Cell(3, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 3).Value = item.LanTestThu;
+                            ws.Cell(3 + i, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 4).Value = item.VanDienTu == true ? "ON" : "OFF";
-                            ws.Cell(3, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 4).Value = item.VanDienTu == true ? "ON" : "OFF";
+                            ws.Cell(3 + i, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 5).Value = item.VanApCao == true ? "ON" : "OFF";
-                            ws.Cell(3, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 5).Value = item.VanApCao == true ? "ON" : "OFF";
+                            ws.Cell(3 + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 6).Value = item.ThoiGian;
-                            ws.Cell(3, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 6).Value = item.ThoiGian;
+                            ws.Cell(3 + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 7).Value = item.Error;
-                            ws.Cell(3, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 7).Value = item.Error;
+                            ws.Cell(3 + i, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            i++;
                         }
 
 
@@ -915,25 +962,30 @@ namespace ManagementSoftware.ManageHistoryData
                         var ws = templateWorkbook.Worksheet(1);
 
                         // Tìm dòng cuối cùng đã sử dụng trong file Excel
-                        var lastUsedRow = ws.LastRowUsed().RowNumber();
+                        var lastUsedRow = ws.LastRowUsed().RowNumber() + 1;
 
                         // Thêm giá trị vào ô tiếp theo trong dòng cuối cùng
+                        ws.Cell(lastUsedRow, 1).Value = "#";
+                        ws.Cell(lastUsedRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        int i = 1;
                         foreach (var item in list)
                         {
-                            ws.Cell(lastUsedRow, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
-                            ws.Cell(lastUsedRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                            ws.Cell(lastUsedRow + i, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 2).Value = item.CongTacName;
-                            ws.Cell(lastUsedRow, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 2).Value = item.CongTacName + " - " + item.JigCongTac;
+                            ws.Cell(lastUsedRow + i, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 3).Value = item.TrangThai == true ? "ON" : "OFF";
-                            ws.Cell(lastUsedRow, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 3).Value = item.TrangThai == true ? "ON" : "OFF";
+                            ws.Cell(lastUsedRow + i, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 4).Value = item.LanTestThu;
-                            ws.Cell(lastUsedRow, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 4).Value = item.LanTestThu;
+                            ws.Cell(lastUsedRow + i, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 5).Value = item.Error;
-                            ws.Cell(lastUsedRow, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 5).Value = item.Error;
+                            ws.Cell(lastUsedRow + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            i++;
                         }
                         // Lưu lại file Excel
                         templateWorkbook.SaveAs(excelFile);
@@ -972,23 +1024,27 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 5).Value = "Lỗi";
 
 
-
+                        ws.Cell(3, 1).Value = "#";
+                        ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        int i = 1;
                         foreach (var item in list)
                         {
-                            ws.Cell(3, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
-                            ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                            ws.Cell(3 + i, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 2).Value = item.CongTacName;
-                            ws.Cell(3, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 2).Value = item.CongTacName + " - " + item.JigCongTac;
+                            ws.Cell(3 + i, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 3).Value = item.TrangThai == true ? "ON" : "OFF";
-                            ws.Cell(3, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 3).Value = item.TrangThai == true ? "ON" : "OFF";
+                            ws.Cell(3 + i, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 4).Value = item.LanTestThu;
-                            ws.Cell(3, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 4).Value = item.LanTestThu;
+                            ws.Cell(3 + i, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 5).Value = item.Error;
-                            ws.Cell(3, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 5).Value = item.Error;
+                            ws.Cell(3 + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            i++;
                         }
 
 
@@ -1040,34 +1096,39 @@ namespace ManagementSoftware.ManageHistoryData
                         var ws = templateWorkbook.Worksheet(1);
 
                         // Tìm dòng cuối cùng đã sử dụng trong file Excel
-                        var lastUsedRow = ws.LastRowUsed().RowNumber();
+                        var lastUsedRow = ws.LastRowUsed().RowNumber() + 1;
 
                         // Thêm giá trị vào ô tiếp theo trong dòng cuối cùng
+                        ws.Cell(lastUsedRow, 1).Value = "#";
+                        ws.Cell(lastUsedRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        int i = 1;
                         foreach (var item in list)
                         {
-                            ws.Cell(lastUsedRow, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
-                            ws.Cell(lastUsedRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                            ws.Cell(lastUsedRow + i, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 2).Value = item.BauNongName;
-                            ws.Cell(lastUsedRow, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 2).Value = item.BauNongName;
+                            ws.Cell(lastUsedRow + i, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 3).Value = item.LanTestThu;
-                            ws.Cell(lastUsedRow, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 3).Value = item.LanTestThu;
+                            ws.Cell(lastUsedRow + i, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 4).Value = item.DongDien;
-                            ws.Cell(lastUsedRow, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 4).Value = item.DongDien;
+                            ws.Cell(lastUsedRow + i, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 5).Value = item.NhietDo;
-                            ws.Cell(lastUsedRow, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 5).Value = item.NhietDo;
+                            ws.Cell(lastUsedRow + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 6).Value = item.NhietDoNgatCBNhiet;
-                            ws.Cell(lastUsedRow, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 6).Value = item.NhietDoNgatCBNhiet;
+                            ws.Cell(lastUsedRow + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 7).Value = item.TrangThaiCBNhiet == true ? "ON" : "OFF";
-                            ws.Cell(lastUsedRow, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 7).Value = item.TrangThaiCBNhiet == true ? "ON" : "OFF";
+                            ws.Cell(lastUsedRow + i, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow, 8).Value = item.Error;
-                            ws.Cell(lastUsedRow, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(lastUsedRow + i, 8).Value = item.Error;
+                            ws.Cell(lastUsedRow + i, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            i++;
                         }
                         // Lưu lại file Excel
                         templateWorkbook.SaveAs(excelFile);
@@ -1109,32 +1170,36 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 8).Value = "Lỗi";
 
 
-
+                        ws.Cell(3, 1).Value = "#";
+                        ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        int i = 1;
                         foreach (var item in list)
                         {
-                            ws.Cell(3, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
-                            ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                            ws.Cell(3 + i, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 2).Value = item.BauNongName;
-                            ws.Cell(3, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 2).Value = item.BauNongName;
+                            ws.Cell(3 + i, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 3).Value = item.LanTestThu;
-                            ws.Cell(3, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 3).Value = item.LanTestThu;
+                            ws.Cell(3 + i, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 4).Value = item.DongDien;
-                            ws.Cell(3, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 4).Value = item.DongDien;
+                            ws.Cell(3 + i, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 5).Value = item.NhietDo;
-                            ws.Cell(3, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 5).Value = item.NhietDo;
+                            ws.Cell(3 + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 6).Value = item.NhietDoNgatCBNhiet;
-                            ws.Cell(3, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 6).Value = item.NhietDoNgatCBNhiet;
+                            ws.Cell(3 + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 7).Value = item.TrangThaiCBNhiet == true ? "ON" : "OFF";
-                            ws.Cell(3, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 7).Value = item.TrangThaiCBNhiet == true ? "ON" : "OFF";
+                            ws.Cell(3 + i, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3, 8).Value = item.Error;
-                            ws.Cell(3, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(3 + i, 8).Value = item.Error;
+                            ws.Cell(3 + i, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            i++;
                         }
 
 

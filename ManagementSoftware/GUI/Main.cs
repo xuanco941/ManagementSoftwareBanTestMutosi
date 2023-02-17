@@ -106,7 +106,7 @@ namespace ManagementSoftware.GUI
         private void buttonDangXuat_Click(object sender, EventArgs e)
         {
             Common.USERSESSION = null;
-            Application.Restart();
+            Application.Exit();
         }
 
         private void buttonJigMach_Click(object sender, EventArgs e)

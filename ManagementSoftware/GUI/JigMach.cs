@@ -131,7 +131,7 @@ namespace ManagementSoftware.GUI
 
                 if (l != null && l.Count > 0)
                 {
-                    string date = "ID" + item.TestJigMachID + " - " + item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    string date = item.CreateAt.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
                     foreach (var i in l)
                     {
                         int rowId = dataGridView1.Rows.Add();

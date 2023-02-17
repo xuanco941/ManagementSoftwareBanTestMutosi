@@ -76,6 +76,7 @@ namespace ManagementSoftware.ManageHistoryData
             watch.Start();
 
 
+            
             // update data
             // Long running operation
             try
@@ -88,7 +89,6 @@ namespace ManagementSoftware.ManageHistoryData
 
                     new SaveToFIleExcel().SaveLoiLoc("Test Lõi Lọc", list);
 
-
                     await plcLoiLoc.Close();
                 }
 
@@ -99,7 +99,6 @@ namespace ManagementSoftware.ManageHistoryData
             }
             finally
             {
-                //long x = Math.Max(0, TIME_INTERVAL_IN_MILLISECONDS - watch.ElapsedMilliseconds);
                 timerLoiLoc.Change(Math.Max(TIME_INTERVAL_SAVE, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
             }
 

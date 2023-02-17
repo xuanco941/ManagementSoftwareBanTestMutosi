@@ -36,6 +36,6 @@ namespace ManagementSoftware
 
 
         //Timer Interval
-        public const int TIME_INTERVAL_UPDATE_DATA_ON_HISTORY = 5000;
+        public const int TIME_INTERVAL_UPDATE_DATA_ON_HISTORY = 6000;
     }
 }
