@@ -264,12 +264,12 @@ namespace ManagementSoftware.ManageHistoryData
 
         public void ConnectAndRunSaveAll()
         {
-            timerBauNong = new System.Threading.Timer(CallbackBauNong, null, 5000, 5000);
-            timerBepTu = new System.Threading.Timer(CallbackBepTu, null, 5000, 5000);
-            timerCongTac = new System.Threading.Timer(CallbackCongTac, null, 5000, 5000);
-            timerLoiLoc = new System.Threading.Timer(CallbackLoiLoc, null, 5000, 5000);
-            timerMach = new System.Threading.Timer(CallbackMach, null, 5000, 5000);
-            timerNguon = new System.Threading.Timer(CallbackNguon, null, 5000, 5000);
+            timerBauNong = new System.Threading.Timer(CallbackBauNong, null, 10000, 10000);
+            timerBepTu = new System.Threading.Timer(CallbackBepTu, null, 10000, 10000);
+            timerCongTac = new System.Threading.Timer(CallbackCongTac, null, 10000, 10000);
+            timerLoiLoc = new System.Threading.Timer(CallbackLoiLoc, null, 10000, 10000);
+            timerMach = new System.Threading.Timer(CallbackMach, null, 10000, 10000);
+            timerNguon = new System.Threading.Timer(CallbackNguon, null, 10000, 10000);
 
         }
     }
