@@ -109,7 +109,7 @@ namespace ManagementSoftware.GUI
             dataGridView1.Columns.Add(dongDC);
             dataGridView1.Columns.Add(congSuat);
             dataGridView1.Columns.Add(ThoiGian);
-            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Lỗi"});
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Tình trạng"});
 
 
 
@@ -137,7 +137,7 @@ namespace ManagementSoftware.GUI
             dataGridView2.Columns.Add(name);
             dataGridView2.Columns.Add(lanTest);
             dataGridView2.Columns.Add(ThoiGian);
-            dataGridView2.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Lỗi" });
+            dataGridView2.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Tình trạng" });
 
 
             dataGridView2.RowTemplate.Height = 35;

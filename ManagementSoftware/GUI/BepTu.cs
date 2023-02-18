@@ -71,7 +71,7 @@ namespace ManagementSoftware.GUI
             dataGridView1.Columns.Add(ThoiGian);
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Công suất tiêu thụ(Kwh)" });
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Trạng thái" });
-            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Lỗi" });
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Tình trạng" });
 
 
             dataGridView1.RowTemplate.Height = 35;

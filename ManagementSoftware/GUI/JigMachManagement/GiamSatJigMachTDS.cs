@@ -87,43 +87,43 @@ namespace ManagementSoftware.GUI.JigMachManagement
             {
                 if (e.JigMachTDSName == TenThietBi.JigMachNguon1)
                 {
-                    SetTextControl(MachNguonDienApJig1, MachNguonCongSuatJig1, ThoiGianTestJ1, LanTestThuJ1, lbjig1, e);
+                    SetTextControl(MachNguonDienApJig1, MachNguonCongSuatJig1, ThoiGianTestJ1, LanTestThuJ1, buttonTinhTrang1, lbjig1, e);
                 }
                 else if (e.JigMachTDSName == TenThietBi.JigMachNguon2)
                 {
-                    SetTextControl(MachNguonDienApJig2, MachNguonCongSuatJig2, ThoiGianTestJ2, LanTestThuJ2, lbjig2, e);
+                    SetTextControl(MachNguonDienApJig2, MachNguonCongSuatJig2, ThoiGianTestJ2, LanTestThuJ2, buttonTinhTrang2, lbjig2, e);
                 }
                 else if (e.JigMachTDSName == TenThietBi.JigMachNguon3)
                 {
-                    SetTextControl(MachNguonDienApJig3, MachNguonCongSuatJig3, ThoiGianTestJ3, LanTestThuJ3, lbjig3, e);
+                    SetTextControl(MachNguonDienApJig3, MachNguonCongSuatJig3, ThoiGianTestJ3, LanTestThuJ3, buttonTinhTrang3, lbjig3, e);
                 }
                 else if (e.JigMachTDSName == TenThietBi.JigMachNguon4)
                 {
-                    SetTextControl(MachNguonDienApJig4, MachNguonCongSuatJig4, ThoiGianTestJ4, LanTestThuJ4, lbjig4, e);
+                    SetTextControl(MachNguonDienApJig4, MachNguonCongSuatJig4, ThoiGianTestJ4, LanTestThuJ4, buttonTinhTrang4, lbjig4, e);
                 }
                 else if (e.JigMachTDSName == TenThietBi.JigMachNguon5)
                 {
-                    SetTextControl(MachNguonDienApJig5, MachNguonCongSuatJig5, ThoiGianTestJ5, LanTestThuJ5, lbjig5, e);
+                    SetTextControl(MachNguonDienApJig5, MachNguonCongSuatJig5, ThoiGianTestJ5, LanTestThuJ5, buttonTinhTrang5, lbjig5, e);
                 }
                 else if (e.JigMachTDSName == TenThietBi.JigMachNguon6)
                 {
-                    SetTextControl(MachNguonDienApJig6, MachNguonCongSuatJig6, ThoiGianTestJ6, LanTestThuJ6, lbjig6, e);
+                    SetTextControl(MachNguonDienApJig6, MachNguonCongSuatJig6, ThoiGianTestJ6, LanTestThuJ6, buttonTinhTrang6, lbjig6, e);
                 }
                 else if (e.JigMachTDSName == TenThietBi.JigMachNguon7)
                 {
-                    SetTextControl(MachNguonDienApJig7, MachNguonCongSuatJig7, ThoiGianTestJ7, LanTestThuJ7, lbjig7, e);
+                    SetTextControl(MachNguonDienApJig7, MachNguonCongSuatJig7, ThoiGianTestJ7, LanTestThuJ7, buttonTinhTrang7, lbjig7, e);
                 }
                 else if (e.JigMachTDSName == TenThietBi.JigMachNguon8)
                 {
-                    SetTextControl(MachNguonDienApJig8, MachNguonCongSuatJig8, ThoiGianTestJ8, LanTestThuJ8, lbjig8, e);
+                    SetTextControl(MachNguonDienApJig8, MachNguonCongSuatJig8, ThoiGianTestJ8, LanTestThuJ8, buttonTinhTrang8, lbjig8, e);
                 }
                 else if (e.JigMachTDSName == TenThietBi.JigMachNguon9)
                 {
-                    SetTextControl(MachNguonDienApJig9, MachNguonCongSuatJig9, ThoiGianTestJ9, LanTestThuJ9, lbjig9, e);
+                    SetTextControl(MachNguonDienApJig9, MachNguonCongSuatJig9, ThoiGianTestJ9, LanTestThuJ9, buttonTinhTrang9, lbjig9, e);
                 }
                 else if (e.JigMachTDSName == TenThietBi.JigMachNguon10)
                 {
-                    SetTextControl(MachNguonDienApJig10, MachNguonCongSuatJig10, ThoiGianTestJ10, LanTestThuJ10, lbjig10, e);
+                    SetTextControl(MachNguonDienApJig10, MachNguonCongSuatJig10, ThoiGianTestJ10, LanTestThuJ10, buttonTinhTrang10, lbjig10, e);
                 }
 
             }
@@ -137,7 +137,7 @@ namespace ManagementSoftware.GUI.JigMachManagement
 
 
 
-        private void SetTextControl(Button dienAp, Button congSuat, Button time, Button soLanTest, Label lbjig, Models.JigMachModel.JigMachTDS e)
+        private void SetTextControl(Button dienAp, Button congSuat, Button time, Button soLanTest, Button tinhTrang, Label lbjig, Models.JigMachModel.JigMachTDS e)
         {
 
 
@@ -148,9 +148,12 @@ namespace ManagementSoftware.GUI.JigMachManagement
             time.Text = e.ThoiGian.ToString() + " s";
 
             soLanTest.Text = e.LanTestThu.ToString();
+
+            tinhTrang.Text = e.Error;
             if (e.Error != Common.NOT_ERROR_STR)
             {
                 lbjig.BackColor = Color.Crimson;
+                tinhTrang.Font = new Font("Segoe UI", 8, FontStyle.Regular);
             }
             else
             {

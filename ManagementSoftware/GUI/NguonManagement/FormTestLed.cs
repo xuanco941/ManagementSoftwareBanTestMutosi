@@ -29,6 +29,7 @@ namespace ManagementSoftware.GUI.NguonManagement
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "LED", SortMode = DataGridViewColumnSortMode.NotSortable });
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Thời gian (giây)", SortMode = DataGridViewColumnSortMode.NotSortable });
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Lần test thứ", SortMode = DataGridViewColumnSortMode.NotSortable });
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Tình trạng", SortMode = DataGridViewColumnSortMode.NotSortable });
 
 
 
@@ -137,6 +138,7 @@ namespace ManagementSoftware.GUI.NguonManagement
                 }
                 dataGridView1.Rows[i].Cells[1].Value = list[i].ThoiGianTest;
                 dataGridView1.Rows[i].Cells[2].Value = list[i].LanTestThu;
+                dataGridView1.Rows[i].Cells[3].Value = list[i].Error;
 
             }
 

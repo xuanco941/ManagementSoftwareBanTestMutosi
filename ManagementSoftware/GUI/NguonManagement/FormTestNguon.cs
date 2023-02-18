@@ -115,6 +115,7 @@ namespace ManagementSoftware.GUI.NguonManagement
                 dataGridView1.Rows[i].Cells[3].Value = String.Format("{0:0.00}", list[i].CongSuat);
                 dataGridView1.Rows[i].Cells[4].Value = list[i].ThoiGianTest;
                 dataGridView1.Rows[i].Cells[5].Value = list[i].LanTestThu;
+                dataGridView1.Rows[i].Cells[6].Value = list[i].Error;
                 if (list[i].Error != Common.NOT_ERROR_STR)
                 {
                     dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Crimson;
@@ -138,6 +139,8 @@ namespace ManagementSoftware.GUI.NguonManagement
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Công suất (W)", SortMode = DataGridViewColumnSortMode.NotSortable });
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Thời gian test (giây)", SortMode = DataGridViewColumnSortMode.NotSortable });
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Lần test thứ", SortMode = DataGridViewColumnSortMode.NotSortable });
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Tình trạng", SortMode = DataGridViewColumnSortMode.NotSortable });
+
 
 
 

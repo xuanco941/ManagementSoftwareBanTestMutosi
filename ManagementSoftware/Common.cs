@@ -40,6 +40,6 @@ namespace ManagementSoftware
 
 
         //Không có lỗi
-        public const string NOT_ERROR_STR = "Không";
+        public const string NOT_ERROR_STR = "OK";
     }
 }

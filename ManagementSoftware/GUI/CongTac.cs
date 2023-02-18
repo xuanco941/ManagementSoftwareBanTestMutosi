@@ -72,7 +72,7 @@ namespace ManagementSoftware.GUI
             dataGridView1.Columns.Add(name);
             dataGridView1.Columns.Add(dienAp);
             dataGridView1.Columns.Add(lanTest);
-            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Lỗi" });
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Tình trạng" });
 
 
             dataGridView1.RowTemplate.Height = 35;
@@ -334,6 +334,7 @@ namespace ManagementSoftware.GUI
             dataGridViewGiamSat.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Công tắc", SortMode = DataGridViewColumnSortMode.NotSortable });
             dataGridViewGiamSat.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Trạng thái", SortMode = DataGridViewColumnSortMode.NotSortable });
             dataGridViewGiamSat.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Lần test thứ", SortMode = DataGridViewColumnSortMode.NotSortable });
+            dataGridViewGiamSat.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Tình trạng", SortMode = DataGridViewColumnSortMode.NotSortable });
 
 
 
@@ -471,7 +472,8 @@ namespace ManagementSoftware.GUI
             {
                 dataGridViewGiamSat.Rows[i].Cells[1].Value = list[i].TrangThai == true ? "ON" : "OFF";
                 dataGridViewGiamSat.Rows[i].Cells[2].Value = list[i].LanTestThu;
-                
+                dataGridViewGiamSat.Rows[i].Cells[3].Value = list[i].Error;
+
                 if (list[i].Error != Common.NOT_ERROR_STR)
                 {
                     dataGridViewGiamSat.Rows[i].DefaultCellStyle.BackColor = Color.Crimson;

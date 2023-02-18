@@ -82,7 +82,7 @@ namespace ManagementSoftware.GUI
             DataGridViewColumn ThoiGian = new DataGridViewTextBoxColumn();
             ThoiGian.HeaderText = "Thời gian xả (giây)";
             DataGridViewColumn Loi = new DataGridViewTextBoxColumn();
-            Loi.HeaderText = "Lỗi";
+            Loi.HeaderText = "Tình trạng";
 
 
 
@@ -453,6 +453,8 @@ namespace ManagementSoftware.GUI
 
                 ApSuatTest1.Text = loiloc.ApSuatTest.ToString();
 
+                btnTinhTrangLoai1.Text = loiloc.Error;
+
                 if (loiloc.Error != Common.NOT_ERROR_STR)
                 {
                     labelLoai1.BackColor = Color.Crimson;
@@ -473,6 +475,37 @@ namespace ManagementSoftware.GUI
                 {
                     labelLoai1.Text = TenThietBi.LoiLoc1 + " (OFF)";
                 }
+
+
+
+
+
+
+
+                //2
+                ThoiGianXa2.Text = "";
+
+                ThoiGianNen2.Text = "";
+
+                ThoiGianGiu2.Text = "";
+                SoLanTestJig2.Text = "";
+
+                ApSuatTest2.Text = "";
+                btnTinhTrangLoai2.Text = "";
+
+
+                //3
+                ThoiGianXa1va2.Text = "";
+                ThoiGianNen1va2.Text = "";
+                ThoiGianGiu1va2.Text = "";
+
+                SoLanTestJig1va2.Text = "";
+
+                ApSuatTest1va2.Text = "";
+                btnTinhTrangLoai3.Text = "";
+
+
+
             }
             else if (loiloc.LoiLocName == TenThietBi.LoiLoc2)
             {
@@ -485,6 +518,8 @@ namespace ManagementSoftware.GUI
                 SoLanTestJig2.Text = loiloc.SoLanTest.ToString();
 
                 ApSuatTest2.Text = loiloc.ApSuatTest.ToString();
+                btnTinhTrangLoai2.Text = loiloc.Error;
+
                 if (loiloc.Error != Common.NOT_ERROR_STR)
                 {
                     labelLoai2.BackColor = Color.Crimson;
@@ -504,6 +539,35 @@ namespace ManagementSoftware.GUI
                 {
                     labelLoai2.Text = TenThietBi.LoiLoc2 + " (OFF)";
                 }
+
+
+
+
+
+
+                //1
+                ThoiGianXa1.Text = "";
+
+                ThoiGianNen1.Text = "";
+
+                ThoiGianGiu1.Text = "";
+                SoLanTestJig1.Text = "";
+
+                ApSuatTest1.Text = "";
+                btnTinhTrangLoai1.Text = "";
+
+                //3
+                ThoiGianXa1va2.Text = "";
+                ThoiGianNen1va2.Text = "";
+                ThoiGianGiu1va2.Text = "";
+
+                SoLanTestJig1va2.Text = "";
+
+                ApSuatTest1va2.Text = "";
+                btnTinhTrangLoai3.Text = "";
+
+
+
             }
             else
             {
@@ -514,6 +578,8 @@ namespace ManagementSoftware.GUI
                 SoLanTestJig1va2.Text = loiloc.SoLanTest.ToString();
 
                 ApSuatTest1va2.Text = loiloc.ApSuatTest.ToString();
+                btnTinhTrangLoai3.Text = loiloc.Error;
+
                 if (loiloc.Error != Common.NOT_ERROR_STR)
                 {
                     labelLoai1.BackColor = Color.Crimson;
@@ -533,6 +599,30 @@ namespace ManagementSoftware.GUI
                 {
                     labelLoai3.Text = TenThietBi.LoiLoc1va2 + " (OFF)";
                 }
+
+
+                //1
+                ThoiGianXa1.Text = "";
+
+                ThoiGianNen1.Text = "";
+
+                ThoiGianGiu1.Text = "";
+                SoLanTestJig1.Text = "";
+
+                ApSuatTest1.Text = "";
+                btnTinhTrangLoai1.Text = "";
+
+                //2
+                ThoiGianXa2.Text = "";
+
+                ThoiGianNen2.Text = "";
+
+                ThoiGianGiu2.Text = "";
+                SoLanTestJig2.Text = "";
+
+                ApSuatTest2.Text = "";
+                btnTinhTrangLoai2.Text = "";
+
             }
         }
 
