@@ -321,7 +321,14 @@ namespace ManagementSoftware.GUI
                         DataGridViewRow row = dataGridView1.Rows[rowId];
 
                         row.Cells[0].Value = date;
-                        row.Cells[1].Value = i.NguonName;
+                        if (i.isOn)
+                        {
+                            row.Cells[1].Value = i.NguonName;
+                        }
+                        else
+                        {
+                            row.Cells[1].Value = i.NguonName + " (OFF)";
+                        }
                         row.Cells[2].Value = i.LanTestThu;
                         row.Cells[3].Value = i.DienApDC;
                         row.Cells[4].Value = i.DongDC;
@@ -514,7 +521,14 @@ namespace ManagementSoftware.GUI
                         DataGridViewRow row = dataGridView2.Rows[rowId];
 
                         row.Cells[0].Value = date;
-                        row.Cells[1].Value = i.LedName;
+                        if (i.isOn)
+                        {
+                            row.Cells[1].Value = i.LedName;
+                        }
+                        else
+                        {
+                            row.Cells[1].Value = i.LedName + " (OFF)";
+                        }
                         row.Cells[2].Value = i.LanTestThu;
                         row.Cells[3].Value = i.ThoiGianTest;
                         row.Cells[4].Value = i.Error;
@@ -592,7 +606,14 @@ namespace ManagementSoftware.GUI
                         DataGridViewRow row = dataGridView1.Rows[rowId];
 
                         row.Cells[0].Value = date;
-                        row.Cells[1].Value = i.NguonName;
+                        if (i.isOn)
+                        {
+                            row.Cells[1].Value = i.NguonName;
+                        }
+                        else
+                        {
+                            row.Cells[1].Value = i.NguonName + " (OFF)";
+                        }
                         row.Cells[2].Value = i.LanTestThu;
                         row.Cells[3].Value = i.DienApDC;
                         row.Cells[4].Value = i.DongDC;
@@ -665,7 +686,14 @@ namespace ManagementSoftware.GUI
                         DataGridViewRow row = dataGridView2.Rows[rowId];
 
                         row.Cells[0].Value = date;
-                        row.Cells[1].Value = i.LedName;
+                        if (i.isOn)
+                        {
+                            row.Cells[1].Value = i.LedName;
+                        }
+                        else
+                        {
+                            row.Cells[1].Value = i.LedName + " (OFF)";
+                        }
                         row.Cells[2].Value = i.LanTestThu;
                         row.Cells[3].Value = i.ThoiGianTest;
                         row.Cells[4].Value = i.Error;

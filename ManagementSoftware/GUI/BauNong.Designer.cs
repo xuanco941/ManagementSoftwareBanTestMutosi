@@ -814,7 +814,7 @@
             this.labelJig1.Name = "labelJig1";
             this.labelJig1.Size = new System.Drawing.Size(230, 36);
             this.labelJig1.TabIndex = 8;
-            this.labelJig1.Text = "Jig 1";
+            this.labelJig1.Text = "Bầu 1";
             this.labelJig1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel90
@@ -1101,7 +1101,7 @@
             this.labelJig2.Name = "labelJig2";
             this.labelJig2.Size = new System.Drawing.Size(230, 36);
             this.labelJig2.TabIndex = 8;
-            this.labelJig2.Text = "Jig 2";
+            this.labelJig2.Text = "Bầu 2";
             this.labelJig2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel68
@@ -1389,7 +1389,7 @@
             this.labelJig3.Name = "labelJig3";
             this.labelJig3.Size = new System.Drawing.Size(230, 36);
             this.labelJig3.TabIndex = 8;
-            this.labelJig3.Text = "Jig 3";
+            this.labelJig3.Text = "Bầu 3";
             this.labelJig3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel57
@@ -1676,7 +1676,7 @@
             this.labelJig4.Name = "labelJig4";
             this.labelJig4.Size = new System.Drawing.Size(230, 36);
             this.labelJig4.TabIndex = 8;
-            this.labelJig4.Text = "Jig 4";
+            this.labelJig4.Text = "Bầu 4";
             this.labelJig4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel46
@@ -1963,7 +1963,7 @@
             this.labelJig5.Name = "labelJig5";
             this.labelJig5.Size = new System.Drawing.Size(230, 36);
             this.labelJig5.TabIndex = 8;
-            this.labelJig5.Text = "Jig 5";
+            this.labelJig5.Text = "Bầu 5";
             this.labelJig5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel35
@@ -2250,7 +2250,7 @@
             this.labelJig6.Name = "labelJig6";
             this.labelJig6.Size = new System.Drawing.Size(230, 36);
             this.labelJig6.TabIndex = 8;
-            this.labelJig6.Text = "Jig 6";
+            this.labelJig6.Text = "Bầu 6";
             this.labelJig6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel24
@@ -2537,7 +2537,7 @@
             this.labelJig7.Name = "labelJig7";
             this.labelJig7.Size = new System.Drawing.Size(230, 35);
             this.labelJig7.TabIndex = 8;
-            this.labelJig7.Text = "Jig 7";
+            this.labelJig7.Text = "Bầu 7";
             this.labelJig7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel13
@@ -2824,7 +2824,7 @@
             this.labelJig8.Name = "labelJig8";
             this.labelJig8.Size = new System.Drawing.Size(230, 35);
             this.labelJig8.TabIndex = 8;
-            this.labelJig8.Text = "Jig 8";
+            this.labelJig8.Text = "Bầu 8";
             this.labelJig8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -3111,7 +3111,7 @@
             this.labelJig9.Name = "labelJig9";
             this.labelJig9.Size = new System.Drawing.Size(230, 34);
             this.labelJig9.TabIndex = 8;
-            this.labelJig9.Text = "Jig 9";
+            this.labelJig9.Text = "Bầu 9";
             this.labelJig9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel79
@@ -3398,7 +3398,7 @@
             this.labelJig10.Name = "labelJig10";
             this.labelJig10.Size = new System.Drawing.Size(230, 35);
             this.labelJig10.TabIndex = 8;
-            this.labelJig10.Text = "Jig 10";
+            this.labelJig10.Text = "Bầu 10";
             this.labelJig10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabPageThongKe

@@ -38,6 +38,8 @@ namespace ManagementSoftware.PLCSetting
             int errDong = 160;
             int errDienAp = 180;
 
+            int iOn = 360;
+
 
             for (int i = 0; i < 10; i++)
             {
@@ -61,6 +63,9 @@ namespace ManagementSoftware.PLCSetting
                                 jig.Error_Ap ? "Lỗi áp" :
                                 Common.NOT_ERROR_STR;
 
+                jig.isOn = await this.ConvertUIntToUshort(iOn) != 0 ? true : false;
+
+
                 listMachNguon.Add(jig);
 
                 dienAp = dienAp + 4;
@@ -72,6 +77,8 @@ namespace ManagementSoftware.PLCSetting
                 //err
                 errDong = errDong+ 2;
                 errDienAp = errDienAp + 2;
+
+                iOn = iOn + 2;
 
             }
             return listMachNguon;
@@ -89,6 +96,9 @@ namespace ManagementSoftware.PLCSetting
 
             int err_th_van_dt = 220;
 
+            int iOn = 380;
+
+
             List<JigMachTDS> listJigMachTDS = new List<JigMachTDS>();
 
             for (int i = 0; i < 10; i++)
@@ -104,6 +114,9 @@ namespace ManagementSoftware.PLCSetting
 
                 jig.Error = jig.Error_Van_DT==true ? "Lỗi van điện từ" : Common.NOT_ERROR_STR;
 
+                jig.isOn = await this.ConvertUIntToUshort(iOn) != 0 ? true : false;
+
+
                 listJigMachTDS.Add(jig);
 
                 time = time + 4;
@@ -111,6 +124,7 @@ namespace ManagementSoftware.PLCSetting
                 vanapcao = vanapcao + 2;
                 vandt = vandt + 2;
                 err_th_van_dt = err_th_van_dt + 2;
+                iOn = iOn + 2;
             }
 
             return listJigMachTDS;

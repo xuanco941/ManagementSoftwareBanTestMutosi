@@ -112,7 +112,14 @@ namespace ManagementSoftware.GUI
                         DataGridViewRow row = dataGridView1.Rows[rowId];
 
                         row.Cells[0].Value = date;
-                        row.Cells[1].Value = i.BauNongName;
+                        if (i.isOn)
+                        {
+                            row.Cells[1].Value = i.BauNongName;
+                        }
+                        else
+                        {
+                            row.Cells[1].Value = i.BauNongName + " (OFF)";
+                        }
                         row.Cells[2].Value = i.LanTestThu;
                         row.Cells[3].Value = i.DongDien;
                         row.Cells[4].Value = i.NhietDo;
@@ -256,7 +263,14 @@ namespace ManagementSoftware.GUI
                         DataGridViewRow row = dataGridView1.Rows[rowId];
 
                         row.Cells[0].Value = date;
-                        row.Cells[1].Value = i.BauNongName;
+                        if (i.isOn)
+                        {
+                            row.Cells[1].Value = i.BauNongName;
+                        }
+                        else
+                        {
+                            row.Cells[1].Value = i.BauNongName + " (OFF)";
+                        }
                         row.Cells[2].Value = i.LanTestThu;
                         row.Cells[3].Value = i.DongDien;
                         row.Cells[4].Value = i.NhietDo;
@@ -358,7 +372,16 @@ namespace ManagementSoftware.GUI
             {
                 lbJig.BackColor = Color.DarkOrange;
             }
-          
+
+            if (bauNong.isOn)
+            {
+                lbJig.Text = bauNong.BauNongName;
+            }
+            else
+            {
+                lbJig.Text = bauNong.BauNongName + " (OFF)";
+            }
+
         }
 
 

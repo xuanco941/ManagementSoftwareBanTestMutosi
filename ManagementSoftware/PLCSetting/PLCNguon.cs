@@ -26,6 +26,8 @@ namespace ManagementSoftware.PLCSetting
             int errDong = 540;
             int errAp = 600;
 
+            int iOn = 840;
+
             for (int i = 0; i < 30; i++)
             {
                 Nguon nguon = new Nguon();
@@ -38,6 +40,7 @@ namespace ManagementSoftware.PLCSetting
 
                 nguon.Error_Dong = await this.ConvertUIntToUshort(errDong) != 0 ? true : false;
                 nguon.Error_Ap = await this.ConvertUIntToUshort(errAp) != 0 ? true : false;
+                nguon.isOn = await this.ConvertUIntToUshort(iOn) != 0 ? true : false;
 
                 nguon.Error = nguon.Error_Dong && nguon.Error_Ap ? "Lỗi dòng, lỗi áp" :
                                 nguon.Error_Dong ? "Lỗi dòng" :
@@ -56,6 +59,7 @@ namespace ManagementSoftware.PLCSetting
                 soLanTestAddr += 2;
                 errDong += 2;
                 errAp += 2;
+                iOn += 2;
             }
 
             return listNguon;
@@ -69,18 +73,21 @@ namespace ManagementSoftware.PLCSetting
 
             int thoiGianTest = 660;
             int soLanTestAddr = 780;
+            int iOn = 900;
 
             for (int i = 0; i < 30; i++)
             {
                 Models.LedModel.Led led = new Models.LedModel.Led();
                 led.ThoiGianTest = await this.ConvertUDIntToUInt(660);
                 led.LanTestThu = await this.ConvertUIntToUshort(780);
+                led.isOn = await this.ConvertUIntToUshort(iOn) != 0 ? true : false;
                 led.LedName = "Nguồn " + (i + 1);
 
                 listLED.Add(led);
 
                 thoiGianTest += 4;
                 soLanTestAddr += 2;
+                iOn += 2;
             }
 
             return listLED;

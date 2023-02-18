@@ -157,6 +157,14 @@ namespace ManagementSoftware.GUI.JigMachManagement
                 lbjig.BackColor = Color.DarkOrange;
             }
 
+            if (e.isOn)
+            {
+                lbjig.Text = e.JigMachTDSName;
+            }
+            else
+            {
+                lbjig.Text = e.JigMachTDSName + " (OFF)";
+            }
         }
 
 

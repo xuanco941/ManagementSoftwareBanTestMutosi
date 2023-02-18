@@ -138,7 +138,14 @@ namespace ManagementSoftware.GUI
                         DataGridViewRow row = dataGridView1.Rows[rowId];
 
                         row.Cells[0].Value = date;
-                        row.Cells[1].Value = i.JigMachNguonName;
+                        if (i.isOn)
+                        {
+                            row.Cells[1].Value = i.JigMachNguonName;
+                        }
+                        else
+                        {
+                            row.Cells[1].Value = i.JigMachNguonName + " (OFF)";
+                        }
                         row.Cells[2].Value = i.LanTestThu;
                         row.Cells[3].Value = String.Format("{0:0.00}", i.DienApDC);
                         row.Cells[4].Value = String.Format("{0:0.00}", i.DongDienDC);
@@ -335,7 +342,14 @@ namespace ManagementSoftware.GUI
                         DataGridViewRow row = dataGridView2.Rows[rowId];
 
                         row.Cells[0].Value = date;
-                        row.Cells[1].Value = i.JigMachTDSName;
+                        if (i.isOn)
+                        {
+                            row.Cells[1].Value = i.JigMachTDSName;
+                        }
+                        else
+                        {
+                            row.Cells[1].Value = i.JigMachTDSName + " (OFF)";
+                        }
                         row.Cells[2].Value = i.LanTestThu;
                         row.Cells[3].Value = i.VanDienTu == true ? "ON" : "OFF";
                         row.Cells[4].Value = i.VanApCao == true ? "ON" : "OFF";
@@ -528,7 +542,14 @@ namespace ManagementSoftware.GUI
                         DataGridViewRow row = dataGridView1.Rows[rowId];
 
                         row.Cells[0].Value = date;
-                        row.Cells[1].Value = i.JigMachNguonName;
+                        if (i.isOn)
+                        {
+                            row.Cells[1].Value = i.JigMachNguonName;
+                        }
+                        else
+                        {
+                            row.Cells[1].Value = i.JigMachNguonName + " (OFF)";
+                        }
                         row.Cells[2].Value = i.LanTestThu;
                         row.Cells[3].Value = String.Format("{0:0.00}", i.DienApDC);
                         row.Cells[4].Value = String.Format("{0:0.00}", i.DongDienDC);
@@ -617,7 +638,14 @@ namespace ManagementSoftware.GUI
                         DataGridViewRow row = dataGridView2.Rows[rowId];
 
                         row.Cells[0].Value = date;
-                        row.Cells[1].Value = i.JigMachTDSName;
+                        if (i.isOn)
+                        {
+                            row.Cells[1].Value = i.JigMachTDSName;
+                        }
+                        else
+                        {
+                            row.Cells[1].Value = i.JigMachTDSName + " (OFF)";
+                        }
                         row.Cells[2].Value = i.LanTestThu;
                         row.Cells[3].Value = i.VanDienTu == true ? "ON" : "OFF";
                         row.Cells[4].Value = i.VanApCao == true ? "ON" : "OFF";

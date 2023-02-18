@@ -33,7 +33,12 @@ namespace ManagementSoftware.PLCSetting
 
             var err = this.ConvertUIntToUshort(86);
 
-            await Task.WhenAll(thoiGianNen, thoiGianXa, thoiGianGiu, ApSuatTest, SoLanTest, loaiLoiLocTest, err);
+            var isOnLoiLoc1 = this.ConvertUIntToUshort(88);
+            var isOnLoiLoc2 = this.ConvertUIntToUshort(90);
+
+
+
+            await Task.WhenAll(thoiGianNen, thoiGianXa, thoiGianGiu, ApSuatTest, SoLanTest, loaiLoiLocTest, err,isOnLoiLoc1,isOnLoiLoc2);
 
 
             loiloc.ThoiGianNen = thoiGianNen.Result;
@@ -42,21 +47,24 @@ namespace ManagementSoftware.PLCSetting
             loiloc.ApSuatTest = ApSuatTest.Result;
             loiloc.SoLanTest = SoLanTest.Result;
             loiloc.Error = err.Result != 0 ? "Lỗi" : Common.NOT_ERROR_STR;
-            loiloc.isError = err.Result != 0 ? true : false; 
+            loiloc.isError = err.Result != 0 ? true : false;
 
 
 
             if (loaiLoiLocTest.Result == 1)
             {
                 loiloc.LoiLocName = TenThietBi.LoiLoc1;
+                loiloc.isOn = isOnLoiLoc1.Result != 0 ? true : false;
             }
             else if (loaiLoiLocTest.Result == 2)
             {
                 loiloc.LoiLocName = TenThietBi.LoiLoc2;
+                loiloc.isOn = isOnLoiLoc2.Result != 0 ? true : false;
             }
             else
             {
                 loiloc.LoiLocName = TenThietBi.LoiLoc1va2;
+                loiloc.isOn = isOnLoiLoc1.Result!=0 && isOnLoiLoc2.Result != 0 ? true : false;
             }
 
 

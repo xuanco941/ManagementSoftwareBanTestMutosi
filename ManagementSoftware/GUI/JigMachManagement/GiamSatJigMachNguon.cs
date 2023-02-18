@@ -160,6 +160,15 @@ namespace ManagementSoftware.GUI.JigMachManagement
                 lbjig.BackColor = Color.DarkOrange;
             }
 
+            if (e.isOn)
+            {
+                lbjig.Text = e.JigMachNguonName;
+            }
+            else
+            {
+                lbjig.Text = e.JigMachNguonName + " (OFF)";
+            }
+
         }
 
         private void GiamSatJigMachNguon_FormClosing(object sender, FormClosingEventArgs e)

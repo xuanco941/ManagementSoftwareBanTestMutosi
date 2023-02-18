@@ -31,6 +31,7 @@ namespace ManagementSoftware.PLCSetting
             int errCbNhietThap = 160;
             int errCbCangDot = 180;
 
+            int iOn = 200;
 
 
 
@@ -47,9 +48,10 @@ namespace ManagementSoftware.PLCSetting
                 obj.Error_CB_Nhiet_Thap = await this.ConvertUIntToUshort(errCbNhietThap) == 0 ? false : true;
                 obj.Error_CB_Cang_Dot = await this.ConvertUIntToUshort(errCbCangDot) == 0 ? false : true;
 
+                obj.isOn = await this.ConvertUIntToUshort(iOn) == 0 ? false : true;
 
 
-                if(obj.Error_CB_Nhiet_Cao==false && obj.Error_CB_Nhiet_Thap == false && obj.Error_CB_Cang_Dot == false)
+                if (obj.Error_CB_Nhiet_Cao==false && obj.Error_CB_Nhiet_Thap == false && obj.Error_CB_Cang_Dot == false)
                 {
                     obj.Error = Common.NOT_ERROR_STR;
                 }
@@ -88,6 +90,7 @@ namespace ManagementSoftware.PLCSetting
                 errCbNhietCao += 2;
                 errCbNhietThap += 2;
                 errCbCangDot += 2;
+                iOn += 2;
                 listBauNong.Add(obj);
             }
 

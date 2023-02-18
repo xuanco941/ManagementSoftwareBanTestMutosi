@@ -58,7 +58,6 @@ namespace ManagementSoftware.GUI.NguonManagement
             {
                 int id = dataGridView1.Rows.Add();
                 dataGridView1.Rows[id].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
-                dataGridView1.Rows[i].Cells[0].Value = "Nguồn " + (i + 1);
             }
         }
 
@@ -128,6 +127,14 @@ namespace ManagementSoftware.GUI.NguonManagement
 
             for (int i = 0; i < list.Count; i++)
             {
+                if (list[i].isOn)
+                {
+                    dataGridView1.Rows[i].Cells[0].Value = list[i].LedName;
+                }
+                else
+                {
+                    dataGridView1.Rows[i].Cells[0].Value = list[i].LedName + " (OFF)";
+                }
                 dataGridView1.Rows[i].Cells[1].Value = list[i].ThoiGianTest;
                 dataGridView1.Rows[i].Cells[2].Value = list[i].LanTestThu;
 

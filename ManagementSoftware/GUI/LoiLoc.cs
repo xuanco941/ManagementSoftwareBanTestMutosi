@@ -194,7 +194,14 @@ namespace ManagementSoftware.GUI
                 DataGridViewRow row = dataGridView1.Rows[rowId];
 
                 row.Cells[0].Value = date;
-                row.Cells[1].Value = item.LoiLocName;
+                if (item.isOn == true)
+                {
+                    row.Cells[1].Value = item.LoiLocName;
+                }
+                else
+                {
+                    row.Cells[1].Value = item.LoiLocName + " (OFF)";
+                }
                 row.Cells[2].Value = item.SoLanTest;
                 row.Cells[3].Value = item.ApSuatTest;
                 row.Cells[4].Value = item.ThoiGianNen;
@@ -456,6 +463,16 @@ namespace ManagementSoftware.GUI
                 }
                 labelLoai2.BackColor = Color.DarkOrange;
                 labelLoai3.BackColor = Color.DarkOrange;
+
+
+                if(loiloc.isOn == true)
+                {
+                    labelLoai1.Text = TenThietBi.LoiLoc1;
+                }
+                else
+                {
+                    labelLoai1.Text = TenThietBi.LoiLoc1 + " (OFF)";
+                }
             }
             else if (loiloc.LoiLocName == TenThietBi.LoiLoc2)
             {
@@ -478,6 +495,15 @@ namespace ManagementSoftware.GUI
                 }
                 labelLoai1.BackColor = Color.DarkOrange;
                 labelLoai3.BackColor = Color.DarkOrange;
+
+                if (loiloc.isOn == true)
+                {
+                    labelLoai2.Text = TenThietBi.LoiLoc2;
+                }
+                else
+                {
+                    labelLoai2.Text = TenThietBi.LoiLoc2 + " (OFF)";
+                }
             }
             else
             {
@@ -498,6 +524,15 @@ namespace ManagementSoftware.GUI
                 }
                 labelLoai1.BackColor = Color.DarkOrange;
                 labelLoai2.BackColor = Color.DarkOrange;
+
+                if (loiloc.isOn == true)
+                {
+                    labelLoai3.Text = TenThietBi.LoiLoc1va2;
+                }
+                else
+                {
+                    labelLoai3.Text = TenThietBi.LoiLoc1va2 + " (OFF)";
+                }
             }
         }
 

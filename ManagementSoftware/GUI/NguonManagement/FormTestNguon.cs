@@ -102,6 +102,14 @@ namespace ManagementSoftware.GUI.NguonManagement
 
             for (int i = 0; i < list.Count; i++)
             {
+                if (list[i].isOn)
+                {
+                    dataGridView1.Rows[i].Cells[0].Value = list[i].NguonName;
+                }
+                else
+                {
+                    dataGridView1.Rows[i].Cells[0].Value = list[i].NguonName + " (OFF)";
+                }
                 dataGridView1.Rows[i].Cells[1].Value = String.Format("{0:0.00}", list[i].DongDC);
                 dataGridView1.Rows[i].Cells[2].Value = String.Format("{0:0.00}", list[i].DienApDC);
                 dataGridView1.Rows[i].Cells[3].Value = String.Format("{0:0.00}", list[i].CongSuat);
@@ -159,9 +167,6 @@ namespace ManagementSoftware.GUI.NguonManagement
             {
                 int id = dataGridView1.Rows.Add();
                 dataGridView1.Rows[id].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
-
-                dataGridView1.Rows[i].Cells[0].Value = "Nguồn " + (i + 1);
-
             }
 
 

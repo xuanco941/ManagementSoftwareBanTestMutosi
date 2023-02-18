@@ -165,7 +165,14 @@ namespace ManagementSoftware.GUI
                         DataGridViewRow row = dataGridView1.Rows[rowId];
 
                         row.Cells[0].Value = date;
-                        row.Cells[1].Value = i.BepTuName;
+                        if (i.isOn)
+                        {
+                            row.Cells[1].Value = i.BepTuName;
+                        }
+                        else
+                        {
+                            row.Cells[1].Value = i.BepTuName + " (OFF)";
+                        }
                         row.Cells[2].Value = i.LanTestThu;
                         row.Cells[3].Value = i.NhietDo;
                         row.Cells[4].Value = i.DienAp;
@@ -230,7 +237,14 @@ namespace ManagementSoftware.GUI
                         DataGridViewRow row = dataGridView1.Rows[rowId];
 
                         row.Cells[0].Value = date;
-                        row.Cells[1].Value = i.BepTuName;
+                        if (i.isOn)
+                        {
+                            row.Cells[1].Value = i.BepTuName;
+                        }
+                        else
+                        {
+                            row.Cells[1].Value = i.BepTuName + " (OFF)";
+                        }
                         row.Cells[2].Value = i.LanTestThu;
                         row.Cells[3].Value = i.NhietDo;
                         row.Cells[4].Value = i.DienAp;
@@ -390,6 +404,16 @@ namespace ManagementSoftware.GUI
                     {
                         labelBep1.BackColor = Color.DarkOrange;
                     }
+
+                    if (item.isOn)
+                    {
+                        labelBep1.Text = item.BepTuName;
+                    }
+                    else
+                    {
+                        labelBep1.Text = item.BepTuName + " (OFF)";
+                    }
+
                 }
                 else if (item.BepTuName == TenThietBi.BepTu2)
                 {
@@ -407,6 +431,15 @@ namespace ManagementSoftware.GUI
                     else
                     {
                         labelBep2.BackColor = Color.DarkOrange;
+                    }
+
+                    if (item.isOn)
+                    {
+                        labelBep2.Text = item.BepTuName;
+                    }
+                    else
+                    {
+                        labelBep2.Text = item.BepTuName + " (OFF)";
                     }
                 }
             }
