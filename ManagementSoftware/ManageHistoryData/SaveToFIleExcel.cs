@@ -13,7 +13,7 @@ namespace ManagementSoftware.ManageHistoryData
     {
 
 
-        bool checkColorLoiLoc = false;
+        static bool checkColorLoiLoc = false;
         bool checkColorNguon = false;
         bool checkColorBauNong = false;
         bool checkColorLed = false;
@@ -89,7 +89,7 @@ namespace ManagementSoftware.ManageHistoryData
 
                         if (checkColorLoiLoc == true)
                         {
-                            ws.Range(lastUsedRow, 1, lastUsedRow, 9).Style.Fill.BackgroundColor = XLColor.PaleGreen;
+                            ws.Range(lastUsedRow, 1, lastUsedRow, 9).Style.Fill.BackgroundColor = XLColor.LightGreen;
                         }
                         checkColorLoiLoc = !checkColorLoiLoc;
 
@@ -280,7 +280,7 @@ namespace ManagementSoftware.ManageHistoryData
 
                             if (checkColorBepTu == true)
                             {
-                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 10).Style.Fill.BackgroundColor = XLColor.PaleGreen;
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 10).Style.Fill.BackgroundColor = XLColor.LightGreen;
                             }
                             checkColorBepTu = !checkColorBepTu;
 
@@ -381,6 +381,13 @@ namespace ManagementSoftware.ManageHistoryData
                             {
                                 ws.Cell(3 + i, 9).Value = " ";
                             }
+
+                            if (checkColorBepTu == true)
+                            {
+                                ws.Range(3 + i, 1, 3 + i, 10).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                            }
+                            checkColorBepTu = !checkColorBepTu;
+
 
                             i++;
                         }
@@ -484,7 +491,7 @@ namespace ManagementSoftware.ManageHistoryData
 
                             if (checkColorNguon == true)
                             {
-                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Fill.BackgroundColor = XLColor.PaleGreen;
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Fill.BackgroundColor = XLColor.LightGreen;
                             }
                             checkColorNguon = !checkColorNguon;
 
@@ -583,6 +590,13 @@ namespace ManagementSoftware.ManageHistoryData
                                 ws.Cell(3 + i, 8).Value = " ";
                             }
 
+
+                            if (checkColorNguon == true)
+                            {
+                                ws.Range(3 + i, 1, 3 + i, 9).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                            }
+                            checkColorNguon = !checkColorNguon;
+
                             i++;
                         }
 
@@ -668,7 +682,7 @@ namespace ManagementSoftware.ManageHistoryData
 
                             if (checkColorLed == true)
                             {
-                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 6).Style.Fill.BackgroundColor = XLColor.PaleGreen;
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 6).Style.Fill.BackgroundColor = XLColor.LightGreen;
                             }
                             checkColorLed = !checkColorLed;
 
@@ -753,6 +767,13 @@ namespace ManagementSoftware.ManageHistoryData
                             {
                                 ws.Cell(3 + i, 5).Value = " ";
                             }
+
+                            if (checkColorLed == true)
+                            {
+                                ws.Range(3 + i, 1, 3 + i, 6).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                            }
+                            checkColorLed = !checkColorLed;
+
 
                             i++;
                         }
@@ -853,7 +874,7 @@ namespace ManagementSoftware.ManageHistoryData
 
                             if (checkColorJigMachNguon == true)
                             {
-                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Fill.BackgroundColor = XLColor.PaleGreen;
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Fill.BackgroundColor = XLColor.LightGreen;
                             }
                             checkColorJigMachNguon = !checkColorJigMachNguon;
 
@@ -955,6 +976,13 @@ namespace ManagementSoftware.ManageHistoryData
                                 ws.Cell(3 + i, 8).Value = " ";
                             }
 
+
+                            if (checkColorJigMachNguon == true)
+                            {
+                                ws.Range(3 + i, 1, 3 + i, 9).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                            }
+                            checkColorJigMachNguon = !checkColorJigMachNguon;
+
                             i++;
                         }
 
@@ -1050,7 +1078,7 @@ namespace ManagementSoftware.ManageHistoryData
 
                             if (checkColorJigMachTDS == true)
                             {
-                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 8).Style.Fill.BackgroundColor = XLColor.PaleGreen;
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 8).Style.Fill.BackgroundColor = XLColor.LightGreen;
                             }
                             checkColorJigMachTDS = !checkColorJigMachTDS;
 
@@ -1151,6 +1179,13 @@ namespace ManagementSoftware.ManageHistoryData
                                 ws.Cell(3 + i, 7).Value = " ";
                             }
 
+
+                            if (checkColorJigMachTDS == true)
+                            {
+                                ws.Range(3 + i, 1, 3 + i, 8).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                            }
+                            checkColorJigMachTDS = !checkColorJigMachTDS;
+
                             i++;
                         }
 
@@ -1231,7 +1266,7 @@ namespace ManagementSoftware.ManageHistoryData
 
                             if (checkColorCongTac == true)
                             {
-                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 6).Style.Fill.BackgroundColor = XLColor.PaleGreen;
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 6).Style.Fill.BackgroundColor = XLColor.LightGreen;
                             }
                             checkColorCongTac = !checkColorCongTac;
 
@@ -1324,6 +1359,13 @@ namespace ManagementSoftware.ManageHistoryData
                                 ws.Cell(3 + i, 5).Value = " ";
                             }
 
+
+                            if (checkColorCongTac == true)
+                            {
+                                ws.Range(3 + i, 1, 3 + i, 6).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                            }
+                            checkColorCongTac = !checkColorCongTac;
+
                             i++;
                         }
 
@@ -1414,7 +1456,7 @@ namespace ManagementSoftware.ManageHistoryData
 
                             if (checkColorBauNong == true)
                             {
-                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Fill.BackgroundColor = XLColor.PaleGreen;
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Fill.BackgroundColor = XLColor.LightGreen;
                             }
                             checkColorBauNong = !checkColorBauNong;
 
@@ -1519,6 +1561,14 @@ namespace ManagementSoftware.ManageHistoryData
                             {
                                 ws.Cell(3 + i, 8).Value = " ";
                             }
+
+
+                            if (checkColorBauNong == true)
+                            {
+                                ws.Range(3 + i, 1, 3 + i, 9).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                            }
+                            checkColorBauNong = !checkColorBauNong;
+
 
                             i++;
                         }
