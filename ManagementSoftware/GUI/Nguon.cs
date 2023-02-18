@@ -329,7 +329,7 @@ namespace ManagementSoftware.GUI
                         row.Cells[6].Value = i.ThoiGianTest;
                         row.Cells[7].Value = i.Error;
 
-                        if (i.Error != "Không")
+                        if (i.Error != Common.NOT_ERROR_STR)
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -519,7 +519,7 @@ namespace ManagementSoftware.GUI
                         row.Cells[3].Value = i.ThoiGianTest;
                         row.Cells[4].Value = i.Error;
 
-                        if (i.Error != "Không")
+                        if (i.Error != Common.NOT_ERROR_STR)
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -600,7 +600,7 @@ namespace ManagementSoftware.GUI
                         row.Cells[6].Value = i.ThoiGianTest;
                         row.Cells[7].Value = i.Error;
 
-                        if (i.Error != "Không")
+                        if (i.Error != Common.NOT_ERROR_STR)
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -670,7 +670,7 @@ namespace ManagementSoftware.GUI
                         row.Cells[3].Value = i.ThoiGianTest;
                         row.Cells[4].Value = i.Error;
 
-                        if (i.Error != "Không")
+                        if (i.Error != Common.NOT_ERROR_STR)
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }

@@ -23,7 +23,8 @@ namespace ManagementSoftware.Models.BauNongModel
         public bool Error_CB_Nhiet_Cao { get; set; }
         public bool Error_CB_Nhiet_Thap { get; set; }
         public bool Error_CB_Cang_Dot { get; set; }
-        public string Error { get; set; } = "Không";
+        public string Error { get; set; } = Common.NOT_ERROR_STR;
+        public bool isOn { get; set; }
         public int TestBauNongID { get; set; }
         public TestBauNong TestBauNong { get; set; }
     }

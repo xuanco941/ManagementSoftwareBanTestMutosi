@@ -41,7 +41,8 @@ namespace ManagementSoftware.PLCSetting
             loiloc.ThoiGianXa = thoiGianXa.Result;
             loiloc.ApSuatTest = ApSuatTest.Result;
             loiloc.SoLanTest = SoLanTest.Result;
-            loiloc.Error = err.Result != 0 ? "Lỗi" : "Không";
+            loiloc.Error = err.Result != 0 ? "Lỗi" : Common.NOT_ERROR_STR;
+            loiloc.isError = err.Result != 0 ? true : false; 
 
 
 

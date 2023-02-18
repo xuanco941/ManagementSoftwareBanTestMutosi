@@ -21,7 +21,9 @@ namespace ManagementSoftware.Models.LoiLocModel
         public uint ThoiGianGiu { get; set; } //s
         public DateTime CreateAt { get; set; }
         public bool isError { get; set; }
-        public string Error { get; set; } = "Không";
+        public string Error { get; set; } = Common.NOT_ERROR_STR;
+        public bool isOn { get; set; }
+
 
 
 

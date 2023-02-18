@@ -21,7 +21,8 @@ namespace ManagementSoftware.Models.JigMachModel
         public ushort LanTestThu { get; set; }
         public bool Error_Dong { get; set; }
         public bool Error_Ap { get; set; }
-        public string Error { get; set; } = "Không";
+        public string Error { get; set; } = Common.NOT_ERROR_STR;
+        public bool isOn { get; set; }
         public int TestJigMachID { get; set; }
         public TestJigMach TestJigMach { get; set; }
     }

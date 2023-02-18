@@ -49,7 +49,7 @@ namespace ManagementSoftware.PLCSetting
                 jig.CongSuat = await this.ConvertRealToDouble(congSuat);
                 jig.ThoiGian = await this.ConvertUDIntToUInt(time);
                 jig.LanTestThu = await this.ConvertUIntToUshort(lantestthu);
-
+                
 
 
                 //err
@@ -59,7 +59,7 @@ namespace ManagementSoftware.PLCSetting
                 jig.Error = jig.Error_Dong && jig.Error_Ap ? "Lỗi dòng, lỗi áp" :
                                 jig.Error_Dong ? "Lỗi dòng" :
                                 jig.Error_Ap ? "Lỗi áp" :
-                                "Không";
+                                Common.NOT_ERROR_STR;
 
                 listMachNguon.Add(jig);
 
@@ -102,7 +102,7 @@ namespace ManagementSoftware.PLCSetting
 
                 jig.Error_Van_DT = await this.ConvertUIntToUshort(err_th_van_dt) != 0 ? true : false;
 
-                jig.Error = jig.Error_Van_DT==true ? "Lỗi van điện từ" : "Không";
+                jig.Error = jig.Error_Van_DT==true ? "Lỗi van điện từ" : Common.NOT_ERROR_STR;
 
                 listJigMachTDS.Add(jig);
 

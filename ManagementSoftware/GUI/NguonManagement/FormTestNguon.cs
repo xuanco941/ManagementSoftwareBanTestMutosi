@@ -107,7 +107,7 @@ namespace ManagementSoftware.GUI.NguonManagement
                 dataGridView1.Rows[i].Cells[3].Value = String.Format("{0:0.00}", list[i].CongSuat);
                 dataGridView1.Rows[i].Cells[4].Value = list[i].ThoiGianTest;
                 dataGridView1.Rows[i].Cells[5].Value = list[i].LanTestThu;
-                if (list[i].Error != "Không")
+                if (list[i].Error != Common.NOT_ERROR_STR)
                 {
                     dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Crimson;
 

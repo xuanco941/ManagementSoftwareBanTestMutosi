@@ -19,8 +19,8 @@ namespace ManagementSoftware.Models.LedModel
         public uint ThoiGianTest { get; set; } // uint
         public ushort LanTestThu { get; set; } //ushort 
         public bool isError { get; set; }
-        public string Error { get; set; } = "Không";
-
+        public string Error { get; set; } = Common.NOT_ERROR_STR;
+        public bool isOn { get; set; }
         public int TestLedID { get; set; }
         public TestLed TestLed { get; set; }
     }

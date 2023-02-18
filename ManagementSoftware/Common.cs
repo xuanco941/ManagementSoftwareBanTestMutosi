@@ -36,6 +36,10 @@ namespace ManagementSoftware
 
 
         //Timer Interval
-        public const int TIME_INTERVAL_UPDATE_DATA_ON_HISTORY = 11000;
+        public const int TIME_INTERVAL_UPDATE_DATA_ON_HISTORY = 61000;
+
+
+        //Không có lỗi
+        public const string NOT_ERROR_STR = "Không";
     }
 }

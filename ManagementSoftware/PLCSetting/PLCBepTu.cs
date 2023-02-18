@@ -47,23 +47,29 @@ namespace ManagementSoftware.PLCSetting
             if(err == 1)
             {
                 bepTu1.Error = "Lỗi cấp nguồn bếp 1";
+                bepTu1.isError = true;
             }
             else if (err == 2)
             {
                 bepTu2.Error = "Lỗi cấp nguồn bếp 2";
+                bepTu2.isError = true;
             }
             else if (err == 3)
             {
                 bepTu1.Error = "Lỗi bơm 1";
+                bepTu1.isError = true;
             }
             else if (err == 4)
             {
                 bepTu2.Error = "Lỗi bơm 2";
+                bepTu2.isError = true;
             }
             else
             {
-                bepTu1.Error = "Không";
-                bepTu2.Error = "Không";
+                bepTu1.Error = Common.NOT_ERROR_STR;
+                bepTu2.Error = Common.NOT_ERROR_STR;
+                bepTu1.isError = false;
+                bepTu2.isError = false;
             }
 
             list.Add(bepTu1);

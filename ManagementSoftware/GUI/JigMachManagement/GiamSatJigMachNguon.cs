@@ -151,7 +151,7 @@ namespace ManagementSoftware.GUI.JigMachManagement
             time.Text = e.ThoiGian.ToString() + " s";
 
             soLanTest.Text = e.LanTestThu.ToString();
-            if (e.Error != "Không")
+            if (e.Error != Common.NOT_ERROR_STR)
             {
                 lbjig.BackColor = Color.Crimson;
             }

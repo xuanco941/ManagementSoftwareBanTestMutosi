@@ -21,7 +21,7 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-        int TIME_INTERVAL_SAVE = 10000;
+        int TIME_INTERVAL_SAVE = 60000;
 
 
         System.Threading.Timer timerBauNong;
@@ -65,7 +65,11 @@ namespace ManagementSoftware.ManageHistoryData
             }
             finally
             {
-                timerBauNong.Change(Math.Max(TIME_INTERVAL_SAVE, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
+                watch.Stop();
+
+                // Tính toán thời gian còn lại để đợi trước khi gọi lại callback
+                int delay = (int)(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds));
+                timerBauNong.Change(delay, Timeout.Infinite);
             }
 
         }
@@ -102,7 +106,11 @@ namespace ManagementSoftware.ManageHistoryData
             }
             finally
             {
-                timerLoiLoc.Change(Math.Max(TIME_INTERVAL_SAVE, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
+                watch.Stop();
+
+                // Tính toán thời gian còn lại để đợi trước khi gọi lại callback
+                int delay = (int)(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds));
+                timerLoiLoc.Change(delay, Timeout.Infinite);
             }
 
 
@@ -145,7 +153,11 @@ namespace ManagementSoftware.ManageHistoryData
             }
             finally
             {
-                timerNguon.Change(Math.Max(TIME_INTERVAL_SAVE, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
+                watch.Stop();
+
+                // Tính toán thời gian còn lại để đợi trước khi gọi lại callback
+                int delay = (int)(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds));
+                timerNguon.Change(delay, Timeout.Infinite);
             }
 
         }
@@ -182,8 +194,11 @@ namespace ManagementSoftware.ManageHistoryData
             }
             finally
             {
-                timerCongTac.Change(Math.Max(TIME_INTERVAL_SAVE, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
+                watch.Stop();
 
+                // Tính toán thời gian còn lại để đợi trước khi gọi lại callback
+                int delay = (int)(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds));
+                timerCongTac.Change(delay, Timeout.Infinite);
             }
         }
 
@@ -221,7 +236,11 @@ namespace ManagementSoftware.ManageHistoryData
             }
             finally
             {
-                timerMach.Change(Math.Max(TIME_INTERVAL_SAVE, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
+                watch.Stop();
+
+                // Tính toán thời gian còn lại để đợi trước khi gọi lại callback
+                int delay = (int)(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds));
+                timerMach.Change(delay, Timeout.Infinite);
 
             }
         }
@@ -232,7 +251,6 @@ namespace ManagementSoftware.ManageHistoryData
             Stopwatch watch = new Stopwatch();
 
             watch.Start();
-
 
             // update data
             // Long running operation
@@ -245,31 +263,33 @@ namespace ManagementSoftware.ManageHistoryData
                     Task.Run(() => plcBepTu.SaveData(list));
                     Task.Run(() => new SaveToFIleExcel().SaveBepTu("Test Bếp Từ", list));
 
-
                     await plcBepTu.Close();
                 }
-
             }
             catch
             {
-
+                // Xử lý ngoại lệ nếu có
             }
             finally
             {
-                timerBepTu.Change(Math.Max(TIME_INTERVAL_SAVE, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
+                watch.Stop();
 
+                // Tính toán thời gian còn lại để đợi trước khi gọi lại callback
+                int delay = (int)(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds));
+
+                // Thực hiện gọi lại callback với thời gian chờ tương ứng
+                timerBepTu.Change(delay, Timeout.Infinite);
             }
         }
 
-
         public void ConnectAndRunSaveAll()
         {
-            timerBauNong = new System.Threading.Timer(CallbackBauNong, null, 10000, 10000);
-            timerBepTu = new System.Threading.Timer(CallbackBepTu, null, 10000, 10000);
-            timerCongTac = new System.Threading.Timer(CallbackCongTac, null, 10000, 10000);
-            timerLoiLoc = new System.Threading.Timer(CallbackLoiLoc, null, 10000, 10000);
-            timerMach = new System.Threading.Timer(CallbackMach, null, 10000, 10000);
-            timerNguon = new System.Threading.Timer(CallbackNguon, null, 10000, 10000);
+            timerBauNong = new System.Threading.Timer(CallbackBauNong, null, 60000, 60000);
+            timerBepTu = new System.Threading.Timer(CallbackBepTu, null, 60000, 60000);
+            timerCongTac = new System.Threading.Timer(CallbackCongTac, null, 60000, 60000);
+            timerLoiLoc = new System.Threading.Timer(CallbackLoiLoc, null, 60000, 60000);
+            timerMach = new System.Threading.Timer(CallbackMach, null, 60000, 60000);
+            timerNguon = new System.Threading.Timer(CallbackNguon, null, 60000, 60000);
 
         }
     }

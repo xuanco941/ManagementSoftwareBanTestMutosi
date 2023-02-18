@@ -119,7 +119,7 @@ namespace ManagementSoftware.GUI
                         row.Cells[3].Value = i.LanTestThu;
                         row.Cells[4].Value = i.Error;
 
-                        if (i.Error != "Không")
+                        if (i.Error != Common.NOT_ERROR_STR)
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -233,7 +233,7 @@ namespace ManagementSoftware.GUI
                         row.Cells[3].Value = i.LanTestThu;
                         row.Cells[4].Value = i.Error;
 
-                        if (i.Error != "Không")
+                        if (i.Error != Common.NOT_ERROR_STR)
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -472,7 +472,7 @@ namespace ManagementSoftware.GUI
                 dataGridViewGiamSat.Rows[i].Cells[1].Value = list[i].TrangThai == true ? "ON" : "OFF";
                 dataGridViewGiamSat.Rows[i].Cells[2].Value = list[i].LanTestThu;
                 
-                if (list[i].Error != "Không")
+                if (list[i].Error != Common.NOT_ERROR_STR)
                 {
                     dataGridViewGiamSat.Rows[i].DefaultCellStyle.BackColor = Color.Crimson;
                 }

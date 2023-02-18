@@ -51,7 +51,7 @@ namespace ManagementSoftware.PLCSetting
 
                 if(obj.Error_CB_Nhiet_Cao==false && obj.Error_CB_Nhiet_Thap == false && obj.Error_CB_Cang_Dot == false)
                 {
-                    obj.Error = "Không";
+                    obj.Error = Common.NOT_ERROR_STR;
                 }
                 else
                 {

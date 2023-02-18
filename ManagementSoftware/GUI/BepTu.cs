@@ -176,7 +176,7 @@ namespace ManagementSoftware.GUI
 
                         row.Cells[9].Value = i.Error;
 
-                        if (i.Error != "Không")
+                        if (i.Error != Common.NOT_ERROR_STR)
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -241,7 +241,7 @@ namespace ManagementSoftware.GUI
 
                         row.Cells[9].Value = i.Error;
 
-                        if (i.Error != "Không")
+                        if (i.Error != Common.NOT_ERROR_STR)
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -382,7 +382,7 @@ namespace ManagementSoftware.GUI
                     CongSuat1.Text = String.Format("{0:0.00}", item.CongSuat);
                     CongSuatTieuThu1.Text = String.Format("{0:0.00}", item.CongSuatTieuThu);
                     TrangThai1.Text = item.TrangThai == true ? "ON" : "OFF";
-                    if (item.Error != "Không")
+                    if (item.Error != Common.NOT_ERROR_STR)
                     {
                         labelBep1.BackColor = Color.Crimson;
                     }
@@ -400,7 +400,7 @@ namespace ManagementSoftware.GUI
                     CongSuat2.Text = String.Format("{0:0.00}", item.CongSuat);
                     CongSuatTieuThu2.Text = String.Format("{0:0.00}", item.CongSuatTieuThu);
                     TrangThai2.Text = item.TrangThai == true ? "ON" : "OFF";
-                    if (item.Error != "Không")
+                    if (item.Error != Common.NOT_ERROR_STR)
                     {
                         labelBep2.BackColor = Color.Crimson;
                     }

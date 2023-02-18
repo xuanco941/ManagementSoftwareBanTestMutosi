@@ -120,7 +120,7 @@ namespace ManagementSoftware.GUI
                         row.Cells[6].Value = i.TrangThaiCBNhiet == true ? "ON" : "OFF";
                         row.Cells[7].Value = i.Error;
 
-                        if (i.Error != "Không")
+                        if (i.Error != Common.NOT_ERROR_STR)
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -264,7 +264,7 @@ namespace ManagementSoftware.GUI
                         row.Cells[6].Value = i.TrangThaiCBNhiet == true ? "ON" : "OFF";
                         row.Cells[7].Value = i.Error;
 
-                        if (i.Error != "Không")
+                        if (i.Error != Common.NOT_ERROR_STR)
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -350,7 +350,7 @@ namespace ManagementSoftware.GUI
             nhietdoNgatCB.Text = bauNong.NhietDoNgatCBNhiet.ToString() + " °C";
             soLanTest.Text = bauNong.LanTestThu.ToString();
             cbNhiet.Text = bauNong.TrangThaiCBNhiet == true ? "ON" : "OFF";
-            if (bauNong.Error != "Không")
+            if (bauNong.Error != Common.NOT_ERROR_STR)
             {
                 lbJig.BackColor = Color.Crimson;
             }

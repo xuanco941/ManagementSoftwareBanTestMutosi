@@ -19,7 +19,8 @@ namespace ManagementSoftware.Models.CongTacModel
         public bool TrangThai { get; set; }
         public string JigCongTac { get; set; } = "";
         public bool isError { get; set; }
-        public string Error { get; set; } = "Không";
+        public string Error { get; set; } = Common.NOT_ERROR_STR;
+        public bool isOn { get; set; }
         public int TestCongTacID { get; set; }
         public TestCongTac TestCongTac { get; set; }
     }

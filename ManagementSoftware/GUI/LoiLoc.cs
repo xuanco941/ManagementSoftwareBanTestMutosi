@@ -203,7 +203,7 @@ namespace ManagementSoftware.GUI
                 row.Cells[7].Value = item.Error;
 
                 
-                if (item.Error != "Không")
+                if (item.Error != Common.NOT_ERROR_STR)
                 {
                     row.DefaultCellStyle.BackColor = Color.Crimson;
                 }
@@ -286,7 +286,7 @@ namespace ManagementSoftware.GUI
                 row.Cells[6].Value = item.ThoiGianXa;
                 row.Cells[7].Value = item.Error;
 
-                if (item.Error != "Không")
+                if (item.Error != Common.NOT_ERROR_STR)
                 {
                     row.DefaultCellStyle.BackColor = Color.Crimson;
                 }
@@ -446,7 +446,7 @@ namespace ManagementSoftware.GUI
 
                 ApSuatTest1.Text = loiloc.ApSuatTest.ToString();
 
-                if (loiloc.Error != "Không")
+                if (loiloc.Error != Common.NOT_ERROR_STR)
                 {
                     labelLoai1.BackColor = Color.Crimson;
                 }
@@ -468,7 +468,7 @@ namespace ManagementSoftware.GUI
                 SoLanTestJig2.Text = loiloc.SoLanTest.ToString();
 
                 ApSuatTest2.Text = loiloc.ApSuatTest.ToString();
-                if (loiloc.Error != "Không")
+                if (loiloc.Error != Common.NOT_ERROR_STR)
                 {
                     labelLoai2.BackColor = Color.Crimson;
                 }
@@ -488,7 +488,7 @@ namespace ManagementSoftware.GUI
                 SoLanTestJig1va2.Text = loiloc.SoLanTest.ToString();
 
                 ApSuatTest1va2.Text = loiloc.ApSuatTest.ToString();
-                if (loiloc.Error != "Không")
+                if (loiloc.Error != Common.NOT_ERROR_STR)
                 {
                     labelLoai1.BackColor = Color.Crimson;
                 }

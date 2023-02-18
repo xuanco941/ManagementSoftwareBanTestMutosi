@@ -57,7 +57,7 @@ namespace ManagementSoftware.PLCSetting
             CongTac ct1 = new CongTac();
             ct1.TrangThai = await this.ConvertUIntToUshort(addrCT1) == 0 ? false : true;
             ct1.isError = await this.ConvertUIntToUshort(err) != 0 ? true : false;
-            ct1.Error = ct1.isError == true ? "Lỗi" : "Không";
+            ct1.Error = ct1.isError == true ? "Lỗi" : Common.NOT_ERROR_STR;
             ct1.CongTacName = TenThietBi.CongTac1Jig1;
             ct1.JigCongTac = "Jig " + jig;
             ct1.LanTestThu = lantestValue;
@@ -67,7 +67,7 @@ namespace ManagementSoftware.PLCSetting
             CongTac ct2 = new CongTac();
             ct2.TrangThai = await this.ConvertUIntToUshort(addrCT2) == 0 ? false : true;
             ct2.isError = await this.ConvertUIntToUshort(err + 2) != 0 ? true : false;
-            ct2.Error = ct2.isError == true ? "Lỗi" : "Không";
+            ct2.Error = ct2.isError == true ? "Lỗi" : Common.NOT_ERROR_STR;
 
             ct2.CongTacName = TenThietBi.CongTac2Jig1;
             ct2.JigCongTac = "Jig " + jig;
@@ -78,7 +78,7 @@ namespace ManagementSoftware.PLCSetting
             CongTac ct3 = new CongTac();
             ct3.TrangThai = await this.ConvertUIntToUshort(addrCT3) == 0 ? false : true;
             ct3.isError = await this.ConvertUIntToUshort(err + 4) != 0 ? true : false;
-            ct3.Error = ct3.isError == true ? "Lỗi" : "Không";
+            ct3.Error = ct3.isError == true ? "Lỗi" : Common.NOT_ERROR_STR;
 
             ct3.CongTacName = TenThietBi.CongTac3Jig1;
             ct3.JigCongTac = "Jig " + jig;
@@ -88,7 +88,7 @@ namespace ManagementSoftware.PLCSetting
             CongTac ct4 = new CongTac();
             ct4.TrangThai = await this.ConvertUIntToUshort(addrCT4) == 0 ? false : true;
             ct4.isError = await this.ConvertUIntToUshort(err + 6) != 0 ? true : false;
-            ct4.Error = ct4.isError == true ? "Lỗi" : "Không";
+            ct4.Error = ct4.isError == true ? "Lỗi" : Common.NOT_ERROR_STR;
 
 
             ct4.CongTacName = TenThietBi.CongTac4Jig1;
@@ -100,7 +100,7 @@ namespace ManagementSoftware.PLCSetting
             CongTac ct5 = new CongTac();
             ct5.TrangThai = await this.ConvertUIntToUshort(addrCT5) == 0 ? false : true;
             ct5.isError = await this.ConvertUIntToUshort(err + 8) != 0 ? true : false;
-            ct5.Error = ct5.isError == true ? "Lỗi" : "Không";
+            ct5.Error = ct5.isError == true ? "Lỗi" : Common.NOT_ERROR_STR;
 
             ct5.CongTacName = TenThietBi.CongTac5Jig1;
             ct5.JigCongTac = "Jig " + jig;

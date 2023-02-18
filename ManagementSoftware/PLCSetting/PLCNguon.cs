@@ -42,7 +42,7 @@ namespace ManagementSoftware.PLCSetting
                 nguon.Error = nguon.Error_Dong && nguon.Error_Ap ? "Lỗi dòng, lỗi áp" :
                                 nguon.Error_Dong ? "Lỗi dòng" :
                                 nguon.Error_Ap ? "Lỗi áp" :
-                                "Không";
+                                Common.NOT_ERROR_STR;
 
 
                 nguon.NguonName = "Nguồn " + (i + 1);
