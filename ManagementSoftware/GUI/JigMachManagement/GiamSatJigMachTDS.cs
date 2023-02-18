@@ -158,6 +158,7 @@ namespace ManagementSoftware.GUI.JigMachManagement
             else
             {
                 lbjig.BackColor = Color.DarkOrange;
+                tinhTrang.Font = new Font("Segoe UI", 11, FontStyle.Regular);
             }
 
             if (e.isOn)

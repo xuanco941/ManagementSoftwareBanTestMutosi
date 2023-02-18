@@ -368,10 +368,13 @@ namespace ManagementSoftware.GUI
             if (bauNong.Error != Common.NOT_ERROR_STR)
             {
                 lbJig.BackColor = Color.Crimson;
+                tinhTrang.Font = new Font("Segoe UI", 8, FontStyle.Regular);
+
             }
             else
             {
                 lbJig.BackColor = Color.DarkOrange;
+                tinhTrang.Font = new Font("Segoe UI", 11, FontStyle.Regular);
             }
 
             if (bauNong.isOn)

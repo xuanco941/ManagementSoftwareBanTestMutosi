@@ -70,7 +70,6 @@ namespace ManagementSoftware.GUI
             dataGridView1.Columns.Add(congSuat);
             dataGridView1.Columns.Add(ThoiGian);
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Công suất tiêu thụ(Kwh)" });
-            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Trạng thái" });
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Tình trạng" });
 
 
@@ -179,9 +178,7 @@ namespace ManagementSoftware.GUI
                         row.Cells[5].Value = i.DongDien;
                         row.Cells[6].Value = i.CongSuat;
                         row.Cells[7].Value = i.CongSuatTieuThu;
-                        row.Cells[8].Value = i.TrangThai == true ? "ON" : "OFF";
-
-                        row.Cells[9].Value = i.Error;
+                        row.Cells[8].Value = i.Error;
 
                         if (i.Error != Common.NOT_ERROR_STR)
                         {
@@ -251,9 +248,7 @@ namespace ManagementSoftware.GUI
                         row.Cells[5].Value = i.DongDien;
                         row.Cells[6].Value = i.CongSuat;
                         row.Cells[7].Value = i.CongSuatTieuThu;
-                        row.Cells[8].Value = i.TrangThai == true ? "ON" : "OFF";
-
-                        row.Cells[9].Value = i.Error;
+                        row.Cells[8].Value = i.Error;
 
                         if (i.Error != Common.NOT_ERROR_STR)
                         {
@@ -395,14 +390,16 @@ namespace ManagementSoftware.GUI
                     DongDien1.Text = String.Format("{0:0.00}", item.DongDien);
                     CongSuat1.Text = String.Format("{0:0.00}", item.CongSuat);
                     CongSuatTieuThu1.Text = String.Format("{0:0.00}", item.CongSuatTieuThu);
-                    TrangThai1.Text = item.TrangThai == true ? "ON" : "OFF";
+                    TinhTrang1.Text = item.Error;
                     if (item.Error != Common.NOT_ERROR_STR)
                     {
                         labelBep1.BackColor = Color.Crimson;
+                        TinhTrang1.Font = new Font("Segoe UI", 8, FontStyle.Regular);
                     }
                     else
                     {
                         labelBep1.BackColor = Color.DarkOrange;
+                        TinhTrang1.Font = new Font("Segoe UI", 11, FontStyle.Regular);
                     }
 
                     if (item.isOn)
@@ -423,14 +420,16 @@ namespace ManagementSoftware.GUI
                     DongDien2.Text = String.Format("{0:0.00}", item.DongDien);
                     CongSuat2.Text = String.Format("{0:0.00}", item.CongSuat);
                     CongSuatTieuThu2.Text = String.Format("{0:0.00}", item.CongSuatTieuThu);
-                    TrangThai2.Text = item.TrangThai == true ? "ON" : "OFF";
+                    TinhTrang2.Text = item.Error;
                     if (item.Error != Common.NOT_ERROR_STR)
                     {
                         labelBep2.BackColor = Color.Crimson;
+                        TinhTrang2.Font = new Font("Segoe UI", 8, FontStyle.Regular);
                     }
                     else
                     {
                         labelBep2.BackColor = Color.DarkOrange;
+                        TinhTrang2.Font = new Font("Segoe UI", 11, FontStyle.Regular);
                     }
 
                     if (item.isOn)

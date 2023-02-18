@@ -458,10 +458,12 @@ namespace ManagementSoftware.GUI
                 if (loiloc.Error != Common.NOT_ERROR_STR)
                 {
                     labelLoai1.BackColor = Color.Crimson;
+                    btnTinhTrangLoai1.Font = new Font("Segoe UI", 8, FontStyle.Regular);
                 }
                 else
                 {
                     labelLoai1.BackColor = Color.DarkOrange;
+                    btnTinhTrangLoai1.Font = new Font("Segoe UI", 11, FontStyle.Regular);
                 }
                 labelLoai2.BackColor = Color.DarkOrange;
                 labelLoai3.BackColor = Color.DarkOrange;
@@ -523,10 +525,12 @@ namespace ManagementSoftware.GUI
                 if (loiloc.Error != Common.NOT_ERROR_STR)
                 {
                     labelLoai2.BackColor = Color.Crimson;
+                    btnTinhTrangLoai2.Font = new Font("Segoe UI", 8, FontStyle.Regular);
                 }
                 else
                 {
                     labelLoai2.BackColor = Color.DarkOrange;
+                    btnTinhTrangLoai2.Font = new Font("Segoe UI", 11, FontStyle.Regular);
                 }
                 labelLoai1.BackColor = Color.DarkOrange;
                 labelLoai3.BackColor = Color.DarkOrange;
@@ -583,10 +587,12 @@ namespace ManagementSoftware.GUI
                 if (loiloc.Error != Common.NOT_ERROR_STR)
                 {
                     labelLoai1.BackColor = Color.Crimson;
+                    btnTinhTrangLoai3.Font = new Font("Segoe UI", 8, FontStyle.Regular);
                 }
                 else
                 {
                     labelLoai1.BackColor = Color.DarkOrange;
+                    btnTinhTrangLoai3.Font = new Font("Segoe UI", 11, FontStyle.Regular);
                 }
                 labelLoai1.BackColor = Color.DarkOrange;
                 labelLoai2.BackColor = Color.DarkOrange;

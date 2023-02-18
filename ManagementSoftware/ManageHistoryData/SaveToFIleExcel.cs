@@ -240,19 +240,16 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(lastUsedRow + i, 8).Value = item.CongSuatTieuThu;
                             ws.Cell(lastUsedRow + i, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow + i, 9).Value = item.TrangThai == true ? "ON" : "OFF";
+                            ws.Cell(lastUsedRow + i, 9).Value = item.Error;
                             ws.Cell(lastUsedRow + i, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow + i, 10).Value = item.Error;
+                            ws.Cell(lastUsedRow + i, 10).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(lastUsedRow + i, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-
-                            ws.Cell(lastUsedRow + i, 11).Value = item.isOn == true ? "ON" : "OFF";
-                            ws.Cell(lastUsedRow + i, 11).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
                             i++;
                         }
 
-                        ws.Columns(1, 11).AdjustToContents();
+                        ws.Columns(1, 10).AdjustToContents();
 
                         // Lưu lại file Excel
                         templateWorkbook.SaveAs(excelFile);
@@ -276,11 +273,11 @@ namespace ManagementSoftware.ManageHistoryData
 
                         var ws = workBook.Worksheets.Add("Lịch sử test");
 
-                        ws.Range(1, 1, 1, 11).Merge();
-                        ws.Range(1, 1, 1, 11).Value = nameBanTest;
-                        ws.Range(1, 1, 1, 11).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Range(1, 1, 1, 11).Style.Font.Bold = true;
-                        ws.Range(1, 1, 1, 11).Style.Font.FontSize = 16;
+                        ws.Range(1, 1, 1, 10).Merge();
+                        ws.Range(1, 1, 1, 10).Value = nameBanTest;
+                        ws.Range(1, 1, 1, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Range(1, 1, 1, 10).Style.Font.Bold = true;
+                        ws.Range(1, 1, 1, 10).Style.Font.FontSize = 16;
 
 
 
@@ -292,9 +289,8 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 6).Value = "Dòng điện (A)";
                         ws.Cell(2, 7).Value = "Công suất (Kw)";
                         ws.Cell(2, 8).Value = "Công suất tiêu thụ(Kwh)";
-                        ws.Cell(2, 9).Value = "Trạng thái";
-                        ws.Cell(2, 10).Value = "Tình trạng";
-                        ws.Cell(2, 11).Value = "Bặt/Tắt";
+                        ws.Cell(2, 9).Value = "Tình trạng";
+                        ws.Cell(2, 10).Value = "Bặt/Tắt";
 
 
                         ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -307,10 +303,9 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Cell(2, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Cell(2, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 11).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                        ws.Range(2, 1, 2, 11).Style.Font.Bold = true;
-                        ws.Range(2, 1, 2, 11).Style.Font.FontSize = 12;
+                        ws.Range(2, 1, 2, 10).Style.Font.Bold = true;
+                        ws.Range(2, 1, 2, 10).Style.Font.FontSize = 12;
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -341,19 +336,16 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(3 + i, 8).Value = item.CongSuatTieuThu;
                             ws.Cell(3 + i, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3 + i, 9).Value = item.TrangThai == true ? "ON" : "OFF";
+                            ws.Cell(3 + i, 9).Value = item.Error;
                             ws.Cell(3 + i, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3 + i, 10).Value = item.Error;
+                            ws.Cell(3 + i, 10).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(3 + i, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-
-                            ws.Cell(3 + i, 11).Value = item.isOn == true ? "ON" : "OFF";
-                            ws.Cell(3 + i, 11).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                             i++;
                         }
 
 
-                        ws.Columns(1, 11).AdjustToContents();
+                        ws.Columns(1, 10).AdjustToContents();
 
                         workBook.SaveAs(Path.Combine(folderPath, fileName));
                         workBook.Dispose();

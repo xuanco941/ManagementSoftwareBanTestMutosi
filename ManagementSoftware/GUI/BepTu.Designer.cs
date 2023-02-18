@@ -41,7 +41,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.TrangThai1 = new System.Windows.Forms.Button();
+            this.TinhTrang1 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.CongSuatTieuThu1 = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -100,7 +100,7 @@
             this.panel23 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.TrangThai2 = new System.Windows.Forms.Button();
+            this.TinhTrang2 = new System.Windows.Forms.Button();
             this.panel89 = new System.Windows.Forms.Panel();
             this.labelBep2 = new System.Windows.Forms.Label();
             this.tabPageThongKe = new System.Windows.Forms.TabPage();
@@ -293,24 +293,24 @@
             // panel22
             // 
             this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel22.Controls.Add(this.TrangThai1);
+            this.panel22.Controls.Add(this.TinhTrang1);
             this.panel22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel22.Location = new System.Drawing.Point(255, 339);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(246, 51);
             this.panel22.TabIndex = 13;
             // 
-            // TrangThai1
+            // TinhTrang1
             // 
-            this.TrangThai1.BackColor = System.Drawing.SystemColors.Control;
-            this.TrangThai1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TrangThai1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TrangThai1.Location = new System.Drawing.Point(0, 0);
-            this.TrangThai1.Margin = new System.Windows.Forms.Padding(5);
-            this.TrangThai1.Name = "TrangThai1";
-            this.TrangThai1.Size = new System.Drawing.Size(244, 49);
-            this.TrangThai1.TabIndex = 6;
-            this.TrangThai1.UseVisualStyleBackColor = false;
+            this.TinhTrang1.BackColor = System.Drawing.SystemColors.Control;
+            this.TinhTrang1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TinhTrang1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TinhTrang1.Location = new System.Drawing.Point(0, 0);
+            this.TinhTrang1.Margin = new System.Windows.Forms.Padding(5);
+            this.TinhTrang1.Name = "TinhTrang1";
+            this.TinhTrang1.Size = new System.Drawing.Size(244, 49);
+            this.TinhTrang1.TabIndex = 6;
+            this.TinhTrang1.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
@@ -614,7 +614,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(244, 49);
             this.label10.TabIndex = 7;
-            this.label10.Text = "Trạng thái :";
+            this.label10.Text = "Tình trạng :";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel20
@@ -1001,30 +1001,30 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(244, 48);
             this.label11.TabIndex = 6;
-            this.label11.Text = "Trạng thái :";
+            this.label11.Text = "Tình trạng :";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel24
             // 
             this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel24.Controls.Add(this.TrangThai2);
+            this.panel24.Controls.Add(this.TinhTrang2);
             this.panel24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel24.Location = new System.Drawing.Point(255, 339);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(246, 50);
             this.panel24.TabIndex = 13;
             // 
-            // TrangThai2
+            // TinhTrang2
             // 
-            this.TrangThai2.BackColor = System.Drawing.SystemColors.Control;
-            this.TrangThai2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TrangThai2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TrangThai2.Location = new System.Drawing.Point(0, 0);
-            this.TrangThai2.Margin = new System.Windows.Forms.Padding(5);
-            this.TrangThai2.Name = "TrangThai2";
-            this.TrangThai2.Size = new System.Drawing.Size(244, 48);
-            this.TrangThai2.TabIndex = 5;
-            this.TrangThai2.UseVisualStyleBackColor = false;
+            this.TinhTrang2.BackColor = System.Drawing.SystemColors.Control;
+            this.TinhTrang2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TinhTrang2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TinhTrang2.Location = new System.Drawing.Point(0, 0);
+            this.TinhTrang2.Margin = new System.Windows.Forms.Padding(5);
+            this.TinhTrang2.Name = "TinhTrang2";
+            this.TinhTrang2.Size = new System.Drawing.Size(244, 48);
+            this.TinhTrang2.TabIndex = 5;
+            this.TinhTrang2.UseVisualStyleBackColor = false;
             // 
             // panel89
             // 
@@ -1729,7 +1729,7 @@
         private Panel panel7;
         private TableLayoutPanel tableLayoutPanel1;
         private Panel panel22;
-        private Button TrangThai1;
+        private Button TinhTrang1;
         private Panel panel8;
         private Button CongSuatTieuThu1;
         private Panel panel9;
@@ -1761,7 +1761,7 @@
         private Panel panel23;
         private Label label11;
         private Panel panel24;
-        private Button TrangThai2;
+        private Button TinhTrang2;
         private TableLayoutPanel tableLayoutPanel9;
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonUpdateHistory;
         private LW_PhanMemBaoGia.MyControls.ButtonCustom buttonXuatExcel;

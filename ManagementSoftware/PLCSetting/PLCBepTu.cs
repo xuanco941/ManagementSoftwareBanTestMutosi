@@ -29,7 +29,7 @@ namespace ManagementSoftware.PLCSetting
             bepTu1.DongDien = await this.ConvertRealToDouble(20);
             bepTu1.CongSuat = await this.ConvertRealToDouble(28);
             bepTu1.CongSuatTieuThu = await this.ConvertRealToDouble(36);
-            bepTu1.TrangThai = (await this.ConvertUIntToUshort(40)) == 0 ? false : true;
+            bepTu1.isOn = (await this.ConvertUIntToUshort(40)) == 0 ? false : true;
             bepTu1.LanTestThu = await this.ConvertUIntToUshort(44);
 
 
@@ -40,7 +40,7 @@ namespace ManagementSoftware.PLCSetting
             bepTu2.DongDien = await this.ConvertRealToDouble(16);
             bepTu2.CongSuat = await this.ConvertRealToDouble(24);
             bepTu2.CongSuatTieuThu = await this.ConvertRealToDouble(32);
-            bepTu2.TrangThai = (await this.ConvertUIntToUshort(42)) == 0 ? false : true;
+            bepTu2.isOn = (await this.ConvertUIntToUshort(42)) == 0 ? false : true;
             bepTu2.LanTestThu = await this.ConvertUIntToUshort(46);
 
 

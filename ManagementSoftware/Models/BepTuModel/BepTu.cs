@@ -19,7 +19,6 @@ namespace ManagementSoftware.Models.BepTuModel
         public double CongSuat { get; set; }
         public double NhietDo { get; set; }
         public double CongSuatTieuThu { get; set; }
-        public bool TrangThai { get; set; }
         public int LanTestThu { get; set; }
         public bool isError { get; set; }
         public string Error { get; set; } = Common.NOT_ERROR_STR;
