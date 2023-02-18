@@ -11,15 +11,27 @@ namespace ManagementSoftware.ManageHistoryData
 {
     public class SaveToFIleExcel
     {
+
+
+        bool checkColorLoiLoc = false;
+        bool checkColorNguon = false;
+        bool checkColorBauNong = false;
+        bool checkColorLed = false;
+        bool checkColorBepTu = false;
+        bool checkColorCongTac = false;
+        bool checkColorJigMachNguon = false;
+        bool checkColorJigMachTDS = false;
+
+
         string nameDisk = "D";
         public void SaveLoiLoc(string nameBanTest, Models.LoiLocModel.LoiLoc loiLoc)
         {
             DateTime date = DateTime.Now;
-            var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"), date.Day.ToString("00"));
+            var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"));
             Directory.CreateDirectory(folderPath);
 
 
-            var fileName = $"{date:HH}.xlsx";
+            var fileName = $"{date.Day.ToString("00")}.xlsx";
 
             // Tìm kiếm file Excel trong thư mục với tên tương ứng với giờ trong ngày
             var excelFile = Directory.GetFiles(folderPath, fileName).FirstOrDefault();
@@ -70,6 +82,18 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(lastUsedRow, 9).Value = loiLoc.isOn == true ? "ON" : "OFF";
                         ws.Cell(lastUsedRow, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+                        if (loiLoc.isOn == false)
+                        {
+                            ws.Cell(lastUsedRow, 8).Value = " ";
+                        }
+
+                        if (checkColorLoiLoc == true)
+                        {
+                            ws.Range(lastUsedRow, 1, lastUsedRow, 9).Style.Fill.BackgroundColor = XLColor.PaleGreen;
+                        }
+                        checkColorLoiLoc = !checkColorLoiLoc;
+
+
                         ws.Columns(1, 9).AdjustToContents();
 
                         // Lưu lại file Excel
@@ -100,7 +124,8 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Range(1, 1, 1, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Range(1, 1, 1, 9).Style.Font.Bold = true;
                         ws.Range(1, 1, 1, 9).Style.Font.FontSize = 16;
-
+                        ws.Range(1, 1, 1, 9).Style.Fill.BackgroundColor = XLColor.Purple;
+                        ws.Range(1, 1, 1, 9).Style.Font.FontColor = XLColor.White;
 
 
                         ws.Cell(2, 1).Value = "ID-Date";
@@ -113,15 +138,12 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 8).Value = "Tình trạng";
                         ws.Cell(2, 9).Value = "Bật/Tắt";
 
-                        ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        for (int i = 1; i < 10; i++)
+                        {
+                            ws.Cell(2, i).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(2, i).Style.Fill.BackgroundColor = XLColor.Yellow;
+
+                        }
 
                         ws.Range(2, 1, 2, 9).Style.Font.Bold = true;
                         ws.Range(2, 1, 2, 9).Style.Font.FontSize = 12;
@@ -156,6 +178,11 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(3, 9).Value = loiLoc.isOn == true ? "ON" : "OFF";
                         ws.Cell(3, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+                        if (loiLoc.isOn == false)
+                        {
+                            ws.Cell(3, 8).Value = " ";
+                        }
+
                         ws.Columns(1, 9).AdjustToContents();
 
 
@@ -186,11 +213,11 @@ namespace ManagementSoftware.ManageHistoryData
         public void SaveBepTu(string nameBanTest, List<Models.BepTuModel.BepTu> list)
         {
             DateTime date = DateTime.Now;
-            var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"), date.Day.ToString("00"));
+            var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"));
             Directory.CreateDirectory(folderPath);
 
 
-            var fileName = $"{date:HH}.xlsx";
+            var fileName = $"{date.Day.ToString("00")}.xlsx";
 
             // Tìm kiếm file Excel trong thư mục với tên tương ứng với giờ trong ngày
             var excelFile = Directory.GetFiles(folderPath, fileName).FirstOrDefault();
@@ -246,6 +273,17 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(lastUsedRow + i, 10).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(lastUsedRow + i, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+                            if (item.isOn == false)
+                            {
+                                ws.Cell(lastUsedRow + i, 9).Value = " ";
+                            }
+
+                            if (checkColorBepTu == true)
+                            {
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 10).Style.Fill.BackgroundColor = XLColor.PaleGreen;
+                            }
+                            checkColorBepTu = !checkColorBepTu;
+
                             i++;
                         }
 
@@ -278,7 +316,8 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Range(1, 1, 1, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Range(1, 1, 1, 10).Style.Font.Bold = true;
                         ws.Range(1, 1, 1, 10).Style.Font.FontSize = 16;
-
+                        ws.Range(1, 1, 1, 10).Style.Fill.BackgroundColor = XLColor.Purple;
+                        ws.Range(1, 1, 1, 10).Style.Font.FontColor = XLColor.White;
 
 
                         ws.Cell(2, 1).Value = "ID-Date";
@@ -293,16 +332,12 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 10).Value = "Bặt/Tắt";
 
 
-                        ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        for (int z = 1; z < 11; z++)
+                        {
+                            ws.Cell(2, z).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(2, z).Style.Fill.BackgroundColor = XLColor.Yellow;
+
+                        }
 
                         ws.Range(2, 1, 2, 10).Style.Font.Bold = true;
                         ws.Range(2, 1, 2, 10).Style.Font.FontSize = 12;
@@ -341,6 +376,12 @@ namespace ManagementSoftware.ManageHistoryData
 
                             ws.Cell(3 + i, 10).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(3 + i, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            if (item.isOn == false)
+                            {
+                                ws.Cell(3 + i, 9).Value = " ";
+                            }
+
                             i++;
                         }
 
@@ -376,11 +417,11 @@ namespace ManagementSoftware.ManageHistoryData
         public void SaveNguon(string nameBanTest, List<Models.NguonModel.Nguon> list)
         {
             DateTime date = DateTime.Now;
-            var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"), date.Day.ToString("00"));
+            var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"));
             Directory.CreateDirectory(folderPath);
 
 
-            var fileName = $"{date:HH}.xlsx";
+            var fileName = $"{date.Day.ToString("00")}.xlsx";
 
             // Tìm kiếm file Excel trong thư mục với tên tương ứng với giờ trong ngày
             var excelFile = Directory.GetFiles(folderPath, fileName).FirstOrDefault();
@@ -434,6 +475,19 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(lastUsedRow + i, 9).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(lastUsedRow + i, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+
+
+                            if (item.isOn == false)
+                            {
+                                ws.Cell(lastUsedRow + i, 8).Value = " ";
+                            }
+
+                            if (checkColorNguon == true)
+                            {
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Fill.BackgroundColor = XLColor.PaleGreen;
+                            }
+                            checkColorNguon = !checkColorNguon;
+
                             i++;
                         }
                         ws.Columns(1, 9).AdjustToContents();
@@ -466,7 +520,8 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Range(1, 1, 1, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Range(1, 1, 1, 9).Style.Font.Bold = true;
                         ws.Range(1, 1, 1, 9).Style.Font.FontSize = 16;
-
+                        ws.Range(1, 1, 1, 9).Style.Fill.BackgroundColor = XLColor.Purple;
+                        ws.Range(1, 1, 1, 9).Style.Font.FontColor = XLColor.White;
 
 
                         ws.Cell(2, 1).Value = "ID-Date";
@@ -479,15 +534,12 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 8).Value = "Tình trạng";
                         ws.Cell(2, 9).Value = "Bật/Tắt";
 
-                        ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        for (int z = 1; z < 10; z++)
+                        {
+                            ws.Cell(2, z).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(2, z).Style.Fill.BackgroundColor = XLColor.Yellow;
+
+                        }
 
                         ws.Range(2, 1, 2, 9).Style.Font.Bold = true;
                         ws.Range(2, 1, 2, 9).Style.Font.FontSize = 12;
@@ -524,6 +576,13 @@ namespace ManagementSoftware.ManageHistoryData
 
                             ws.Cell(3 + i, 9).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(3 + i, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+
+                            if (item.isOn == false)
+                            {
+                                ws.Cell(3 + i, 8).Value = " ";
+                            }
+
                             i++;
                         }
 
@@ -553,11 +612,11 @@ namespace ManagementSoftware.ManageHistoryData
         public void SaveLed(string nameBanTest, List<Models.LedModel.Led> list)
         {
             DateTime date = DateTime.Now;
-            var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"), date.Day.ToString("00"));
+            var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"));
             Directory.CreateDirectory(folderPath);
 
 
-            var fileName = $"{date:HH}.xlsx";
+            var fileName = $"{date.Day.ToString("00")}.xlsx";
 
             // Tìm kiếm file Excel trong thư mục với tên tương ứng với giờ trong ngày
             var excelFile = Directory.GetFiles(folderPath, fileName).FirstOrDefault();
@@ -600,6 +659,19 @@ namespace ManagementSoftware.ManageHistoryData
 
                             ws.Cell(lastUsedRow + i, 6).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(lastUsedRow + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+
+                            if (item.isOn == false)
+                            {
+                                ws.Cell(lastUsedRow + i, 5).Value = " ";
+                            }
+
+                            if (checkColorLed == true)
+                            {
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 6).Style.Fill.BackgroundColor = XLColor.PaleGreen;
+                            }
+                            checkColorLed = !checkColorLed;
+
                             i++;
                         }
 
@@ -632,7 +704,8 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Range(1, 1, 1, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Range(1, 1, 1, 6).Style.Font.Bold = true;
                         ws.Range(1, 1, 1, 6).Style.Font.FontSize = 16;
-
+                        ws.Range(1, 1, 1, 6).Style.Fill.BackgroundColor = XLColor.Purple;
+                        ws.Range(1, 1, 1, 6).Style.Font.FontColor = XLColor.White;
 
 
                         ws.Cell(2, 1).Value = "ID-Date";
@@ -642,12 +715,12 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 5).Value = "Tình trạng";
                         ws.Cell(2, 6).Value = "Bật/Tắt";
 
-                        ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        for (int z = 1; z < 7; z++)
+                        {
+                            ws.Cell(2, z).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(2, z).Style.Fill.BackgroundColor = XLColor.Yellow;
+
+                        }
                         ws.Range(2, 1, 2, 6).Style.Font.Bold = true;
                         ws.Range(2, 1, 2, 6).Style.Font.FontSize = 12;
 
@@ -674,6 +747,13 @@ namespace ManagementSoftware.ManageHistoryData
 
                             ws.Cell(3 + i, 6).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(3 + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+
+                            if (item.isOn == false)
+                            {
+                                ws.Cell(3 + i, 5).Value = " ";
+                            }
+
                             i++;
                         }
 
@@ -708,11 +788,11 @@ namespace ManagementSoftware.ManageHistoryData
         public void SaveJigMachNguon(string nameBanTest, List<Models.JigMachModel.JigMachNguon> list)
         {
             DateTime date = DateTime.Now;
-            var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"), date.Day.ToString("00"));
+            var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"));
             Directory.CreateDirectory(folderPath);
 
 
-            var fileName = $"{date:HH}.xlsx";
+            var fileName = $"{date.Day.ToString("00")}.xlsx";
 
             // Tìm kiếm file Excel trong thư mục với tên tương ứng với giờ trong ngày
             var excelFile = Directory.GetFiles(folderPath, fileName).FirstOrDefault();
@@ -764,7 +844,23 @@ namespace ManagementSoftware.ManageHistoryData
 
                             ws.Cell(lastUsedRow + i, 9).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(lastUsedRow + i, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            if (item.isOn == false)
+                            {
+                                ws.Cell(lastUsedRow + i, 8).Value = " ";
+                            }
+
+
+                            if (checkColorJigMachNguon == true)
+                            {
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Fill.BackgroundColor = XLColor.PaleGreen;
+                            }
+                            checkColorJigMachNguon = !checkColorJigMachNguon;
+
+
                             i++;
+
+
                         }
 
                         ws.Columns(1, 9).AdjustToContents();
@@ -797,7 +893,8 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Range(1, 1, 1, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Range(1, 1, 1, 9).Style.Font.Bold = true;
                         ws.Range(1, 1, 1, 9).Style.Font.FontSize = 16;
-
+                        ws.Range(1, 1, 1, 9).Style.Fill.BackgroundColor = XLColor.Purple;
+                        ws.Range(1, 1, 1, 9).Style.Font.FontColor = XLColor.White;
 
 
                         ws.Cell(2, 1).Value = "ID-Date";
@@ -810,15 +907,12 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 8).Value = "Tình trạng";
                         ws.Cell(2, 9).Value = "Bật/Tắt";
 
-                        ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        for (int z = 1; z < 10; z++)
+                        {
+                            ws.Cell(2, z).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(2, z).Style.Fill.BackgroundColor = XLColor.Yellow;
+
+                        }
 
                         ws.Range(2, 1, 2, 9).Style.Font.Bold = true;
                         ws.Range(2, 1, 2, 9).Style.Font.FontSize = 12;
@@ -854,6 +948,13 @@ namespace ManagementSoftware.ManageHistoryData
 
                             ws.Cell(3 + i, 9).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(3 + i, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+
+                            if (item.isOn == false)
+                            {
+                                ws.Cell(3 + i, 8).Value = " ";
+                            }
+
                             i++;
                         }
 
@@ -893,11 +994,11 @@ namespace ManagementSoftware.ManageHistoryData
         public void SaveJigMachTDS(string nameBanTest, List<Models.JigMachModel.JigMachTDS> list)
         {
             DateTime date = DateTime.Now;
-            var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"), date.Day.ToString("00"));
+            var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"));
             Directory.CreateDirectory(folderPath);
 
 
-            var fileName = $"{date:HH}.xlsx";
+            var fileName = $"{date.Day.ToString("00")}.xlsx";
 
             // Tìm kiếm file Excel trong thư mục với tên tương ứng với giờ trong ngày
             var excelFile = Directory.GetFiles(folderPath, fileName).FirstOrDefault();
@@ -946,6 +1047,19 @@ namespace ManagementSoftware.ManageHistoryData
 
                             ws.Cell(lastUsedRow + i, 8).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(lastUsedRow + i, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            if (checkColorJigMachTDS == true)
+                            {
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 8).Style.Fill.BackgroundColor = XLColor.PaleGreen;
+                            }
+                            checkColorJigMachTDS = !checkColorJigMachTDS;
+
+
+                            if (item.isOn == false)
+                            {
+                                ws.Cell(lastUsedRow + i, 7).Value = " ";
+                            }
+
                             i++;
                         }
 
@@ -979,7 +1093,8 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Range(1, 1, 1, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Range(1, 1, 1, 8).Style.Font.Bold = true;
                         ws.Range(1, 1, 1, 8).Style.Font.FontSize = 16;
-
+                        ws.Range(1, 1, 1, 8).Style.Fill.BackgroundColor = XLColor.Purple;
+                        ws.Range(1, 1, 1, 8).Style.Font.FontColor = XLColor.White;
 
 
                         ws.Cell(2, 1).Value = "ID-Date";
@@ -991,14 +1106,12 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 7).Value = "Tình trạng";
                         ws.Cell(2, 8).Value = "Bật/Tắt";
 
-                        ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        for (int z = 1; z < 9; z++)
+                        {
+                            ws.Cell(2, z).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(2, z).Style.Fill.BackgroundColor = XLColor.Yellow;
+
+                        }
 
                         ws.Range(2, 1, 2, 8).Style.Font.Bold = true;
                         ws.Range(2, 1, 2, 8).Style.Font.FontSize = 12;
@@ -1031,6 +1144,13 @@ namespace ManagementSoftware.ManageHistoryData
 
                             ws.Cell(3 + i, 8).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(3 + i, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+
+                            if (item.isOn == false)
+                            {
+                                ws.Cell(3 + i, 7).Value = " ";
+                            }
+
                             i++;
                         }
 
@@ -1061,11 +1181,11 @@ namespace ManagementSoftware.ManageHistoryData
         public void SaveCongTac(string nameBanTest, List<Models.CongTacModel.CongTac> list)
         {
             DateTime date = DateTime.Now;
-            var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"), date.Day.ToString("00"));
+            var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"));
             Directory.CreateDirectory(folderPath);
 
 
-            var fileName = $"{date:HH}.xlsx";
+            var fileName = $"{date.Day.ToString("00")}.xlsx";
 
             // Tìm kiếm file Excel trong thư mục với tên tương ứng với giờ trong ngày
             var excelFile = Directory.GetFiles(folderPath, fileName).FirstOrDefault();
@@ -1108,6 +1228,19 @@ namespace ManagementSoftware.ManageHistoryData
 
                             ws.Cell(lastUsedRow + i, 6).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(lastUsedRow + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                            if (checkColorCongTac == true)
+                            {
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 6).Style.Fill.BackgroundColor = XLColor.PaleGreen;
+                            }
+                            checkColorCongTac = !checkColorCongTac;
+
+
+                            if (item.isOn == false)
+                            {
+                                ws.Cell(lastUsedRow + i, 5).Value = " ";
+                            }
+
                             i++;
                         }
 
@@ -1141,7 +1274,8 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Range(1, 1, 1, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Range(1, 1, 1, 6).Style.Font.Bold = true;
                         ws.Range(1, 1, 1, 6).Style.Font.FontSize = 16;
-
+                        ws.Range(1, 1, 1, 6).Style.Fill.BackgroundColor = XLColor.Purple;
+                        ws.Range(1, 1, 1, 6).Style.Font.FontColor = XLColor.White;
 
 
                         ws.Cell(2, 1).Value = "ID-Date";
@@ -1151,12 +1285,12 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 5).Value = "Tình trạng";
                         ws.Cell(2, 6).Value = "Bật/Tắt";
 
-                        ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        for (int z = 1; z < 7; z++)
+                        {
+                            ws.Cell(2, z).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(2, z).Style.Fill.BackgroundColor = XLColor.Yellow;
+
+                        }
 
                         ws.Range(2, 1, 2, 6).Style.Font.Bold = true;
                         ws.Range(2, 1, 2, 6).Style.Font.FontSize = 12;
@@ -1183,6 +1317,12 @@ namespace ManagementSoftware.ManageHistoryData
 
                             ws.Cell(3 + i, 6).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(3 + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+
+                            if (item.isOn == false)
+                            {
+                                ws.Cell(3 + i, 5).Value = " ";
+                            }
 
                             i++;
                         }
@@ -1215,11 +1355,11 @@ namespace ManagementSoftware.ManageHistoryData
         public void SaveBauNong(string nameBanTest, List<Models.BauNongModel.BauNong> list)
         {
             DateTime date = DateTime.Now;
-            var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"), date.Day.ToString("00"));
+            var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"));
             Directory.CreateDirectory(folderPath);
 
 
-            var fileName = $"{date:HH}.xlsx";
+            var fileName = $"{date.Day.ToString("00")}.xlsx";
 
             // Tìm kiếm file Excel trong thư mục với tên tương ứng với giờ trong ngày
             var excelFile = Directory.GetFiles(folderPath, fileName).FirstOrDefault();
@@ -1272,6 +1412,18 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(lastUsedRow + i, 9).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(lastUsedRow + i, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+                            if (checkColorBauNong == true)
+                            {
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Fill.BackgroundColor = XLColor.PaleGreen;
+                            }
+                            checkColorBauNong = !checkColorBauNong;
+
+
+                            if (item.isOn == false)
+                            {
+                                ws.Cell(lastUsedRow + i, 8).Value = " ";
+                            }
+
                             i++;
                         }
 
@@ -1306,7 +1458,8 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Range(1, 1, 1, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Range(1, 1, 1, 9).Style.Font.Bold = true;
                         ws.Range(1, 1, 1, 9).Style.Font.FontSize = 16;
-
+                        ws.Range(1, 1, 1, 9).Style.Fill.BackgroundColor = XLColor.Purple;
+                        ws.Range(1, 1, 1, 9).Style.Font.FontColor = XLColor.White;
 
 
                         ws.Cell(2, 1).Value = "ID-Date";
@@ -1319,15 +1472,12 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 8).Value = "Tình trạng";
                         ws.Cell(2, 9).Value = "Bật/Tắt";
 
-                        ws.Cell(2, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Cell(2, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        for (int z = 1; z < 10; z++)
+                        {
+                            ws.Cell(2, z).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(2, z).Style.Fill.BackgroundColor = XLColor.Yellow;
+
+                        }
 
                         ws.Range(2, 1, 2, 9).Style.Font.Bold = true;
                         ws.Range(2, 1, 2, 9).Style.Font.FontSize = 12;
@@ -1363,6 +1513,12 @@ namespace ManagementSoftware.ManageHistoryData
 
                             ws.Cell(3 + i, 9).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(3 + i, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+
+                            if (item.isOn == false)
+                            {
+                                ws.Cell(3 + i, 8).Value = " ";
+                            }
 
                             i++;
                         }
