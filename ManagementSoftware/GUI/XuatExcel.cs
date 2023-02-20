@@ -63,12 +63,13 @@ namespace ManagementSoftware.GUI
                                         {
                                             continue;
                                         }
-                                        if (checkColor == true)
-                                        {
-                                            ws.Cell(i + 3, j + 1).Style.Fill.BackgroundColor = XLColor.LightGreen;
-                                        }
-                                        checkColor = !checkColor;
+
                                     }
+                                    if (checkColor == true)
+                                    {
+                                        ws.Row(i).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                    }
+                                    checkColor = !checkColor;
                                 }
 
                                 ws.Columns(1, dgv.Columns.Count).AdjustToContents();
