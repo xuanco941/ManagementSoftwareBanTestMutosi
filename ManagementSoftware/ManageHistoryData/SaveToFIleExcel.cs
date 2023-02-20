@@ -115,7 +115,7 @@ namespace ManagementSoftware.ManageHistoryData
                     {
 
 
-                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd/MM/yyyy") + ")");
+                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd-MM-yyyy") + ")");
 
                         ws.Range(1, 1, 1, 9).Merge();
                         ws.Range(1, 1, 1, 9).Value = nameBanTest;
@@ -319,7 +319,7 @@ namespace ManagementSoftware.ManageHistoryData
                     {
 
 
-                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd/MM/yyyy") + ")");
+                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd-MM-yyyy") + ")");
 
                         ws.Range(1, 1, 1, 10).Merge();
                         ws.Range(1, 1, 1, 10).Value = nameBanTest;
@@ -531,7 +531,7 @@ namespace ManagementSoftware.ManageHistoryData
                     {
 
 
-                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd/MM/yyyy") + ")");
+                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd-MM-yyyy") + ")");
 
                         ws.Range(1, 1, 1, 9).Merge();
                         ws.Range(1, 1, 1, 9).Value = nameBanTest;
@@ -724,7 +724,7 @@ namespace ManagementSoftware.ManageHistoryData
                     {
 
 
-                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd/MM/yyyy") + ")");
+                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd-MM-yyyy") + ")");
 
                         ws.Range(1, 1, 1, 6).Merge();
                         ws.Range(1, 1, 1, 6).Value = nameBanTest;
@@ -925,7 +925,7 @@ namespace ManagementSoftware.ManageHistoryData
                     {
 
 
-                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd/MM/yyyy") + ")");
+                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd-MM-yyyy") + ")");
 
                         ws.Range(1, 1, 1, 9).Merge();
                         ws.Range(1, 1, 1, 9).Value = nameBanTest;
@@ -1137,7 +1137,7 @@ namespace ManagementSoftware.ManageHistoryData
                     {
 
 
-                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd/MM/yyyy") + ")");
+                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd-MM-yyyy") + ")");
 
                         ws.Range(1, 1, 1, 8).Merge();
                         ws.Range(1, 1, 1, 8).Value = nameBanTest;
@@ -1330,7 +1330,7 @@ namespace ManagementSoftware.ManageHistoryData
                     {
 
 
-                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd/MM/yyyy") + ")");
+                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd-MM-yyyy") + ")");
 
                         ws.Range(1, 1, 1, 6).Merge();
                         ws.Range(1, 1, 1, 6).Value = nameBanTest;
@@ -1525,7 +1525,7 @@ namespace ManagementSoftware.ManageHistoryData
                     {
 
 
-                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd/MM/yyyy") + ")");
+                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd-MM-yyyy") + ")");
 
                         ws.Range(1, 1, 1, 9).Merge();
                         ws.Range(1, 1, 1, 9).Value = nameBanTest;

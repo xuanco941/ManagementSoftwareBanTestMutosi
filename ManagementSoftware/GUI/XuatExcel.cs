@@ -26,7 +26,7 @@ namespace ManagementSoftware.GUI
                             {
 
 
-                                var ws = workBook.Worksheets.Add(title + " (" + date.ToString("dd/MM/yyyy") + ")");
+                                var ws = workBook.Worksheets.Add(title + " (" + date.ToString("dd-MM-yyyy") + ")");
 
 
                                 ws.Range(1, 1, 1, dgv.Columns.Count).Merge();
