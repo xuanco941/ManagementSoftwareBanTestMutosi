@@ -58,6 +58,11 @@ namespace ManagementSoftware.GUI
                                             ws.Cell(i + 3, j + 1).Value = dgv.Rows[i].Cells[j].Value.ToString();
                                             ws.Cell(i + 3, j + 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                                             ws.Cell(i + 3, j + 1).Style.Font.FontSize = 14;
+
+                                            if (checkColor == true)
+                                            {
+                                                ws.Cell(i + 3, j + 1).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                            }
                                         }
                                         else
                                         {
@@ -65,10 +70,7 @@ namespace ManagementSoftware.GUI
                                         }
 
                                     }
-                                    if (checkColor == true)
-                                    {
-                                        ws.Row(i).Style.Fill.BackgroundColor = XLColor.LightGreen;
-                                    }
+                                    
                                     checkColor = !checkColor;
                                 }
 
