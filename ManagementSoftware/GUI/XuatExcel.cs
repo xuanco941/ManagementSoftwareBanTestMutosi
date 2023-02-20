@@ -12,8 +12,10 @@ namespace ManagementSoftware.GUI
     {
         public void Xuat(string title, DataGridView dgv)
         {
+            
             if (dgv.Rows != null && dgv.Rows.Count != 0)
             {
+                DateTime date= DateTime.Now;
 
                 using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Excel | *.xlsx | Excel 2016 | *.xls" })
                     if (sfd.ShowDialog() == DialogResult.OK)
@@ -24,15 +26,16 @@ namespace ManagementSoftware.GUI
                             {
 
 
-                                var ws = workBook.Worksheets.Add("Lịch sử test");
+                                var ws = workBook.Worksheets.Add(title + " (" + date.ToString("dd/MM/yyyy") + ")");
 
 
                                 ws.Range(1, 1, 1, dgv.Columns.Count).Merge();
                                 ws.Range(1, 1, 1, dgv.Columns.Count).Value = title;
                                 ws.Range(1, 1, 1, dgv.Columns.Count).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                                 ws.Range(1, 1, 1, dgv.Columns.Count).Style.Font.Bold = true;
-                                ws.Range(1, 1, 1, dgv.Columns.Count).Style.Font.FontSize = 16;
-
+                                ws.Range(1, 1, 1, dgv.Columns.Count).Style.Font.FontSize = 18;
+                                ws.Range(1, 1, 1, dgv.Columns.Count).Style.Fill.BackgroundColor = XLColor.Purple;
+                                ws.Range(1, 1, 1, dgv.Columns.Count).Style.Font.FontColor = XLColor.White;
 
 
                                 for (int i = 0; i < dgv.Columns.Count; i++)
@@ -40,10 +43,11 @@ namespace ManagementSoftware.GUI
                                     ws.Cell(2, 1 + i).Value = dgv.Columns[i].HeaderText;
                                     ws.Cell(2, 1 + i).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                                     ws.Cell(2, 1 + i).Style.Font.Bold = true;
-                                    ws.Cell(2, 1 + i).Style.Font.FontSize = 12;
+                                    ws.Cell(2, 1 + i).Style.Font.FontSize = 16;
+                                    ws.Cell(2, 1 + i).Style.Fill.BackgroundColor = XLColor.Yellow;
                                 }
 
-
+                                bool checkColor = true;
 
                                 for (int i = 0; i < dgv.Rows.Count; i++)
                                 {
@@ -53,11 +57,17 @@ namespace ManagementSoftware.GUI
                                         {
                                             ws.Cell(i + 3, j + 1).Value = dgv.Rows[i].Cells[j].Value.ToString();
                                             ws.Cell(i + 3, j + 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                                            ws.Cell(i + 3, j + 1).Style.Font.FontSize = 14;
                                         }
                                         else
                                         {
                                             continue;
                                         }
+                                        if (checkColor == true)
+                                        {
+                                            ws.Cell(i + 3, j + 1).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                        }
+                                        checkColor = !checkColor;
                                     }
                                 }
 
@@ -65,7 +75,7 @@ namespace ManagementSoftware.GUI
 
 
                                 string tenfile = ".xlsx";
-                                workBook.SaveAs(sfd.FileName + DateTime.Now.ToString("dd_mm_yyyy_hhmmss") + tenfile);
+                                workBook.SaveAs(sfd.FileName + date.ToString("dd_mm_yyyy_hhmmss") + tenfile);
                                 MessageBox.Show($"Xuất file {title} thành công.");
                             }
                         }

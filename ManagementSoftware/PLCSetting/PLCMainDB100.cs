@@ -190,6 +190,44 @@ namespace ManagementSoftware.PLCSetting
 
 
 
+        //public async Task<double> ReadMultipleAddressesRealToDouble(int db, int startByte,int varCount)
+        //{
+        //    if (plc.IsConnected)
+        //    {
+        //        Func<double> func = () =>
+        //        {
+        //            try
+        //            {
+        //                object? data = plc.Read(DataType.DataBlock,db,startByte,VarType.Real,varCount,0);
+        //                if (data != null)
+        //                {
+        //                    return Math.Round(Conversion.ConvertToFloat((uint)data), 2, MidpointRounding.AwayFromZero);
+        //                    return Conversion.
+        //                }
+        //                else
+        //                {
+        //                    return 0;
+        //                }
+        //            }
+        //            catch
+        //            {
+        //                return 0;
+        //            }
+
+        //        };
+        //        Task<double> task = new Task<double>(func);
+        //        task.Start();
+        //        await task;
+
+        //        return task.Result;
+        //    }
+        //    else
+        //    {
+        //        return 0;
+        //    }
+        //}
+
+
 
     }
 }

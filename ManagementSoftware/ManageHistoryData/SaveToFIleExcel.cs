@@ -13,14 +13,9 @@ namespace ManagementSoftware.ManageHistoryData
     {
 
 
-        static bool checkColorLoiLoc = false;
-        bool checkColorNguon = false;
-        bool checkColorBauNong = false;
-        bool checkColorLed = false;
-        bool checkColorBepTu = false;
-        bool checkColorCongTac = false;
-        bool checkColorJigMachNguon = false;
-        bool checkColorJigMachTDS = false;
+        static bool checkColorLoiLoc = true;
+        bool checkColor = true;
+
 
 
         string nameDisk = "D";
@@ -82,6 +77,9 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(lastUsedRow, 9).Value = loiLoc.isOn == true ? "ON" : "OFF";
                         ws.Cell(lastUsedRow, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+                        ws.Range(lastUsedRow, 1, lastUsedRow, 9).Style.Font.FontSize = 14;
+
+
                         if (loiLoc.isOn == false)
                         {
                             ws.Cell(lastUsedRow, 8).Value = " ";
@@ -89,7 +87,7 @@ namespace ManagementSoftware.ManageHistoryData
 
                         if (checkColorLoiLoc == true)
                         {
-                            ws.Range(lastUsedRow, 1, lastUsedRow, 9).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                            ws.Range(lastUsedRow, 1, lastUsedRow, 9).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                         }
                         checkColorLoiLoc = !checkColorLoiLoc;
 
@@ -117,13 +115,13 @@ namespace ManagementSoftware.ManageHistoryData
                     {
 
 
-                        var ws = workBook.Worksheets.Add("Lịch sử test");
+                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd/MM/yyyy") + ")");
 
                         ws.Range(1, 1, 1, 9).Merge();
                         ws.Range(1, 1, 1, 9).Value = nameBanTest;
                         ws.Range(1, 1, 1, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Range(1, 1, 1, 9).Style.Font.Bold = true;
-                        ws.Range(1, 1, 1, 9).Style.Font.FontSize = 16;
+                        ws.Range(1, 1, 1, 9).Style.Font.FontSize = 18;
                         ws.Range(1, 1, 1, 9).Style.Fill.BackgroundColor = XLColor.Purple;
                         ws.Range(1, 1, 1, 9).Style.Font.FontColor = XLColor.White;
 
@@ -146,7 +144,7 @@ namespace ManagementSoftware.ManageHistoryData
                         }
 
                         ws.Range(2, 1, 2, 9).Style.Font.Bold = true;
-                        ws.Range(2, 1, 2, 9).Style.Font.FontSize = 12;
+                        ws.Range(2, 1, 2, 9).Style.Font.FontSize = 16;
 
 
 
@@ -178,10 +176,19 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(3, 9).Value = loiLoc.isOn == true ? "ON" : "OFF";
                         ws.Cell(3, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+
+                        ws.Range(3, 1, 3, 9).Style.Font.FontSize = 14;
+
                         if (loiLoc.isOn == false)
                         {
                             ws.Cell(3, 8).Value = " ";
                         }
+
+                        if (checkColorLoiLoc == true)
+                        {
+                            ws.Range(3, 1, 3, 9).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
+                        }
+                        checkColorLoiLoc = !checkColorLoiLoc;
 
                         ws.Columns(1, 9).AdjustToContents();
 
@@ -273,16 +280,19 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(lastUsedRow + i, 10).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(lastUsedRow + i, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+                            ws.Range(lastUsedRow+i, 1, lastUsedRow+i, 10).Style.Font.FontSize = 14;
+
+
                             if (item.isOn == false)
                             {
                                 ws.Cell(lastUsedRow + i, 9).Value = " ";
                             }
 
-                            if (checkColorBepTu == true)
+                            if (checkColor == true)
                             {
-                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 10).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 10).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                             }
-                            checkColorBepTu = !checkColorBepTu;
+                            checkColor = !checkColor;
 
                             i++;
                         }
@@ -309,13 +319,13 @@ namespace ManagementSoftware.ManageHistoryData
                     {
 
 
-                        var ws = workBook.Worksheets.Add("Lịch sử test");
+                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd/MM/yyyy") + ")");
 
                         ws.Range(1, 1, 1, 10).Merge();
                         ws.Range(1, 1, 1, 10).Value = nameBanTest;
                         ws.Range(1, 1, 1, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Range(1, 1, 1, 10).Style.Font.Bold = true;
-                        ws.Range(1, 1, 1, 10).Style.Font.FontSize = 16;
+                        ws.Range(1, 1, 1, 10).Style.Font.FontSize = 18;
                         ws.Range(1, 1, 1, 10).Style.Fill.BackgroundColor = XLColor.Purple;
                         ws.Range(1, 1, 1, 10).Style.Font.FontColor = XLColor.White;
 
@@ -340,7 +350,7 @@ namespace ManagementSoftware.ManageHistoryData
                         }
 
                         ws.Range(2, 1, 2, 10).Style.Font.Bold = true;
-                        ws.Range(2, 1, 2, 10).Style.Font.FontSize = 12;
+                        ws.Range(2, 1, 2, 10).Style.Font.FontSize = 16;
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -377,17 +387,19 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(3 + i, 10).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(3 + i, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+                            ws.Range(3 + i, 1, 3 + i, 10).Style.Font.FontSize = 14;
+
+
                             if (item.isOn == false)
                             {
                                 ws.Cell(3 + i, 9).Value = " ";
                             }
 
-                            if (checkColorBepTu == true)
+                            if (checkColor == true)
                             {
-                                ws.Range(3 + i, 1, 3 + i, 10).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                ws.Range(3 + i, 1, 3 + i, 10).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                             }
-                            checkColorBepTu = !checkColorBepTu;
-
+                            checkColor = !checkColor;
 
                             i++;
                         }
@@ -482,18 +494,17 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(lastUsedRow + i, 9).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(lastUsedRow + i, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-
+                            ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Font.FontSize = 14;
 
                             if (item.isOn == false)
                             {
                                 ws.Cell(lastUsedRow + i, 8).Value = " ";
                             }
-
-                            if (checkColorNguon == true)
+                            if (checkColor == true)
                             {
-                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                             }
-                            checkColorNguon = !checkColorNguon;
+                            checkColor = !checkColor;
 
                             i++;
                         }
@@ -520,13 +531,13 @@ namespace ManagementSoftware.ManageHistoryData
                     {
 
 
-                        var ws = workBook.Worksheets.Add("Lịch sử test");
+                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd/MM/yyyy") + ")");
 
                         ws.Range(1, 1, 1, 9).Merge();
                         ws.Range(1, 1, 1, 9).Value = nameBanTest;
                         ws.Range(1, 1, 1, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Range(1, 1, 1, 9).Style.Font.Bold = true;
-                        ws.Range(1, 1, 1, 9).Style.Font.FontSize = 16;
+                        ws.Range(1, 1, 1, 9).Style.Font.FontSize = 18;
                         ws.Range(1, 1, 1, 9).Style.Fill.BackgroundColor = XLColor.Purple;
                         ws.Range(1, 1, 1, 9).Style.Font.FontColor = XLColor.White;
 
@@ -549,7 +560,7 @@ namespace ManagementSoftware.ManageHistoryData
                         }
 
                         ws.Range(2, 1, 2, 9).Style.Font.Bold = true;
-                        ws.Range(2, 1, 2, 9).Style.Font.FontSize = 12;
+                        ws.Range(2, 1, 2, 9).Style.Font.FontSize = 16;
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -584,18 +595,18 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(3 + i, 9).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(3 + i, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+                            ws.Range(3 + i, 1, 3 + i, 9).Style.Font.FontSize = 14;
+
 
                             if (item.isOn == false)
                             {
                                 ws.Cell(3 + i, 8).Value = " ";
                             }
-
-
-                            if (checkColorNguon == true)
+                            if (checkColor == true)
                             {
-                                ws.Range(3 + i, 1, 3 + i, 9).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                ws.Range(3 + i, 1, 3 + i, 9).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                             }
-                            checkColorNguon = !checkColorNguon;
+                            checkColor = !checkColor;
 
                             i++;
                         }
@@ -674,17 +685,19 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(lastUsedRow + i, 6).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(lastUsedRow + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+                            ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 6).Style.Font.FontSize = 14;
+
 
                             if (item.isOn == false)
                             {
                                 ws.Cell(lastUsedRow + i, 5).Value = " ";
                             }
 
-                            if (checkColorLed == true)
+                            if (checkColor == true)
                             {
-                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 6).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 6).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                             }
-                            checkColorLed = !checkColorLed;
+                            checkColor = !checkColor;
 
                             i++;
                         }
@@ -711,13 +724,13 @@ namespace ManagementSoftware.ManageHistoryData
                     {
 
 
-                        var ws = workBook.Worksheets.Add("Lịch sử test");
+                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd/MM/yyyy") + ")");
 
                         ws.Range(1, 1, 1, 6).Merge();
                         ws.Range(1, 1, 1, 6).Value = nameBanTest;
                         ws.Range(1, 1, 1, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Range(1, 1, 1, 6).Style.Font.Bold = true;
-                        ws.Range(1, 1, 1, 6).Style.Font.FontSize = 16;
+                        ws.Range(1, 1, 1, 6).Style.Font.FontSize = 18;
                         ws.Range(1, 1, 1, 6).Style.Fill.BackgroundColor = XLColor.Purple;
                         ws.Range(1, 1, 1, 6).Style.Font.FontColor = XLColor.White;
 
@@ -736,7 +749,7 @@ namespace ManagementSoftware.ManageHistoryData
 
                         }
                         ws.Range(2, 1, 2, 6).Style.Font.Bold = true;
-                        ws.Range(2, 1, 2, 6).Style.Font.FontSize = 12;
+                        ws.Range(2, 1, 2, 6).Style.Font.FontSize = 16;
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -762,17 +775,19 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(3 + i, 6).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(3 + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+                            ws.Range(3 + i, 1, 3 + i, 6).Style.Font.FontSize = 14;
+
 
                             if (item.isOn == false)
                             {
                                 ws.Cell(3 + i, 5).Value = " ";
                             }
 
-                            if (checkColorLed == true)
+                            if (checkColor == true)
                             {
-                                ws.Range(3 + i, 1, 3 + i, 6).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                ws.Range(3 + i, 1, 3 + i, 6).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                             }
-                            checkColorLed = !checkColorLed;
+                            checkColor = !checkColor;
 
 
                             i++;
@@ -866,17 +881,20 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(lastUsedRow + i, 9).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(lastUsedRow + i, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+                            ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Font.FontSize = 14;
+
+
                             if (item.isOn == false)
                             {
                                 ws.Cell(lastUsedRow + i, 8).Value = " ";
                             }
 
 
-                            if (checkColorJigMachNguon == true)
+                            if (checkColor == true)
                             {
-                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                             }
-                            checkColorJigMachNguon = !checkColorJigMachNguon;
+                            checkColor = !checkColor;
 
 
                             i++;
@@ -907,13 +925,13 @@ namespace ManagementSoftware.ManageHistoryData
                     {
 
 
-                        var ws = workBook.Worksheets.Add("Lịch sử test");
+                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd/MM/yyyy") + ")");
 
                         ws.Range(1, 1, 1, 9).Merge();
                         ws.Range(1, 1, 1, 9).Value = nameBanTest;
                         ws.Range(1, 1, 1, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Range(1, 1, 1, 9).Style.Font.Bold = true;
-                        ws.Range(1, 1, 1, 9).Style.Font.FontSize = 16;
+                        ws.Range(1, 1, 1, 9).Style.Font.FontSize = 18;
                         ws.Range(1, 1, 1, 9).Style.Fill.BackgroundColor = XLColor.Purple;
                         ws.Range(1, 1, 1, 9).Style.Font.FontColor = XLColor.White;
 
@@ -936,7 +954,7 @@ namespace ManagementSoftware.ManageHistoryData
                         }
 
                         ws.Range(2, 1, 2, 9).Style.Font.Bold = true;
-                        ws.Range(2, 1, 2, 9).Style.Font.FontSize = 12;
+                        ws.Range(2, 1, 2, 9).Style.Font.FontSize = 16;
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -970,6 +988,8 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(3 + i, 9).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(3 + i, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+                            ws.Range(3 + i, 1, 3 + i, 9).Style.Font.FontSize = 14;
+
 
                             if (item.isOn == false)
                             {
@@ -977,11 +997,11 @@ namespace ManagementSoftware.ManageHistoryData
                             }
 
 
-                            if (checkColorJigMachNguon == true)
+                            if (checkColor == true)
                             {
-                                ws.Range(3 + i, 1, 3 + i, 9).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                ws.Range(3 + i, 1, 3 + i, 9).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                             }
-                            checkColorJigMachNguon = !checkColorJigMachNguon;
+                            checkColor = !checkColor;
 
                             i++;
                         }
@@ -1076,11 +1096,14 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(lastUsedRow + i, 8).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(lastUsedRow + i, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            if (checkColorJigMachTDS == true)
+                            ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 8).Style.Font.FontSize = 14;
+
+
+                            if (checkColor == true)
                             {
-                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 8).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 8).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                             }
-                            checkColorJigMachTDS = !checkColorJigMachTDS;
+                            checkColor = !checkColor;
 
 
                             if (item.isOn == false)
@@ -1114,13 +1137,13 @@ namespace ManagementSoftware.ManageHistoryData
                     {
 
 
-                        var ws = workBook.Worksheets.Add("Lịch sử test");
+                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd/MM/yyyy") + ")");
 
                         ws.Range(1, 1, 1, 8).Merge();
                         ws.Range(1, 1, 1, 8).Value = nameBanTest;
                         ws.Range(1, 1, 1, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Range(1, 1, 1, 8).Style.Font.Bold = true;
-                        ws.Range(1, 1, 1, 8).Style.Font.FontSize = 16;
+                        ws.Range(1, 1, 1, 8).Style.Font.FontSize = 18;
                         ws.Range(1, 1, 1, 8).Style.Fill.BackgroundColor = XLColor.Purple;
                         ws.Range(1, 1, 1, 8).Style.Font.FontColor = XLColor.White;
 
@@ -1142,7 +1165,7 @@ namespace ManagementSoftware.ManageHistoryData
                         }
 
                         ws.Range(2, 1, 2, 8).Style.Font.Bold = true;
-                        ws.Range(2, 1, 2, 8).Style.Font.FontSize = 12;
+                        ws.Range(2, 1, 2, 8).Style.Font.FontSize = 16;
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -1173,6 +1196,8 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(3 + i, 8).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(3 + i, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+                            ws.Range(3 + i, 1, 3 + i, 8).Style.Font.FontSize = 14;
+
 
                             if (item.isOn == false)
                             {
@@ -1180,11 +1205,11 @@ namespace ManagementSoftware.ManageHistoryData
                             }
 
 
-                            if (checkColorJigMachTDS == true)
+                            if (checkColor == true)
                             {
-                                ws.Range(3 + i, 1, 3 + i, 8).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                ws.Range(3 + i, 1, 3 + i, 8).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                             }
-                            checkColorJigMachTDS = !checkColorJigMachTDS;
+                            checkColor = !checkColor;
 
                             i++;
                         }
@@ -1264,11 +1289,14 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(lastUsedRow + i, 6).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(lastUsedRow + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            if (checkColorCongTac == true)
+                            ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 6).Style.Font.FontSize = 14;
+
+
+                            if (checkColor == true)
                             {
-                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 6).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 6).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                             }
-                            checkColorCongTac = !checkColorCongTac;
+                            checkColor = !checkColor;
 
 
                             if (item.isOn == false)
@@ -1302,13 +1330,13 @@ namespace ManagementSoftware.ManageHistoryData
                     {
 
 
-                        var ws = workBook.Worksheets.Add("Lịch sử test");
+                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd/MM/yyyy") + ")");
 
                         ws.Range(1, 1, 1, 6).Merge();
                         ws.Range(1, 1, 1, 6).Value = nameBanTest;
                         ws.Range(1, 1, 1, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Range(1, 1, 1, 6).Style.Font.Bold = true;
-                        ws.Range(1, 1, 1, 6).Style.Font.FontSize = 16;
+                        ws.Range(1, 1, 1, 6).Style.Font.FontSize = 18;
                         ws.Range(1, 1, 1, 6).Style.Fill.BackgroundColor = XLColor.Purple;
                         ws.Range(1, 1, 1, 6).Style.Font.FontColor = XLColor.White;
 
@@ -1328,7 +1356,7 @@ namespace ManagementSoftware.ManageHistoryData
                         }
 
                         ws.Range(2, 1, 2, 6).Style.Font.Bold = true;
-                        ws.Range(2, 1, 2, 6).Style.Font.FontSize = 12;
+                        ws.Range(2, 1, 2, 6).Style.Font.FontSize = 16;
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -1353,6 +1381,7 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(3 + i, 6).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(3 + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+                            ws.Range(3 + i, 1, 3 + i, 6).Style.Font.FontSize = 14;
 
                             if (item.isOn == false)
                             {
@@ -1360,11 +1389,11 @@ namespace ManagementSoftware.ManageHistoryData
                             }
 
 
-                            if (checkColorCongTac == true)
+                            if (checkColor == true)
                             {
-                                ws.Range(3 + i, 1, 3 + i, 6).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                ws.Range(3 + i, 1, 3 + i, 6).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                             }
-                            checkColorCongTac = !checkColorCongTac;
+                            checkColor = !checkColor;
 
                             i++;
                         }
@@ -1454,11 +1483,14 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(lastUsedRow + i, 9).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(lastUsedRow + i, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            if (checkColorBauNong == true)
+                            ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Font.FontSize = 14;
+
+
+                            if (checkColor == true)
                             {
-                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 9).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                             }
-                            checkColorBauNong = !checkColorBauNong;
+                            checkColor = !checkColor;
 
 
                             if (item.isOn == false)
@@ -1493,13 +1525,13 @@ namespace ManagementSoftware.ManageHistoryData
                     {
 
 
-                        var ws = workBook.Worksheets.Add("Lịch sử test");
+                        var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd/MM/yyyy") + ")");
 
                         ws.Range(1, 1, 1, 9).Merge();
                         ws.Range(1, 1, 1, 9).Value = nameBanTest;
                         ws.Range(1, 1, 1, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                         ws.Range(1, 1, 1, 9).Style.Font.Bold = true;
-                        ws.Range(1, 1, 1, 9).Style.Font.FontSize = 16;
+                        ws.Range(1, 1, 1, 9).Style.Font.FontSize = 18;
                         ws.Range(1, 1, 1, 9).Style.Fill.BackgroundColor = XLColor.Purple;
                         ws.Range(1, 1, 1, 9).Style.Font.FontColor = XLColor.White;
 
@@ -1522,7 +1554,7 @@ namespace ManagementSoftware.ManageHistoryData
                         }
 
                         ws.Range(2, 1, 2, 9).Style.Font.Bold = true;
-                        ws.Range(2, 1, 2, 9).Style.Font.FontSize = 12;
+                        ws.Range(2, 1, 2, 9).Style.Font.FontSize = 16;
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -1556,6 +1588,8 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(3 + i, 9).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(3 + i, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+                            ws.Range(3 + i, 1, 3 + i, 9).Style.Font.FontSize = 14;
+
 
                             if (item.isOn == false)
                             {
@@ -1563,11 +1597,11 @@ namespace ManagementSoftware.ManageHistoryData
                             }
 
 
-                            if (checkColorBauNong == true)
+                            if (checkColor == true)
                             {
-                                ws.Range(3 + i, 1, 3 + i, 9).Style.Fill.BackgroundColor = XLColor.LightGreen;
+                                ws.Range(3 + i, 1, 3 + i, 9).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                             }
-                            checkColorBauNong = !checkColorBauNong;
+                            checkColor = !checkColor;
 
 
                             i++;
