@@ -669,8 +669,16 @@ namespace ManagementSoftware.GUI
 
         private void JigMach_FormClosing(object sender, FormClosingEventArgs e)
         {
+            giamSatJigMachNguon.StopTimer();
             giamSatJigMachNguon.Close();
+            giamSatJigMachNguon.Dispose();
+
+            giamSatJigMachTDS.StopTimer();
             giamSatJigMachTDS.Close();
+            giamSatJigMachTDS.Dispose();
+
+            this.StopTimer1();
+            this.StopTimer2();
         }
 
 

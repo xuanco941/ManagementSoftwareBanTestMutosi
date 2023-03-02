@@ -46,13 +46,27 @@ namespace ManagementSoftware.GUI
                 }
             }
 
-            //remove controls in panel
 
-            foreach (Form mainScreen in panelContent.Controls)
+            List<Form> oldForms = new List<Form>();
+            foreach (Form oldForm in panelContent.Controls)
             {
-                mainScreen.Close();
-                mainScreen.Dispose();
+                oldForms.Add(oldForm);
             }
+
+            // Đóng/loại bỏ các FormItemPO cũ khỏi panelMain.Controls
+            foreach (Form oldForm in oldForms)
+            {
+                oldForm.Close();
+                oldForm.Dispose();
+            }
+
+            ////remove controls in panel
+
+            //foreach (Form mainScreen in panelContent.Controls)
+            //{
+            //    mainScreen.Close();
+            //    mainScreen.Dispose();
+            //}
 
             //set new content
             form.TopLevel = false;
@@ -106,8 +120,24 @@ namespace ManagementSoftware.GUI
         private void buttonDangXuat_Click(object sender, EventArgs e)
         {
             Common.USERSESSION = null;
+
+            List<Form> oldForms = new List<Form>();
+            foreach (Form oldForm in panelContent.Controls)
+            {
+                oldForms.Add(oldForm);
+            }
+
+            // Đóng/loại bỏ các FormItemPO cũ khỏi panelMain.Controls
+            foreach (Form oldForm in oldForms)
+            {
+                oldForm.Close();
+                oldForm.Dispose();
+            }
+
+
+
+            this.Close();
             Application.ExitThread();
-            Application.Exit();
         }
 
         private void buttonJigMach_Click(object sender, EventArgs e)

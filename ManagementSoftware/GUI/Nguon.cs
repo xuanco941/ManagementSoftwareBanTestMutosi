@@ -721,8 +721,16 @@ namespace ManagementSoftware.GUI
 
         private void Nguon_FormClosing(object sender, FormClosingEventArgs e)
         {
+            formTestNguon.StopTimer();
             formTestNguon.Close();
+            formTestNguon.Dispose();
+
+            formTestLed.StopTimer();
             formTestLed.Close();
+            formTestLed.Dispose();
+
+            this.StopTimer1();
+            this.StopTimer2();
         }
 
 
