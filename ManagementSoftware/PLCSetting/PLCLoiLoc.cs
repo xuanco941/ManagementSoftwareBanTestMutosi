@@ -67,6 +67,10 @@ namespace ManagementSoftware.PLCSetting
                 loiloc.isOn = isOnLoiLoc1.Result!=0 && isOnLoiLoc2.Result != 0 ? true : false;
             }
 
+            if(loiloc.isOn == false)
+            {
+                loiloc.Error = "";
+            }
 
             return loiloc;
 

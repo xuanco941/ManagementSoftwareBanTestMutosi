@@ -98,34 +98,46 @@ namespace ManagementSoftware.GUI.NguonManagement
 
 
             //update gui
-
-
-            for (int i = 0; i < list.Count; i++)
+            try
             {
-                if (list[i].isOn)
+                if (dataGridView1.Rows.Count >= list.Count)
                 {
-                    dataGridView1.Rows[i].Cells[0].Value = list[i].NguonName;
-                }
-                else
-                {
-                    dataGridView1.Rows[i].Cells[0].Value = list[i].NguonName + " (OFF)";
-                }
-                dataGridView1.Rows[i].Cells[1].Value = String.Format("{0:0.00}", list[i].DongDC);
-                dataGridView1.Rows[i].Cells[2].Value = String.Format("{0:0.00}", list[i].DienApDC);
-                dataGridView1.Rows[i].Cells[3].Value = String.Format("{0:0.00}", list[i].CongSuat);
-                dataGridView1.Rows[i].Cells[4].Value = list[i].ThoiGianTest;
-                dataGridView1.Rows[i].Cells[5].Value = list[i].LanTestThu;
-                dataGridView1.Rows[i].Cells[6].Value = list[i].Error;
-                if (list[i].Error != Common.NOT_ERROR_STR)
-                {
-                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Crimson;
+                    for (int i = 0; i < list.Count; i++)
+                    {
 
-                }
-                else
-                {
-                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
+                        if (list[i].isOn)
+                        {
+                            dataGridView1.Rows[i].Cells[0].Value = list[i].NguonName;
+                        }
+                        else
+                        {
+                            dataGridView1.Rows[i].Cells[0].Value = list[i].NguonName + " (OFF)";
+                        }
+                        dataGridView1.Rows[i].Cells[1].Value = String.Format("{0:0.00}", list[i].DongDC);
+                        dataGridView1.Rows[i].Cells[2].Value = String.Format("{0:0.00}", list[i].DienApDC);
+                        dataGridView1.Rows[i].Cells[3].Value = String.Format("{0:0.00}", list[i].CongSuat);
+                        dataGridView1.Rows[i].Cells[4].Value = list[i].ThoiGianTest;
+                        dataGridView1.Rows[i].Cells[5].Value = list[i].LanTestThu;
+                        dataGridView1.Rows[i].Cells[6].Value = list[i].Error;
+                        if (list[i].Error != Common.NOT_ERROR_STR && list[i].isOn == true)
+                        {
+                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Crimson;
+
+                        }
+                        else
+                        {
+                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
+                        }
+
+                    }
                 }
             }
+            catch
+            {
+
+            }
+            
+            
 
 
 

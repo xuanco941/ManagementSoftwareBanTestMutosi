@@ -24,7 +24,8 @@ namespace ManagementSoftware.PLCSetting
             int dongDienAC = 0;
             int nhietDoPC = 40;
             int SoLanTest_ST_PC = 60;
-            int nhietdongatcb = 100;
+
+            int time = 220;
 
             int cbNhiet = 120;
             int errCbNhietCao = 140;
@@ -42,7 +43,7 @@ namespace ManagementSoftware.PLCSetting
                 obj.DongDien = await this.ConvertRealToDouble(dongDienAC);
                 obj.NhietDo = Math.Round(Convert.ToDouble(await this.ConvertUIntToUshort(nhietDoPC)) / 10, 2, MidpointRounding.AwayFromZero);
                 obj.LanTestThu = await this.ConvertUIntToUshort(SoLanTest_ST_PC);
-                obj.NhietDoNgatCBNhiet = await this.ConvertUIntToUshort(nhietdongatcb);
+                obj.ThoiGian = await this.ConvertUDIntToUInt(time);
                 obj.TrangThaiCBNhiet = await this.ConvertUIntToUshort(cbNhiet) == 0 ? false : true;
                 obj.Error_CB_Nhiet_Cao = await this.ConvertUIntToUshort(errCbNhietCao) == 0 ? false : true;
                 obj.Error_CB_Nhiet_Thap = await this.ConvertUIntToUshort(errCbNhietThap) == 0 ? false : true;
@@ -76,6 +77,11 @@ namespace ManagementSoftware.PLCSetting
                     obj.Error = strErr.Substring(0, strErr.Length - 2);
                 }
 
+                if(obj.isOn == false)
+                {
+                    obj.Error = "";
+                }
+
 
 
 
@@ -85,7 +91,7 @@ namespace ManagementSoftware.PLCSetting
                 dongDienAC += 4;
                 nhietDoPC += 2;
                 SoLanTest_ST_PC += 2;
-                nhietdongatcb += 2;
+                time += 4;
                 cbNhiet += 2;
                 errCbNhietCao += 2;
                 errCbNhietThap += 2;

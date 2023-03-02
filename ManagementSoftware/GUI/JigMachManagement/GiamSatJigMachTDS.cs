@@ -150,7 +150,7 @@ namespace ManagementSoftware.GUI.JigMachManagement
             soLanTest.Text = e.LanTestThu.ToString();
 
             tinhTrang.Text = e.Error;
-            if (e.Error != Common.NOT_ERROR_STR)
+            if (e.Error != Common.NOT_ERROR_STR && e.isOn == true)
             {
                 lbjig.BackColor = Color.Crimson;
                 tinhTrang.Font = new Font("Segoe UI", 8, FontStyle.Regular);

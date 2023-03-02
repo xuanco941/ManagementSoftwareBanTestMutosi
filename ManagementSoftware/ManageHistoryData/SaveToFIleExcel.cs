@@ -1286,28 +1286,19 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(lastUsedRow + i, 5).Value = item.Error;
                             ws.Cell(lastUsedRow + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow + i, 6).Value = item.isOn == true ? "ON" : "OFF";
-                            ws.Cell(lastUsedRow + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-
-                            ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 6).Style.Font.FontSize = 14;
+                            ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 5).Style.Font.FontSize = 14;
 
 
                             if (checkColor == true)
                             {
-                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 6).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
+                                ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 5).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                             }
                             checkColor = !checkColor;
-
-
-                            if (item.isOn == false)
-                            {
-                                ws.Cell(lastUsedRow + i, 5).Value = " ";
-                            }
 
                             i++;
                         }
 
-                        ws.Columns(1, 6).AdjustToContents();
+                        ws.Columns(1, 5).AdjustToContents();
 
 
                         // Lưu lại file Excel
@@ -1332,13 +1323,13 @@ namespace ManagementSoftware.ManageHistoryData
 
                         var ws = workBook.Worksheets.Add(nameBanTest + " (" + date.ToString("dd-MM-yyyy") + ")");
 
-                        ws.Range(1, 1, 1, 6).Merge();
-                        ws.Range(1, 1, 1, 6).Value = nameBanTest;
-                        ws.Range(1, 1, 1, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                        ws.Range(1, 1, 1, 6).Style.Font.Bold = true;
-                        ws.Range(1, 1, 1, 6).Style.Font.FontSize = 18;
-                        ws.Range(1, 1, 1, 6).Style.Fill.BackgroundColor = XLColor.Purple;
-                        ws.Range(1, 1, 1, 6).Style.Font.FontColor = XLColor.White;
+                        ws.Range(1, 1, 1, 5).Merge();
+                        ws.Range(1, 1, 1, 5).Value = nameBanTest;
+                        ws.Range(1, 1, 1, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Range(1, 1, 1, 5).Style.Font.Bold = true;
+                        ws.Range(1, 1, 1, 5).Style.Font.FontSize = 18;
+                        ws.Range(1, 1, 1, 5).Style.Fill.BackgroundColor = XLColor.Purple;
+                        ws.Range(1, 1, 1, 5).Style.Font.FontColor = XLColor.White;
 
 
                         ws.Cell(2, 1).Value = "ID-Date";
@@ -1346,17 +1337,16 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 3).Value = "Trạng thái";
                         ws.Cell(2, 4).Value = "Lần test thứ";
                         ws.Cell(2, 5).Value = "Tình trạng";
-                        ws.Cell(2, 6).Value = "Bật/Tắt";
 
-                        for (int z = 1; z < 7; z++)
+                        for (int z = 1; z < 6; z++)
                         {
                             ws.Cell(2, z).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                             ws.Cell(2, z).Style.Fill.BackgroundColor = XLColor.Yellow;
 
                         }
 
-                        ws.Range(2, 1, 2, 6).Style.Font.Bold = true;
-                        ws.Range(2, 1, 2, 6).Style.Font.FontSize = 16;
+                        ws.Range(2, 1, 2, 5).Style.Font.Bold = true;
+                        ws.Range(2, 1, 2, 5).Style.Font.FontSize = 16;
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -1378,27 +1368,20 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(3 + i, 5).Value = item.Error;
                             ws.Cell(3 + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3 + i, 6).Value = item.isOn == true ? "ON" : "OFF";
-                            ws.Cell(3 + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Range(3 + i, 1, 3 + i, 5).Style.Font.FontSize = 14;
 
-                            ws.Range(3 + i, 1, 3 + i, 6).Style.Font.FontSize = 14;
-
-                            if (item.isOn == false)
-                            {
-                                ws.Cell(3 + i, 5).Value = " ";
-                            }
 
 
                             if (checkColor == true)
                             {
-                                ws.Range(3 + i, 1, 3 + i, 6).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
+                                ws.Range(3 + i, 1, 3 + i, 5).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                             }
                             checkColor = !checkColor;
 
                             i++;
                         }
 
-                        ws.Columns(1, 6).AdjustToContents();
+                        ws.Columns(1, 5).AdjustToContents();
 
 
 
@@ -1471,7 +1454,7 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(lastUsedRow + i, 5).Value = item.NhietDo;
                             ws.Cell(lastUsedRow + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(lastUsedRow + i, 6).Value = item.NhietDoNgatCBNhiet;
+                            ws.Cell(lastUsedRow + i, 6).Value = item.ThoiGian;
                             ws.Cell(lastUsedRow + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
                             ws.Cell(lastUsedRow + i, 7).Value = item.TrangThaiCBNhiet == true ? "ON" : "OFF";
@@ -1541,7 +1524,7 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 3).Value = "Lần test thứ";
                         ws.Cell(2, 4).Value = "Dòng điện AC (A)";
                         ws.Cell(2, 5).Value = "Nhiệt độ (°C)";
-                        ws.Cell(2, 6).Value = "Nhiệt độ ngắt cb nhiệt (°C)";
+                        ws.Cell(2, 6).Value = "Thời gian (giây)";
                         ws.Cell(2, 7).Value = "Trạng thái cb nhiệt";
                         ws.Cell(2, 8).Value = "Tình trạng";
                         ws.Cell(2, 9).Value = "Bật/Tắt";
@@ -1576,7 +1559,7 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(3 + i, 5).Value = item.NhietDo;
                             ws.Cell(3 + i, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Cell(3 + i, 6).Value = item.NhietDoNgatCBNhiet;
+                            ws.Cell(3 + i, 6).Value = item.ThoiGian;
                             ws.Cell(3 + i, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
                             ws.Cell(3 + i, 7).Value = item.TrangThaiCBNhiet == true ? "ON" : "OFF";

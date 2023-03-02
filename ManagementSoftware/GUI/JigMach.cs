@@ -153,7 +153,7 @@ namespace ManagementSoftware.GUI
                         row.Cells[6].Value = i.ThoiGian;
                         row.Cells[7].Value = i.Error;
 
-                        if (i.Error != Common.NOT_ERROR_STR)
+                        if (i.Error != Common.NOT_ERROR_STR && i.isOn == true )
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -356,7 +356,7 @@ namespace ManagementSoftware.GUI
                         row.Cells[5].Value = i.ThoiGian;
                         row.Cells[6].Value = i.Error;
 
-                        if (i.Error != Common.NOT_ERROR_STR)
+                        if (i.Error != Common.NOT_ERROR_STR && i.isOn == true )
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -557,7 +557,7 @@ namespace ManagementSoftware.GUI
                         row.Cells[6].Value = i.ThoiGian;
                         row.Cells[7].Value = i.Error;
 
-                        if (i.Error != Common.NOT_ERROR_STR)
+                        if (i.Error != Common.NOT_ERROR_STR && i.isOn == true)
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -652,7 +652,7 @@ namespace ManagementSoftware.GUI
                         row.Cells[5].Value = i.ThoiGian;
                         row.Cells[6].Value = i.Error;
 
-                        if (i.Error != Common.NOT_ERROR_STR)
+                        if (i.Error != Common.NOT_ERROR_STR && i.isOn == true)
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }

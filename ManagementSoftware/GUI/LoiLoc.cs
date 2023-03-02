@@ -210,7 +210,7 @@ namespace ManagementSoftware.GUI
                 row.Cells[7].Value = item.Error;
 
                 
-                if (item.Error != Common.NOT_ERROR_STR)
+                if (item.Error != Common.NOT_ERROR_STR && item.isOn == true)
                 {
                     row.DefaultCellStyle.BackColor = Color.Crimson;
                 }
@@ -293,7 +293,7 @@ namespace ManagementSoftware.GUI
                 row.Cells[6].Value = item.ThoiGianXa;
                 row.Cells[7].Value = item.Error;
 
-                if (item.Error != Common.NOT_ERROR_STR)
+                if (item.Error != Common.NOT_ERROR_STR && item.isOn == true)
                 {
                     row.DefaultCellStyle.BackColor = Color.Crimson;
                 }
@@ -455,7 +455,7 @@ namespace ManagementSoftware.GUI
 
                 btnTinhTrangLoai1.Text = loiloc.Error;
 
-                if (loiloc.Error != Common.NOT_ERROR_STR)
+                if (loiloc.Error != Common.NOT_ERROR_STR && loiloc.isOn == true)
                 {
                     labelLoai1.BackColor = Color.Crimson;
                     btnTinhTrangLoai1.Font = new Font("Segoe UI", 8, FontStyle.Regular);
@@ -522,7 +522,7 @@ namespace ManagementSoftware.GUI
                 ApSuatTest2.Text = loiloc.ApSuatTest.ToString();
                 btnTinhTrangLoai2.Text = loiloc.Error;
 
-                if (loiloc.Error != Common.NOT_ERROR_STR)
+                if (loiloc.Error != Common.NOT_ERROR_STR && loiloc.isOn == true)
                 {
                     labelLoai2.BackColor = Color.Crimson;
                     btnTinhTrangLoai2.Font = new Font("Segoe UI", 8, FontStyle.Regular);
@@ -584,7 +584,7 @@ namespace ManagementSoftware.GUI
                 ApSuatTest1va2.Text = loiloc.ApSuatTest.ToString();
                 btnTinhTrangLoai3.Text = loiloc.Error;
 
-                if (loiloc.Error != Common.NOT_ERROR_STR)
+                if (loiloc.Error != Common.NOT_ERROR_STR && loiloc.isOn == true )
                 {
                     labelLoai1.BackColor = Color.Crimson;
                     btnTinhTrangLoai3.Font = new Font("Segoe UI", 8, FontStyle.Regular);

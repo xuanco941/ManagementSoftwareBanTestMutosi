@@ -180,7 +180,7 @@ namespace ManagementSoftware.GUI
                         row.Cells[7].Value = i.CongSuatTieuThu;
                         row.Cells[8].Value = i.Error;
 
-                        if (i.Error != Common.NOT_ERROR_STR)
+                        if (i.Error != Common.NOT_ERROR_STR && i.isOn == true )
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -250,7 +250,7 @@ namespace ManagementSoftware.GUI
                         row.Cells[7].Value = i.CongSuatTieuThu;
                         row.Cells[8].Value = i.Error;
 
-                        if (i.Error != Common.NOT_ERROR_STR)
+                        if (i.Error != Common.NOT_ERROR_STR && i.isOn == true )
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -391,7 +391,7 @@ namespace ManagementSoftware.GUI
                     CongSuat1.Text = String.Format("{0:0.00}", item.CongSuat);
                     CongSuatTieuThu1.Text = String.Format("{0:0.00}", item.CongSuatTieuThu);
                     TinhTrang1.Text = item.Error;
-                    if (item.Error != Common.NOT_ERROR_STR)
+                    if (item.Error != Common.NOT_ERROR_STR && item.isOn == true)
                     {
                         labelBep1.BackColor = Color.Crimson;
                         TinhTrang1.Font = new Font("Segoe UI", 8, FontStyle.Regular);
@@ -421,7 +421,7 @@ namespace ManagementSoftware.GUI
                     CongSuat2.Text = String.Format("{0:0.00}", item.CongSuat);
                     CongSuatTieuThu2.Text = String.Format("{0:0.00}", item.CongSuatTieuThu);
                     TinhTrang2.Text = item.Error;
-                    if (item.Error != Common.NOT_ERROR_STR)
+                    if (item.Error != Common.NOT_ERROR_STR && item.isOn == true )
                     {
                         labelBep2.BackColor = Color.Crimson;
                         TinhTrang2.Font = new Font("Segoe UI", 8, FontStyle.Regular);

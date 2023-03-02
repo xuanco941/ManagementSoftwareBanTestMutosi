@@ -124,23 +124,41 @@ namespace ManagementSoftware.GUI.NguonManagement
 
 
             //update gui
-
-
-            for (int i = 0; i < list.Count; i++)
+            try
             {
-                if (list[i].isOn)
+                if (dataGridView1.Rows.Count >= list.Count)
                 {
-                    dataGridView1.Rows[i].Cells[0].Value = list[i].LedName;
+                    for (int i = 0; i < list.Count; i++)
+                    {
+                        if (list[i].isOn)
+                        {
+                            dataGridView1.Rows[i].Cells[0].Value = list[i].LedName;
+                        }
+                        else
+                        {
+                            dataGridView1.Rows[i].Cells[0].Value = list[i].LedName + " (OFF)";
+                        }
+                        dataGridView1.Rows[i].Cells[1].Value = list[i].ThoiGianTest;
+                        dataGridView1.Rows[i].Cells[2].Value = list[i].LanTestThu;
+                        dataGridView1.Rows[i].Cells[3].Value = list[i].Error;
+                        if (list[i].Error != Common.NOT_ERROR_STR && list[i].isOn == true)
+                        {
+                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Crimson;
+
+                        }
+                        else
+                        {
+                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
+                        }
+                    }
                 }
-                else
-                {
-                    dataGridView1.Rows[i].Cells[0].Value = list[i].LedName + " (OFF)";
-                }
-                dataGridView1.Rows[i].Cells[1].Value = list[i].ThoiGianTest;
-                dataGridView1.Rows[i].Cells[2].Value = list[i].LanTestThu;
-                dataGridView1.Rows[i].Cells[3].Value = list[i].Error;
+            }
+            catch
+            {
 
             }
+
+
 
 
 

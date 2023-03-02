@@ -72,6 +72,17 @@ namespace ManagementSoftware.PLCSetting
                 bepTu2.isError = false;
             }
 
+
+            if (bepTu1.isOn == false)
+            {
+                bepTu1.Error = "";
+            }
+            if (bepTu2.isOn == false)
+            {
+                bepTu2.Error = "";
+            }
+
+
             list.Add(bepTu1);
             list.Add(bepTu2);
 

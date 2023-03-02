@@ -468,21 +468,33 @@ namespace ManagementSoftware.GUI
 
             //update gui
 
-            for (int i = 0; i < list.Count; i++)
+            try
             {
-                dataGridViewGiamSat.Rows[i].Cells[1].Value = list[i].TrangThai == true ? "ON" : "OFF";
-                dataGridViewGiamSat.Rows[i].Cells[2].Value = list[i].LanTestThu;
-                dataGridViewGiamSat.Rows[i].Cells[3].Value = list[i].Error;
+                if (dataGridViewGiamSat.Rows.Count >= list.Count)
+                {
+                    for (int i = 0; i < list.Count; i++)
+                    {
+                        dataGridViewGiamSat.Rows[i].Cells[1].Value = list[i].TrangThai == true ? "ON" : "OFF";
+                        dataGridViewGiamSat.Rows[i].Cells[2].Value = list[i].LanTestThu;
+                        dataGridViewGiamSat.Rows[i].Cells[3].Value = list[i].Error;
 
-                if (list[i].Error != Common.NOT_ERROR_STR)
-                {
-                    dataGridViewGiamSat.Rows[i].DefaultCellStyle.BackColor = Color.Crimson;
-                }
-                else
-                {
-                    dataGridViewGiamSat.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
+                        if (list[i].Error != Common.NOT_ERROR_STR)
+                        {
+                            dataGridViewGiamSat.Rows[i].DefaultCellStyle.BackColor = Color.Crimson;
+                        }
+                        else
+                        {
+                            dataGridViewGiamSat.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
+                        }
+                    }
                 }
             }
+            catch
+            {
+
+            }
+           
+               
 
 
 

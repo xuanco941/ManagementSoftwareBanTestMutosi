@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BauNong));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageGiamSat = new System.Windows.Forms.TabPage();
@@ -61,7 +61,9 @@
             this.panel121 = new System.Windows.Forms.Panel();
             this.label52 = new System.Windows.Forms.Label();
             this.panel141 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel142 = new System.Windows.Forms.Panel();
+            this.buttonTinhTrang1 = new System.Windows.Forms.Button();
             this.panel111 = new System.Windows.Forms.Panel();
             this.labelJig1 = new System.Windows.Forms.Label();
             this.panel90 = new System.Windows.Forms.Panel();
@@ -88,7 +90,9 @@
             this.panel124 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB2 = new System.Windows.Forms.Button();
             this.panel143 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel144 = new System.Windows.Forms.Panel();
+            this.buttonTinhTrang2 = new System.Windows.Forms.Button();
             this.panel100 = new System.Windows.Forms.Panel();
             this.labelJig2 = new System.Windows.Forms.Label();
             this.panel68 = new System.Windows.Forms.Panel();
@@ -115,7 +119,9 @@
             this.panel126 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB3 = new System.Windows.Forms.Button();
             this.panel145 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel146 = new System.Windows.Forms.Panel();
+            this.buttonTinhTrang3 = new System.Windows.Forms.Button();
             this.panel78 = new System.Windows.Forms.Panel();
             this.labelJig3 = new System.Windows.Forms.Label();
             this.panel57 = new System.Windows.Forms.Panel();
@@ -142,7 +148,9 @@
             this.panel128 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB4 = new System.Windows.Forms.Button();
             this.panel147 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
             this.panel148 = new System.Windows.Forms.Panel();
+            this.buttonTinhTrang4 = new System.Windows.Forms.Button();
             this.panel67 = new System.Windows.Forms.Panel();
             this.labelJig4 = new System.Windows.Forms.Label();
             this.panel46 = new System.Windows.Forms.Panel();
@@ -169,7 +177,9 @@
             this.panel130 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB5 = new System.Windows.Forms.Button();
             this.panel149 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
             this.panel150 = new System.Windows.Forms.Panel();
+            this.buttonTinhTrang5 = new System.Windows.Forms.Button();
             this.panel56 = new System.Windows.Forms.Panel();
             this.labelJig5 = new System.Windows.Forms.Label();
             this.panel35 = new System.Windows.Forms.Panel();
@@ -196,7 +206,9 @@
             this.panel132 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB6 = new System.Windows.Forms.Button();
             this.panel151 = new System.Windows.Forms.Panel();
+            this.label30 = new System.Windows.Forms.Label();
             this.panel152 = new System.Windows.Forms.Panel();
+            this.buttonTinhTrang6 = new System.Windows.Forms.Button();
             this.panel45 = new System.Windows.Forms.Panel();
             this.labelJig6 = new System.Windows.Forms.Label();
             this.panel24 = new System.Windows.Forms.Panel();
@@ -223,7 +235,9 @@
             this.panel134 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB7 = new System.Windows.Forms.Button();
             this.panel153 = new System.Windows.Forms.Panel();
+            this.label39 = new System.Windows.Forms.Label();
             this.panel154 = new System.Windows.Forms.Panel();
+            this.buttonTinhTrang7 = new System.Windows.Forms.Button();
             this.panel34 = new System.Windows.Forms.Panel();
             this.labelJig7 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -250,7 +264,9 @@
             this.panel136 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB8 = new System.Windows.Forms.Button();
             this.panel155 = new System.Windows.Forms.Panel();
+            this.label40 = new System.Windows.Forms.Label();
             this.panel156 = new System.Windows.Forms.Panel();
+            this.buttonTinhTrang8 = new System.Windows.Forms.Button();
             this.panel23 = new System.Windows.Forms.Panel();
             this.labelJig8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -277,7 +293,9 @@
             this.panel138 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB9 = new System.Windows.Forms.Button();
             this.panel157 = new System.Windows.Forms.Panel();
+            this.label45 = new System.Windows.Forms.Label();
             this.panel158 = new System.Windows.Forms.Panel();
+            this.buttonTinhTrang9 = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.labelJig9 = new System.Windows.Forms.Label();
             this.panel79 = new System.Windows.Forms.Panel();
@@ -304,7 +322,9 @@
             this.panel140 = new System.Windows.Forms.Panel();
             this.NhietDoNgatCB10 = new System.Windows.Forms.Button();
             this.panel159 = new System.Windows.Forms.Panel();
+            this.label50 = new System.Windows.Forms.Label();
             this.panel160 = new System.Windows.Forms.Panel();
+            this.buttonTinhTrang10 = new System.Windows.Forms.Button();
             this.panel89 = new System.Windows.Forms.Panel();
             this.labelJig10 = new System.Windows.Forms.Label();
             this.tabPageThongKe = new System.Windows.Forms.TabPage();
@@ -341,26 +361,6 @@
             this.buttonCustomGoPage = new LW_PhanMemBaoGia.MyControls.ButtonCustom();
             this.inputNumPageGo = new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
             this.gridLayout1 = new Syncfusion.Windows.Forms.Tools.GridLayout(this.components);
-            this.label5 = new System.Windows.Forms.Label();
-            this.buttonTinhTrang1 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.buttonTinhTrang2 = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.buttonTinhTrang3 = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
-            this.buttonTinhTrang4 = new System.Windows.Forms.Button();
-            this.label25 = new System.Windows.Forms.Label();
-            this.buttonTinhTrang5 = new System.Windows.Forms.Button();
-            this.label30 = new System.Windows.Forms.Label();
-            this.buttonTinhTrang6 = new System.Windows.Forms.Button();
-            this.label39 = new System.Windows.Forms.Label();
-            this.buttonTinhTrang7 = new System.Windows.Forms.Button();
-            this.label40 = new System.Windows.Forms.Label();
-            this.buttonTinhTrang8 = new System.Windows.Forms.Button();
-            this.label45 = new System.Windows.Forms.Label();
-            this.buttonTinhTrang9 = new System.Windows.Forms.Button();
-            this.label50 = new System.Windows.Forms.Label();
-            this.buttonTinhTrang10 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPageGiamSat.SuspendLayout();
             this.panelGiamSat.SuspendLayout();
@@ -852,7 +852,7 @@
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(108, 25);
             this.label52.TabIndex = 4;
-            this.label52.Text = "Nhiệt độ ngắt CB nhiệt :";
+            this.label52.Text = "Thời gian :";
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel141
@@ -865,6 +865,18 @@
             this.panel141.Size = new System.Drawing.Size(110, 29);
             this.panel141.TabIndex = 10;
             // 
+            // label5
+            // 
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(108, 27);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Tình trạng : ";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel142
             // 
             this.panel142.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -874,6 +886,17 @@
             this.panel142.Name = "panel142";
             this.panel142.Size = new System.Drawing.Size(110, 29);
             this.panel142.TabIndex = 11;
+            // 
+            // buttonTinhTrang1
+            // 
+            this.buttonTinhTrang1.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonTinhTrang1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonTinhTrang1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonTinhTrang1.Location = new System.Drawing.Point(0, 0);
+            this.buttonTinhTrang1.Name = "buttonTinhTrang1";
+            this.buttonTinhTrang1.Size = new System.Drawing.Size(108, 27);
+            this.buttonTinhTrang1.TabIndex = 5;
+            this.buttonTinhTrang1.UseVisualStyleBackColor = false;
             // 
             // panel111
             // 
@@ -1142,7 +1165,7 @@
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(108, 25);
             this.label55.TabIndex = 4;
-            this.label55.Text = "Nhiệt độ ngắt CB nhiệt :";
+            this.label55.Text = "Thời gian :";
             this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel124
@@ -1176,6 +1199,18 @@
             this.panel143.Size = new System.Drawing.Size(110, 29);
             this.panel143.TabIndex = 10;
             // 
+            // label10
+            // 
+            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.SystemColors.Control;
+            this.label10.Location = new System.Drawing.Point(0, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(108, 27);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Tình trạng : ";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel144
             // 
             this.panel144.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1185,6 +1220,17 @@
             this.panel144.Name = "panel144";
             this.panel144.Size = new System.Drawing.Size(110, 29);
             this.panel144.TabIndex = 11;
+            // 
+            // buttonTinhTrang2
+            // 
+            this.buttonTinhTrang2.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonTinhTrang2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonTinhTrang2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonTinhTrang2.Location = new System.Drawing.Point(0, 0);
+            this.buttonTinhTrang2.Name = "buttonTinhTrang2";
+            this.buttonTinhTrang2.Size = new System.Drawing.Size(108, 27);
+            this.buttonTinhTrang2.TabIndex = 5;
+            this.buttonTinhTrang2.UseVisualStyleBackColor = false;
             // 
             // panel100
             // 
@@ -1452,7 +1498,7 @@
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(108, 25);
             this.label56.TabIndex = 4;
-            this.label56.Text = "Nhiệt độ ngắt CB nhiệt :";
+            this.label56.Text = "Thời gian :";
             this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel126
@@ -1486,6 +1532,18 @@
             this.panel145.Size = new System.Drawing.Size(110, 29);
             this.panel145.TabIndex = 10;
             // 
+            // label15
+            // 
+            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.ForeColor = System.Drawing.SystemColors.Control;
+            this.label15.Location = new System.Drawing.Point(0, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(108, 27);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "Tình trạng : ";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel146
             // 
             this.panel146.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1495,6 +1553,17 @@
             this.panel146.Name = "panel146";
             this.panel146.Size = new System.Drawing.Size(110, 29);
             this.panel146.TabIndex = 11;
+            // 
+            // buttonTinhTrang3
+            // 
+            this.buttonTinhTrang3.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonTinhTrang3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonTinhTrang3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonTinhTrang3.Location = new System.Drawing.Point(0, 0);
+            this.buttonTinhTrang3.Name = "buttonTinhTrang3";
+            this.buttonTinhTrang3.Size = new System.Drawing.Size(108, 27);
+            this.buttonTinhTrang3.TabIndex = 5;
+            this.buttonTinhTrang3.UseVisualStyleBackColor = false;
             // 
             // panel78
             // 
@@ -1762,7 +1831,7 @@
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(108, 25);
             this.label57.TabIndex = 4;
-            this.label57.Text = "Nhiệt độ ngắt CB nhiệt :";
+            this.label57.Text = "Thời gian :";
             this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel128
@@ -1796,6 +1865,18 @@
             this.panel147.Size = new System.Drawing.Size(110, 29);
             this.panel147.TabIndex = 10;
             // 
+            // label20
+            // 
+            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label20.ForeColor = System.Drawing.SystemColors.Control;
+            this.label20.Location = new System.Drawing.Point(0, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(108, 27);
+            this.label20.TabIndex = 6;
+            this.label20.Text = "Tình trạng : ";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel148
             // 
             this.panel148.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1805,6 +1886,17 @@
             this.panel148.Name = "panel148";
             this.panel148.Size = new System.Drawing.Size(110, 29);
             this.panel148.TabIndex = 11;
+            // 
+            // buttonTinhTrang4
+            // 
+            this.buttonTinhTrang4.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonTinhTrang4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonTinhTrang4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonTinhTrang4.Location = new System.Drawing.Point(0, 0);
+            this.buttonTinhTrang4.Name = "buttonTinhTrang4";
+            this.buttonTinhTrang4.Size = new System.Drawing.Size(108, 27);
+            this.buttonTinhTrang4.TabIndex = 5;
+            this.buttonTinhTrang4.UseVisualStyleBackColor = false;
             // 
             // panel67
             // 
@@ -2072,7 +2164,7 @@
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(108, 25);
             this.label58.TabIndex = 4;
-            this.label58.Text = "Nhiệt độ ngắt CB nhiệt :";
+            this.label58.Text = "Thời gian :";
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel130
@@ -2106,6 +2198,18 @@
             this.panel149.Size = new System.Drawing.Size(110, 29);
             this.panel149.TabIndex = 10;
             // 
+            // label25
+            // 
+            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label25.ForeColor = System.Drawing.SystemColors.Control;
+            this.label25.Location = new System.Drawing.Point(0, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(108, 27);
+            this.label25.TabIndex = 6;
+            this.label25.Text = "Tình trạng : ";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel150
             // 
             this.panel150.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -2115,6 +2219,17 @@
             this.panel150.Name = "panel150";
             this.panel150.Size = new System.Drawing.Size(110, 29);
             this.panel150.TabIndex = 11;
+            // 
+            // buttonTinhTrang5
+            // 
+            this.buttonTinhTrang5.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonTinhTrang5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonTinhTrang5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonTinhTrang5.Location = new System.Drawing.Point(0, 0);
+            this.buttonTinhTrang5.Name = "buttonTinhTrang5";
+            this.buttonTinhTrang5.Size = new System.Drawing.Size(108, 27);
+            this.buttonTinhTrang5.TabIndex = 5;
+            this.buttonTinhTrang5.UseVisualStyleBackColor = false;
             // 
             // panel56
             // 
@@ -2382,7 +2497,7 @@
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(108, 25);
             this.label59.TabIndex = 4;
-            this.label59.Text = "Nhiệt độ ngắt CB nhiệt :";
+            this.label59.Text = "Thời gian :";
             this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel132
@@ -2416,6 +2531,18 @@
             this.panel151.Size = new System.Drawing.Size(110, 29);
             this.panel151.TabIndex = 10;
             // 
+            // label30
+            // 
+            this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label30.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label30.ForeColor = System.Drawing.SystemColors.Control;
+            this.label30.Location = new System.Drawing.Point(0, 0);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(108, 27);
+            this.label30.TabIndex = 6;
+            this.label30.Text = "Tình trạng : ";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel152
             // 
             this.panel152.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -2425,6 +2552,17 @@
             this.panel152.Name = "panel152";
             this.panel152.Size = new System.Drawing.Size(110, 29);
             this.panel152.TabIndex = 11;
+            // 
+            // buttonTinhTrang6
+            // 
+            this.buttonTinhTrang6.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonTinhTrang6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonTinhTrang6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonTinhTrang6.Location = new System.Drawing.Point(0, 0);
+            this.buttonTinhTrang6.Name = "buttonTinhTrang6";
+            this.buttonTinhTrang6.Size = new System.Drawing.Size(108, 27);
+            this.buttonTinhTrang6.TabIndex = 5;
+            this.buttonTinhTrang6.UseVisualStyleBackColor = false;
             // 
             // panel45
             // 
@@ -2692,7 +2830,7 @@
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(108, 25);
             this.label60.TabIndex = 4;
-            this.label60.Text = "Nhiệt độ ngắt CB nhiệt :";
+            this.label60.Text = "Thời gian :";
             this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel134
@@ -2726,6 +2864,18 @@
             this.panel153.Size = new System.Drawing.Size(110, 30);
             this.panel153.TabIndex = 10;
             // 
+            // label39
+            // 
+            this.label39.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label39.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label39.ForeColor = System.Drawing.SystemColors.Control;
+            this.label39.Location = new System.Drawing.Point(0, 0);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(108, 28);
+            this.label39.TabIndex = 6;
+            this.label39.Text = "Tình trạng : ";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel154
             // 
             this.panel154.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -2735,6 +2885,17 @@
             this.panel154.Name = "panel154";
             this.panel154.Size = new System.Drawing.Size(110, 30);
             this.panel154.TabIndex = 11;
+            // 
+            // buttonTinhTrang7
+            // 
+            this.buttonTinhTrang7.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonTinhTrang7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonTinhTrang7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonTinhTrang7.Location = new System.Drawing.Point(0, 0);
+            this.buttonTinhTrang7.Name = "buttonTinhTrang7";
+            this.buttonTinhTrang7.Size = new System.Drawing.Size(108, 28);
+            this.buttonTinhTrang7.TabIndex = 5;
+            this.buttonTinhTrang7.UseVisualStyleBackColor = false;
             // 
             // panel34
             // 
@@ -3002,7 +3163,7 @@
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(108, 25);
             this.label61.TabIndex = 4;
-            this.label61.Text = "Nhiệt độ ngắt CB nhiệt :";
+            this.label61.Text = "Thời gian :";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel136
@@ -3036,6 +3197,18 @@
             this.panel155.Size = new System.Drawing.Size(110, 30);
             this.panel155.TabIndex = 10;
             // 
+            // label40
+            // 
+            this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label40.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label40.ForeColor = System.Drawing.SystemColors.Control;
+            this.label40.Location = new System.Drawing.Point(0, 0);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(108, 28);
+            this.label40.TabIndex = 6;
+            this.label40.Text = "Tình trạng : ";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel156
             // 
             this.panel156.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -3045,6 +3218,17 @@
             this.panel156.Name = "panel156";
             this.panel156.Size = new System.Drawing.Size(110, 30);
             this.panel156.TabIndex = 11;
+            // 
+            // buttonTinhTrang8
+            // 
+            this.buttonTinhTrang8.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonTinhTrang8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonTinhTrang8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonTinhTrang8.Location = new System.Drawing.Point(0, 0);
+            this.buttonTinhTrang8.Name = "buttonTinhTrang8";
+            this.buttonTinhTrang8.Size = new System.Drawing.Size(108, 28);
+            this.buttonTinhTrang8.TabIndex = 5;
+            this.buttonTinhTrang8.UseVisualStyleBackColor = false;
             // 
             // panel23
             // 
@@ -3312,7 +3496,7 @@
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(108, 25);
             this.label62.TabIndex = 4;
-            this.label62.Text = "Nhiệt độ ngắt CB nhiệt :";
+            this.label62.Text = "Thời gian :";
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel138
@@ -3346,6 +3530,18 @@
             this.panel157.Size = new System.Drawing.Size(110, 31);
             this.panel157.TabIndex = 10;
             // 
+            // label45
+            // 
+            this.label45.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label45.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label45.ForeColor = System.Drawing.SystemColors.Control;
+            this.label45.Location = new System.Drawing.Point(0, 0);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(108, 29);
+            this.label45.TabIndex = 6;
+            this.label45.Text = "Tình trạng : ";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel158
             // 
             this.panel158.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -3355,6 +3551,17 @@
             this.panel158.Name = "panel158";
             this.panel158.Size = new System.Drawing.Size(110, 31);
             this.panel158.TabIndex = 11;
+            // 
+            // buttonTinhTrang9
+            // 
+            this.buttonTinhTrang9.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonTinhTrang9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonTinhTrang9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonTinhTrang9.Location = new System.Drawing.Point(0, 0);
+            this.buttonTinhTrang9.Name = "buttonTinhTrang9";
+            this.buttonTinhTrang9.Size = new System.Drawing.Size(108, 29);
+            this.buttonTinhTrang9.TabIndex = 5;
+            this.buttonTinhTrang9.UseVisualStyleBackColor = false;
             // 
             // panel12
             // 
@@ -3622,7 +3829,7 @@
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(108, 25);
             this.label63.TabIndex = 4;
-            this.label63.Text = "Nhiệt độ ngắt CB nhiệt :";
+            this.label63.Text = "Thời gian :";
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel140
@@ -3656,6 +3863,18 @@
             this.panel159.Size = new System.Drawing.Size(110, 30);
             this.panel159.TabIndex = 10;
             // 
+            // label50
+            // 
+            this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label50.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label50.ForeColor = System.Drawing.SystemColors.Control;
+            this.label50.Location = new System.Drawing.Point(0, 0);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(108, 28);
+            this.label50.TabIndex = 6;
+            this.label50.Text = "Tình trạng : ";
+            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel160
             // 
             this.panel160.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -3665,6 +3884,17 @@
             this.panel160.Name = "panel160";
             this.panel160.Size = new System.Drawing.Size(110, 30);
             this.panel160.TabIndex = 11;
+            // 
+            // buttonTinhTrang10
+            // 
+            this.buttonTinhTrang10.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonTinhTrang10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonTinhTrang10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonTinhTrang10.Location = new System.Drawing.Point(0, 0);
+            this.buttonTinhTrang10.Name = "buttonTinhTrang10";
+            this.buttonTinhTrang10.Size = new System.Drawing.Size(108, 28);
+            this.buttonTinhTrang10.TabIndex = 5;
+            this.buttonTinhTrang10.UseVisualStyleBackColor = false;
             // 
             // panel89
             // 
@@ -3719,38 +3949,38 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersVisible = false;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(1170, 387);
             this.dataGridView1.TabIndex = 1;
@@ -4232,236 +4462,6 @@
             this.gridLayout1.Columns = 5;
             this.gridLayout1.ContainerControl = this.panelGiamSat;
             this.gridLayout1.Rows = 2;
-            // 
-            // label5
-            // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 27);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Tình trạng : ";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // buttonTinhTrang1
-            // 
-            this.buttonTinhTrang1.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonTinhTrang1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonTinhTrang1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonTinhTrang1.Location = new System.Drawing.Point(0, 0);
-            this.buttonTinhTrang1.Name = "buttonTinhTrang1";
-            this.buttonTinhTrang1.Size = new System.Drawing.Size(108, 27);
-            this.buttonTinhTrang1.TabIndex = 5;
-            this.buttonTinhTrang1.UseVisualStyleBackColor = false;
-            // 
-            // label10
-            // 
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.SystemColors.Control;
-            this.label10.Location = new System.Drawing.Point(0, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(108, 27);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "Tình trạng : ";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // buttonTinhTrang2
-            // 
-            this.buttonTinhTrang2.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonTinhTrang2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonTinhTrang2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonTinhTrang2.Location = new System.Drawing.Point(0, 0);
-            this.buttonTinhTrang2.Name = "buttonTinhTrang2";
-            this.buttonTinhTrang2.Size = new System.Drawing.Size(108, 27);
-            this.buttonTinhTrang2.TabIndex = 5;
-            this.buttonTinhTrang2.UseVisualStyleBackColor = false;
-            // 
-            // label15
-            // 
-            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.SystemColors.Control;
-            this.label15.Location = new System.Drawing.Point(0, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(108, 27);
-            this.label15.TabIndex = 6;
-            this.label15.Text = "Tình trạng : ";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // buttonTinhTrang3
-            // 
-            this.buttonTinhTrang3.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonTinhTrang3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonTinhTrang3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonTinhTrang3.Location = new System.Drawing.Point(0, 0);
-            this.buttonTinhTrang3.Name = "buttonTinhTrang3";
-            this.buttonTinhTrang3.Size = new System.Drawing.Size(108, 27);
-            this.buttonTinhTrang3.TabIndex = 5;
-            this.buttonTinhTrang3.UseVisualStyleBackColor = false;
-            // 
-            // label20
-            // 
-            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.ForeColor = System.Drawing.SystemColors.Control;
-            this.label20.Location = new System.Drawing.Point(0, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(108, 27);
-            this.label20.TabIndex = 6;
-            this.label20.Text = "Tình trạng : ";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // buttonTinhTrang4
-            // 
-            this.buttonTinhTrang4.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonTinhTrang4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonTinhTrang4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonTinhTrang4.Location = new System.Drawing.Point(0, 0);
-            this.buttonTinhTrang4.Name = "buttonTinhTrang4";
-            this.buttonTinhTrang4.Size = new System.Drawing.Size(108, 27);
-            this.buttonTinhTrang4.TabIndex = 5;
-            this.buttonTinhTrang4.UseVisualStyleBackColor = false;
-            // 
-            // label25
-            // 
-            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label25.ForeColor = System.Drawing.SystemColors.Control;
-            this.label25.Location = new System.Drawing.Point(0, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(108, 27);
-            this.label25.TabIndex = 6;
-            this.label25.Text = "Tình trạng : ";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // buttonTinhTrang5
-            // 
-            this.buttonTinhTrang5.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonTinhTrang5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonTinhTrang5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonTinhTrang5.Location = new System.Drawing.Point(0, 0);
-            this.buttonTinhTrang5.Name = "buttonTinhTrang5";
-            this.buttonTinhTrang5.Size = new System.Drawing.Size(108, 27);
-            this.buttonTinhTrang5.TabIndex = 5;
-            this.buttonTinhTrang5.UseVisualStyleBackColor = false;
-            // 
-            // label30
-            // 
-            this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label30.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label30.ForeColor = System.Drawing.SystemColors.Control;
-            this.label30.Location = new System.Drawing.Point(0, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(108, 27);
-            this.label30.TabIndex = 6;
-            this.label30.Text = "Tình trạng : ";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // buttonTinhTrang6
-            // 
-            this.buttonTinhTrang6.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonTinhTrang6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonTinhTrang6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonTinhTrang6.Location = new System.Drawing.Point(0, 0);
-            this.buttonTinhTrang6.Name = "buttonTinhTrang6";
-            this.buttonTinhTrang6.Size = new System.Drawing.Size(108, 27);
-            this.buttonTinhTrang6.TabIndex = 5;
-            this.buttonTinhTrang6.UseVisualStyleBackColor = false;
-            // 
-            // label39
-            // 
-            this.label39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label39.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label39.ForeColor = System.Drawing.SystemColors.Control;
-            this.label39.Location = new System.Drawing.Point(0, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(108, 28);
-            this.label39.TabIndex = 6;
-            this.label39.Text = "Tình trạng : ";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // buttonTinhTrang7
-            // 
-            this.buttonTinhTrang7.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonTinhTrang7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonTinhTrang7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonTinhTrang7.Location = new System.Drawing.Point(0, 0);
-            this.buttonTinhTrang7.Name = "buttonTinhTrang7";
-            this.buttonTinhTrang7.Size = new System.Drawing.Size(108, 28);
-            this.buttonTinhTrang7.TabIndex = 5;
-            this.buttonTinhTrang7.UseVisualStyleBackColor = false;
-            // 
-            // label40
-            // 
-            this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label40.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label40.ForeColor = System.Drawing.SystemColors.Control;
-            this.label40.Location = new System.Drawing.Point(0, 0);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(108, 28);
-            this.label40.TabIndex = 6;
-            this.label40.Text = "Tình trạng : ";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // buttonTinhTrang8
-            // 
-            this.buttonTinhTrang8.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonTinhTrang8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonTinhTrang8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonTinhTrang8.Location = new System.Drawing.Point(0, 0);
-            this.buttonTinhTrang8.Name = "buttonTinhTrang8";
-            this.buttonTinhTrang8.Size = new System.Drawing.Size(108, 28);
-            this.buttonTinhTrang8.TabIndex = 5;
-            this.buttonTinhTrang8.UseVisualStyleBackColor = false;
-            // 
-            // label45
-            // 
-            this.label45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label45.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label45.ForeColor = System.Drawing.SystemColors.Control;
-            this.label45.Location = new System.Drawing.Point(0, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(108, 29);
-            this.label45.TabIndex = 6;
-            this.label45.Text = "Tình trạng : ";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // buttonTinhTrang9
-            // 
-            this.buttonTinhTrang9.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonTinhTrang9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonTinhTrang9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonTinhTrang9.Location = new System.Drawing.Point(0, 0);
-            this.buttonTinhTrang9.Name = "buttonTinhTrang9";
-            this.buttonTinhTrang9.Size = new System.Drawing.Size(108, 29);
-            this.buttonTinhTrang9.TabIndex = 5;
-            this.buttonTinhTrang9.UseVisualStyleBackColor = false;
-            // 
-            // label50
-            // 
-            this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label50.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label50.ForeColor = System.Drawing.SystemColors.Control;
-            this.label50.Location = new System.Drawing.Point(0, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(108, 28);
-            this.label50.TabIndex = 6;
-            this.label50.Text = "Tình trạng : ";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // buttonTinhTrang10
-            // 
-            this.buttonTinhTrang10.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonTinhTrang10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonTinhTrang10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonTinhTrang10.Location = new System.Drawing.Point(0, 0);
-            this.buttonTinhTrang10.Name = "buttonTinhTrang10";
-            this.buttonTinhTrang10.Size = new System.Drawing.Size(108, 28);
-            this.buttonTinhTrang10.TabIndex = 5;
-            this.buttonTinhTrang10.UseVisualStyleBackColor = false;
             // 
             // BauNong
             // 

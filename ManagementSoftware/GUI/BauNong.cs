@@ -58,7 +58,7 @@ namespace ManagementSoftware.GUI
             DataGridViewColumn dongDC = new DataGridViewTextBoxColumn();
             dongDC.HeaderText = "Nhiệt độ (°C)";
             DataGridViewColumn congSuat = new DataGridViewTextBoxColumn();
-            congSuat.HeaderText = "Nhiệt độ ngắt cb nhiệt (°C)";
+            congSuat.HeaderText = "Thời gian (giây)";
             DataGridViewColumn ThoiGian = new DataGridViewTextBoxColumn();
             ThoiGian.HeaderText = "Trạng thái cb nhiệt";
 
@@ -123,11 +123,11 @@ namespace ManagementSoftware.GUI
                         row.Cells[2].Value = i.LanTestThu;
                         row.Cells[3].Value = i.DongDien;
                         row.Cells[4].Value = i.NhietDo;
-                        row.Cells[5].Value = i.NhietDoNgatCBNhiet;
+                        row.Cells[5].Value = i.ThoiGian;
                         row.Cells[6].Value = i.TrangThaiCBNhiet == true ? "ON" : "OFF";
                         row.Cells[7].Value = i.Error;
 
-                        if (i.Error != Common.NOT_ERROR_STR)
+                        if (i.Error != Common.NOT_ERROR_STR && i.isOn == true)
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -274,11 +274,11 @@ namespace ManagementSoftware.GUI
                         row.Cells[2].Value = i.LanTestThu;
                         row.Cells[3].Value = i.DongDien;
                         row.Cells[4].Value = i.NhietDo;
-                        row.Cells[5].Value = i.NhietDoNgatCBNhiet;
+                        row.Cells[5].Value = i.ThoiGian;
                         row.Cells[6].Value = i.TrangThaiCBNhiet == true ? "ON" : "OFF";
                         row.Cells[7].Value = i.Error;
 
-                        if (i.Error != Common.NOT_ERROR_STR)
+                        if (i.Error != Common.NOT_ERROR_STR && i.isOn == true)
                         {
                             row.DefaultCellStyle.BackColor = Color.Crimson;
                         }
@@ -361,11 +361,11 @@ namespace ManagementSoftware.GUI
         {
             dongAC.Text = String.Format("{0:0.00}", bauNong.DongDien) + " A";
             nhietDo.Text = String.Format("{0:0.00}", bauNong.NhietDo) + " °C";
-            nhietdoNgatCB.Text = bauNong.NhietDoNgatCBNhiet.ToString() + " °C";
+            nhietdoNgatCB.Text = bauNong.ThoiGian.ToString() + " giây";
             soLanTest.Text = bauNong.LanTestThu.ToString();
             cbNhiet.Text = bauNong.TrangThaiCBNhiet == true ? "ON" : "OFF";
             tinhTrang.Text = bauNong.Error;
-            if (bauNong.Error != Common.NOT_ERROR_STR)
+            if (bauNong.Error != Common.NOT_ERROR_STR && bauNong.isOn == true)
             {
                 lbJig.BackColor = Color.Crimson;
                 tinhTrang.Font = new Font("Segoe UI", 8, FontStyle.Regular);

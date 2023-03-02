@@ -65,6 +65,11 @@ namespace ManagementSoftware.PLCSetting
 
                 jig.isOn = await this.ConvertUIntToUshort(iOn) != 0 ? true : false;
 
+                if(jig.isOn == false)
+                {
+                    jig.Error = "";
+                }
+
 
                 listMachNguon.Add(jig);
 
@@ -116,6 +121,10 @@ namespace ManagementSoftware.PLCSetting
 
                 jig.isOn = await this.ConvertUIntToUshort(iOn) != 0 ? true : false;
 
+                if (jig.isOn == false)
+                {
+                    jig.Error = "";
+                }
 
                 listJigMachTDS.Add(jig);
 

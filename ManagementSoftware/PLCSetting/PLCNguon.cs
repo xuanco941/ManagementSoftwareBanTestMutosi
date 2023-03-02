@@ -50,6 +50,12 @@ namespace ManagementSoftware.PLCSetting
 
                 nguon.NguonName = "Nguồn " + (i + 1);
 
+
+                if (nguon.isOn == false)
+                {
+                    nguon.Error = "";
+                }
+
                 listNguon.Add(nguon);
 
                 dienApCSAddr += 4;
@@ -82,6 +88,12 @@ namespace ManagementSoftware.PLCSetting
                 led.LanTestThu = await this.ConvertUIntToUshort(780);
                 led.isOn = await this.ConvertUIntToUshort(iOn) != 0 ? true : false;
                 led.LedName = "Nguồn " + (i + 1);
+                led.Error = Common.NOT_ERROR_STR;
+
+                if (led.isOn == false)
+                {
+                    led.Error = "";
+                }
 
                 listLED.Add(led);
 
