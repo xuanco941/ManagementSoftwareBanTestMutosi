@@ -52,7 +52,7 @@ namespace ManagementSoftware.ManageHistoryData
 
                     Task.Run(() => plcBauNong.SaveData(list));
 
-                    Task.Run(() => new SaveToFIleExcel().SaveBauNong("TEST BẦU NÓNG", list));
+                    Task.Run(() => new SaveToFIleExcel2().SaveBauNong("TEST BẦU NÓNG", list));
 
                     await plcBauNong.Close();
                 }
@@ -92,7 +92,7 @@ namespace ManagementSoftware.ManageHistoryData
 
                     Task.Run(() => plcLoiLoc.SaveData(list));
 
-                    Task.Run(() => new SaveToFIleExcel().SaveLoiLoc("TEST LÕI LỌC", list));
+                    Task.Run(() => new SaveToFIleExcel2().SaveLoiLoc("TEST LÕI LỌC", list));
 
                     
 
@@ -139,8 +139,8 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-                    Task.Run(() => new SaveToFIleExcel().SaveNguon("TEST NGUỒN", list));
-                    Task.Run(() => new SaveToFIleExcel().SaveLed("TEST LED", listLed));
+                    Task.Run(() => new SaveToFIleExcel2().SaveNguon("TEST NGUỒN", list));
+                    Task.Run(() => new SaveToFIleExcel2().SaveLed("TEST LED", listLed));
                     
 
                     await plcNguon.Close();
@@ -180,7 +180,7 @@ namespace ManagementSoftware.ManageHistoryData
                     List<Models.CongTacModel.CongTac> list = await plcCongTac.GetAllData();
 
                     Task.Run(() => plcCongTac.SaveData(list));
-                    Task.Run(() => new SaveToFIleExcel().SaveCongTac("TEST CÔNG TẮC", list));
+                    Task.Run(() => new SaveToFIleExcel2().SaveCongTac("TEST CÔNG TẮC", list));
 
 
                     await plcCongTac.Close();
@@ -221,8 +221,8 @@ namespace ManagementSoftware.ManageHistoryData
 
                     Task.Run(() => plcMach.SaveData(list, list2));
 
-                    Task.Run(() => new SaveToFIleExcel().SaveJigMachNguon("TEST MẠCH NGUỒN", list));
-                    Task.Run(() => new SaveToFIleExcel().SaveJigMachTDS("TEST MẠCH TDS", list2));
+                    Task.Run(() => new SaveToFIleExcel2().SaveJigMachNguon("TEST MẠCH NGUỒN", list));
+                    Task.Run(() => new SaveToFIleExcel2().SaveJigMachTDS("TEST MẠCH TDS", list2));
                     
 
 
@@ -261,7 +261,7 @@ namespace ManagementSoftware.ManageHistoryData
                     List<Models.BepTuModel.BepTu> list = await plcBepTu.GetAllData();
 
                     Task.Run(() => plcBepTu.SaveData(list));
-                    Task.Run(() => new SaveToFIleExcel().SaveBepTu("TEST BẾP TỪ", list));
+                    Task.Run(() => new SaveToFIleExcel2().SaveBepTu("TEST BẾP TỪ", list));
 
                     await plcBepTu.Close();
                 }

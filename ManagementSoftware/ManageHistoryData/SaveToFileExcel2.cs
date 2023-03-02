@@ -1,4 +1,5 @@
 ﻿using ClosedXML.Excel;
+using DocumentFormat.OpenXml.Spreadsheet;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -9,13 +10,13 @@ using System.Threading.Tasks;
 
 namespace ManagementSoftware.ManageHistoryData
 {
-    public class SaveToFIleExcel
+    public class SaveToFIleExcel2
     {
 
 
         static bool checkColorLoiLoc = true;
         bool checkColor = true;
-
+        int lastUsedRow = 3;
 
 
         string nameDisk = "D";
@@ -45,49 +46,54 @@ namespace ManagementSoftware.ManageHistoryData
                         // Lấy worksheet đầu tiên trong file Excel
                         var ws = templateWorkbook.Worksheet(1);
 
-                        // Tìm dòng cuối cùng đã sử dụng trong file Excel
-                        var lastUsedRow = ws.LastRowUsed().RowNumber() + 1;
+                        // thêm 1 dòng mới
+                        ws.Row(2).InsertRowsBelow(1);
 
-                        // Thêm giá trị vào ô tiếp theo trong dòng cuối cùng
-                        ws.Cell(lastUsedRow, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
-                        ws.Cell(lastUsedRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-
-                        ws.Cell(lastUsedRow, 2).Value = loiLoc.LoiLocName;
-                        ws.Cell(lastUsedRow, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-
-                        ws.Cell(lastUsedRow, 3).Value = loiLoc.SoLanTest;
-                        ws.Cell(lastUsedRow, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Range(3, 1, 3, 9).Style.Fill.BackgroundColor = XLColor.White;
+                        ws.Range(3, 1, 3, 9).Style.Font.Bold = false;
 
 
-                        ws.Cell(lastUsedRow, 4).Value = loiLoc.ApSuatTest;
-                        ws.Cell(lastUsedRow, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                        ws.Cell(lastUsedRow, 5).Value = loiLoc.ThoiGianNen;
-                        ws.Cell(lastUsedRow, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        // Thêm giá trị vào ô tiếp theo trong dòng 3
+                        ws.Cell(3, 1).Value = date.ToString($"HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture);
+                        ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                        ws.Cell(lastUsedRow, 6).Value = loiLoc.ThoiGianGiu;
-                        ws.Cell(lastUsedRow, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(3, 2).Value = loiLoc.LoiLocName;
+                        ws.Cell(3, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                        ws.Cell(lastUsedRow, 7).Value = loiLoc.ThoiGianXa;
-                        ws.Cell(lastUsedRow, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(3, 3).Value = loiLoc.SoLanTest;
+                        ws.Cell(3, 3).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                        ws.Cell(lastUsedRow, 8).Value = loiLoc.Error;
-                        ws.Cell(lastUsedRow, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                        ws.Cell(lastUsedRow, 9).Value = loiLoc.isOn == true ? "ON" : "OFF";
-                        ws.Cell(lastUsedRow, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                        ws.Cell(3, 4).Value = loiLoc.ApSuatTest;
+                        ws.Cell(3, 4).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                        ws.Range(lastUsedRow, 1, lastUsedRow, 9).Style.Font.FontSize = 14;
+                        ws.Cell(3, 5).Value = loiLoc.ThoiGianNen;
+                        ws.Cell(3, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                        ws.Cell(3, 6).Value = loiLoc.ThoiGianGiu;
+                        ws.Cell(3, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                        ws.Cell(3, 7).Value = loiLoc.ThoiGianXa;
+                        ws.Cell(3, 7).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                        ws.Cell(3, 8).Value = loiLoc.Error;
+                        ws.Cell(3, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                        ws.Cell(3, 9).Value = loiLoc.isOn == true ? "ON" : "OFF";
+                        ws.Cell(3, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+                        ws.Range(3, 1, 3, 9).Style.Font.FontSize = 14;
 
 
                         if (loiLoc.isOn == false)
                         {
-                            ws.Cell(lastUsedRow, 8).Value = " ";
+                            ws.Cell(3, 8).Value = " ";
                         }
 
                         if (checkColorLoiLoc == true)
                         {
-                            ws.Range(lastUsedRow, 1, lastUsedRow, 9).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
+                            ws.Range(3, 1, 3, 9).Style.Fill.BackgroundColor = XLColor.FromHtml("#dfe8f2");
                         }
                         checkColorLoiLoc = !checkColorLoiLoc;
 
@@ -136,15 +142,11 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 8).Value = "Tình trạng";
                         ws.Cell(2, 9).Value = "Bật/Tắt";
 
-                        for (int i = 1; i < 10; i++)
-                        {
-                            ws.Cell(2, i).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                            ws.Cell(2, i).Style.Fill.BackgroundColor = XLColor.Yellow;
-
-                        }
-
                         ws.Range(2, 1, 2, 9).Style.Font.Bold = true;
                         ws.Range(2, 1, 2, 9).Style.Font.FontSize = 16;
+                        ws.Range(2, 1, 2, 9).Style.Fill.BackgroundColor = XLColor.Yellow;
+                        ws.Range(2, 1, 2, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
 
 
 
@@ -241,8 +243,10 @@ namespace ManagementSoftware.ManageHistoryData
                         // Lấy worksheet đầu tiên trong file Excel
                         var ws = templateWorkbook.Worksheet(1);
 
-                        // Tìm dòng cuối cùng đã sử dụng trong file Excel
-                        var lastUsedRow = ws.LastRowUsed().RowNumber() + 1;
+                        ws.Row(2).InsertRowsBelow(list.Count + 1);
+                        ws.Range(3, 1, list.Count + 3, 10).Style.Fill.BackgroundColor = XLColor.White;
+                        ws.Range(3, 1, list.Count + 3, 10).Style.Font.Bold = false;
+                        ws.Range(3, 1, list.Count + 3, 10).Style.Font.FontSize = 14;
 
                         // Thêm giá trị vào ô tiếp theo trong dòng cuối cùng
                         ws.Cell(lastUsedRow, 1).Value = "#";
@@ -280,7 +284,7 @@ namespace ManagementSoftware.ManageHistoryData
                             ws.Cell(lastUsedRow + i, 10).Value = item.isOn == true ? "ON" : "OFF";
                             ws.Cell(lastUsedRow + i, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                            ws.Range(lastUsedRow+i, 1, lastUsedRow+i, 10).Style.Font.FontSize = 14;
+                            ws.Range(lastUsedRow + i, 1, lastUsedRow + i, 10).Style.Font.FontSize = 14;
 
 
                             if (item.isOn == false)
@@ -342,15 +346,10 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 10).Value = "Bặt/Tắt";
 
 
-                        for (int z = 1; z < 11; z++)
-                        {
-                            ws.Cell(2, z).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                            ws.Cell(2, z).Style.Fill.BackgroundColor = XLColor.Yellow;
-
-                        }
-
                         ws.Range(2, 1, 2, 10).Style.Font.Bold = true;
                         ws.Range(2, 1, 2, 10).Style.Font.FontSize = 16;
+                        ws.Range(2, 1, 2, 10).Style.Fill.BackgroundColor = XLColor.Yellow;
+                        ws.Range(2, 1, 2, 10).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -457,8 +456,10 @@ namespace ManagementSoftware.ManageHistoryData
                         // Lấy worksheet đầu tiên trong file Excel
                         var ws = templateWorkbook.Worksheet(1);
 
-                        // Tìm dòng cuối cùng đã sử dụng trong file Excel
-                        var lastUsedRow = ws.LastRowUsed().RowNumber() + 1;
+                        ws.Row(2).InsertRowsBelow(list.Count + 1);
+                        ws.Range(3, 1, list.Count + 3, 9).Style.Fill.BackgroundColor = XLColor.White;
+                        ws.Range(3, 1, list.Count + 3, 9).Style.Font.Bold = false;
+                        ws.Range(3, 1, list.Count + 3, 9).Style.Font.FontSize = 14;
 
                         // Thêm giá trị vào ô tiếp theo trong dòng cuối cùng
                         ws.Cell(lastUsedRow, 1).Value = "#";
@@ -552,15 +553,10 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 8).Value = "Tình trạng";
                         ws.Cell(2, 9).Value = "Bật/Tắt";
 
-                        for (int z = 1; z < 10; z++)
-                        {
-                            ws.Cell(2, z).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                            ws.Cell(2, z).Style.Fill.BackgroundColor = XLColor.Yellow;
-
-                        }
-
                         ws.Range(2, 1, 2, 9).Style.Font.Bold = true;
                         ws.Range(2, 1, 2, 9).Style.Font.FontSize = 16;
+                        ws.Range(2, 1, 2, 9).Style.Fill.BackgroundColor = XLColor.Yellow;
+                        ws.Range(2, 1, 2, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -658,8 +654,10 @@ namespace ManagementSoftware.ManageHistoryData
                         // Lấy worksheet đầu tiên trong file Excel
                         var ws = templateWorkbook.Worksheet(1);
 
-                        // Tìm dòng cuối cùng đã sử dụng trong file Excel
-                        var lastUsedRow = ws.LastRowUsed().RowNumber() + 1;
+                        ws.Row(2).InsertRowsBelow(list.Count + 1);
+                        ws.Range(3, 1, list.Count + 3, 6).Style.Fill.BackgroundColor = XLColor.White;
+                        ws.Range(3, 1, list.Count + 3, 6).Style.Font.Bold = false;
+                        ws.Range(3, 1, list.Count + 3, 6).Style.Font.FontSize = 14;
 
                         // Thêm giá trị vào ô tiếp theo trong dòng cuối cùng
                         ws.Cell(lastUsedRow, 1).Value = "#";
@@ -742,14 +740,10 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 5).Value = "Tình trạng";
                         ws.Cell(2, 6).Value = "Bật/Tắt";
 
-                        for (int z = 1; z < 7; z++)
-                        {
-                            ws.Cell(2, z).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                            ws.Cell(2, z).Style.Fill.BackgroundColor = XLColor.Yellow;
-
-                        }
                         ws.Range(2, 1, 2, 6).Style.Font.Bold = true;
                         ws.Range(2, 1, 2, 6).Style.Font.FontSize = 16;
+                        ws.Range(2, 1, 2, 6).Style.Fill.BackgroundColor = XLColor.Yellow;
+                        ws.Range(2, 1, 2, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -845,8 +839,10 @@ namespace ManagementSoftware.ManageHistoryData
                         // Lấy worksheet đầu tiên trong file Excel
                         var ws = templateWorkbook.Worksheet(1);
 
-                        // Tìm dòng cuối cùng đã sử dụng trong file Excel
-                        var lastUsedRow = ws.LastRowUsed().RowNumber() + 1;
+                        ws.Row(2).InsertRowsBelow(list.Count + 1);
+                        ws.Range(3, 1, list.Count + 3, 9).Style.Fill.BackgroundColor = XLColor.White;
+                        ws.Range(3, 1, list.Count + 3, 9).Style.Font.Bold = false;
+                        ws.Range(3, 1, list.Count + 3, 9).Style.Font.FontSize = 14;
 
                         // Thêm giá trị vào ô tiếp theo trong dòng cuối cùng
                         ws.Cell(lastUsedRow, 1).Value = "#";
@@ -946,15 +942,10 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 8).Value = "Tình trạng";
                         ws.Cell(2, 9).Value = "Bật/Tắt";
 
-                        for (int z = 1; z < 10; z++)
-                        {
-                            ws.Cell(2, z).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                            ws.Cell(2, z).Style.Fill.BackgroundColor = XLColor.Yellow;
-
-                        }
-
                         ws.Range(2, 1, 2, 9).Style.Font.Bold = true;
                         ws.Range(2, 1, 2, 9).Style.Font.FontSize = 16;
+                        ws.Range(2, 1, 2, 9).Style.Fill.BackgroundColor = XLColor.Yellow;
+                        ws.Range(2, 1, 2, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -1063,8 +1054,10 @@ namespace ManagementSoftware.ManageHistoryData
                         // Lấy worksheet đầu tiên trong file Excel
                         var ws = templateWorkbook.Worksheet(1);
 
-                        // Tìm dòng cuối cùng đã sử dụng trong file Excel
-                        var lastUsedRow = ws.LastRowUsed().RowNumber() + 1;
+                        ws.Row(2).InsertRowsBelow(list.Count + 1);
+                        ws.Range(3, 1, list.Count + 3, 8).Style.Fill.BackgroundColor = XLColor.White;
+                        ws.Range(3, 1, list.Count + 3, 8).Style.Font.Bold = false;
+                        ws.Range(3, 1, list.Count + 3, 8).Style.Font.FontSize = 14;
 
                         // Thêm giá trị vào ô tiếp theo trong dòng cuối cùng
                         ws.Cell(lastUsedRow, 1).Value = "#";
@@ -1157,15 +1150,10 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 7).Value = "Tình trạng";
                         ws.Cell(2, 8).Value = "Bật/Tắt";
 
-                        for (int z = 1; z < 9; z++)
-                        {
-                            ws.Cell(2, z).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                            ws.Cell(2, z).Style.Fill.BackgroundColor = XLColor.Yellow;
-
-                        }
-
                         ws.Range(2, 1, 2, 8).Style.Font.Bold = true;
                         ws.Range(2, 1, 2, 8).Style.Font.FontSize = 16;
+                        ws.Range(2, 1, 2, 8).Style.Fill.BackgroundColor = XLColor.Yellow;
+                        ws.Range(2, 1, 2, 8).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -1262,8 +1250,10 @@ namespace ManagementSoftware.ManageHistoryData
                         // Lấy worksheet đầu tiên trong file Excel
                         var ws = templateWorkbook.Worksheet(1);
 
-                        // Tìm dòng cuối cùng đã sử dụng trong file Excel
-                        var lastUsedRow = ws.LastRowUsed().RowNumber() + 1;
+                        ws.Row(2).InsertRowsBelow(list.Count + 1);
+                        ws.Range(3, 1, list.Count + 3, 5).Style.Fill.BackgroundColor = XLColor.White;
+                        ws.Range(3, 1, list.Count + 3, 5).Style.Font.Bold = false;
+                        ws.Range(3, 1, list.Count + 3, 5).Style.Font.FontSize = 14;
 
                         // Thêm giá trị vào ô tiếp theo trong dòng cuối cùng
                         ws.Cell(lastUsedRow, 1).Value = "#";
@@ -1338,15 +1328,10 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 4).Value = "Lần test thứ";
                         ws.Cell(2, 5).Value = "Tình trạng";
 
-                        for (int z = 1; z < 6; z++)
-                        {
-                            ws.Cell(2, z).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                            ws.Cell(2, z).Style.Fill.BackgroundColor = XLColor.Yellow;
-
-                        }
-
                         ws.Range(2, 1, 2, 5).Style.Font.Bold = true;
                         ws.Range(2, 1, 2, 5).Style.Font.FontSize = 16;
+                        ws.Range(2, 1, 2, 5).Style.Fill.BackgroundColor = XLColor.Yellow;
+                        ws.Range(2, 1, 2, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
@@ -1430,8 +1415,10 @@ namespace ManagementSoftware.ManageHistoryData
                         // Lấy worksheet đầu tiên trong file Excel
                         var ws = templateWorkbook.Worksheet(1);
 
-                        // Tìm dòng cuối cùng đã sử dụng trong file Excel
-                        var lastUsedRow = ws.LastRowUsed().RowNumber() + 1;
+                        ws.Row(2).InsertRowsBelow(list.Count + 1);
+                        ws.Range(3, 1, list.Count + 3, 9).Style.Fill.BackgroundColor = XLColor.White;
+                        ws.Range(3, 1, list.Count + 3, 9).Style.Font.Bold = false;
+                        ws.Range(3, 1, list.Count + 3, 9).Style.Font.FontSize = 14;
 
                         // Thêm giá trị vào ô tiếp theo trong dòng cuối cùng
                         ws.Cell(lastUsedRow, 1).Value = "#";
@@ -1529,15 +1516,10 @@ namespace ManagementSoftware.ManageHistoryData
                         ws.Cell(2, 8).Value = "Tình trạng";
                         ws.Cell(2, 9).Value = "Bật/Tắt";
 
-                        for (int z = 1; z < 10; z++)
-                        {
-                            ws.Cell(2, z).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-                            ws.Cell(2, z).Style.Fill.BackgroundColor = XLColor.Yellow;
-
-                        }
-
                         ws.Range(2, 1, 2, 9).Style.Font.Bold = true;
                         ws.Range(2, 1, 2, 9).Style.Font.FontSize = 16;
+                        ws.Range(2, 1, 2, 9).Style.Fill.BackgroundColor = XLColor.Yellow;
+                        ws.Range(2, 1, 2, 9).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
                         ws.Cell(3, 1).Value = "#";
                         ws.Cell(3, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;

@@ -25,7 +25,7 @@ namespace ManagementSoftware.DAL
                     i.TestCongTacID = testID.TestCongTacID;
                 }
             }
-            dbContext.CongTacs.AddRange(list.ToList());
+            dbContext.CongTacs.AddRange(list);
             dbContext.SaveChanges();
         }
         public List<CongTac>? GetDataFromIDTest(int id)
