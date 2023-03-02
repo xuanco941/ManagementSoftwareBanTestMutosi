@@ -1,6 +1,8 @@
-﻿using ManagementSoftware.Models.JigMachModel;
+﻿using ManagementSoftware.Models.CongTacModel;
+using ManagementSoftware.Models.JigMachModel;
 using ManagementSoftware.Models.LedModel;
 using ManagementSoftware.PLCSetting;
+using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -21,7 +23,7 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-        int TIME_INTERVAL_SAVE = 60000;
+        int TIME_INTERVAL_SAVE = 0;
 
 
         System.Threading.Timer timerBauNong;
@@ -32,6 +34,28 @@ namespace ManagementSoftware.ManageHistoryData
         System.Threading.Timer timerNguon;
 
 
+
+        LoiLocHistory loiLocHistory;
+        NguonHistory nguonHistory;
+        LedHistory ledHistory;
+        JigMachNguonHistory jigMachNguonHistory;
+        JigMachTDSHistory JigMachTDSHistory;
+        BepTuHistory BepTuHistory;
+        CongTacHistory CongTacHistory;
+        BauNongHistory bauNongHistory;
+
+        public SaveToDatabase()
+        {
+            loiLocHistory = new LoiLocHistory();
+            nguonHistory = new NguonHistory();
+            ledHistory = new LedHistory();
+            jigMachNguonHistory = new JigMachNguonHistory();
+            JigMachTDSHistory = new JigMachTDSHistory();
+            BepTuHistory = new BepTuHistory();
+            CongTacHistory = new CongTacHistory();
+            bauNongHistory = new BauNongHistory();
+
+        }
 
         private async void CallbackBauNong(Object state)
         {
@@ -49,10 +73,15 @@ namespace ManagementSoftware.ManageHistoryData
                 {
                     List<Models.BauNongModel.BauNong> list = await plcBauNong.GetAllData();
 
+                    List<Models.BauNongModel.BauNong>? l = bauNongHistory.Check(list);
 
-                    Task.Run(() => plcBauNong.SaveData(list));
+                    if (l != null && l.Count>0)
+                    {
+                        Task.Run(() => plcBauNong.SaveData(l));
 
-                    Task.Run(() => new SaveToFIleExcel2().SaveBauNong("TEST BẦU NÓNG", list));
+                        Task.Run(() => new SaveToFIleExcel2().SaveBauNong("TEST BẦU NÓNG", l));
+                    }
+
 
                     await plcBauNong.Close();
                 }
@@ -68,8 +97,7 @@ namespace ManagementSoftware.ManageHistoryData
                 watch.Stop();
 
                 // Tính toán thời gian còn lại để đợi trước khi gọi lại callback
-                int delay = (int)(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds));
-                timerBauNong.Change(delay, Timeout.Infinite);
+                timerBauNong.Change(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
             }
 
         }
@@ -90,11 +118,14 @@ namespace ManagementSoftware.ManageHistoryData
                 {
                     Models.LoiLocModel.LoiLoc list = await plcLoiLoc.GetData();
 
-                    Task.Run(() => plcLoiLoc.SaveData(list));
+                    Models.LoiLocModel.LoiLoc? l = loiLocHistory.Check(list);
 
-                    Task.Run(() => new SaveToFIleExcel2().SaveLoiLoc("TEST LÕI LỌC", list));
+                    if (l != null)
+                    {
+                        Task.Run(() => plcLoiLoc.SaveData(l));
 
-                    
+                        Task.Run(() => new SaveToFIleExcel2().SaveLoiLoc("TEST LÕI LỌC", l));
+                    }
 
                     await plcLoiLoc.Close();
                 }
@@ -109,8 +140,7 @@ namespace ManagementSoftware.ManageHistoryData
                 watch.Stop();
 
                 // Tính toán thời gian còn lại để đợi trước khi gọi lại callback
-                int delay = (int)(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds));
-                timerLoiLoc.Change(delay, Timeout.Infinite);
+                timerLoiLoc.Change(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
             }
 
 
@@ -132,15 +162,23 @@ namespace ManagementSoftware.ManageHistoryData
                 if (await plcNguon.Open())
                 {
                     List<Models.NguonModel.Nguon> list = await plcNguon.GetDataNguon();
+                    List<Models.NguonModel.Nguon>? l = nguonHistory.Check(list);
+
                     List<Models.LedModel.Led> listLed = await plcNguon.GetDataLED();
+                    List<Models.LedModel.Led>? lLed = ledHistory.Check(listLed);
 
-                    Task.Run(() => plcNguon.SaveData(list));
-                    Task.Run(() => plcNguon.SaveDataLed(listLed));
+                    if(l != null && l.Count > 0)
+                    {
+                        Task.Run(() => plcNguon.SaveData(l));
+                        Task.Run(() => new SaveToFIleExcel2().SaveNguon("TEST NGUỒN", l));
+                    }
 
+                    if(lLed != null && lLed.Count > 0)
+                    {
+                        Task.Run(() => plcNguon.SaveDataLed(lLed));
+                        Task.Run(() => new SaveToFIleExcel2().SaveLed("TEST LED", lLed));
+                    }
 
-
-                    Task.Run(() => new SaveToFIleExcel2().SaveNguon("TEST NGUỒN", list));
-                    Task.Run(() => new SaveToFIleExcel2().SaveLed("TEST LED", listLed));
                     
 
                     await plcNguon.Close();
@@ -156,10 +194,48 @@ namespace ManagementSoftware.ManageHistoryData
                 watch.Stop();
 
                 // Tính toán thời gian còn lại để đợi trước khi gọi lại callback
-                int delay = (int)(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds));
-                timerNguon.Change(delay, Timeout.Infinite);
+                timerNguon.Change(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
             }
 
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //CT
+        private readonly SemaphoreSlim _semaphore = new SemaphoreSlim(1, 1);
+
+        public async Task Save(List<CongTac> data)
+        {
+            await _semaphore.WaitAsync();
+            try
+            {
+                // Long running save operation
+                await Task.Delay(1000);
+
+                // Save to Excel file
+                await new SaveToFIleExcel2().SaveCongTac("TEST CÔNG TẮC", data);
+
+                // Save to PLC
+                await plcCongTac.SaveData(data);
+            }
+            finally
+            {
+                _semaphore.Release();
+            }
         }
 
         private async void CallbackCongTac(Object state)
@@ -168,39 +244,41 @@ namespace ManagementSoftware.ManageHistoryData
 
             watch.Start();
 
-
-            // update data
-            // Long running operation
             try
             {
                 if (await plcCongTac.Open())
                 {
-
-
                     List<Models.CongTacModel.CongTac> list = await plcCongTac.GetAllData();
 
-                    Task.Run(() => plcCongTac.SaveData(list));
-                    Task.Run(() => new SaveToFIleExcel2().SaveCongTac("TEST CÔNG TẮC", list));
+                    List<Models.CongTacModel.CongTac>? l = CongTacHistory.Check(list);
 
+                    if (l != null && l.Count > 0)
+                    {
+                        await Save(l);
+                    }
 
                     await plcCongTac.Close();
                 }
-
             }
-
             catch
             {
-
             }
             finally
             {
                 watch.Stop();
 
                 // Tính toán thời gian còn lại để đợi trước khi gọi lại callback
-                int delay = (int)(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds));
-                timerCongTac.Change(delay, Timeout.Infinite);
+                timerCongTac.Change(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
             }
         }
+
+
+
+
+
+
+
+
 
         private async void CallbackMach(Object state)
         {
@@ -216,13 +294,27 @@ namespace ManagementSoftware.ManageHistoryData
                 if (await plcMach.Open())
                 {
                     List<JigMachNguon> list = await plcMach.GetDataMachNguon();
+                    List<JigMachNguon>? l = jigMachNguonHistory.Check(list);
+
+                    if(l!=null && l.Count > 0)
+                    {
+                        Task.Run(() => new SaveToFIleExcel2().SaveJigMachNguon("TEST MẠCH NGUỒN", l));
+                    }
+
+
                     List<JigMachTDS> list2 = await plcMach.GetDataMachTDS();
 
+                    List<JigMachTDS>? l2 = JigMachTDSHistory.Check(list2);
 
-                    Task.Run(() => plcMach.SaveData(list, list2));
+                    if (l2 != null && l2.Count > 0)
+                    {
+                        Task.Run(() => new SaveToFIleExcel2().SaveJigMachTDS("TEST MẠCH TDS", l2));
+                    }
 
-                    Task.Run(() => new SaveToFIleExcel2().SaveJigMachNguon("TEST MẠCH NGUỒN", list));
-                    Task.Run(() => new SaveToFIleExcel2().SaveJigMachTDS("TEST MẠCH TDS", list2));
+
+                    //Task.Run(() => plcMach.SaveData(list, list2));
+
+
                     
 
 
@@ -239,8 +331,7 @@ namespace ManagementSoftware.ManageHistoryData
                 watch.Stop();
 
                 // Tính toán thời gian còn lại để đợi trước khi gọi lại callback
-                int delay = (int)(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds));
-                timerMach.Change(delay, Timeout.Infinite);
+                timerMach.Change(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
 
             }
         }
@@ -260,8 +351,15 @@ namespace ManagementSoftware.ManageHistoryData
                 {
                     List<Models.BepTuModel.BepTu> list = await plcBepTu.GetAllData();
 
-                    Task.Run(() => plcBepTu.SaveData(list));
-                    Task.Run(() => new SaveToFIleExcel2().SaveBepTu("TEST BẾP TỪ", list));
+                    List<Models.BepTuModel.BepTu>? l = BepTuHistory.Check(list);
+
+                    if(l!=null && l.Count > 0)
+                    {
+                        Task.Run(() => plcBepTu.SaveData(l));
+                        Task.Run(() => new SaveToFIleExcel2().SaveBepTu("TEST BẾP TỪ", l));
+                    }
+
+
 
                     await plcBepTu.Close();
                 }
@@ -273,23 +371,19 @@ namespace ManagementSoftware.ManageHistoryData
             finally
             {
                 watch.Stop();
-
-                // Tính toán thời gian còn lại để đợi trước khi gọi lại callback
-                int delay = (int)(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds));
-
                 // Thực hiện gọi lại callback với thời gian chờ tương ứng
-                timerBepTu.Change(delay, Timeout.Infinite);
+                timerBepTu.Change(Math.Max(0, TIME_INTERVAL_SAVE - watch.ElapsedMilliseconds), Timeout.Infinite);
             }
         }
 
         public void ConnectAndRunSaveAll()
         {
-            timerBauNong = new System.Threading.Timer(CallbackBauNong, null, 60000, 60000);
-            timerBepTu = new System.Threading.Timer(CallbackBepTu, null, 60000, 60000);
-            timerCongTac = new System.Threading.Timer(CallbackCongTac, null, 60000, 60000);
-            timerLoiLoc = new System.Threading.Timer(CallbackLoiLoc, null, 60000, 60000);
-            timerMach = new System.Threading.Timer(CallbackMach, null, 60000, 60000);
-            timerNguon = new System.Threading.Timer(CallbackNguon, null, 60000, 60000);
+            timerBauNong = new System.Threading.Timer(CallbackBauNong, null, TIME_INTERVAL_SAVE, Timeout.Infinite);
+            timerBepTu = new System.Threading.Timer(CallbackBepTu, null, TIME_INTERVAL_SAVE, Timeout.Infinite);
+            timerCongTac = new System.Threading.Timer(CallbackCongTac, null, TIME_INTERVAL_SAVE, Timeout.Infinite);
+            timerLoiLoc = new System.Threading.Timer(CallbackLoiLoc, null, TIME_INTERVAL_SAVE, Timeout.Infinite);
+            timerMach = new System.Threading.Timer(CallbackMach, null, TIME_INTERVAL_SAVE, Timeout.Infinite);
+            timerNguon = new System.Threading.Timer(CallbackNguon, null, TIME_INTERVAL_SAVE, Timeout.Infinite);
 
         }
     }

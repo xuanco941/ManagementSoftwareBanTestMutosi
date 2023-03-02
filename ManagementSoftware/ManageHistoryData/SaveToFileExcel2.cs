@@ -19,7 +19,7 @@ namespace ManagementSoftware.ManageHistoryData
         int lastUsedRow = 3;
 
 
-        string nameDisk = "D";
+        string nameDisk = "C";
         public void SaveLoiLoc(string nameBanTest, Models.LoiLocModel.LoiLoc loiLoc)
         {
             DateTime date = DateTime.Now;
@@ -1226,7 +1226,7 @@ namespace ManagementSoftware.ManageHistoryData
 
 
 
-        public void SaveCongTac(string nameBanTest, List<Models.CongTacModel.CongTac> list)
+        public async Task SaveCongTac(string nameBanTest, List<Models.CongTacModel.CongTac> list)
         {
             DateTime date = DateTime.Now;
             var folderPath = Path.Combine($"{nameDisk}:", "ExcelFiles", nameBanTest, date.Year.ToString(), date.Month.ToString("00"));

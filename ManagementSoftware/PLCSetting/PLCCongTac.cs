@@ -114,7 +114,7 @@ namespace ManagementSoftware.PLCSetting
 
 
 
-        public void SaveData(List<Models.CongTacModel.CongTac> listCT)
+        public async Task SaveData(List<Models.CongTacModel.CongTac> listCT)
         {
             if (listCT != null && listCT.Count > 0)
             {

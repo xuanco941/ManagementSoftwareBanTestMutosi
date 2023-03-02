@@ -25,7 +25,7 @@ namespace ManagementSoftware
 
         //App
         public static User? USERSESSION { get; set; }
-        public static int NumberRows = 40;
+        public static int NumberRows = 30;
 
         //Key ID
         //User
@@ -36,7 +36,7 @@ namespace ManagementSoftware
 
 
         //Timer Interval
-        public const int TIME_INTERVAL_UPDATE_DATA_ON_HISTORY = 61500;
+        public const int TIME_INTERVAL_UPDATE_DATA_ON_HISTORY = 10000;
 
 
         //Không có lỗi
