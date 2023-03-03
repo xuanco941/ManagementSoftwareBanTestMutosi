@@ -25,7 +25,7 @@ namespace ManagementSoftware
 
         //App
         public static User? USERSESSION { get; set; }
-        public static int NumberRows = 30;
+        public static int NumberRows = 20;
 
         //Key ID
         //User

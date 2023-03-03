@@ -21,7 +21,7 @@ namespace ManagementSoftware.ManageHistoryData
                 {
                     foreach (var jtem in value)
                     {
-                        if (item.CongTacName == jtem.CongTacName && item.LanTestThu != jtem.LanTestThu)
+                        if (item.CongTacName == jtem.CongTacName && Math.Abs(item.LanTestThu - jtem.LanTestThu) >= 5 )
                         {
                             result.Add(item);
                         }
@@ -34,7 +34,6 @@ namespace ManagementSoftware.ManageHistoryData
                 }
                 else
                 {
-                    lastValue = value;
                     return null;
                 }
             }

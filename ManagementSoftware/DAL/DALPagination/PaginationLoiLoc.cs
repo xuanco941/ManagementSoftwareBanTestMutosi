@@ -11,7 +11,7 @@ namespace ManagementSoftware.DAL.DALPagination
 {
     public class PaginationLoiLoc
     {
-        public static int NumberRows { get; set; } = 50;
+        public static int NumberRows { get; set; } = 30;
         public int PageCurrent { get; set; } = 1;
         public int TotalPages { get; set; } = 1;
         public int TotalResults { get; set; } = 0;
