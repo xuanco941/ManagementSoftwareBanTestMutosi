@@ -18,8 +18,9 @@ namespace ManagementSoftware.Models
         public DbSet<Activity> Activities { get; set; }
 
         //jig mach
-        public DbSet<TestJigMach> TestJigMachs { get; set; }
+        public DbSet<TestJigMach> TestJigMachNguons { get; set; }
         public DbSet<JigMachNguon> JigMachNguons { get; set; }
+        public DbSet<TestJigMachTDS> TestJigMachTDSs { get; set; }
         public DbSet<JigMachTDS> JigMachTDSs { get; set; }
 
         //Bau nong
@@ -98,6 +99,10 @@ namespace ManagementSoftware.Models
 
             //jig mạch
             modelBuilder.Entity<TestJigMach>(entity =>
+            {
+                entity.Property(e => e.CreateAt).HasDefaultValueSql("(getdate())");
+            });
+            modelBuilder.Entity<TestJigMachTDS>(entity =>
             {
                 entity.Property(e => e.CreateAt).HasDefaultValueSql("(getdate())");
             });

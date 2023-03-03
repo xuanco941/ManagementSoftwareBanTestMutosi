@@ -139,11 +139,18 @@ namespace ManagementSoftware.PLCSetting
             return listJigMachTDS;
         }
 
-        public void SaveData(List<JigMachNguon> listNguon, List<JigMachTDS> listTDS)
+        public void SaveDataMach(List<JigMachNguon> listNguon)
         {
-            if (listNguon != null && listNguon.Count >0 && listTDS!=null && listTDS.Count>0)
+            if (listNguon != null && listNguon.Count >0)
             {
-                new DALJigMach().Add(listNguon,listTDS);
+                new DALJigMach().AddNguon(listNguon);
+            }
+        }
+        public void SaveDataTDS(List<JigMachTDS> listTDS)
+        {
+            if (listTDS != null && listTDS.Count > 0)
+            {
+                new DALJigMach().AddTDS(listTDS);
             }
         }
 

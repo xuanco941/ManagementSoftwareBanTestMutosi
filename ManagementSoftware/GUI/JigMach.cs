@@ -271,7 +271,7 @@ namespace ManagementSoftware.GUI
         // tổng số trang
         private int TotalPages2 = 0;
         //Data
-        List<TestJigMach> ListResults2 = new List<TestJigMach>();
+        List<TestJigMachTDS> ListResults2 = new List<TestJigMachTDS>();
 
 
         void LoadDGV2()
@@ -313,7 +313,7 @@ namespace ManagementSoftware.GUI
             dataGridView2.Rows.Clear();
 
 
-            PaginationJigMach pagination = new PaginationJigMach();
+            PaginationJigMachTDS pagination = new PaginationJigMachTDS();
             pagination.Set(page2, timeStart2, timeEnd2);
             this.ListResults2 = pagination.ListResults;
             this.TotalPages2 = pagination.TotalPages;
@@ -331,7 +331,7 @@ namespace ManagementSoftware.GUI
 
             foreach (var item in this.ListResults2)
             {
-                List<Models.JigMachModel.JigMachTDS>? l = new DALJigMach().GetDataFromIDTestTDS(item.TestJigMachID);
+                List<Models.JigMachModel.JigMachTDS>? l = new DALJigMach().GetDataFromIDTestTDS(item.TestJigMachTDSID);
 
                 if (l != null && l.Count > 0)
                 {
@@ -579,14 +579,14 @@ namespace ManagementSoftware.GUI
             Stopwatch watch = new Stopwatch();
             watch.Start();
 
-            PaginationJigMach pagination = new PaginationJigMach();
+            PaginationJigMachTDS pagination = new PaginationJigMachTDS();
             pagination.Set(page2, timeStart2, timeEnd2);
 
             // Nếu có dữ liệu mới và khác với dữ liệu cũ
             if (pagination.ListResults != null && pagination.ListResults.Count > 0
                 && (!this.ListResults2?.SequenceEqual(pagination.ListResults) ?? true))
             {
-                this.ListResults2 = new List<Models.JigMachModel.TestJigMach>(pagination.ListResults);
+                this.ListResults2 = new List<Models.JigMachModel.TestJigMachTDS>(pagination.ListResults);
                 this.TotalPages2 = pagination.TotalPages;
                 UpdateData2(pagination.ListResults);
             }
@@ -599,12 +599,12 @@ namespace ManagementSoftware.GUI
 
 
 
-        private void UpdateData2(List<Models.JigMachModel.TestJigMach> list)
+        private void UpdateData2(List<Models.JigMachModel.TestJigMachTDS> list)
         {
 
             if (IsHandleCreated && InvokeRequired)
             {
-                BeginInvoke(new Action<List<Models.JigMachModel.TestJigMach>>(UpdateData2), list);
+                BeginInvoke(new Action<List<Models.JigMachModel.TestJigMachTDS>>(UpdateData2), list);
                 return;
             }
 
@@ -627,7 +627,7 @@ namespace ManagementSoftware.GUI
 
             foreach (var item in this.ListResults2)
             {
-                List<Models.JigMachModel.JigMachTDS>? l = new DALJigMach().GetDataFromIDTestTDS(item.TestJigMachID);
+                List<Models.JigMachModel.JigMachTDS>? l = new DALJigMach().GetDataFromIDTestTDS(item.TestJigMachTDSID);
 
                 if (l != null && l.Count > 0)
                 {

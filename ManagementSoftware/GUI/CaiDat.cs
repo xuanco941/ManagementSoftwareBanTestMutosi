@@ -59,7 +59,7 @@ namespace ManagementSoftware.GUI
         {
             using (var context = new Models.DataBaseContext())
             {
-                labelMach.Text = context.TestJigMachs.Count().ToString() + " bản ghi.";
+                labelMach.Text = context.TestJigMachNguons.Count().ToString() + " bản ghi.";
             }
 
         }
@@ -162,7 +162,8 @@ namespace ManagementSoftware.GUI
                 {
                     try
                     {
-                        context.TestJigMachs.RemoveRange(context.TestJigMachs);
+                        context.TestJigMachNguons.RemoveRange(context.TestJigMachNguons);
+                        context.TestJigMachTDSs.RemoveRange(context.TestJigMachTDSs);
                         int x = context.SaveChanges();
 
                         callAlert.Invoke("Đã xóa " + x + " bản ghi", FormAlert.enmType.Success);

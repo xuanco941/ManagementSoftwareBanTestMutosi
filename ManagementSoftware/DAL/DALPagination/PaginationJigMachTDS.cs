@@ -1,5 +1,5 @@
-﻿using ManagementSoftware.Models;
-using ManagementSoftware.Models.JigMachModel;
+﻿using ManagementSoftware.Models.JigMachModel;
+using ManagementSoftware.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,14 +8,13 @@ using System.Threading.Tasks;
 
 namespace ManagementSoftware.DAL.DALPagination
 {
-
-    public class PaginationJigMach
+    public class PaginationJigMachTDS
     {
         public static int NumberRows { get; set; } = 50;
         public int PageCurrent { get; set; } = 1;
         public int TotalPages { get; set; } = 1;
         public int TotalResults { get; set; } = 0;
-        public List<TestJigMach> ListResults { get; set; } = new List<TestJigMach>();
+        public List<TestJigMachTDS> ListResults { get; set; } = new List<TestJigMachTDS>();
         public void Set(int page, DateTime? start, DateTime? end)
         {
             DataBaseContext dbContext = new DataBaseContext();
@@ -28,22 +27,22 @@ namespace ManagementSoftware.DAL.DALPagination
                 {
                     end = end.Value.AddDays(1);
                 }
-                ListResults = dbContext.TestJigMachNguons.OrderByDescending(t => t.TestJigMachID)
+                ListResults = dbContext.TestJigMachTDSs.OrderByDescending(t => t.TestJigMachTDSID)
                 .Where(a => start <= a.CreateAt && end >= a.CreateAt)
                 .Skip(position)
                 .Take(NumberRows)
                 .ToList();
 
-                this.TotalResults = dbContext.TestJigMachNguons.Where(a => start <= a.CreateAt && end >= a.CreateAt).Count();
+                this.TotalResults = dbContext.TestJigMachTDSs.Where(a => start <= a.CreateAt && end >= a.CreateAt).Count();
 
             }
             else
             {
-                ListResults = dbContext.TestJigMachNguons.OrderByDescending(t => t.TestJigMachID)
+                ListResults = dbContext.TestJigMachTDSs.OrderByDescending(t => t.TestJigMachTDSID)
                 .Skip(position)
                 .Take(NumberRows)
                 .ToList();
-                this.TotalResults = dbContext.TestJigMachNguons.Count();
+                this.TotalResults = dbContext.TestJigMachTDSs.Count();
             }
 
 

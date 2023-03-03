@@ -75,11 +75,11 @@ namespace ManagementSoftware.ManageHistoryData
 
                     List<Models.BauNongModel.BauNong>? l = bauNongHistory.Check(list);
 
-                    if (l != null && l.Count>0)
+                    if (l != null && l.Count > 0)
                     {
-                        Task.Run(() => plcBauNong.SaveData(l));
+                        plcBauNong.SaveData(l);
 
-                        Task.Run(() => new SaveToFIleExcel2().SaveBauNong("TEST BẦU NÓNG", l));
+                        new SaveToFIleExcel2().SaveBauNong("TEST BẦU NÓNG", l);
                     }
 
 
@@ -109,7 +109,7 @@ namespace ManagementSoftware.ManageHistoryData
             watch.Start();
 
 
-            
+
             // update data
             // Long running operation
             try
@@ -122,9 +122,9 @@ namespace ManagementSoftware.ManageHistoryData
 
                     if (l != null)
                     {
-                        Task.Run(() => plcLoiLoc.SaveData(l));
+                        plcLoiLoc.SaveData(l);
 
-                        Task.Run(() => new SaveToFIleExcel2().SaveLoiLoc("TEST LÕI LỌC", l));
+                        new SaveToFIleExcel2().SaveLoiLoc("TEST LÕI LỌC", l);
                     }
 
                     await plcLoiLoc.Close();
@@ -167,19 +167,19 @@ namespace ManagementSoftware.ManageHistoryData
                     List<Models.LedModel.Led> listLed = await plcNguon.GetDataLED();
                     List<Models.LedModel.Led>? lLed = ledHistory.Check(listLed);
 
-                    if(l != null && l.Count > 0)
+                    if (l != null && l.Count > 0)
                     {
-                        Task.Run(() => plcNguon.SaveData(l));
-                        Task.Run(() => new SaveToFIleExcel2().SaveNguon("TEST NGUỒN", l));
+                        plcNguon.SaveData(l);
+                        new SaveToFIleExcel2().SaveNguon("TEST NGUỒN", l);
                     }
 
-                    if(lLed != null && lLed.Count > 0)
+                    if (lLed != null && lLed.Count > 0)
                     {
-                        Task.Run(() => plcNguon.SaveDataLed(lLed));
-                        Task.Run(() => new SaveToFIleExcel2().SaveLed("TEST LED", lLed));
+                        plcNguon.SaveDataLed(lLed);
+                        new SaveToFIleExcel2().SaveLed("TEST LED", lLed);
                     }
 
-                    
+
 
                     await plcNguon.Close();
                 }
@@ -216,37 +216,19 @@ namespace ManagementSoftware.ManageHistoryData
 
 
         //CT
-        private readonly SemaphoreSlim _semaphore = new SemaphoreSlim(1, 1);
-
-        public async Task Save(List<CongTac> data)
-        {
-            await _semaphore.WaitAsync();
-            try
-            {
-                // Long running save operation
-                await Task.Delay(1000);
-
-                // Save to Excel file
-                await new SaveToFIleExcel2().SaveCongTac("TEST CÔNG TẮC", data);
-
-                // Save to PLC
-                await plcCongTac.SaveData(data);
-            }
-            finally
-            {
-                _semaphore.Release();
-            }
-        }
-
         private async void CallbackCongTac(Object state)
         {
             Stopwatch watch = new Stopwatch();
 
             watch.Start();
 
+
+            // update data
+            // Long running operation
+
             try
             {
-                if (await plcCongTac.Open())
+                if (await plcCongTac.Open() == true)
                 {
                     List<Models.CongTacModel.CongTac> list = await plcCongTac.GetAllData();
 
@@ -254,14 +236,20 @@ namespace ManagementSoftware.ManageHistoryData
 
                     if (l != null && l.Count > 0)
                     {
-                        await Save(l);
+                        plcCongTac.SaveData(l);
+
+                        new SaveToFIleExcel2().SaveCongTac("TEST CÔNG TẮC", l);
                     }
+
 
                     await plcCongTac.Close();
                 }
+
+
             }
             catch
             {
+
             }
             finally
             {
@@ -296,9 +284,10 @@ namespace ManagementSoftware.ManageHistoryData
                     List<JigMachNguon> list = await plcMach.GetDataMachNguon();
                     List<JigMachNguon>? l = jigMachNguonHistory.Check(list);
 
-                    if(l!=null && l.Count > 0)
+                    if (l != null && l.Count > 0)
                     {
-                        Task.Run(() => new SaveToFIleExcel2().SaveJigMachNguon("TEST MẠCH NGUỒN", l));
+                        new SaveToFIleExcel2().SaveJigMachNguon("TEST MẠCH NGUỒN", l);
+                        plcMach.SaveDataMach(l);
                     }
 
 
@@ -308,15 +297,9 @@ namespace ManagementSoftware.ManageHistoryData
 
                     if (l2 != null && l2.Count > 0)
                     {
-                        Task.Run(() => new SaveToFIleExcel2().SaveJigMachTDS("TEST MẠCH TDS", l2));
+                        new SaveToFIleExcel2().SaveJigMachTDS("TEST MẠCH TDS", l2);
+                        plcMach.SaveDataTDS(l2);
                     }
-
-
-                    //Task.Run(() => plcMach.SaveData(list, list2));
-
-
-                    
-
 
                     await plcMach.Close();
                 }
@@ -353,10 +336,10 @@ namespace ManagementSoftware.ManageHistoryData
 
                     List<Models.BepTuModel.BepTu>? l = BepTuHistory.Check(list);
 
-                    if(l!=null && l.Count > 0)
+                    if (l != null && l.Count > 0)
                     {
-                        Task.Run(() => plcBepTu.SaveData(l));
-                        Task.Run(() => new SaveToFIleExcel2().SaveBepTu("TEST BẾP TỪ", l));
+                        plcBepTu.SaveData(l);
+                        new SaveToFIleExcel2().SaveBepTu("TEST BẾP TỪ", l);
                     }
 
 

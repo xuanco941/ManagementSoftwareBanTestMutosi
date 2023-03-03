@@ -10,27 +10,40 @@ namespace ManagementSoftware.DAL
 {
     public class DALJigMach
     {
-        public void Add(List<JigMachNguon> listMachNguon, List<JigMachTDS> listMachTDS)
+        public void AddNguon(List<JigMachNguon> listMachNguon)
         {
             DataBaseContext dbContext = new DataBaseContext();
             TestJigMach testID = new TestJigMach();
 
-            dbContext.TestJigMachs.Add(testID);
+            dbContext.TestJigMachNguons.Add(testID);
             dbContext.SaveChanges();
 
             foreach (var i in listMachNguon)
             {
                 i.TestJigMachID = testID.TestJigMachID;
             }
+            dbContext.JigMachNguons.AddRange(listMachNguon.ToList());
+
+            dbContext.SaveChanges();
+        }
+
+        public void AddTDS(List<JigMachTDS> listMachTDS)
+        {
+            DataBaseContext dbContext = new DataBaseContext();
+            TestJigMachTDS testID = new TestJigMachTDS();
+
+            dbContext.TestJigMachTDSs.Add(testID);
+            dbContext.SaveChanges();
+
             foreach (var i in listMachTDS)
             {
-                i.TestJigMachID = testID.TestJigMachID;
+                i.TestJigMachTDSID = testID.TestJigMachTDSID;
             }
-            dbContext.JigMachNguons.AddRange(listMachNguon.ToList());
             dbContext.JigMachTDSs.AddRange(listMachTDS.ToList());
 
             dbContext.SaveChanges();
         }
+
         public List<JigMachNguon>? GetDataFromIDTest(int id)
         {
             DataBaseContext dbContext = new DataBaseContext();
@@ -42,7 +55,7 @@ namespace ManagementSoftware.DAL
         {
             DataBaseContext dbContext = new DataBaseContext();
 
-            return dbContext.JigMachTDSs.Where(a => a.TestJigMachID == id).ToList();
+            return dbContext.JigMachTDSs.Where(a => a.TestJigMachTDSID == id).ToList();
 
         }
     }

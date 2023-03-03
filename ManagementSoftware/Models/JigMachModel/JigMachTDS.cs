@@ -22,7 +22,7 @@ namespace ManagementSoftware.Models.JigMachModel
         public bool Error_Van_DT { get; set; }
         public string Error { get; set; } = Common.NOT_ERROR_STR;
         public bool isOn { get; set; }
-        public int TestJigMachID { get; set; }
-        public TestJigMach TestJigMach { get; set; }
+        public int TestJigMachTDSID { get; set; }
+        public TestJigMachTDS TestJigMachTDS { get; set; }
     }
 }
