@@ -142,8 +142,16 @@ namespace ManagementSoftware.GUI
             LoadNguon();
 
         }
-       
 
+        private void Settings_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Task.Run(() => plcLoiLoc.Close());
+            Task.Run(() => plcBauNong.Close());
+            Task.Run(() => plcBepTu.Close());
+            Task.Run(() => plcCongTac.Close());
+            Task.Run(() => plcMach.Close());
+            Task.Run(() => plcNguon.Close());
 
+        }
     }
 }

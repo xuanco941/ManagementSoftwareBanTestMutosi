@@ -59,6 +59,7 @@ namespace ManagementSoftware.GUI.JigMachManagement
                 UpdateData(list.ToList());
             }
 
+            watch.Stop();
 
             if (timer != null)
             {

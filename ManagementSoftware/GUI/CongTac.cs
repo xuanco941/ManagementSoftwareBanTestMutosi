@@ -186,6 +186,7 @@ namespace ManagementSoftware.GUI
                 UpdateData2(pagination.ListResults);
             }
 
+            watch.Stop();
 
             if (timer2 != null)
             {

@@ -60,7 +60,7 @@ namespace ManagementSoftware.GUI.JigMachManagement
                 UpdateData(list);
             }
 
-
+            watch.Stop();
 
             if (timer != null)
             {
@@ -154,7 +154,7 @@ namespace ManagementSoftware.GUI.JigMachManagement
 
             tinhTrang.Text = e.Error;
 
-            if (e.Error != Common.NOT_ERROR_STR && e.isOn == true )
+            if (e.Error != Common.NOT_ERROR_STR && e.isOn == true)
             {
                 lbjig.BackColor = Color.Crimson;
                 tinhTrang.Font = new Font("Segoe UI", 8, FontStyle.Regular);

@@ -135,14 +135,14 @@ namespace ManagementSoftware.GUI
             watch.Start();
 
 
-           
+
 
             PaginationLoiLoc pagination = new PaginationLoiLoc();
             pagination.Set(page, timeStart, timeEnd);
 
             // Nếu có dữ liệu mới và khác với dữ liệu cũ
             if (pagination.ListResults != null && pagination.ListResults.Count > 0
-                && (this.ListResults?.SequenceEqual(pagination.ListResults) == false) )
+                && (this.ListResults?.SequenceEqual(pagination.ListResults) == false))
             {
                 this.ListResults = new List<Models.LoiLocModel.LoiLoc>(pagination.ListResults);
                 this.TotalPages = pagination.TotalPages;
@@ -209,7 +209,7 @@ namespace ManagementSoftware.GUI
                 row.Cells[6].Value = item.ThoiGianXa;
                 row.Cells[7].Value = item.Error;
 
-                
+
                 if (item.Error != Common.NOT_ERROR_STR && item.isOn == true)
                 {
                     row.DefaultCellStyle.BackColor = Color.Crimson;
@@ -227,7 +227,7 @@ namespace ManagementSoftware.GUI
             }
 
 
-           
+
 
 
         }
@@ -469,7 +469,7 @@ namespace ManagementSoftware.GUI
                 labelLoai3.BackColor = Color.DarkOrange;
 
 
-                if(loiloc.isOn == true)
+                if (loiloc.isOn == true)
                 {
                     labelLoai1.Text = TenThietBi.LoiLoc1;
                 }
@@ -584,7 +584,7 @@ namespace ManagementSoftware.GUI
                 ApSuatTest1va2.Text = loiloc.ApSuatTest.ToString();
                 btnTinhTrangLoai3.Text = loiloc.Error;
 
-                if (loiloc.Error != Common.NOT_ERROR_STR && loiloc.isOn == true )
+                if (loiloc.Error != Common.NOT_ERROR_STR && loiloc.isOn == true)
                 {
                     labelLoai1.BackColor = Color.Crimson;
                     btnTinhTrangLoai3.Font = new Font("Segoe UI", 8, FontStyle.Regular);
@@ -706,7 +706,7 @@ namespace ManagementSoftware.GUI
 
         private void buttonUpdateHistory_Click(object sender, EventArgs e)
         {
-            if(timer2 != null)
+            if (timer2 != null)
             {
                 StopTimer2();
 

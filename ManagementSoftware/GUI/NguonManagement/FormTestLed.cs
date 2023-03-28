@@ -103,6 +103,7 @@ namespace ManagementSoftware.GUI.NguonManagement
                 UpdateData(list);
             }
 
+            watch.Stop();
 
             if (timer != null)
             {

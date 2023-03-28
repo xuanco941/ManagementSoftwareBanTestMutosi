@@ -495,6 +495,8 @@ namespace ManagementSoftware.GUI
                 UpdateData1(pagination.ListResults);
             }
 
+            watch.Stop();
+
             if (timer1 != null)
             {
                 timer1.Change(Math.Max(0, Common.TIME_INTERVAL_UPDATE_DATA_ON_HISTORY - watch.ElapsedMilliseconds), Timeout.Infinite);
@@ -590,6 +592,8 @@ namespace ManagementSoftware.GUI
                 this.TotalPages2 = pagination.TotalPages;
                 UpdateData2(pagination.ListResults);
             }
+
+            watch.Stop();
 
             if (timer2 != null)
             {

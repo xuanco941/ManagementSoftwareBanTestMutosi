@@ -80,6 +80,7 @@ namespace ManagementSoftware.GUI.NguonManagement
                 UpdateData(list);
             }
 
+            watch.Stop();
 
             if (timer != null)
             {
@@ -136,8 +137,8 @@ namespace ManagementSoftware.GUI.NguonManagement
             {
 
             }
-            
-            
+
+
 
 
 
@@ -181,6 +182,15 @@ namespace ManagementSoftware.GUI.NguonManagement
             for (int i = 0; i < 30; i++)
             {
                 int id = dataGridView1.Rows.Add();
+
+                dataGridView1.Rows[i].Cells[0].Value = "Nguồn " + (i +1) + " (OFF)";
+                //dataGridView1.Rows[i].Cells[1].Value = String.Format("{0:0.00}", 0);
+                //dataGridView1.Rows[i].Cells[2].Value = String.Format("{0:0.00}", 0);
+                //dataGridView1.Rows[i].Cells[3].Value = String.Format("{0:0.00}", 0);
+                //dataGridView1.Rows[i].Cells[4].Value = 0;
+                //dataGridView1.Rows[i].Cells[5].Value = 0;
+                //dataGridView1.Rows[i].Cells[6].Value = "";
+
                 dataGridView1.Rows[id].DefaultCellStyle.BackColor = Color.FromArgb(41, 44, 51);
             }
 
